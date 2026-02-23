@@ -1,6 +1,0 @@
----
-title: "Tjedan 5: No code sprint"
-draft: true
----
-
-Sadržaj će biti dodan prije seminara.

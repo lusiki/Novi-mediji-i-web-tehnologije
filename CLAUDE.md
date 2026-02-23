@@ -10,7 +10,6 @@ Quarto web stranica koja se objavljuje na GitHub Pages. Renderira se s `quarto r
 
 ### Organizacija datoteka
 - Predavanja: `lectures/week-NN.qmd` (week-01 do week-15)
-- Seminari: `seminars/week-NN.qmd` (week-01 do week-15)
 - Resursi: `resources/` direktorij
 - Slike: `assets/images/week-NN-opis.png`
 - Prezentacije: `assets/slides/`

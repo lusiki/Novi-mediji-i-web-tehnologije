@@ -1,6 +1,0 @@
----
-title: "Tjedan 6: Simulacija suradnje u oblaku"
-draft: true
----
-
-Sadržaj će biti dodan prije seminara.

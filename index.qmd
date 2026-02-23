@@ -12,7 +12,7 @@ Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kro
 **Studij:** Komunikologija (R), 2. godina  
 **Semestar:** Ljetni 2025/2026  
 **ECTS bodovi:** 5  
-**Opterećenje:** 30h predavanja + 15h seminara  
+**Opterećenje:** 30h predavanja
 **Mjesto:** HKS, prema objavljenom rasporedu  
 **Nositelj:** doc. dr. sc. Luka Šikić ([luka.sikic@unicath.hr](mailto:luka.sikic@unicath.hr))  
 **Konzultacije:** Prema objavljenom rasporedu

@@ -1,6 +1,0 @@
----
-title: "Tjedan 15: Prezentacije projekata"
-draft: true
----
-
-Sadržaj će biti dodan prije seminara.

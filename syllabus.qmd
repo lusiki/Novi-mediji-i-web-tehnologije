@@ -3,7 +3,7 @@ title: "Silabus"
 subtitle: "Novi mediji i web tehnologije"
 ---
 
-**Kontekst kolegija.** Komunikologija, 2. godina, 5 ECTS, 30h predavanja + 15h seminara, ljetni semestar 2025/2026.
+**Kontekst kolegija.** Komunikologija, 2. godina, 5 ECTS, 30h predavanja, ljetni semestar 2025/2026.
 
 **Narativ kolegija.** Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kroz platforme i alate koje komunikolozi danas koriste, do najnovijih tehnologija koje preoblikuju struku. Prva trećina gradi temeljnu web pismenost (kako web funkcionira, kako se sadržaj pronalazi, kako se platforme biraju i grade). Srednja trećina fokusira se na primijenjene kompetencije (suradnja u oblaku, strategija sadržaja, podatkovna pismenost, dizajnersko razmišljanje i razumijevanje kako digitalna prisutnost stvara organizacijsku vrijednost). Završna trećina suočava se s najnovijim razvojem (generativna AI, algoritamski mediji, regulativa i budućnost digitalne komunikacije). Svaki tjedan nadograđuje se na prethodni tako da studenti na kraju mogu kritički vrednovati, strateški planirati i praktično izvoditi web komunikaciju koja služi i informacijskim i komercijalnim ciljevima u profesionalnom okruženju.
 
@@ -71,30 +71,6 @@ Ova završna sesija pregledava luk kolegija, od infrastrukture preko platformi i
 
 ---
 
-## Seminari (15 tjedana × 1h)
-
-Seminari su osmišljeni kao radionice, a ne kao ponavljanje predavanja. Svaka seminarska sesija uključuje praktične aktivnosti, grupne vježbe ili analize slučajeva koje primjenjuju gradivo s predavanja.
-
-| Tjedan | Seminarska aktivnost |
-|:------:|---------------------|
-| 1 | Anatomija web zahtjeva. Studenti prate putovanje URL-a od preglednika do poslužitelja koristeći razvojne alate, uspoređujući stranicu sa sadržajem i online trgovinu. |
-| 2 | SEO audit radionica. Studentske grupe analiziraju stvarnu hrvatsku poslovnu web stranicu koristeći besplatne SEO alate, procjenjuju transakcijske u odnosu na informacijske ključne riječi i prezentiraju nalaze. |
-| 3 | Vježba povjerenja i vjerodostojnosti. Studenti procjenjuju niz online tvrdnji, recenzija proizvoda i brendovskih komunikacija kako bi utvrdili koje su autentične, a koje fabricirane. |
-| 4 | Usporedba CMS platformi. Grupe vrednuju WordPress, Shopify i Webflow prema zadatku koji zahtijeva i urednički sadržaj i katalog proizvoda ili usluga. |
-| 5 | No code sprint. Studenti izrađuju odredišnu stranicu s jasnim pozivom na akciju (prijava, rezervacija ili kupnja) i automatizaciju radnog toka koja povezuje slanje obrazaca s emailom koristeći no code alat. |
-| 6 | Simulacija suradnje u oblaku. Timovi dovršavaju zadatak produkcije kampanje (sadržaj + ponuda + plan distribucije) koristeći isključivo alate u oblaku pod vremenskim pritiskom. |
-| 7 | Radionica strategije sadržaja. Grupe razvijaju kalendar sadržaja, mapu korisničkog putovanja i urednički plan za fiktivnu organizaciju koja pokreće online uslugu. |
-| 8 | Kolokvij |
-| 9 | Analitika u praksi. Studenti interpretiraju primjer Google Analytics podataka s web stranice koja ima i sadržajne i transakcijske ciljeve te daju preporuke za optimizaciju. |
-| 10 | UX i audit pristupačnosti. Studenti testiraju online uslugu ili trgovinu prema WCAG kriterijima i najboljim konverzijskim praksama, zatim predlažu poboljšanja. |
-| 11 | AI alati u praksi. Studenti koriste generativne AI alate za produkciju web sadržaja (opisi proizvoda, blog post, vizuali) te kritički vrednuju kvalitetu, originalnost i persuazivnost rezultata. |
-| 12 | Etička studija slučaja. Studenti analiziraju slučajeve tamnih obrazaca, lažnih AI generiranih recenzija ili obmanjujućih sintetičkih medija i izrađuju dokument s etičkim smjernicama. |
-| 13 | Regulatorna studija slučaja. Grupe analiziraju stvarni slučaj provedbe (GDPR kazna protiv online platforme, DSA akcija, presuda o zaštiti potrošača) i prezentiraju implikacije. |
-| 14 | Multimedijska produkcija. Studenti stvaraju kratku multimedijsku web priču koja kombinira urednički sadržaj s persuazivnim ili komercijalnim elementom (priča o brendu, lansiranje proizvoda, teaser kampanje). |
-| 15 | Prezentacije projekata i vršnjačka evaluacija. |
-
----
-
 ## Preporučena literatura (u izradi)
 
 Popis literature bit će izgrađen s aktualnim izvorima. Ispod su početni smjerovi organizirani po tematskim klasterima.
@@ -122,7 +98,6 @@ Zadržan je postojeći omjer 70/30 (kontinuirano/završni), ali se težina unuta
 | Komponenta | Udio |
 |------------|:----:|
 | Praktični projekt (izgradnja web prisutnosti korištenjem alata s kolegija) | 30% |
-| Seminarska sudjelovanja i rezultati radionica | 20% |
 | Kolokvij | 20% |
 | Završni ispit | 30% |
 

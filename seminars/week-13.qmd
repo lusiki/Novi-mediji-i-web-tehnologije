@@ -1,6 +1,0 @@
----
-title: "Tjedan 13: Regulatorna studija slučaja"
-draft: true
----
-
-Sadržaj će biti dodan prije seminara.

@@ -87,10 +87,6 @@ web-tech-course/
 │   ├── week-01.qmd          # Bilješke za Tjedan 1
 │   ├── week-02.qmd          # Tjedan 2 (predložak)
 │   └── ...                   # Jedna datoteka po tjednu
-├── seminars/
-│   ├── _metadata.yml
-│   ├── week-01.qmd          # Seminarski materijali za Tjedan 1
-│   └── ...
 ├── resources/
 │   ├── reading-list.qmd     # Organiziran popis literature s poveznicama
 │   ├── tools.qmd            # Preporuke alata i tutorijali
@@ -111,7 +107,7 @@ web-tech-course/
 
 Ključne dizajnerske odluke.
 
-**Jedna `.qmd` datoteka po predavanju i seminaru.** To čini ažuriranja atomskima. Kada pripremate Tjedan 5, dirate samo `lectures/week-05.qmd` i `seminars/week-05.qmd`. Ništa drugo se ne mijenja.
+**Jedna `.qmd` datoteka po predavanju.** To čini ažuriranja atomskima. Kada pripremate Tjedan 5, dirate samo `lectures/week-05.qmd`. Ništa drugo se ne mijenja.
 
 **Datoteke `_metadata.yml`** postavljaju zadane vrijednosti (autor, format datuma, sadržaj) tako da individualne datoteke predavanja ostaju čiste.
 

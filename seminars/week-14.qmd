@@ -1,6 +1,0 @@
----
-title: "Tjedan 14: Multimedijska produkcija"
-draft: true
----
-
-Sadržaj će biti dodan prije seminara.
