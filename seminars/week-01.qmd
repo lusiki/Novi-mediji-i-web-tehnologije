@@ -1,0 +1,6 @@
+---
+title: "Tjedan 1: Anatomija web zahtjeva"
+draft: true
+---
+
+Sadržaj će biti dodan prije seminara.

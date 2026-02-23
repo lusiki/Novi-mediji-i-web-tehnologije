@@ -1,0 +1,50 @@
+---
+title: "Popis literature"
+subtitle: "Obavezna i preporučena literatura po temama"
+---
+
+Ovaj popis literature rast će tijekom semestra. Stavke označene s **[O]** su obavezne; ostale su preporučene. Sva obavezna literatura besplatno je dostupna na internetu ili putem sveučilišne knjižnice.
+
+## Temeljna web pismenost
+
+- **[O]** Mozilla Developer Network. [How the Web Works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works). Besplatna serija tutorijala o osnovama web infrastrukture.
+- **[O]** Google Search Central. [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). Službeni vodič o tome kako Google otkriva i rangira sadržaj.
+- Duckett, J. (posljednje izdanje). *HTML and CSS: Design and Build Websites.* Vizualna referenca za razumijevanje strukture web stranica.
+- Shopify Engineering Blog. Odabrani postovi o web performansama i arhitekturi platformi. *Poveznice bit će dodane.*
+
+## Strategija sadržaja i UX
+
+- **[O]** Krug, S. *Don't Make Me Think, Revisited.* Klasičan uvod u web upotrebljivost. Odabrana poglavlja.
+- Halvorson, K. i Rach, M. *Content Strategy for the Web.* Temeljni tekst o planiranju i upravljanju digitalnim sadržajem.
+- Nielsen Norman Group. [Članci o UX istraživanju](https://www.nngroup.com/articles/). Besplatno dostupni istraživački sažeci o upotrebljivosti i konverziji.
+- Baymard Institute. [Open access studije o upotrebljivosti plaćanja](https://baymard.com/research). Istraživanja o tome kako korisnici navigiraju transakcijskim web iskustvima.
+
+## Oblak i suradnja
+
+- **[O]** Armbrust, M. i sur. (2010). A View of Cloud Computing. *Communications of the ACM*, 53(4), 50-58. *Zadržano iz izvornog silabusa kao temeljno čitanje.*
+- Google Workspace dokumentacija. Odabrani vodiči o suradničkim radnim tokovima.
+- Salesforce/HubSpot. Odabrane besplatno dostupne bijele knjige o CRM-u i automatizaciji marketinga. *Poveznice bit će dodane.*
+
+## Generativna AI i etika
+
+- **[O]** Europska komisija. [Dokumentacija o Aktu o AI-ju](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Službeni pregled regulatornog okvira.
+- Crawford, K. (2021). *Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence.* Yale University Press. Odabrana poglavlja.
+- Bender, E. i sur. (2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? *FAccT '21.* Utjecajni rad o rizicima velikih jezičnih modela.
+- *Dodatni aktualni članci o AI-ju u stvaranju sadržaja i personalizaciji bit će dodavani tijekom semestra.*
+
+## Regulativa
+
+- **[O]** Opća uredba EU o zaštiti podataka (GDPR). Odabrani članci (bit će specificirano).
+- **[O]** Akt EU o digitalnim uslugama. [Pregled](https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package).
+- Akt EU o digitalnim tržištima. Pregled s fokusom na označavanje čuvara vrata.
+- Direktiva EU o pravima potrošača za online usluge. Odabrane odredbe.
+- Relevantni hrvatski regulatorni dokumenti. *Poveznice bit će dodane.*
+
+## Multimedija i pripovijedanje
+
+- *Literatura o pisanju za web, podcast produkciji, kratkim video formatima i vizualnoj trgovini bit će dodana prije Tjedna 14.*
+
+## Digitalno poslovanje i analitika
+
+- Chaffey, D. i Ellis-Chadwick, F. *Digital Marketing: Strategy, Implementation and Practice.* Odabrana poglavlja o analitici i online propoziciji vrijednosti.
+- **[O]** Google Analytics Academy. [Besplatni online moduli](https://analytics.google.com/analytics/academy/). Uvodni tečaj o GA4.

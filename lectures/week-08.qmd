@@ -1,0 +1,11 @@
+---
+title: "Tjedan 8: Kolokvij"
+subtitle: "Pregled i provjera znanja"
+date: 2025-02-01
+categories: [ocjenjivanje]
+draft: false
+---
+
+## Kolokvij
+
+Detalji o formatu kolokvija, obuhvaćenom gradivu i pripremi bit će objavljeni ovdje kako se datum bude približavao.

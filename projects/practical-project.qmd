@@ -1,0 +1,60 @@
+---
+title: "Praktični projekt"
+subtitle: "Izgradnja web prisutnosti za stvarnu ili fiktivnu organizaciju"
+---
+
+## Pregled
+
+Praktični projekt vaša je prilika da pokažete integrirane kompetencije kroz cjelokupni luk kolegija. Planirat ćete, izgraditi i pokrenuti web prisutnost za stvarnu ili fiktivnu organizaciju, donoseći i obrazlažući odluke o odabiru platforme, strategiji sadržaja, dizajnu, SEO-u, analitici i odgovornom korištenju AI alata.
+
+## Zadatak
+
+Odaberite jedan od sljedećih scenarija (ili predložite vlastiti, uz odobrenje nastavnika).
+
+**Scenarij A.** Malo hrvatsko poduzeće (obrtnik, turistička usluga, konzultantska tvrtka, kreativni studio) koje trenutno nema web prisutnost i treba je.
+
+**Scenarij B.** Neprofitna organizacija ili građanska inicijativa koja želi pokrenuti kampanju podizanja svijesti s online središtem.
+
+**Scenarij C.** Osobni brend ili portfolio stranica za komunikacijskog stručnjaka koji ulazi na tržište rada.
+
+U svim slučajevima web prisutnost mora uključivati informacijski sadržaj (pripovijedanje priče, objašnjavanje misije, pružanje vrijednosti) i jasan konverzijski put (navođenje posjetitelja na akciju poput pretplate, rezervacije, upita ili kupnje).
+
+## Što se predaje
+
+1. **Strateški dokument** (maksimalno 1500 riječi). Obrazložite odabir platforme, definirajte ciljanu publiku, izložite plan sadržaja s najmanje 8 planiranih sadržajnih cjelina, mapirajte korisničko putovanje i opišite svoj SEO pristup.
+
+2. **Aktivna web prisutnost.** Funkcionalna stranica ili odredišna stranica izgrađena jednim od alata obrađenih na kolegiju (Webflow, WordPress, Shopify, Squarespace ili druga odobrena platforma). Minimalno 4 objavljene stranice ili sekcije.
+
+3. **Plan analitike i mjerenja.** Opišite što biste pratili, koji su KPI-jevi bitni za vaš scenarij i kako biste koristili podatke za iteraciju. Ako je moguće, instalirajte GA4 ili drugi analitički alat i pokažite postavu.
+
+4. **Izjava o korištenju AI-ja.** Dokumentirajte kako ste koristili (ili odlučili ne koristiti) AI alate u projektu. Čemu je AI pomogao? Što ste napravili ručno i zašto? Koje ste provjere kvalitete primijenili na AI generirani sadržaj?
+
+5. **Prezentacija** (10 minuta). Prezentirajte projekt pred razredom u Tjednu 15, pokrivajući strategiju, izvedbu i naučene lekcije.
+
+## Rubrika
+
+| Kriterij | Udio | Izvrsno | Zadovoljavajuće | Nedovoljno |
+|----------|:----:|---------|-----------------|-----------|
+| Strategija i obrazloženje | 25% | Jasna definicija publike, obrazložen odabir platforme, koherentan plan sadržaja usklađen s konverzijskim ciljevima | Osnovna strategija prisutna, ali neke odluke nisu dobro obrazložene | Nedostaju ključni strateški elementi ili nema jasnog obrazloženja |
+| Tehnička izvedba | 25% | Profesionalna, funkcionalna stranica s dobrim performansama, mobilnom responzivnošću i pristupačnošću | Funkcionalna, ali s problemima upotrebljivosti ili performansi | Nepotpuna ili nefunkcionalna implementacija |
+| Kvaliteta sadržaja | 20% | Originalan, dobro napisan, primjereno strukturiran sadržaj koji služi i informacijskim i konverzijskim ciljevima | Sadržaj prisutan, ali generičan ili loše organiziran | Minimalan ili probni sadržaj |
+| SEO i analitika | 15% | Promišljena SEO implementacija, postava analitike i plan mjerenja s konkretnim KPI-jevima | Osnovna SEO i analitička svijest, ali ograničena implementacija | Nema dokaza o SEO ili analitičkom razmišljanju |
+| Korištenje AI-ja i refleksija | 15% | Sofisticirano, pošteno korištenje AI-ja s jasnom evaluacijom kvalitete i promišljenom izjavom | Neko korištenje AI-ja dokumentirano, ali ograničena refleksija | Nema izjave o AI-ju ili nekritička ovisnost o AI-ju |
+
+## Rokovi
+
+| Ključna točka | Rok |
+|---------------|-----|
+| Odabir scenarija i odobrenje zadatka | Tjedan 6 |
+| Nacrt strateškog dokumenta | Tjedan 10 |
+| Aktivna stranica spremna za pregled | Tjedan 13 |
+| Završna predaja (svi elementi) | Tjedan 14 |
+| Prezentacija | Tjedan 15 |
+
+## Često postavljana pitanja
+
+**Mogu li raditi u paru?** Da, ali opseg mora proporcionalno rasti. Od parova se očekuje sveobuhvatniji projekt.
+
+**Što ako moja stranica koristi plaćenu platformu?** Koristite besplatne razine ili probne periode. Nemojte trošiti novac na ovaj projekt osim ako to ne želite iz osobnih razloga.
+
+**Koliko profesionalno mora izgledati?** Dovoljno profesionalno da biste se osjećali ugodno pokazati to potencijalnom poslodavcu ili klijentu. Ne mora biti gotov komercijalni proizvod.

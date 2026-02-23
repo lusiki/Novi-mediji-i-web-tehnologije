@@ -1,0 +1,29 @@
+---
+title: "Tjedan 4: Sustavi za upravljanje sadržajem i moderni web stack"
+subtitle: "Od WordPressa do headless CMS-a, Shopifyja i modernih web graditelja"
+date: 2025-02-01
+categories: [temelji, cms]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
+
+## Sadržaj
+
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+*Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::

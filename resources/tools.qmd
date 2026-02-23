@@ -1,0 +1,82 @@
+---
+title: "Alati i platforme"
+subtitle: "Softver koji se koristi tijekom kolegija"
+---
+
+Ova stranica navodi alate i platforme koje ćemo koristiti ili o kojima ćemo govoriti tijekom semestra. Ne trebate instalirati sve odjednom. Materijali za svaki tjedan specificirat će što je potrebno za tu sesiju.
+
+## Preglednik i razvojni alati
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| Google Chrome ili Firefox | Primarni preglednik s razvojnim alatima | Besplatno preuzimanje |
+| Chrome DevTools / Firefox Inspector | Inspekcija web zahtjeva, DOM-a, mrežne aktivnosti | Ugrađeno u preglednik |
+
+## SEO i analitika
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| Google Search Console | Razumijevanje kako Google vidi web stranicu | Besplatno s Google računom |
+| Google Analytics 4 | Web analitika i praćenje konverzija | Besplatno s Google računom |
+| Ubersuggest / Ahrefs free alati | Istraživanje ključnih riječi i SEO audit | Dostupna besplatna razina |
+| PageSpeed Insights | Testiranje performansi i Core Web Vitals | Besplatno, web bazirano |
+| Hotjar | Toplinske karte i snimanje sesija | Dostupna besplatna razina |
+
+## Upravljanje sadržajem i izrada stranica
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| WordPress.com | Tradicionalni CMS, koristi se za usporedbu | Dostupna besplatna razina |
+| Webflow | Vizualni graditelj stranica i CMS | Dostupna besplatna razina |
+| Shopify | Platforma s podrškom za trgovinu | Besplatni probni period |
+| Squarespace | Graditelj stranica s mogućnostima trgovine | Besplatni probni period |
+
+## No code i automatizacija
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| Notion | Upravljanje znanjem, baze podataka, wiki | Besplatno za obrazovanje |
+| Airtable | Hibrid proračunske tablice i baze podataka za planiranje sadržaja | Dostupna besplatna razina |
+| Canva | Izrada vizualnog sadržaja | Besplatna razina, popust za obrazovanje |
+| Zapier | Automatizacija radnih tokova između servisa | Besplatna razina (ograničena) |
+| Make (Integromat) | Napredna automatizacija radnih tokova | Dostupna besplatna razina |
+
+## Oblak i suradnja
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| Google Workspace | Suradnja na dokumentima, email, kalendar | Sveučilišni račun |
+| Microsoft 365 | Alternativni suradnički paket | Sveučilišni račun |
+| Slack | Timska komunikacija | Dostupna besplatna razina |
+| Trello / Asana | Upravljanje projektima | Dostupna besplatna razina |
+
+## AI alati
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| ChatGPT / Claude | Generiranje teksta, analiza, pomoć u kodiranju | Dostupne besplatne razine |
+| Midjourney / DALL-E | Generiranje slika | Besplatne razine ili probni periodi |
+| Gamma / Beautiful.ai | AI potpomognuta izrada prezentacija | Dostupne besplatne razine |
+| Copy.ai / Jasper | Generiranje marketinškog teksta | Besplatni probni periodi |
+
+## Pristupačnost i testiranje
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| WAVE | Evaluacija pristupačnosti weba | Besplatno, proširenje preglednika |
+| axe DevTools | Testiranje pristupačnosti u pregledniku | Besplatno proširenje preglednika |
+| Lighthouse | Automatizirano auditiranje performansi i pristupačnosti | Ugrađeno u Chrome DevTools |
+
+## Multimedijska produkcija
+
+| Alat | Namjena | Pristup |
+|------|---------|---------|
+| Canva | Brzi vizualni sadržaj i grafike za društvene mreže | Besplatna razina |
+| DaVinci Resolve | Obrada videa | Dostupna besplatna verzija |
+| Audacity | Obrada zvuka i podcast produkcija | Besplatno, otvoreni kod |
+| OBS Studio | Snimanje zaslona i live streaming | Besplatno, otvoreni kod |
+
+::: {.callout-tip}
+## Studentski računi
+Mnogi od ovih alata nude besplatan ili snižen pristup za studente. Koristite svoju sveučilišnu email adresu pri registraciji kako biste otključali obrazovne cijene.
+:::

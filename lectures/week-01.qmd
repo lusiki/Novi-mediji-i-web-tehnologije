@@ -1,0 +1,84 @@
+---
+title: "Tjedan 1: Web kao infrastruktura"
+subtitle: "Kako internet funkcionira i zašto komunikolozi to moraju razumjeti"
+date: 2025-02-01
+categories: [temelji, infrastruktura]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+Nakon ovog predavanja studenti će moći:
+
+1. Objasniti razliku između interneta i World Wide Weba
+2. Opisati putovanje web zahtjeva od preglednika do poslužitelja i natrag
+3. Identificirati ključne protokole (HTTP/HTTPS, DNS, TCP/IP) koji omogućuju web komunikaciju
+4. Artikulirati zašto je tehnička pismenost važna za komunikacijske stručnjake
+:::
+
+## Od ARPANET-a do modernog weba
+
+Internet je započeo kao vojna i akademska istraživačka mreža kasnih 1960-ih. ARPANET je povezao nekolicinu sveučilišnih računala i dokazao da komutacija paketa, ideja razbijanja podataka na male dijelove i njihovog neovisnog usmjeravanja, može pouzdano funkcionirati na velikim udaljenostima. World Wide Web stigao je tri desetljeća kasnije, kada je Tim Berners Lee u CERN-u predložio sustav hipertekstualnih dokumenata dostupnih putem preglednika. Razlika je bitna jer je internet fizička i logička infrastruktura (kabeli, usmjerivači, protokoli), dok je web jedna aplikacija koja se izvršava na toj infrastrukturi, zajedno s elektroničkom poštom, prijenosom datoteka, streamingom i mnogim drugim uslugama.
+
+Danas je web postao zadano sučelje za gotovo sve: objavljivanje, trgovinu, zabavu, upravljanje, obrazovanje i međuljudsku komunikaciju. Za komunikacijskog stručnjaka to znači da će gotovo svaka poruka koju oblikujete, svaka kampanja koju provedete i svaki sadržaj kojim upravljate u nekom trenutku putovati kroz web infrastrukturu. Razumijevanje načina na koji ta infrastruktura funkcionira nije izborna specijalizacija, nego temeljna pismenost.
+
+## Kako funkcionira web zahtjev
+
+Kada upišete URL u preglednik ili kliknete na poveznicu, u milisekundama se odvija niz događaja.
+
+**DNS rezolucija.** Preglednik mora prevesti čitljivu domenu (npr. `example.com`) u numeričku IP adresu. Šalje upit DNS poslužitelju koji funkcionira poput telefonskog imenika za internet, vraćajući adresu poslužitelja na kojem se web stranica nalazi.
+
+**TCP veza.** Preglednik uspostavlja TCP (Transmission Control Protocol) vezu s poslužiteljem. To je rukovanje koje osigurava da su obje strane spremne za pouzdanu razmjenu podataka.
+
+**HTTP zahtjev.** Preglednik šalje HTTP (Hypertext Transfer Protocol) zahtjev poslužitelju, tražeći određeni resurs (stranicu, sliku, skriptu). Ako veza koristi HTTPS, podaci su šifrirani pomoću TLS-a, što je danas standard za svaku stranicu koja obrađuje osjetljive informacije ili želi dobro rangiranje u tražilicama.
+
+**Odgovor poslužitelja.** Poslužitelj obrađuje zahtjev i šalje natrag odgovor koji sadrži HTML, CSS, JavaScript, slike i druge resurse. Preglednik ih prima i počinje prikazivati stranicu.
+
+**Prikazivanje (rendering).** Preglednik parsira HTML za izgradnju Document Object Modela (DOM), primjenjuje CSS stilove, izvršava JavaScript i crta vidljivu stranicu. Ovaj proces uključuje desetke podkoraka i upravo tu optimizacija performansi postaje kritična, tema na koju ćemo se vratiti kada budemo govorili o Core Web Vitals i korisničkom iskustvu.
+
+::: {.callout-tip}
+## Praktična relevantnost
+Svaka milisekunda kašnjenja u ovom lancu košta angažman. Istraživanja dosljedno pokazuju da sporije učitavane stranice dovode do viših stopa napuštanja, nižih stopa konverzije i smanjenog zadovoljstva. Kao komunikolog koji bira platforme i dizajnira sadržaj, donosite infrastrukturne odluke bili toga svjesni ili ne.
+:::
+
+## Protokoli koji su važni
+
+**HTTP/HTTPS** upravlja komunikacijom između preglednika i poslužitelja. "S" (sigurna) verzija šifrira promet i danas je očekivana i od korisnika i od tražilica. Svaku stranicu bez HTTPS-a moderni preglednici označavaju kao nesigurnu.
+
+**DNS** prevodi imena domena u IP adrese. Razumijevanje DNS-a pomaže objasniti kako organizacije upravljaju svojom web prisutnošću, kako funkcionira vlasništvo nad domenama i kako napadi poput DNS spoofinga mogu preusmjeriti korisnike na zlonamjerne stranice.
+
+**API-ji (Application Programming Interfaces)** omogućuju različitim web servisima međusobnu komunikaciju. Kada web stranica prikazuje Google kartu, obrađuje Stripe plaćanje ili povlači sadržaj s društvenih mreža, koristi API-je. Moderni web nije zbirka izoliranih stranica nego mreža međusobno povezanih servisa koji razmjenjuju podatke kroz API-je.
+
+**Platežni protokoli.** Online transakcije oslanjaju se na dodatne slojeve sigurnosti i standardizacije, od TLS šifriranja do PCI usklađenosti i servisa poput Stripea i PayPala koji apstrahiraju složenost rukovanja financijskim podacima. Razumijevanje da jednostavni gumb "Kupi odmah" pokreće kaskadu autentificiranih, šifriranih API poziva pomaže komunikolozima shvatiti što je u pitanju kada dizajniraju ili upravljaju transakcijskim web iskustvima.
+
+## Web danas: platforme, protokoli i povezani uređaji
+
+Web se razvio daleko izvan statičnih stranica. Danas obuhvaća single page aplikacije koje se ponašaju poput desktop softvera, progresivne web aplikacije koje rade i bez mrežne veze, komunikaciju u stvarnom vremenu (videopozivi, chat), IoT uređaje koji šalju podatke na nadzorne ploče u oblaku te AI servise koji odgovaraju na upite u prirodnom jeziku. Sve to i dalje ovisi o istim temeljnim protokolima, ali složenost i mogućnosti onoga što se izvršava na njima enormno su se proširile.
+
+Za komunikacijske stručnjake to znači da "web" više nisu samo web stranice. To je vezivno tkivo digitalnog života, sloj kroz koji organizacije dosežu publiku, služe korisnike, prikupljaju podatke, automatiziraju procese i grade odnose. Ostatak ovog kolegija istražit će svaku od ovih dimenzija u dubinu.
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+1. Internet je infrastruktura; web je aplikacija koja se na njoj izvršava
+2. Web zahtjev uključuje DNS, TCP, HTTP/S, obradu na poslužitelju i prikazivanje u pregledniku
+3. HTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava
+4. Tehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+**Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna**
+
+Prije sljedećeg tjedna pokušajte pretražiti istu temu na Googleu, Bingu i još jednoj tražilici (DuckDuckGo, Brave Search ili lokalna hrvatska tražilica). Zabilježite razlike u rezultatima. Dođite pripremljeni za raspravu o tome zašto različite tražilice vraćaju različite rezultate za isti upit.
+:::
+
+## Dodatno čitanje
+
+Za one koji žele dublje istražiti teme ovog tjedna:
+
+- Mozilla Developer Network: [How the Web Works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+- Cloudflare Learning Center: [What is DNS?](https://www.cloudflare.com/learning/dns/what-is-dns/)
+- Google: [Why HTTPS Matters](https://web.dev/why-https-matters/)

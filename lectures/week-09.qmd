@@ -1,0 +1,29 @@
+---
+title: "Tjedan 9: Web analitika i komunikacija temeljena na podacima"
+subtitle: "Metrike, lijevci, atribucija i odluke temeljene na dokazima"
+date: 2025-02-01
+categories: [primjena, analitika]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
+
+## Sadržaj
+
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+*Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::

@@ -1,0 +1,29 @@
+---
+title: "Tjedan 10: UX, UI i pristupačan dizajn za web"
+subtitle: "Dizajn usmjeren na korisnika, persuazivni obrasci i inkluzivna web iskustva"
+date: 2025-02-01
+categories: [primjena, dizajn]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
+
+## Sadržaj
+
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+*Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::

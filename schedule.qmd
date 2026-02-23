@@ -1,0 +1,48 @@
+---
+title: "Raspored"
+---
+
+Ova stranica prati semestar tjedan po tjedan. Status, poveznice na materijale i bilješke ažuriraju se nakon svake sesije.
+
+## Tjedni pregled
+
+| Tjedan | Datum | Tema predavanja | Seminarska aktivnost | Status |
+|:------:|:-----:|-----------------|---------------------|:------:|
+| 1 | TBD | [Web kao infrastruktura](lectures/week-01.qmd) | [Anatomija web zahtjeva](seminars/week-01.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 2 | TBD | [Pretraživanje i pronalažljivost](lectures/week-02.qmd) | [SEO audit radionica](seminars/week-02.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 3 | TBD | [Vrednovanje informacija](lectures/week-03.qmd) | [Povjerenje i vjerodostojnost](seminars/week-03.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 4 | TBD | [CMS i moderni web stack](lectures/week-04.qmd) | [Usporedba CMS platformi](seminars/week-04.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 5 | TBD | [No code i low code alati](lectures/week-05.qmd) | [No code sprint](seminars/week-05.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 6 | TBD | [Računalstvo u oblaku](lectures/week-06.qmd) | [Simulacija suradnje](seminars/week-06.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 7 | TBD | [Strategija sadržaja](lectures/week-07.qmd) | [Radionica strategije](seminars/week-07.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 8 | TBD | [Kolokvij](lectures/week-08.qmd) | Kolokvij | [Nadolazeće]{.badge-upcoming} |
+| 9 | TBD | [Web analitika](lectures/week-09.qmd) | [Analitika u praksi](seminars/week-09.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 10 | TBD | [UX, UI i pristupačnost](lectures/week-10.qmd) | [UX i audit pristupačnosti](seminars/week-10.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 11 | TBD | [Generativna AI](lectures/week-11.qmd) | [AI alati u praksi](seminars/week-11.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 12 | TBD | [Etika AI-ja](lectures/week-12.qmd) | [Etička studija slučaja](seminars/week-12.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 13 | TBD | [Digitalna regulativa](lectures/week-13.qmd) | [Regulatorna studija slučaja](seminars/week-13.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 14 | TBD | [Multimedijsko pripovijedanje](lectures/week-14.qmd) | [Multimedijska produkcija](seminars/week-14.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 15 | TBD | [Sinteza i prezentacije](lectures/week-15.qmd) | [Prezentacije projekata](seminars/week-15.qmd) | [Nadolazeće]{.badge-upcoming} |
+
+## Datumi ocjenjivanja
+
+| Aktivnost | Datum | Udio |
+|-----------|:-----:|:----:|
+| Kolokvij | Tjedan 8 (TBD) | 20% |
+| Predaja praktičnog projekta | Tjedan 14 (TBD) | 30% |
+| Seminarski portfolio | Kontinuirano | 20% |
+| Završni ispit | TBD | 30% |
+
+## Bilješke sa sesija
+
+Bilješke s predavanja i seminara bit će dodavane ovdje kako semestar bude napredovao.
+
+<!--
+Predložak za tjedne bilješke:
+
+### Tjedan N (datum)
+
+**Što smo obradili:** Kratki sažetak.
+**Što se promijenilo:** Odstupanja od plana.
+**Priprema za sljedeći tjedan:** Što studenti trebaju napraviti prije sljedeće sesije.
+-->

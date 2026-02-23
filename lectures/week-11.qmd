@@ -1,0 +1,29 @@
+---
+title: "Tjedan 11: Generativna AI i web tehnologije"
+subtitle: "Kako AI transformira stvaranje sadržaja, personalizaciju i digitalne radne tokove"
+date: 2025-02-01
+categories: [granica, ai]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
+
+## Sadržaj
+
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+*Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::

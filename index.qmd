@@ -1,0 +1,46 @@
+---
+title: "Novi mediji i web tehnologije"
+subtitle: "Kolegij za studente komunikologije"
+---
+
+## O kolegiju
+
+Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kroz platforme i alate koje komunikolozi danas koriste, do najnovijih tehnologija koje preoblikuju struku. Do kraja semestra studenti će moći kritički vrednovati, strateški planirati i praktično izvoditi web komunikaciju koja služi informacijskim i komercijalnim ciljevima u profesionalnom okruženju.
+
+::: {.callout-note}
+## Osnovni podaci
+**Studij:** Komunikologija (R), 2. godina  
+**Semestar:** Ljetni 2025/2026  
+**ECTS bodovi:** 5  
+**Opterećenje:** 30h predavanja + 15h seminara  
+**Mjesto:** HKS, prema objavljenom rasporedu  
+**Nositelj:** doc. dr. sc. Luka Šikić ([luka.sikic@unicath.hr](mailto:luka.sikic@unicath.hr))  
+**Konzultacije:** Prema objavljenom rasporedu
+:::
+
+## Struktura kolegija
+
+Kolegij je organiziran u tri cjeline.
+
+**Tjedni 1 do 5** grade temeljnu web pismenost. Kako web funkcionira, kako se sadržaj pronalazi, kako vrednovati informacije na internetu, kako se platforme biraju i grade te kako koristiti moderne alate bez programiranja.
+
+**Tjedni 6 do 10** razvijaju primijenjene profesionalne kompetencije. Suradnja u oblaku, strategija sadržaja, donošenje odluka na temelju podataka i dizajnersko razmišljanje koje prati cjelokupno korisničko putovanje.
+
+**Tjedni 11 do 15** suočavaju se s najnovijim razvojem. Generativna umjetna inteligencija, etički i regulatorni izazovi, multimedijska produkcija te sinteza svega naučenog kroz studentske prezentacije projekata.
+
+## Brzi pristup
+
+| Resurs | Opis |
+|--------|------|
+| [Silabus](syllabus.qmd) | Cjelokupni silabus s opisima predavanja |
+| [Raspored](schedule.qmd) | Tjedni raspored s materijalima i statusom |
+| [Popis literature](resources/reading-list.qmd) | Obavezna i preporučena literatura |
+| [Alati](resources/tools.qmd) | Softver i platforme koje se koriste na kolegiju |
+| [Praktični projekt](projects/practical-project.qmd) | Upute za projekt, rubrika i rokovi |
+
+## Obavijesti
+
+::: {.callout-important}
+## Najnovije
+Stranica kolegija je aktivna. Dobrodošli u ljetni semestar. Provjerite [raspored](schedule.qmd) za pripremu za prvi tjedan.
+:::

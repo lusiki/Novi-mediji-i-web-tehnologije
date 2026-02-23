@@ -1,0 +1,29 @@
+---
+title: "Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna"
+subtitle: "Tražilice, SEO i putovanje od upita do klika"
+date: 2025-02-01
+categories: [temelji, seo]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
+
+## Sadržaj
+
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+*Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::

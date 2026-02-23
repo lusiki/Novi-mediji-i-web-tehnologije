@@ -1,0 +1,114 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Novi mediji i web tehnologije | KOMP4-3"
+  site-url: https://lusiki.github.io/Novi-mediji-i-web-tehnologije/
+  repo-url: https://github.com/lusiki/Novi-mediji-i-web-tehnologije
+  repo-actions: [edit, issue]
+  
+  page-navigation: true
+  back-to-top-navigation: true
+  search: true
+  
+  navbar:
+    background: "#1a1a2e"
+    foreground: "#e6e6e6"
+    left:
+      - text: "Početna"
+        href: index.qmd
+      - text: "Silabus"
+        href: syllabus.qmd
+      - text: "Raspored"
+        href: schedule.qmd
+      - text: "Predavanja"
+        menu:
+          - text: "Tjedan 1: Web kao infrastruktura"
+            href: lectures/week-01.qmd
+          - text: "Tjedan 2: Pretraživanje i pronalažljivost"
+            href: lectures/week-02.qmd
+          - text: "Tjedan 3: Vrednovanje informacija na webu"
+            href: lectures/week-03.qmd
+          - text: "Tjedan 4: CMS i moderni web stack"
+            href: lectures/week-04.qmd
+          - text: "Tjedan 5: No code i low code alati"
+            href: lectures/week-05.qmd
+          - text: "Tjedan 6: Računalstvo u oblaku i suradnički rad"
+            href: lectures/week-06.qmd
+          - text: "Tjedan 7: Strategija sadržaja"
+            href: lectures/week-07.qmd
+          - text: "Tjedan 8: Kolokvij"
+            href: lectures/week-08.qmd
+          - text: "Tjedan 9: Web analitika"
+            href: lectures/week-09.qmd
+          - text: "Tjedan 10: UX, UI i pristupačan dizajn"
+            href: lectures/week-10.qmd
+          - text: "Tjedan 11: Generativna AI i web tehnologije"
+            href: lectures/week-11.qmd
+          - text: "Tjedan 12: Etika AI-ja i sintetički mediji"
+            href: lectures/week-12.qmd
+          - text: "Tjedan 13: Digitalna regulativa"
+            href: lectures/week-13.qmd
+          - text: "Tjedan 14: Multimedijsko pripovijedanje"
+            href: lectures/week-14.qmd
+          - text: "Tjedan 15: Sinteza i prezentacije"
+            href: lectures/week-15.qmd
+      - text: "Seminari"
+        menu:
+          - text: "Tjedan 1: Anatomija web zahtjeva"
+            href: seminars/week-01.qmd
+          - text: "Tjedan 2: SEO audit radionica"
+            href: seminars/week-02.qmd
+          - text: "Tjedan 3: Povjerenje i vjerodostojnost"
+            href: seminars/week-03.qmd
+          - text: "Tjedan 4: Usporedba CMS platformi"
+            href: seminars/week-04.qmd
+          - text: "Tjedan 5: No code sprint"
+            href: seminars/week-05.qmd
+          - text: "Tjedan 6: Simulacija suradnje u oblaku"
+            href: seminars/week-06.qmd
+          - text: "Tjedan 7: Radionica strategije sadržaja"
+            href: seminars/week-07.qmd
+          - text: "Tjedan 8: Kolokvij"
+            href: seminars/week-08.qmd
+          - text: "Tjedan 9: Analitika u praksi"
+            href: seminars/week-09.qmd
+          - text: "Tjedan 10: UX i audit pristupačnosti"
+            href: seminars/week-10.qmd
+          - text: "Tjedan 11: AI alati u praksi"
+            href: seminars/week-11.qmd
+          - text: "Tjedan 12: Etička studija slučaja"
+            href: seminars/week-12.qmd
+          - text: "Tjedan 13: Regulatorna studija slučaja"
+            href: seminars/week-13.qmd
+          - text: "Tjedan 14: Multimedijska produkcija"
+            href: seminars/week-14.qmd
+          - text: "Tjedan 15: Prezentacije projekata"
+            href: seminars/week-15.qmd
+      - text: "Resursi"
+        menu:
+          - text: "Popis literature"
+            href: resources/reading-list.qmd
+          - text: "Alati"
+            href: resources/tools.qmd
+      - text: "Projekt"
+        href: projects/practical-project.qmd
+
+  page-footer:
+    left: "Novi mediji i web tehnologije | HKS 2025/2026"
+    right: "Izrađeno pomoću [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-title: "Sadržaj"
+    code-fold: true
+    code-tools: true
+    highlight-style: github
+    lang: hr

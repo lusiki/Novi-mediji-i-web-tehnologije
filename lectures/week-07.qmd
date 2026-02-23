@@ -1,0 +1,29 @@
+---
+title: "Tjedan 7: Strategija sadržaja i digitalne uredničke operacije"
+subtitle: "Planiranje, upravljanje i mjerenje sadržaja kroz korisničko putovanje"
+date: 2025-02-01
+categories: [primjena, sadržaj]
+draft: false
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
+
+## Sadržaj
+
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
+*Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::
