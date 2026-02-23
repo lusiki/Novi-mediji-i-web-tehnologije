@@ -1,0 +1,68 @@
+/* Prilagođeni stilovi za stranicu kolegija */
+
+/* Statusne oznake za raspored */
+.badge-completed {
+  background-color: #28a745;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.badge-upcoming {
+  background-color: #6c757d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.badge-current {
+  background-color: #007bff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Stilovi za stranice predavanja */
+.learning-objectives {
+  border-left: 4px solid #007bff;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+.key-takeaways {
+  border-left: 4px solid #28a745;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+.next-week-preview {
+  border-left: 4px solid #ffc107;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  background-color: rgba(255, 193, 7, 0.05);
+}
+
+/* Šire područje sadržaja */
+.content {
+  max-width: 900px;
+}
+
+/* Ljepše tablice */
+.table {
+  font-size: 0.95em;
+}

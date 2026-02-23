@@ -1,0 +1,352 @@
+[
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Silabus",
+    "section": "",
+    "text": "Kontekst kolegija. Komunikologija, 2. godina, 5 ECTS, 30h predavanja + 15h seminara, ljetni semestar 2025/2026.\nNarativ kolegija. Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kroz platforme i alate koje komunikolozi danas koriste, do najnovijih tehnologija koje preoblikuju struku. Prva trećina gradi temeljnu web pismenost (kako web funkcionira, kako se sadržaj pronalazi, kako se platforme biraju i grade). Srednja trećina fokusira se na primijenjene kompetencije (suradnja u oblaku, strategija sadržaja, podatkovna pismenost, dizajnersko razmišljanje i razumijevanje kako digitalna prisutnost stvara organizacijsku vrijednost). Završna trećina suočava se s najnovijim razvojem (generativna AI, algoritamski mediji, regulativa i budućnost digitalne komunikacije). Svaki tjedan nadograđuje se na prethodni tako da studenti na kraju mogu kritički vrednovati, strateški planirati i praktično izvoditi web komunikaciju koja služi i informacijskim i komercijalnim ciljevima u profesionalnom okruženju."
+  },
+  {
+    "objectID": "syllabus.html#predavanja-15-tjedana-2h",
+    "href": "syllabus.html#predavanja-15-tjedana-2h",
+    "title": "Silabus",
+    "section": "Predavanja (15 tjedana × 2h)",
+    "text": "Predavanja (15 tjedana × 2h)\n\nTjedan 1. Web kao infrastruktura\nOvo predavanje prati evoluciju interneta od ARPANET-a preko nastanka World Wide Weba do današnjeg ekosustava platformi, protokola i povezanih uređaja koji omogućuju sve, od objavljivanja sadržaja do transakcija. Razumijevanje ove povijesti važno je jer komunikacijski stručnjaci moraju poznavati tehničku podlogu na kojoj svi digitalni mediji funkcioniraju, uključujući način na koji DNS, HTTP/HTTPS, preglednici, poslužitelji, API-ji i platežni protokoli surađuju u isporuci sadržaja i omogućavanju razmjene. Ovo predavanje postavlja temelje za sve sljedeće teme uspostavljajući zajednički rječnik i mentalni model o tome kako informacije i vrijednost teku mrežom.\n\n\nTjedan 2. Kako funkcionira pretraživanje i zašto je pronalažljivost važna\nOvo predavanje objašnjava kako tražilice indeksiraju i rangiraju web sadržaj, pokrivajući moderne SEO principe poput namjere pretraživanja (informacijska, navigacijska, transakcijska), E E A T (iskustvo, stručnost, autoritet, pouzdanost), strukturiranih podataka, bogatih rezultata i Core Web Vitals. Za komunikologe, pronalažljivost određuje hoće li poruka, proizvod ili usluga doći do ciljane publike, a razumijevanje načina na koji Google, Bing i sve više AI tražilice prikazuju i rangiraju sadržaj predstavlja stratešku prednost. Ovaj tjedan izravno se nadovezuje na infrastrukturu iz Tjedna 1 pokazujući kako sadržaj putuje od poslužitelja do rezultata pretraživanja do trenutka kada korisnik odluči kliknuti, pretplatiti se ili kupiti.\n\n\nTjedan 3. Vrednovanje informacija i provjera izvora na webu\nOvo predavanje osposobljava studente za kritičku procjenu vjerodostojnosti, pristranosti i točnosti informacija na internetu, uključujući lateralno čitanje, CRAAP testove, obrnuto pretraživanje slika, otkrivanje autentičnosti recenzija i platforme za provjeru činjenica. U doba sintetičkih medija, fabriciranih recenzija i algoritamski pojačane dezinformacije, sposobnost provjere izvora i procjene signala povjerenja temeljna je profesionalna kompetencija svakog komunikologa koji radi u digitalnom okruženju. Nadovezuje se na pretraživačku pismenost iz Tjedna 2 postavljajući pitanje ne samo kako se sadržaj pronalazi, nego kako se može procijeniti njegova kvaliteta, istinitost i komercijalna pouzdanost.\n\n\nTjedan 4. Sustavi za upravljanje sadržajem i moderni web stack\nOvo predavanje daje pregled načina na koji se danas grade i upravljaju web stranice, od tradicionalnih CMS platformi poput WordPressa do headless sustava (Strapi, Sanity, Contentful), platformi s podrškom za trgovinu (Shopify, WooCommerce), generatora statičnih stranica i modernih web graditelja (Webflow, Squarespace, Framer). Komunikacijski stručnjaci redovito donose ili utječu na odluke o platformama, stoga je razumijevanje kompromisa između fleksibilnosti, cijene, mogućnosti transakcija, održavanja i skalabilnosti izravno relevantno za njihov rad. Ova sesija premošćuje tehničke temelje prethodnih tjedana s praktičnom stvarnošću objavljivanja, upravljanja i monetizacije web sadržaja.\n\n\nTjedan 5. No code i low code alati za komunikologe\nOvo predavanje predstavlja ekosustav no code i low code platformi koje komunikacijskim stručnjacima omogućuju izradu web stranica, automatizaciju radnih tokova, povezivanje servisa i stvaranje digitalnih proizvoda bez tradicionalnog programiranja, uključujući alate poput Webflowa, Notiona, Airtablea, Canve, Zapiera, Makea te integracije za plaćanje i rezervacije poput Stripea i Calendlyja. Porast ovih alata demokratizirao je web produkciju i znači da komunikolozi mogu samostalno pokrenuti sve, od odredišnih stranica do automatiziranih korisničkih putovanja. Proširuje Tjedan 4 prelazeći od razumijevanja platformi na njihovo aktivno korištenje, postavljajući primijenjene vještine koje će studentima trebati za praktične projekte.\n\n\nTjedan 6. Računalstvo u oblaku i suradnički rad\nOvo predavanje pokriva osnove računalstva u oblaku (IaaS, PaaS, SaaS), glavne pružatelje usluga (AWS, Azure, Google Cloud) te alate u oblaku koji definiraju moderni organizacijski rad, od suradničkih paketa (Google Workspace, Microsoft 365, Slack) do CRM sustava, platformi za email marketing te servisa za upravljanje projektima i zalihama. Pismenost o oblaku ključna je jer gotovo svi profesionalni radni tokovi danas ovise o infrastrukturi u oblaku, bilo da organizacija upravlja sadržajem, koordinira kampanje, obrađuje narudžbe ili analizira korisničke podatke. Prebacuje kolegij s individualne web pismenosti prema razumijevanju načina na koji timovi i organizacije funkcioniraju, komuniciraju i stvaraju vrijednost digitalno.\n\n\nTjedan 7. Strategija sadržaja i digitalne uredničke operacije\nOvo predavanje uvodi strategiju sadržaja kao disciplinu, pokrivajući uredničko planiranje, upravljanje sadržajem, višekanalno objavljivanje, kalendare sadržaja, mapiranje korisničkog putovanja i usklađivanje web sadržaja s organizacijskim ciljevima od svijesti o brendu preko angažmana do konverzije. Diplomirani komunikolozi vjerojatno će upravljati ili doprinositi operacijama sadržaja gdje svaki komad sadržaja služi svrsi u pomicanju publike prema željenoj akciji, što ovu temu čini jednom od izravno najprimjenjivijih na kolegiju. Povezuje suradnju u oblaku (Tjedan 6) s web platformama (Tjedni 4 i 5) pokazujući kako sadržaj putuje od ideje kroz produkciju do objavljivanja, mjerenja i komercijalnog učinka.\n\n\nTjedan 8. Kolokvij\n\n\nTjedan 9. Web analitika i komunikacija temeljena na podacima\nOvo predavanje upoznaje studente s platformama za web analitiku (Google Analytics 4, uvidi s društvenih mreža, alati za toplinske karte) i ključnim metrikama koje komunikolozi koriste za vrednovanje digitalnog učinka, uključujući izvore prometa, stope angažmana, konverzijske lijevke, modele atribucije, životnu vrijednost korisnika i segmentaciju publike. Podatkovna pismenost više nije opcija za komunikacijske stručnjake jer svaka strateška odluka o sadržaju, kampanjama, ulaganju u platforme i raspodjeli proračuna treba biti potkrijepljena dokazima o tome što zapravo donosi rezultate. Slijedi tjedan strategije sadržaja zaokružujući petlju od planiranja preko izvršenja do mjerenja, optimizacije i povrata na ulaganje.\n\n\nTjedan 10. UX, UI i pristupačan dizajn za web\nOvo predavanje pokriva principe dizajna korisničkog iskustva, dizajna korisničkog sučelja, responzivnih rasporeda, persuazivnih dizajnerskih obrazaca, arhitekture povjerenja (sigurnosne oznake, transparentno određivanje cijena, jasni pozivi na akciju) te standarde web pristupačnosti (WCAG) uključujući obveze prema EU Direktivi o pristupačnosti weba. Komunikolozi koji razumiju kako korisnici navigiraju sučeljima, donose odluke i dovršavaju akcije na webu mogu stvarati iskustva koja su uvjerljiva, pouzdana i inkluzivna, što je sve više i konkurentska prednost i zakonska obveza. Produbljuje dizajnersko razmišljanje uvedeno kroz CMS i no code alate dodajući perspektivu usmjerenu na čovjeka koja razmatra cjelokupno korisničko putovanje od prvog dojma do završne akcije.\n\n\nTjedan 11. Generativna AI i web tehnologije\nOvo predavanje pruža sveobuhvatan pregled načina na koji generativna AI (veliki jezični modeli, generatori slika, sinteza videa, asistenti za kodiranje) transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove. Ovo je vjerojatno najznačajnija tehnološka promjena za komunikacijsku struku u generaciji, utječući na sve od copywritinga i SEO-a do vizualne produkcije, preporuka proizvoda, dinamičke personalizacije i konverzacijske interakcije s korisnicima putem chatbotova. Označava preokret kolegija prema najnovijim temama, nadograđujući praktične vještine iz ranijih tjedana kako bi se postavilo pitanje kako AI nadopunjuje, remeti i komplicira ulogu komunikologa u informacijskim i komercijalnim kontekstima.\n\n\nTjedan 12. Etika AI-ja, sintetički mediji i dezinformacije velikih razmjera\nOvo predavanje ispituje etičke dimenzije sadržaja generiranog AI-jem, uključujući deepfakeove, sintetičke medije, pitanja atribucije i autorstva, algoritamsku pristranost, tamne obrasce u persuazivnom dizajnu, fabricirane recenzije i izazov dezinformacija pokretanih AI-jem velikih razmjera. Za komunikacijske stručnjake koji su istovremeno kreatori i čuvari informacija, razumijevanje ovih rizika stvar je profesionalne odgovornosti, potrošačkog povjerenja i javne odgovornosti. Proširuje pregled AI-ja iz Tjedna 11 prelazeći s mogućnosti na posljedice i vraća se na vještine vrednovanja izvora iz Tjedna 3, sada primijenjene na svijet u kojem sadržaj, preporuke, pa čak i cijele online trgovine mogu biti u potpunosti strojno generirani.\n\n\nTjedan 13. Digitalna regulativa i pravni okvir\nOvo predavanje daje pregled regulatornih okvira koji oblikuju web tehnologije i digitalnu komunikaciju u Europi i globalno, uključujući GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama, Akt o digitalnim tržištima (s označavanjem platformskih čuvara vrata), direktive o zaštiti potrošača za online transakcije, PSD2 za digitalna plaćanja, autorsko pravo u doba AI-ja i upravljanje platformama. Komunikacijski stručnjaci svakodnevno djeluju unutar ovih pravnih okvira, bilo da obrađuju osobne podatke, objavljuju sadržaj, upravljaju online prodajnim kanalima, vode reklamne kampanje ili koriste AI alate. Pruža upravljački sloj koji kontekstualizira sve tehnologije i prakse obrađene tijekom kolegija.\n\n\nTjedan 14. Multimedijsko pripovijedanje za web\nOvo predavanje fokusira se na primijenjenu multimedijsku produkciju za web kontekste, pokrivajući pisanje za web, vizualno pripovijedanje, fotografiju proizvoda i brendova, audio i podcast produkciju, kratke video formate, kupljive i interaktivne formate sadržaja te live streaming kao komunikacijski kanal. Sposobnost produkcije i orkestracije multimedijskog sadržaja koji informira, angažira i pokreće publiku na akciju kroz platforme ključna je vještina modernih komunikologa. Sintetizira ranije niti (strategija sadržaja, dizajn, AI alati, analitika) u konkretnu praksu stvaranja profesionalnog web sadržaja koji služi i uredničkim i komercijalnim ciljevima.\n\n\nTjedan 15. Sinteza kolegija i prezentacije projekata\nOva završna sesija pregledava luk kolegija, od infrastrukture preko platformi i alata do AI-ja i regulative, i pruža prostor studentima za prezentaciju praktičnih projekata. Služi i kao završnica i kao rasprava okrenuta budućnosti o trendovima koje studenti trebaju pratiti kao profesionalci, od agentskih AI sustava i prostornog računalstva do razvijajuće dinamike moći platformi i algoritamskih medija. Studenti demonstriraju integrirano razumijevanje prezentirajući rad koji kombinira tehničku pismenost, strateško razmišljanje i kreativnu izvedbu."
+  },
+  {
+    "objectID": "syllabus.html#seminari-15-tjedana-1h",
+    "href": "syllabus.html#seminari-15-tjedana-1h",
+    "title": "Silabus",
+    "section": "Seminari (15 tjedana × 1h)",
+    "text": "Seminari (15 tjedana × 1h)\nSeminari su osmišljeni kao radionice, a ne kao ponavljanje predavanja. Svaka seminarska sesija uključuje praktične aktivnosti, grupne vježbe ili analize slučajeva koje primjenjuju gradivo s predavanja.\n\n\n\n\n\n\n\nTjedan\nSeminarska aktivnost\n\n\n\n\n1\nAnatomija web zahtjeva. Studenti prate putovanje URL-a od preglednika do poslužitelja koristeći razvojne alate, uspoređujući stranicu sa sadržajem i online trgovinu.\n\n\n2\nSEO audit radionica. Studentske grupe analiziraju stvarnu hrvatsku poslovnu web stranicu koristeći besplatne SEO alate, procjenjuju transakcijske u odnosu na informacijske ključne riječi i prezentiraju nalaze.\n\n\n3\nVježba povjerenja i vjerodostojnosti. Studenti procjenjuju niz online tvrdnji, recenzija proizvoda i brendovskih komunikacija kako bi utvrdili koje su autentične, a koje fabricirane.\n\n\n4\nUsporedba CMS platformi. Grupe vrednuju WordPress, Shopify i Webflow prema zadatku koji zahtijeva i urednički sadržaj i katalog proizvoda ili usluga.\n\n\n5\nNo code sprint. Studenti izrađuju odredišnu stranicu s jasnim pozivom na akciju (prijava, rezervacija ili kupnja) i automatizaciju radnog toka koja povezuje slanje obrazaca s emailom koristeći no code alat.\n\n\n6\nSimulacija suradnje u oblaku. Timovi dovršavaju zadatak produkcije kampanje (sadržaj + ponuda + plan distribucije) koristeći isključivo alate u oblaku pod vremenskim pritiskom.\n\n\n7\nRadionica strategije sadržaja. Grupe razvijaju kalendar sadržaja, mapu korisničkog putovanja i urednički plan za fiktivnu organizaciju koja pokreće online uslugu.\n\n\n8\nKolokvij\n\n\n9\nAnalitika u praksi. Studenti interpretiraju primjer Google Analytics podataka s web stranice koja ima i sadržajne i transakcijske ciljeve te daju preporuke za optimizaciju.\n\n\n10\nUX i audit pristupačnosti. Studenti testiraju online uslugu ili trgovinu prema WCAG kriterijima i najboljim konverzijskim praksama, zatim predlažu poboljšanja.\n\n\n11\nAI alati u praksi. Studenti koriste generativne AI alate za produkciju web sadržaja (opisi proizvoda, blog post, vizuali) te kritički vrednuju kvalitetu, originalnost i persuazivnost rezultata.\n\n\n12\nEtička studija slučaja. Studenti analiziraju slučajeve tamnih obrazaca, lažnih AI generiranih recenzija ili obmanjujućih sintetičkih medija i izrađuju dokument s etičkim smjernicama.\n\n\n13\nRegulatorna studija slučaja. Grupe analiziraju stvarni slučaj provedbe (GDPR kazna protiv online platforme, DSA akcija, presuda o zaštiti potrošača) i prezentiraju implikacije.\n\n\n14\nMultimedijska produkcija. Studenti stvaraju kratku multimedijsku web priču koja kombinira urednički sadržaj s persuazivnim ili komercijalnim elementom (priča o brendu, lansiranje proizvoda, teaser kampanje).\n\n\n15\nPrezentacije projekata i vršnjačka evaluacija."
+  },
+  {
+    "objectID": "syllabus.html#preporučena-literatura-u-izradi",
+    "href": "syllabus.html#preporučena-literatura-u-izradi",
+    "title": "Silabus",
+    "section": "Preporučena literatura (u izradi)",
+    "text": "Preporučena literatura (u izradi)\nPopis literature bit će izgrađen s aktualnim izvorima. Ispod su početni smjerovi organizirani po tematskim klasterima.\nTemeljna web pismenost. Duckett, J. (2024 ili posljednje izdanje) HTML and CSS. Mozilla Developer Network web dokumentacija (besplatno dostupna online). Google Search Central dokumentacija o SEO-u. Shopify Engineering Blog (odabrani postovi o web performansama i arhitekturi platformi).\nStrategija sadržaja i UX. Halvorson, K. i Rach, M. Content Strategy for the Web. Krug, S. Don’t Make Me Think (Revisited). Članci Nielsen Norman Group o UX istraživanju i optimizaciji konverzija (besplatno dostupni). Istraživanja Baymard Instituta o upotrebljivosti plaćanja (odabrane open access studije).\nOblak i suradnja. Odabrana poglavlja iz Armbrust i sur. (2010) A View of Cloud Computing (zadržano iz izvornog silabusa kao povijesno uporište). Aktualna dokumentacija dobavljača i studije slučaja. Salesforce/HubSpot bijele knjige o CRM-u i automatizaciji marketinga (odabrane, besplatno dostupne).\nGenerativna AI i etika. Crawford, K. (2021) Atlas of AI. Bender, E. i sur. (2021) On the Dangers of Stochastic Parrots. Dokumentacija Europske komisije o Aktu o AI-ju. Odabrani aktualni članci iz časopisa i kvalitetnih izvora o AI-ju u stvaranju sadržaja i personalizaciji.\nRegulativa. Službeni tekst EU GDPR-a (odabrani članci). Sažetak EU Akta o AI-ju. Pregled EU Akta o digitalnim uslugama. Pregled EU Akta o digitalnim tržištima (označavanje čuvara vrata). EU Direktiva o pravima potrošača za online usluge. Relevantni hrvatski regulatorni dokumenti.\nMultimedija i pripovijedanje. Stevens, J. i drugi o multimedijskom novinarstvu (odabrana poglavlja). Aktualni vodiči o pisanju za web, podcast produkciji, kratkim video formatima i vizualnoj trgovini profesionalnih organizacija.\nDigitalno poslovanje i analitika. Chaffey, D. i Ellis Chadwick, F. Digital Marketing: Strategy, Implementation and Practice (odabrana poglavlja o analitici i online propoziciji vrijednosti). Google Analytics Academy (besplatni online moduli)."
+  },
+  {
+    "objectID": "syllabus.html#ocjenjivanje",
+    "href": "syllabus.html#ocjenjivanje",
+    "title": "Silabus",
+    "section": "Ocjenjivanje",
+    "text": "Ocjenjivanje\nZadržan je postojeći omjer 70/30 (kontinuirano/završni), ali se težina unutar kontinuiranog ocjenjivanja pomiče prema primijenjenom radu.\n\n\n\n\n\n\n\nKomponenta\nUdio\n\n\n\n\nPraktični projekt (izgradnja web prisutnosti korištenjem alata s kolegija)\n30%\n\n\nSeminarska sudjelovanja i rezultati radionica\n20%\n\n\nKolokvij\n20%\n\n\nZavršni ispit\n30%\n\n\n\nPraktični projekt treba zahtijevati od studenata da pokažu integrirane kompetencije kroz materijal više tjedana, primjerice izgradnju i pokretanje web prisutnosti za stvarnu ili fiktivnu organizaciju koja uključuje strategiju sadržaja, odgovarajući odabir platforme, pristupačnost, SEO, postavljanje analitike, jasan konverzijski put (pretplata, upit, kupnja ili rezervacija) i odgovorno korištenje AI alata."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html",
+    "href": "SETUP_GUIDE.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#zašto-quarto-github-pages",
+    "href": "SETUP_GUIDE.html#zašto-quarto-github-pages",
+    "title": "",
+    "section": "Zašto Quarto + GitHub Pages",
+    "text": "Zašto Quarto + GitHub Pages\nVeć radite u R-u, pa je Quarto put najmanjeg otpora. Službeni je nasljednik R Markdowna, održava ga Posit, a od .qmd i .md datoteka generira profesionalnu web stranicu s navigacijom, pretragom, tamnim modom i mobilnom responzivnošću bez ikakvih frontend alata. GitHub Pages hostira stranicu besplatno. Radni tok je jednostavan: napišite sadržaj u markdownu, renderirajte lokalno s quarto render, commitajte i pushajte, a GitHub Actions automatski izgradi stranicu. Bez poslužitelja, bez troškova hostinga, bez problema s deploymentom.\nClaude Code idealan je pratilac za ovaj setup jer može scaffoldati datoteke, napisati sadržaj iz vaših bilješki, popraviti probleme s renderiranjem, upravljati git operacijama i ažurirati stranicu tjedan po tjedan kroz upute u prirodnom jeziku."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#preduvjeti",
+    "href": "SETUP_GUIDE.html#preduvjeti",
+    "title": "",
+    "section": "Preduvjeti",
+    "text": "Preduvjeti\nTrebate četiri stvari instalirane na svom računalu prije početka.\n1. Quarto CLI Ako imate noviju verziju RStudija (2022.07+) već ga imate. Inače instalirajte s https://quarto.org/docs/get-started/. Provjerite s quarto --version u terminalu.\n2. R i rmarkdown Ovo već imate. Samo provjerite da je install.packages(\"rmarkdown\") izvršeno.\n3. Git Provjerite s git --version. Ako nedostaje, instalirajte s https://git-scm.com/.\n4. GitHub račun Trebate GitHub račun i konfigurirane HTTPS vjerodajnice ili SSH ključ. Ako nikada niste pushali na GitHub sa svog računala, najlakši put je instalirati GitHub CLI (gh) i pokrenuti gh auth login.\n5. Claude Code Instalirajte s npm install -g @anthropic-ai/claude-code. Zahtijeva Node.js 18+. Ako nemate Node, instalirajte s https://nodejs.org/."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-1.-stvorite-github-repozitorij",
+    "href": "SETUP_GUIDE.html#korak-1.-stvorite-github-repozitorij",
+    "title": "",
+    "section": "Korak 1. Stvorite GitHub repozitorij",
+    "text": "Korak 1. Stvorite GitHub repozitorij\nMožete to napraviti ručno na github.com ili pustiti Claude Code da to odradi.\n\nOpcija A. Claude Code (preporučeno)\nOtvorite terminal, navigirajte do mjesta gdje želite projekt i pokrenite Claude Code.\ncd ~/Projects  # ili gdje god držite repozitorije\nclaude\nZatim mu recite:\nStvori novi git repozitorij nazvan \"web-tech-course\" s Quarto website \nstrukturom koja mi treba za sveučilišni kolegij. Inicijaliziraj git, \nstvori .gitignore za Quarto projekte i postavi GitHub Pages deployment \nputem GitHub Actions.\nClaude Code će scaffoldati sve. Kada završi, recite mu:\nStvori novi javni repozitorij na GitHubu nazvan web-tech-course pod mojim \nračunom i pushaj inicijalni commit.\n\n\nOpcija B. Ručno\nmkdir web-tech-course\ncd web-tech-course\ngit init\n# kopirajte starter datoteke (isporučene uz ovaj vodič)\ngit add .\ngit commit -m \"Inicijalna struktura stranice kolegija\"\ngh repo create web-tech-course --public --source=. --push"
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-2.-struktura-repozitorija",
+    "href": "SETUP_GUIDE.html#korak-2.-struktura-repozitorija",
+    "title": "",
+    "section": "Korak 2. Struktura repozitorija",
+    "text": "Korak 2. Struktura repozitorija\nStarter kit (datoteke isporučene uz ovaj vodič) ima sljedeću strukturu.\nweb-tech-course/\n├── _quarto.yml              # Konfiguracija stranice (naslov, navigacija, tema, jezik)\n├── index.qmd                # Početna stranica / pregled kolegija\n├── syllabus.qmd             # Cjelokupni silabus\n├── schedule.qmd             # Tjedni raspored s praćenjem statusa\n├── lectures/\n│   ├── _metadata.yml         # Zajedničke postavke za sve stranice predavanja\n│   ├── week-01.qmd          # Bilješke za Tjedan 1\n│   ├── week-02.qmd          # Tjedan 2 (predložak)\n│   └── ...                   # Jedna datoteka po tjednu\n├── seminars/\n│   ├── _metadata.yml\n│   ├── week-01.qmd          # Seminarski materijali za Tjedan 1\n│   └── ...\n├── resources/\n│   ├── reading-list.qmd     # Organiziran popis literature s poveznicama\n│   ├── tools.qmd            # Preporuke alata i tutorijali\n│   └── datasets/            # Primjeri skupova podataka za vježbe analitike\n├── projects/\n│   └── practical-project.qmd # Upute za projekt i rubrika\n├── assets/\n│   ├── images/              # Slike za predavanja, dijagrami\n│   └── slides/              # PDF ili reveal.js prezentacije\n├── .github/\n│   └── workflows/\n│       └── publish.yml       # GitHub Actions deployment\n├── .gitignore\n├── styles.css                # Prilagođeni CSS\n├── CLAUDE.md                 # Upute za Claude Code o konvencijama projekta\n└── README.md\nKljučne dizajnerske odluke.\nJedna .qmd datoteka po predavanju i seminaru. To čini ažuriranja atomskima. Kada pripremate Tjedan 5, dirate samo lectures/week-05.qmd i seminars/week-05.qmd. Ništa drugo se ne mijenja.\nDatoteke _metadata.yml postavljaju zadane vrijednosti (autor, format datuma, sadržaj) tako da individualne datoteke predavanja ostaju čiste.\nDatoteka schedule.qmd djeluje kao živa nadzorna ploča. Svaki tjedan ažurirate jednostavnu tablicu kako biste označili što je obrađeno, povezali materijale i zabilježili promjene.\nMapa resources/ raste tijekom semestra kako pronalazite dobre članke, alate i skupove podataka."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-3.-konfigurirajte-github-pages",
+    "href": "SETUP_GUIDE.html#korak-3.-konfigurirajte-github-pages",
+    "title": "",
+    "section": "Korak 3. Konfigurirajte GitHub Pages",
+    "text": "Korak 3. Konfigurirajte GitHub Pages\nGitHub Actions workflow (.github/workflows/publish.yml, isporučen u starter kitu) automatski to rješava. Nakon pusha, idite na svoj repozitorij na GitHubu, zatim Settings &gt; Pages, i postavite izvor na “GitHub Actions”. Stranica će biti aktivna na https://vasekorisnickoime.github.io/web-tech-course/ unutar nekoliko minuta od svakog pusha."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-4.-tjedni-radni-tok-s-claude-code",
+    "href": "SETUP_GUIDE.html#korak-4.-tjedni-radni-tok-s-claude-code",
+    "title": "",
+    "section": "Korak 4. Tjedni radni tok s Claude Code",
+    "text": "Korak 4. Tjedni radni tok s Claude Code\nOvdje se setup isplati. Svaki tjedan vaš radni tok izgleda ovako.\n\nPrije predavanja\nOtvorite Claude Code u direktoriju repozitorija.\ncd ~/Projects/web-tech-course\nclaude\nZatim mu dajte upute poput ovih.\nNapiši bilješke za predavanje Tjedna 5 (No code i low code alati za \nkomunikologe). Obradi Webflow, Notion, Airtable, Zapier, Make i Stripe \nintegracije. Uključi praktične primjere relevantne za komunikacijske \nstručnjake koji grade odredišne stranice i automatizirane radne tokove. \nDodaj placeholder mjesta za slike gdje bih trebao naknadno umetnuti \nscreenshotove. Prati format uspostavljen u week-01.qmd.\nClaude Code će stvoriti ili ažurirati lectures/week-05.qmd prateći postojeći obrazac.\n\n\nNakon predavanja\nAžuriraj schedule.qmd kako bi Tjedan 5 bio označen kao završen. Dodaj \nbilješku da smo potrošili dodatno vrijeme na Zapier demonstracije i da \nćemo nastaviti s Makeom sljedeći tjedan.\n\n\nDodavanje resursa koje ste pronašli\nDodaj ova tri članka na popis literature pod sekciju \"No code alati\":\n- [naslov i URL]\n- [naslov i URL]\n- [naslov i URL]\nTakođer dodaj kratku anotaciju za svaki koja objašnjava zašto bi ga \nstudenti trebali pročitati.\n\n\nObjava ažuriranja\nCommitaj sve promjene s porukom \"Dodane bilješke za Tjedan 5 i ažuriran \nraspored\" i pushaj na GitHub.\nGitHub Action pokreće se automatski i stranica se izgradi za otprilike 60 sekundi."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-5.-korištenje-coworka-kao-alternative",
+    "href": "SETUP_GUIDE.html#korak-5.-korištenje-coworka-kao-alternative",
+    "title": "",
+    "section": "Korak 5. Korištenje Coworka kao alternative",
+    "text": "Korak 5. Korištenje Coworka kao alternative\nAko preferirate ne koristiti terminal, Anthropicov Cowork desktop alat može obaviti iste zadatke. Cowork radi na vašim lokalnim datotekama, pa biste:\n\nUsmjerili Cowork na vašu web-tech-course mapu.\nDali mu iste upute u prirodnom jeziku (napiši bilješke za predavanje, ažuriraj raspored, dodaj resurse).\nPregledali promjene koje predlaže.\nOdobrili ih, zatim koristili preferirani Git klijent (RStudio Git okno, GitHub Desktop ili terminal) za commit i push.\n\nCowork je prikladniji ako želite vizualni korak pregleda prije nego promjene postanu javne. Claude Code je brži ako ste udobni s terminalskim radnim tokom."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-6.-savjeti-za-održavanje-kvalitete-tijekom-semestra",
+    "href": "SETUP_GUIDE.html#korak-6.-savjeti-za-održavanje-kvalitete-tijekom-semestra",
+    "title": "",
+    "section": "Korak 6. Savjeti za održavanje kvalitete tijekom semestra",
+    "text": "Korak 6. Savjeti za održavanje kvalitete tijekom semestra\nKoristite CLAUDE.md datoteku u korijenu repozitorija. Ovo je markdown datoteka koja Claude Codeu govori o konvencijama projekta, tonu i strukturi. Već je uključena u starter kit. Claude Code automatski čita ovu datoteku i slijedit će ove konvencije u svakoj interakciji.\nPregledajte lokalno prije pusha. Pokrenite quarto preview u terminalu. Ovo otvara lokalni poslužitelj s automatskim osvježavanjem tako da možete pregledati izgled prije objave.\nKoristite grane za eksperimentalni sadržaj. Ako želite izraditi nacrt nečega bez utjecaja na javnu stranicu, recite Claude Codeu da stvori granu, radi na njoj, pa spoji (merge) kada bude spremno.\nOznačite ključne točke semestra. Na kolokviju i kraju semestra stvorite git oznaku (git tag v2026-kolokvij) kako biste se uvijek mogli vratiti na točno stanje kolegija u ključnim momentima."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#korak-7.-napredna-poboljšanja-opcionalno-kasnije-u-semestru",
+    "href": "SETUP_GUIDE.html#korak-7.-napredna-poboljšanja-opcionalno-kasnije-u-semestru",
+    "title": "",
+    "section": "Korak 7. Napredna poboljšanja (opcionalno, kasnije u semestru)",
+    "text": "Korak 7. Napredna poboljšanja (opcionalno, kasnije u semestru)\nOvo su stvari koje možete dodati kako se budete uhodavali s postavom.\nReveal.js prezentacije izravno iz Quarta. Umjesto izrade zasebnih PowerPoint datoteka, možete pisati slajdove u istom .qmd formatu i Quarto ih renderira kao interaktivne HTML prezentacije. Dodajte format: revealjs u YAML zaglavlje bilo koje datoteke.\nUgrađeni R kod za demonstracije analitike. Kada predajete tjedan o analitici, možete uključiti R code chunkove u bilješke s predavanja koje studenti mogu reproducirati. Quarto će ih izvršiti tijekom renderiranja i ugraditi rezultate.\nFunkcionalnost pretraživanja. Quarto web stranice imaju ugrađenu pretragu. Omogućena je prema zadanim postavkama u starter konfiguraciji.\nStudentske predaje putem GitHuba. Ako želite da studenti predaju rad putem GitHuba (dobra praksa za digitalnu pismenost), možete postaviti zasebni repozitorij gdje oni rade fork i šalju pull requestove.\nPrilagođena domena. Ako sveučilište pruža poddomenu, možete je usmjeriti na GitHub Pages stranicu dodavanjem CNAME datoteke."
+  },
+  {
+    "objectID": "SETUP_GUIDE.html#brzi-pregled-naredbi",
+    "href": "SETUP_GUIDE.html#brzi-pregled-naredbi",
+    "title": "",
+    "section": "Brzi pregled naredbi",
+    "text": "Brzi pregled naredbi\n\n\n\n\n\n\n\nZadatak\nClaude Code uputa\n\n\n\n\nNapiši novo predavanje\n“Napiši bilješke za predavanje Tjedna N o [tema]. Prati postojeći format.”\n\n\nAžuriraj raspored\n“Označi Tjedan N kao završen u schedule.qmd.”\n\n\nDodaj literaturu\n“Dodaj [naslov, URL] na popis literature pod [sekcija].”\n\n\nPopravi renderiranje\n“Stranica se ne renderira ispravno. Provjeri _quarto.yml i popravi probleme.”\n\n\nDodaj prezentaciju\n“Stvori reveal.js prezentaciju za Tjedan N na temelju bilješki s predavanja.”\n\n\nObjavi\n“Commitaj sve promjene s porukom ‘[opis]’ i pushaj na main.”\n\n\nPregled\n“Pokreni quarto preview i reci mi ima li grešaka u renderiranju.”\n\n\nSemestralna snimka\n“Označi trenutno stanje kao v2026-tjedan-N i pushaj oznaku.”"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Novi mediji i web tehnologije",
+    "section": "",
+    "text": "Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kroz platforme i alate koje komunikolozi danas koriste, do najnovijih tehnologija koje preoblikuju struku. Do kraja semestra studenti će moći kritički vrednovati, strateški planirati i praktično izvoditi web komunikaciju koja služi informacijskim i komercijalnim ciljevima u profesionalnom okruženju.\n\n\n\n\n\n\nNoteOsnovni podaci\n\n\n\nStudij: Komunikologija (R), 2. godina\nSemestar: Ljetni 2025/2026\nECTS bodovi: 5\nOpterećenje: 30h predavanja + 15h seminara\nMjesto: HKS, prema objavljenom rasporedu\nNositelj: doc. dr. sc. Luka Šikić (luka.sikic@unicath.hr)\nKonzultacije: Prema objavljenom rasporedu"
+  },
+  {
+    "objectID": "index.html#o-kolegiju",
+    "href": "index.html#o-kolegiju",
+    "title": "Novi mediji i web tehnologije",
+    "section": "",
+    "text": "Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kroz platforme i alate koje komunikolozi danas koriste, do najnovijih tehnologija koje preoblikuju struku. Do kraja semestra studenti će moći kritički vrednovati, strateški planirati i praktično izvoditi web komunikaciju koja služi informacijskim i komercijalnim ciljevima u profesionalnom okruženju.\n\n\n\n\n\n\nNoteOsnovni podaci\n\n\n\nStudij: Komunikologija (R), 2. godina\nSemestar: Ljetni 2025/2026\nECTS bodovi: 5\nOpterećenje: 30h predavanja + 15h seminara\nMjesto: HKS, prema objavljenom rasporedu\nNositelj: doc. dr. sc. Luka Šikić (luka.sikic@unicath.hr)\nKonzultacije: Prema objavljenom rasporedu"
+  },
+  {
+    "objectID": "index.html#struktura-kolegija",
+    "href": "index.html#struktura-kolegija",
+    "title": "Novi mediji i web tehnologije",
+    "section": "Struktura kolegija",
+    "text": "Struktura kolegija\nKolegij je organiziran u tri cjeline.\nTjedni 1 do 5 grade temeljnu web pismenost. Kako web funkcionira, kako se sadržaj pronalazi, kako vrednovati informacije na internetu, kako se platforme biraju i grade te kako koristiti moderne alate bez programiranja.\nTjedni 6 do 10 razvijaju primijenjene profesionalne kompetencije. Suradnja u oblaku, strategija sadržaja, donošenje odluka na temelju podataka i dizajnersko razmišljanje koje prati cjelokupno korisničko putovanje.\nTjedni 11 do 15 suočavaju se s najnovijim razvojem. Generativna umjetna inteligencija, etički i regulatorni izazovi, multimedijska produkcija te sinteza svega naučenog kroz studentske prezentacije projekata."
+  },
+  {
+    "objectID": "index.html#brzi-pristup",
+    "href": "index.html#brzi-pristup",
+    "title": "Novi mediji i web tehnologije",
+    "section": "Brzi pristup",
+    "text": "Brzi pristup\n\n\n\nResurs\nOpis\n\n\n\n\nSilabus\nCjelokupni silabus s opisima predavanja\n\n\nRaspored\nTjedni raspored s materijalima i statusom\n\n\nPopis literature\nObavezna i preporučena literatura\n\n\nAlati\nSoftver i platforme koje se koriste na kolegiju\n\n\nPraktični projekt\nUpute za projekt, rubrika i rokovi"
+  },
+  {
+    "objectID": "index.html#obavijesti",
+    "href": "index.html#obavijesti",
+    "title": "Novi mediji i web tehnologije",
+    "section": "Obavijesti",
+    "text": "Obavijesti\n\n\n\n\n\n\nImportantNajnovije\n\n\n\nStranica kolegija je aktivna. Dobrodošli u ljetni semestar. Provjerite raspored za pripremu za prvi tjedan."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Raspored",
+    "section": "",
+    "text": "Ova stranica prati semestar tjedan po tjedan. Status, poveznice na materijale i bilješke ažuriraju se nakon svake sesije."
+  },
+  {
+    "objectID": "schedule.html#tjedni-pregled",
+    "href": "schedule.html#tjedni-pregled",
+    "title": "Raspored",
+    "section": "Tjedni pregled",
+    "text": "Tjedni pregled\n\n\n\nTjedan\nDatum\nTema predavanja\nSeminarska aktivnost\nStatus\n\n\n\n\n1\nTBD\nWeb kao infrastruktura\nAnatomija web zahtjeva\nNadolazeće\n\n\n2\nTBD\nPretraživanje i pronalažljivost\nSEO audit radionica\nNadolazeće\n\n\n3\nTBD\nVrednovanje informacija\nPovjerenje i vjerodostojnost\nNadolazeće\n\n\n4\nTBD\nCMS i moderni web stack\nUsporedba CMS platformi\nNadolazeće\n\n\n5\nTBD\nNo code i low code alati\nNo code sprint\nNadolazeće\n\n\n6\nTBD\nRačunalstvo u oblaku\nSimulacija suradnje\nNadolazeće\n\n\n7\nTBD\nStrategija sadržaja\nRadionica strategije\nNadolazeće\n\n\n8\nTBD\nKolokvij\nKolokvij\nNadolazeće\n\n\n9\nTBD\nWeb analitika\nAnalitika u praksi\nNadolazeće\n\n\n10\nTBD\nUX, UI i pristupačnost\nUX i audit pristupačnosti\nNadolazeće\n\n\n11\nTBD\nGenerativna AI\nAI alati u praksi\nNadolazeće\n\n\n12\nTBD\nEtika AI-ja\nEtička studija slučaja\nNadolazeće\n\n\n13\nTBD\nDigitalna regulativa\nRegulatorna studija slučaja\nNadolazeće\n\n\n14\nTBD\nMultimedijsko pripovijedanje\nMultimedijska produkcija\nNadolazeće\n\n\n15\nTBD\nSinteza i prezentacije\nPrezentacije projekata\nNadolazeće"
+  },
+  {
+    "objectID": "schedule.html#datumi-ocjenjivanja",
+    "href": "schedule.html#datumi-ocjenjivanja",
+    "title": "Raspored",
+    "section": "Datumi ocjenjivanja",
+    "text": "Datumi ocjenjivanja\n\n\n\nAktivnost\nDatum\nUdio\n\n\n\n\nKolokvij\nTjedan 8 (TBD)\n20%\n\n\nPredaja praktičnog projekta\nTjedan 14 (TBD)\n30%\n\n\nSeminarski portfolio\nKontinuirano\n20%\n\n\nZavršni ispit\nTBD\n30%"
+  },
+  {
+    "objectID": "schedule.html#bilješke-sa-sesija",
+    "href": "schedule.html#bilješke-sa-sesija",
+    "title": "Raspored",
+    "section": "Bilješke sa sesija",
+    "text": "Bilješke sa sesija\nBilješke s predavanja i seminara bit će dodavane ovdje kako semestar bude napredovao."
+  },
+  {
+    "objectID": "resources/reading-list.html",
+    "href": "resources/reading-list.html",
+    "title": "Popis literature",
+    "section": "",
+    "text": "Ovaj popis literature rast će tijekom semestra. Stavke označene s [O] su obavezne; ostale su preporučene. Sva obavezna literatura besplatno je dostupna na internetu ili putem sveučilišne knjižnice."
+  },
+  {
+    "objectID": "resources/reading-list.html#temeljna-web-pismenost",
+    "href": "resources/reading-list.html#temeljna-web-pismenost",
+    "title": "Popis literature",
+    "section": "Temeljna web pismenost",
+    "text": "Temeljna web pismenost\n\n[O] Mozilla Developer Network. How the Web Works. Besplatna serija tutorijala o osnovama web infrastrukture.\n[O] Google Search Central. SEO Starter Guide. Službeni vodič o tome kako Google otkriva i rangira sadržaj.\nDuckett, J. (posljednje izdanje). HTML and CSS: Design and Build Websites. Vizualna referenca za razumijevanje strukture web stranica.\nShopify Engineering Blog. Odabrani postovi o web performansama i arhitekturi platformi. Poveznice bit će dodane."
+  },
+  {
+    "objectID": "resources/reading-list.html#strategija-sadržaja-i-ux",
+    "href": "resources/reading-list.html#strategija-sadržaja-i-ux",
+    "title": "Popis literature",
+    "section": "Strategija sadržaja i UX",
+    "text": "Strategija sadržaja i UX\n\n[O] Krug, S. Don’t Make Me Think, Revisited. Klasičan uvod u web upotrebljivost. Odabrana poglavlja.\nHalvorson, K. i Rach, M. Content Strategy for the Web. Temeljni tekst o planiranju i upravljanju digitalnim sadržajem.\nNielsen Norman Group. Članci o UX istraživanju. Besplatno dostupni istraživački sažeci o upotrebljivosti i konverziji.\nBaymard Institute. Open access studije o upotrebljivosti plaćanja. Istraživanja o tome kako korisnici navigiraju transakcijskim web iskustvima."
+  },
+  {
+    "objectID": "resources/reading-list.html#oblak-i-suradnja",
+    "href": "resources/reading-list.html#oblak-i-suradnja",
+    "title": "Popis literature",
+    "section": "Oblak i suradnja",
+    "text": "Oblak i suradnja\n\n[O] Armbrust, M. i sur. (2010). A View of Cloud Computing. Communications of the ACM, 53(4), 50-58. Zadržano iz izvornog silabusa kao temeljno čitanje.\nGoogle Workspace dokumentacija. Odabrani vodiči o suradničkim radnim tokovima.\nSalesforce/HubSpot. Odabrane besplatno dostupne bijele knjige o CRM-u i automatizaciji marketinga. Poveznice bit će dodane."
+  },
+  {
+    "objectID": "resources/reading-list.html#generativna-ai-i-etika",
+    "href": "resources/reading-list.html#generativna-ai-i-etika",
+    "title": "Popis literature",
+    "section": "Generativna AI i etika",
+    "text": "Generativna AI i etika\n\n[O] Europska komisija. Dokumentacija o Aktu o AI-ju. Službeni pregled regulatornog okvira.\nCrawford, K. (2021). Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence. Yale University Press. Odabrana poglavlja.\nBender, E. i sur. (2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? FAccT ’21. Utjecajni rad o rizicima velikih jezičnih modela.\nDodatni aktualni članci o AI-ju u stvaranju sadržaja i personalizaciji bit će dodavani tijekom semestra."
+  },
+  {
+    "objectID": "resources/reading-list.html#regulativa",
+    "href": "resources/reading-list.html#regulativa",
+    "title": "Popis literature",
+    "section": "Regulativa",
+    "text": "Regulativa\n\n[O] Opća uredba EU o zaštiti podataka (GDPR). Odabrani članci (bit će specificirano).\n[O] Akt EU o digitalnim uslugama. Pregled.\nAkt EU o digitalnim tržištima. Pregled s fokusom na označavanje čuvara vrata.\nDirektiva EU o pravima potrošača za online usluge. Odabrane odredbe.\nRelevantni hrvatski regulatorni dokumenti. Poveznice bit će dodane."
+  },
+  {
+    "objectID": "resources/reading-list.html#multimedija-i-pripovijedanje",
+    "href": "resources/reading-list.html#multimedija-i-pripovijedanje",
+    "title": "Popis literature",
+    "section": "Multimedija i pripovijedanje",
+    "text": "Multimedija i pripovijedanje\n\nLiteratura o pisanju za web, podcast produkciji, kratkim video formatima i vizualnoj trgovini bit će dodana prije Tjedna 14."
+  },
+  {
+    "objectID": "resources/reading-list.html#digitalno-poslovanje-i-analitika",
+    "href": "resources/reading-list.html#digitalno-poslovanje-i-analitika",
+    "title": "Popis literature",
+    "section": "Digitalno poslovanje i analitika",
+    "text": "Digitalno poslovanje i analitika\n\nChaffey, D. i Ellis-Chadwick, F. Digital Marketing: Strategy, Implementation and Practice. Odabrana poglavlja o analitici i online propoziciji vrijednosti.\n[O] Google Analytics Academy. Besplatni online moduli. Uvodni tečaj o GA4."
+  },
+  {
+    "objectID": "lectures/week-01.html",
+    "href": "lectures/week-01.html",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "",
+    "text": "Nakon ovog predavanja studenti će moći:\n\nObjasniti razliku između interneta i World Wide Weba\nOpisati putovanje web zahtjeva od preglednika do poslužitelja i natrag\nIdentificirati ključne protokole (HTTP/HTTPS, DNS, TCP/IP) koji omogućuju web komunikaciju\nArtikulirati zašto je tehnička pismenost važna za komunikacijske stručnjake"
+  },
+  {
+    "objectID": "lectures/week-01.html#ishodi-učenja",
+    "href": "lectures/week-01.html#ishodi-učenja",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "",
+    "text": "Nakon ovog predavanja studenti će moći:\n\nObjasniti razliku između interneta i World Wide Weba\nOpisati putovanje web zahtjeva od preglednika do poslužitelja i natrag\nIdentificirati ključne protokole (HTTP/HTTPS, DNS, TCP/IP) koji omogućuju web komunikaciju\nArtikulirati zašto je tehnička pismenost važna za komunikacijske stručnjake"
+  },
+  {
+    "objectID": "lectures/week-01.html#od-arpanet-a-do-modernog-weba",
+    "href": "lectures/week-01.html#od-arpanet-a-do-modernog-weba",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "2 Od ARPANET-a do modernog weba",
+    "text": "2 Od ARPANET-a do modernog weba\nInternet je započeo kao vojna i akademska istraživačka mreža kasnih 1960-ih. ARPANET je povezao nekolicinu sveučilišnih računala i dokazao da komutacija paketa, ideja razbijanja podataka na male dijelove i njihovog neovisnog usmjeravanja, može pouzdano funkcionirati na velikim udaljenostima. World Wide Web stigao je tri desetljeća kasnije, kada je Tim Berners Lee u CERN-u predložio sustav hipertekstualnih dokumenata dostupnih putem preglednika. Razlika je bitna jer je internet fizička i logička infrastruktura (kabeli, usmjerivači, protokoli), dok je web jedna aplikacija koja se izvršava na toj infrastrukturi, zajedno s elektroničkom poštom, prijenosom datoteka, streamingom i mnogim drugim uslugama.\nDanas je web postao zadano sučelje za gotovo sve: objavljivanje, trgovinu, zabavu, upravljanje, obrazovanje i međuljudsku komunikaciju. Za komunikacijskog stručnjaka to znači da će gotovo svaka poruka koju oblikujete, svaka kampanja koju provedete i svaki sadržaj kojim upravljate u nekom trenutku putovati kroz web infrastrukturu. Razumijevanje načina na koji ta infrastruktura funkcionira nije izborna specijalizacija, nego temeljna pismenost."
+  },
+  {
+    "objectID": "lectures/week-01.html#kako-funkcionira-web-zahtjev",
+    "href": "lectures/week-01.html#kako-funkcionira-web-zahtjev",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "3 Kako funkcionira web zahtjev",
+    "text": "3 Kako funkcionira web zahtjev\nKada upišete URL u preglednik ili kliknete na poveznicu, u milisekundama se odvija niz događaja.\nDNS rezolucija. Preglednik mora prevesti čitljivu domenu (npr. example.com) u numeričku IP adresu. Šalje upit DNS poslužitelju koji funkcionira poput telefonskog imenika za internet, vraćajući adresu poslužitelja na kojem se web stranica nalazi.\nTCP veza. Preglednik uspostavlja TCP (Transmission Control Protocol) vezu s poslužiteljem. To je rukovanje koje osigurava da su obje strane spremne za pouzdanu razmjenu podataka.\nHTTP zahtjev. Preglednik šalje HTTP (Hypertext Transfer Protocol) zahtjev poslužitelju, tražeći određeni resurs (stranicu, sliku, skriptu). Ako veza koristi HTTPS, podaci su šifrirani pomoću TLS-a, što je danas standard za svaku stranicu koja obrađuje osjetljive informacije ili želi dobro rangiranje u tražilicama.\nOdgovor poslužitelja. Poslužitelj obrađuje zahtjev i šalje natrag odgovor koji sadrži HTML, CSS, JavaScript, slike i druge resurse. Preglednik ih prima i počinje prikazivati stranicu.\nPrikazivanje (rendering). Preglednik parsira HTML za izgradnju Document Object Modela (DOM), primjenjuje CSS stilove, izvršava JavaScript i crta vidljivu stranicu. Ovaj proces uključuje desetke podkoraka i upravo tu optimizacija performansi postaje kritična, tema na koju ćemo se vratiti kada budemo govorili o Core Web Vitals i korisničkom iskustvu.\n\n\n\n\n\n\nTipPraktična relevantnost\n\n\n\nSvaka milisekunda kašnjenja u ovom lancu košta angažman. Istraživanja dosljedno pokazuju da sporije učitavane stranice dovode do viših stopa napuštanja, nižih stopa konverzije i smanjenog zadovoljstva. Kao komunikolog koji bira platforme i dizajnira sadržaj, donosite infrastrukturne odluke bili toga svjesni ili ne."
+  },
+  {
+    "objectID": "lectures/week-01.html#protokoli-koji-su-važni",
+    "href": "lectures/week-01.html#protokoli-koji-su-važni",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "4 Protokoli koji su važni",
+    "text": "4 Protokoli koji su važni\nHTTP/HTTPS upravlja komunikacijom između preglednika i poslužitelja. “S” (sigurna) verzija šifrira promet i danas je očekivana i od korisnika i od tražilica. Svaku stranicu bez HTTPS-a moderni preglednici označavaju kao nesigurnu.\nDNS prevodi imena domena u IP adrese. Razumijevanje DNS-a pomaže objasniti kako organizacije upravljaju svojom web prisutnošću, kako funkcionira vlasništvo nad domenama i kako napadi poput DNS spoofinga mogu preusmjeriti korisnike na zlonamjerne stranice.\nAPI-ji (Application Programming Interfaces) omogućuju različitim web servisima međusobnu komunikaciju. Kada web stranica prikazuje Google kartu, obrađuje Stripe plaćanje ili povlači sadržaj s društvenih mreža, koristi API-je. Moderni web nije zbirka izoliranih stranica nego mreža međusobno povezanih servisa koji razmjenjuju podatke kroz API-je.\nPlatežni protokoli. Online transakcije oslanjaju se na dodatne slojeve sigurnosti i standardizacije, od TLS šifriranja do PCI usklađenosti i servisa poput Stripea i PayPala koji apstrahiraju složenost rukovanja financijskim podacima. Razumijevanje da jednostavni gumb “Kupi odmah” pokreće kaskadu autentificiranih, šifriranih API poziva pomaže komunikolozima shvatiti što je u pitanju kada dizajniraju ili upravljaju transakcijskim web iskustvima."
+  },
+  {
+    "objectID": "lectures/week-01.html#web-danas-platforme-protokoli-i-povezani-uređaji",
+    "href": "lectures/week-01.html#web-danas-platforme-protokoli-i-povezani-uređaji",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "5 Web danas: platforme, protokoli i povezani uređaji",
+    "text": "5 Web danas: platforme, protokoli i povezani uređaji\nWeb se razvio daleko izvan statičnih stranica. Danas obuhvaća single page aplikacije koje se ponašaju poput desktop softvera, progresivne web aplikacije koje rade i bez mrežne veze, komunikaciju u stvarnom vremenu (videopozivi, chat), IoT uređaje koji šalju podatke na nadzorne ploče u oblaku te AI servise koji odgovaraju na upite u prirodnom jeziku. Sve to i dalje ovisi o istim temeljnim protokolima, ali složenost i mogućnosti onoga što se izvršava na njima enormno su se proširile.\nZa komunikacijske stručnjake to znači da “web” više nisu samo web stranice. To je vezivno tkivo digitalnog života, sloj kroz koji organizacije dosežu publiku, služe korisnike, prikupljaju podatke, automatiziraju procese i grade odnose. Ostatak ovog kolegija istražit će svaku od ovih dimenzija u dubinu."
+  },
+  {
+    "objectID": "lectures/week-01.html#ključni-zaključci",
+    "href": "lectures/week-01.html#ključni-zaključci",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "6 Ključni zaključci",
+    "text": "6 Ključni zaključci\n\n\n\n\n\n\n\nInternet je infrastruktura; web je aplikacija koja se na njoj izvršava\nWeb zahtjev uključuje DNS, TCP, HTTP/S, obradu na poslužitelju i prikazivanje u pregledniku\nHTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava\nTehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju"
+  },
+  {
+    "objectID": "lectures/week-01.html#priprema-za-sljedeći-tjedan",
+    "href": "lectures/week-01.html#priprema-za-sljedeći-tjedan",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "7 Priprema za sljedeći tjedan",
+    "text": "7 Priprema za sljedeći tjedan\n\n\n\n\n\n\nTjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna\nPrije sljedećeg tjedna pokušajte pretražiti istu temu na Googleu, Bingu i još jednoj tražilici (DuckDuckGo, Brave Search ili lokalna hrvatska tražilica). Zabilježite razlike u rezultatima. Dođite pripremljeni za raspravu o tome zašto različite tražilice vraćaju različite rezultate za isti upit."
+  },
+  {
+    "objectID": "lectures/week-01.html#dodatno-čitanje",
+    "href": "lectures/week-01.html#dodatno-čitanje",
+    "title": "Tjedan 1: Web kao infrastruktura",
+    "section": "8 Dodatno čitanje",
+    "text": "8 Dodatno čitanje\nZa one koji žele dublje istražiti teme ovog tjedna:\n\nMozilla Developer Network: How the Web Works\nCloudflare Learning Center: What is DNS?\nGoogle: Why HTTPS Matters"
+  },
+  {
+    "objectID": "projects/practical-project.html",
+    "href": "projects/practical-project.html",
+    "title": "Praktični projekt",
+    "section": "",
+    "text": "Praktični projekt vaša je prilika da pokažete integrirane kompetencije kroz cjelokupni luk kolegija. Planirat ćete, izgraditi i pokrenuti web prisutnost za stvarnu ili fiktivnu organizaciju, donoseći i obrazlažući odluke o odabiru platforme, strategiji sadržaja, dizajnu, SEO-u, analitici i odgovornom korištenju AI alata."
+  },
+  {
+    "objectID": "projects/practical-project.html#pregled",
+    "href": "projects/practical-project.html#pregled",
+    "title": "Praktični projekt",
+    "section": "",
+    "text": "Praktični projekt vaša je prilika da pokažete integrirane kompetencije kroz cjelokupni luk kolegija. Planirat ćete, izgraditi i pokrenuti web prisutnost za stvarnu ili fiktivnu organizaciju, donoseći i obrazlažući odluke o odabiru platforme, strategiji sadržaja, dizajnu, SEO-u, analitici i odgovornom korištenju AI alata."
+  },
+  {
+    "objectID": "projects/practical-project.html#zadatak",
+    "href": "projects/practical-project.html#zadatak",
+    "title": "Praktični projekt",
+    "section": "Zadatak",
+    "text": "Zadatak\nOdaberite jedan od sljedećih scenarija (ili predložite vlastiti, uz odobrenje nastavnika).\nScenarij A. Malo hrvatsko poduzeće (obrtnik, turistička usluga, konzultantska tvrtka, kreativni studio) koje trenutno nema web prisutnost i treba je.\nScenarij B. Neprofitna organizacija ili građanska inicijativa koja želi pokrenuti kampanju podizanja svijesti s online središtem.\nScenarij C. Osobni brend ili portfolio stranica za komunikacijskog stručnjaka koji ulazi na tržište rada.\nU svim slučajevima web prisutnost mora uključivati informacijski sadržaj (pripovijedanje priče, objašnjavanje misije, pružanje vrijednosti) i jasan konverzijski put (navođenje posjetitelja na akciju poput pretplate, rezervacije, upita ili kupnje)."
+  },
+  {
+    "objectID": "projects/practical-project.html#što-se-predaje",
+    "href": "projects/practical-project.html#što-se-predaje",
+    "title": "Praktični projekt",
+    "section": "Što se predaje",
+    "text": "Što se predaje\n\nStrateški dokument (maksimalno 1500 riječi). Obrazložite odabir platforme, definirajte ciljanu publiku, izložite plan sadržaja s najmanje 8 planiranih sadržajnih cjelina, mapirajte korisničko putovanje i opišite svoj SEO pristup.\nAktivna web prisutnost. Funkcionalna stranica ili odredišna stranica izgrađena jednim od alata obrađenih na kolegiju (Webflow, WordPress, Shopify, Squarespace ili druga odobrena platforma). Minimalno 4 objavljene stranice ili sekcije.\nPlan analitike i mjerenja. Opišite što biste pratili, koji su KPI-jevi bitni za vaš scenarij i kako biste koristili podatke za iteraciju. Ako je moguće, instalirajte GA4 ili drugi analitički alat i pokažite postavu.\nIzjava o korištenju AI-ja. Dokumentirajte kako ste koristili (ili odlučili ne koristiti) AI alate u projektu. Čemu je AI pomogao? Što ste napravili ručno i zašto? Koje ste provjere kvalitete primijenili na AI generirani sadržaj?\nPrezentacija (10 minuta). Prezentirajte projekt pred razredom u Tjednu 15, pokrivajući strategiju, izvedbu i naučene lekcije."
+  },
+  {
+    "objectID": "projects/practical-project.html#rubrika",
+    "href": "projects/practical-project.html#rubrika",
+    "title": "Praktični projekt",
+    "section": "Rubrika",
+    "text": "Rubrika\n\n\n\n\n\n\n\n\n\n\nKriterij\nUdio\nIzvrsno\nZadovoljavajuće\nNedovoljno\n\n\n\n\nStrategija i obrazloženje\n25%\nJasna definicija publike, obrazložen odabir platforme, koherentan plan sadržaja usklađen s konverzijskim ciljevima\nOsnovna strategija prisutna, ali neke odluke nisu dobro obrazložene\nNedostaju ključni strateški elementi ili nema jasnog obrazloženja\n\n\nTehnička izvedba\n25%\nProfesionalna, funkcionalna stranica s dobrim performansama, mobilnom responzivnošću i pristupačnošću\nFunkcionalna, ali s problemima upotrebljivosti ili performansi\nNepotpuna ili nefunkcionalna implementacija\n\n\nKvaliteta sadržaja\n20%\nOriginalan, dobro napisan, primjereno strukturiran sadržaj koji služi i informacijskim i konverzijskim ciljevima\nSadržaj prisutan, ali generičan ili loše organiziran\nMinimalan ili probni sadržaj\n\n\nSEO i analitika\n15%\nPromišljena SEO implementacija, postava analitike i plan mjerenja s konkretnim KPI-jevima\nOsnovna SEO i analitička svijest, ali ograničena implementacija\nNema dokaza o SEO ili analitičkom razmišljanju\n\n\nKorištenje AI-ja i refleksija\n15%\nSofisticirano, pošteno korištenje AI-ja s jasnom evaluacijom kvalitete i promišljenom izjavom\nNeko korištenje AI-ja dokumentirano, ali ograničena refleksija\nNema izjave o AI-ju ili nekritička ovisnost o AI-ju"
+  },
+  {
+    "objectID": "projects/practical-project.html#rokovi",
+    "href": "projects/practical-project.html#rokovi",
+    "title": "Praktični projekt",
+    "section": "Rokovi",
+    "text": "Rokovi\n\n\n\nKljučna točka\nRok\n\n\n\n\nOdabir scenarija i odobrenje zadatka\nTjedan 6\n\n\nNacrt strateškog dokumenta\nTjedan 10\n\n\nAktivna stranica spremna za pregled\nTjedan 13\n\n\nZavršna predaja (svi elementi)\nTjedan 14\n\n\nPrezentacija\nTjedan 15"
+  },
+  {
+    "objectID": "projects/practical-project.html#često-postavljana-pitanja",
+    "href": "projects/practical-project.html#često-postavljana-pitanja",
+    "title": "Praktični projekt",
+    "section": "Često postavljana pitanja",
+    "text": "Često postavljana pitanja\nMogu li raditi u paru? Da, ali opseg mora proporcionalno rasti. Od parova se očekuje sveobuhvatniji projekt.\nŠto ako moja stranica koristi plaćenu platformu? Koristite besplatne razine ili probne periode. Nemojte trošiti novac na ovaj projekt osim ako to ne želite iz osobnih razloga.\nKoliko profesionalno mora izgledati? Dovoljno profesionalno da biste se osjećali ugodno pokazati to potencijalnom poslodavcu ili klijentu. Ne mora biti gotov komercijalni proizvod."
+  },
+  {
+    "objectID": "seminars/week-15.html",
+    "href": "seminars/week-15.html",
+    "title": "Tjedan 15: Prezentacije projekata",
+    "section": "",
+    "text": "Sadržaj će biti dodan prije seminara.\n\n\n\n\n\n Back to top"
+  }
+]
