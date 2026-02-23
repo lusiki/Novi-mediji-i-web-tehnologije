@@ -409,13 +409,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#ishodi-učenja" id="toc-ishodi-učenja" class="nav-link active" data-scroll-target="#ishodi-učenja"><span class="header-section-number">1</span> Ishodi učenja</a></li>
-  <li><a href="#od-arpanet-a-do-modernog-weba" id="toc-od-arpanet-a-do-modernog-weba" class="nav-link" data-scroll-target="#od-arpanet-a-do-modernog-weba"><span class="header-section-number">2</span> Od ARPANET-a do modernog weba</a></li>
-  <li><a href="#kako-funkcionira-web-zahtjev" id="toc-kako-funkcionira-web-zahtjev" class="nav-link" data-scroll-target="#kako-funkcionira-web-zahtjev"><span class="header-section-number">3</span> Kako funkcionira web zahtjev</a></li>
-  <li><a href="#protokoli-koji-su-važni" id="toc-protokoli-koji-su-važni" class="nav-link" data-scroll-target="#protokoli-koji-su-važni"><span class="header-section-number">4</span> Protokoli koji su važni</a></li>
-  <li><a href="#web-danas-platforme-protokoli-i-povezani-uređaji" id="toc-web-danas-platforme-protokoli-i-povezani-uređaji" class="nav-link" data-scroll-target="#web-danas-platforme-protokoli-i-povezani-uređaji"><span class="header-section-number">5</span> Web danas: platforme, protokoli i povezani uređaji</a></li>
-  <li><a href="#ključni-zaključci" id="toc-ključni-zaključci" class="nav-link" data-scroll-target="#ključni-zaključci"><span class="header-section-number">6</span> Ključni zaključci</a></li>
-  <li><a href="#priprema-za-sljedeći-tjedan" id="toc-priprema-za-sljedeći-tjedan" class="nav-link" data-scroll-target="#priprema-za-sljedeći-tjedan"><span class="header-section-number">7</span> Priprema za sljedeći tjedan</a></li>
-  <li><a href="#dodatno-čitanje" id="toc-dodatno-čitanje" class="nav-link" data-scroll-target="#dodatno-čitanje"><span class="header-section-number">8</span> Dodatno čitanje</a></li>
+  <li><a href="#zašto-je-ovo-uopće-bitno-za-komunikologe" id="toc-zašto-je-ovo-uopće-bitno-za-komunikologe" class="nav-link" data-scroll-target="#zašto-je-ovo-uopće-bitno-za-komunikologe"><span class="header-section-number">2</span> Zašto je ovo uopće bitno za komunikologe?</a></li>
+  <li><a href="#internet-i-world-wide-web-dva-različita-pojma" id="toc-internet-i-world-wide-web-dva-različita-pojma" class="nav-link" data-scroll-target="#internet-i-world-wide-web-dva-različita-pojma"><span class="header-section-number">3</span> Internet i World Wide Web: dva različita pojma</a>
+  <ul class="collapse">
+  <li><a href="#internet-fizička-i-logička-mreža" id="toc-internet-fizička-i-logička-mreža" class="nav-link" data-scroll-target="#internet-fizička-i-logička-mreža"><span class="header-section-number">3.1</span> Internet: fizička i logička mreža</a></li>
+  <li><a href="#world-wide-web-aplikacija-na-internetu" id="toc-world-wide-web-aplikacija-na-internetu" class="nav-link" data-scroll-target="#world-wide-web-aplikacija-na-internetu"><span class="header-section-number">3.2</span> World Wide Web: aplikacija na internetu</a></li>
+  </ul></li>
+  <li><a href="#kratka-povijest-od-arpanet-a-do-ai-ja" id="toc-kratka-povijest-od-arpanet-a-do-ai-ja" class="nav-link" data-scroll-target="#kratka-povijest-od-arpanet-a-do-ai-ja"><span class="header-section-number">4</span> Kratka povijest: od ARPANET-a do AI-ja</a></li>
+  <li><a href="#anatomija-web-zahtjeva" id="toc-anatomija-web-zahtjeva" class="nav-link" data-scroll-target="#anatomija-web-zahtjeva"><span class="header-section-number">5</span> Anatomija web zahtjeva</a>
+  <ul class="collapse">
+  <li><a href="#korak-1-dns-rezolucija" id="toc-korak-1-dns-rezolucija" class="nav-link" data-scroll-target="#korak-1-dns-rezolucija"><span class="header-section-number">5.1</span> Korak 1: DNS rezolucija</a></li>
+  <li><a href="#korak-2-tcp-rukovanje" id="toc-korak-2-tcp-rukovanje" class="nav-link" data-scroll-target="#korak-2-tcp-rukovanje"><span class="header-section-number">5.2</span> Korak 2: TCP rukovanje</a></li>
+  <li><a href="#korak-3-tls-rukovanje-za-https" id="toc-korak-3-tls-rukovanje-za-https" class="nav-link" data-scroll-target="#korak-3-tls-rukovanje-za-https"><span class="header-section-number">5.3</span> Korak 3: TLS rukovanje (za HTTPS)</a></li>
+  <li><a href="#korak-4-http-zahtjev-i-odgovor" id="toc-korak-4-http-zahtjev-i-odgovor" class="nav-link" data-scroll-target="#korak-4-http-zahtjev-i-odgovor"><span class="header-section-number">5.4</span> Korak 4: HTTP zahtjev i odgovor</a></li>
+  <li><a href="#korak-5-prikazivanje-rendering" id="toc-korak-5-prikazivanje-rendering" class="nav-link" data-scroll-target="#korak-5-prikazivanje-rendering"><span class="header-section-number">5.5</span> Korak 5: Prikazivanje (rendering)</a></li>
+  </ul></li>
+  <li><a href="#protokoli-koje-komunikolozi-moraju-poznavati" id="toc-protokoli-koje-komunikolozi-moraju-poznavati" class="nav-link" data-scroll-target="#protokoli-koje-komunikolozi-moraju-poznavati"><span class="header-section-number">6</span> Protokoli koje komunikolozi moraju poznavati</a>
+  <ul class="collapse">
+  <li><a href="#http-i-https" id="toc-http-i-https" class="nav-link" data-scroll-target="#http-i-https"><span class="header-section-number">6.1</span> HTTP i HTTPS</a></li>
+  <li><a href="#dns" id="toc-dns" class="nav-link" data-scroll-target="#dns"><span class="header-section-number">6.2</span> DNS</a></li>
+  <li><a href="#api-ji-ljepilo-modernog-weba" id="toc-api-ji-ljepilo-modernog-weba" class="nav-link" data-scroll-target="#api-ji-ljepilo-modernog-weba"><span class="header-section-number">6.3</span> API-ji: ljepilo modernog weba</a></li>
+  <li><a href="#platežni-protokoli-i-sigurnost-transakcija" id="toc-platežni-protokoli-i-sigurnost-transakcija" class="nav-link" data-scroll-target="#platežni-protokoli-i-sigurnost-transakcija"><span class="header-section-number">6.4</span> Platežni protokoli i sigurnost transakcija</a></li>
+  </ul></li>
+  <li><a href="#kako-izgleda-moderni-web" id="toc-kako-izgleda-moderni-web" class="nav-link" data-scroll-target="#kako-izgleda-moderni-web"><span class="header-section-number">7</span> Kako izgleda moderni web</a>
+  <ul class="collapse">
+  <li><a href="#od-statičnih-stranica-do-aplikacija" id="toc-od-statičnih-stranica-do-aplikacija" class="nav-link" data-scroll-target="#od-statičnih-stranica-do-aplikacija"><span class="header-section-number">7.1</span> Od statičnih stranica do aplikacija</a></li>
+  <li><a href="#tri-sloja-web-stranice" id="toc-tri-sloja-web-stranice" class="nav-link" data-scroll-target="#tri-sloja-web-stranice"><span class="header-section-number">7.2</span> Tri sloja web stranice</a></li>
+  <li><a href="#internet-stvari-i-web-izvan-preglednika" id="toc-internet-stvari-i-web-izvan-preglednika" class="nav-link" data-scroll-target="#internet-stvari-i-web-izvan-preglednika"><span class="header-section-number">7.3</span> Internet stvari i web izvan preglednika</a></li>
+  </ul></li>
+  <li><a href="#performanse-zašto-brzina-nije-tehnički-detalj" id="toc-performanse-zašto-brzina-nije-tehnički-detalj" class="nav-link" data-scroll-target="#performanse-zašto-brzina-nije-tehnički-detalj"><span class="header-section-number">8</span> Performanse: zašto brzina nije tehnički detalj</a></li>
+  <li><a href="#web-infrastruktura-i-hrvatska" id="toc-web-infrastruktura-i-hrvatska" class="nav-link" data-scroll-target="#web-infrastruktura-i-hrvatska"><span class="header-section-number">9</span> Web infrastruktura i Hrvatska</a></li>
+  <li><a href="#vježba-što-ste-naučili" id="toc-vježba-što-ste-naučili" class="nav-link" data-scroll-target="#vježba-što-ste-naučili"><span class="header-section-number">10</span> Vježba: što ste naučili?</a></li>
+  <li><a href="#ključni-zaključci" id="toc-ključni-zaključci" class="nav-link" data-scroll-target="#ključni-zaključci"><span class="header-section-number">11</span> Ključni zaključci</a></li>
+  <li><a href="#priprema-za-sljedeći-tjedan" id="toc-priprema-za-sljedeći-tjedan" class="nav-link" data-scroll-target="#priprema-za-sljedeći-tjedan"><span class="header-section-number">12</span> Priprema za sljedeći tjedan</a></li>
+  <li><a href="#dodatno-čitanje" id="toc-dodatno-čitanje" class="nav-link" data-scroll-target="#dodatno-čitanje"><span class="header-section-number">13</span> Dodatno čitanje</a></li>
+  <li><a href="#pojmovnik" id="toc-pojmovnik" class="nav-link" data-scroll-target="#pojmovnik"><span class="header-section-number">14</span> Pojmovnik</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Novi-mediji-i-web-tehnologije/edit/main/lectures/week-01.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Novi-mediji-i-web-tehnologije/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -466,53 +494,294 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Objasniti razliku između interneta i World Wide Weba</li>
 <li>Opisati putovanje web zahtjeva od preglednika do poslužitelja i natrag</li>
 <li>Identificirati ključne protokole (HTTP/HTTPS, DNS, TCP/IP) koji omogućuju web komunikaciju</li>
-<li>Artikulirati zašto je tehnička pismenost važna za komunikacijske stručnjake</li>
+<li>Prepoznati ulogu API-ja u modernom webu i razumjeti zašto je to važno za komunikologe</li>
+<li>Artikulirati kako infrastrukturne odluke utječu na korisničko iskustvo, konverzije i poslovne rezultate</li>
 </ol>
 </div>
 </div>
 </div>
 </section>
-<section id="od-arpanet-a-do-modernog-weba" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="od-arpanet-a-do-modernog-weba"><span class="header-section-number">2</span> Od ARPANET-a do modernog weba</h2>
-<p>Internet je započeo kao vojna i akademska istraživačka mreža kasnih 1960-ih. ARPANET je povezao nekolicinu sveučilišnih računala i dokazao da komutacija paketa, ideja razbijanja podataka na male dijelove i njihovog neovisnog usmjeravanja, može pouzdano funkcionirati na velikim udaljenostima. World Wide Web stigao je tri desetljeća kasnije, kada je Tim Berners Lee u CERN-u predložio sustav hipertekstualnih dokumenata dostupnih putem preglednika. Razlika je bitna jer je internet fizička i logička infrastruktura (kabeli, usmjerivači, protokoli), dok je web jedna aplikacija koja se izvršava na toj infrastrukturi, zajedno s elektroničkom poštom, prijenosom datoteka, streamingom i mnogim drugim uslugama.</p>
-<p>Danas je web postao zadano sučelje za gotovo sve: objavljivanje, trgovinu, zabavu, upravljanje, obrazovanje i međuljudsku komunikaciju. Za komunikacijskog stručnjaka to znači da će gotovo svaka poruka koju oblikujete, svaka kampanja koju provedete i svaki sadržaj kojim upravljate u nekom trenutku putovati kroz web infrastrukturu. Razumijevanje načina na koji ta infrastruktura funkcionira nije izborna specijalizacija, nego temeljna pismenost.</p>
+<section id="zašto-je-ovo-uopće-bitno-za-komunikologe" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="zašto-je-ovo-uopće-bitno-za-komunikologe"><span class="header-section-number">2</span> Zašto je ovo uopće bitno za komunikologe?</h2>
+<p>Zamislite da ste zaduženi za web stranicu neke organizacije. Klijent vas pita zašto je stranica spora, zašto Google ne prikazuje njihove stranice u rezultatima pretraživanja ili zašto posjetitelji napuštaju stranicu prije nego što obave kupnju. Ako ne razumijete osnove web infrastrukture, ne možete dijagnosticirati problem, ne možete razgovarati s developerima i ne možete donositi informirane odluke o platformi, hostingu ili dizajnu.</p>
+<p>Ovo predavanje nije o tome da postanete programeri. Ono je o tome da razumijete sustav u kojem radite, slično kao što novinar mora razumjeti kako funkcionira pravosudni sustav čak i ako ne planira postati odvjetnik.</p>
 </section>
-<section id="kako-funkcionira-web-zahtjev" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="kako-funkcionira-web-zahtjev"><span class="header-section-number">3</span> Kako funkcionira web zahtjev</h2>
-<p>Kada upišete URL u preglednik ili kliknete na poveznicu, u milisekundama se odvija niz događaja.</p>
-<p><strong>DNS rezolucija.</strong> Preglednik mora prevesti čitljivu domenu (npr. <code>example.com</code>) u numeričku IP adresu. Šalje upit DNS poslužitelju koji funkcionira poput telefonskog imenika za internet, vraćajući adresu poslužitelja na kojem se web stranica nalazi.</p>
-<p><strong>TCP veza.</strong> Preglednik uspostavlja TCP (Transmission Control Protocol) vezu s poslužiteljem. To je rukovanje koje osigurava da su obje strane spremne za pouzdanu razmjenu podataka.</p>
-<p><strong>HTTP zahtjev.</strong> Preglednik šalje HTTP (Hypertext Transfer Protocol) zahtjev poslužitelju, tražeći određeni resurs (stranicu, sliku, skriptu). Ako veza koristi HTTPS, podaci su šifrirani pomoću TLS-a, što je danas standard za svaku stranicu koja obrađuje osjetljive informacije ili želi dobro rangiranje u tražilicama.</p>
-<p><strong>Odgovor poslužitelja.</strong> Poslužitelj obrađuje zahtjev i šalje natrag odgovor koji sadrži HTML, CSS, JavaScript, slike i druge resurse. Preglednik ih prima i počinje prikazivati stranicu.</p>
-<p><strong>Prikazivanje (rendering).</strong> Preglednik parsira HTML za izgradnju Document Object Modela (DOM), primjenjuje CSS stilove, izvršava JavaScript i crta vidljivu stranicu. Ovaj proces uključuje desetke podkoraka i upravo tu optimizacija performansi postaje kritična, tema na koju ćemo se vratiti kada budemo govorili o Core Web Vitals i korisničkom iskustvu.</p>
+<section id="internet-i-world-wide-web-dva-različita-pojma" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="internet-i-world-wide-web-dva-različita-pojma"><span class="header-section-number">3</span> Internet i World Wide Web: dva različita pojma</h2>
+<section id="internet-fizička-i-logička-mreža" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="internet-fizička-i-logička-mreža"><span class="header-section-number">3.1</span> Internet: fizička i logička mreža</h3>
+<p>Internet je globalna mreža međusobno povezanih računalnih mreža. Fizički se sastoji od podmorskih kabela, optičkih vlakana, satelitskih veza, data centara i usmjerivača koji podatke prosljeđuju od jedne točke do druge. Logički se temelji na skupu protokola (pravila komunikacije) koji omogućuju da se uređaji proizvođeni u različitim zemljama, s različitim operativnim sustavima, mogu međusobno sporazumjeti.</p>
+<p>Ključna ideja koja je omogućila internet zove se <strong>komutacija paketa</strong> (packet switching). Umjesto da se između dvaju računala uspostavi izravna veza (kao u starim telefonskim centralama), podaci se razbijaju na male pakete koji putuju mrežom neovisno, različitim rutama, i na odredištu se ponovno sastavljaju. Ako jedan dio mreže otkaže, paketi pronalaze alternativni put. Ova otpornost nije slučajna: internet je izvorno dizajniran u kontekstu Hladnog rata upravo da bi preživio djelomično uništenje infrastrukture.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Praktična relevantnost
+<span class="screen-reader-only">Tip</span>Zanimljivost
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Svaka milisekunda kašnjenja u ovom lancu košta angažman. Istraživanja dosljedno pokazuju da sporije učitavane stranice dovode do viših stopa napuštanja, nižih stopa konverzije i smanjenog zadovoljstva. Kao komunikolog koji bira platforme i dizajnira sadržaj, donosite infrastrukturne odluke bili toga svjesni ili ne.</p>
+<p>Više od 95% globalnog internetskog prometa putuje podmorskim kabelima, a ne satelitima. Ukupna dužina tih kabela premašuje 1.3 milijuna kilometara. Kada pristupate web stranici hostiranoj u SAD-u iz Hrvatske, vaši paketi podataka fizički prelaze Atlantski ocean kroz kabel debljine vrtnog crijeva.</p>
 </div>
 </div>
 </section>
-<section id="protokoli-koji-su-važni" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="protokoli-koji-su-važni"><span class="header-section-number">4</span> Protokoli koji su važni</h2>
-<p><strong>HTTP/HTTPS</strong> upravlja komunikacijom između preglednika i poslužitelja. “S” (sigurna) verzija šifrira promet i danas je očekivana i od korisnika i od tražilica. Svaku stranicu bez HTTPS-a moderni preglednici označavaju kao nesigurnu.</p>
-<p><strong>DNS</strong> prevodi imena domena u IP adrese. Razumijevanje DNS-a pomaže objasniti kako organizacije upravljaju svojom web prisutnošću, kako funkcionira vlasništvo nad domenama i kako napadi poput DNS spoofinga mogu preusmjeriti korisnike na zlonamjerne stranice.</p>
-<p><strong>API-ji (Application Programming Interfaces)</strong> omogućuju različitim web servisima međusobnu komunikaciju. Kada web stranica prikazuje Google kartu, obrađuje Stripe plaćanje ili povlači sadržaj s društvenih mreža, koristi API-je. Moderni web nije zbirka izoliranih stranica nego mreža međusobno povezanih servisa koji razmjenjuju podatke kroz API-je.</p>
-<p><strong>Platežni protokoli.</strong> Online transakcije oslanjaju se na dodatne slojeve sigurnosti i standardizacije, od TLS šifriranja do PCI usklađenosti i servisa poput Stripea i PayPala koji apstrahiraju složenost rukovanja financijskim podacima. Razumijevanje da jednostavni gumb “Kupi odmah” pokreće kaskadu autentificiranih, šifriranih API poziva pomaže komunikolozima shvatiti što je u pitanju kada dizajniraju ili upravljaju transakcijskim web iskustvima.</p>
+<section id="world-wide-web-aplikacija-na-internetu" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="world-wide-web-aplikacija-na-internetu"><span class="header-section-number">3.2</span> World Wide Web: aplikacija na internetu</h3>
+<p>World Wide Web izumio je Tim Berners-Lee 1989. godine u CERN-u. Web je samo jedna od mnogih aplikacija koje koriste internet kao infrastrukturu. Druge aplikacije uključuju elektroničku poštu (koristi SMTP protokol), prijenos datoteka (FTP), videokonferencije, online igre i streaming.</p>
+<p>Web se temelji na tri izuma:</p>
+<p><strong>HTML (HyperText Markup Language)</strong> je jezik za strukturiranje sadržaja web stranica. On definira što je naslov, što je odlomak, što je slika, što je poveznica. HTML ne određuje kako nešto izgleda, nego što nešto jest.</p>
+<p><strong>URL (Uniform Resource Locator)</strong> je adresa koja jedinstveno identificira svaki resurs na webu. Kada vidite <code>https://www.example.com/products/shoes</code>, svaki dio te adrese nosi informaciju: protokol (<code>https</code>), domena (<code>www.example.com</code>) i putanja (<code>/products/shoes</code>).</p>
+<p><strong>HTTP (HyperText Transfer Protocol)</strong> je protokol koji definira kako preglednik i poslužitelj razgovaraju, kako preglednik traži resurs i kako poslužitelj odgovara.</p>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Ključna distinkcija: <strong>Internet</strong> je infrastruktura (ceste). <strong>Web</strong> je promet na tim cestama (automobili, kamioni, autobusi). Bez interneta web ne može funkcionirati, ali internet postoji i bez weba.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="web-danas-platforme-protokoli-i-povezani-uređaji" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="web-danas-platforme-protokoli-i-povezani-uređaji"><span class="header-section-number">5</span> Web danas: platforme, protokoli i povezani uređaji</h2>
-<p>Web se razvio daleko izvan statičnih stranica. Danas obuhvaća single page aplikacije koje se ponašaju poput desktop softvera, progresivne web aplikacije koje rade i bez mrežne veze, komunikaciju u stvarnom vremenu (videopozivi, chat), IoT uređaje koji šalju podatke na nadzorne ploče u oblaku te AI servise koji odgovaraju na upite u prirodnom jeziku. Sve to i dalje ovisi o istim temeljnim protokolima, ali složenost i mogućnosti onoga što se izvršava na njima enormno su se proširile.</p>
-<p>Za komunikacijske stručnjake to znači da “web” više nisu samo web stranice. To je vezivno tkivo digitalnog života, sloj kroz koji organizacije dosežu publiku, služe korisnike, prikupljaju podatke, automatiziraju procese i grade odnose. Ostatak ovog kolegija istražit će svaku od ovih dimenzija u dubinu.</p>
 </section>
-<section id="ključni-zaključci" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="ključni-zaključci"><span class="header-section-number">6</span> Ključni zaključci</h2>
+<section id="kratka-povijest-od-arpanet-a-do-ai-ja" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="kratka-povijest-od-arpanet-a-do-ai-ja"><span class="header-section-number">4</span> Kratka povijest: od ARPANET-a do AI-ja</h2>
+<p>Razumijevanje povijesti pomaže razumjeti zašto web danas izgleda upravo ovako.</p>
+<p><strong>1969.</strong> ARPANET povezuje četiri američka sveučilišta. Prva poruka poslana mrežom bila je “LO” (sustav se srušio prije nego što je pošiljatelj uspio napisati “LOGIN”).</p>
+<p><strong>1983.</strong> TCP/IP protokol postaje standard. Ovo je trenutak kada internet u modernom smislu nastaje jer različite mreže sada mogu međusobno komunicirati istim jezikom.</p>
+<p><strong>1989.</strong> Tim Berners-Lee predlaže World Wide Web.</p>
+<p><strong>1991.</strong> Prva javno dostupna web stranica (info.cern.ch). Sadržavala je tekst i poveznice, ništa više.</p>
+<p><strong>1993.</strong> Mosaic preglednik uvodi mogućnost prikazivanja slika unutar teksta. Ovo je moment koji web čini vizualno atraktivnim i pokreće eksploziju korisnika.</p>
+<p><strong>1995 do 2000.</strong> Dot-com era. Nastaju Amazon, eBay, Google. Tvrtke počinju shvaćati da web nije samo informacijski medij nego transakcijska platforma. Mnoge propale, ali one koje su preživjele transformirale su globalnu ekonomiju.</p>
+<p><strong>2004 do 2010.</strong> Pojam “Web 2.0” označava prijelaz od statičnih stranica prema interaktivnim platformama gdje korisnici stvaraju sadržaj. Nastaju Facebook, YouTube, Twitter, WordPress. Komunikacija postaje dvosmjerna.</p>
+<p><strong>2007.</strong> iPhone pokreće mobilnu revoluciju. Web više nije nešto čemu pristupate za stolom, nego nešto što nosite u džepu. Responzivni dizajn postaje nužnost.</p>
+<p><strong>2010 do 2020.</strong> Računalstvo u oblaku, SaaS modeli, e-trgovina kao norma. Platforme poput Shopifyja demokratiziraju online prodaju. Društvene mreže postaju primarni kanal komunikacije.</p>
+<p><strong>2022 do danas.</strong> Generativna AI (ChatGPT, Claude, Midjourney) transformira način na koji se sadržaj stvara, distribuira i konzumira na webu. AI ulazi u tražilice, u CMS sustave, u korisničku podršku. Ovo je kontekst u kojem vi ulazite u struku.</p>
+</section>
+<section id="anatomija-web-zahtjeva" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="anatomija-web-zahtjeva"><span class="header-section-number">5</span> Anatomija web zahtjeva</h2>
+<p>Ovo je najvažniji tehnički dio predavanja. Kada razumijete ovo, razumijete temelje svega što slijedi na kolegiju.</p>
+<section id="korak-1-dns-rezolucija" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="korak-1-dns-rezolucija"><span class="header-section-number">5.1</span> Korak 1: DNS rezolucija</h3>
+<p>Kada upišete <code>www.zara.com</code> u preglednik, preglednik ne zna gdje se taj poslužitelj fizički nalazi. Mora prevesti čitljivo ime u IP adresu (niz brojeva poput <code>151.101.1.16</code> koji identificira konkretno računalo na mreži).</p>
+<p>Proces ide ovako:</p>
+<ol type="1">
+<li>Preglednik provjerava vlastitu <strong>predmemoriju</strong> (cache). Ako ste nedavno posjetili tu stranicu, adresa je već zapamćena.</li>
+<li>Ako nije u cacheu, preglednik pita <strong>operativni sustav</strong> vašeg računala.</li>
+<li>Ako OS nema odgovor, upit ide na <strong>DNS poslužitelj vašeg internet providera</strong> (npr. T-Com, A1).</li>
+<li>Ako ni on nema odgovor, upit putuje hijerarhijom DNS sustava prema <strong>korijenskim DNS poslužiteljima</strong> (root servers), kojih ima samo 13 klastera na cijelom svijetu.</li>
+</ol>
+<p>Cijeli proces obično traje 20 do 120 milisekundi. Zvuči brzo, ali na web stranici s desecima vanjskih resursa (fontovi, analitika, oglasi, widgeti), DNS rezolucija za svaki od njih se zbraja.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Za komunikologe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kada birate domenu za organizaciju, DNS je razlog zašto promjena domene nije trivijalna. DNS zapisi se propagiraju mrežom 24 do 48 sati. Ako netko vaše organizacije kupi domenu na jednom servisu, a hosting je na drugom, DNS je ljepilo koje ih povezuje. Razumijevanje toga štedi vas od skupe konfuzije.</p>
+</div>
+</div>
+</section>
+<section id="korak-2-tcp-rukovanje" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="korak-2-tcp-rukovanje"><span class="header-section-number">5.2</span> Korak 2: TCP rukovanje</h3>
+<p>Nakon što preglednik zna IP adresu, uspostavlja TCP vezu. TCP protokol osigurava pouzdanu isporuku podataka kroz takozvano “trostruko rukovanje” (three-way handshake):</p>
+<ol type="1">
+<li>Preglednik šalje SYN paket (“Želim se povezati”)</li>
+<li>Poslužitelj odgovara SYN-ACK (“Primam, spreman sam”)</li>
+<li>Preglednik šalje ACK (“Potvrđujem, počinjemo”)</li>
+</ol>
+<p>TCP također garantira da svi paketi stignu i da stignu u ispravnom redoslijedu. Ako se paket izgubi u prijenosu, TCP automatski traži ponovno slanje.</p>
+</section>
+<section id="korak-3-tls-rukovanje-za-https" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="korak-3-tls-rukovanje-za-https"><span class="header-section-number">5.3</span> Korak 3: TLS rukovanje (za HTTPS)</h3>
+<p>Ako stranica koristi HTTPS (a danas to koristi više od 95% web stranica), nakon TCP-a slijedi TLS (Transport Layer Security) rukovanje koje uspostavlja šifriranu vezu. Preglednik i poslužitelj dogovaraju metodu šifriranja i razmjenjuju ključeve. Od tog trenutka svi podaci koji putuju između njih su šifrirani i nečitljivi za bilo koga tko ih presretne.</p>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>HTTPS nije opcija, nego standard. Google od 2018. godine označava sve HTTP stranice kao “Nesigurno” u Chrome pregledniku. Stranice bez HTTPS-a također imaju niže rangiranje u rezultatima pretraživanja. Za bilo koju organizaciju čiju web prisutnost gradite, HTTPS je prvi preduvjet.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="korak-4-http-zahtjev-i-odgovor" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="korak-4-http-zahtjev-i-odgovor"><span class="header-section-number">5.4</span> Korak 4: HTTP zahtjev i odgovor</h3>
+<p>Sada preglednik može poslati zahtjev. HTTP zahtjev sadrži:</p>
+<p><strong>Metodu</strong> koja govori poslužitelju što preglednik želi. Najčešće metode:</p>
+<ul>
+<li><code>GET</code> traži resurs (npr. “daj mi ovu stranicu”)</li>
+<li><code>POST</code> šalje podatke poslužitelju (npr. “evo podataka iz obrasca za prijavu”)</li>
+</ul>
+<p><strong>Zaglavlja</strong> (headers) koja nose metapodatke: koji preglednik šalje zahtjev, koje jezike korisnik preferira, koja veličina ekrana je u pitanju, postoje li kolačići iz prošlih posjeta.</p>
+<p><strong>URL putanju</strong> koja identificira traženi resurs.</p>
+<p>Poslužitelj obrađuje zahtjev i šalje <strong>odgovor</strong> koji sadrži:</p>
+<p><strong>Statusni kod</strong> koji govori je li zahtjev uspio:</p>
+<ul>
+<li><code>200 OK</code> znači da je sve u redu</li>
+<li><code>301 Moved Permanently</code> znači da se resurs trajno preselio (preusmjeravanje)</li>
+<li><code>404 Not Found</code> znači da traženi resurs ne postoji</li>
+<li><code>500 Internal Server Error</code> znači da je nešto pošlo po krivu na strani poslužitelja</li>
+</ul>
+<p><strong>Zaglavlja odgovora</strong> koja nose informacije o sadržaju (tip sadržaja, veličina, upute za cachiranje).</p>
+<p><strong>Tijelo odgovora</strong> koje sadrži sam sadržaj: HTML kod stranice, sliku, JSON podatke ili što god je traženo.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Praksa: pogledajte sami
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Otvorite bilo koju web stranicu u Chrome ili Firefox pregledniku. Pritisnite F12 za otvaranje Developer Tools. Kliknite na tab “Network”. Osvježite stranicu. Vidjet ćete svaki pojedinačni zahtjev koji je preglednik poslao: HTML dokument, CSS stilove, JavaScript skripte, fontove, slike, analitičke skripte, reklamne piksele. Prosječna web stranica danas šalje 60 do 100 takvih zahtjeva.</p>
+</div>
+</div>
+</section>
+<section id="korak-5-prikazivanje-rendering" class="level3" data-number="5.5">
+<h3 data-number="5.5" class="anchored" data-anchor-id="korak-5-prikazivanje-rendering"><span class="header-section-number">5.5</span> Korak 5: Prikazivanje (rendering)</h3>
+<p>Kada preglednik primi HTML, počinje složen proces prikazivanja:</p>
+<ol type="1">
+<li><strong>Parsira HTML</strong> i gradi DOM (Document Object Model) stablo, logičku reprezentaciju strukture stranice</li>
+<li><strong>Parsira CSS</strong> i gradi CSSOM (CSS Object Model), pravila o tome kako svaki element izgleda</li>
+<li><strong>Spaja DOM i CSSOM</strong> u render stablo koje sadrži samo vidljive elemente</li>
+<li><strong>Izračunava raspored</strong> (layout), određujući gdje se svaki element nalazi na ekranu i koliko je velik</li>
+<li><strong>Crta</strong> (paint) piksele na ekranu</li>
+</ol>
+<p>Ovaj proces nije jednokratan. Svaka promjena na stranici (animacija, otvaranje izbornika, učitavanje novog sadržaja) pokreće djelomično ponovno izračunavanje. Zato loše optimizirane stranice s previše animacija i kompleksnog JavaScripta postaju spore.</p>
+</section>
+</section>
+<section id="protokoli-koje-komunikolozi-moraju-poznavati" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="protokoli-koje-komunikolozi-moraju-poznavati"><span class="header-section-number">6</span> Protokoli koje komunikolozi moraju poznavati</h2>
+<section id="http-i-https" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="http-i-https"><span class="header-section-number">6.1</span> HTTP i HTTPS</h3>
+<p>HTTP je temeljni jezik weba. Svaki put kada pregledavate stranicu, kupujete nešto online, scrollate Instagram ili gledate YouTube video, HTTP je u pozadini.</p>
+<p>HTTPS dodaje sloj šifriranja. Za korisnike to znači da nitko između preglednika i poslužitelja (ni internet provider, ni vlasnik WiFi mreže, ni potencijalni napadač) ne može čitati sadržaj komunikacije. Za organizacije to znači da moraju održavati SSL/TLS certifikat, što je danas besplatno putem servisa poput Let’s Encrypt.</p>
+</section>
+<section id="dns" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="dns"><span class="header-section-number">6.2</span> DNS</h3>
+<p>DNS je telefonski imenik interneta. Nekoliko praktičnih implikacija za komunikologe:</p>
+<p><strong>Domene su imovina.</strong> Kada organizacija registrira domenu, to je digitalna imovina koja se mora obnavljati, zaštititi i strateški odabrati. Gubitak domene (zaboravljeno obnavljanje) može značiti gubitak čitave online prisutnosti.</p>
+<p><strong>DNS konfiguracija povezuje sve.</strong> Domena, hosting, email, verifikacija za tražilice, sve se povezuje kroz DNS zapise. Bazično razumijevanje ovog procesa štedi komunikologe od ovisnosti o tehničkom osoblju za svaku sitnicu.</p>
+<p><strong>CDN (Content Delivery Network)</strong> koristi DNS za usmjeravanje korisnika na geografski najbliži poslužitelj. Kada hrvatska korisnica pristupa stranici koja koristi Cloudflare CDN, njezin zahtjev ne putuje do originalnog poslužitelja u SAD-u, nego do Cloudflareovog poslužitelja u Frankfurtu ili Beču. Rezultat je brže učitavanje.</p>
+</section>
+<section id="api-ji-ljepilo-modernog-weba" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="api-ji-ljepilo-modernog-weba"><span class="header-section-number">6.3</span> API-ji: ljepilo modernog weba</h3>
+<p>API (Application Programming Interface) je mehanizam koji omogućuje dvama softverskim sustavima da međusobno komuniciraju. Za komunikologe to je jedan od najvažnijih koncepata za razumijevanje jer moderni web funkcionira kao ekosustav servisa povezanih API-jima.</p>
+<p>Primjeri iz svakodnevnog iskustva:</p>
+<p><strong>Web stranica s Google kartom.</strong> Stranica ne sadrži kartu. Ona putem Google Maps API-ja šalje zahtjev Googleovim poslužiteljima koji vraćaju kartu kao podatke, a web stranica ih prikazuje.</p>
+<p><strong>Online plaćanje.</strong> Kada kupujete na web trgovini, ona ne obrađuje vašu kreditnu karticu. Putem Stripe ili PayPal API-ja šalje podatke specijaliziranom platežnom procesoru koji obavlja transakciju i vraća potvrdu.</p>
+<p><strong>Društvene mreže na web stranici.</strong> “Share” gumbi, Instagram feedovi ugrađeni na stranicu, Facebook komentari ispod članaka, sve to koristi API-je tih platformi.</p>
+<p><strong>Analitika.</strong> Google Analytics, Meta Pixel, Hotjar, svi ovi alati koje komunikolozi koriste za praćenje korisnika rade putem API-ja: mali komad koda na stranici šalje podatke o ponašanju korisnika na externe poslužitelje.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Zašto je ovo bitno za vas?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kada planirate web stranicu za klijenta, morate znati da svaki vanjski servis koji uključite (chat widget, analitika, platežni sustav, newsletter integracija, CRM) dolazi putem API-ja i da svaki od njih dodaje vrijeme učitavanja, potencijalni sigurnosni rizik i ovisnost o trećoj strani. Komunikolog koji to razumije može donositi bolje odluke o tome što uključiti, a što je nepotrebno.</p>
+</div>
+</div>
+</section>
+<section id="platežni-protokoli-i-sigurnost-transakcija" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="platežni-protokoli-i-sigurnost-transakcija"><span class="header-section-number">6.4</span> Platežni protokoli i sigurnost transakcija</h3>
+<p>Online transakcije zahtijevaju dodatne slojeve sigurnosti izvan standardnog HTTPS-a:</p>
+<p><strong>PCI DSS (Payment Card Industry Data Security Standard)</strong> je skup sigurnosnih standarda koji se mora poštovati pri obradi kartičnih podataka. Zato većina web stranica ne obrađuje kartice izravno, nego koristi servise poput Stripea ili Braintreea koji preuzimaju tu odgovornost.</p>
+<p><strong>Tokenizacija</strong> zamjenjuje osjetljive podatke (broj kartice) tokenom (nasumičnim nizom znakova) koji nema vrijednost izvan konteksta konkretne transakcije.</p>
+<p>Kada korisnik klikne “Kupi odmah” na web stranici, pokreće se lanac koji uključuje više API poziva: web stranica šalje podatke o narudžbi platežnom procesoru, procesor komunicira s bankom izdavateljicom kartice, banka autorizira transakciju, potvrda se vraća natrag kroz cijeli lanac. Sve to traje 2 do 5 sekundi i uključuje HTTPS šifriranje na svakom koraku.</p>
+</section>
+</section>
+<section id="kako-izgleda-moderni-web" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="kako-izgleda-moderni-web"><span class="header-section-number">7</span> Kako izgleda moderni web</h2>
+<section id="od-statičnih-stranica-do-aplikacija" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="od-statičnih-stranica-do-aplikacija"><span class="header-section-number">7.1</span> Od statičnih stranica do aplikacija</h3>
+<p>Rana web stranica bila je tekst s poveznicama. Danas je prosječna web stranica zapravo <strong>aplikacija</strong> koja se izvršava u pregledniku. Razlika je fundamentalna:</p>
+<p><strong>Statična stranica</strong> je datoteka koja se isporučuje korisniku kakva jest. Svaki korisnik vidi isto. Primjer: jednostavna portfolio stranica.</p>
+<p><strong>Dinamična stranica</strong> generira se na poslužitelju za svakog korisnika posebno. Primjer: Amazon vam prikazuje personalizirane preporuke na temelju vaše povijesti kupnje.</p>
+<p><strong>Single Page Application (SPA)</strong> učitava se jednom, a zatim dinamički mijenja sadržaj bez ponovnog učitavanja stranice. Primjer: Gmail, Google Maps, Trello.</p>
+<p><strong>Progressive Web App (PWA)</strong> je web stranica koja se ponaša poput nativne mobilne aplikacije: može raditi offline, slati obavijesti i biti “instalirana” na početni zaslon telefona. Primjer: Twitter Lite, Starbucks narudžba.</p>
+</section>
+<section id="tri-sloja-web-stranice" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="tri-sloja-web-stranice"><span class="header-section-number">7.2</span> Tri sloja web stranice</h3>
+<p>Svaka web stranica koja nije trivijalna ima tri sloja:</p>
+<p><strong>HTML (struktura)</strong> definira sadržaj: naslovi, odlomci, slike, obrasci, tablice. HTML je kostur stranice.</p>
+<p><strong>CSS (prezentacija)</strong> definira izgled: boje, fontovi, razmaci, responzivni raspored za različite veličine ekrana. CSS je odjeća.</p>
+<p><strong>JavaScript (ponašanje)</strong> definira interaktivnost: što se dogodi kada korisnik klikne gumb, kako se validira obrazac, kako se podaci dohvaćaju s poslužitelja bez ponovnog učitavanja stranice. JavaScript je mišićni sustav.</p>
+<p>Komunikolozi ne moraju pisati kod u ova tri jezika, ali moraju razumjeti ovu podjelu jer će se u razgovorima s developerima i dizajnerima stalno pojavljivati.</p>
+</section>
+<section id="internet-stvari-i-web-izvan-preglednika" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="internet-stvari-i-web-izvan-preglednika"><span class="header-section-number">7.3</span> Internet stvari i web izvan preglednika</h3>
+<p>Web se proširio daleko izvan preglednika. IoT (Internet of Things) uređaji, od pametnih termostata i satova do industrijskih senzora, komuniciraju putem web protokola. Pametni zvučnici (Alexa, Google Home) koriste API-je za obradu glasovnih naredbi. Automobili preuzimaju softverska ažuriranja putem HTTP-a.</p>
+<p>Za komunikologe to znači da je “web prisutnost” organizacije sve širi pojam. Nije samo web stranica, nego i glasovni asistenti, chatbotovi, mobilne notifikacije, email automatizacije i svaki drugi digitalni dodirna točka s korisnicima.</p>
+</section>
+</section>
+<section id="performanse-zašto-brzina-nije-tehnički-detalj" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="performanse-zašto-brzina-nije-tehnički-detalj"><span class="header-section-number">8</span> Performanse: zašto brzina nije tehnički detalj</h2>
+<p>Performanse web stranice nisu samo tehnički problem, nego poslovni i komunikacijski problem. Istraživanja dosljedno potvrđuju:</p>
+<p><strong>53% mobilnih korisnika</strong> napušta stranicu ako se učitava duže od 3 sekunde (izvor: Google).</p>
+<p><strong>Svaka sekunda kašnjenja</strong> smanjuje konverzije za otprilike 7% (izvor: Akamai).</p>
+<p><strong>Najbrže stranice</strong> imaju dvostruko veće stope konverzije od najsporijih u istoj industriji (izvor: Deloitte Digital).</p>
+<p>Google koristi performanse stranice kao <strong>faktor rangiranja</strong> u pretraživanju putem metrika zvanih <strong>Core Web Vitals</strong>:</p>
+<p><strong>LCP (Largest Contentful Paint)</strong> mjeri koliko brzo se prikazuje najistaknutiji sadržaj na stranici. Cilj je ispod 2.5 sekunde.</p>
+<p><strong>INP (Interaction to Next Paint)</strong> mjeri koliko brzo stranica reagira na korisnikovu akciju (klik, dodir). Cilj je ispod 200 milisekundi.</p>
+<p><strong>CLS (Cumulative Layout Shift)</strong> mjeri vizualnu stabilnost, koliko se elementi stranice nepredvidivo pomiču tijekom učitavanja. Svima se dogodilo da su pokušali kliknuti gumb koji se u zadnjem trenutku pomaknuo jer se iznad njega učitala reklama. Cilj je CLS ispod 0.1.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Alat za provjeru
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Otvorite <a href="https://pagespeed.web.dev/">PageSpeed Insights</a> i testirajte bilo koju web stranicu. Dobit ćete ocjenu performansi i konkretne preporuke za poboljšanje. Pokušajte testirati web stranice hrvatskih organizacija i usporedite rezultate.</p>
+</div>
+</div>
+</section>
+<section id="web-infrastruktura-i-hrvatska" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="web-infrastruktura-i-hrvatska"><span class="header-section-number">9</span> Web infrastruktura i Hrvatska</h2>
+<p>Nekoliko kontekstualnih činjenica relevantnih za komunikologe koji će raditi na hrvatskom tržištu:</p>
+<p><strong>Internet penetracija u Hrvatskoj</strong> je iznad 90%, ali kvaliteta pristupa varira značajno između gradskih i ruralnih područja.</p>
+<p><strong>Hrvatski hosting provideri</strong> (Plus Hosting, Avalon, SiteGround s europskim data centrima) nude usluge relevantne za manje organizacije, dok veće tvrtke i institucije sve više koriste globalne cloud platforme (AWS, Azure, Google Cloud).</p>
+<p><strong>E-uprava</strong> u Hrvatskoj koristi web infrastrukturu za sustave poput e-Građana, e-Porezne, HZZO-a. Komunikolozi koji rade u javnom sektoru moraju razumjeti ograničenja i mogućnosti ovih sustava.</p>
+<p><strong>GDPR</strong> (o kojem ćemo detaljno govoriti u Tjednu 13) ima implikacije za web infrastrukturu: gdje su podaci fizički pohranjeni, kako se prenose, tko im pristupa.</p>
+</section>
+<section id="vježba-što-ste-naučili" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="vježba-što-ste-naučili"><span class="header-section-number">10</span> Vježba: što ste naučili?</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Razmislite i odgovorite
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Objasnite vlastitim riječima razliku između interneta i weba.</li>
+<li>Koliko koraka uključuje putovanje od upisivanja URL-a do prikazivanja stranice?</li>
+<li>Zašto bi komunikologa trebalo biti briga za HTTPS?</li>
+<li>Dajte tri primjera API-ja na web stranicama koje svakodnevno koristite.</li>
+<li>Ako klijent kaže “stranica nam je spora”, koja pitanja biste postavili?</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="ključni-zaključci" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="ključni-zaključci"><span class="header-section-number">11</span> Ključni zaključci</h2>
 <div class="callout callout-style-simple callout-important no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -520,17 +789,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container">
 <ol type="1">
-<li>Internet je infrastruktura; web je aplikacija koja se na njoj izvršava</li>
-<li>Web zahtjev uključuje DNS, TCP, HTTP/S, obradu na poslužitelju i prikazivanje u pregledniku</li>
-<li>HTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava</li>
-<li>Tehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju</li>
+<li>Internet je infrastruktura (kabeli, protokoli, usmjerivači); web je aplikacija koja se na njoj izvršava</li>
+<li>Web zahtjev prolazi kroz DNS rezoluciju, TCP i TLS rukovanje, HTTP zahtjev/odgovor i rendering u pregledniku</li>
+<li>HTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava, od informacijskih stranica do online trgovina</li>
+<li>Performanse stranice izravno utječu na korisničko iskustvo, konverzije i rangiranje u tražilicama</li>
+<li>Tehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju i preduvjet za kompetentno profesionalno djelovanje</li>
 </ol>
 </div>
 </div>
 </div>
 </section>
-<section id="priprema-za-sljedeći-tjedan" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="priprema-za-sljedeći-tjedan"><span class="header-section-number">7</span> Priprema za sljedeći tjedan</h2>
+<section id="priprema-za-sljedeći-tjedan" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="priprema-za-sljedeći-tjedan"><span class="header-section-number">12</span> Priprema za sljedeći tjedan</h2>
 <div class="callout callout-style-simple callout-warning no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -538,19 +808,115 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container">
 <p><strong>Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna</strong></p>
-<p>Prije sljedećeg tjedna pokušajte pretražiti istu temu na Googleu, Bingu i još jednoj tražilici (DuckDuckGo, Brave Search ili lokalna hrvatska tražilica). Zabilježite razlike u rezultatima. Dođite pripremljeni za raspravu o tome zašto različite tražilice vraćaju različite rezultate za isti upit.</p>
+<p>Zadaci za pripremu:</p>
+<ol type="1">
+<li>Pretražite istu temu (npr. “restoran u Zagrebu”) na Googleu, Bingu i DuckDuckGo. Zabilježite razlike u rezultatima. Razmislite zašto se razlikuju.</li>
+<li>Otvorite Developer Tools (F12) na svojoj omiljenoj web stranici, kliknite tab “Network” i osvježite stranicu. Prebrojite koliko zahtjeva preglednik šalje. Pogledajte stupac “Time” i nađite najsporiji zahtjev.</li>
+<li>Testirajte jednu hrvatsku web stranicu na <a href="https://pagespeed.web.dev/">PageSpeed Insights</a> i zabilježite ocjenu.</li>
+</ol>
 </div>
 </div>
 </div>
 </section>
-<section id="dodatno-čitanje" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="dodatno-čitanje"><span class="header-section-number">8</span> Dodatno čitanje</h2>
-<p>Za one koji žele dublje istražiti teme ovog tjedna:</p>
+<section id="dodatno-čitanje" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="dodatno-čitanje"><span class="header-section-number">13</span> Dodatno čitanje</h2>
+<p>Obavezno:</p>
 <ul>
-<li>Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">How the Web Works</a></li>
-<li>Cloudflare Learning Center: <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">What is DNS?</a></li>
-<li>Google: <a href="https://web.dev/why-https-matters/">Why HTTPS Matters</a></li>
+<li>Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">How the Web Works</a> (cca 15 minuta čitanja)</li>
 </ul>
+<p>Preporučeno za dublje razumijevanje:</p>
+<ul>
+<li>Cloudflare Learning Center: <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">What is DNS?</a></li>
+<li>Cloudflare Learning Center: <a href="https://www.cloudflare.com/learning/ssl/what-is-https/">What is HTTPS?</a></li>
+<li>Google: <a href="https://web.dev/articles/vitals">Web Vitals</a></li>
+<li>Submarine Cable Map: <a href="https://www.submarinecablemap.com/">Interaktivna karta podmorskih kabela</a></li>
+<li>Cloudflare: <a href="https://www.cloudflare.com/learning/security/api/what-is-an-api/">What is an API?</a></li>
+</ul>
+</section>
+<section id="pojmovnik" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="pojmovnik"><span class="header-section-number">14</span> Pojmovnik</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pojam</th>
+<th>Objašnjenje</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ARPANET</td>
+<td>Preteča interneta, vojna/akademska mreža iz 1969.</td>
+</tr>
+<tr class="even">
+<td>DNS</td>
+<td>Sustav koji prevodi imena domena u IP adrese</td>
+</tr>
+<tr class="odd">
+<td>HTTP/HTTPS</td>
+<td>Protokol za komunikaciju između preglednika i poslužitelja (S = šifrirano)</td>
+</tr>
+<tr class="even">
+<td>TCP/IP</td>
+<td>Temeljni protokoli interneta koji osiguravaju pouzdanu isporuku paketa</td>
+</tr>
+<tr class="odd">
+<td>TLS</td>
+<td>Protokol za šifriranje koji omogućuje HTTPS</td>
+</tr>
+<tr class="even">
+<td>API</td>
+<td>Sučelje za komunikaciju između softverskih sustava</td>
+</tr>
+<tr class="odd">
+<td>CDN</td>
+<td>Mreža poslužitelja koja isporučuje sadržaj s geografski najbližeg čvora</td>
+</tr>
+<tr class="even">
+<td>HTML</td>
+<td>Jezik za strukturiranje sadržaja web stranica</td>
+</tr>
+<tr class="odd">
+<td>CSS</td>
+<td>Jezik za definiranje vizualnog izgleda web stranica</td>
+</tr>
+<tr class="even">
+<td>JavaScript</td>
+<td>Programski jezik za interaktivnost na web stranicama</td>
+</tr>
+<tr class="odd">
+<td>SPA</td>
+<td>Single Page Application, web aplikacija koja se učitava jednom</td>
+</tr>
+<tr class="even">
+<td>PWA</td>
+<td>Progressive Web App, web stranica s mogućnostima nativne aplikacije</td>
+</tr>
+<tr class="odd">
+<td>Core Web Vitals</td>
+<td>Googleove metrike za mjerenje korisničkog iskustva na webu</td>
+</tr>
+<tr class="even">
+<td>PCI DSS</td>
+<td>Sigurnosni standard za obradu kartičnih plaćanja</td>
+</tr>
+<tr class="odd">
+<td>Rendering</td>
+<td>Proces prikazivanja web stranice u pregledniku</td>
+</tr>
+<tr class="even">
+<td>DOM</td>
+<td>Document Object Model, logička struktura HTML dokumenta</td>
+</tr>
+<tr class="odd">
+<td>Statusni kod</td>
+<td>Brojčani odgovor poslužitelja (200 = OK, 404 = nije pronađeno, itd.)</td>
+</tr>
+</tbody>
+</table>
 
 
 <!-- -->
@@ -1038,74 +1404,334 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Objasniti razliku između interneta i World Wide Weba</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Opisati putovanje web zahtjeva od preglednika do poslužitelja i natrag</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Identificirati ključne protokole (HTTP/HTTPS, DNS, TCP/IP) koji omogućuju web komunikaciju</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Artikulirati zašto je tehnička pismenost važna za komunikacijske stručnjake</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Od ARPANET-a do modernog weba</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>Internet je započeo kao vojna i akademska istraživačka mreža kasnih 1960-ih. ARPANET je povezao nekolicinu sveučilišnih računala i dokazao da komutacija paketa, ideja razbijanja podataka na male dijelove i njihovog neovisnog usmjeravanja, može pouzdano funkcionirati na velikim udaljenostima. World Wide Web stigao je tri desetljeća kasnije, kada je Tim Berners Lee u CERN-u predložio sustav hipertekstualnih dokumenata dostupnih putem preglednika. Razlika je bitna jer je internet fizička i logička infrastruktura (kabeli, usmjerivači, protokoli), dok je web jedna aplikacija koja se izvršava na toj infrastrukturi, zajedno s elektroničkom poštom, prijenosom datoteka, streamingom i mnogim drugim uslugama.</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Danas je web postao zadano sučelje za gotovo sve: objavljivanje, trgovinu, zabavu, upravljanje, obrazovanje i međuljudsku komunikaciju. Za komunikacijskog stručnjaka to znači da će gotovo svaka poruka koju oblikujete, svaka kampanja koju provedete i svaki sadržaj kojim upravljate u nekom trenutku putovati kroz web infrastrukturu. Razumijevanje načina na koji ta infrastruktura funkcionira nije izborna specijalizacija, nego temeljna pismenost.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kako funkcionira web zahtjev</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Kada upišete URL u preglednik ili kliknete na poveznicu, u milisekundama se odvija niz događaja.</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>**DNS rezolucija.** Preglednik mora prevesti čitljivu domenu (npr. <span class="in">`example.com`</span>) u numeričku IP adresu. Šalje upit DNS poslužitelju koji funkcionira poput telefonskog imenika za internet, vraćajući adresu poslužitelja na kojem se web stranica nalazi.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>**TCP veza.** Preglednik uspostavlja TCP (Transmission Control Protocol) vezu s poslužiteljem. To je rukovanje koje osigurava da su obje strane spremne za pouzdanu razmjenu podataka.</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>**HTTP zahtjev.** Preglednik šalje HTTP (Hypertext Transfer Protocol) zahtjev poslužitelju, tražeći određeni resurs (stranicu, sliku, skriptu). Ako veza koristi HTTPS, podaci su šifrirani pomoću TLS-a, što je danas standard za svaku stranicu koja obrađuje osjetljive informacije ili želi dobro rangiranje u tražilicama.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>**Odgovor poslužitelja.** Poslužitelj obrađuje zahtjev i šalje natrag odgovor koji sadrži HTML, CSS, JavaScript, slike i druge resurse. Preglednik ih prima i počinje prikazivati stranicu.</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>**Prikazivanje (rendering).** Preglednik parsira HTML za izgradnju Document Object Modela (DOM), primjenjuje CSS stilove, izvršava JavaScript i crta vidljivu stranicu. Ovaj proces uključuje desetke podkoraka i upravo tu optimizacija performansi postaje kritična, tema na koju ćemo se vratiti kada budemo govorili o Core Web Vitals i korisničkom iskustvu.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Prepoznati ulogu API-ja u modernom webu i razumjeti zašto je to važno za komunikologe</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Artikulirati kako infrastrukturne odluke utječu na korisničko iskustvo, konverzije i poslovne rezultate</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto je ovo uopće bitno za komunikologe?</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Zamislite da ste zaduženi za web stranicu neke organizacije. Klijent vas pita zašto je stranica spora, zašto Google ne prikazuje njihove stranice u rezultatima pretraživanja ili zašto posjetitelji napuštaju stranicu prije nego što obave kupnju. Ako ne razumijete osnove web infrastrukture, ne možete dijagnosticirati problem, ne možete razgovarati s developerima i ne možete donositi informirane odluke o platformi, hostingu ili dizajnu.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Ovo predavanje nije o tome da postanete programeri. Ono je o tome da razumijete sustav u kojem radite, slično kao što novinar mora razumjeti kako funkcionira pravosudni sustav čak i ako ne planira postati odvjetnik.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Internet i World Wide Web: dva različita pojma</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">### Internet: fizička i logička mreža</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Internet je globalna mreža međusobno povezanih računalnih mreža. Fizički se sastoji od podmorskih kabela, optičkih vlakana, satelitskih veza, data centara i usmjerivača koji podatke prosljeđuju od jedne točke do druge. Logički se temelji na skupu protokola (pravila komunikacije) koji omogućuju da se uređaji proizvođeni u različitim zemljama, s različitim operativnim sustavima, mogu međusobno sporazumjeti.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Ključna ideja koja je omogućila internet zove se **komutacija paketa** (packet switching). Umjesto da se između dvaju računala uspostavi izravna veza (kao u starim telefonskim centralama), podaci se razbijaju na male pakete koji putuju mrežom neovisno, različitim rutama, i na odredištu se ponovno sastavljaju. Ako jedan dio mreže otkaže, paketi pronalaze alternativni put. Ova otpornost nije slučajna: internet je izvorno dizajniran u kontekstu Hladnog rata upravo da bi preživio djelomično uništenje infrastrukture.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zanimljivost</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Više od 95% globalnog internetskog prometa putuje podmorskim kabelima, a ne satelitima. Ukupna dužina tih kabela premašuje 1.3 milijuna kilometara. Kada pristupate web stranici hostiranoj u SAD-u iz Hrvatske, vaši paketi podataka fizički prelaze Atlantski ocean kroz kabel debljine vrtnog crijeva.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Praktična relevantnost</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Svaka milisekunda kašnjenja u ovom lancu košta angažman. Istraživanja dosljedno pokazuju da sporije učitavane stranice dovode do viših stopa napuštanja, nižih stopa konverzije i smanjenog zadovoljstva. Kao komunikolog koji bira platforme i dizajnira sadržaj, donosite infrastrukturne odluke bili toga svjesni ili ne.</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Protokoli koji su važni</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>**HTTP/HTTPS** upravlja komunikacijom između preglednika i poslužitelja. "S" (sigurna) verzija šifrira promet i danas je očekivana i od korisnika i od tražilica. Svaku stranicu bez HTTPS-a moderni preglednici označavaju kao nesigurnu.</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>**DNS** prevodi imena domena u IP adrese. Razumijevanje DNS-a pomaže objasniti kako organizacije upravljaju svojom web prisutnošću, kako funkcionira vlasništvo nad domenama i kako napadi poput DNS spoofinga mogu preusmjeriti korisnike na zlonamjerne stranice.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>**API-ji (Application Programming Interfaces)** omogućuju različitim web servisima međusobnu komunikaciju. Kada web stranica prikazuje Google kartu, obrađuje Stripe plaćanje ili povlači sadržaj s društvenih mreža, koristi API-je. Moderni web nije zbirka izoliranih stranica nego mreža međusobno povezanih servisa koji razmjenjuju podatke kroz API-je.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>**Platežni protokoli.** Online transakcije oslanjaju se na dodatne slojeve sigurnosti i standardizacije, od TLS šifriranja do PCI usklađenosti i servisa poput Stripea i PayPala koji apstrahiraju složenost rukovanja financijskim podacima. Razumijevanje da jednostavni gumb "Kupi odmah" pokreće kaskadu autentificiranih, šifriranih API poziva pomaže komunikolozima shvatiti što je u pitanju kada dizajniraju ili upravljaju transakcijskim web iskustvima.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Web danas: platforme, protokoli i povezani uređaji</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Web se razvio daleko izvan statičnih stranica. Danas obuhvaća single page aplikacije koje se ponašaju poput desktop softvera, progresivne web aplikacije koje rade i bez mrežne veze, komunikaciju u stvarnom vremenu (videopozivi, chat), IoT uređaje koji šalju podatke na nadzorne ploče u oblaku te AI servise koji odgovaraju na upite u prirodnom jeziku. Sve to i dalje ovisi o istim temeljnim protokolima, ali složenost i mogućnosti onoga što se izvršava na njima enormno su se proširile.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Za komunikacijske stručnjake to znači da "web" više nisu samo web stranice. To je vezivno tkivo digitalnog života, sloj kroz koji organizacije dosežu publiku, služe korisnike, prikupljaju podatke, automatiziraju procese i grade odnose. Ostatak ovog kolegija istražit će svaku od ovih dimenzija u dubinu.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključni zaključci</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Internet je infrastruktura; web je aplikacija koja se na njoj izvršava</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Web zahtjev uključuje DNS, TCP, HTTP/S, obradu na poslužitelju i prikazivanje u pregledniku</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>HTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Tehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### World Wide Web: aplikacija na internetu</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>World Wide Web izumio je Tim Berners-Lee 1989. godine u CERN-u. Web je samo jedna od mnogih aplikacija koje koriste internet kao infrastrukturu. Druge aplikacije uključuju elektroničku poštu (koristi SMTP protokol), prijenos datoteka (FTP), videokonferencije, online igre i streaming.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Web se temelji na tri izuma:</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>**HTML (HyperText Markup Language)** je jezik za strukturiranje sadržaja web stranica. On definira što je naslov, što je odlomak, što je slika, što je poveznica. HTML ne određuje kako nešto izgleda, nego što nešto jest.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>**URL (Uniform Resource Locator)** je adresa koja jedinstveno identificira svaki resurs na webu. Kada vidite <span class="in">`https://www.example.com/products/shoes`</span>, svaki dio te adrese nosi informaciju: protokol (<span class="in">`https`</span>), domena (<span class="in">`www.example.com`</span>) i putanja (<span class="in">`/products/shoes`</span>).</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>**HTTP (HyperText Transfer Protocol)** je protokol koji definira kako preglednik i poslužitelj razgovaraju, kako preglednik traži resurs i kako poslužitelj odgovara.</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Ključna distinkcija: **Internet** je infrastruktura (ceste). **Web** je promet na tim cestama (automobili, kamioni, autobusi). Bez interneta web ne može funkcionirati, ali internet postoji i bez weba.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kratka povijest: od ARPANET-a do AI-ja</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>Razumijevanje povijesti pomaže razumjeti zašto web danas izgleda upravo ovako.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>**1969.** ARPANET povezuje četiri američka sveučilišta. Prva poruka poslana mrežom bila je "LO" (sustav se srušio prije nego što je pošiljatelj uspio napisati "LOGIN").</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>**1983.** TCP/IP protokol postaje standard. Ovo je trenutak kada internet u modernom smislu nastaje jer različite mreže sada mogu međusobno komunicirati istim jezikom.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>**1989.** Tim Berners-Lee predlaže World Wide Web.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>**1991.** Prva javno dostupna web stranica (info.cern.ch). Sadržavala je tekst i poveznice, ništa više.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>**1993.** Mosaic preglednik uvodi mogućnost prikazivanja slika unutar teksta. Ovo je moment koji web čini vizualno atraktivnim i pokreće eksploziju korisnika.</span>
 <span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Priprema za sljedeći tjedan</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>**1995 do 2000.** Dot-com era. Nastaju Amazon, eBay, Google. Tvrtke počinju shvaćati da web nije samo informacijski medij nego transakcijska platforma. Mnoge propale, ali one koje su preživjele transformirale su globalnu ekonomiju.</span>
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning appearance="minimal"}</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>**Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna**</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>Prije sljedećeg tjedna pokušajte pretražiti istu temu na Googleu, Bingu i još jednoj tražilici (DuckDuckGo, Brave Search ili lokalna hrvatska tražilica). Zabilježite razlike u rezultatima. Dođite pripremljeni za raspravu o tome zašto različite tražilice vraćaju različite rezultate za isti upit.</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>**2004 do 2010.** Pojam "Web 2.0" označava prijelaz od statičnih stranica prema interaktivnim platformama gdje korisnici stvaraju sadržaj. Nastaju Facebook, YouTube, Twitter, WordPress. Komunikacija postaje dvosmjerna.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>**2007.** iPhone pokreće mobilnu revoluciju. Web više nije nešto čemu pristupate za stolom, nego nešto što nosite u džepu. Responzivni dizajn postaje nužnost.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>**2010 do 2020.** Računalstvo u oblaku, SaaS modeli, e-trgovina kao norma. Platforme poput Shopifyja demokratiziraju online prodaju. Društvene mreže postaju primarni kanal komunikacije.</span>
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dodatno čitanje</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>**2022 do danas.** Generativna AI (ChatGPT, Claude, Midjourney) transformira način na koji se sadržaj stvara, distribuira i konzumira na webu. AI ulazi u tražilice, u CMS sustave, u korisničku podršku. Ovo je kontekst u kojem vi ulazite u struku.</span>
 <span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Za one koji žele dublje istražiti teme ovog tjedna:</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">## Anatomija web zahtjeva</span></span>
 <span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mozilla Developer Network: <span class="co">[</span><span class="ot">How the Web Works</span><span class="co">](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)</span></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cloudflare Learning Center: <span class="co">[</span><span class="ot">What is DNS?</span><span class="co">](https://www.cloudflare.com/learning/dns/what-is-dns/)</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Google: <span class="co">[</span><span class="ot">Why HTTPS Matters</span><span class="co">](https://web.dev/why-https-matters/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Ovo je najvažniji tehnički dio predavanja. Kada razumijete ovo, razumijete temelje svega što slijedi na kolegiju.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">### Korak 1: DNS rezolucija</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Kada upišete <span class="in">`www.zara.com`</span> u preglednik, preglednik ne zna gdje se taj poslužitelj fizički nalazi. Mora prevesti čitljivo ime u IP adresu (niz brojeva poput <span class="in">`151.101.1.16`</span> koji identificira konkretno računalo na mreži).</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Proces ide ovako:</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Preglednik provjerava vlastitu **predmemoriju** (cache). Ako ste nedavno posjetili tu stranicu, adresa je već zapamćena.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Ako nije u cacheu, preglednik pita **operativni sustav** vašeg računala.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Ako OS nema odgovor, upit ide na **DNS poslužitelj vašeg internet providera** (npr. T-Com, A1).</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Ako ni on nema odgovor, upit putuje hijerarhijom DNS sustava prema **korijenskim DNS poslužiteljima** (root servers), kojih ima samo 13 klastera na cijelom svijetu.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Cijeli proces obično traje 20 do 120 milisekundi. Zvuči brzo, ali na web stranici s desecima vanjskih resursa (fontovi, analitika, oglasi, widgeti), DNS rezolucija za svaki od njih se zbraja.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Za komunikologe</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>Kada birate domenu za organizaciju, DNS je razlog zašto promjena domene nije trivijalna. DNS zapisi se propagiraju mrežom 24 do 48 sati. Ako netko vaše organizacije kupi domenu na jednom servisu, a hosting je na drugom, DNS je ljepilo koje ih povezuje. Razumijevanje toga štedi vas od skupe konfuzije.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="fu">### Korak 2: TCP rukovanje</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>Nakon što preglednik zna IP adresu, uspostavlja TCP vezu. TCP protokol osigurava pouzdanu isporuku podataka kroz takozvano "trostruko rukovanje" (three-way handshake):</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Preglednik šalje SYN paket ("Želim se povezati")</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Poslužitelj odgovara SYN-ACK ("Primam, spreman sam")</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Preglednik šalje ACK ("Potvrđujem, počinjemo")</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>TCP također garantira da svi paketi stignu i da stignu u ispravnom redoslijedu. Ako se paket izgubi u prijenosu, TCP automatski traži ponovno slanje.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### Korak 3: TLS rukovanje (za HTTPS)</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Ako stranica koristi HTTPS (a danas to koristi više od 95% web stranica), nakon TCP-a slijedi TLS (Transport Layer Security) rukovanje koje uspostavlja šifriranu vezu. Preglednik i poslužitelj dogovaraju metodu šifriranja i razmjenjuju ključeve. Od tog trenutka svi podaci koji putuju između njih su šifrirani i nečitljivi za bilo koga tko ih presretne.</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>HTTPS nije opcija, nego standard. Google od 2018. godine označava sve HTTP stranice kao "Nesigurno" u Chrome pregledniku. Stranice bez HTTPS-a također imaju niže rangiranje u rezultatima pretraživanja. Za bilo koju organizaciju čiju web prisutnost gradite, HTTPS je prvi preduvjet.</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">### Korak 4: HTTP zahtjev i odgovor</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>Sada preglednik može poslati zahtjev. HTTP zahtjev sadrži:</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>**Metodu** koja govori poslužitelju što preglednik želi. Najčešće metode:</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`GET`</span> traži resurs (npr. "daj mi ovu stranicu")</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`POST`</span> šalje podatke poslužitelju (npr. "evo podataka iz obrasca za prijavu")</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>**Zaglavlja** (headers) koja nose metapodatke: koji preglednik šalje zahtjev, koje jezike korisnik preferira, koja veličina ekrana je u pitanju, postoje li kolačići iz prošlih posjeta.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>**URL putanju** koja identificira traženi resurs.</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Poslužitelj obrađuje zahtjev i šalje **odgovor** koji sadrži:</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>**Statusni kod** koji govori je li zahtjev uspio:</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`200 OK`</span> znači da je sve u redu</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`301 Moved Permanently`</span> znači da se resurs trajno preselio (preusmjeravanje)</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`404 Not Found`</span> znači da traženi resurs ne postoji</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`500 Internal Server Error`</span> znači da je nešto pošlo po krivu na strani poslužitelja</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>**Zaglavlja odgovora** koja nose informacije o sadržaju (tip sadržaja, veličina, upute za cachiranje).</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>**Tijelo odgovora** koje sadrži sam sadržaj: HTML kod stranice, sliku, JSON podatke ili što god je traženo.</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="fu">## Praksa: pogledajte sami</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>Otvorite bilo koju web stranicu u Chrome ili Firefox pregledniku. Pritisnite F12 za otvaranje Developer Tools. Kliknite na tab "Network". Osvježite stranicu. Vidjet ćete svaki pojedinačni zahtjev koji je preglednik poslao: HTML dokument, CSS stilove, JavaScript skripte, fontove, slike, analitičke skripte, reklamne piksele. Prosječna web stranica danas šalje 60 do 100 takvih zahtjeva.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Korak 5: Prikazivanje (rendering)</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>Kada preglednik primi HTML, počinje složen proces prikazivanja:</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Parsira HTML** i gradi DOM (Document Object Model) stablo, logičku reprezentaciju strukture stranice</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Parsira CSS** i gradi CSSOM (CSS Object Model), pravila o tome kako svaki element izgleda</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Spaja DOM i CSSOM** u render stablo koje sadrži samo vidljive elemente</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Izračunava raspored** (layout), određujući gdje se svaki element nalazi na ekranu i koliko je velik</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Crta** (paint) piksele na ekranu</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>Ovaj proces nije jednokratan. Svaka promjena na stranici (animacija, otvaranje izbornika, učitavanje novog sadržaja) pokreće djelomično ponovno izračunavanje. Zato loše optimizirane stranice s previše animacija i kompleksnog JavaScripta postaju spore.</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">## Protokoli koje komunikolozi moraju poznavati</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="fu">### HTTP i HTTPS</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>HTTP je temeljni jezik weba. Svaki put kada pregledavate stranicu, kupujete nešto online, scrollate Instagram ili gledate YouTube video, HTTP je u pozadini.</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>HTTPS dodaje sloj šifriranja. Za korisnike to znači da nitko između preglednika i poslužitelja (ni internet provider, ni vlasnik WiFi mreže, ni potencijalni napadač) ne može čitati sadržaj komunikacije. Za organizacije to znači da moraju održavati SSL/TLS certifikat, što je danas besplatno putem servisa poput Let's Encrypt.</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="fu">### DNS</span></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>DNS je telefonski imenik interneta. Nekoliko praktičnih implikacija za komunikologe:</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>**Domene su imovina.** Kada organizacija registrira domenu, to je digitalna imovina koja se mora obnavljati, zaštititi i strateški odabrati. Gubitak domene (zaboravljeno obnavljanje) može značiti gubitak čitave online prisutnosti.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>**DNS konfiguracija povezuje sve.** Domena, hosting, email, verifikacija za tražilice, sve se povezuje kroz DNS zapise. Bazično razumijevanje ovog procesa štedi komunikologe od ovisnosti o tehničkom osoblju za svaku sitnicu.</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>**CDN (Content Delivery Network)** koristi DNS za usmjeravanje korisnika na geografski najbliži poslužitelj. Kada hrvatska korisnica pristupa stranici koja koristi Cloudflare CDN, njezin zahtjev ne putuje do originalnog poslužitelja u SAD-u, nego do Cloudflareovog poslužitelja u Frankfurtu ili Beču. Rezultat je brže učitavanje.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### API-ji: ljepilo modernog weba</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>API (Application Programming Interface) je mehanizam koji omogućuje dvama softverskim sustavima da međusobno komuniciraju. Za komunikologe to je jedan od najvažnijih koncepata za razumijevanje jer moderni web funkcionira kao ekosustav servisa povezanih API-jima.</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>Primjeri iz svakodnevnog iskustva:</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>**Web stranica s Google kartom.** Stranica ne sadrži kartu. Ona putem Google Maps API-ja šalje zahtjev Googleovim poslužiteljima koji vraćaju kartu kao podatke, a web stranica ih prikazuje.</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>**Online plaćanje.** Kada kupujete na web trgovini, ona ne obrađuje vašu kreditnu karticu. Putem Stripe ili PayPal API-ja šalje podatke specijaliziranom platežnom procesoru koji obavlja transakciju i vraća potvrdu.</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>**Društvene mreže na web stranici.** "Share" gumbi, Instagram feedovi ugrađeni na stranicu, Facebook komentari ispod članaka, sve to koristi API-je tih platformi.</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>**Analitika.** Google Analytics, Meta Pixel, Hotjar, svi ovi alati koje komunikolozi koriste za praćenje korisnika rade putem API-ja: mali komad koda na stranici šalje podatke o ponašanju korisnika na externe poslužitelje.</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto je ovo bitno za vas?</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>Kada planirate web stranicu za klijenta, morate znati da svaki vanjski servis koji uključite (chat widget, analitika, platežni sustav, newsletter integracija, CRM) dolazi putem API-ja i da svaki od njih dodaje vrijeme učitavanja, potencijalni sigurnosni rizik i ovisnost o trećoj strani. Komunikolog koji to razumije može donositi bolje odluke o tome što uključiti, a što je nepotrebno.</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="fu">### Platežni protokoli i sigurnost transakcija</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>Online transakcije zahtijevaju dodatne slojeve sigurnosti izvan standardnog HTTPS-a:</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>**PCI DSS (Payment Card Industry Data Security Standard)** je skup sigurnosnih standarda koji se mora poštovati pri obradi kartičnih podataka. Zato većina web stranica ne obrađuje kartice izravno, nego koristi servise poput Stripea ili Braintreea koji preuzimaju tu odgovornost.</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>**Tokenizacija** zamjenjuje osjetljive podatke (broj kartice) tokenom (nasumičnim nizom znakova) koji nema vrijednost izvan konteksta konkretne transakcije.</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>Kada korisnik klikne "Kupi odmah" na web stranici, pokreće se lanac koji uključuje više API poziva: web stranica šalje podatke o narudžbi platežnom procesoru, procesor komunicira s bankom izdavateljicom kartice, banka autorizira transakciju, potvrda se vraća natrag kroz cijeli lanac. Sve to traje 2 do 5 sekundi i uključuje HTTPS šifriranje na svakom koraku.</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kako izgleda moderni web</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="fu">### Od statičnih stranica do aplikacija</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>Rana web stranica bila je tekst s poveznicama. Danas je prosječna web stranica zapravo **aplikacija** koja se izvršava u pregledniku. Razlika je fundamentalna:</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>**Statična stranica** je datoteka koja se isporučuje korisniku kakva jest. Svaki korisnik vidi isto. Primjer: jednostavna portfolio stranica.</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>**Dinamična stranica** generira se na poslužitelju za svakog korisnika posebno. Primjer: Amazon vam prikazuje personalizirane preporuke na temelju vaše povijesti kupnje.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>**Single Page Application (SPA)** učitava se jednom, a zatim dinamički mijenja sadržaj bez ponovnog učitavanja stranice. Primjer: Gmail, Google Maps, Trello.</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>**Progressive Web App (PWA)** je web stranica koja se ponaša poput nativne mobilne aplikacije: može raditi offline, slati obavijesti i biti "instalirana" na početni zaslon telefona. Primjer: Twitter Lite, Starbucks narudžba.</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tri sloja web stranice</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>Svaka web stranica koja nije trivijalna ima tri sloja:</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>**HTML (struktura)** definira sadržaj: naslovi, odlomci, slike, obrasci, tablice. HTML je kostur stranice.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>**CSS (prezentacija)** definira izgled: boje, fontovi, razmaci, responzivni raspored za različite veličine ekrana. CSS je odjeća.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>**JavaScript (ponašanje)** definira interaktivnost: što se dogodi kada korisnik klikne gumb, kako se validira obrazac, kako se podaci dohvaćaju s poslužitelja bez ponovnog učitavanja stranice. JavaScript je mišićni sustav.</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>Komunikolozi ne moraju pisati kod u ova tri jezika, ali moraju razumjeti ovu podjelu jer će se u razgovorima s developerima i dizajnerima stalno pojavljivati.</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="fu">### Internet stvari i web izvan preglednika</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>Web se proširio daleko izvan preglednika. IoT (Internet of Things) uređaji, od pametnih termostata i satova do industrijskih senzora, komuniciraju putem web protokola. Pametni zvučnici (Alexa, Google Home) koriste API-je za obradu glasovnih naredbi. Automobili preuzimaju softverska ažuriranja putem HTTP-a.</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>Za komunikologe to znači da je "web prisutnost" organizacije sve širi pojam. Nije samo web stranica, nego i glasovni asistenti, chatbotovi, mobilne notifikacije, email automatizacije i svaki drugi digitalni dodirna točka s korisnicima.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="fu">## Performanse: zašto brzina nije tehnički detalj</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>Performanse web stranice nisu samo tehnički problem, nego poslovni i komunikacijski problem. Istraživanja dosljedno potvrđuju:</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>**53% mobilnih korisnika** napušta stranicu ako se učitava duže od 3 sekunde (izvor: Google).</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>**Svaka sekunda kašnjenja** smanjuje konverzije za otprilike 7% (izvor: Akamai).</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>**Najbrže stranice** imaju dvostruko veće stope konverzije od najsporijih u istoj industriji (izvor: Deloitte Digital).</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>Google koristi performanse stranice kao **faktor rangiranja** u pretraživanju putem metrika zvanih **Core Web Vitals**:</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>**LCP (Largest Contentful Paint)** mjeri koliko brzo se prikazuje najistaknutiji sadržaj na stranici. Cilj je ispod 2.5 sekunde.</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>**INP (Interaction to Next Paint)** mjeri koliko brzo stranica reagira na korisnikovu akciju (klik, dodir). Cilj je ispod 200 milisekundi.</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>**CLS (Cumulative Layout Shift)** mjeri vizualnu stabilnost, koliko se elementi stranice nepredvidivo pomiču tijekom učitavanja. Svima se dogodilo da su pokušali kliknuti gumb koji se u zadnjem trenutku pomaknuo jer se iznad njega učitala reklama. Cilj je CLS ispod 0.1.</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="fu">## Alat za provjeru</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>Otvorite <span class="co">[</span><span class="ot">PageSpeed Insights</span><span class="co">](https://pagespeed.web.dev/)</span> i testirajte bilo koju web stranicu. Dobit ćete ocjenu performansi i konkretne preporuke za poboljšanje. Pokušajte testirati web stranice hrvatskih organizacija i usporedite rezultate.</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="fu">## Web infrastruktura i Hrvatska</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>Nekoliko kontekstualnih činjenica relevantnih za komunikologe koji će raditi na hrvatskom tržištu:</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>**Internet penetracija u Hrvatskoj** je iznad 90%, ali kvaliteta pristupa varira značajno između gradskih i ruralnih područja.</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>**Hrvatski hosting provideri** (Plus Hosting, Avalon, SiteGround s europskim data centrima) nude usluge relevantne za manje organizacije, dok veće tvrtke i institucije sve više koriste globalne cloud platforme (AWS, Azure, Google Cloud).</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>**E-uprava** u Hrvatskoj koristi web infrastrukturu za sustave poput e-Građana, e-Porezne, HZZO-a. Komunikolozi koji rade u javnom sektoru moraju razumjeti ograničenja i mogućnosti ovih sustava.</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>**GDPR** (o kojem ćemo detaljno govoriti u Tjednu 13) ima implikacije za web infrastrukturu: gdje su podaci fizički pohranjeni, kako se prenose, tko im pristupa.</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="fu">## Vježba: što ste naučili?</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="fu">## Razmislite i odgovorite</span></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Objasnite vlastitim riječima razliku između interneta i weba.</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Koliko koraka uključuje putovanje od upisivanja URL-a do prikazivanja stranice?</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Zašto bi komunikologa trebalo biti briga za HTTPS?</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Dajte tri primjera API-ja na web stranicama koje svakodnevno koristite.</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Ako klijent kaže "stranica nam je spora", koja pitanja biste postavili?</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključni zaključci</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Internet je infrastruktura (kabeli, protokoli, usmjerivači); web je aplikacija koja se na njoj izvršava</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Web zahtjev prolazi kroz DNS rezoluciju, TCP i TLS rukovanje, HTTP zahtjev/odgovor i rendering u pregledniku</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>HTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava, od informacijskih stranica do online trgovina</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Performanse stranice izravno utječu na korisničko iskustvo, konverzije i rangiranje u tražilicama</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Tehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju i preduvjet za kompetentno profesionalno djelovanje</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="fu">## Priprema za sljedeći tjedan</span></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning appearance="minimal"}</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>**Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna**</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>Zadaci za pripremu:</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Pretražite istu temu (npr. "restoran u Zagrebu") na Googleu, Bingu i DuckDuckGo. Zabilježite razlike u rezultatima. Razmislite zašto se razlikuju.</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Otvorite Developer Tools (F12) na svojoj omiljenoj web stranici, kliknite tab "Network" i osvježite stranicu. Prebrojite koliko zahtjeva preglednik šalje. Pogledajte stupac "Time" i nađite najsporiji zahtjev.</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Testirajte jednu hrvatsku web stranicu na <span class="co">[</span><span class="ot">PageSpeed Insights</span><span class="co">](https://pagespeed.web.dev/)</span> i zabilježite ocjenu.</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dodatno čitanje</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>Obavezno:</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mozilla Developer Network: <span class="co">[</span><span class="ot">How the Web Works</span><span class="co">](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)</span> (cca 15 minuta čitanja)</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>Preporučeno za dublje razumijevanje:</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cloudflare Learning Center: <span class="co">[</span><span class="ot">What is DNS?</span><span class="co">](https://www.cloudflare.com/learning/dns/what-is-dns/)</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cloudflare Learning Center: <span class="co">[</span><span class="ot">What is HTTPS?</span><span class="co">](https://www.cloudflare.com/learning/ssl/what-is-https/)</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Google: <span class="co">[</span><span class="ot">Web Vitals</span><span class="co">](https://web.dev/articles/vitals)</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Submarine Cable Map: <span class="co">[</span><span class="ot">Interaktivna karta podmorskih kabela</span><span class="co">](https://www.submarinecablemap.com/)</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cloudflare: <span class="co">[</span><span class="ot">What is an API?</span><span class="co">](https://www.cloudflare.com/learning/security/api/what-is-an-api/)</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pojmovnik</span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pojam <span class="pp">|</span> Objašnjenje <span class="pp">|</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|------------|</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ARPANET <span class="pp">|</span> Preteča interneta, vojna/akademska mreža iz 1969. <span class="pp">|</span></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DNS <span class="pp">|</span> Sustav koji prevodi imena domena u IP adrese <span class="pp">|</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> HTTP/HTTPS <span class="pp">|</span> Protokol za komunikaciju između preglednika i poslužitelja (S = šifrirano) <span class="pp">|</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> TCP/IP <span class="pp">|</span> Temeljni protokoli interneta koji osiguravaju pouzdanu isporuku paketa <span class="pp">|</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> TLS <span class="pp">|</span> Protokol za šifriranje koji omogućuje HTTPS <span class="pp">|</span></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> API <span class="pp">|</span> Sučelje za komunikaciju između softverskih sustava <span class="pp">|</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CDN <span class="pp">|</span> Mreža poslužitelja koja isporučuje sadržaj s geografski najbližeg čvora <span class="pp">|</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> HTML <span class="pp">|</span> Jezik za strukturiranje sadržaja web stranica <span class="pp">|</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CSS <span class="pp">|</span> Jezik za definiranje vizualnog izgleda web stranica <span class="pp">|</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> JavaScript <span class="pp">|</span> Programski jezik za interaktivnost na web stranicama <span class="pp">|</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SPA <span class="pp">|</span> Single Page Application, web aplikacija koja se učitava jednom <span class="pp">|</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> PWA <span class="pp">|</span> Progressive Web App, web stranica s mogućnostima nativne aplikacije <span class="pp">|</span></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Core Web Vitals <span class="pp">|</span> Googleove metrike za mjerenje korisničkog iskustva na webu <span class="pp">|</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> PCI DSS <span class="pp">|</span> Sigurnosni standard za obradu kartičnih plaćanja <span class="pp">|</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Rendering <span class="pp">|</span> Proces prikazivanja web stranice u pregledniku <span class="pp">|</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DOM <span class="pp">|</span> Document Object Model, logička struktura HTML dokumenta <span class="pp">|</span></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Statusni kod <span class="pp">|</span> Brojčani odgovor poslužitelja (200 = OK, 404 = nije pronađeno, itd.) <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
