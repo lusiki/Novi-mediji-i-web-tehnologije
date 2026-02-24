@@ -1,0 +1,17 @@
+---
+title: "Tjedan 7: Strategija sadržaja i digitalne uredničke operacije"
+subtitle: "Od uredničkog planiranja do konverzije"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [primijenjeno, sadržaj]
+abstract: |
+  Ovo predavanje uvodi strategiju sadržaja kao disciplinu, pokrivajući uredničko planiranje, upravljanje sadržajem, višekanalno objavljivanje, kalendare sadržaja, mapiranje korisničkog putovanja i usklađivanje web sadržaja s organizacijskim ciljevima.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

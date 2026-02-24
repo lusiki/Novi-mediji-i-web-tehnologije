@@ -1,0 +1,17 @@
+---
+title: "Tjedan 6: Računalstvo u oblaku i suradnički rad"
+subtitle: "IaaS, PaaS, SaaS i alati koji definiraju moderni organizacijski rad"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [primijenjeno, oblak]
+abstract: |
+  Ovo predavanje pokriva osnove računalstva u oblaku, glavne pružatelje usluga te alate u oblaku koji definiraju moderni organizacijski rad, od suradničkih paketa do CRM sustava i platformi za email marketing.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

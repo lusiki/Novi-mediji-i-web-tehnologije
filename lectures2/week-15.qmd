@@ -1,0 +1,17 @@
+---
+title: "Tjedan 15: Sinteza kolegija i prezentacije projekata"
+subtitle: "Pregled kolegija, prezentacije studentskih projekata i pogled u budućnost"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [sinteza, prezentacije]
+abstract: |
+  Ova završna sesija pregledava luk kolegija i pruža prostor studentima za prezentaciju praktičnih projekata. Služi i kao završnica i kao rasprava okrenuta budućnosti o trendovima koje studenti trebaju pratiti kao profesionalci.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

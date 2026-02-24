@@ -1,0 +1,17 @@
+---
+title: "Tjedan 13: Digitalna regulativa i pravni okvir"
+subtitle: "GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama i tržištima"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [regulativa, pravo]
+abstract: |
+  Ovo predavanje daje pregled regulatornih okvira koji oblikuju web tehnologije i digitalnu komunikaciju u Europi i globalno, uključujući GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama i Akt o digitalnim tržištima.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

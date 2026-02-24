@@ -13,59 +13,119 @@ subtitle: "Novi mediji i web tehnologije"
 
 ### Tjedan 1. Web kao infrastruktura
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-01.html) [[PDF]{.fmt-pdf}](lectures2/week-01.pdf) [[WORD]{.fmt-word}](lectures2/week-01.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-01.qmd)
+:::
+
 Ovo predavanje prati evoluciju interneta od ARPANET-a preko nastanka World Wide Weba do današnjeg ekosustava platformi, protokola i povezanih uređaja koji omogućuju sve, od objavljivanja sadržaja do transakcija. Razumijevanje ove povijesti važno je jer komunikacijski stručnjaci moraju poznavati tehničku podlogu na kojoj svi digitalni mediji funkcioniraju, uključujući način na koji DNS, HTTP/HTTPS, preglednici, poslužitelji, API-ji i platežni protokoli surađuju u isporuci sadržaja i omogućavanju razmjene. Ovo predavanje postavlja temelje za sve sljedeće teme uspostavljajući zajednički rječnik i mentalni model o tome kako informacije i vrijednost teku mrežom.
 
 ### Tjedan 2. Kako funkcionira pretraživanje i zašto je pronalažljivost važna
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-02.html) [[PDF]{.fmt-pdf}](lectures2/week-02.pdf) [[WORD]{.fmt-word}](lectures2/week-02.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-02.qmd)
+:::
 
 Ovo predavanje objašnjava kako tražilice indeksiraju i rangiraju web sadržaj, pokrivajući moderne SEO principe poput namjere pretraživanja (informacijska, navigacijska, transakcijska), E E A T (iskustvo, stručnost, autoritet, pouzdanost), strukturiranih podataka, bogatih rezultata i Core Web Vitals. Za komunikologe, pronalažljivost određuje hoće li poruka, proizvod ili usluga doći do ciljane publike, a razumijevanje načina na koji Google, Bing i sve više AI tražilice prikazuju i rangiraju sadržaj predstavlja stratešku prednost. Ovaj tjedan izravno se nadovezuje na infrastrukturu iz Tjedna 1 pokazujući kako sadržaj putuje od poslužitelja do rezultata pretraživanja do trenutka kada korisnik odluči kliknuti, pretplatiti se ili kupiti.
 
 ### Tjedan 3. Vrednovanje informacija i provjera izvora na webu
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-03.html) [[PDF]{.fmt-pdf}](lectures2/week-03.pdf) [[WORD]{.fmt-word}](lectures2/week-03.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-03.qmd)
+:::
+
 Ovo predavanje osposobljava studente za kritičku procjenu vjerodostojnosti, pristranosti i točnosti informacija na internetu, uključujući lateralno čitanje, CRAAP testove, obrnuto pretraživanje slika, otkrivanje autentičnosti recenzija i platforme za provjeru činjenica. U doba sintetičkih medija, fabriciranih recenzija i algoritamski pojačane dezinformacije, sposobnost provjere izvora i procjene signala povjerenja temeljna je profesionalna kompetencija svakog komunikologa koji radi u digitalnom okruženju. Nadovezuje se na pretraživačku pismenost iz Tjedna 2 postavljajući pitanje ne samo kako se sadržaj pronalazi, nego kako se može procijeniti njegova kvaliteta, istinitost i komercijalna pouzdanost.
 
 ### Tjedan 4. Sustavi za upravljanje sadržajem i moderni web stack
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-04.html) [[PDF]{.fmt-pdf}](lectures2/week-04.pdf) [[WORD]{.fmt-word}](lectures2/week-04.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-04.qmd)
+:::
 
 Ovo predavanje daje pregled načina na koji se danas grade i upravljaju web stranice, od tradicionalnih CMS platformi poput WordPressa do headless sustava (Strapi, Sanity, Contentful), platformi s podrškom za trgovinu (Shopify, WooCommerce), generatora statičnih stranica i modernih web graditelja (Webflow, Squarespace, Framer). Komunikacijski stručnjaci redovito donose ili utječu na odluke o platformama, stoga je razumijevanje kompromisa između fleksibilnosti, cijene, mogućnosti transakcija, održavanja i skalabilnosti izravno relevantno za njihov rad. Ova sesija premošćuje tehničke temelje prethodnih tjedana s praktičnom stvarnošću objavljivanja, upravljanja i monetizacije web sadržaja.
 
 ### Tjedan 5. No code i low code alati za komunikologe
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-05.html) [[PDF]{.fmt-pdf}](lectures2/week-05.pdf) [[WORD]{.fmt-word}](lectures2/week-05.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-05.qmd)
+:::
+
 Ovo predavanje predstavlja ekosustav no code i low code platformi koje komunikacijskim stručnjacima omogućuju izradu web stranica, automatizaciju radnih tokova, povezivanje servisa i stvaranje digitalnih proizvoda bez tradicionalnog programiranja, uključujući alate poput Webflowa, Notiona, Airtablea, Canve, Zapiera, Makea te integracije za plaćanje i rezervacije poput Stripea i Calendlyja. Porast ovih alata demokratizirao je web produkciju i znači da komunikolozi mogu samostalno pokrenuti sve, od odredišnih stranica do automatiziranih korisničkih putovanja. Proširuje Tjedan 4 prelazeći od razumijevanja platformi na njihovo aktivno korištenje, postavljajući primijenjene vještine koje će studentima trebati za praktične projekte.
 
 ### Tjedan 6. Računalstvo u oblaku i suradnički rad
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-06.html) [[PDF]{.fmt-pdf}](lectures2/week-06.pdf) [[WORD]{.fmt-word}](lectures2/week-06.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-06.qmd)
+:::
 
 Ovo predavanje pokriva osnove računalstva u oblaku (IaaS, PaaS, SaaS), glavne pružatelje usluga (AWS, Azure, Google Cloud) te alate u oblaku koji definiraju moderni organizacijski rad, od suradničkih paketa (Google Workspace, Microsoft 365, Slack) do CRM sustava, platformi za email marketing te servisa za upravljanje projektima i zalihama. Pismenost o oblaku ključna je jer gotovo svi profesionalni radni tokovi danas ovise o infrastrukturi u oblaku, bilo da organizacija upravlja sadržajem, koordinira kampanje, obrađuje narudžbe ili analizira korisničke podatke. Prebacuje kolegij s individualne web pismenosti prema razumijevanju načina na koji timovi i organizacije funkcioniraju, komuniciraju i stvaraju vrijednost digitalno.
 
 ### Tjedan 7. Strategija sadržaja i digitalne uredničke operacije
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-07.html) [[PDF]{.fmt-pdf}](lectures2/week-07.pdf) [[WORD]{.fmt-word}](lectures2/week-07.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-07.qmd)
+:::
+
 Ovo predavanje uvodi strategiju sadržaja kao disciplinu, pokrivajući uredničko planiranje, upravljanje sadržajem, višekanalno objavljivanje, kalendare sadržaja, mapiranje korisničkog putovanja i usklađivanje web sadržaja s organizacijskim ciljevima od svijesti o brendu preko angažmana do konverzije. Diplomirani komunikolozi vjerojatno će upravljati ili doprinositi operacijama sadržaja gdje svaki komad sadržaja služi svrsi u pomicanju publike prema željenoj akciji, što ovu temu čini jednom od izravno najprimjenjivijih na kolegiju. Povezuje suradnju u oblaku (Tjedan 6) s web platformama (Tjedni 4 i 5) pokazujući kako sadržaj putuje od ideje kroz produkciju do objavljivanja, mjerenja i komercijalnog učinka.
 
 ### Tjedan 8. Kolokvij
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-08.html) [[PDF]{.fmt-pdf}](lectures2/week-08.pdf) [[WORD]{.fmt-word}](lectures2/week-08.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-08.qmd)
+:::
+
 ### Tjedan 9. Web analitika i komunikacija temeljena na podacima
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-09.html) [[PDF]{.fmt-pdf}](lectures2/week-09.pdf) [[WORD]{.fmt-word}](lectures2/week-09.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-09.qmd)
+:::
 
 Ovo predavanje upoznaje studente s platformama za web analitiku (Google Analytics 4, uvidi s društvenih mreža, alati za toplinske karte) i ključnim metrikama koje komunikolozi koriste za vrednovanje digitalnog učinka, uključujući izvore prometa, stope angažmana, konverzijske lijevke, modele atribucije, životnu vrijednost korisnika i segmentaciju publike. Podatkovna pismenost više nije opcija za komunikacijske stručnjake jer svaka strateška odluka o sadržaju, kampanjama, ulaganju u platforme i raspodjeli proračuna treba biti potkrijepljena dokazima o tome što zapravo donosi rezultate. Slijedi tjedan strategije sadržaja zaokružujući petlju od planiranja preko izvršenja do mjerenja, optimizacije i povrata na ulaganje.
 
 ### Tjedan 10. UX, UI i pristupačan dizajn za web
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-10.html) [[PDF]{.fmt-pdf}](lectures2/week-10.pdf) [[WORD]{.fmt-word}](lectures2/week-10.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-10.qmd)
+:::
+
 Ovo predavanje pokriva principe dizajna korisničkog iskustva, dizajna korisničkog sučelja, responzivnih rasporeda, persuazivnih dizajnerskih obrazaca, arhitekture povjerenja (sigurnosne oznake, transparentno određivanje cijena, jasni pozivi na akciju) te standarde web pristupačnosti (WCAG) uključujući obveze prema EU Direktivi o pristupačnosti weba. Komunikolozi koji razumiju kako korisnici navigiraju sučeljima, donose odluke i dovršavaju akcije na webu mogu stvarati iskustva koja su uvjerljiva, pouzdana i inkluzivna, što je sve više i konkurentska prednost i zakonska obveza. Produbljuje dizajnersko razmišljanje uvedeno kroz CMS i no code alate dodajući perspektivu usmjerenu na čovjeka koja razmatra cjelokupno korisničko putovanje od prvog dojma do završne akcije.
 
 ### Tjedan 11. Generativna AI i web tehnologije
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-11.html) [[PDF]{.fmt-pdf}](lectures2/week-11.pdf) [[WORD]{.fmt-word}](lectures2/week-11.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-11.qmd)
+:::
 
 Ovo predavanje pruža sveobuhvatan pregled načina na koji generativna AI (veliki jezični modeli, generatori slika, sinteza videa, asistenti za kodiranje) transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove. Ovo je vjerojatno najznačajnija tehnološka promjena za komunikacijsku struku u generaciji, utječući na sve od copywritinga i SEO-a do vizualne produkcije, preporuka proizvoda, dinamičke personalizacije i konverzacijske interakcije s korisnicima putem chatbotova. Označava preokret kolegija prema najnovijim temama, nadograđujući praktične vještine iz ranijih tjedana kako bi se postavilo pitanje kako AI nadopunjuje, remeti i komplicira ulogu komunikologa u informacijskim i komercijalnim kontekstima.
 
 ### Tjedan 12. Etika AI-ja, sintetički mediji i dezinformacije velikih razmjera
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-12.html) [[PDF]{.fmt-pdf}](lectures2/week-12.pdf) [[WORD]{.fmt-word}](lectures2/week-12.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-12.qmd)
+:::
+
 Ovo predavanje ispituje etičke dimenzije sadržaja generiranog AI-jem, uključujući deepfakeove, sintetičke medije, pitanja atribucije i autorstva, algoritamsku pristranost, tamne obrasce u persuazivnom dizajnu, fabricirane recenzije i izazov dezinformacija pokretanih AI-jem velikih razmjera. Za komunikacijske stručnjake koji su istovremeno kreatori i čuvari informacija, razumijevanje ovih rizika stvar je profesionalne odgovornosti, potrošačkog povjerenja i javne odgovornosti. Proširuje pregled AI-ja iz Tjedna 11 prelazeći s mogućnosti na posljedice i vraća se na vještine vrednovanja izvora iz Tjedna 3, sada primijenjene na svijet u kojem sadržaj, preporuke, pa čak i cijele online trgovine mogu biti u potpunosti strojno generirani.
 
 ### Tjedan 13. Digitalna regulativa i pravni okvir
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-13.html) [[PDF]{.fmt-pdf}](lectures2/week-13.pdf) [[WORD]{.fmt-word}](lectures2/week-13.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-13.qmd)
+:::
 
 Ovo predavanje daje pregled regulatornih okvira koji oblikuju web tehnologije i digitalnu komunikaciju u Europi i globalno, uključujući GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama, Akt o digitalnim tržištima (s označavanjem platformskih čuvara vrata), direktive o zaštiti potrošača za online transakcije, PSD2 za digitalna plaćanja, autorsko pravo u doba AI-ja i upravljanje platformama. Komunikacijski stručnjaci svakodnevno djeluju unutar ovih pravnih okvira, bilo da obrađuju osobne podatke, objavljuju sadržaj, upravljaju online prodajnim kanalima, vode reklamne kampanje ili koriste AI alate. Pruža upravljački sloj koji kontekstualizira sve tehnologije i prakse obrađene tijekom kolegija.
 
 ### Tjedan 14. Multimedijsko pripovijedanje za web
 
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-14.html) [[PDF]{.fmt-pdf}](lectures2/week-14.pdf) [[WORD]{.fmt-word}](lectures2/week-14.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-14.qmd)
+:::
+
 Ovo predavanje fokusira se na primijenjenu multimedijsku produkciju za web kontekste, pokrivajući pisanje za web, vizualno pripovijedanje, fotografiju proizvoda i brendova, audio i podcast produkciju, kratke video formate, kupljive i interaktivne formate sadržaja te live streaming kao komunikacijski kanal. Sposobnost produkcije i orkestracije multimedijskog sadržaja koji informira, angažira i pokreće publiku na akciju kroz platforme ključna je vještina modernih komunikologa. Sintetizira ranije niti (strategija sadržaja, dizajn, AI alati, analitika) u konkretnu praksu stvaranja profesionalnog web sadržaja koji služi i uredničkim i komercijalnim ciljevima.
 
 ### Tjedan 15. Sinteza kolegija i prezentacije projekata
+
+::: {.format-links}
+[[HTML]{.fmt-html}](lectures2/week-15.html) [[PDF]{.fmt-pdf}](lectures2/week-15.pdf) [[WORD]{.fmt-word}](lectures2/week-15.docx) [[QMD]{.fmt-qmd}](https://raw.githubusercontent.com/lusiki/Novi-mediji-i-web-tehnologije/main/lectures2/week-15.qmd)
+:::
 
 Ova završna sesija pregledava luk kolegija, od infrastrukture preko platformi i alata do AI-ja i regulative, i pruža prostor studentima za prezentaciju praktičnih projekata. Služi i kao završnica i kao rasprava okrenuta budućnosti o trendovima koje studenti trebaju pratiti kao profesionalci, od agentskih AI sustava i prostornog računalstva do razvijajuće dinamike moći platformi i algoritamskih medija. Studenti demonstriraju integrirano razumijevanje prezentirajući rad koji kombinira tehničku pismenost, strateško razmišljanje i kreativnu izvedbu.
 

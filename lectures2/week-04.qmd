@@ -1,0 +1,17 @@
+---
+title: "Tjedan 4: Sustavi za upravljanje sadržajem i moderni web stack"
+subtitle: "Od WordPressa do headless CMS-a i web graditelja"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [platforme, cms]
+abstract: |
+  Ovo predavanje daje pregled načina na koji se danas grade i upravljaju web stranice, od tradicionalnih CMS platformi poput WordPressa do headless sustava, platformi s podrškom za trgovinu i modernih web graditelja.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

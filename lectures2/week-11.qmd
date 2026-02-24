@@ -1,0 +1,17 @@
+---
+title: "Tjedan 11: Generativna AI i web tehnologije"
+subtitle: "Veliki jezični modeli, generatori slika i transformacija digitalnih radnih tokova"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [ai, tehnologije]
+abstract: |
+  Ovo predavanje pruža sveobuhvatan pregled načina na koji generativna AI transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

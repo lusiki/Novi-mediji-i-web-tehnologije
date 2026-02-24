@@ -1,0 +1,17 @@
+---
+title: "Tjedan 9: Web analitika i komunikacija temeljena na podacima"
+subtitle: "Od Google Analyticsa do konverzijskih lijevaka"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [primijenjeno, analitika]
+abstract: |
+  Ovo predavanje upoznaje studente s platformama za web analitiku i ključnim metrikama koje komunikolozi koriste za vrednovanje digitalnog učinka, uključujući izvore prometa, stope angažmana, konverzijske lijevke i segmentaciju publike.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

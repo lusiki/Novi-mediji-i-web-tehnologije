@@ -1,0 +1,18 @@
+toc: true
+toc-depth: 3
+number-sections: true
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    documentclass: article
+    papersize: a4
+    lang: hr
+  docx:
+    toc: true
+    number-sections: true
+format-links: [pdf, docx]

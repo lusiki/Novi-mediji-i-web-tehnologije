@@ -1,0 +1,17 @@
+---
+title: "Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna"
+subtitle: "Tražilice, SEO i putovanje od upita do klika"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [temelji, seo]
+abstract: |
+  Ovo predavanje objašnjava kako tražilice indeksiraju i rangiraju web sadržaj, pokrivajući moderne SEO principe poput namjere pretraživanja, E-E-A-T, strukturiranih podataka, bogatih rezultata i Core Web Vitals.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

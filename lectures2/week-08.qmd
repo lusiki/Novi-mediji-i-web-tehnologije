@@ -1,0 +1,13 @@
+---
+title: "Tjedan 8: Kolokvij"
+subtitle: "Provjera znanja iz prvog dijela kolegija"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [ocjenjivanje]
+abstract: |
+  Kolokvij pokriva gradivo iz tjedana 1 do 7. Ovaj dokument sadrži upute i smjernice za pripremu.
+---
+
+## Informacije o kolokviju
+
+*Detaljne upute bit će objavljene prije kolokvija.*

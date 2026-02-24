@@ -1,0 +1,17 @@
+---
+title: "Tjedan 3: Vrednovanje informacija i provjera izvora na webu"
+subtitle: "Kritička procjena vjerodostojnosti u doba sintetičkih medija"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [temelji, informacijska pismenost]
+abstract: |
+  Ovo predavanje osposobljava studente za kritičku procjenu vjerodostojnosti, pristranosti i točnosti informacija na internetu, uključujući lateralno čitanje, CRAAP testove, obrnuto pretraživanje slika i platforme za provjeru činjenica.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*

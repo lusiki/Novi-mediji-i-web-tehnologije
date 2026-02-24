@@ -1,0 +1,264 @@
+---
+title: "Web kao infrastruktura"
+subtitle: "Kako internet funkcionira i zašto komunikolozi to moraju razumjeti"
+date: 2025-02-01
+categories: [temelji, infrastruktura]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
+abstract: |
+  Ovo predavanje prati evoluciju interneta od ARPANET-a preko nastanka World Wide Weba do današnjeg ekosustava platformi, protokola i povezanih uređaja. Razumijevanje ove povijesti važno je jer komunikacijski stručnjaci moraju poznavati tehničku podlogu na kojoj svi digitalni mediji funkcioniraju.  
+---
+
+## Ishodi učenja
+
+::: {.callout-note appearance="minimal"}
+Nakon ovog predavanja studenti će moći:
+
+1. Objasniti razliku između interneta i World Wide Weba
+2. Opisati putovanje web zahtjeva od preglednika do poslužitelja i natrag
+3. Identificirati ključne protokole (HTTP/HTTPS, DNS, TCP/IP) koji omogućuju web komunikaciju
+4. Prepoznati ulogu API-ja u modernom webu i razumjeti zašto je to važno za komunikologe
+5. Artikulirati kako infrastrukturne odluke utječu na korisničko iskustvo, konverzije i poslovne rezultate
+:::
+
+## Zašto je ovo uopće bitno za komunikologe?
+
+Dvadeset devetog listopada 1969. godine, u laboratoriju UCLA-a u Los Angelesu, student po imenu Charley Kline sjeo je za terminal i pokušao poslati jednu jedinu riječ na računalo udaljeno šeststo kilometara, na Stanfordu. Riječ je bila LOGIN. Uspio je otipkati dva slova, L i O, prije nego što se sustav srušio. Ta dva znaka, ta neuspješna poruka, bili su prvi podaci ikada poslani između dvaju računala putem mreže koja će se kasnije nazvati ARPANET. Sat vremena kasnije pokušali su ponovno i ovaj put uspjeli. Internet je, dakle, započeo slovom L.
+
+Pola stoljeća kasnije, ta ista infrastruktura, sada neprepoznatljivo proširena, nosi gotovo svaku ljudsku komunikaciju. Kada ujutro otvorite Instagram, vaš telefon šalje stotine zahtjeva prema poslužiteljima raspoređenima po cijelom svijetu. Kada naručite kavu putem aplikacije, vaša narudžba putuje kabelima ispod oceana. Kada klijent otvori web stranicu vaše organizacije, između tog klika i trenutka u kojem se stranica pojavi na ekranu odvija se orkestrirana sekvenca događaja koja uključuje desetke strojeva na tri kontinenta, a traje kraće od treptaja oka.
+
+Ovo poglavlje prati to putovanje. Njegova svrha nije pretvoriti vas u programere ili mrežne inženjere, nego osigurati da kao komunikacijski stručnjaci razumijete sustav unutar kojeg radite. Analogija je jednostavna. Novinar ne mora biti odvjetnik, ali mora razumjeti kako funkcionira pravosudni sustav da bi o njemu kompetentno izvještavao. Komunikolog ne mora pisati kod, ali mora razumjeti kako web funkcionira da bi na njemu kompetentno radio.
+
+
+## Internet i web: dva različita pojma
+
+Prvo razlikovanje koje morate usvojiti tako čvrsto da postane refleks: internet i World Wide Web nisu sinonimi. Internet je infrastruktura. Zamislite ga kao cestovnu mrežu: fizičke kabele koji leže na dnu oceana, optička vlakna ukopana uz autoceste, satelitske veze, data centre pune servera koji bljeskaju u klimatiziranim halama i usmjerivače koji pakete podataka prosljeđuju od čvorišta do čvorišta. Logički, internet je skup pravila, protokola, koji omogućuju uređajima proizvođenim u različitim zemljama, s različitim operativnim sustavima i različitim namjenama, da se međusobno sporazumiju.
+
+Web je samo jedna od aplikacija koja koristi tu infrastrukturu. Pojavio se 1989. godine, dva desetljeća nakon interneta, kada je fizičar Tim Berners-Lee u švicarskom CERN-u predložio sustav hipertekstualnih dokumenata povezanih klikom. Uz web, na istoj infrastrukturi funkcioniraju elektronička pošta, prijenos datoteka, videokonferencije, online igre, streaming glazbe i mnoge druge usluge. Kada kažete "pretraživao sam internet", zapravo mislite "pretraživao sam web". Internet ste samo koristili kao cestu kojom ste do weba stigli.
+
+> *Internet je cesta. Web je promet na toj cesti. Bez ceste nema prometa, ali cesta postoji i bez automobila.*
+
+Zašto je ovo razlikovanje važno za komunikologa? Zato što su problemi s kojima ćete se susretati u praksi ponekad infrastrukturni (spora veza, loš hosting, pad servera), a ponekad aplikacijski (loš dizajn stranice, nefunkcionalan obrazac, neoptimiziran sadržaj). Ako ne razumijete razliku, ne možete dijagnosticirati problem, a još manje razgovarati s tehničkim osobljem koje bi ga trebalo riješiti.
+
+
+## Ideja koja je sve pokrenula
+
+Ključni izum koji je omogućio internet zove se komutacija paketa. Najlakše ga je razumjeti usporedbom s poštanskim sustavom. Zamislite da želite poslati prijatelju opsežan rukopis od sto stranica, ali pošta dopušta samo razglednice. Vi biste rukopis rasporedili na sto razglednica, na svakoj napisali redni broj i adresu, i poslali ih sve odjednom. Razglednice bi mrežom putovale neovisno, neke kroz Zagreb, neke kroz Split, neke možda zaobilaznicu kroz Graz, i stigle bi na odredište u različito vrijeme i u drugačijem redoslijedu. Vaš prijatelj bi ih presložio prema rednim brojevima i pročitao cjeloviti tekst.
+
+Upravo tako funkcionira internet. Svaki komad podataka, bila to web stranica, fotografija ili video poziv, razbija se na male pakete. Svaki paket nosi adresu odredišta i redni broj. Paketi putuju mrežom neovisno, usmjerivači ih prosljeđuju najbržim dostupnim putem, i na odredištu se ponovno sastavljaju u cjelinu. Ako jedan dio mreže otkaže, paketi automatski pronalaze alternativni put.
+
+Ova otpornost nije slučajna. ARPANET je nastao u kontekstu Hladnog rata, financiran od strane američkog Ministarstva obrane, s eksplicitnim ciljem da mreža nastavi funkcionirati čak i ako dio infrastrukture bude uništen. Ironija je u tome što je mreža dizajnirana za preživljavanje nuklearnog rata na kraju transformirala način na koji ljudi kupuju cipele, dijele fotografije mačaka i naručuju pizzu.
+
+::: {.callout-tip}
+## Podmorski kabeli
+Više od 95% globalnog internetskog prometa putuje podmorskim kabelima, ne satelitima. Ukupna dužina tih kabela premašuje 1,3 milijuna kilometara. Debeli su otprilike koliko vrtno crijevo. Kada iz Zagreba pristupate stranici hostiranoj u New Yorku, vaši paketi fizički prelaze Atlantski ocean.
+:::
+
+
+## Kratka povijest u šest scena
+
+Povijest interneta i weba najlakše se razumije kroz šest ključnih trenutaka, od kojih svaki mijenja pravila igre.
+
+### Scena prva: povezivanje (1969 do 1983)
+
+ARPANET je 1969. godine povezao četiri američka sveučilišta. Tijekom sljedećih četrnaest godina mreža je rasla, ali je ostala heterogena: različite mreže koristile su različite protokole i nisu mogle međusobno komunicirati. Prijelomni trenutak bio je 1. siječnja 1983., datum poznat kao "Flag Day", kada je ARPANET prešao na TCP/IP protokol. Od tog dana različite mreže su se mogle povezati istim jezikom. Internet u modernom smislu te riječi nastao je tog datuma.
+
+### Scena druga: izum weba (1989 do 1993)
+
+Tim Berners-Lee predložio je World Wide Web 1989. godine kao sustav za dijeljenje istraživačkih dokumenata među fizičarima. Izumio je tri tehnologije koje i danas čine temelj weba. HTML, jezik za strukturiranje sadržaja. URL, sustav adresa za jednoznačno identificiranje resursa. HTTP, protokol za komunikaciju između preglednika i poslužitelja. Prva javna web stranica objavljena je 1991. i sadržavala je samo tekst i poveznice. Dvije godine kasnije preglednik Mosaic uveo je mogućnost prikazivanja slika unutar teksta i time web učinio vizualno privlačnim. Eksplozija korisnika počela je toga trenutka.
+
+### Scena treća: dot-com ludilo (1995 do 2001)
+
+U drugoj polovici devedesetih investitori su shvatili da web nije samo akademska igračka nego potencijalna transakcijska platforma. Nastali su Amazon, eBay, Google. Tisuće startupa prikupile su milijarde dolara s poslovnim planovima napisanim na salvetama. Većina je propala spektakularno kada je 2000. godine dot-com balon puknuo. Ali one koje su preživjele, Amazon i Google prije svih, transformirale su globalnu ekonomiju. Lekcija za komunikologe: tehnologija sama po sebi ne stvara vrijednost. Strategija, sadržaj i korisničko iskustvo određuju hoće li digitalni proizvod uspjeti ili nestati.
+
+### Scena četvrta: korisnici preuzimaju kontrolu (2004 do 2010)
+
+Pojam Web 2.0, koliko god bio maglovit, označio je stvarnu promjenu: prijelaz od weba na kojem nekoliko izdavača objavljuje sadržaj prema webu na kojem svatko može biti kreator. Facebook, YouTube, Twitter, WordPress, Wikipedia. Komunikacija je postala dvosmjerna. Publika više nije pasivni primatelj poruka nego aktivni sudionik koji komentira, dijeli, stvara i kritizira. Za komunikacijsku struku ovo je bio tektonski pomak: kontrola nad narativom više nikada neće biti jednostrana.
+
+### Scena peta: mobilna revolucija (2007 do 2020)
+
+Predstavljanje iPhonea 2007. godine pokrenulo je promjenu koja je možda važnija od samog izuma weba. Web više nije bio nešto čemu pristupate za stolom u uredskim satima. Postao je nešto što nosite u džepu, što koristite u tramvaju, u redu u pekari, u tri ujutro u krevetu. Stranice koje nisu bile prilagođene malom ekranu postale su neupotrebljive. Responzivni dizajn prestao je biti luksuz i postao preduvjet. Istovremeno, računalstvo u oblaku i SaaS modeli demokratizirali su pristup alatima. Platforme poput Shopifyja omogućile su da svatko s kreditnom karticom i idejom otvori online trgovinu u poslijepodne.
+
+### Scena šesta: stroj počinje pisati (2022 do danas)
+
+Pojava generativne umjetne inteligencije, ChatGPT-a krajem 2022., Claudea, Midjourneya i srodnih alata, označila je početak najnovijeg poglavlja. AI ulazi u tražilice (Google već integrira AI odgovore), u CMS sustave (automatsko generiranje opisa proizvoda), u korisničku podršku (chatbotovi koji razgovaraju prirodnim jezikom), u vizualnu produkciju (slike generirane iz tekstualnog opisa). Za komunikologe to znači da se mijenja ne samo kanal komunikacije nego sam proces stvaranja sadržaja. O tome ćemo opširno govoriti u drugom dijelu semestra, ali važno je već sada registrirati: ovo je kontekst u kojem vi ulazite u struku.
+
+
+## Anatomija jednog klika
+
+Sada prelazimo na najvažniji tehnički dio ovog poglavlja. Kada ga razumijete, razumjet ćete temelje svega što slijedi na kolegiju. Zamislite da ste u pregledniku upisali www.zara.com i pritisnuli Enter. Što se događa u sljedećih nekoliko stotina milisekundi?
+
+---
+
+### Korak prvi: prevođenje imena
+
+Vaš preglednik ne zna gdje se Zarin poslužitelj fizički nalazi. Jedino što ima je ljudski čitljivo ime, www.zara.com, a treba mu numerička adresa, niz brojeva poput 151.101.1.16, koji identificira konkretno računalo na mreži. Ovaj proces prevođenja zove se DNS rezolucija i funkcionira poput telefonskog imenika.
+
+Preglednik prvo provjerava vlastitu predmemoriju. Ako ste nedavno posjetili tu stranicu, adresa je već zapamćena i upit se rješava trenutno. Ako nije, pita operativni sustav vašeg računala. Ako ni on nema odgovor, upit putuje na DNS poslužitelj vašeg internet providera, recimo T-Coma ili A1. Ako ni tamo nema zapisa, upit se penje hijerarhijom prema korijenskim DNS poslužiteljima, kojih postoji samo trinaest klastera na cijelom svijetu, raspoređenih od Washingtona do Tokija. Cijeli ovaj ples obično traje dvadesetak do stotinjak milisekundi.
+
+Zašto bi komunikologa ovo trebalo zanimati? Zato što je domena digitalna imovina organizacije. Kada organizacija registrira domenu, preuzima odgovornost za njezino obnavljanje, zaštitu i konfiguriranje. Ako zaboravite obnoviti domenu, netko drugi je može registrirati. DNS zapisi su ljepilo koje povezuje domenu, hosting, email i sve ostalo. Ako promijenite hosting providera, morate ažurirati DNS zapise, a promjena se propagira mrežom do 48 sati. Razumijevanje ovog procesa štedi vas od skupe zbunjenosti.
+
+### Korak drugi: rukovanje
+
+Sada kada preglednik zna IP adresu, mora uspostaviti vezu. To se odvija putem TCP protokola kroz takozvano trostruko rukovanje. Preglednik kaže "Želim se povezati." Poslužitelj odgovara "Primam, spreman sam." Preglednik potvrđuje "U redu, počinjemo." Tri poruke, tri putovanja preko oceana, i tek tada može započeti stvarna razmjena sadržaja.
+
+Ako stranica koristi HTTPS, a danas to koristi više od 95% web stranica, slijedi još jedan korak: TLS rukovanje. Preglednik i poslužitelj dogovaraju metodu šifriranja i razmjenjuju kriptografske ključeve. Od tog trenutka svi podaci koji putuju između njih su šifrirani. Nitko, ni vaš internet provider, ni vlasnik WiFi mreže u kafiću, ni potencijalni napadač, ne može pročitati sadržaj komunikacije. Može vidjeti da komunicirate sa Zarinim poslužiteljem, ali ne može vidjeti što gledate, što kupujete, niti podatke vaše kartice.
+
+::: {.callout-important appearance="minimal"}
+HTTPS nije opcija nego standard. Google od 2018. godine označava sve HTTP stranice kao nesigurne u Chrome pregledniku. Stranice bez HTTPS-a također imaju niže rangiranje u rezultatima pretraživanja. Za bilo koju organizaciju čiju web prisutnost gradite, HTTPS je prvi preduvjet, ne bonus značajka.
+:::
+
+### Korak treći: zahtjev i odgovor
+
+Veza je uspostavljena. Preglednik sada šalje HTTP zahtjev, poruku koja kaže poslužitelju što želi. Zahtjev sadrži metodu (GET za "daj mi ovu stranicu", POST za "evo podataka iz obrasca"), URL putanju koja identificira traženi resurs i zaglavlja koja nose metapodatke: koji preglednik šalje zahtjev, koje jezike korisnik preferira, koliki je ekran, postoje li kolačići iz prošlih posjeta.
+
+Poslužitelj obrađuje zahtjev i šalje odgovor. Odgovor počinje statusnim kodom, troznamenkastim brojem koji govori je li sve u redu. Kod 200 znači uspjeh. Kod 301 znači da se resurs trajno preselio i preglednik se automatski preusmjerava. Kod 404 znači da traženi resurs ne postoji, što je poruka koju ste sigurno vidjeli bezbroj puta. Kod 500 znači da je nešto pošlo po krivu na strani poslužitelja.
+
+Nakon statusnog koda slijedi tijelo odgovora: sam sadržaj. Za početnu stranicu to je obično HTML dokument, tekstualna datoteka koja opisuje strukturu stranice. Ali to je samo početak. Unutar tog HTML-a preglednik pronalazi desetke referenci na druge resurse: CSS datoteke za izgled, JavaScript datoteke za interaktivnost, fontove, slike, analitičke skripte, reklamne piksele. Za svaki od tih resursa preglednik šalje zasebni zahtjev. Prosječna web stranica danas zahtijeva šezdeset do sto takvih zahtjeva da bi se potpuno učitala.
+
+::: {.callout-tip}
+## Pogledajte sami
+Otvorite bilo koju web stranicu u Chrome ili Firefox pregledniku. Pritisnite F12 za otvaranje Developer Tools. Kliknite na tab Network. Osvježite stranicu. Vidjet ćete svaki pojedinačni zahtjev koji je preglednik poslao. Prosječna web stranica danas šalje 60 do 100 takvih zahtjeva. Stupac Time pokazuje koliko je svaki trajao.
+:::
+
+### Korak četvrti: crtanje stranice
+
+Preglednik sada ima sve dijelove slagalice i počinje složen proces zvan rendering, prikazivanje. Parsira HTML i gradi logičku strukturu stranice zvanu DOM, Document Object Model, stablo u kojem je svaki element stranice čvor: naslovi, odlomci, slike, gumbi, obrasci. Istovremeno parsira CSS i gradi CSSOM, pravila o tome kako svaki od tih elemenata izgleda: boja, veličina, pozicija, font, razmaci. Spaja DOM i CSSOM u render stablo koje sadrži samo vidljive elemente, izračunava raspored svakog elementa na ekranu, i konačno crta piksele.
+
+Ovaj proces nije jednokratan. Svaka promjena na stranici, animacija, otvaranje izbornika, učitavanje novog sadržaja, pokreće djelomično ponovno izračunavanje. Zato loše optimizirane stranice s previše animacija i teškog JavaScripta postaju spore, a to ima mjerljive poslovne posljedice.
+
+
+## Protokoli koje morate poznavati
+
+Četiri koncepta iz ovog poglavlja pratit će vas kroz čitav kolegij i kroz čitavu karijeru. Vrijedi ih razumjeti pomalo dublje.
+
+### API-ji: nevidljivo ljepilo
+
+API, Application Programming Interface, mehanizam je koji omogućuje dvama softverskim sustavima da međusobno komuniciraju. Za komunikologe je to možda najvažniji koncept u cijelom poglavlju jer moderni web ne funkcionira kao zbirka izoliranih stranica, nego kao ekosustav servisa koji neprestano razmjenjuju podatke.
+
+Razmislite o web stranici koja prikazuje Google kartu. Stranica ne sadrži tu kartu. Putem Google Maps API-ja šalje zahtjev Googleovim poslužiteljima, koji vraćaju podatke o karti, a web stranica ih prikazuje. Isto vrijedi za online plaćanje. Kada kupujete na web trgovini, ona ne obrađuje vašu kreditnu karticu. Putem Stripe API-ja šalje podatke specijaliziranom platežnom procesoru koji obavlja transakciju i vraća potvrdu. Instagram feed ugrađen na web stranicu, gumb za dijeljenje na društvenim mrežama, chatbot u donjem kutu ekrana, sve to koristi API-je.
+
+Zašto je ovo bitno za vas? Svaki vanjski servis koji uključite na web stranicu, analitika, chat widget, platežni sustav, newsletter integracija, CRM, dolazi putem API-ja i svaki dodaje vrijeme učitavanja, potencijalni sigurnosni rizik i ovisnost o trećoj strani. Komunikolog koji to razumije može donositi bolje odluke o tome što uključiti, a što je suvišno.
+
+### Platežni protokoli: kaskada iza gumba
+
+Kada korisnik klikne "Kupi odmah" na web stranici, pokreće lanac koji većina ljudi nikada ne vidi. Web stranica šalje podatke o narudžbi platežnom procesoru putem API-ja. Procesor komunicira s bankom izdavateljicom kartice. Banka provjerava sredstva i autorizira transakciju. Potvrda se vraća natrag kroz cijeli lanac. Sve to traje dvije do pet sekundi i uključuje HTTPS šifriranje na svakom koraku.
+
+Većina web stranica ne obrađuje kartične podatke izravno jer je to regulirano strogim PCI DSS standardom. Umjesto toga koriste servise poput Stripea ili PayPala koji preuzimaju tu odgovornost. Razumijevanje da jednostavni gumb "Kupi" pokreće kaskadu autentificiranih, šifriranih poziva pomoći će vam shvatiti što je u pitanju kada dizajnirate ili upravljate transakcijskim iskustvima na webu.
+
+### DNS i domene: digitalna imovina
+
+Već smo opisali kako DNS prevodi imena u adrese. Nekoliko praktičnih implikacija zaslužuje naglasak. Domena je imovina. Ako je ne obnovite na vrijeme, netko drugi je može registrirati i vaša organizacija gubi čitavu online prisutnost. DNS konfiguracija povezuje domenu s hostingom, emailom, verifikacijom za tražilice i svim ostalim servisima. Ako promijenite hosting providera, morate ažurirati DNS zapise. Ako ne znate što je A zapis ili CNAME, ovisit ćete o tehničkom osoblju za svaku sitnicu.
+
+CDN, Content Delivery Network, koristi DNS na pametan način. Umjesto da svi korisnici pristupaju jednom poslužitelju koji je možda na drugom kontinentu, CDN kopira sadržaj na poslužitelje raspoređene po cijelom svijetu i DNS usmjerava korisnika na geografski najbliži. Kada korisnica iz Zagreba pristupa stranici koja koristi Cloudflare CDN, njezin zahtjev ne putuje do originalnog poslužitelja u Kaliforniji nego do Cloudflareovog čvora u Frankfurtu ili Beču. Rezultat je brže učitavanje za nju i manje opterećenje za poslužitelj.
+
+
+## Tri sloja svake web stranice
+
+Svaka web stranica koja nije trivijalna sastoji se od tri sloja koji surađuju, ali obavljaju fundamentalno različite poslove.
+
+HTML, HyperText Markup Language, definira strukturu. On kaže pregledniku što je naslov, što je odlomak, što je slika, što je obrazac, što je poveznica. HTML je kostur stranice. Ne govori ništa o bojama, fontovima ili rasporedu. Samo imenuje dijelove.
+
+CSS, Cascading Style Sheets, definira izgled. Boje, tipografija, razmaci, sjenke, animacije, responzivni raspored koji stranici omogućuje da izgleda dobro i na širokom monitoru i na uskom telefonu. CSS je odjeća na kosturu.
+
+JavaScript definira ponašanje. Što se dogodi kada korisnik klikne gumb? Kako se validira obrazac? Kako se podaci dohvaćaju s poslužitelja bez ponovnog učitavanja cijele stranice? JavaScript je mišićni sustav koji stranicu čini interaktivnom.
+
+Ne morate pisati kod ni u jednom od ova tri jezika. Ali morate razumjeti ovu podjelu jer će se u razgovorima s developerima i dizajnerima stalno pojavljivati. Kada developer kaže "to je CSS problem", to znači da je sadržaj ispravan, ali izgled nije. Kada kaže "treba nam JavaScript za to", to znači da statički HTML nije dovoljan i da stranica mora reagirati na korisnikove akcije. Razumjeti rječnik suradnika pola je posla u svakoj profesiji.
+
+
+## Zašto brzina nije tehnički detalj
+
+Performanse web stranice nisu samo stvar tehničke elegancije. One su poslovni problem, komunikacijski problem i, sve više, faktor rangiranja u tražilicama.
+
+Istraživanja su neugodno konzistentna. Više od polovice mobilnih korisnika napušta stranicu ako se učitava duže od tri sekunde. Svaka dodatna sekunda kašnjenja smanjuje konverzije za otprilike sedam posto. Najbrže stranice unutar iste industrije imaju dvostruko veće stope konverzije od najsporijih. To nisu akademske statistike. To je novac koji organizacija zarađuje ili gubi ovisno o tome koliko brzo se njezina stranica prikazuje.
+
+Google je to prepoznao i 2021. godine uveo Core Web Vitals, skup od tri metrike koje mjere korisničko iskustvo i izravno utječu na rangiranje stranice u rezultatima pretraživanja. LCP, Largest Contentful Paint, mjeri koliko brzo se prikazuje najistaknutiji sadržaj na stranici, a ciljna vrijednost je ispod dvije i pol sekunde. INP, Interaction to Next Paint, mjeri koliko brzo stranica reagira na korisnikovu akciju, s ciljem ispod dvjesto milisekundi. CLS, Cumulative Layout Shift, mjeri vizualnu stabilnost, dakle koliko se elementi stranice nepredvidivo pomiču tijekom učitavanja.
+
+Svima se dogodilo da su pokušali kliknuti gumb koji se u zadnjem trenutku pomaknuo jer se iznad njega učitala reklama. To je visok CLS i to je loše iskustvo. Kao komunikolog koji bira platforme, dizajnira sadržaj i donosi odluke o tome koje sve widgete i skripte ugraditi na stranicu, vi izravno utječete na ove metrike. Svaka analitička skripta, svaki chat widget, svaki ugrađeni video usporava stranicu. Vaša je odgovornost procijeniti isplati li se.
+
+::: {.callout-tip}
+## PageSpeed Insights
+Otvorite [pagespeed.web.dev](https://pagespeed.web.dev/) i testirajte web stranicu bilo koje hrvatske organizacije. Rezultat će vam reći je li stranica brza ili spora, i ponuditi konkretne preporuke za poboljšanje. Ovo je alat koji ćemo koristiti kroz cijeli kolegij.
+:::
+
+
+## Web izvan preglednika
+
+Kada razmišljate o webu, vjerojatno zamišljate preglednik na ekranu računala ili telefona. Ali web se proširio daleko izvan tog okvira.
+
+Pametni zvučnici poput Alexe i Google Homea koriste web API-je za obradu glasovnih naredbi. Pametni satovi dohvaćaju podatke putem HTTP-a. Industrijski senzori šalju podatke o temperaturi i tlaku na nadzorne ploče u oblaku. Automobili preuzimaju softverska ažuriranja putem istih protokola kojima se služi vaš preglednik. Chatbotovi pogonjeni umjetnom inteligencijom komuniciraju s korisnicima putem web sučelja ugrađenih u stranice, aplikacije i messaging platforme.
+
+Za komunikologe to znači da je "web prisutnost" organizacije sve širi pojam. Više nije samo web stranica. To je i glasovni asistent koji odgovara na pitanja o radnom vremenu, i chatbot koji pomaže korisnicima s narudžbom, i email automatizacija koja šalje personalizirane poruke, i mobilna notifikacija koja obavještava o akciji. Svi ti kanali koriste web infrastrukturu, protokole i API-je o kojima smo govorili u ovom poglavlju. Razumijete li temelje, razumjet ćete i nadogradnje.
+
+
+## Hrvatski kontekst
+
+Nekoliko činjenica relevantnih za komunikologe koji će raditi na hrvatskom tržištu. Internet penetracija u Hrvatskoj prelazi 90%, ali kvaliteta pristupa značajno varira između gradskih i ruralnih područja. To utječe na izbor tehnologija: stranice namijenjene korisnicima izvan velikih gradova moraju biti posebno optimizirane za sporije veze.
+
+Hrvatski hosting provideri nude usluge relevantne za manje organizacije, dok veće tvrtke i institucije sve više koriste globalne cloud platforme poput AWS-a, Azurea i Google Clouda. E-uprava koristi web infrastrukturu za sustave poput e-Građana i e-Porezne. GDPR, o kojem ćemo detaljno govoriti u trinaestom tjednu, ima implikacije za web infrastrukturu jer regulira gdje su podaci fizički pohranjeni, kako se prenose i tko im pristupa.
+
+
+## Na kraju ovog poglavlja
+
+Kada sljedeći put otvorite web stranicu, pokušajte na trenutak zaustaviti automatizam i pomisliti na sve što se upravo dogodilo. DNS je preveo ime u adresu. TCP je uspostavio vezu. TLS je šifrirao kanal. HTTP je prenio zahtjev i odgovor. Preglednik je parsirao HTML, primijenio CSS, izvršio JavaScript i nacrtao piksele. API-ji su dohvatili podatke s deset vanjskih servisa. Sve to u manje od dvije sekunde.
+
+Razumijevanje ovog procesa temelj je za sve što slijedi na kolegiju. Sljedeći tjedan govorit ćemo o tome kako tražilice pronalaze, indeksiraju i rangiraju sadržaj na webu, što je izravno povezano s infrastrukturom koju smo danas opisali. Ako razumijete kako zahtjev putuje od preglednika do poslužitelja, razumjet ćete i kako Googleov bot radi isto, samo brže, automatski i na milijardama stranica.
+
+::: {.callout-important appearance="minimal"}
+**Ključni zaključci**
+
+1. Internet je infrastruktura (kabeli, protokoli, usmjerivači); web je aplikacija koja se na njoj izvršava
+2. Web zahtjev prolazi kroz DNS rezoluciju, TCP i TLS rukovanje, HTTP zahtjev/odgovor i rendering u pregledniku
+3. HTTPS, API-ji i platežni protokoli gradivni su blokovi modernih web iskustava, od informacijskih stranica do online trgovina
+4. Performanse stranice izravno utječu na korisničko iskustvo, konverzije i rangiranje u tražilicama
+5. Tehnička pismenost o ovim sustavima temelj je za svaku drugu temu na kolegiju i preduvjet za kompetentno profesionalno djelovanje
+:::
+
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+**Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna**
+
+Prije drugog predavanja napravite tri stvari. Prvo, pretražite istu temu (npr. "restoran u Zagrebu") na Googleu, Bingu i DuckDuckGo. Usporedite prvih pet rezultata na svima trima. Razmislite zašto se razlikuju. Drugo, otvorite Developer Tools (tipka F12) na svojoj omiljenoj web stranici, kliknite tab Network i osvježite stranicu. Prebrojite zahtjeve. Pronađite najsporiji. Treće, testirajte jednu hrvatsku web stranicu na [PageSpeed Insights](https://pagespeed.web.dev/) i zapišite ocjenu.
+:::
+
+
+## Dodatno čitanje
+
+Obavezno: Mozilla Developer Network, [How the Web Works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) (oko petnaest minuta čitanja).
+
+Preporučeno za dublje razumijevanje:
+
+- Cloudflare Learning Center: [What is DNS?](https://www.cloudflare.com/learning/dns/what-is-dns/)
+- Cloudflare Learning Center: [What is HTTPS?](https://www.cloudflare.com/learning/ssl/what-is-https/)
+- Google: [Web Vitals](https://web.dev/articles/vitals)
+- [Submarine Cable Map](https://www.submarinecablemap.com/) (interaktivna karta podmorskih kabela)
+- Cloudflare: [What is an API?](https://www.cloudflare.com/learning/security/api/what-is-an-api/)
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|-------|------------|
+| ARPANET | Preteča interneta, vojna/akademska mreža iz 1969. |
+| DNS | Sustav koji prevodi imena domena u IP adrese |
+| HTTP/HTTPS | Protokol za komunikaciju između preglednika i poslužitelja (S = šifrirano) |
+| TCP/IP | Temeljni protokoli interneta koji osiguravaju pouzdanu isporuku paketa |
+| TLS | Protokol za šifriranje koji omogućuje HTTPS |
+| API | Sučelje za komunikaciju između softverskih sustava |
+| CDN | Mreža poslužitelja koja isporučuje sadržaj s geografski najbližeg čvora |
+| HTML | Jezik za strukturiranje sadržaja web stranica |
+| CSS | Jezik za definiranje vizualnog izgleda web stranica |
+| JavaScript | Programski jezik za interaktivnost na web stranicama |
+| SPA | Single Page Application, web aplikacija koja se učitava jednom |
+| PWA | Progressive Web App, web stranica s mogućnostima nativne aplikacije |
+| Core Web Vitals | Googleove metrike za mjerenje korisničkog iskustva na webu |
+| PCI DSS | Sigurnosni standard za obradu kartičnih plaćanja |
+| Rendering | Proces prikazivanja web stranice u pregledniku |
+| DOM | Document Object Model, logička struktura HTML dokumenta |
+| Statusni kod | Brojčani odgovor poslužitelja (200 = OK, 404 = nije pronađeno, itd.) |

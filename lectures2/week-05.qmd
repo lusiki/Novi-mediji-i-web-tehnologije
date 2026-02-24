@@ -1,0 +1,17 @@
+---
+title: "Tjedan 5: No code i low code alati za komunikologe"
+subtitle: "Izrada web stranica, automatizacija i digitalni proizvodi bez programiranja"
+author: "doc. dr. sc. Luka Šikić"
+date: 2025-02-01
+categories: [platforme, no-code]
+abstract: |
+  Ovo predavanje predstavlja ekosustav no code i low code platformi koje komunikacijskim stručnjacima omogućuju izradu web stranica, automatizaciju radnih tokova, povezivanje servisa i stvaranje digitalnih proizvoda bez tradicionalnog programiranja.
+---
+
+## Uvod
+
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+
+## Zaključak
+
+*Bit će dodano.*
