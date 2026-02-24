@@ -22,6 +22,9 @@ jobs:
       - name: Install TinyTeX
         run: quarto install tinytex
 
+      - name: Install LaTeX Croatian language support
+        run: ~/.TinyTeX/bin/*/tlmgr install babel-croatian
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
