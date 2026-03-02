@@ -22,11 +22,10 @@ jobs:
       - name: Install TinyTeX
         run: quarto install tinytex
 
-      - name: Update tlmgr
-        run: ~/.TinyTeX/bin/*/tlmgr update --self
-
       - name: Install LaTeX Croatian language support
-        run: ~/.TinyTeX/bin/*/tlmgr install babel-croatian
+        run: |
+          ~/.TinyTeX/bin/*/tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
+          ~/.TinyTeX/bin/*/tlmgr install babel-croatian
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
