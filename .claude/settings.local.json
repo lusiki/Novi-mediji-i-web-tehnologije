@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInicijalni commit: Quarto web stranica kolegija Novi mediji i web tehnologije\n\nSadrži predavanja \\(tjedni 1-15\\), seminare \\(draft predlošci\\), silabus,\nraspored, resurse i GitHub Actions workflow za objavu na GitHub Pages.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh repo view:*)",
+      "Bash(gh auth:*)",
+      "Bash(where:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(quarto render:*)",
+      "Bash(cmd.exe /c \"where quarto\")",
+      "WebFetch(domain:lusiki.github.io)",
+      "WebFetch(domain:github.com)",
+      "Bash(git remote:*)",
+      "Bash(curl:*)",
+      "Bash(powershell.exe -Command \"Set-Content -Path ''C:\\\\Users\\\\lsikic\\\\Dropbox\\\\HKS\\\\Kolegiji\\\\Novi mediji i web tehnologije\\\\GH_Kolegij\\\\.quarto'' -Stream com.dropbox.ignored -Value 1\")",
+      "Bash(powershell.exe -Command \"Set-Content -Path ''C:\\\\Users\\\\lsikic\\\\Dropbox\\\\HKS\\\\Kolegiji\\\\Novi mediji i web tehnologije\\\\GH_Kolegij\\\\_site'' -Stream com.dropbox.ignored -Value 1\")",
+      "Bash(\"/c/Program Files/RStudio/resources/app/bin/quarto/bin/quarto.exe\" render)",
+      "Bash(gh run:*)",
+      "Bash(powershell.exe -Command \"Get-Command quarto -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\'' -Filter ''quarto.exe'' -Recurse -ErrorAction SilentlyContinue -Depth 5 | Select-Object -First 3 -ExpandProperty FullName\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Program Files'',''C:\\\\Users\\\\lsikic\\\\AppData'' -Filter ''quarto.exe'' -Recurse -ErrorAction SilentlyContinue -Depth 6 | Select-Object -ExpandProperty FullName\")",
+      "Bash(\"/c/Program Files/RStudio/resources/app/bin/quarto/bin/quarto.exe\" render \"/c/Users/lsikic/Dropbox/HKS/Kolegiji/Novi mediji i web tehnologije/GH_Kolegij\")",
+      "Bash(\"/c/Program Files/RStudio/resources/app/bin/quarto/bin/tools/tinytex/bin/windows/tlmgr.bat\" install babel-croatian)",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\lsikic\\\\AppData'',''C:\\\\Users\\\\lsikic\\\\tinytex'',''C:\\\\Program Files\\\\RStudio'' -Filter ''tlmgr.bat'' -Recurse -ErrorAction SilentlyContinue -Depth 8 | Select-Object -ExpandProperty FullName\")",
+      "Bash(\"/c/Users/lsikic/AppData/Roaming/TinyTeX/bin/windows/tlmgr.bat\" install babel-croatian)"
+    ]
+  }
+}
