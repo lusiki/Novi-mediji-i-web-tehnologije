@@ -30,7 +30,12 @@
       "Bash(\"/c/Program Files/RStudio/resources/app/bin/quarto/bin/quarto.exe\" render \"/c/Users/lsikic/Dropbox/HKS/Kolegiji/Novi mediji i web tehnologije/GH_Kolegij\")",
       "Bash(\"/c/Program Files/RStudio/resources/app/bin/quarto/bin/tools/tinytex/bin/windows/tlmgr.bat\" install babel-croatian)",
       "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\lsikic\\\\AppData'',''C:\\\\Users\\\\lsikic\\\\tinytex'',''C:\\\\Program Files\\\\RStudio'' -Filter ''tlmgr.bat'' -Recurse -ErrorAction SilentlyContinue -Depth 8 | Select-Object -ExpandProperty FullName\")",
-      "Bash(\"/c/Users/lsikic/AppData/Roaming/TinyTeX/bin/windows/tlmgr.bat\" install babel-croatian)"
+      "Bash(\"/c/Users/lsikic/AppData/Roaming/TinyTeX/bin/windows/tlmgr.bat\" install babel-croatian)",
+      "Bash(cmd.exe /c \"quarto --version\")",
+      "Bash(cmd.exe /c \"where quarto 2>&1\")",
+      "Bash(powershell.exe -Command \"Get-Command quarto 2>&1\")",
+      "Bash(export PATH=\"/c/Users/lsikic/AppData/Local/Programs/Positron/resources/app/quarto/bin:$PATH\")",
+      "Bash(quarto --version)"
     ]
   }
 }

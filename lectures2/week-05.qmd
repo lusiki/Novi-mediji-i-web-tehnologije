@@ -1,17 +1,375 @@
 ---
-title: "Tjedan 5: No code i low code alati za komunikologe"
-subtitle: "Izrada web stranica, automatizacija i digitalni proizvodi bez programiranja"
-author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [platforme, no-code]
+title: "Principi UX dizajna i korisničko iskustvo"
+subtitle: "Kako ljudi koriste web i što to znači za komunikacijsku strategiju"
+date: 2025-03-01
+categories: [UX, dizajn, korisničko iskustvo]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje predstavlja ekosustav no code i low code platformi koje komunikacijskim stručnjacima omogućuju izradu web stranica, automatizaciju radnih tokova, povezivanje servisa i stvaranje digitalnih proizvoda bez tradicionalnog programiranja.
+  Ovo predavanje uvodi principe korisničkog iskustva i UX dizajna kao temeljne kompetencije komunikologa. Razumijevanje kako ljudi percipiraju, navigiraju i koriste digitalne proizvode izravno utječe na kvalitetu svake komunikacijske strategije jer najbriljantnije poruka ne vrijedi ništa ako korisnik ne može ili ne želi pronaći, pročitati ili djelovati prema njoj.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Definirati korisničko iskustvo kao disciplinu i objasniti zašto je ono relevantno za komunikologe, a ne samo za dizajnere
+2. Primijeniti temeljne principe kognitivne psihologije relevantne za dizajn digitalnih sučelja, uključujući kognitivno opterećenje, mentalne modele i gestalt principe
+3. Objasniti Nielsenovih deset heuristika upotrebljivosti i primijeniti ih u procjeni web stranica
+4. Prepoznati ulogu informacijske arhitekture u organizaciji sadržaja i navigaciji web stranice
+5. Razumjeti proces dizajnerskog razmišljanja i ulogu istraživanja korisnika u oblikovanju komunikacijskih strategija
+6. Procijeniti kvalitetu korisničkog iskustva na web stranicama koristeći strukturirane metode evaluacije
+7. Artikulirati vezu između UX-a i poslovnih rezultata, uključujući konverzije, zadržavanje korisnika i reputaciju brenda
+8. Sudjelovati u razgovorima s dizajnerima i developerima koristeći temeljni UX rječnik
 
-*Bit će dodano.*
+
+## Zašto komunikolog mora razumjeti UX
+
+U rujnu 2013. godine, Sjedinjene Američke Države pokrenule su HealthCare.gov, web stranicu putem koje su se građani trebali prijaviti za zdravstveno osiguranje u sklopu Affordable Care Acta. Stranica se srušila na dan pokretanja. Ali problem nije bio samo tehnički. Čak i kada je proradila, korisnici su se gubili u procesu, odustajali pred složenim obrascima, nisu razumjeli terminologiju i nisu mogli dovršiti prijavu. Komunikacija oko proizvoda bila je izvrsna jer milijuni ljudi su znali za stranicu i htjeli ju koristiti. Ali iskustvo korištenja bilo je toliko loše da je postalo politički skandal. Ovo je savršena ilustracija fundamentalnog principa kojeg se komunikolozi moraju držati. Dovesti korisnika na stranicu samo je pola posla. Druga polovica je osigurati da na njoj može učiniti ono što je došao učiniti.
+
+Vi ste u prethodnim tjednima naučili kako funkcionira web infrastruktura, kako tražilice pronalaze i rangiraju sadržaj, kako se vrednuju informacije i kako CMS sustavi omogućuju objavljivanje. Sve je to relevantno za dovođenje korisnika na stranicu. Danas postavljamo pitanje koje logički slijedi. Što se događa kada korisnik stigne? Može li pronaći ono što traži? Razumije li što treba učiniti? Je li iskustvo ugodno ili frustrirajuće? Hoće li se vratiti ili nikada više?
+
+Korisničko iskustvo ili User Experience (UX) obuhvaća svaki aspekt interakcije korisnika s proizvodom, uslugom ili organizacijom. Na webu, to uključuje vizualni dizajn, navigaciju, sadržaj, brzinu učitavanja, pristupačnost, jasnoću poruka, lakoću obavljanja zadataka i emocionalnu reakciju koju cijelo iskustvo izaziva. Za komunikologe, UX nije egzotična disciplina koja pripada dizajnerima. UX je komunikacijska disciplina jer se bavi time kako ljudi primaju, razumiju i reagiraju na informacije u digitalnom okruženju.
+
+Zamislite da ste napisali savršen tekst za stranicu proizvoda. Jasan, uvjerljiv, informativan. Ali tekst je postavljen na stranicu s nepreglednom navigacijom, sporim učitavanjem, kontrastom koji otežava čitanje i gumbom za kupovinu koji je nevidljiv na mobilnom ekranu. Vaš savršeni tekst ne vrijedi ništa jer ga korisnik ili neće pronaći, ili neće moći pročitati, ili neće znati što učiniti nakon što ga pročita. UX je kontekst u kojem komunikacija funkcionira ili ne funkcionira.
+
+
+## Korisničko iskustvo kao disciplina
+
+Termin User Experience skovao je Don Norman devedesetih godina dok je radio u Appleu. Norman je želio termin koji je širi od upotrebljivosti (usability) jer je smatrao da iskustvo korisnika obuhvaća mnogo više od same funkcionalnosti, od emocionalnog dojma do estetskog užitka i ukupnog zadovoljstva. Njegova knjiga "The Design of Everyday Things" temeljan je tekst discipline koji objašnjava zašto su neki proizvodi intuitivni za korištenje dok su drugi frustrirajući, i što dizajneri mogu učiniti da poboljšaju korisničko iskustvo.
+
+UX se razlikuje od UI-ja (User Interface) iako se termini često koriste naizmjenično. UI se odnosi na vizualne elemente s kojima korisnik interagira, poput gumba, izbornika, obrazaca, ikona i tipografije. UX obuhvaća cijelo iskustvo, uključujući UI ali i informacijsku arhitekturu, tok interakcije, jasnoću sadržaja, brzinu odgovora sustava i emocionalnu reakciju korisnika. Analogija je korisna jer UI je poput izgleda restorana (namještaj, osvjetljenje, posuđe), dok je UX cijelo iskustvo odlaska u restoran (od rezervacije, dolaska, dočeka, brzine posluživanja, kvalitete hrane, računa do odlaska).
+
+Peter Morville, pionir informacijske arhitekture, razvio je model poznat kao UX honeycomb koji definira sedam kvaliteta koje proizvod mora imati da bi korisničko iskustvo bilo kvalitetno. Proizvod mora biti koristan (useful) jer mora ispunjavati stvarnu potrebu. Mora biti upotrebljiv (usable) jer korisnik mora moći ostvariti svoj cilj. Mora biti poželjan (desirable) jer estetika i emocionalni dizajn utječu na percepciju kvalitete. Mora biti pronalažljiv (findable) jer korisnik mora moći pronaći ono što traži. Mora biti pristupačan (accessible) jer mora biti upotrebljiv za ljude s različitim sposobnostima. Mora biti vjerodostojan (credible) jer korisnik mora vjerovati sadržaju i organizaciji. I mora biti vrijedan (valuable) jer mora donositi vrijednost i korisniku i organizaciji.
+
+Za komunikologe, ovaj model je izuzetno koristan jer pokriva upravo dimenzije o kojima ste učili u prethodnim tjednima. Pronalažljivost je tema drugog tjedna o SEO-u. Vjerodostojnost je tema trećeg tjedna o vrednovanju informacija. Upotrebljivost i pristupačnost izravno su povezane s CMS-om iz četvrtog tjedna. Danas sve te niti povezujemo u koherentnu disciplinu.
+
+
+## Kognitivna psihologija i dizajn
+
+Razumijevanje UX-a nemoguće je bez razumijevanja kako ljudski mozak obrađuje informacije. Ne trebate postati kognitivni psiholog, ali morate poznavati nekoliko temeljnih principa koji objašnjavaju zašto neki dizajni funkcioniraju a drugi ne.
+
+Kognitivno opterećenje (cognitive load) odnosi se na količinu mentalnog napora potrebnog za obavljanje zadatka. Ljudski radni memorija ograničena je i može istovremeno obraditi samo ograničen broj informacija. Kada je sučelje pretrpano opcijama, kada je navigacija nejasna ili kada tekst zahtijeva više čitanja nego što bi trebao, kognitivno opterećenje raste i korisnik se osjeća zbunjeno ili frustrirano. Dobar dizajn smanjuje kognitivno opterećenje eliminirajući nepotrebne elemente, grupirajući povezane informacije, koristeći vizualnu hijerarhiju za isticanje važnog i pružajući jasne upute za svaki korak.
+
+Za komunikologe, ovo ima izravnu praktičnu implikaciju. Kada pišete tekst za web stranicu, ne pišete za časopis ili akademski rad. Pišete za okruženje u kojem se korisnik natječe s desetkom otvorenih tabova, notifikacijama na telefonu, kolegom koji nešto pita i kognitivnim opterećenjem svakodnevnog života. Svaka suvišna riječ, svaka nepotrebna opcija, svaki zbunjujući element povećava vjerojatnost da korisnik odustane.
+
+Mentalni modeli (mental models) su interne reprezentacije koje ljudi koriste za razumijevanje sustava. Kada korisnik dolazi na vašu web stranicu, on dolazi s mentalnim modelom formiranim korištenjem drugih web stranica. Očekuje da će logo u gornjem lijevom kutu biti poveznica na početnu stranicu. Očekuje da će navigacija biti na vrhu stranice ili u hamburger izborniku na mobitelu. Očekuje da će plavi podvučeni tekst biti poveznica. Očekuje da će košarica biti u gornjem desnom kutu. Dizajn koji se poklapa s korisnikovim mentalnim modelom osjeća se intuitivan. Dizajn koji krši te očekivane obrasce osjeća se zbunjujuće, čak i ako je objektivno bolji.
+
+Za komunikologe, mentalni modeli objašnjavaju zašto kreativnost u web dizajnu mora biti uravnotežena s konvencijama. Možete i trebate biti kreativni u sadržaju, vizualnom identitetu i komunikacijskoj poruci. Ali temeljne interakcijske obrasce poput navigacije, obrazaca i poziva na akciju trebate poštovati jer korisnik nema vremena ni volje učiti kako funkcionira vaša stranica ako se razlikuje od svake druge stranice na webu.
+
+Hickov zakon kaže da vrijeme potrebno za donošenje odluke raste s brojem i složenosti opcija. Ako korisnik treba odabrati jednu od tri opcije, odluka je brza. Ako treba odabrati jednu od dvadeset, odluka je spora i stresna. Za web dizajn, ovo znači da navigacija s pet stavki funkcionira bolje od navigacije s petnaest. Padajući izbornik s tri opcije funkcionira bolje od jednog s trideset. Stranica s jednim jasnim pozivom na akciju funkcionira bolje od stranice s pet različitih gumba koji se natječu za pažnju.
+
+Fittsov zakon kaže da vrijeme potrebno za dosezanje cilja ovisi o udaljenosti do cilja i njegovoj veličini. Veći gumb bliži korisniku lakše je pogoditi. Na mobilnom ekranu, gdje se interakcija odvija prstom, ovo je osobito važno jer mali gumbi blizu rubova ekrana teško su dostupni. Za komunikologe koji definiraju pozive na akciju (call-to-action), praktična implikacija jest da gumb za najvažniju akciju mora biti dovoljno velik, dovoljno istaknut i pozicioniran na mjestu koje je lako doseći.
+
+Gestalt principi skup su principa vizualne percepcije koji objašnjavaju kako mozak organizira vizualne elemente u smislene cjeline. Princip blizine kaže da elemente koji su fizički blizu percipiramo kao povezane. Princip sličnosti kaže da elemente koji izgledaju slično percipiramo kao pripadne istoj grupi. Princip kontinuiteta kaže da pratimo linije i krivulje čak i kada su prekinute. Princip zatvorenosti kaže da mozak dopunjava nepotpune oblike u cjelovite. Princip figure i podloge kaže da razlikujemo objekte u prvom planu od pozadine.
+
+Za dizajn web stranica, gestalt principi imaju neposrednu primjenu. Elementi koji pripadaju zajedno trebaju biti vizualno grupirani (blizina). Gumbi s istom funkcijom trebaju izgledati isto (sličnost). Navigacijski put treba biti vizualno jasan (kontinuitet). Kartice proizvoda trebaju imati jasno definirane granice (zatvorenost). Najvažniji sadržaj treba jasno stajati ispred pozadine (figura i podloga). Komunikolog koji razumije ove principe može kritičnije procijeniti dizajn i artikulirati što funkcionira a što ne, čak i bez formalnog dizajnerskog obrazovanja.
+
+Efekt serijske pozicije (serial position effect) kaže da ljudi najbolje pamte prve i posljednje stavke u nizu, a najlošije one u sredini. Za navigaciju na web stranici, ovo znači da najvažnije stavke trebaju biti na početku i na kraju navigacijskog niza. Za sadržaj, ključne informacije trebaju biti na početku teksta, ne zatrpane u sredini.
+
+Zakon Millera, često citiran ali i često pogrešno interpretiran, kaže da ljudski radni memorija može istovremeno držati otprilike sedam stavki (plus minus dvije). Ovo ne znači da svaka navigacija mora imati sedam stavki, ali podupire princip da pretjerano opterećivanje korisnika informacijama smanjuje sposobnost obrade i pamćenja.
+
+Von Restorff efekt, poznat i kao efekt izolacije, kaže da se stavka koja se vizualno razlikuje od ostalih bolje pamti. Na web stranici, gumb koji je drugačije boje od ostalih elemenata privlači pažnju upravo zbog ovog efekta. Poziv na akciju (call-to-action) koji je vizualno identičan okolnim elementima gubi se u pozadini. Za komunikologe, von Restorff efekt potvrđuje princip da isticanje svega znači neisticanje ničega. Ako je svaki element na stranici podebljen, nijedan nije istaknut. Ako je svaki gumb jarko obojen, nijedan ne privlači posebnu pažnju. Strateška upotreba kontrasta, boje i veličine za isticanje jednog ili dva ključna elementa daleko je efikasnija od pokušaja da se sve istakne.
+
+Zakon Jakoba, formuliran od Jakoba Nielsena, kaže da korisnici većinu vremena provode na drugim web stranicama, ne na vašoj. To znači da očekuju da vaša stranica funkcionira slično onima na koje su navikli. Ovo nije poziv na kopiranje tuđeg dizajna nego na poštovanje konvencija koje korisnici već poznaju. Košarica u gornjem desnom kutu, logo koji vodi na početnu stranicu, hamburger izbornik na mobitelu, podvučeni tekst kao poveznica, sve su to konvencije koje korisnici očekuju i čije kršenje stvara nepotrebnu zbunjenost.
+
+Zakon Postela (robusnosti) iz računalnih znanosti, ali primjenjiv na komunikaciju, kaže da treba biti konzervativan u onome što šaljete a liberalan u onome što primate. Na web obrascu, ovo znači da sustav treba prihvatiti telefonski broj u bilo kojem formatu (s crticama, razmacima, zagradama ili bez njih) umjesto da zahtijeva egzaktan format. Za komunikologe, šira implikacija jest da sustav treba raditi za korisnika umjesto da zahtijeva od korisnika da radi za sustav.
+
+Praktični primjer koji ilustrira sve ove principe jest proces naručivanja na web trgovini. Zamislite korisnika koji želi kupiti par cipela. Hickov zakon sugerira da filteri za sužavanje izbora (veličina, boja, cijena) trebaju biti jasni i jednostavni jer previše opcija paralizira. Fittsov zakon sugerira da gumb za dodavanje u košaricu mora biti dovoljno velik i pozicioniran blizu fotografije proizvoda. Gestalt principi sugeriraju da cijena, dostupnost i veličine trebaju biti vizualno grupirane jer pripadaju zajedno. Von Restorff efekt sugerira da gumb za kupovinu mora vizualno odskakati od ostalih elemenata. Kognitivno opterećenje sugerira da stranica proizvoda ne smije biti pretrpana nepotrebnim informacijama koje odvlače od odluke o kupnji. Kada svi ovi principi rade zajedno, rezultat je iskustvo koje se korisniku čini jednostavnim i prirodnim, iako je iza te jednostavnosti sofisticiran dizajn.
+
+
+## Nielsenovih deset heuristika upotrebljivosti
+
+Jakob Nielsen, jedan od najutjecajnijih istraživača upotrebljivosti, formulirao je deset heuristika koje služe kao opći principi za dizajn korisničkih sučelja. Ove heuristike nisu pravila koja se slijepo slijede nego smjernice koje pomažu u identifikaciji problema. Za komunikologe, one su izvrsna kontrolna lista za procjenu bilo koje web stranice.
+
+Prva heuristika je vidljivost statusa sustava. Sustav mora uvijek obavijestiti korisnika o tome što se događa, pravodobnom povratnom informacijom. Kada korisnik klikne gumb za slanje obrasca, treba odmah vidjeti potvrdu da je obrazac poslan ili informaciju da se obrađuje. Kada se stranica učitava, traka napretka ili spinner komunicira da se nešto događa. Bez povratne informacije, korisnik ne zna je li njegov klik registriran i sklon je kliknuti ponovno, što može uzrokovati dupli unos ili frustraciju.
+
+Druga heuristika je podudaranje sustava i stvarnog svijeta. Sustav treba govoriti jezikom korisnika, s riječima, frazama i konceptima koji su mu poznati, umjesto tehničkog žargona. Ikona kante za smeće za brisanje intuitivna je jer se podudara s fizičkim iskustvom bacanja nečega. Poruka "Error 403 Forbidden" ne govori ništa prosječnom korisniku, dok "Nemate pristup ovoj stranici" govori sve. Za komunikologe, ova heuristika potvrđuje ono što bi trebalo biti očito jer jezik na web stranici mora biti prilagođen publici, ne tehničkom timu koji je stranicu gradio.
+
+Treća heuristika je korisnička kontrola i sloboda. Korisnici često odaberu funkciju greškom i trebaju jasno označen izlaz iz neželjenog stanja. Gumb za poništavanje (undo), jasna navigacija unatrag i mogućnost zatvaranja dijaloga bez posljedica daju korisniku osjećaj kontrole. Stranica iz koje se ne može izaći, obrazac koji se ne može poništiti ili proces iz kojeg nema povratka stvaraju anksioznost.
+
+Četvrta heuristika je konzistentnost i standardi. Korisnici ne bi trebali morati razmišljati znače li različite riječi, situacije ili akcije isto. Ako se na jednom dijelu stranice akcija zove "Dodaj u košaricu" a na drugom "Kupi", korisnik se zbunjuje. Konzistentnost podrazumijeva isti vizualni stil za iste elemente, istu terminologiju za iste koncepte i iste interakcijske obrasce kroz cijelu stranicu.
+
+Peta heuristika je prevencija pogrešaka. Bolji od dobre poruke o pogreški je dizajn koji sprječava pojavu problema. Padajući izbornik koji nudi samo validne opcije sprječava pogrešan unos. Formular koji automatski formatira telefonski broj sprječava pogrešku u formatu. Zahtjev za potvrdu prije brisanja sprječava slučajni gubitak podataka. Za komunikologe, prevencija pogrešaka relevantna je osobito u kontakt formama, procesima naručivanja i svugdje gdje korisnik unosi podatke.
+
+Šesta heuristika je prepoznavanje umjesto prisjećanja. Sustav treba minimizirati opterećenje memorije korisnika čineći objekte, akcije i opcije vidljivima. Korisnik ne bi trebao morati pamtiti informacije s jednog dijela stranice da bi ih koristio na drugom. Na primjer, ako korisnik u web trgovini pregledava proizvod, a zatim ode na stranicu usporedbe, usporedba mora prikazati dovoljno informacija da korisnik ne mora ići natrag i ponovno pregledavati svaki proizvod pojedinačno.
+
+Sedma heuristika je fleksibilnost i efikasnost korištenja. Sustav treba biti prilagodljiv i iskusnim i neiskusnim korisnicima. Prečice na tipkovnici, brzo pretraživanje i mogućnost prilagodbe sučelja omogućuju iskusnim korisnicima efikasniji rad bez da otežavaju iskustvo početnika. Na web stranicama, ovo se manifestira kroz jasnu primarnu navigaciju za nove posjetitelje i efikasno pretraživanje za one koji znaju što traže.
+
+Osma heuristika je estetski i minimalistički dizajn. Sučelja ne bi trebala sadržavati informacije koje su irelevantne ili rijetko potrebne. Svaka dodatna jedinica informacije natječe se s relevantnim informacijama i smanjuje njihovu relativnu vidljivost. Za komunikologe, ovo je možda najteža heuristika za primjenu jer postoji tendencija da se na web stranicu stavi što više informacija, previše opcija i previše poruka. Disciplina uklanjanja nepotrebnog jednako je važna kao kreiranje kvalitetnog sadržaja.
+
+Deveta heuristika je pomoć korisnicima u prepoznavanju, dijagnosticiranju i oporavku od pogrešaka. Poruke o pogreškama trebaju biti izražene jednostavnim jezikom, precizno opisati problem i konstruktivno predložiti rješenje. Umjesto "Validation error in field 3" poruka treba glasiti "Molimo unesite valjanu email adresu, na primjer ime@domena.hr".
+
+Deseta heuristika je pomoć i dokumentacija. Čak i ako je sustav idealno dizajniran, ponekad je potrebna pomoć. Dokumentacija mora biti lako pretraživa, fokusirana na korisnički zadatak, sadržavati konkretne korake i ne biti preopširna. Za web stranice, ovo se manifestira kroz FAQ sekcije, chatbotove za pomoć, tooltipove i kontekstualne upute.
+
+Za komunikologe, ovih deset heuristika vrijede daleko izvan web dizajna. One opisuju principe dobre komunikacije općenito jer govore o jasnoći, konzistentnosti, prevenciji nesporazuma, poštovanju korisnikovog vremena i prilagodbi publici. Komunikolog koji internalizira ove principe proizvodi bolji sadržaj na svakoj platformi.
+
+
+## Informacijska arhitektura
+
+Informacijska arhitektura (IA) disciplina je koja se bavi organizacijom, strukturiranjem i označavanjem sadržaja na način koji korisnicima omogućuje pronalaženje informacija i obavljanje zadataka. Za web stranicu, IA određuje kako je sadržaj organiziran, kako funkcionira navigacija, kako su stranice kategorizirane i kako sustav pretraživanja radi.
+
+Richard Saul Wurman, koji je skovao termin informacijska arhitektura sedamdesetih godina, definirao je informacijskog arhitekta kao osobu koja organizira obrasce inherentne u podacima, čineći složeno jasnim. U kontekstu weba, IA odgovara na pitanja poput toga kako organizirati tisuću stranica sadržaja u strukturu koja korisnik može navigirati, kako imenovati kategorije tako da budu razumljive ciljnoj publici, koliko razina dubine navigacija treba imati i što se događa kada korisnik ne može pronaći ono što traži putem navigacije te kako mu pretraživanje pomaže.
+
+Za komunikologe, IA je izravno relevantna jer oni često najbolje poznaju sadržaj organizacije i njezinu publiku. Developer može implementirati navigacijski sustav, ali komunikolog razumije koje informacije korisnici traže, kojim riječima ih traže i kojim logičkim putem razmišljaju.
+
+Navigacija na web stranici ima nekoliko tipova od kojih svaki služi drugoj svrsi. Globalna navigacija prisutna je na svakoj stranici i pruža pristup glavnim sekcijama. Obično je pozicionirana na vrhu stranice ili u bočnom izborniku. Lokalna navigacija prikazuje opcije unutar trenutne sekcije. Kontekstualna navigacija su poveznice unutar sadržaja koje vode na povezane stranice. Breadcrumb navigacija pokazuje korisniku gdje se nalazi u hijerarhiji stranice, poput putanje Dom tada Proizvodi tada Kategorija tada Proizvod. Navigacija u podnožju obično sadrži sekundarne poveznice poput pravnih informacija, kontakta i sitemapu.
+
+Card sorting tehnika je istraživanja korisnika za definiranje informacijske arhitekture. Korisnicima se daju kartice s nazivima sadržaja i traži ih se da ih grupiraju na način koji im je logičan. Otvoreni card sorting dopušta korisnicima da sami imenuju grupe. Zatvoreni card sorting daje unaprijed definirane kategorije i traži korisnike da rasporede sadržaj u njih. Rezultati otkrivaju kako korisnici mentalno organiziraju sadržaj, što se često značajno razlikuje od načina na koji ga organizacija interno strukturira. Restoran može interno kategorizirati jelovnik prema dobavljačima, ali korisnici razmišljaju u terminima predjela, glavnih jela i deserta.
+
+Tree testing komplementarna je tehnika u kojoj se korisnicima daje tekstualna hijerarhija (bez vizualnog dizajna) i traži ih se da pronađu specifičnu informaciju navigirajući tom hijerarhijom. Ovo testira čistu strukturu neovisno o dizajnu jer ako korisnik ne može pronaći informaciju u tekstualnoj hijerarhiji, dizajn je neće spasiti.
+
+Za komunikologe na hrvatskom tržištu, informacijska arhitektura ima specifični izazov višejezičnosti. Struktura koja ima smisla na hrvatskom ne mora imati smisla na engleskom ili njemačkom jer kulturalne razlike u kategorizaciji informacija postoje. Turistička stranica koja na hrvatskom ima kategoriju "Smještaj" mora odlučiti hoće li na engleskom koristiti "Accommodation", "Where to Stay" ili "Lodging", a svaka opcija ima različite konotacije i različitu mentalnu podudarnost s ciljnom publikom.
+
+
+## Dizajnersko razmišljanje i istraživanje korisnika
+
+Design thinking ili dizajnersko razmišljanje proces je rješavanja problema koji stavlja korisnika u središte svake odluke. Proces se sastoji od pet faza koje se ponavljaju iterativno.
+
+Empatizacija (Empathize) prva je faza u kojoj pokušavate razumjeti korisnika, njegove potrebe, frustracije, kontekst korištenja i motivacije. Ovo se postiže istraživanjem korisnika putem intervjua, promatranja, anketa i analize podataka o ponašanju. Za komunikologe, ova faza je prirodna jer se podudara s analizom publike koja je temelj svake komunikacijske strategije.
+
+Definiranje problema (Define) druga je faza u kojoj na temelju istraživanja formulirate jasan problem koji pokušavate riješiti. Umjesto vague definicije poput "Trebamo bolju web stranicu", definirate "Korisnici ne mogu pronaći kontakt informacije jer su skrivene tri razine duboko u navigaciji, što rezultira s 40% napuštenih posjeta na stranici kontakta".
+
+Ideacija (Ideate) treća je faza u kojoj generirate što više mogućih rješenja bez odmah procjenjivanja njihove izvedivosti. Brainstorming, skiciranje i eksperimentiranje dio su ove faze. Za komunikologe, ideacija uključuje razmišljanje o sadržaju, tonusu, vizualnom pristupu i interakcijskim obrascima.
+
+Prototipiranje (Prototype) četvrta je faza u kojoj se odabrana rješenja pretvaraju u opipljive prototipe koji se mogu testirati. Prototip ne mora biti gotov proizvod. Može biti skica na papiru, wireframe (shematski prikaz rasporeda elemenata), interaktivni prototip u alatu poput Figme ili čak jednostavan HTML mockup. Cilj je imati nešto što korisnik može vidjeti i isprobati.
+
+Testiranje (Test) peta je faza u kojoj se prototip testira sa stvarnim korisnicima. Njihove reakcije, problemi i sugestije koriste se za poboljšanje rješenja, i ciklus se ponavlja. Ovo je možda najvažnija faza jer razbija iluziju da dizajner ili komunikolog može predvidjeti kako će korisnik reagirati. Ono što vam se čini intuitivnim možda je zbunjujuće za osobu koja stranicu vidi prvi put.
+
+Persone su fikcijski ali istraživanjem potkrijepljeni profili tipičnih korisnika. Persona ima ime, dob, zanimanje, ciljeve, frustracije i kontekst korištenja. Na primjer, persona za turističku web stranicu mogla bi biti "Marija, 42 godine, majka dvoje djece, planira obiteljski odmor u Dalmaciji. Koristi mobilni telefon u tramvaju tijekom putovanja na posao. Želi brzo pronaći smještaj koji prihvaća kućne ljubimce i ima bazen. Frustrira je kada mora kliknuti kroz puno stranica da bi pronašla bitne informacije."
+
+Persona pomaže cijelom timu da donosi odluke s konkretnim korisnikom na umu umjesto apstraktne publike. Kada se diskutira treba li navigacija imati padajući izbornik, pitanje postaje "Hoće li Marija moći pronaći smještaj s kućnim ljubimcima?" umjesto apstraktnog "Je li ova navigacija dobra?"
+
+User journey mapa vizualizacija je korisnikovog iskustva kroz sve dodirne točke s organizacijom, od prvog kontakta do završetka zadatka i nakon njega. Za web stranicu, journey mapa može obuhvaćati pretraživanje na Googleu, dolazak na stranicu, navigiranje do željenog sadržaja, ispunjavanje obrasca, primanje potvrde emailom i kasniji povratak na stranicu. Na svakom koraku mapa identificira korisnikove akcije, misli, emocije i točke boli (pain points). Za komunikologe, journey mapa je moćan alat jer otkriva trenutke u kojima komunikacija može poboljšati iskustvo ili u kojima nedostatak komunikacije stvara frustraciju.
+
+
+## Vizualni dizajn i komunikacija
+
+Vizualni dizajn web stranice nije dekoracija. To je komunikacijski sustav koji koristi vizualne elemente za prenošenje informacija, stvaranje hijerarhije, usmjeravanje pažnje i izazivanje emocionalnih reakcija.
+
+Vizualna hijerarhija određuje redoslijed kojim korisnik percipira elemente na stranici. Veći elementi uočavaju se prije manjih. Elementi s više kontrasta uočavaju se prije onih s manje kontrasta. Elementi u boji uočavaju se prije onih u sivim tonovima. Elementi izolirani od ostalih uočavaju se prije onih u skupini. Za komunikologe, vizualna hijerarhija izravno je povezana s komunikacijskom strategijom jer određuje koju poruku korisnik primi prvo, drugu i treću. Ako je najvažnija poruka na stranici vizualno jednako istaknuta kao ostale, sve poruke postaju jednako nevidljive.
+
+Tipografija na webu utječe na čitljivost, ton i percepciju brenda. Veličina fonta mora biti dovoljno velika za ugodno čitanje na ekranu, minimalno šesnaest piksela za tekst tijela na desktopu i idealno osamnaest ili više na mobilnim uređajima. Dužina reda utječe na čitljivost jer redovi dulji od sedamdeset do osamdeset znakova otežavaju praćenje teksta. Razmak između redova (line-height) trebao bi biti 1.5 do 1.8 puta veći od veličine fonta za ugodan ritam čitanja. Kontrast između teksta i pozadine mora zadovoljiti WCAG standarde pristupačnosti, minimalno omjer 4.5 prema 1 za normalni tekst.
+
+Boja na webu služi više funkcija istovremeno. Komunicira identitet brenda. Stvara emocionalnu atmosferu. Usmjerava pažnju na ključne elemente. Označava interaktivne elemente. Komunicira status (zeleno za uspjeh, crveno za pogrešku, žuto za upozorenje). Za komunikologe, dva principa su ključna. Prvo, boja nikada ne smije biti jedini nositelj informacije jer korisnici koji ne razlikuju boje moraju i dalje razumjeti poruku, što znači da uz crvenu poruku o pogreški mora stajati i ikona ili tekst. Drugo, konzistentna upotreba boja kroz stranicu stvara predvidivost koja smanjuje kognitivno opterećenje.
+
+Bijeli prostor (white space) ili negativni prostor prazan je prostor između elemenata na stranici. Neiskusni dizajneri i komunikolozi skloni su popuniti svaki piksel sadržajem jer bijeli prostor im izgleda kao izgubljeni prostor. U stvarnosti, bijeli prostor poboljšava čitljivost, stvara vizualnu hijerarhiju, smanjuje kognitivno opterećenje i komunicira sofisticiranost. Web stranice luksuznih brendova koriste obilato bijeli prostor upravo zato što komunicira eleganciju i samouvjerenost. Komunikolog mora odoljeti instinktu da popuni svaki kutak stranice jer praznina nije nedostatak sadržaja nego dizajnerska odluka koja poboljšava percepciju sadržaja koji postoji.
+
+
+## Pisanje za web i UX copywriting
+
+Tekst na web stranici nije samo informacija. On je dio korisničkog iskustva i utječe na to koliko lako korisnik navigira, razumije i djeluje. UX copywriting specijalizirana je disciplina pisanja teksta za digitalna sučelja i izravno je relevantna za komunikologe.
+
+F-obrazac i Z-obrazac obrasci su čitanja koji su istraživanja praćenja pogleda (eye-tracking) identificirala kao dominantne na web stranicama. F-obrazac pokazuje da korisnici čitaju horizontalno po vrhu stranice, zatim se spuštaju i čitaju kraći horizontalni segment, a potom skeniraju vertikalno po lijevoj strani. Z-obrazac slijedi putanju slova Z, od gornjeg lijevog kuta do gornjeg desnog, dijagonalno do donjeg lijevog i horizontalno do donjeg desnog. Za komunikologe, ovi obrasci znače da se najvažnije informacije moraju nalaziti na mjestima koja korisnik prirodno skenira, a ne skrivene u sredini dugog odlomka.
+
+Microcopy, mali komadi teksta na sučelju poput natpisa na gumbima, poruka u obrascima, tooltipova i poruka o pogreškama, često imaju neproporcionalno veliki utjecaj na korisničko iskustvo. Gumb koji kaže "Pošalji" manje je informativan od gumba koji kaže "Pošalji upit". Poruka obrasca koja kaže "Obavezno polje" manje je korisna od one koja kaže "Trebamo vašu email adresu da bismo vam poslali potvrdu". Svaki komad microcopya prilika je za smanjenje nesigurnosti, povećanje povjerenja i usmjeravanje korisnika prema cilju.
+
+Princip obrnutog piramide posuđen iz novinarstva posebno je relevantan za web. Najvažnija informacija ide na vrh. Zatim slijede ključni detalji. Na kraju su pozadinske informacije za one koji žele znati više. Korisnik koji čita samo prvu rečenicu mora dobiti dovoljno informacija da razumije bit poruke. Korisnik koji čita sve dobiva bogat kontekst. Ovaj princip funkcionira na razini cijele stranice (najvažniji sadržaj na vrhu), na razini sekcije (ključna poruka u prvoj rečenici) i na razini odlomka (glavna misao na početku).
+
+Skenabilnost (scannability) svojstvo je teksta koje omogućuje korisniku da ga brzo pregleda i identificira relevantne dijelove bez čitanja svake riječi. Elementi koji poboljšavaju skenabilnost uključuju jasne naslove i podnaslove koji komuniciraju sadržaj sekcije, kratke odlomke jer dugi blokovi teksta vizualno su zastrašujući, istaknute ključne riječi i fraze, vizualne elemente koji prekidaju monotoniju teksta te jasne pozive na akciju koji se vizualno ističu.
+
+Za komunikologe, napetost između dubine i skenabilnosti stalna je. Želite reći mnogo, ali znate da korisnik neće pročitati sve. Rješenje nije pisati manje nego pisati strukurirano, s jasnom hijerarhijom, tako da korisnik koji skenira dobije dovoljno, a korisnik koji čita detaljno dobije bogato iskustvo.
+
+
+## Mobilno korisničko iskustvo
+
+Iz prvog tjedna znate da mobilni uređaji generiraju više od polovice globalnog web prometa. Ali mobilno iskustvo nije samo umanjeni desktop. To je fundamentalno drugačiji kontekst korištenja koji zahtijeva drugačiji pristup dizajnu i sadržaju.
+
+Kontekst korištenja na mobilnom uređaju radikalno se razlikuje od desktopa. Korisnik na mobitelu možda hoda ulicom, stoji u redu, vozi se tramvajem ili leži u krevetu. Pažnja je podijeljena, ekran je malen, veza je možda spora, a interakcija se odvija jednom rukom s palcem koji ne može dosegnuti sve dijelove ekrana. Zona palca (thumb zone) koncept je koji opisuje koje dijelove ekrana korisnik može udobno dosegnuti palcem jedne ruke. Središnji i donji dio ekrana najdostupniji su, dok su gornji kutovi najteže dostupni. Za komunikologe, ovo znači da najvažniji interaktivni elementi, poput gumba za poziv na akciju, trebaju biti u zoni palca.
+
+Touch targeti, interaktivna područja na mobilnom ekranu, moraju biti dovoljno veliki za prst koji je značajno manje precizan od kursora miša. Appleove smjernice za dizajn preporučuju minimalno 44 puta 44 piksela za dodirna područja. Googleove Material Design smjernice preporučuju 48 puta 48 piksela. Gumbi manji od toga frustriraju korisnike jer zahtijevaju preciznost koju prst ne može postići, osobito u uvjetima kretanja ili jednoručnog korištenja.
+
+Mobilni obrasci poseban su izazov jer tipkanje na malom ekranu sporo je i sklono pogreškama. Svako polje koje eliminirate iz mobilnog obrasca povećava vjerojatnost da ga korisnik dovrši. Korištenje odgovarajućih tipova polja (numerička tipkovnica za telefonski broj, email tipkovnica za email adresu) smanjuje napor. Automatsko popunjavanje, pamćenje prethodno unesenih podataka i mogućnost prijave putem društvenih mreža ili Apple/Google računa eliminiraju potrebu za ručnim unosom.
+
+Progresivno otkrivanje (progressive disclosure) princip je koji je posebno relevantan na mobilnim ekranima. Umjesto da prikažete sve informacije odjednom na malom ekranu, prikazujete najvažnije i omogućujete korisniku da otkrije detalje ako ih želi. Kartica proizvoda na mobilnom ekranu može prikazati fotografiju, naziv i cijenu, dok se specifikacije, recenzije i opcije dostave otkrivaju dodirom. Ovo smanjuje kognitivno opterećenje i čini stranicu preglednijom bez gubitka informacija.
+
+Za komunikologe, mobilno iskustvo nije opcionalni dodatak nego primarni fokus. Ako vaš sadržaj ne funkcionira na mobilnom uređaju, za većinu korisnika uopće ne funkcionira. To znači da se svaki tekst, svaka slika i svaki poziv na akciju mora najprije testirati na malom ekranu, a tek potom prilagoditi za veći.
+
+
+## UX i konverzije
+
+Za organizacije, UX nije samo pitanje ugode nego izravno utječe na poslovne rezultate. Konverzija je akcija koju želite da korisnik izvrši na web stranici, bilo da je to kupovina, prijava na newsletter, ispunjavanje kontakt forme, preuzimanje dokumenta ili bilo koji drugi mjerljivi cilj. Stopa konverzije postotak je posjetitelja koji izvrše željenu akciju.
+
+Optimizacija stope konverzije (Conversion Rate Optimization ili CRO) disciplina je koja koristi podatke, testiranje i UX principe za povećanje postotka posjetitelja koji konvertiraju. Za komunikologe, CRO je izravno relevantan jer sadržaj, poruke i pozivi na akciju koje kreirate glavni su pokretači konverzija.
+
+A/B testiranje temeljna je CRO metoda u kojoj se dvije verzije iste stranice prikazuju različitim korisnicima i mjeri koja verzija ima bolju stopu konverzije. Možete testirati naslove (koji naslov generira više klikova?), pozive na akciju (generira li "Besplatna probna verzija" više prijava od "Započni sada"?), raspored elemenata (funkcionira li forma bolje na vrhu ili na dnu stranice?) i vizualne elemente (utječe li ljudska fotografija na konverziju više od ilustracije?). A/B testiranje eliminira mišljenja i zamjenjuje ih podacima jer ne morate raspravljati koji je naslov bolji ako podatci jasno pokazuju da jedan generira dvadeset posto više konverzija.
+
+Landing stranice specijalizirane su stranice dizajnirane s jednim specifičnim ciljem konverzije. Za razliku od početne stranice koja ima mnogo opcija i ciljeva, landing stranica fokusirana je na jednu akciju. Korisnik dolazi na nju putem oglasa, emaila ili društvene mreže i nudi mu se jedna jasna opcija. Efikasna landing stranica ima jasan naslov koji komunicira vrijednost, podržavajući tekst koji adresira potencijalne prigovore, vizualne dokaze (fotografije, video), društveni dokaz (recenzije, logotipi klijenata) i jedan istaknuti poziv na akciju. Za komunikologe, kreiranje landing stranica ključna je vještina jer su one najkonkretnija točka spajanja komunikacijske poruke s mjerljivim rezultatom.
+
+Lijevak konverzije (conversion funnel) vizualizacija je koraka koje korisnik prolazi od prvog kontakta do konverzije. Tipični lijevak za e-commerce stranicu uključuje dolazak na stranicu, pregledavanje proizvoda, dodavanje u košaricu, započinjanje naplate i dovršavanje kupovine. Na svakom koraku dio korisnika odustaje. Analiza lijevka otkriva gdje je najveći pad, a to je točka na koju treba fokusirati optimizaciju. Ako pedeset posto korisnika napusti stranicu na koraku plaćanja, problem nije u privlačenju posjetitelja nego u procesu naplate.
+
+
+## UX i pristupačnost
+
+Pristupačnost (accessibility) tema je koju ćemo detaljno obraditi u desetom tjednu, ali njezina veza s UX-om toliko je fundamentalna da je moramo adresirati već sada.
+
+Pristupačan dizajn nije posebna kategorija dizajna. To je kvalitetan dizajn. Princip poznat kao curb cut effect ilustrira ovu poantu. Kada su američki gradovi počeli dodavati rampe na rubovima nogostupa za korisnike invalidskih kolica, pokazalo se da od tih rampi koristi imaju i roditelji s kolicima, dostavljači s kolicama, korisnici kofera na kotačićima i biciklisti. Dizajn koji je zamišljen za manji segment korisnika poboljšao je iskustvo za sve.
+
+Na webu, isti princip vrijedi svugdje. Titlovi na videu dizajnirani su za gluhe korisnike, ali koriste ih i ljudi koji gledaju video bez zvuka u javnom prijevozu. Alt tekst na slikama dizajniran je za čitače ekrana, ali pomaže i tražilicama da razumiju sadržaj slike (SEO korist). Dobar kontrast boja dizajniran je za korisnike s oštećenim vidom, ali poboljšava čitljivost za svakoga tko čita stranicu na suncu na mobilnom ekranu. Jasna navigacija dizajnirana za korisnike s kognitivnim poteškoćama poboljšava iskustvo za svakoga tko je umoran, distrahiran ili nestrpljiv.
+
+Za komunikologe, pristupačnost nije dodatni trošak ili tehničko opterećenje. To je kvaliteta komunikacije. Poruka koja nije pristupačna poruka je koja ne stiže do dijela publike. A taj dio publike često je značajno veći nego što se pretpostavlja jer pristupačnost ne adresira samo trajne invaliditete nego i situacijske (koristite web na jakom suncu, nosivi ruku u gipsu, jedno uho zauzeto telefonskim pozivom) i privremene (ozljeda, infekcija oka, privremeni gubitak sluha).
+
+
+## Mjerenje korisničkog iskustva
+
+Kako znate je li korisničko iskustvo vaše web stranice dobro? Subjektivni dojam nije dovoljan jer vi poznajete svoju stranicu i koristite je svaki dan, pa vam se čini intuitivnom čak i ako to nije za novog posjetitelja. Postoje objektivnije metode mjerenja.
+
+Testiranje upotrebljivosti (usability testing) najefikasniji je način otkrivanja problema u korisničkom iskustvu. Peti do osam korisnika dobiju zadatke za izvršiti na web stranici dok istraživač promatra i bilježi probleme. Jakob Nielsen je pokazao da pet korisnika otkriva oko osamdeset pet posto problema upotrebljivosti. Testiranje ne mora biti skupo ni složeno jer čak i neformalno testiranje s kolegama ili prijateljima koji nisu upoznati sa stranicom može otkriti ozbiljne probleme.
+
+Analitika ponašanja koristi podatke iz alata poput Google Analyticsa za razumijevanje kako korisnici zaista koriste stranicu. Stopa napuštanja (bounce rate) pokazuje postotak korisnika koji odu nakon pregleda samo jedne stranice. Vrijeme na stranici indikator je angažmana. Put kroz stranicu (user flow) pokazuje kojim redoslijedom korisnici posjećuju stranice. Stopa izlaska po stranici pokazuje na kojim stranicama korisnici najčešće odlaze. Za komunikologe, ovi podaci su zlato jer otkrivaju ne samo koliko je posjetitelja nego i kako se ponašaju, što funkcionira i što ne.
+
+Toplinske karte (heat maps) vizualiziraju gdje korisnici klikaju, kako pomiču stranicu (scrollaju) i kamo gledaju. Alati poput Hotjara generiraju toplinske karte koje pokazuju popularne zone na stranici (crveno) i zanemarene zone (plavo). Ovo može otkriti da korisnici klikaju na element koji nije poveznica jer izgleda kao da jest, da većina korisnika nikada ne scrollava do dna stranice gdje ste stavili važnu informaciju ili da se poziv na akciju nalazi u zoni koju korisnici ignoriraju.
+
+System Usability Scale (SUS) standardizirani je upitnik od deset pitanja koji daje numeričku ocjenu upotrebljivosti sustava na skali od nula do sto. Prosječna ocjena je šezdeset osam, a ocjena iznad osamdeset smatra se dobrom. SUS je brz za administriranje, lako usporediv između stranica i dovoljno osjetljiv da detektira razlike u upotrebljivosti.
+
+Net Promoter Score (NPS) mjeri koliko je vjerojatno da bi korisnik preporučio stranicu ili uslugu drugima. Korisnici odgovaraju na jedno pitanje na skali od nula do deset. Oni koji daju ocjenu devet ili deset su promotori. Oni koji daju ocjenu šest ili manje su detraktori. NPS je razlika između postotka promotora i detraktora. Za komunikologe, NPS je korisna metrika jer mjeri ukupan dojam koji uključuje i sadržaj i iskustvo korištenja.
+
+
+## UX i emocionalni dizajn
+
+Don Norman u kasnijim radovima naglašava da korisničko iskustvo nije samo funkcionalno nego i emocionalno. Ljudi ne koriste proizvode samo da bi izvršili zadatak nego i da bi se osjećali na određeni način. Aarron Walter u knjizi "Designing for Emotion" predlaže hijerarhiju korisničkih potreba analognu Maslowljevoj piramidi. Na dnu je funkcionalnost (radi li uopće?), zatim pouzdanost (radi li uvijek?), zatim upotrebljivost (je li lako za koristiti?) i na vrhu užitak (je li ugodno i zadovoljavajuće?).
+
+Za komunikologe, emocionalni dizajn posebno je relevantan jer komunikacija je po definiciji emocionalni čin. Ton teksta, izbor fotografija, animacije pri interakciji, poruke potvrde, čak i humor u porukama o pogreškama, sve su to elementi koji oblikuju emocionalnu dimenziju iskustva.
+
+Mikrointerakcije mali su animirani odgovori na korisnikove akcije. Srdašce koje se animira kada lajkate objavu na Instagramu. Blaga vibracija telefona kada izvršite akciju. Gumb koji mijenja boju kada zadržite kursor na njemu. Ovi detalji ne mijenjaju funkcionalnost ali značajno utječu na emocionalnu percepciju kvalitete. Web stranica koja reagira na korisnikove akcije malim, promišljenim animacijama osjeća se živa i responsivna. Web stranica bez ikakve animirane povratne informacije osjeća se mrtva i neprijateljska.
+
+Za komunikologe, emocionalni dizajn nije kozmetika. To je strateški alat za diferencijaciju. U svijetu u kojem mnoge web stranice nude slične informacije i funkcionalnosti, emocionalno iskustvo postaje ono što razlikuje jednu organizaciju od druge i što korisnici pamte.
+
+
+## Tamni obrasci i etika UX-a
+
+Razgovor o UX-u ne bi bio potpun bez adresiranja tamnih obrazaca (dark patterns), manipulativnih dizajnerskih tehnika koje namjerno otežavaju korisnicima donošenje odluka u vlastitom interesu.
+
+Tamni obrasci uključuju skrivene pretplate koje je lako aktivirati ali teško otkazati, unaprijed označene kvačice za marketinške poruke ili dodatne usluge, confusopoly strategiju koja namjerno komplicira usporedbu opcija da korisnik ne može identificirati najbolju ponudu, bait and switch gdje se korisnika privuče jednom ponudom a zatim preusmjeri na drugu, roach motel dizajn koji čini ulazak lakim ali izlazak teškim (primjerice, online registracija u dva klika ali otkazivanje zahtijeva telefonski poziv) te forced continuity koja automatski naplaćuje nakon isteka besplatnog probnog razdoblja bez jasnog upozorenja.
+
+EU regulativa sve strože adresira tamne obrasce. Digital Services Act i predložene izmjene GDPR-a specifično ciljaju manipulativne dizajnerske prakse. Za komunikologe, razumijevanje tamnih obrazaca važno je iz dva razloga. Etički jer komunikacijska profesija temelji se na povjerenju i upotreba manipulativnih tehnika podriva to povjerenje. I praktično jer regulativa će sve više kažnjavati organizacije koje koriste tamne obrasce, pa je dugoročno mudro graditi iskustvo na transparentnosti umjesto na manipulaciji.
+
+
+## Hrvatski kontekst i UX
+
+Nekoliko specifičnosti hrvatskog digitalnog tržišta relevantno je za UX.
+
+Višejezičnost utječe na UX na načine koji nadilaze puki prijevod. Hrvatski jezik ima duge riječi koje mogu razbiti raspored dizajniran za engleski. Gumbi koji na engleskom kažu "Buy" na hrvatskom trebaju "Kupi" ili "Dodaj u košaricu" što zahtijeva značajno više prostora. Navigacijske stavke koje su na engleskom jednorječne na hrvatskom mogu biti dvorječne ili trorječne. Za komunikologe, ovo znači da dizajn mora biti fleksibilan za različite duljine teksta, a ne fiksno dimenzioniran za jedan jezik.
+
+Digitalna pismenost u Hrvatskoj varira značajno prema demografskim skupinama i geografskom položaju. Starija populacija, koja čini značajan udio korisnika javnih usluga poput e-Građana, često se teže snalazi na složenim web sučeljima. Za komunikologe koji rade na web prisutnosti javnih institucija ili organizacija koje ciljaju širu demografsku skupinu, ovo znači da jednostavnost i jasnoća nisu samo estetski izbori nego funkcionalni zahtjevi.
+
+E-trgovina u Hrvatskoj raste ali korisnici imaju specifične navike i očekivanja. Pouzeće (cash on delivery) i dalje je popularan način plaćanja jer dio populacije ne vjeruje online plaćanju karticom. Lokalne dostavne službe imaju specifičnosti koje utječu na iskustvo naručivanja. Komunikolog koji radi na e-commerce projektu mora razumjeti ove lokalne osobitosti jer UX obrasci iz američkih ili zapadnoeuropskih tržišta ne mogu se slijepo primijeniti.
+
+Turizam kao ključna industrija ima specifične UX zahtjeve. Turistička stranica mora funkcionirati za korisnika koji ne govori hrvatski, koji koristi mobilni uređaj, koji ima ograničeno vrijeme i koji želi brzo doći do konkretne informacije poput dostupnosti smještaja, lokacije i cijena. Frustrirajuća turistička web stranica ne znači samo loš UX nego izgubljeni prihod jer turist koji ne može lako rezervirati smještaj na vašoj stranici otići će na Booking.com ili Airbnb.
+
+
+## Na kraju ovog poglavlja
+
+Korisničko iskustvo nije odgovornost samo dizajnera. To je zajednička odgovornost svih koji oblikuju digitalnu prisutnost organizacije, uključujući komunikologe koji kreiraju sadržaj, definiraju poruke, biraju tonusu i sudjeluju u strateškim odlukama o platformama i kanalima.
+
+Komunikolog koji razumije UX principe može pisati tekst koji nije samo informativan nego i intuitivan za navigaciju. Može kreirati sadržajnu strukturu koja se podudara s korisnikovim mentalnim modelima. Može procijeniti dizajn i artikulirati što funkcionira a što ne, koristeći jezik koji dizajneri i developeri razumiju. Može sudjelovati u istraživanju korisnika i koristiti nalaze za poboljšanje komunikacijske strategije.
+
+Sljedeći tjedan govorit ćemo o sadržajnoj strategiji i pisanju za web. Veza s današnjom temom je neodvojiva jer UX definira kontekst u kojem sadržaj živi, a sadržaj je supstanca koja korisničko iskustvo čini vrijednim ili praznim.
+
+::: {.callout-note}
+## Ključni zaključci
+
+UX obuhvaća svaki aspekt interakcije korisnika s digitalnim proizvodom i izravno utječe na poslovne rezultate organizacije.
+
+Kognitivno opterećenje, mentalni modeli, Hickov zakon, Fittsov zakon i gestalt principi objašnjavaju zašto neki dizajni funkcioniraju a drugi ne.
+
+Nielsenovih deset heuristika upotrebljivosti praktičan su okvir za procjenu kvalitete korisničkog iskustva.
+
+Informacijska arhitektura organizira sadržaj i navigaciju tako da korisnici mogu pronaći ono što traže.
+
+Dizajnersko razmišljanje stavlja korisnika u središte svake odluke i koristi istraživanje, prototipiranje i testiranje za iterativno poboljšanje.
+
+Vizualni dizajn, tipografija i boja komunikacijski su alati koji stvaraju hijerarhiju, usmjeravaju pažnju i izazivaju emocije.
+
+UX copywriting, uključujući microcopy, F-obrazac čitanja i princip obrnute piramide, izravno utječe na jasnoću i konverzije.
+
+A/B testiranje, analitika ponašanja i toplinske karte omogućuju objektivno mjerenje korisničkog iskustva.
+
+Pristupačan dizajn nije dodatni trošak nego kvaliteta dizajna od koje koristi imaju svi korisnici.
+
+Emocionalni dizajn i mikrointerakcije diferenciraju iskustvo i utječu na percepciju kvalitete brenda.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 6 bavit će se sadržajnom strategijom i pisanjem za web.
+
+Prije šestog predavanja napravite četiri stvari.
+
+Prvo, odaberite jednu web stranicu hrvatske organizacije i provedite heurističku evaluaciju koristeći Nielsenovih deset heuristika. Za svaku heuristiku zabilježite barem jedan primjer pozitivnog ili negativnog dizajna na toj stranici.
+
+Drugo, zamolite jednu osobu koja nije upoznata s tom stranicom da izvrši tri konkretna zadatka (primjerice pronađi kontakt telefon, nađi radno vrijeme, prijavi se na newsletter) i promatrajte gdje se zbunjuje ili zastaje. Zabilježite opažanja.
+
+Treće, instalirajte Hotjar ili sličan alat na svoju stranicu (besplatna verzija) ili pogledajte demo toplinske karte na Hotjarovoj web stranici i analizirajte što otkrivaju o ponašanju korisnika.
+
+Četvrto, odaberite jednu stranicu i napravite kratak user journey map za jedan scenarij korištenja. Zabilježite korake, korisnikove misli, emocije i točke boli na svakom koraku.
+
+
+## Dodatno čitanje
+
+Obavezno je proučiti članak Jakoba Nielsena "10 Usability Heuristics for User Interface Design" na nngroup.com koji je besplatan i čitljiv u petnaest minuta.
+
+Za dublje razumijevanje preporučuje se sljedećih nekoliko izvora.
+
+Don Norman, "The Design of Everyday Things", temeljna je knjiga discipline koja objašnjava principe dizajna na primjerima iz svakodnevnog života, od vrata do štednjaka, na način koji ne zahtijeva tehničko predznanje.
+
+Steve Krug, "Don't Make Me Think", kratka je i praktična knjiga o web upotrebljivosti napisana humorističnim tonom koja se može pročitati za jedno poslijepodne.
+
+Nielsen Norman Group (nngroup.com) objavljuje stotine besplatnih članaka o UX istraživanju, upotrebljivosti i dizajnu. Njihov YouTube kanal također je izvrstan resurs.
+
+Laws of UX (lawsofux.com) vizualno privlačna je stranica koja objašnjava psihološke principe relevantne za UX dizajn, uključujući sve zakone o kojima smo govorili na predavanju.
+
+Refactoring UI kratki su, praktični savjeti za poboljšanje vizualnog dizajna koji su korisni čak i bez dizajnerskog iskustva.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| UX | User Experience, ukupno iskustvo korisnika pri interakciji s proizvodom |
+| UI | User Interface, vizualni elementi sučelja s kojima korisnik interagira |
+| Kognitivno opterećenje | Količina mentalnog napora potrebnog za obavljanje zadatka |
+| Mentalni model | Interna reprezentacija koju korisnik koristi za razumijevanje sustava |
+| Hickov zakon | Vrijeme odluke raste s brojem opcija |
+| Fittsov zakon | Vrijeme dosezanja cilja ovisi o udaljenosti i veličini cilja |
+| Gestalt principi | Principi vizualne percepcije koji objašnjavaju grupiranje elemenata |
+| Heuristička evaluacija | Procjena sučelja prema unaprijed definiranim principima upotrebljivosti |
+| Informacijska arhitektura | Organizacija, strukturiranje i označavanje sadržaja |
+| Card sorting | Istraživačka tehnika za definiranje kategorija i navigacije |
+| Tree testing | Testiranje navigacijske strukture bez vizualnog dizajna |
+| Design thinking | Korisnički usmjeren iterativni proces rješavanja problema |
+| Persona | Fikcijski profil tipičnog korisnika temeljen na istraživanju |
+| User journey mapa | Vizualizacija korisnikovog iskustva kroz sve dodirne točke |
+| Wireframe | Shematski prikaz rasporeda elemenata na stranici |
+| Vizualna hijerarhija | Redoslijed kojim korisnik percipira elemente na stranici |
+| Bijeli prostor | Prazan prostor između elemenata koji poboljšava čitljivost |
+| F-obrazac | Dominantan obrazac čitanja web stranica |
+| Microcopy | Mali komadi teksta na sučelju poput natpisa na gumbima i poruka |
+| Skenabilnost | Svojstvo teksta koje omogućuje brzo pregledavanje i identifikaciju relevantnog |
+| Konverzija | Željena akcija korisnika na web stranici |
+| CRO | Conversion Rate Optimization, optimizacija stope konverzije |
+| A/B testiranje | Usporedba dviju verzija stranice za mjerenje utjecaja na konverzije |
+| Landing stranica | Specijalizirana stranica dizajnirana s jednim ciljem konverzije |
+| Lijevak konverzije | Vizualizacija koraka od prvog kontakta do konverzije |
+| Stopa napuštanja | Postotak korisnika koji odu nakon pregleda samo jedne stranice |
+| Toplinska karta | Vizualizacija područja stranice gdje korisnici klikaju i gledaju |
+| SUS | System Usability Scale, standardizirani upitnik za ocjenu upotrebljivosti |
+| NPS | Net Promoter Score, mjera vjerojatnosti preporuke |
+| Curb cut effect | Princip da dizajn za specifičnu grupu poboljšava iskustvo za sve |
+| Mikrointerakcije | Mali animirani odgovori na korisnikove akcije |
+| Responsivni dizajn | Prilagodba web stranice različitim veličinama ekrana |
+| Obrnuta piramida | Struktura teksta s najvažnijom informacijom na vrhu |
+| Eye-tracking | Istraživačka metoda praćenja pokreta očiju na ekranu |
+| Don Norman | Kognitivni znanstvenik koji je skovao termin User Experience |
+| Jakob Nielsen | Istraživač upotrebljivosti, autor deset heuristika |
+| Von Restorff efekt | Stavka koja se vizualno razlikuje od ostalih bolje se pamti |
+| Zakon Jakoba | Korisnici očekuju da vaša stranica funkcionira kao druge koje poznaju |
+| Zona palca | Područje mobilnog ekrana koje korisnik udobno doseže palcem jedne ruke |
+| Touch target | Interaktivno područje na dodirnom ekranu minimalne preporučene veličine |
+| Progresivno otkrivanje | Prikaz najvažnijeg odmah uz mogućnost otkrivanja detalja na zahtjev |
+| Tamni obrasci | Manipulativne dizajnerske tehnike koje otežavaju korisniku donošenje informiranih odluka |

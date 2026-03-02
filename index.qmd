@@ -1,6 +1,6 @@
 ---
 title: "Novi mediji i web tehnologije"
-subtitle: "Kolegij za studente komunikologije"
+subtitle: "Novi mediji. Nova pravila"
 ---
 
 ## O kolegiju

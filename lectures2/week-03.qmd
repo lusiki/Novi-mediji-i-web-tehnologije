@@ -1,17 +1,406 @@
 ---
-title: "Tjedan 3: Vrednovanje informacija i provjera izvora na webu"
-subtitle: "Kritička procjena vjerodostojnosti u doba sintetičkih medija"
-author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [temelji, informacijska pismenost]
+title: "Vrednovanje informacija i provjera izvora na webu"
+subtitle: "Kritičko čitanje, provjera činjenica i signali povjerenja u digitalnom okruženju"
+date: 2025-02-15
+categories: [informacijska pismenost, provjera činjenica, povjerenje]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje osposobljava studente za kritičku procjenu vjerodostojnosti, pristranosti i točnosti informacija na internetu, uključujući lateralno čitanje, CRAAP testove, obrnuto pretraživanje slika i platforme za provjeru činjenica.
+  Ovo predavanje osposobljava studente za kritičku procjenu vjerodostojnosti, pristranosti i točnosti informacija na internetu. U dobu sintetičkih medija, fabriciranih recenzija i algoritamski pojačane dezinformacije, sposobnost provjere izvora i procjene signala povjerenja temeljna je profesionalna kompetencija svakog komunikologa koji radi u digitalnom okruženju.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Primijeniti lateralno čitanje kao primarnu strategiju za procjenu vjerodostojnosti web izvora i objasniti zašto je superiornije od vertikalnog čitanja
+2. Koristiti CRAAP test i SIFT metodu za sustavnu evaluaciju informacija pronađenih na webu
+3. Provesti obrnuto pretraživanje slika i identificirati manipulirane ili izvan konteksta korištene vizualne sadržaje
+4. Prepoznati signale koji ukazuju na fabricirane recenzije, lažne profile i astroturfing kampanje
+5. Razlikovati dezinformaciju, misinformaciju i malinformaciju te objasniti mehanizme njihovog širenja
+6. Procijeniti pouzdanost AI-generiranog sadržaja i prepoznati halucinacije u tekstu proizvedenom velikim jezičnim modelima
+7. Koristiti platforme za provjeru činjenica i razumjeti njihovu metodologiju
+8. Integrirati prakse vrednovanja informacija u profesionalni komunikacijski rad, od istraživanja sadržaja do upravljanja reputacijom
 
-*Bit će dodano.*
+
+## Zašto komunikolog mora znati vrednovati informacije
+
+Četvrtog travnja 2013. godine hakirani Twitter račun agencije Associated Press objavio je poruku da su se u Bijeloj kući dogodile dvije eksplozije i da je predsjednik Obama ozlijeđen. U sljedećih nekoliko minuta, dok je vijest još bila nerazjašnjena, američka burza izgubila je 136 milijardi dolara tržišne vrijednosti. Cijeli se oporavak dogodio jednako brzo kada se pokazalo da je poruka lažna. Ali te minute bile su dovoljne da pokažu koliko brzo neistinita informacija može putovati i koliko opipljive mogu biti njezine posljedice.
+
+Ova priča relevantna je za vas iz dva razloga. Prvo, kao komunikacijski stručnjaci vi ćete biti i konzumenti i proizvođači informacija u profesionalnom okruženju. Svaki dan ćete donositi odluke temeljene na informacijama pronađenim na webu. Je li ova statistika točna? Je li ovaj izvor pouzdan? Je li ova vijest realna ili fabricirana? Vaša sposobnost da odgovorite na ova pitanja izravno utječe na kvalitetu vašeg rada i kredibilitet vaše organizacije.
+
+Drugo, kao komunikolozi vi gradite povjerenje. Organizacija čiji komunikacijski tim dijeli neprovjerene informacije, citira nepouzdane izvore ili ne prepoznaje manipulirani sadržaj gubi kredibilitet. A kredibilitet, jednom izgubljen, izuzetno je teško povratiti.
+
+Prošli tjedan govorili smo o tome kako tražilice rangiraju sadržaj i kako E-E-A-T signali određuju što Google smatra kvalitetnim. Danas postavljamo pitanje koje logički slijedi. Kada pronađete sadržaj, bez obzira na to kako je rangiran, kako vi sami procjenjujete njegovu kvalitetu, istinitost i pouzdanost? Google koristi algoritme. Vi morate koristiti nešto drugo.
+
+
+## Problem koji se pogoršava
+
+Prije nego što uđemo u konkretne metode i alate, moramo razumjeti kontekst. Problem vrednovanja informacija na webu nije nov, ali se dramatično pogoršao u posljednjih nekoliko godina iz najmanje četiri razloga.
+
+Prvi razlog je obujam. Svake minute na web se učita više sadržaja nego što bi jedan čovjek mogao pročitati u cijelom životu. Ova eksplozija sadržaja znači da se kvalitetne i provjerene informacije natječu za pažnju s neprovjerenim, pristranima i namjerno lažnim sadržajima. Količina sama po sebi otežava razlučivanje jer u moru sadržaja svaki pojedinačni komad izgleda manje ili više jednako.
+
+Drugi razlog je demokratizacija objavljivanja. To je ista sila koju smo u prvom tjednu opisali kao pozitivnu stranu Web 2.0 ere jer svatko može biti izdavač. Ali ta sila ima i drugu stranu. Kada svatko može objaviti sve bez uredničke kontrole, bez provjere činjenica, bez profesionalnih standarda, rezultat je ekosustav u kojem je sve teže razlikovati novinarstvo od aktivizma, istraživanje od mišljenja, informaciju od promocije.
+
+Treći razlog je algoritamska amplifikacija. Algoritmi društvenih mreža i pretraživača optimizirani su za angažman, ne za istinitost. Sadržaj koji izaziva snažnu emocionalnu reakciju, bilo ljutnju, strah, iznenađenje ili ogorčenje, generira više klikova, dijeljenja i komentara od uravnoteženog i nijansiranoga sadržaja. Ovo znači da senzacionalistički i polariziran sadržaj ima strukturalnu prednost u distribuciji, bez obzira na svoju točnost.
+
+Četvrti razlog, i možda najvažniji za vas kao profesionalce koji ulaze u struku, jest generativna umjetna inteligencija. Mogućnost generiranja teksta, slika, videa i govora koji su nerazlučivi od ljudski stvorenih otvara potpuno novo poglavlje u problemu vrednovanja informacija. AI može proizvesti uvjerljiv članak s fabriciranim citatima, nepostojeće fotografije stvarnih mjesta, video zapise govora koji nikada nisu izgovoreni i recenzije proizvoda koje nikada nisu isprobani. O ovome ćemo detaljnije govoriti u jedanaestom i dvanaestom tjednu, ali temelje postavljamo već danas.
+
+
+## Vertikalno nasuprot lateralnom čitanju
+
+Najvažnija promjena u pristupu vrednovanju informacija u posljednjih dvadeset godina dolazi iz istraživanja Stanfordskog sveučilišta, konkretno iz rada profesora Sama Wineburgera i njegovog tima. Njihovo istraživanje usporedilo je kako profesionalni provjerivači činjenica, sveučilišni profesori i studenti procjenjuju vjerodostojnost web izvora. Rezultati su bili iznenađujuće kontraintuitivni.
+
+Profesori i studenti koristili su ono što istraživači nazivaju vertikalnim čitanjem. Kada su dobili nepoznatu web stranicu za procjenu, ostali su na njoj. Čitali su tekst pažljivo. Ispitivali su izgled stranice. Tražili su informacije o autoru na samoj stranici. Provjeravali su sekciju "O nama". Analizirali su URL. Drugim riječima, pokušavali su procijeniti stranicu na temelju onoga što im sama ta stranica govori o sebi.
+
+Profesionalni provjerivači činjenica radili su nešto potpuno suprotno. Gotovo odmah su napustili stranicu i otvorili nove tabove u pregledniku da bi istražili tko stoji iza te stranice. Pretraživali su ime organizacije ili autora. Tražili su što drugi kažu o tom izvoru. Provjeravali su jesu li informacije na stranici konzistentne s onima iz poznatih i pouzdanih izvora. Ovo se naziva lateralno čitanje jer se čitač kreće bočno, izvan izvora, umjesto da se dubinski zabija u sam izvor.
+
+Rezultat istraživanja bio je jasan. Profesionalni provjerivači činjenica bili su i brži i točniji u procjeni od sveučilišnih profesora, unatoč tome što su profesori imali više predmetnog znanja. Razlog je fundamentalan. Web stranica koja želi vas zavarati uložit će znatan trud da izgleda uvjerljivo. Elegantan dizajn, profesionalan ton, impresivne biografije, uvjerljivi grafikoni. Ako procjenjujete stranicu samo na temelju onoga što vam ona sama govori, procjenjujete je upravo na temelju informacija koje je potencijalni manipulator kreirao da bi vas uvjerio.
+
+Lateralno čitanje zaobilazi ovu zamku. Umjesto da pitate stranicu "Jesi li pouzdana?", pitate ostatak weba "Što vi znate o ovoj stranici?". To je fundamentalno drugačiji pristup i temeljna vještina koju morate usvojiti.
+
+Kako to izgleda u praksi? Zamislite da ste pronašli članak koji tvrdi da određeni dodatak prehrani dramatično poboljšava kognitivne funkcije. Članak je na stranici koja izgleda profesionalno, citira istraživanja i ima autora s titulom doktora. Vertikalni čitač bi možda povjerovao jer sve izgleda legitimno. Lateralni čitač bi napravio sljedeće. Pretraživao bi ime autora na Googleu da provjeri postoji li ta osoba i ima li kvalifikacije koje tvrdi. Pretraživao bi ime organizacije iza web stranice da provjeri tko je financira i koja joj je povijest. Provjerio bi citirana istraživanja jesu li zaista objavljena u recenziranim časopisima i govore li zaista ono što članak tvrdi. Potražio bi isti proizvod na stranicama regulatornih tijela ili nezavisnih organizacija za provjeru zdravstvenih tvrdnji. Tek nakon ove bočne provjere donio bi sud o pouzdanosti originalnog izvora.
+
+
+## SIFT metoda kao praktični okvir
+
+Mike Caulfield, istraživač digitalne pismenosti, formalizirao je lateralno čitanje u praktičan okvir koji naziva SIFT. Akronim stoji za četiri koraka koji se mogu primijeniti na bilo koji sadržaj pronađen na webu.
+
+Prvo slovo S stoji za Stop, odnosno zastani. Prije nego što reagirate na sadržaj, zaustavite se i zapitajte se znate li nešto o izvoru koji vam prezentira informaciju. Ako ne znate ništa, nemojte nastaviti čitati i donositi zaključke. Prvo utvrdite s kime imate posla. Ovo je možda najteži korak jer naš instinkt je da nastavimo čitati, da se prepustimo sadržaju, osobito ako potvrđuje ono u što već vjerujemo. Trenutak zaustavljanja ključan je jer prekida automatsku reakciju.
+
+Drugo slovo I stoji za Investigate the source, odnosno istražite izvor. Tko stoji iza ovog sadržaja? Kakva je njihova reputacija? Imaju li povijest točnog izvještavanja? Postoji li potencijalni sukob interesa? Ovo je korak lateralnog čitanja. Napustite izvor i pretraživanjem utvrdite što drugi govore o njemu. Čak i trideset sekundi pretraživanja imena organizacije ili autora može otkriti ključne informacije, primjerice da je izvor financiran od industrije o kojoj piše ili da ima povijest objavljivanja neprovjerenih tvrdnji.
+
+Treće slovo F stoji za Find better coverage, odnosno pronađite bolju pokrivenost. Ako informacija koja vas zanima potječe iz nepoznatog ili sumnjivog izvora, ne odustajte od informacije. Pokušajte pronaći istu informaciju u poznatom i pouzdanom izvoru. Ako se radi o vijesti, jesu li je prenijele velike novinske agencije? Ako se radi o istraživanju, objavljeno li je u recenziranom časopisu? Ako se radi o statistici, dolazi li iz službenog izvora? Ako nijedan pouzdani izvor ne pokriva istu informaciju, to je signal za oprez.
+
+Četvrto slovo T stoji za Trace claims to the original context, odnosno pratite tvrdnje do izvornog konteksta. Sadržaj na webu često se prenosi iz konteksta u kontekst, i svaki prijenos može izobličiti originalnu poruku. Citat se izvuče iz konteksta. Istraživanje se interpretira na način koji ne odgovara zaključcima autora. Statistika se koristi za argument koji ne podupire. Kada naiđete na tvrdnju, osobito ako je senzacionalna, pratite je do originalnog izvora i provjerite govori li on zaista ono što se tvrdi.
+
+SIFT metoda nije zamišljena kao iscrpna analiza svakog komada sadržaja jer to bi bilo nemoguće s obzirom na količinu informacija s kojima se svakodnevno susrećemo. Zamišljena je kao brzi trijaž koji se može primijeniti u tridesetak sekundi i koji vas štiti od najgrubljih manipulacija. Za sadržaj koji prolazi početni SIFT filter, ali za koji trebate veću sigurnost, postoje detaljniji okviri.
+
+
+## CRAAP test za dublje vrednovanje
+
+CRAAP test razvijen je na Sveučilištu Merced u Kaliforniji i dugo je bio standard u akademskim knjižnicama za vrednovanje izvora. Akronim stoji za pet dimenzija vrednovanja.
+
+Prva dimenzija je Currency ili aktualnost. Kada je informacija objavljena ili zadnji put ažurirana? Za neke teme, aktualnost je ključna jer medicinske smjernice iz 2015. mogu biti zastarjele, a ekonomski podaci od prošle godine možda ne odražavaju trenutno stanje. Za druge teme, poput povijesnih događaja ili temeljnih znanstvenih principa, aktualnost je manje važna. Komunikolog mora procijeniti koliko je aktualnost relevantna za specifičnu temu.
+
+Druga dimenzija je Relevance ili relevantnost. Odnosi li se informacija zaista na pitanje koje pokušavate odgovoriti? Ili ste je pronašli pretraživanjem i ona se samo tangencijalno dotiče vaše teme? Je li razina detaljnosti primjerena vašim potrebama? Akademski članak o neuroznanosti možda nije relevantan ako trebate praktičan savjet o produktivnosti, čak i ako se teme preklapaju.
+
+Treća dimenzija je Authority ili autoritet. Tko je autor i koje su njegove kvalifikacije? Tko je izdavač? Je li izvor poznat i priznat u svom području? Jesu li kontaktni podaci dostupni? Ovo se izravno nadovezuje na E-E-A-T koncept o kojem smo govorili prošli tjedan. Za komunikologa, provjera autoriteta podrazumijeva kratko lateralno istraživanje autora i organizacije. LinkedIn profil autora, Wikipedia stranica organizacije, reference u drugim poznatim izvorima, sve su to signali koji pomažu u procjeni.
+
+Četvrta dimenzija je Accuracy ili točnost. Odakle dolaze informacije u tekstu? Jesu li tvrdnje potkrijepljene dokazima? Postoje li reference i mogu li se provjeriti? Je li tekst prošao recenziju ili uredničku kontrolu? Usporedba informacija s onima iz drugih poznatih izvora brza je provjera točnosti. Ako tri neovisna pouzdana izvora govore isto, vjerojatnost točnosti je visoka.
+
+Peta dimenzija je Purpose ili svrha. Koja je namjera autora? Želi li informirati, obrazovati, zabaviti, uvjeriti ili prodati? Postoji li očiti ili skriveni sukob interesa? Je li ton objektivan ili emotivno nabijena? Ovo je često najteži aspekt za procjenu jer dobar persuazivni sadržaj može izgledati objektivno. Komunikolozi su u određenom smislu u prednosti jer njihovo profesionalno iskustvo s uvjeravanjem pomaže u prepoznavanju uvjeravačkih tehnika u sadržaju koji se predstavlja kao objektivan.
+
+CRAAP test najbolje funkcionira kao mentalni okvir koji s vremenom postaje automatski. Ne morate doslovno prolaziti kroz svaku dimenziju za svaki komad sadržaja, ali svijest o ovim pet dimenzija čini vas kritičnijim čitačem.
+
+
+## Obrnuto pretraživanje slika i vizualna verifikacija
+
+U svijetu u kojem jedna slika može promijeniti narativ, sposobnost provjere vizualnog sadržaja praktična je vještina koju svaki komunikolog mora posjedovati. Fotografije se rutinski koriste izvan svog izvornog konteksta, manipuliraju se ili potpuno fabriciraju, a vizualni sadržaj ima posebno snažan emocionalni učinak koji otežava kritičko razmišljanje.
+
+Obrnuto pretraživanje slika tehnika je u kojoj umjesto da upišete tekst i tražite sliku, učitavate sliku i tražite informacije o njoj. Tri su glavna alata za ovo. Google Images omogućuje obrnuto pretraživanje klikom na ikonu kamere u traci za pretraživanje. TinEye specijalizirani je alat za obrnuto pretraživanje slika koji pokazuje gdje je slika prethodno objavljena i kada je prvi put detektirana na webu. Yandex Images, ruska tražilica, često pronalazi rezultate koje Google i TinEye propuštaju, osobito za sadržaj iz istočne Europe i Azije.
+
+Što obrnuto pretraživanje može otkriti? Ako slika prikazuje navodnu recentnu katastrofu, ali obrnuto pretraživanje pokaže da je ta ista fotografija objavljena prije tri godine u kontekstu potpuno drugog događaja, znate da se koristi izvan konteksta. Ako slika prikazuje navodnog stručnjaka koji daje izjavu, ali je ista fotografija na stock photo platformi s potpuno drugim imenom i opisom, znate da je identitet fabriciran. Ako se slika pojavljuje isključivo na jednoj web stranici i nigdje drugdje na cijelom webu, to je signal da zahtijeva dodatnu provjeru.
+
+Metapodaci slike, poznati kao EXIF podaci, mogu pružiti dodatne informacije. Datum snimanja, lokacija ako je geolokacija bila uključena, model kamere i softver za obradu vidljivi su u metapodacima. Ali važno je znati da metapodaci mogu biti modificirani ili uklonjeni, a mnoge platforme za društvene mreže automatski uklanjaju EXIF podatke prilikom uploada.
+
+Za komunikologe, vizualna verifikacija relevantna je u više profesionalnih scenarija. Kada pripremajete sadržaj koji uključuje fotografije dobivene od trećih strana, obrnuto pretraživanje može potvrditi autentičnost i izvorni kontekst. Kada pratite medijsko pokrivanje vaše organizacije, možete provjeriti koriste li se fotografije vaše organizacije u neovlaštenom ili neprikladnom kontekstu. Kada istražujete tržište ili konkurenciju, možete utvrditi jesu li fotografije na konkurentskoj stranici stvarne ili preuzete s stock platformi.
+
+AI-generirane slike poseban su izazov. Alati poput DALL-E, Midjourney i Stable Diffusion mogu proizvoditi fotorealistične slike koje nikada nisu postojale u stvarnom svijetu. Prepoznavanje AI-generiranih slika postaje sve teže kako se tehnologija poboljšava, ali trenutno postoje neki signali. Ruke i prsti često su nepravilni u AI slikama, tekst na slikama obično je iskrivljen ili besmislen, pozadina može sadržavati nelogične detalje, a refleksije i sjene ponekad su nekonzistentne. Alati za detekciju AI-generiranog sadržaja poput onih koje razvijaju sveučilišta i tehnološke tvrtke postaju sve sofisticiraniji, ali se nalaze u stalnoj utrci s generativnim modelima.
+
+Deepfake videi predstavljaju možda najuznemirujuću kategoriju sintetičkih medija. Tehnologija zamjene lica u videu napredovala je do razine na kojoj se manipulirani video zapisi teško razlikuju od autentičnih golim okom. Za komunikologe, ovo stvara višestruke probleme. Osoba koja rukovodi komunikacijom organizacije mora biti svjesna mogućnosti da se pojavi lažni video u kojem njezin CEO govori nešto što nikada nije rekao. Istovremeno, sama mogućnost deepfakea stvara ono što istraživači nazivaju dividendom lažnjaka, situaciju u kojoj bilo tko može odbaciti autentičan video tvrdeći da je deepfake.
+
+Detekcija deepfake videa oslanja se na nekoliko pristupa. Forenzička analiza traži artefakte kompresije, nekonzistentnosti u osvjetljenju, neprirodne pokrete očiju ili usana i anomalije u treptanju. Analiza metapodataka može otkriti znakove manipulacije u strukturi video datoteke. Kontekstualna provjera utvrđuje je li video konzistentan s poznatim činjenicama, poput toga je li osoba bila na prikazanom mjestu u prikazano vrijeme. Specijalizirani alati poput Microsoftovog Video Authenticatora i projekata poput InVID WeVerify pomažu u analizi, ali nijedan nije potpuno pouzdan.
+
+Za sintetičke audio zapise situacija je jednako složena. AI alati za kloniranje glasa mogu uz samo nekoliko sekundi uzorka govora generirati uvjerljivu imitaciju glasa bilo koje osobe. Ovo ima praktične implikacije za organizacije jer lažni telefonski poziv s kloniranim glasom direktora može biti korišten za prijevaru, a lažna audio izjava može biti distribuirana putem medija ili društvenih mreža prije nego što se utvrdi njezina neautentičnost.
+
+Komunikolog ne mora biti forenzičar da bi se nosio s ovim izazovima, ali mora razumjeti da vizualni i auditivni sadržaj više nisu garancija istine. Princip verifikacije koji je uvijek vrijedio za tekst, provjeri izvor, usporedi s drugim izvorima, traži kontekst, sada se mora jednako rigorozno primjenjivati na slike, video i audio.
+
+
+## Anatomija lažne recenzije i fabriciranog društvenog dokaza
+
+Recenzije korisnika postale su jedan od najvažnijih faktora u odlučivanju potrošača. Prema istraživanjima, velika većina potrošača čita recenzije prije kupovine, a mnogi im vjeruju jednako kao osobnim preporukama. Ova moć recenzija stvorila je ogromnu industriju fabriciranja lažnih recenzija koja predstavlja izazov za komunikologe s obje strane, jer trebaju znati prepoznati lažne recenzije konkurencije i trebaju razumjeti zašto je fabriciranje recenzija za vlastitu organizaciju ne samo neetično nego i dugoročno štetno.
+
+Lažne recenzije dolaze u nekoliko oblika. Plaćene pozitivne recenzije pišu ih osobe koje nikada nisu koristile proizvod, a plaćene su da ostave pozitivnu ocjenu. Plaćene negativne recenzije ciljaju konkurenciju lažnim negativnim iskustvima. Recenzije botova automatski su generirane iz predložaka s minimalnim varijacijama. Incentivne recenzije pišu ih stvarni korisnici koji su dobili besplatan proizvod ili popust u zamjenu za recenziju, što narušava objektivnost.
+
+Postoje signali koji pomažu u prepoznavanju lažnih recenzija. Jezični obrasci uključuju pretjeranu upotrebu superlativa jer lažne recenzije češće koriste izrazito emocionalan jezik, nedostatak specifičnih detalja o proizvodu jer je teško opisati iskustvo korištenja nečega što niste koristili, te neprirodno savršenu gramatiku ili naprotiv jednaku gramatičku pogrešku u više recenzija. Obrasci objavljivanja također su indikativni jer klaster recenzija objavljenih u kratkom vremenskom periodu sugerira koordiniranu kampanju, a recenzent s poviješću recenziranja samo proizvoda jednog brenda sugerira plaćenu suradnju. Profil recenzenta može otkriti da je profil kreiran nedavno, da recenzira proizvode iz potpuno nepovezanih kategorija ili da se ista profilna fotografija pojavljuje na više recenzentskih profila.
+
+Amazon, Google i ostale platforme ulažu značajne resurse u detekciju lažnih recenzija, ali problem je daleko od riješenog. Procjenjuje se da između 30 i 40 posto online recenzija nije autentično, s varijacijama po industrijama i platformama.
+
+Astroturfing je srodna praksa u kojoj se organizirana kampanja maskira kao spontani grassroots pokret. Ime dolazi od AstroTurf-a, marke umjetne trave, jer je kampanja umjetna ali izgleda kao prirodna trava. U digitalnom kontekstu, astroturfing može uključivati lažne korisničke profile koji podržavaju proizvod ili organizaciju na forumima i društvenim mrežama, koordinirane komentare pod člancima i objavama, lažne peticije i kampanje podrške te plaćene influencere koji ne otkrivaju komercijalnu prirodu svog sadržaja.
+
+Za komunikologe, etička implikacija je jasna. Fabriciranje društvenog dokaza kratkoročno može izgledati kao učinkovita taktika, ali dugoročno uništava povjerenje. Kada se otkrije, a u digitalnom okruženju stvari se gotovo uvijek otkriju, šteta za reputaciju organizacije daleko premašuje bilo kakvu kratkoročnu korist. EU regulativa o zaštiti potrošača, o kojoj ćemo govoriti u trinaestom tjednu, sve strože zabranjuje lažne recenzije i propisuje sankcije.
+
+
+## Dezinformacija, misinformacija i malinformacija
+
+Ova tri pojma često se koriste naizmjenično, ali razlike među njima važne su za komunikologe jer podrazumijevaju različite probleme, različite motivacije i različite strategije odgovora.
+
+Misinformacija je netočna informacija koja se dijeli bez namjere da zavede. Osoba koja dijeli misinformaciju vjeruje da je istina. Primjer je dijeljenje zastarjele medicinske preporuke za koju autor iskreno vjeruje da je još uvijek aktualna. Problem misinformacije rješava se edukacijom i korekcijom jer su ljudi koji dijele misinformaciju obično otvoreni za ispravak kada im se pokaže točna informacija.
+
+Dezinformacija je namjerno kreirana ili manipulirana netočna informacija s ciljem zavođenja. Kreator dezinformacije zna da je sadržaj lažan i namjerno ga distribuira da bi postigao specifičan cilj, bilo politički, komercijalni ili ideološki. Primjeri uključuju lažne vijesti kreirane da utječu na političke stavove, fabricirane znanstvene studije financirane od industrije da bi osporile znanstveni konsenzus i manipulirane fotografije dizajnirane da izazovu emocionalnu reakciju.
+
+Malinformacija je istinita informacija koja se koristi s namjerom da nanese štetu. Sadržaj je točan, ali se dijeli izvan konteksta, u pogrešno vrijeme ili s ciljem da kompromitira, uznemiri ili manipulira. Primjer je objavljivanje privatnih informacija o osobi s ciljem javnog sramoćenja ili dijeljenje djelomično istinite priče koja namjerno izostavlja ključni kontekst.
+
+Za komunikologe, ova taksonomija nije akademska vježba. Ona definira kako odgovarate na različite situacije. Ako vaša organizacija postane cilj misinformacijske kampanje, odgovor je edukacija i ispravljanje činjenica. Ako postane cilj dezinformacijske kampanje, odgovor zahtijeva stratešku komunikaciju koja se bavi motivima i mehanizmima kampanje. Ako netko koristi istinite informacije da bi vam nanio štetu, odgovor je potpuno drugačiji i možda uključuje pravne mehanizme.
+
+U hrvatskom kontekstu, dezinformacijski obrasci imaju neke specifičnosti. Relativno mali medijski prostor znači da se informacije brzo šire unutar zajednice i da je krug izvora uži nego u većim zemljama. Ovo ima dvostruku implikaciju jer s jedne strane manja zajednica znači da se lažne informacije brže razotkriju, ali s druge strane znači i da informacija koja jednom uđe u mainstream hrvatske medijskog prostora teško izlazi jer je broj alternativnih izvora koji bi je mogli korigirati ograničen.
+
+Društvene mreže i messaging aplikacije, osobito Facebook grupe i WhatsApp lanci, značajni su kanali za distribuciju dezinformacija u Hrvatskoj. Sadržaj koji cirkulira u zatvorenim grupama teže je pratiti i provjeravati od javno objavljenog sadržaja. Za komunikologe koji upravljaju kriznom komunikacijom, ovo znači da negativna informacija o organizaciji može cirkulirati danima u privatnim kanalima prije nego što uopće postanete svjesni njezina postojanja.
+
+Pandemija COVID-19 bila je osobito plodno tlo za dezinformacije u Hrvatskoj, od lažnih zdravstvenih savjeta do konspirativnih teorija o cjepivima. Faktograf.hr dokumentirao je stotine takvih slučajeva. Za komunikologe, pandemija je bila lekcija o tome koliko brzo dezinformacije mogu nadmašiti službenu komunikaciju ako službena komunikacija nije pravodobna, jasna i empatična.
+
+
+### Mehanizmi širenja netočnih informacija
+
+Razumijevanje kako se netočne informacije šire jednako je važno kao i njihovo prepoznavanje. Nekoliko mehanizama pojačava distribuciju.
+
+Algoritamska amplifikacija, o kojoj smo već govorili, preferira emocionalno nabijeniji sadržaj koji generira angažman. Lažne vijesti su po definiciji senzacionalnije od istine jer nisu ograničene stvarnošću i mogu biti dizajnirane za maksimalan emocionalni učinak.
+
+Konfirmacijska pristranost je tendencija ljudi da traže, tumače i pamte informacije koje potvrđuju postojeća uvjerenja. Ako vjerujete da je nešto istina, automatski ste skloni prihvatiti sadržaj koji to potvrđuje i skeptični prema sadržaju koji to osporava. Ovo je fundamentalni kognitivni mehanizam koji manipulatori informacijama eksploatiraju.
+
+Efekt iluzorne istine fenomen je u kojem se izjave koje čujemo ponovljeno percipiraju kao istinitije, čak i kada znamo da su lažne. Ponavljanje stvara osjećaj poznatosti, a poznatost se nesvjesno tumači kao istina. Ovo objašnjava zašto propagandne kampanje inzistiraju na ponavljanju iste poruke.
+
+Kaskada dijeljenja označava situaciju u kojoj se sadržaj dijeli ne na temelju vlastite procjene nego na temelju činjenice da su ga podijelili drugi. Ako vidite da je vaš prijatelj podijelio vijest, skloniji ste je podijeliti dalje bez provjere jer vam prijateljev čin dijeljenja služi kao implicitna validacija.
+
+Za komunikologe, ovi mehanizmi nisu samo prijetnje nego i odgovornosti. Kada kreirate komunikacijske strategije, morate biti svjesni da isti mehanizmi koje koristite za širenje poruke vaše organizacije, emocionalni apeli, ponavljanje, socijalni dokaz, mogu biti iskorišteni i za širenje dezinformacija. Etička komunikacija podrazumijeva korištenje ovih alata za promicanje istinitog sadržaja, ne za manipulaciju.
+
+
+## Provjera činjenica, platforme i metodologija
+
+Fact-checking ili provjera činjenica profesionalizirala se u posljednjem desetljeću do te mjere da predstavlja prepoznatljivu granu novinarstva s vlastitim standardima i metodologijom. Za komunikologe, razumijevanje kako fact-checkeri rade i koji resursi postoje korisno je i za vlastitu praksu vrednovanja i za razumijevanje ekosustava u kojem se informacije natječu za pozornost.
+
+Međunarodna mreža za provjeru činjenica ili International Fact-Checking Network (IFCN) uspostavlja standarde za organizacije koje se bave provjerom činjenica. Potpisnice IFCN-ovog kodeksa principa obvezuju se na nepristranost i poštenje, transparentnost izvora, transparentnost financiranja i organizacije, transparentnost metodologije i otvorenost za ispravke.
+
+Na globalnoj razini, najuglednije platforme za provjeru činjenica uključuju Snopes koji je jedna od najstarijih i najpoznatijih platformi fokusiranih na urbane legende, viralnu dezinformaciju i političke tvrdnje, zatim PolitiFact koji koristi vizualnu skalu od "True" do "Pants on Fire" za ocjenu političkih tvrdnji, Full Fact koji je britanski nezavisni fact-checker, te AFP Fact Check i Reuters Fact Check koji su ogranci velikih novinskih agencija specijalizirani za provjeru viralnog sadržaja.
+
+U hrvatskom kontekstu, Faktograf.hr najistaknutija je platforma za provjeru činjenica. Projekt je pokrenut 2015. godine kao suradnja GONG-a i Fakenews.rs te je potpisnik IFCN-ovog kodeksa principa. Faktograf provjerava izjave javnih dužnosnika, viralnu dezinformaciju na hrvatskom jeziku i tvrdnje iz medijskog prostora. Za komunikologe na hrvatskom tržištu, Faktograf je ključni resurs za brzu provjeru informacija relevantnih za domaći kontekst.
+
+Metodologija provjere činjenica općenito slijedi standardizirani proces. Prvo se identificira tvrdnja koja zaslužuje provjeru, obično na temelju njezine rasprostranjenosti ili potencijalnog utjecaja. Zatim se tvrdnja raščlanjuje na provjerljive komponente. Potom se kontaktiraju izvorni izvori, konzultiraju stručnjaci, pretražuju baze podataka i analiziraju dostupni dokazi. Na kraju se donosi ocjena, obično na skali od točno do netočno s nijansama između, uz potpuno transparentno obrazloženje i sve korištene izvore.
+
+Za komunikologe, temeljni princip fact-checkinga koji se može prenijeti u svakodnevnu praksu jest slijedeći. Što je tvrdnja senzacionalnija, to zaslužuje rigorozniju provjeru. Ako nešto zvuči previše dobro da bi bilo istinito, ili previše loše da bi bilo istinito, to je signal da je provjera neophodna prije dijeljenja ili korištenja te informacije u profesionalnom radu.
+
+
+## Vrednovanje AI-generiranog sadržaja
+
+Pojava velikih jezičnih modela poput GPT-a, Claudea, Gemini i ostalih stvorila je novu kategoriju problema u vrednovanju informacija. AI-generirani tekst može biti gramatički savršen, stilistički uvjerljiv i strukturalno koherentan, a istovremeno sadržavati informacije koje su potpuno fabricirane. Ova pojava naziva se halucinacijom u kontekstu jezičnih modela i predstavlja fundamentalni izazov za sve koji koriste AI alate u profesionalnom radu.
+
+Halucinacija u kontekstu AI-ja znači da model generira sadržaj koji zvuči uvjerljivo ali nema temelja u stvarnosti. Model može izmisliti citate koji ne postoje, atribuirati ih stvarnim ljudima koji ih nikada nisu izrekli, fabricirati statistike, kreirati reference na akademske radove koji nikada nisu objavljeni i prezentirati lažne informacije s punim samopouzdanjem jednako uvjerljivo kao i istinite.
+
+Zašto se ovo događa? Veliki jezični modeli ne razumiju istinu u ljudskom smislu. Oni predviđaju koji je sljedeći najvjerojatniji token (riječ ili dio riječi) na temelju obrazaca naučenih iz ogromnih količina teksta. Kada model nema dovoljno informacija o nečemu, neće reći ne znam kao što bi to učinio čovjek koji je svjestan svog neznanja. Umjesto toga, generirat će tekst koji izgleda kao odgovor jer je naučio da se na pitanja odgovara.
+
+Za komunikologe koji koriste AI alate za istraživanje, pisanje ili analizu, ovo znači da svaka informacija generirana od AI-ja mora biti neovisno provjerena prije korištenja u profesionalnom kontekstu. Konkretno, citati se moraju provjeriti u izvornim publikacijama jer je AI sklon fabriciranju citata. Statistike se moraju verificirati u originalnim izvorima podataka. Činjenične tvrdnje, osobito one o specifičnim datumima, brojevima i događajima, moraju se usporediti s pouzdanim izvorima. Preporuke i savjeti moraju se kritički procijeniti jer AI može reproducirati pogrešne ali široko rasprostranjene pretpostavke.
+
+AI-generirani tekst koji se objavljuje bez provjere ne samo da može sadržavati netočnosti nego može narušiti E-E-A-T signale o kojima smo govorili prošli tjedan. Google sve aktivnije detektira i devalorizira sadržaj koji je masovno generiran AI alatima bez ljudskog nadzora, dodane vrijednosti i provjere činjenica.
+
+Istovremeno, AI alati mogu biti izuzetno korisni za sam proces provjere činjenica. Mogu pomoći u brzom pretraživanju i sintezi informacija iz više izvora, u identifikaciji kontradikcija u tekstovima i u strukturiranju argumenta. Ključ je tretirati AI kao inteligentnog ali nepouzdanog asistenta čiji se output uvijek mora provjeriti, nikada kao konačni izvor istine.
+
+
+## Signali povjerenja na web stranicama
+
+Prošli tjedan govorili smo o E-E-A-T konceptu iz perspektive SEO-a. Danas isti koncept promatramo iz perspektive korisnika koji pokušava procijeniti treba li web stranici vjerovati. Postoji skup vizualnih, strukturalnih i kontekstualnih signala koji pomažu u toj procjeni.
+
+Transparentnost vlasništva temeljan je signal. Pouzdana web stranica jasno prikazuje tko je vlasnik, uključujući ime organizacije ili osobe, fizičku adresu, kontakt podatke, pravni status i porezni broj. Stranica koja skriva ove informacije ili ih čini teško dostupnima signalizira da nešto nije u redu. Za komunikologe, ovo je i osobna odgovornost jer web prisutnost vaše organizacije mora odražavati transparentnost koju biste sami tražili od drugih.
+
+Autorski potpisi i biografije signaliziraju da netko stoji iza sadržaja i spreman je za to odgovarati. Anoniman sadržaj nije nužno loš, ali izostanak autorstva smanjuje mogućnost provjere autoriteta.
+
+Datumi objave i ažuriranja pomažu u procjeni aktualnosti. Sadržaj bez datuma može biti zastarjeli tekst koji je i dalje dostupan ali više nije točan. Stranice koje prikazuju datum posljednjeg ažuriranja signaliziraju da održavaju sadržaj.
+
+Navedeni izvori i reference omogućuju provjeru tvrdnji. Sadržaj koji citira svoje izvore i pruža poveznice na originalne dokumente, istraživanja ili izjave poziva na provjeru umjesto da zahtijeva slijepo povjerenje. Izostanak izvora u sadržaju koji iznosi činjenične tvrdnje značajan je crveni signal.
+
+HTTPS i sigurnosne oznake signaliziraju da je veza šifrirana, što smo detaljno obradili u prvom tjednu. Ali prisutnost HTTPS-a sama po sebi ne jamči pouzdanost sadržaja jer i web stranica s dezinformacijama može imati HTTPS.
+
+Politika privatnosti i uvjeti korištenja pravna su dokumenta koja svaka legitimna web stranica mora imati, osobito u Europskoj uniji prema GDPR-u. Njihov izostanak signal je ili amateurizma ili namjernog izbjegavanja odgovornosti.
+
+Uredničke politike i ispravke transparentno opisuju kako se sadržaj stvara, recenzira i ispravlja. Organizacije koje javno ispravljaju pogreške paradoksalno su pouzdanije od onih koje to ne čine jer je spremnost na ispravak signal integriteta.
+
+Za komunikologe, ovi signali povjerenja nisu samo alati za procjenu tuđih stranica nego i kontrolna lista za vlastitu web prisutnost. Organizacija koja zahtijeva povjerenje od svoje publike mora demonstrirati sve ove signale na vlastitoj web stranici.
+
+
+## Ekosustav povjerenja i njegovi slomovi
+
+Digitalno okruženje funkcionira na pretpostavki povjerenja koja se ponekad pokazuje krhkom. Razumijevanje dinamike povjerenja na webu pomaže komunikologu i u procjeni rizika i u izgradnji otpornih komunikacijskih strategija.
+
+Povjerenje u digitalnom okruženju distribuirano je na nekoliko razina. Povjerenje u platformu znači vjerovanje da Google prikazuje kvalitetne rezultate, da Amazon prikazuje autentične recenzije ili da Facebook ne dopušta širenje dezinformacija. Povjerenje u izdavača znači vjerovanje da novinska kuća provjerava činjenice ili da akademski časopis provodi recenziju. Povjerenje u autora znači vjerovanje da je osoba koja je potpisala tekst kvalificirana i iskrena. Povjerenje u sadržaj znači procjena da je informacija sama po sebi konzistentna, koherentna i u skladu s onim što znamo iz drugih izvora.
+
+Svaka od ovih razina može zakazati. Platforme mogu biti manipulirane. Izdavači mogu sniziti standarde pod pritiskom brzine i klikova. Autori mogu imati sukob interesa. Sadržaj može biti uvjerljiv a ipak netočan. Za komunikologe, ovo znači da nijedna razina povjerenja ne smije biti uzeta zdravo za gotovo i da je kritičko razmišljanje potrebno na svakoj od njih.
+
+Posebno je važno razumjeti kako se povjerenje u platforme mijenja. Dugo je postojala pretpostavka da ako je nešto na Googleu visoko rangirano, mora biti pouzdano. Ako je na Wikipediji, mora biti točno. Ako je objavljeno u velikom mediju, mora biti provjereno. Svaka od ovih pretpostavki pokazala se krhkom u različitim trenucima. Google može rangirati nepouzdane izvore, osobito za nišne teme s malo kvalitetnog sadržaja. Wikipedia, unatoč impresivnom sustavu samoregulacije, može sadržavati netočnosti, osobito u člancima o manje poznatim temama koje imaju malo urednika. Veliki mediji mogu objaviti neprovjerenu vijest pod pritiskom brzine, osobito u eri kada svaka sekunda kasnjenja znači gubitak klikova.
+
+U hrvatskom medijskom ekosustavu, ove dinamike imaju specifične manifestacije. Koncentracija medijskog vlasništva znači da relativno mali broj vlasnika kontrolira velik dio informacijskog prostora. Ekonomski pritisak na medije, smanjena naklada i prihodi od oglašavanja, doveo je do smanjenja uredničkih timova i standarda u nekim publikacijama. Click-bait naslovi postali su norma na mnogim portalima jer ekonomski model koji nagrađuje klikove neizbježno devalorizira kvalitetu u korist senzacije. Za komunikologe, ovo znači da čak i poznati hrvatski portali zahtijevaju kritičko čitanje, ne slijepo povjerenje.
+
+Posebno je važan fenomen poznat kao pranje informacija ili laundering of information. Nepouzdana informacija se objavi na marginalnom izvoru. Zatim je preuzme nešto popularnija stranica s formulacijom prema izvještajima bez navođenja originalnog izvora. Potom je preuzme još veća stranica referirajući se na prethodnu. Na kraju informacija stigne do mainstreama s implicitnim autoritetom cijelog lanca izvora, iako nijedan u lancu nije izvršio neovisnu provjeru. Komunikolozi moraju biti svjesni ovog mehanizma jer se njime može oprati gotovo svaka informacija.
+
+Ovaj mehanizam osobito je opasan u malom medijskom ekosustavu poput hrvatskog jer je lanac od marginalnog izvora do mainstreama kraći i brži. Informacija objavljena na blogu ili Facebook stranici može u roku od nekoliko sati završiti na velikom portalu ako je dovoljno senzacionalna, a da je pritom nijedan urednik u lancu neovisno nije verificirao.
+
+
+## Pristranosti koje otežavaju vrednovanje
+
+Kritičko vrednovanje informacija nije samo pitanje tehnika i alata. To je i pitanje razumijevanja vlastitih kognitivnih pristranosti koje otežavaju objektivnu procjenu.
+
+Konfirmacijska pristranost, o kojoj smo već govorili, najsnažnija je od svih jer nas čini sklonima prihvatiti informacije koje potvrđuju naše postojeće stavove bez adekvatne provjere.
+
+Halo efekt tendencija je da pozitivan dojam o jednom aspektu izvora prelije se na procjenu drugih aspekata. Ako web stranica ima elegantan dizajn, skloni smo pretpostaviti da je i njezin sadržaj kvalitetan. Ako je autor simpatičan u video zapisu, skloni smo pretpostaviti da je i kompetentan.
+
+Autoritetska pristranost tendencija je da nekritički prihvatimo tvrdnje osoba koje percipiramo kao autoritete. Titula doktora ili profesora ne jamči da je osoba stručnjak za temu o kojoj govori jer doktor kemije ne mora biti kompetentan za izjave o ekonomiji.
+
+Pristranost dostupnosti tendencija je da informacije koje lakše dolaze na um percipiramo kao češće ili važnije. Ako smo nedavno čitali o nekoj temi, skloni smo precjenjivati njezinu važnost i raširenost.
+
+Pristranost prema novom tendencija je da novijim informacijama automatski pridajemo veću važnost nego starijim, čak i kada su starije informacije temeljitije i točnije.
+
+Za komunikologe, svjesnost o ovim pristranostima nije slabost nego profesionalna prednost. Komunikolog koji zna da je sklon konfirmacijskoj pristranosti može uvesti sustavne provjere u svoj rad. Komunikolog koji razumije halo efekt može kritičnije procjenjivati izvore koji izgledaju impresivno ali možda nemaju sadržajnu supstancu.
+
+Praktična tehnika za suzbijanje pristranosti jest postavljanje protupitanja. Kada pronađete informaciju koja savršeno odgovara vašoj tezi, zaustavite se i eksplicitno potražite informacije koje joj proturječe. Ovo nije ugodno jer zahtijeva da aktivno tražite ono što ne želite pronaći. Ali upravo ta neugodnost signal je da radite ispravno jer mugodna provjera vjerojatno nije dovoljno rigorozna.
+
+Druga tehnika jest provjera s osobom koja ima drugačiju perspektivu. Ako radite u timu, zamolite kolegu da izazove vaše pretpostavke. Ako radite sami, pokušajte zauzeti perspektivu osobe koja bi se mogla ne složiti s vašim zaključkom i procijenite bi li vaši dokazi i izvora uvjerili i tu osobu.
+
+
+## Triangulacija izvora kao profesionalna praksa
+
+Triangulacija je pojam posuđen iz navigacije i istraživačke metodologije koji označava praksu korištenja više neovisnih izvora za potvrdu informacije. U kontekstu vrednovanja informacija na webu, triangulacija je najrobusnija metoda provjere točnosti.
+
+Princip je jednostavan. Jedna informacija iz jednog izvora je tvrdnja. Ista informacija iz dva neovisna izvora je indikacija. Ista informacija iz tri ili više neovisnih izvora koji nemaju zajednički originalni izvor visoko je pouzdana potvrda. Ključna riječ je neovisnih jer tri članka koja sva citiraju isti izvještaj su zapravo jedan izvor, ne tri.
+
+U praksi, triangulacija zahtijeva provjeru triju dimenzija. Prvo, podudaraju li se činjenice? Ako tri izvora navode isti broj, datum ili događaj, vjerojatnost točnosti je visoka. Drugo, podudaraju li se interpretacije? Različiti izvori mogu se složiti oko činjenica ali ih različito interpretirati, što je korisno jer vam daje bogatiji kontekst. Treće, postoje li kontradikcije? Ako jedan izvor značajno odstupa od ostalih, to ne znači nužno da je netočan, ali zahtijeva dodatnu provjeru.
+
+Za komunikologe, triangulacija bi trebala postati navika, osobito za tri kategorije informacija. Statistike i brojevi uvijek zahtijevaju provjeru jer se lako mijenjaju prepisivanjem iz izvora u izvor, a mala pogreška u broju može potpuno promijeniti značenje. Citati i izjave osoba zahtijevaju potvrdu jer se rutinski skraćuju, izvlače iz konteksta ili parafraziraju na način koji mijenja značenje. Kronologije događaja zahtijevaju verifikaciju jer je redoslijed događaja često jednako važan kao i sami događaji, a pogrešan redoslijed može sugerirati uzročno-posljedičnu vezu koja ne postoji.
+
+U hrvatskom kontekstu, triangulacija može uključivati usporedbu informacija iz domaćih i međunarodnih izvora. Za teme koje pokrivaju i domaći i strani mediji, usporedba perspektiva može otkriti kontekst koji nijedan od njih samostalno ne pruža. Na primjer, informacija o ekonomskom stanju Hrvatske može izgledati drugačije kada se čita u kontekstu Eurostata ili OECD-ovih podataka nego kada se čita samo u domaćim medijima.
+
+
+## Praktična primjena u komunikacijskom radu
+
+Sve o čemu smo govorili u ovom predavanju nije akademska vježba nego skup vještina koje se primjenjuju svakodnevno u komunikacijskom radu. Pogledajmo konkretne scenarije.
+
+Kada istražujete temu za sadržaj koji će vaša organizacija objaviti, SIFT metoda i lateralno čitanje štite vas od citiranja nepouzdanih izvora. Jedan netočan podatak u vašem tekstu može narušiti kredibilitet cijele organizacije. Zamislite da pripremate blog članak u kojem citirate statistiku iz izvora koji se na prvi pogled čini legitimnim. Dva tjedna nakon objave, netko primijeti da je statistika fabricirana. Sada morate objaviti ispravak, ali šteta je već učinjena jer su drugi mediji preuzeli vašu statistiku, a povjerenje čitatelja u vaš sadržaj narušeno je. Tridesetak sekundi lateralnog čitanja moglo je spriječiti cijeli problem.
+
+Kada pratite medijsko pokrivanje vaše organizacije ili industrije, sposobnost razlikovanja kvalitetnog novinarstva od senzacionalizma i dezinformacije pomaže vam u formiranju adekvatnog odgovora. Na kvalitetno novinarstvo koje kritizira vašu organizaciju odgovarate transparentnošću. Na dezinformaciju odgovarate činjenicama. Na trolove ne odgovarate uopće. Pogrešna kategorizacija može biti skupa jer ako dezinformaciju tretirate kao legitimnu kritiku, legitimizirate je. Ako legitimnu kritiku tretirate kao dezinformaciju, dolazite kroz kao arogantni i netransparentni.
+
+Kada procjenjujete potencijalne partnere, influencere ili medijske kanale za suradnju, analiza njihove pouzdanosti, autentičnosti pratitelja i kvalitete sadržaja štiti organizaciju od asocijacije s nepouzdanim izvorima. Influencer s impresivnim brojem pratitelja može imati kupljene pratitelje. Blog s profesionalnim izgledom može objavljivati sadržaj financiran od oglašivača bez jasnog označavanja. Medijski portal s velikim dosegom može imati povijest objavljivanja senzacionalizma na granici dezinformacije. Analiza ovih faktora prije potpisivanja ugovora o suradnji dio je profesionalne dužne pažnje.
+
+Kada upravljate kriznom komunikacijom, brzina i točnost su ključne. Sposobnost brze provjere činjenica razlika je između adekvatnog odgovora i pogubnog pogrešnog koraka. U krizi, pritisak je ogroman da se reagira odmah. Ali reakcija temeljena na neprovjerenim informacijama može pogoršati krizu umjesto da je ublaži. Disciplina provjere čak i pod pritiskom profesionalna je vrlina koja se stječe praksom.
+
+Kada koristite AI alate u svakodnevnom radu, razumijevanje halucinacija i sustavna provjera outputa štite vas od profesionalno neugodnih pogrešaka. AI alat vam može sugerirati statistiku koja zvuči savršeno za vaš izvještaj. Ako je ne provjerite i ona se pokaže fabriciranom, vaš profesionalni kredibilitet trpi jednako kao da ste sami izmislili podatak. U očima klijenta ili šefa nema razlike između toga jeste li namjerno izmislili podatak ili ste nekritički preuzeli AI halucinaciju.
+
+Kada upravljate korisničkim recenzijama i online reputacijom organizacije, sposobnost prepoznavanja lažnih recenzija pomaže vam i u zaštiti od nepoštene konkurencije i u održavanju integriteta vlastite recenzijske baze. Ako primijetite nagli porast negativnih recenzija s profila bez povijesti, to može biti koordinirani napad koji zahtijeva eskalaciju prema platformi, ne javni odgovor koji bi samo amplificirao negativni sadržaj.
+
+
+## Informacijska pismenost kao organizacijska kompetencija
+
+Vrednovanje informacija ne bi trebalo biti samo individualna vještina pojedinog komunikologa. Trebalo bi biti organizacijska kompetencija integrirana u procese i kulturu rada.
+
+To konkretno znači uspostavljanje internih politika o citiranju izvora u sadržaju organizacije. Ako vaša organizacija objavljuje blog, newsletter ili izvještaje, postoji li interni standard za provjeru činjenica prije objave? Tko je odgovoran za verifikaciju podataka? Koliko izvora mora potvrditi informaciju prije nego što je objavite kao činjenicu?
+
+To znači i uspostavljanje protokola za upravljanje dezinformacijama. Ako se pojavi lažna informacija o vašoj organizaciji, tko donosi odluku o odgovoru? Koji su koraci provjere prije objave demantija? Kako dokumentirate dezinformacijske incidente za moguću pravnu akciju?
+
+To znači i edukaciju tima. Svaki član komunikacijskog tima trebao bi poznavati osnove lateralnog čitanja, SIFT metode i obrnutog pretraživanja slika. Ove vještine nisu ekskluzivne za jednu osobu u timu jer u kriznoj situaciji svatko tko komunicira u ime organizacije mora moći brzo procijeniti kvalitetu informacije.
+
+Za hrvatske organizacije, dodatni izazov je višejezično okruženje u kojem dezinformacije mogu dolaziti na hrvatskom, srpskom, bosanskom, engleskom ili bilo kojem drugom jeziku. Komunikacijski tim mora biti sposoban provjeravati informacije na svim jezicima relevantnim za organizaciju i njezinu publiku.
+
+
+## Na kraju ovog poglavlja
+
+Vrednovanje informacija na webu nije jednokratna vještina koju naučite i zaboravite. To je disciplina koja zahtijeva stalnu praksu i prilagodbu jer se alati manipulacije neprekidno razvijaju. AI-generirani deepfake videi danas su sofisticiraniji nego lani. Tehnike dezinformacije danas su suptilnije nego prije pet godina. Platforme za lažne recenzije danas su teže detektibilne nego ikada.
+
+Ali temeljna logika ostaje ista. Zastanite prije nego što reagirate. Istražite izvor izvan njega samog. Provjerite informaciju u neovisnim izvorima. Pratite tvrdnje do originalnog konteksta. Budite svjesni vlastitih pristranosti.
+
+Za komunikologe, ova disciplina nije samo osobna higijena informiranja. Ona je profesionalna odgovornost. Vi ste posrednici između organizacija i javnosti. Kvaliteta informacija koje puštate kroz taj kanal izravno utječe na povjerenje koje javnost ima prema vašoj organizaciji i prema komunikacijskoj struci u cjelini.
+
+Sljedeći tjedan govorit ćemo o sustavima za upravljanje sadržajem i modernom web stacku. Veza s današnjom temom je praktična jer platforme na kojima objavljujete sadržaj imaju strukturalne karakteristike koje mogu olakšati ili otežati transparentnost, autorstvo i signale povjerenja o kojima smo danas govorili.
+
+::: {.callout-note}
+## Ključni zaključci
+
+Lateralno čitanje, praksa napuštanja izvora i provjere što drugi govore o njemu, učinkovitije je od vertikalnog čitanja koje procjenjuje stranicu na temelju onoga što ona sama govori o sebi.
+
+SIFT metoda sa četiri koraka (zastani, istraži izvor, pronađi bolju pokrivenost, prati tvrdnje do konteksta) brz je trijaž primjenjiv na bilo koji sadržaj.
+
+Obrnuto pretraživanje slika praktičan je alat za provjeru vizualnog sadržaja koji se koristi izvan konteksta ili je manipuliran.
+
+Lažne recenzije i astroturfing ozbiljan su problem koji zahtijeva i vještine prepoznavanja i etičku jasnoću da se ne sudjeluje u njima.
+
+Dezinformacija, misinformacija i malinformacija zahtijevaju različite strategije odgovora jer se razlikuju po namjeri i mehanizmima.
+
+AI-generirani sadržaj može sadržavati halucinacije i uvijek zahtijeva neovisnu provjeru prije profesionalne uporabe.
+
+Signali povjerenja na web stranicama uključuju transparentnost vlasništva, autorske potpise, navedene izvore, uredničke politike i tehničke sigurnosne mjere.
+
+Kognitivne pristranosti poput konfirmacijske pristranosti, halo efekta i autoritarne pristranosti otežavaju objektivno vrednovanje i zahtijevaju svjesnu disciplinu.
+
+Vrednovanje informacija temeljna je profesionalna kompetencija komunikologa, ne opcija.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 4 bavit će se sustavima za upravljanje sadržajem i modernim web stackom.
+
+Prije četvrtog predavanja napravite četiri stvari.
+
+Prvo, odaberite jedan viralni sadržaj koji ste vidjeli na društvenim mrežama u posljednjih tjedan dana i primijenite SIFT metodu na njega. Zapišite svaki korak i zaključak do kojeg ste došli. Je li sadržaj prošao ili pao vašu provjeru?
+
+Drugo, pronađite tri slike na webu i pokušajte ih verificirati obrnutim pretraživanjem putem Google Images ili TinEye. Zabilježite što ste otkrili o originalnom izvoru i kontekstu svake slike.
+
+Treće, posjetite Faktograf.hr i proučite tri nedavna članka provjere činjenica. Obratite pažnju na metodologiju, kako su provjerivači raščlanili tvrdnju, koje su izvore koristili i kako su formulirali zaključak.
+
+Četvrto, proučite web stranicu neke hrvatske organizacije i procijenite njezine signale povjerenja. Ima li jasno navedeno vlasništvo, kontaktne podatke, autorske potpise na sadržaju, politiku privatnosti i HTTPS? Zapišite što je dobro i što nedostaje.
+
+
+## Dodatno čitanje
+
+Obavezno je proučiti Mike Caulfieldov priručnik SIFT (The Four Moves) koji je besplatno dostupan online i pruža praktičnu primjenu lateralnog čitanja.
+
+Za dublje razumijevanje preporučuje se sljedećih nekoliko izvora.
+
+Wineburg, S. i McGrew, S. (2019) objavili su istraživanje "Lateral Reading and the Nature of Expertise" koje je temelj za razumijevanje zašto profesionalni fact-checkeri procjenjuju izvore učinkovitije od akademika.
+
+Faktograf.hr najistaknutiji je hrvatski portal za provjeru činjenica i redovito ga valja čitati za razumijevanje dezinformacijskih obrazaca na hrvatskom tržištu.
+
+First Draft News (sada Information Futures Lab) objavljuje vodiče i alate za provjeru digitalnog sadržaja, uključujući vizualnu verifikaciju i provjeru sadržaja na društvenim mrežama.
+
+Bellingcat, istraživačka novinarska organizacija specijalizirana za open-source intelligence, objavljuje detaljne studije slučaja o tome kako su otkrili dezinformacije i verificirali informacije koristeći javno dostupne alate.
+
+Google Reverse Image Search i TinEye besplatni su alati za obrnuto pretraživanje slika koje vrijedi isprobati na konkretnim primjerima.
+
+InVID WeVerify projekt razvija alate za verifikaciju video sadržaja, uključujući analizu metapodataka, detekciju manipulacije i kontekstualno istraživanje.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Lateralno čitanje | Praksa provjere izvora izvan samog izvora, pretraživanjem što drugi kažu o njemu |
+| Vertikalno čitanje | Praksa procjene izvora na temelju informacija koje izvor sam pruža o sebi |
+| SIFT | Stop, Investigate, Find better coverage, Trace claims, metoda brze provjere informacija |
+| CRAAP test | Okvir za vrednovanje izvora kroz pet dimenzija, aktualnost, relevantnost, autoritet, točnost i svrhu |
+| Obrnuto pretraživanje slika | Tehnika pretraživanja weba korištenjem slike kao upita umjesto teksta |
+| EXIF podaci | Metapodaci ugrađeni u sliku koji mogu sadržavati datum, lokaciju i podatke o uređaju |
+| Dezinformacija | Namjerno kreirana netočna informacija s ciljem zavođenja |
+| Misinformacija | Netočna informacija koja se dijeli bez namjere zavođenja |
+| Malinformacija | Istinita informacija koja se koristi s namjerom nanošenja štete |
+| Astroturfing | Organizirana kampanja koja se maskira kao spontani grassroots pokret |
+| Halucinacija u kontekstu AI-ja | Generiranje uvjerljivog ali fabriciranog sadržaja od strane jezičnog modela |
+| YMYL | Your Money or Your Life, kategorije sadržaja s visokim standardima pouzdanosti |
+| Konfirmacijska pristranost | Tendencija traženja i prihvaćanja informacija koje potvrđuju postojeća uvjerenja |
+| Halo efekt | Tendencija da pozitivan dojam o jednom aspektu utječe na procjenu drugih aspekata |
+| Autoritarska pristranost | Tendencija nekritičkog prihvaćanja tvrdnji osoba percipiranih kao autoriteti |
+| Efekt iluzorne istine | Fenomen u kojem se ponavljane izjave percipiraju kao istinitije |
+| Kaskada dijeljenja | Dijeljenje sadržaja na temelju činjenice da su ga podijelili drugi, bez vlastite provjere |
+| Fact-checking | Profesionalna provjera činjeničnih tvrdnji prema standardiziranoj metodologiji |
+| IFCN | International Fact-Checking Network, organizacija koja postavlja standarde za provjeru činjenica |
+| Faktograf.hr | Vodeća hrvatska platforma za provjeru činjenica |
+| Pranje informacija | Proces u kojem nepouzdana informacija stječe implicitni autoritet prolaskom kroz lanac izvora |
+| Deepfake | Sintetički medijski sadržaj, najčešće video, kreiran AI tehnologijom |
+| Dividenda lažnjaka | Fenomen u kojem mogućnost deepfakea omogućuje odbacivanje autentičnog sadržaja kao lažnog |
+| Kloniranje glasa | AI tehnika koja uz mali uzorak govora može generirati uvjerljivu imitaciju glasa osobe |
+| Lažna recenzija | Recenzija napisana od osobe koja nije koristila proizvod ili uslugu, najčešće plaćena |
+| Socijalni dokaz | Psihološki princip prema kojem ljudi slijede ponašanje drugih pri donošenju odluka |
+| Signal povjerenja | Vizualni, strukturalni ili kontekstualni element web stranice koji komunicira pouzdanost |
+| Pristranost dostupnosti | Tendencija precjenjivanja važnosti informacija koje lakše dolaze na um |
+| TinEye | Specijalizirani alat za obrnuto pretraživanje slika |
+| Triangulacija izvora | Praksa korištenja tri ili više neovisnih izvora za potvrdu informacije |
+| Bellingcat | Istraživačka novinarska organizacija specijalizirana za open-source intelligence |

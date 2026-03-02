@@ -1,17 +1,484 @@
 ---
-title: "Tjedan 2: Kako funkcionira pretraživanje i zašto je pronalažljivost važna"
+title: "Kako funkcionira pretraživanje i zašto je pronalažljivost važna"
 subtitle: "Tražilice, SEO i putovanje od upita do klika"
-author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [temelji, seo]
+date: 2025-02-08
+categories: [pretraživanje, SEO, pronalažljivost]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje objašnjava kako tražilice indeksiraju i rangiraju web sadržaj, pokrivajući moderne SEO principe poput namjere pretraživanja, E-E-A-T, strukturiranih podataka, bogatih rezultata i Core Web Vitals.
+  Ovo predavanje objašnjava kako tražilice indeksiraju i rangiraju web sadržaj, pokrivajući moderne SEO principe poput namjere pretraživanja, E-E-A-T signala, strukturiranih podataka, bogatih rezultata i Core Web Vitals. Za komunikologe, pronalažljivost određuje hoće li poruka, proizvod ili usluga doći do ciljane publike, a razumijevanje načina na koji Google, Bing i sve više AI tražilice prikazuju i rangiraju sadržaj predstavlja stratešku prednost.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Opisati tri faze rada tražilice od puzanja i indeksiranja do rangiranja te objasniti zašto svaka od njih ima implikacije za komunikacijsku strategiju
+2. Razlikovati informacijsku, navigacijsku i transakcijsku namjeru pretraživanja te objasniti zašto je usklađivanje sadržaja s namjerom korisnika temelj moderne optimizacije
+3. Objasniti koncept E-E-A-T i pokazati kako signali iskustva, stručnosti, autoriteta i pouzdanosti utječu na vidljivost sadržaja
+4. Primijeniti temeljne principe tehničkog, sadržajnog i izvan-straničnog SEO-a na konkretne komunikacijske scenarije
+5. Prepoznati ulogu strukturiranih podataka i bogatih rezultata u povećanju vidljivosti i stope klikanja
+6. Artikulirati kako AI tražilice mijenjaju odnos između tražilice, sadržaja i korisnika te što to znači za organizacije čija vidljivost ovisi o organskom prometu
+7. Kritički procijeniti SEO preporuke i razlikovati legitimne prakse od manipulativnih tehnika koje mogu rezultirati penalizacijom
+8. Koristiti temeljne SEO alate za analizu vidljivosti web stranice i identificiranje prilika za poboljšanje
 
-*Bit će dodano.*
+
+## Zašto je pronalažljivost uopće bitna za komunikologe?
+
+Zamislite da ste napisali savršen tekst. Jasan, uvjerljiv, informiran, vizualno privlačan, objavljen na elegantnoj web stranici. Sada zamislite da ga nitko nikada ne pronađe. Ne zato što je loš, nego zato što ga tražilica nije uvrstila u rezultate. Ili ga je uvrstila, ali na drugu stranicu rezultata kamo gotovo nitko ne odlazi. Rezultat je isti kao da tekst nikada nije napisan.
+
+Ovo nije hipotetski scenarij. Više od 90% web stranica ne dobiva nikakav organski promet s Googlea. Nula posjeta. Nula čitatelja. To znači da ogromna većina sadržaja objavljenog na webu nikada ne dođe do publike putem pretraživanja. Za komunikologa, ovo je fundamentalan problem jer ako je vaš posao osigurati da poruka organizacije dođe do ciljane publike, morate razumjeti mehanizme koji određuju hoće li ta poruka biti vidljiva ili nevidljiva.
+
+Prošli tjedan govorili smo o infrastrukturi, o tome kako web zahtjev putuje od preglednika do poslužitelja i natrag. Danas prelazimo na pitanje koje logički slijedi. Kada sadržaj postoji na web poslužitelju, kako ga ljudi pronalaze? Odgovor je, u velikoj većini slučajeva, putem tražilice.
+
+Google obrađuje više od 8,5 milijardi upita dnevno. Za većinu ljudi, Google je ulazna točka u web. Ne upisuju URL izravno. Ne klikaju na bookmark. Ne slijede poveznicu s društvene mreže. Upisuju pitanje ili ključnu riječ u tražilicu i klikaju na jedan od prvih rezultata. Ako vaša organizacija nije među tim rezultatima, za te korisnike ne postoji.
+
+Ali pronalažljivost nije samo pitanje tražilica. To je širi koncept koji obuhvaća sve načine na koje korisnici otkrivaju sadržaj, od pretraživanja na Googleu i Bingu, preko glasovnih asistenata koji daju jedan jedini odgovor, preko AI tražilica koje sintetiziraju informacije iz više izvora, do pretraživanja unutar specifičnih platformi poput YouTubea, Amazona ili TikToka. Svaki od ovih kanala ima vlastite algoritme i vlastitu logiku rangiranja. Komunikolog koji razumije te mehanizme ima stratešku prednost nad onim koji ih ne razumije.
+
+
+## Kako tražilica vidi web
+
+Da bismo razumjeli zašto se neke stranice pojavljuju na vrhu rezultata dok druge ostaju nevidljive, moramo razumjeti kako tražilica zapravo funkcionira. Proces se odvija u tri faze i svaka od njih ima implikacije za komunikacijsku strategiju.
+
+
+### Prva faza, puzanje
+
+Google koristi automatizirane programe koje naziva crawlerima ili botovima, a najpoznatiji od njih zove se Googlebot. Zamislite Googlebota kao neumornog čitatelja koji neprekidno obilazi web, otvarajući stranice jednu za drugom, čitajući njihov sadržaj i bilježeći sve poveznice koje na njima pronađe. Te nove poveznice dodaje na svoj popis stranica koje treba posjetiti i proces se nastavlja u beskonačnoj petlji.
+
+Googlebot ne posjećuje sve stranice jednako često. Stranice koje se često mijenjaju, poput naslovnica velikih novinskih portala, posjećuje više puta dnevno. Stranice koje se rijetko mijenjaju možda posjeti jednom mjesečno ili rjeđe. Odluka o tome koliko često posjetiti neku stranicu ovisi o više faktora, uključujući koliko se često sadržaj mijenja, koliko je stranica autoritativna u Googleovim očima i koliko je efikasno Googlebot može dohvatiti.
+
+Ovo je prva točka u kojoj komunikolog može utjecati na vidljivost. Ako web stranica ima lošu strukturu poveznica, ako važne stranice nisu povezane s ostatkom stranice, Googlebot ih možda nikada neće otkriti. Ako je stranica prespora jer se Googlebot ponaša kao nestrpljivi korisnik koji neće čekati, bot će puzati manje stranica po posjetu. Ako robots.txt datoteka, tekstualna datoteka u korijenu web stranice koja daje upute botovima, blokira pristup važnim dijelovima stranice, Googlebot će ih poslušno zaobići.
+
+Postoji i proaktivniji pristup. Organizacija može izraditi XML sitemap, datoteku koja eksplicitno navodi sve stranice koje želi da Google indeksira, zajedno s datumom posljednje izmjene i relativnom važnošću. Ovo je poput davanja karti vašeg web mjesta Googlebotu umjesto da ga pustite da sam luta. Google Search Console, besplatan alat koji ćemo koristiti tijekom kolegija, omogućuje predaju sitemapa i praćenje toga koliko je vaših stranica Google otkrio i indeksirao.
+
+
+### Druga faza, indeksiranje
+
+Kada Googlebot dohvati stranicu, njezin se sadržaj analizira i pohranjuje u Googleov indeks, ogromnu bazu podataka koja sadrži informacije o stotinama milijardi web stranica. Indeksiranje nije samo pohranjivanje teksta. Google parsira HTML strukturu stranice, identificira naslove, odlomke, slike, poveznice i meta podatke. Analizira jezični kontekst da bi razumio o čemu stranica govori. Identificira entitete, stvarne pojmove poput imena osoba, mjesta, organizacija i koncepata, i povezuje ih s onima koje već poznaje iz svog grafa znanja.
+
+Ovdje je kritično razumjeti da Google ne indeksira ono što korisnik vidi, nego ono što Googlebot vidi. A te se dvije stvari mogu značajno razlikovati. Ako je sadržaj skriven iza JavaScripta koji se izvršava tek kada korisnik scrollla do njega, Googlebot ga možda neće vidjeti. Ako su važne informacije unutar slike bez alternativnog teksta, za Googlebota ta slika je crna rupa. Ako meta opis stranice, kratki tekst koji se prikazuje u rezultatima pretraživanja, nije napisan, Google će sam izvući odlomak iz stranice koji možda nije najsretniji izbor.
+
+Za komunikologa, lekcija je sljedeća. Sadržaj koji želite da bude vidljiv u pretraživanju mora biti dostupan u HTML-u, strukturiran semantičkim oznakama o kojima smo govorili prošli tjedan i popraćen odgovarajućim meta podacima. Ovo nije tehnički detalj koji možete prepustiti developeru i zaboraviti. Meta naslovi i opisi su vaš oglas u rezultatima pretraživanja. Vi kao komunikolog trebate sudjelovati u njihovom pisanju jer su to prvi tekstovi koje potencijalni posjetitelj vidi i na temelju kojih odlučuje hoće li kliknuti ili prijeći na sljedeći rezultat.
+
+Važno je znati i da Google ne indeksira sve što pronađe. Duplicirani sadržaj, stranice izuzetno niske kvalitete, stranice koje sadrže isključivo skinuti ili prepisani sadržaj s drugih izvora, stranice koje su vlasnik označio kao noindex, sve to Google može odlučiti ne uvrstiti u indeks. Ovo se ponekad događa organizacijama bez njihovog znanja, što je razlog zašto je redovito praćenje statusa indeksiranja putem Google Search Console dio higijene web prisutnosti.
+
+
+### Treća faza, rangiranje
+
+Rangiranje je ono po čemu je Google postao Google. Kada korisnik upiše upit, Google u djeliću sekunde pretražuje svoj indeks, pronalazi stranice koje su potencijalno relevantne i rangira ih po redoslijedu koji smatra najprikladnijim za tog korisnika u tom trenutku.
+
+Googleov algoritam rangiranja koristi više od dvjesto signala za određivanje redoslijeda rezultata. Točna formula je poslovna tajna koja se neprekidno mijenja, ali temeljni principi poznati su. Google rangira stranice na temelju relevantnosti, autoriteta i korisničkog iskustva. Relevantnost znači koliko dobro sadržaj stranice odgovara na ono što korisnik traži. Autoritet znači koliko je stranica i njezina domena pouzdana i utjecajna u svom području. Korisničko iskustvo znači koliko je ugodna, brza i korisna interakcija sa stranicom.
+
+Ovo troje isprepliće se na složene načine, ali za komunikologa važno je razumjeti temeljnu logiku. Google ne pokušava pronaći stranicu s najviše ključnih riječi. Pokušava pronaći stranicu koja će najbolje zadovoljiti korisnikov upit. To je fundamentalna razlika koja definira moderni SEO. Optimizacija za tražilice više nije igra ubacivanja ključnih riječi na stranicu. To je disciplina stvaranja sadržaja koji zaista odgovara na pitanja koja ljudi postavljaju, na stranici koja je tehnički ispravna, brza, sigurna i povezana s drugim relevantnim izvorima.
+
+
+## Namjera pretraživanja, najvažniji koncept u modernom SEO-u
+
+Ako iz cijelog predavanja zapamtite samo jednu stvar, neka bude ovo. Namjera pretraživanja ili search intent koncept je koji definira moderni SEO više od bilo kojeg tehničkog faktora. Radi se o razumijevanju što korisnik zapravo želi postići kada upisuje upit u tražilicu.
+
+Google je tijekom godina postajao sve bolji u prepoznavanju namjere iza upita. Isti upit može imati različita značenja ovisno o kontekstu. Ako upišete jaguar, tražite li životinju, automobil ili operativni sustav? Google koristi kontekstualne signale, vašu povijest pretraživanja, lokaciju, tip uređaja i analizu uobičajenih obrazaca, da bi odredio najvjerojatniju namjeru.
+
+Postoje četiri osnovne kategorije namjere pretraživanja.
+
+
+### Informacijska namjera
+
+Korisnik želi nešto saznati. Upiti poput što je DNS, kako funkcionira SEO ili povijest interneta imaju informacijsku namjeru. Korisnik ne želi ništa kupiti niti posjetiti specifično mjesto. Želi odgovor na pitanje ili objašnjenje koncepta.
+
+Za komunikologe, informacijski upiti su prilika za izgradnju autoriteta. Ako vaša organizacija konzistentno pruža kvalitetne, temeljite odgovore na pitanja relevantna za njezino područje, gradi povjerenje kod korisnika i šalje signal Googleu da je pouzdani izvor u tom području. Blog članci, vodiči, objašnjenja, FAQ stranice, sve su to formati koji odgovaraju na informacijske upite. Ključno je da sadržaj zaista odgovara na pitanje, a ne da koristi pitanje kao mamac za prodajnu poruku.
+
+
+### Navigacijska namjera
+
+Korisnik želi doći na specifičnu stranicu ili web mjesto. Upiti poput Facebook login, HRT vijesti ili Zara web shop imaju navigacijsku namjeru. Korisnik već zna kamo želi ići i koristi Google kao brži način da stigne tamo umjesto da upisuje URL.
+
+Za komunikologe, implikacija je jednostavna ali važna. Vaša organizacija mora biti prvi rezultat kada netko pretražuje njezino ime. Ovo se čini očiglednim, ali nije uvijek slučaj. Ako ime vaše organizacije dijeli riječ s nečim drugim, ako postoji konkurent sa sličnim imenom, ili ako je SEO potpuno zanemaren, može se dogoditi da korisnik koji vas eksplicitno traži ne može vas pronaći. Redovito pretraživanje imena vlastite organizacije i njezinih proizvoda osnovna je higijena digitalne prisutnosti.
+
+
+### Transakcijska namjera
+
+Korisnik želi obaviti akciju, najčešće kupovinu. Upiti poput kupi iPhone 16, let Zagreb London cijena ili pretplata na Netflix imaju transakcijsku namjeru. Korisnik je prošao fazu istraživanja i spreman je djelovati.
+
+Za organizacije s online prodajom, transakcijski upiti su najvrjedniji jer se izravno pretvaraju u prihod. Stranice koje ciljaju transakcijske upite moraju imati jasne pozive na akciju, transparentne cijene, jednostavan proces kupovine i sve signale povjerenja o kojima ćemo govoriti u tjednu o UX dizajnu. Iz perspektive SEO-a, ove stranice moraju sadržavati strukturirane podatke o proizvodima, ocjenama i cijenama da bi se kvalificirale za bogati prikaz u rezultatima pretraživanja koji značajno povećava stopu klikanja.
+
+
+### Komercijalno istraživanje
+
+Korisnik razmišlja o kupovini ali još istražuje opcije. Upiti poput najbolji laptop za studente 2025, usporedba WordPress i Squarespace ili recenzije Shopify imaju namjeru komercijalnog istraživanja. Korisnik je između informacijske i transakcijske faze.
+
+Ovo je izuzetno važna kategorija za komunikologe jer se tu donose odluke. Korisnik aktivno traži informacije koje će utjecati na izbor. Sadržaj koji odgovara na ove upite, usporedbe, recenzije, vodiči za kupce i studije slučaja, može izravno utjecati na to hoće li korisnik izabrati vaš proizvod ili konkurentski.
+
+
+### Zašto je namjera toliko važna
+
+Razumijevanje namjere pretraživanja bitno je zato što određuje kakav sadržaj Google želi prikazati. Ako korisnik upiše kako napraviti web stranicu, Google zna da je namjera informacijska i prikazat će vodiče, tutoriale i objašnjenja. Ako prikaže stranicu Shopifyja s cjenikom, to ne odgovara namjeri i korisnik će se vratiti na rezultate i kliknuti nešto drugo. Google mjeri ove signale ponašanja, jesu li korisnici zadovoljni rezultatom ili se vraćaju i klikaju dalje, i koristi ih za poboljšanje rangiranja.
+
+Praktična posljedica za komunikologe glasi da prije nego što napišete bilo koji sadržaj za web, morate razumjeti s kojom namjerom netko pretražuje temu o kojoj pišete. Najlakši način da to provjerite jest da sami pretražite ciljanu ključnu riječ i pogledate što Google trenutno prikazuje na prvoj stranici. Ako su svi rezultati dugi vodiči, a vi planirate kratku prodajnu stranicu, nemate šanse za rangiranje jer vaš sadržaj ne odgovara namjeri koju je Google identificirao.
+
+
+## E-E-A-T i signali kvalitete
+
+Google je 2022. godine ažurirao svoje Smjernice za ocjenjivanje kvalitete pretraživanja i uveo koncept E-E-A-T, akronim koji stoji za Experience (iskustvo), Expertise (stručnost), Authoritativeness (autoritet) i Trustworthiness (pouzdanost). Ovo nije algoritamski faktor u uskom tehničkom smislu, ali konceptualni je okvir koji Google koristi za obuku ljudskih ocjenjivača koji periodički procjenjuju kvalitetu rezultata pretraživanja i čije povratne informacije utječu na razvoj algoritma.
+
+Razumjeti E-E-A-T znači razumjeti kakav sadržaj Google smatra kvalitetnim.
+
+
+### Iskustvo
+
+Novo E u E-E-A-T dodano je upravo 2022. godine i odnosi se na osobno iskustvo autora s temom o kojoj piše. Google sve više cijeni sadržaj pisan iz prve ruke. Recenzija proizvoda od nekoga tko ga zaista koristi vrednija je od recenzije napisane kompiliranjem tuđih recenzija. Putopis od nekoga tko je zaista bio na tom mjestu vredniji je od generičnog turističkog vodiča. Ovo je osobito relevantno u doba generativne AI jer je upravo osobno iskustvo nešto što AI ne može autentično proizvesti.
+
+Za komunikologe, implikacija je da sadržaj vaše organizacije treba odražavati stvarno iskustvo. Fotografije vlastitih proizvoda umjesto stock fotografija. Studije slučaja temeljene na stvarnim projektima. Savjeti koji dolaze iz prakse, ne iz udžbenika. Ovo ne znači da svaki tekst mora biti osobna priča, ali znači da sadržaj koji demonstrira autentično iskustvo ima prednost.
+
+
+### Stručnost
+
+Stručnost se odnosi na znanje i kvalifikacije autora ili organizacije. Za medicinski sadržaj, Google očekuje da je napisan ili recenziran od strane medicinskog stručnjaka. Za financijski savjet, od financijskog stručnjaka. Za pravne informacije, od pravnika. Ovo je posebno strogo za kategorije koje Google naziva YMYL ili Your Money or Your Life, teme koje mogu izravno utjecati na zdravlje, financijsko stanje, sigurnost ili dobrobit korisnika.
+
+Za komunikologe, lekcija je da autorstvo nije nevažan detalj. Web stranica bi trebala jasno prikazivati tko je napisao sadržaj, koje su kvalifikacije te osobe i zašto joj se može vjerovati. Stranice s autorskim potpisima, biografijama autora i poveznicama na njihove profesionalne profile rangiraju se bolje od stranica s anonimnim sadržajem, osobito u YMYL kategorijama.
+
+
+### Autoritet
+
+Autoritet se gradi kroz vrijeme i priznanje zajednice. Web stranica ima autoritet ako je drugi relevantni izvori citiraju, povezuju na nju i referiraju se na njezin sadržaj. U SEO terminologiji, ovo se često mjeri kroz backlinks, poveznice s drugih web stranica koje upućuju na vašu.
+
+Ali autoritet nije samo pitanje broja poveznica. Kvaliteta je važnija od kvantitete. Jedna poveznica s web stranice poznate novinarske kuće vrednija je od stotine poveznica s nepoznatih blogova. Google je sofisticiran u prepoznavanju shema za umjetno stjecanje poveznica i aktivno penalizira stranice koje koriste takve taktike, o čemu ćemo govoriti u dijelu o crnim praksama.
+
+Za komunikologe, izgradnja autoriteta dugoročan je proces koji se ne može prečicom ubrzati. Podrazumijeva konzistentno objavljivanje kvalitetnog sadržaja, sudjelovanje u profesionalnoj zajednici, osvajanje medijskog pokrivanja, prezentiranje na konferencijama i sve ostale aktivnosti koje čine organizaciju prepoznatljivom i poštovanom u svom području. SEO u ovom smislu nije odvojeni projekt nego integralni dio komunikacijske strategije.
+
+
+### Pouzdanost
+
+Pouzdanost je, prema Googleu, najvažnija od četiri komponente. Obuhvaća transparentnost organizacije, kontaktne informacije i adresu, jasne uvjete korištenja i politiku privatnosti, sigurnu vezu putem HTTPS-a, pozitivne recenzije i odsutnost signala koji bi ukazivali na prijevaru ili manipulaciju.
+
+Za komunikologe, ovo znači da tehnički i sadržajni aspekti web prisutnosti moraju raditi zajedno. Možete imati izvrstan sadržaj, ali ako stranica nema HTTPS, ako nema jasno navedeno tko stoji iza nje, ako nema politiku privatnosti ili ako korisničke recenzije ukazuju na probleme, signali pouzdanosti su slabi i rangiranje će trpjeti.
+
+
+## SEO u praksi, tri dimenzije optimizacije
+
+SEO ili Search Engine Optimization praksa je poboljšavanja vidljivosti web stranice u organskim, neplaćenim rezultatima pretraživanja. Važno je razumjeti da organski rezultati nisu plaćeni oglasi. Google jasno odvaja oglase, koji se prikazuju na vrhu i dnu stranice s oznakom Sponsored, od organskih rezultata koji se rangiraju isključivo na temelju algoritma. SEO se bavi isključivo organskim rezultatima.
+
+Moderna SEO praksa ima tri dimenzije koje se međusobno dopunjuju.
+
+
+### Sadržajni SEO ili on-page optimizacija
+
+Sadržajni SEO odnosi se na sve što možete kontrolirati na samoj stranici da biste je učinili relevantnijom i korisnijom za ciljane upite.
+
+Istraživanje ključnih riječi temelj je svakog SEO projekta. Radi se o identificiranju riječi i fraza koje vaša ciljna publika upisuje u tražilicu kada traži informacije, proizvode ili usluge iz vašeg područja. Alati poput Google Keyword Plannera, Ubersuggest, Ahrefs ili SEMrush pokazuju koliko često se neka ključna riječ pretražuje, koliko je konkurencija za rangiranje na nju i koje varijacije postoje.
+
+Ali istraživanje ključnih riječi nije samo traženje najpopularnijih pojmova. Često je strateški pametnije ciljati takozvane long-tail ključne riječi, duže i specifičnije fraze koje imaju manji obujam pretraživanja ali i manje konkurencije. Na primjer, restoran ima ogroman obujam pretraživanja ali je nemoguće rangirati se na njega. Restoran s terasom u centru Zagreba ima puno manji obujam ali je mnogo specifičniji, korisnik koji to pretražuje mnogo je bliže odluci o rezervaciji, i konkurencija je upravljiva.
+
+Meta naslov ili title tag kratki je tekst do šezdeset znakova koji se prikazuje kao naslov rezultata u tražilici. Ovo je najvažniji pojedinačni element on-page SEO-a jer istovremeno govori Googleu o čemu je stranica i utječe na odluku korisnika hoće li kliknuti. Dobar meta naslov sadrži ciljanu ključnu riječ, jasno komunicira što korisnik može očekivati i motivira klik. Loš meta naslov je generičan, predug pa ga Google skraćuje trotočkom, ili ne sadrži ključnu riječ.
+
+Meta opis ili meta description kratak je tekst do stotinu šezdeset znakova koji se prikazuje ispod naslova u rezultatima. Google je izričito rekao da meta opis nije faktor rangiranja, ali utječe na stopu klikanja ili CTR što je click-through rate. A stopa klikanja neizravno utječe na rangiranje jer ako korisnici konzistentno biraju vaš rezultat umjesto drugih, to je signal Googleu da je vaš sadržaj relevantan.
+
+Struktura naslova na stranici, od H1 koji je glavni naslov do H2 i H3 podnaslovai, pomaže i korisnicima i Googleu da razumiju hijerarhiju informacija na stranici. Svaka stranica trebala bi imati jedan H1 koji jasno opisuje o čemu je stranica, nakon čega slijede H2 za glavne sekcije i H3 za podsekcije. Ovo se izravno nadovezuje na semantički HTML o kojem smo govorili prošli tjedan.
+
+Sadržaj same stranice najvažniji je element. Google je izuzetno sofisticiran u razumijevanju teksta i semantičkih odnosa između pojmova. Više ne morate doslovno ponavljati ključnu riječ dvadeset puta na stranici. Zapravo, to je kontraproduktivno i Google to prepoznaje kao keyword stuffing, manipulativnu praksu koja može rezultirati penalizacijom. Umjesto toga, pišite prirodno, pokrivajte temu temeljito, koristite povezane pojmove i sinonime i fokusirajte se na to da zaista odgovorite na pitanje korisnika.
+
+Slike zahtijevaju posebnu pažnju. Svaka slika na stranici trebala bi imati alt atribut, kratak tekstualni opis koji govori tražilicama i čitačima ekrana što je na slici. Slike bi trebale biti optimizirane za veličinu jer velika, nekomprimirana fotografija od pet megabajta dramatično usporava stranicu. Moderni formati poput WebP i AVIF nude značajno manju veličinu datoteke uz jednaku vizualnu kvalitetu.
+
+Interno povezivanje, praksa povezivanja stranica unutar vlastite web stranice jedne s drugima, pomaže Googleu razumjeti strukturu web mjesta i relativnu važnost pojedinih stranica. Ako na svoju najvažniju stranicu o proizvodima povezujete iz desetak blog članaka, Googleu šaljete signal da je ta stranica važna. Istovremeno pomažete korisnicima da navigiraju web mjestom i pronalaze povezani sadržaj.
+
+URL struktura također igra ulogu. URL poput www.primjer.hr/proizvodi/zimske-jakne čitljiviji je i informativniji od www.primjer.hr/page?id=47392 i Googleu daje dodatni kontekstualni signal o sadržaju stranice.
+
+
+### Tehnički SEO
+
+Tehnički SEO odnosi se na aspekte web stranice koji nisu vidljivi korisnicima ali utječu na sposobnost tražilica da efikasno puzaju, indeksiraju i rangiraju stranicu.
+
+Brzina stranice i Core Web Vitals o kojima smo govorili prošli tjedan izravno su SEO faktor. Google je potvrdio da je korisničko iskustvo stranice, mjereno kroz LCP, INP i CLS, faktor rangiranja. Stranica koja se sporo učitava neće nužno biti kažnjena, ali ako se dva sadržaja bore za istu poziciju i jedan je na brzoj stranici a drugi na sporoj, brza stranica ima prednost.
+
+Mobilna prilagođenost više nije opcija. Google koristi mobile-first indexing, što znači da za indeksiranje i rangiranje primarno koristi mobilnu verziju vaše stranice, ne desktop verziju. Ako vaša stranica izgleda sjajno na desktopu ali je neupotrebljiva na mobitelu, Google je vidi onako kako je vidi mobilni korisnik. Za komunikologe koji naručuju ili odobravaju web projekte, ovo znači da je mobilna verzija stranice primarna, a desktop je sekundarna.
+
+Robots.txt datoteka, koju smo već spomenuli, govori tražilicama koje dijelove web mjesta smiju a koje ne smiju puzati. Ovo je moćan ali i opasan alat jer pogrešna konfiguracija može sakriti cijelo web mjesto od tražilica. Čest je slučaj da se tijekom razvoja web stranice postavi robots.txt koji blokira Googlebota da se verzija u izradi ne indeksira, a potom se nakon pokretanja stranice zaboravi ukloniti ta zabrana.
+
+Sitemap datoteka u XML formatu eksplicitno govori tražilicama koje stranice postoje na web mjestu i kada su zadnji put ažurirane. Za velika web mjesta s tisućama stranica, sitemap je praktički neophodan jer Googlebot ne može efikasno otkriti sve stranice sam.
+
+Kanonske oznake ili canonical tags rješavaju problem dupliciranog sadržaja. Ako isti sadržaj postoji na više URL-ova, što se događa češće nego što mislite jer www.primjer.hr, primjer.hr i primjer.hr/index.html mogu sve voditi na isti sadržaj, kanonska oznaka govori Googleu koji od tih URL-ova je glavni i koji treba indeksirati.
+
+Strukturirani podaci i shema markup, o kojima ćemo govoriti detaljnije u sljedećem dijelu, tehnički su element koji Google koristi za razumijevanje konteksta sadržaja i za generiranje bogatih rezultata.
+
+Sigurnost stranice, dakle HTTPS, ne samo da je faktor rangiranja nego je i preduvjet za mnoge moderne web funkcionalnosti. Preglednici sve agresivnije upozoravaju korisnike kada posjete stranicu bez HTTPS-a, što izravno utječe na povjerenje i stopu napuštanja.
+
+
+### Izvanstranični SEO ili off-page optimizacija
+
+Izvanstranični SEO odnosi se na signale izvan vaše web stranice koji utječu na njezino rangiranje. Najvažniji od tih signala su povratne poveznice ili backlinks, poveznice s drugih web stranica koje upućuju na vašu.
+
+Google tretira povratne poveznice kao glasove povjerenja. Kada ugledna web stranica postavi poveznicu na vaš sadržaj, to je signal Googleu da je vaš sadržaj vrijedan i pouzdan. Kvaliteta tih poveznica neizmjerno je važnija od kvantitete. Jedna poveznica s web stranice nacionalne novinske kuće poput Jutarnjeg lista ili Indexa vrednija je od tisuću poveznica s nepoznatih direktorija i forum potpisa.
+
+Organski načini stjecanja povratnih poveznica uključuju stvaranje izuzetno kvalitetnog sadržaja koji ljudi spontano dijele i na koji se referiraju, istraživačke izvještaje i originalne podatke koji su korisni novinarima i blogerima, gostujuće članke na relevantnim publikacijama, sudjelovanje u intervjuima i panel diskusijama te izgradnju profesionalnih odnosa u digitalnoj zajednici.
+
+Socijalni signali, dakle dijeljenje sadržaja na društvenim mrežama, nisu izravni faktor rangiranja prema Googleovim izjavama. Ali posredni učinak postoji jer sadržaj koji se široko dijeli na društvenim mrežama ima veću šansu da ga netko citira na svom blogu ili web stranici, što stvara povratne poveznice.
+
+Lokalni SEO posebna je kategorija izvanstraničnog SEO-a relevantna za organizacije s fizičkom lokacijom. Google Business Profile, besplatan alat koji svakoj organizaciji omogućuje upravljanje prikazom u Google Maps i lokalnim rezultatima pretraživanja, ključan je za vidljivost u lokalnom kontekstu. Za restoran u Zagrebu, kvalitetno ispunjen Google Business Profile s točnim radnim vremenom, fotografijama, recenzijama i kategorijom često je važniji od tehničkog SEO-a web stranice.
+
+
+## Strukturirani podaci i bogati rezultati
+
+Kada pretražujete na Googleu, primijetit ćete da nisu svi rezultati jednaki u izgledu. Neki rezultati prikazuju samo naslov, URL i kratak opis. Ali drugi prikazuju ocjene sa zvjezdicama, cijene proizvoda, vrijeme kuhanja recepta, datume događanja, odgovore na česta pitanja ili čak interaktivne karusele. Ti obogaćeni prikazi zovu se bogati rezultati ili rich results i nastaju kada web stranica koristi strukturirane podatke.
+
+Strukturirani podaci su standardizirani format za opisivanje sadržaja web stranice na način koji tražilice mogu jednoznačno razumjeti. Najrašireniji standard zove se Schema.org, zajednička inicijativa Googlea, Binga, Yahooa i Yandexa. Schema.org definira vokabular za opisivanje entiteta poput proizvoda, recepata, događanja, organizacija, osoba, članka, recenzija i stotina drugih tipova.
+
+U praksi, strukturirani podaci dodaju se u HTML stranice kao JSON-LD blok, komad strukturiranog koda koji opisuje sadržaj stranice u formatu koji tražilice razumiju. Na primjer, stranica o receptu može sadržavati strukturirane podatke koji specificiraju naziv jela, vrijeme pripreme, sastojke, kalorije i ocjenu korisnika. Google koristi te podatke da prikaže recept s fotografijom, vremenom kuhanja i ocjenom izravno u rezultatima pretraživanja.
+
+Zašto je ovo važno za komunikologe? Zato što bogati rezultati dramatično povećavaju vidljivost i stopu klikanja. Rezultat s ocjenama, cijenama i slikama privlači oko mnogo više od običnog tekstualnog rezultata. Studije pokazuju da bogati rezultati mogu povećati stopu klikanja za 20 do 30 posto u usporedbi s običnim rezultatima na istoj poziciji.
+
+Za komunikologe na hrvatskom tržištu, strukturirani podaci posebno su relevantni za organizacije u turizmu jer Schema za hotele, restorane i turističke atrakcije omogućuje bogat prikaz u rezultatima, za organizatore događanja jer Schema za događanja može prikazati datum, mjesto i cijenu izravno u rezultatima, za e-trgovinu jer Schema za proizvode prikazuje cijenu, dostupnost i ocjene i za medije jer Schema za članak prikazuje autora, datum objave i naslov u News rezultatima.
+
+Implementacija strukturiranih podataka tehnički je zadatak, ali odluka o tome koje podatke označiti strateška je odluka u kojoj komunikolog treba sudjelovati. Google nudi besplatan alat Rich Results Test koji vam omogućuje da provjerite jesu li strukturirani podaci na vašoj stranici ispravno implementirani i koje bogate rezultate mogu generirati.
+
+
+## Anatomija stranice s rezultatima pretraživanja
+
+Da bismo razumjeli za što se zapravo natječete u SEO-u, moramo razumjeti kako danas izgleda stranica s rezultatima pretraživanja ili SERP (Search Engine Results Page). Stranica s rezultatima Googlea dramatično se promijenila u posljednjih nekoliko godina i nastavlja se mijenjati ubrzanim tempom.
+
+Na vrhu stranice obično se nalaze plaćeni oglasi označeni kao Sponsored. Ovisno o upitu, može ih biti do četiri. Za izrazito komercijalne upite, poput kupovina laptopa online, oglasi mogu zauzeti cijeli vidljivi dio ekrana na mobitelu tako da korisnik mora scrollati da bi uopće vidio organske rezultate.
+
+Ispod ili između oglasa pojavljuju se različiti elementi. Featured snippet ili istaknuti isječak odgovor je koji Google izvlači iz jedne od rangiranih stranica i prikazuje u istaknutom okviru na vrhu organskih rezultata. Ovo se naziva pozicija nula jer se pojavljuje iznad prvog organskog rezultata. Za informacijske upite, zauzimanje pozicije istaknutog isječka može dramatično povećati promet.
+
+People Also Ask ili Pitanja koja ljudi također postavljaju okvir je s proširivim pitanjima i odgovorima povezanim s upitom. Svaki odgovor dolazi s web stranice i sadrži poveznicu. Pojavljivanje u ovom okviru dodatni je izvor vidljivosti.
+
+Knowledge Panel ili panel znanja pojavljuje se za upite o poznatim entitetima poput osoba, organizacija, mjesta i koncepata. Podatke crpi iz svog grafa znanja koji se oslanja na izvore poput Wikipedije i autoritativnih baza podataka.
+
+Local Pack ili lokalni paket prikazuje tri lokalna rezultata s mapom za upite s lokalnom namjerom. Za upit restoran Zagreb, Google prikazuje tri restorana na karti s ocjenama, radnim vremenom i poveznicom na detaljniji profil. Pojavljivanje u lokalnom paketu izuzetno je vrijedno za lokalne organizacije.
+
+Image Pack ili paket slika pojavljuje se za upite gdje Google procijeni da su vizualni rezultati korisni. Klik na sliku vodi na web stranicu na kojoj se slika nalazi, što znači da kvalitetne i dobro optimizirane slike mogu generirati promet.
+
+Video rezultati prikazuju se za upite gdje Google smatra da je video najprikladniji format odgovora. YouTube video rezultati posebno su istaknuti jer je YouTube Googleova platforma.
+
+AI Overview, relativno nov element, prikazuje AI-generirani sažetak odgovora na vrhu rezultata za mnoge informacijske upite. Ovo je možda najznačajnija promjena u tražilicama u posljednjim godinama i o njoj ćemo detaljnije govoriti u dijelu o AI tražilicama.
+
+Za komunikologe, ključni uvid jest da SEO više nije natjecanje samo za deset plavih poveznica na stranici rezultata. To je natjecanje za prisutnost u različitim elementima SERP-a, od istaknutih isječaka i panela znanja do lokalnih rezultata, slika i videa. Strategija sadržaja koja cilja samo tradicionalne organske rezultate propušta mnoge prilike za vidljivost.
+
+
+## AI tražilice i nova paradigma pretraživanja
+
+Pojava generativne AI označila je početak možda najvažnije transformacije u pretraživanju od nastanka Googlea. Moramo ovome posvetiti ozbiljnu pažnju jer implikacije za komunikacijsku struku su dalekosežne.
+
+Google je uveo AI Overviews, ranije poznate kao Search Generative Experience ili SGE, koji prikazuju AI-generirani sažetak odgovora na vrhu mnogih rezultata pretraživanja. Umjesto da korisnik sam čita i sintetizira informacije s više web stranica, AI to radi za njega i prikazuje koherentan odgovor s poveznicama na izvorne stranice.
+
+Istovremeno su se pojavile potpuno nove AI tražilice. Perplexity AI funkcionira kao konverzacijski pretraživač koji sintetizira odgovore iz više web izvora i prikazuje ih s citacijama. ChatGPT s web pristupom omogućuje konverzacijsko pretraživanje gdje korisnik postavlja pitanja i dobiva razrađene odgovore. Bing je integrirao AI funkcionalnosti u pretraživanje kroz Copilot.
+
+Što ovo znači za organizacije čija vidljivost ovisi o tome da ih ljudi pronađu putem pretraživanja? Dva su ključna izazova.
+
+Prvi izazov je zero-click pretraživanje. Ako AI pruža odgovor izravno u rezultatima pretraživanja, korisnik možda nikada ne posjeti izvornu web stranicu. Ovo je trend koji se pojačava iz godine u godinu. Prema nekim procjenama, više od 60% Google pretraživanja već završava bez klika na bilo koji rezultat jer korisnik pronađe odgovor izravno na stranici s rezultatima, bilo kroz istaknuti isječak, panel znanja ili AI Overview. Za organizacije koje se oslanjaju na organski promet za generiranje poslovnih rezultata, ovo je fundamentalni izazov.
+
+Drugi izazov je gubitak kontrole nad narativom. Kada AI sintetizira vaš sadržaj i prikazuje ga u svom kontekstu, gubite kontrolu nad tim kako je vaša poruka prezentirana. AI može izvaditi jednu rečenicu iz vašeg članka, staviti je u kontekst s informacijama iz pet drugih izvora i predstaviti nešto što ne odgovara vašoj originalnoj namjeri. Za komunikologe koji su naviknuli na kontroliranje poruke, ovo je tektonski pomak.
+
+Ali postoje i prilike. AI tražilice navode izvore, što znači da sadržaj koji je prepoznat kao autoritativan i pouzdan ima šansu biti citiran u AI odgovorima. Organizacije s jakim E-E-A-T signalima, originalnim istraživanjima i ekspertizom imaju prednost jer su upravo to izvori koje AI preferira citirati. Također, AI odgovori često generiraju dodatna pitanja i dublje istraživanje, što može rezultirati posjetima web stranicama korisnika koji traže više detalja od onoga što im AI pruža.
+
+Za komunikologe, praktična implikacija jest sljedeća. SEO strategija mora se prilagoditi novoj stvarnosti. To znači fokus na stvaranje sadržaja koji je dovoljno dubok i autoritativan da ga AI citira, optimizaciju za istaknute isječke i strukturirane podatke koji su temelj za AI odgovore, izgradnju prepoznatljivosti brenda jer korisnici koji vide ime vaše organizacije u AI odgovoru moraju znati da je pouzdana te diversifikaciju izvora prometa jer oslanjanje isključivo na Google postaje sve rizičnije.
+
+
+## Algoritamske promjene i kako ih razumjeti
+
+Google ažurira svoj algoritam tisuće puta godišnje. Većina tih ažuriranja je mala i neprimjetna. Ali nekoliko puta godišnje Google objavljuje takozvane core updates, velika ažuriranja koja mogu značajno promijeniti rangiranje na cijelom webu.
+
+Za komunikologe je važno razumjeti da pad u rangiranju nakon algoritamskog ažuriranja ne znači nužno da ste nešto pogriješili. Može značiti da su konkurenti napredovali, da je Google promijenio razumijevanje namjere za određene upite ili da su se standardi kvalitete podigli. Jednako tako, porast u rangiranju ne znači da možete prestati raditi na sadržaju.
+
+Povijesno najvažnija Googleova ažuriranja oblikovala su moderni SEO. Panda ažuriranje iz 2011. ciljalo je stranice s niskom kvalitetom sadržaja i takozvane content farms, stranice koje su masovno proizvodile plitke članke samo da bi rangirale za što više ključnih riječi. Penguin ažuriranje iz 2012. ciljalo je manipulativne prakse stjecanja poveznica. Hummingbird iz 2013. unaprijedio je Googleovo razumijevanje semantike i omogućio bolje odgovore na konverzacijske upite. BERT iz 2019. uveo je napredni model obrade prirodnog jezika koji je dramatično poboljšao razumijevanje konteksta i nijansa u upitima. Helpful Content Update iz 2022. nagrađuje sadržaj pisan za ljude, ne za tražilice.
+
+Obrazac je jasan. Svako veliko ažuriranje pomiče Google u istom smjeru, prema boljem razumijevanju korisnikove namjere i prema nagrađivanju sadržaja koji zaista pomaže korisnicima. Organizacije koje su uvijek slijedile tu logiku, stvaranje kvalitetnog sadržaja za ljude, rijetko su pogođene negativnim ažuriranjima. Organizacije koje su pokušavale prevariti algoritam gotovo uvijek su na kraju bile penalizirane.
+
+
+## Crna strana SEO-a
+
+Razgovor o SEO-u ne bi bio potpun bez iskrenog pogleda na manipulativne prakse koje postoje u industriji. Za komunikologe koji često surađuju s SEO agencijama i konzultantima, sposobnost razlikovanja legitimnih od problematičnih praksi praktična je vještina.
+
+SEO industrija tradicionalno dijeli prakse na white hat, legitimne i etičke, i black hat, manipulativne i rizične. Realnost je da postoji spektar između ta dva ekstrema, ali neke prakse jasno su s jedne ili druge strane.
+
+Kupovina poveznica praksa je u kojoj organizacija plaća drugim web stranicama da postave poveznicu na njezin sadržaj. Google ovo eksplicitno zabranjuje i aktivno detektira. Penalizacije mogu biti ozbiljne, od pada u rangiranju do potpunog uklanjanja iz indeksa.
+
+Link farms mreže su web stranica koje postoje isključivo da bi jedne druge povezivale, stvarajući lažne signale autoriteta. Google ih je sofisticirano prepoznavao još od Penguin ažuriranja.
+
+Keyword stuffing pretjerano je ponavljanje ključnih riječi na stranici s ciljem manipulacije rangiranja. Na primjer, tekst koji nepotrebno ponavlja ključnu riječ u svakoj rečenici. Google ovo prepoznaje i penalizira.
+
+Skriveni tekst praksa je dodavanja teksta na stranicu koji je nevidljiv korisnicima, na primjer bijeli tekst na bijeloj pozadini, ali vidljiv tražilicama. Ovo je bila popularna taktika u ranim danima SEO-a ali je odavno detektibilna.
+
+Doorway pages stranice su kreirane isključivo za rangiranje na specifične ključne riječi koje odmah preusmjeravaju korisnika na drugu stranicu. Google ih eksplicitno zabranjuje.
+
+Content spinning praksa je automatskog prepisivanja postojećeg sadržaja zamjenom riječi sinonimima da bi se stvorio naizgled originalan tekst. U doba generativne AI, ova praksa evoluirala je u korištenje AI-ja za masovnu proizvodnju sadržaja niske kvalitete.
+
+Za komunikologe, prava opasnost od crnih praksi nije samo penalizacija od Googlea. To je i reputacijski rizik. Ako se sazna da organizacija koristi manipulativne SEO prakse, to može narušiti povjerenje korisnika, poslovnih partnera i javnosti. U komunikacijskoj struci, povjerenje je valuta i ulagati u prakse koje ga ugrožavaju kratkovidna je strategija.
+
+Kako prepoznati sumnjive SEO ponude? Agencija ili konzultant koji garantira prvu poziciju na Googleu je sumnjiv jer nitko ne može to garantirati. Agencija koja ne može objasniti što konkretno radi da bi poboljšala rangiranje također je sumnjiva. Ako su rezultati dramatični i trenutni umjesto postupni, postoji razlog za oprez jer legitimni SEO donosi rezultate kroz mjesece, ne dane. Ako agencija inzistira na tajnosti svoje metode i ne dopušta transparentnost, to je crvena zastavica.
+
+
+## Mjerenje i alati
+
+Moderni SEO ne funkcionira bez podataka. Komunikolog ne mora biti analitičar, ali mora razumjeti temeljne metrike i znati koristiti osnovne alate.
+
+Google Search Console besplatan je alat koji svaka organizacija s web stranicom mora koristiti. Pokazuje za koje upite se vaša stranica pojavljuje u rezultatima, na kojoj poziciji, koliko puta je prikazana i koliko je puta kliknuta. Također prikazuje tehničke probleme koje je Googlebot otkrio, status indeksiranja vaših stranica, upozorenja o sigurnosnim problemima i mnogo više.
+
+Google Analytics, sada u verziji GA4, mjeri ponašanje korisnika na vašoj stranici nakon što su stigli. Odakle dolaze, koje stranice posjećuju, koliko dugo ostaju, koje akcije obavljaju. Dok Search Console pokazuje kako ste vidljivi u pretraživanju, Analytics pokazuje što se događa kada korisnici dođu na vašu stranicu.
+
+PageSpeed Insights, o kojem smo govorili prošli tjedan, mjeri brzinu stranice i Core Web Vitals metrike.
+
+Specijalizirani SEO alati poput Ahrefsa, SEMrusha i Moza nude dublje analize uključujući istraživanje ključnih riječi, analizu povratnih poveznica, praćenje pozicija rangiranja, analizu konkurencije i identifikaciju tehničkih problema. Ovi alati su plaćeni i pretežno ih koriste SEO stručnjaci i agencije, ali komunikolozi koji razumiju podatke koje pružaju mogu donositi bolje strateške odluke.
+
+Temeljne SEO metrike koje komunikolog mora razumjeti uključuju sljedeće. Organski promet je broj posjetitelja koji dolaze na stranicu putem organskih rezultata pretraživanja. Ovo je primarna metrika uspješnosti SEO aktivnosti. Pozicija rangiranja je mjesto na kojem se vaša stranica pojavljuje u rezultatima za specifične upite. Općenito, rezultati na prvoj stranici dobivaju veliku većinu klikova, a rezultati izvan prve tri pozicije dobivaju dramatično manje klikova od prvih triju. Stopa klikanja ili CTR postotak je korisnika koji vide vaš rezultat i kliknu na njega. Niska stopa klikanja na visokoj poziciji sugerira da su naslov i opis vaše stranice neatraktivni. Stopa napuštanja ili bounce rate postotak je korisnika koji posjete stranicu i odu bez ikakve interakcije. Visoka stopa napuštanja sugerira da sadržaj ne odgovara očekivanjima korisnika, što je signal neusklađenosti s namjerom pretraživanja. Konverzije su akcije koje želite da korisnici obave na vašoj stranici, od kupovine i prijave na newsletter do preuzimanja dokumenta ili kontaktiranja organizacije. Konverzije su konačna mjera uspješnosti jer sam promet bez konverzija nema poslovnu vrijednost.
+
+
+## Lokalno pretraživanje i zašto je važno za hrvatski kontekst
+
+Lokalno pretraživanje posebna je kategorija koja zaslužuje pažnju, osobito za komunikologe koji rade s organizacijama usmjerenima na hrvatsko tržište. Prema Googleovim podacima, gotovo trećina svih mobilnih pretraživanja ima lokalnu namjeru, a taj udio raste iz godine u godinu.
+
+Kada korisnik u Zagrebu upiše zubni liječnik ili frizerski salon, Google prepoznaje lokalnu namjeru i prikazuje rezultate prilagođene lokaciji korisnika. Na vrhu se pojavljuje Local Pack s kartom i tri lokalna rezultata. Za organizaciju s fizičkom lokacijom, pojavljivanje u ovom paketu može biti važnije od rangiranja na prvoj poziciji organskih rezultata.
+
+Google Business Profile, ranije poznat kao Google My Business, ključan je alat za lokalni SEO. Potpuno ispunjen profil s točnim informacijama o adresi, radnom vremenu, telefonskom broju, kategoriji poslovanja, fotografijama i odgovorima na recenzije signalizira Googleu da je organizacija legitimna i aktivna.
+
+Recenzije korisnika izuzetno su važan signal u lokalnom SEO-u. Google prikazuje prosječnu ocjenu i broj recenzija izravno u rezultatima. Organizacije s više pozitivnih recenzija ne samo da rangiraju bolje u lokalnim rezultatima nego i privlače više klikova jer korisnici prirodno preferiraju rezultate s visokim ocjenama.
+
+Za komunikologe, upravljanje recenzijama dio je komunikacijske strategije. To uključuje poticanje zadovoljnih korisnika da ostave recenziju, profesionalno odgovaranje na negativne recenzije te rješavanje problema na koje recenzije ukazuju. Odgovor na negativnu recenziju koji je empatičan, konstruktivan i usmjeren na rješenje može pretvoriti negativno iskustvo u pozitivan signal za potencijalne korisnike koji čitaju recenzije.
+
+NAP konzistentnost, akronim za Name, Address, Phone, važan je lokalni SEO signal. Ime organizacije, adresa i telefonski broj moraju biti identični na svim mjestima gdje se pojavljuju na webu, od web stranice i Google Business Profilea do poslovnih direktorija i profila na društvenim mrežama. Nekonzistentnosti zbunjuju Google i smanjuju povjerenje u točnost informacija.
+
+Za hrvatski kontekst, relevantni poslovni direktoriji uključuju Zlatne stranice, Njuškalo, TripAdvisor za turizam i ugostiteljstvo, te industrijski specifične direktorije. Prisutnost na ovim platformama s konzistentnim i točnim informacijama dio je lokalnog SEO-a.
+
+
+## Hrvatski kontekst pretraživanja
+
+Google ima tržišni udio od preko 95% u Hrvatskoj, što znači da je SEO za hrvatsko tržište de facto optimizacija za Google. Bing, DuckDuckGo i druge tražilice imaju marginalan udio.
+
+Pretraživanje na hrvatskom jeziku ima specifičnosti koje komunikolozi moraju razumjeti. Hrvatsko pretraživačko tržište značajno je manje od engleskog, što znači da su obujmi pretraživanja za većinu ključnih riječi niži. To može biti prednost jer je i konkurencija manja pa je lakše rangirati se za specifične ključne riječi na hrvatskom nego na engleskom. S druge strane, manji obujam znači niži potencijal prometa za svaku pojedinačnu ključnu riječ.
+
+Dvojezičnost je faktor na hrvatskom tržištu. Mnogi korisnici pretražuju i na hrvatskom i na engleskom, osobito za tehničke teme, proizvode i usluge. Organizacije moraju donijeti stratešku odluku, ciljaju li samo hrvatske upite, samo engleske, ili oboje. Za organizacije u turizmu, dvojezična strategija je gotovo nužna jer strani gosti pretražuju na engleskom ili na svom jeziku.
+
+Google je relativno sofisticiran u razumijevanju hrvatskog jezika, uključujući deklinacije, konjugacije i specifičnosti slavenske morfologije. Pretraživanje za restorani u Zagrebu i restoran Zagreb dat će slične rezultate jer Google razumije da se radi o istoj namjeri. Ipak, razlike u formulaciji upita postoje i istraživanje ključnih riječi na hrvatskom zahtijeva razumijevanje kako hrvatski korisnici zapravo formuliraju upite.
+
+Hrvatski medijski prostor relativno je mali, što znači da je izgradnja autoriteta kroz medijsko pokrivanje lakša ali i manje diverzificirana. Nekoliko ključnih portala poput Indexa, Jutarnjeg lista, Večernjeg lista, 24sata, Net.hr-a i Tportala dominira online medijskim prostorom. Poveznica s bilo kojeg od ovih portala značajan je SEO signal za hrvatsko tržište.
+
+E-trgovina u Hrvatskoj kontinuirano raste, što znači da transakcijski upiti postaju sve važniji. Organizacije koje prodaju online moraju optimizirati stranice proizvoda za transakcijske upite s ciljanim ključnim riječima, strukturiranim podacima o proizvodima i jasnim pozivima na akciju.
+
+
+## Pretraživanje izvan Googlea
+
+Iako je Google dominantan, komunikolozi moraju razumjeti da se pretraživanje ne događa samo na Googleu. Svaka platforma s funkcijom pretraživanja ima svoj algoritam i svoju logiku rangiranja.
+
+YouTube je druga najveća tražilica na svijetu. Optimizacija za YouTube uključuje naslov videa s ključnim riječima, detaljan opis, oznake, kvalitetnu naslovnu sliku, titlove i angažman gledatelja kroz komentare, lajkove i dijeljenje. Za organizacije koje koriste video kao komunikacijski kanal, YouTube SEO jednako je važan kao i Google SEO.
+
+Pretraživanje na društvenim mrežama postaje sve važnije, osobito među mlađom demografijom. TikTok se za mnoge mlađe korisnike pretvorio u primarnu tražilicu za preporuke restorana, putovanja, mode i životnog stila. Instagram pretraživanje koristi se za otkrivanje brendova i proizvoda. LinkedIn pretraživanje koristi se za profesionalne kontakte i poslovne mogućnosti. Svaka od ovih platformi ima vlastite signale rangiranja i zahtijeva specifičnu strategiju optimizacije.
+
+Amazon pretraživanje funkcionira prema sasvim drugačijoj logici od Googlea. Na Amazonu su ključni faktori rangiranja prodajni rezultati, ocjene proizvoda, cijena i konverzijska stopa. Za organizacije koje prodaju na Amazonu, razumijevanje ove logike važnije je od poznavanja Googleovog algoritma.
+
+App Store Optimization ili ASO optimizacija je za aplikacije u Apple App Storeu i Google Play Storeu. Ako vaša organizacija ima mobilnu aplikaciju, ASO je ključan za njezinu vidljivost jer korisnici aplikacije najčešće pronalaze pretraživanjem unutar trgovine.
+
+
+## Na kraju ovog poglavlja
+
+Pronalažljivost nije tehničko pitanje koje možete delegirati IT odjelu i zaboraviti. To je strateško komunikacijsko pitanje koje utječe na svaki aspekt digitalne prisutnosti vaše organizacije. Svaki komad sadržaja koji objavite na webu, od stranice proizvoda do blog članka i objave na društvenoj mreži, postoji unutar ekosustava pretraživanja koji određuje hoće li taj sadržaj doći do publike.
+
+Moderni SEO nije trik. Nije skup tehničkih prečica za varanje algoritma. To je disciplina koja zahtijeva razumijevanje korisnika i njihovih namjera, stvaranje sadržaja koji zaista pomaže, tehničku ispravnost web prisutnosti, strpljivu izgradnju autoriteta i pouzdanosti te kontinuirano mjerenje i prilagođavanje. Za komunikologe, ove vještine nisu opcija nego preduvjet za kompetentno profesionalno djelovanje.
+
+Sljedeći tjedan govorit ćemo o vrednovanju informacija i provjeri izvora na webu. Veza s današnjom temom je izravna jer ako razumijete kako tražilice procjenjuju kvalitetu i pouzdanost sadržaja, razumjet ćete i zašto je kritičko vrednovanje informacija temeljna kompetencija u digitalnom okruženju.
+
+::: {.callout-note}
+## Ključni zaključci
+
+Tražilice funkcioniraju u tri faze od puzanja i indeksiranja do rangiranja, a komunikolozi mogu utjecati na svaku od njih.
+
+Namjera pretraživanja, dakle ono što korisnik zapravo želi postići, najvažniji je koncept u modernom SEO-u i mora se razumjeti prije pisanja bilo kakvog sadržaja za web.
+
+E-E-A-T signali iskustva, stručnosti, autoriteta i pouzdanosti određuju što Google smatra kvalitetnim sadržajem.
+
+SEO ima tri dimenzije, sadržajnu, tehničku i izvanstraničnu, a sve tri moraju funkcionirati zajedno.
+
+Strukturirani podaci omogućuju bogate rezultate koji dramatično povećavaju vidljivost i stopu klikanja.
+
+AI tražilice fundamentalno mijenjaju odnos između korisnika, tražilice i sadržaja, stvarajući i izazove i prilike za komunikologe.
+
+Lokalni SEO ključan je za organizacije s fizičkom prisutnošću, osobito na hrvatskom tržištu.
+
+Pretraživanje se ne događa samo na Googleu jer YouTube, društvene mreže i specijalizirane platforme imaju vlastite algoritme koje komunikolozi trebaju razumjeti.
+
+SEO nije jednokratni projekt nego kontinuirani proces mjerenja, analize i prilagodbe.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 3 bavit će se vrednovanjem informacija i provjerom izvora na webu.
+
+Prije trećeg predavanja napravite četiri stvari.
+
+Prvo, odaberite tri ključne riječi relevantne za neko područje koje vas zanima i pretražite ih na Googleu. Za svaku od njih zabilježite koje elemente SERP-a vidite, postoji li istaknuti isječak, lokalni paket, pitanja koja ljudi postavljaju, AI Overview, video rezultati ili nešto drugo. Usporedite koliko prostora zauzimaju organski rezultati u odnosu na sve ostale elemente.
+
+Drugo, otvorite Google Search Console za neku web stranicu kojoj imate pristup, ili proučite javno dostupne materijale o korištenju ovog alata, i identificirajte pet upita za koje se ta stranica pojavljuje u rezultatima. Za svaki zabilježite prosječnu poziciju i stopu klikanja.
+
+Treće, pronađite jednu web stranicu hrvatske organizacije i analizirajte njezinu on-page optimizaciju. Pogledajte meta naslov i opis koristeći preglednik i Developer Tools, provjerite koristi li semantičke HTML oznake, ima li slike alt atribute i kakva je struktura naslova na stranici.
+
+Četvrto, pretražite istu temu na Googleu i na jednoj AI tražilici poput Perplexityja. Usporedite iskustvo, koji format odgovora vam je korisniji, koliko dugo traje pronalaženje odgovora i koliko su informacije pouzdane. Razmislite o implikacijama razlika za komunikacijsku strategiju.
+
+
+## Dodatno čitanje
+
+Obavezno je proučiti Google Search Central dokumentaciju pod naslovom Search Engine Optimization Starter Guide, službeni Googleov vodič za SEO koji je pristupačan i temeljit.
+
+Za dublje razumijevanje preporučuje se sljedećih nekoliko izvora.
+
+Google Search Central blog redovito objavljuje informacije o promjenama u algoritmu, nove funkcionalnosti u rezultatima pretraživanja i praktične savjete. Čitanje ovog bloga najizravniji je način da budete u tijeku s promjenama.
+
+Moz Beginner's Guide to SEO besplatan je i izuzetno temeljit vodič za sve aspekte SEO-a, od tehničkog do sadržajnog i izvanstraničnog. Idealan je za komunikologe koji žele dublje razumijevanje bez pretjerano tehničkog jezika.
+
+Ahrefs Blog objavljuje detaljne analize i studije slučaja o SEO strategijama, podržane podacima. Posebno su korisni članci o istraživanju ključnih riječi i analizi povratnih poveznica.
+
+Google Quality Raters Guidelines dokument je koji Google koristi za obuku ljudskih ocjenjivača kvalitete pretraživanja. Čitanje ovog dokumenta pruža uvid u to kakav sadržaj Google smatra kvalitetnim.
+
+Search Engine Journal i Search Engine Land dva su najuglednija portala o pretraživačkom marketingu koji pokrivaju najnovije vijesti, analize i praktične savjete.
+
+Schema.org dokumentacija referentni je izvor za sve tipove strukturiranih podataka i korisna je za razumijevanje mogućnosti bogatih rezultata.
+
+Google Rich Results Test besplatan je alat za provjeru strukturiranih podataka na bilo kojoj web stranici.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| SEO | Search Engine Optimization, praksa poboljšavanja vidljivosti u organskim rezultatima pretraživanja |
+| SERP | Search Engine Results Page, stranica s rezultatima pretraživanja |
+| Organski rezultati | Neplaćeni rezultati pretraživanja rangirani algoritmom |
+| Crawling ili puzanje | Proces automatskog otkrivanja i dohvaćanja web stranica od strane bota tražilice |
+| Indeksiranje | Proces analize i pohranjivanja sadržaja web stranica u bazu podataka tražilice |
+| Rangiranje | Proces određivanja redoslijeda rezultata za specifični upit |
+| Googlebot | Googleov automatski program za puzanje weba |
+| Namjera pretraživanja | Cilj koji korisnik želi postići upisivanjem upita u tražilicu |
+| E-E-A-T | Experience, Expertise, Authoritativeness, Trustworthiness, Googleov okvir za procjenu kvalitete sadržaja |
+| YMYL | Your Money or Your Life, kategorija sadržaja koji može utjecati na zdravlje, financije ili sigurnost korisnika |
+| Ključna riječ | Riječ ili fraza koju korisnici upisuju u tražilicu |
+| Long-tail ključna riječ | Duža i specifičnija fraza pretraživanja s manjim obujmom ali višom namjerom |
+| Meta naslov ili title tag | Naslov stranice prikazan u rezultatima pretraživanja |
+| Meta opis | Kratki opis stranice prikazan u rezultatima pretraživanja |
+| Alt atribut | Tekstualni opis slike za tražilice i čitače ekrana |
+| Backlink ili povratna poveznica | Poveznica s druge web stranice koja upućuje na vašu |
+| Interno povezivanje | Praksa povezivanja stranica unutar istog web mjesta |
+| Robots.txt | Tekstualna datoteka koja daje upute tražilicama o puzanju web mjesta |
+| XML Sitemap | Datoteka koja navodi sve stranice na web mjestu za tražilice |
+| Canonical tag | Oznaka koja identificira primarnu verziju stranice kada postoje duplikati |
+| Strukturirani podaci | Standardizirani format za opisivanje sadržaja razumljiv tražilicama |
+| Schema.org | Zajednički standard za vokabular strukturiranih podataka |
+| Rich results ili bogati rezultati | Obogaćeni prikazi u rezultatima pretraživanja s dodatnim vizualnim elementima |
+| Featured snippet ili istaknuti isječak | Istaknut odgovor na vrhu organskih rezultata |
+| Knowledge Panel | Panel s informacijama o poznatim entitetima u rezultatima pretraživanja |
+| Local Pack | Prikaz tri lokalna rezultata s kartom |
+| Google Business Profile | Besplatan Googleov alat za upravljanje prikazom organizacije u lokalnim rezultatima |
+| CTR ili click-through rate | Stopa klikanja, postotak korisnika koji kliknu na rezultat |
+| Bounce rate ili stopa napuštanja | Postotak korisnika koji napuste stranicu bez interakcije |
+| Core update | Veliko ažuriranje Googleovog algoritma rangiranja |
+| Mobile-first indexing | Googleov pristup indeksiranja koji primarno koristi mobilnu verziju stranice |
+| AI Overview | AI-generirani sažetak odgovora prikazan na vrhu Googleovih rezultata |
+| Zero-click pretraživanje | Pretraživanje koje završava bez klika na bilo koji rezultat |
+| NAP konzistentnost | Konzistentnost imena, adrese i telefonskog broja organizacije na webu |
+| ASO | App Store Optimization, optimizacija vidljivosti mobilnih aplikacija u trgovinama |
+| Google Search Console | Besplatan Googleov alat za praćenje vidljivosti u pretraživanju |
+| Google Analytics | Googleov alat za analizu ponašanja korisnika na web stranici |
+| White hat SEO | Legitimne i etičke SEO prakse u skladu s Googleovim smjernicama |
+| Black hat SEO | Manipulativne SEO prakse koje krše Googleove smjernice |
+| Keyword stuffing | Pretjerano ponavljanje ključnih riječi na stranici |
+| Content farm | Web stranica koja masovno proizvodi sadržaj niske kvalitete za rangiranje |

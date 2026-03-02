@@ -1,17 +1,404 @@
 ---
-title: "Tjedan 4: Sustavi za upravljanje sadržajem i moderni web stack"
-subtitle: "Od WordPressa do headless CMS-a i web graditelja"
-author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [platforme, cms]
+title: "Sustavi za upravljanje sadržajem i moderni web stack"
+subtitle: "CMS platforme, no-code alati i strateški izbor tehnologije"
+date: 2025-02-22
+categories: [CMS, web stack, platforme]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje daje pregled načina na koji se danas grade i upravljaju web stranice, od tradicionalnih CMS platformi poput WordPressa do headless sustava, platformi s podrškom za trgovinu i modernih web graditelja.
+  Ovo predavanje pruža pregled sustava za upravljanje sadržajem od WordPressa i tradicionalnih CMS platformi do headless arhitektura, no-code alata i modernih web stackova. Za komunikologe, izbor CMS-a strateška je odluka koja određuje koliko brzo mogu objavljivati sadržaj, koliko je web prisutnost fleksibilna, sigurna i skalabilna te koliko ovise o tehničkom timu za svakodnevne operacije.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Objasniti što je sustav za upravljanje sadržajem i zašto je njegova uloga ključna za organizacijsku web prisutnost
+2. Usporediti tradicionalne, headless i hibridne CMS arhitekture te prepoznati scenarije u kojima je svaka prikladna
+3. Opisati ekosustav WordPressa uključujući teme, dodatke, sigurnosne izazove i razloge njegove dominacije
+4. Procijeniti no-code i low-code platforme poput Wixa, Squarespacea i Webflowa s obzirom na komunikacijske potrebe
+5. Razumjeti koncept modernog web stacka i moći sudjelovati u razgovorima o izboru tehnologije
+6. Artikulirati kriterije za strateški izbor CMS platforme ovisno o veličini organizacije, proračunu, tehničkoj sposobnosti tima i poslovnim ciljevima
+7. Prepoznati implikacije izbora platforme za SEO, pristupačnost, sigurnost i performanse
+8. Koristiti osnovne funkcionalnosti CMS sustava za objavljivanje i upravljanje sadržajem
 
-*Bit će dodano.*
+
+## Zašto komunikolog mora razumjeti CMS
+
+Zamislite da ste komunikacijski stručnjak u srednjoj hrvatskoj tvrtki. Direktor vas pozove na sastanak i kaže da web stranica treba redizajn. Trenutna je zastarjela, spora, loše izgleda na mobitelu i ne pojavljuje se u Google rezultatima. Agencija je poslala ponudu u kojoj predlaže migraciju s WordPressa na headless CMS s Next.js frontendom. Druga agencija predlaže da ostanete na WordPressu, ali s premium temom i optimizacijom. Treća predlaže Webflow. Direktor vas pita za mišljenje.
+
+Ako ne razumijete što ove opcije znače, ne možete dati mišljenje. A ako ne možete dati mišljenje, netko drugi donosi odluku koja izravno utječe na vaš svakodnevni rad. Hoćete li moći sami objaviti blog članak u pet minuta ili ćete za svaku promjenu morati pisati developeru? Hoće li stranica biti dovoljno brza da je Google dobro rangira? Hoće li redizajn koštati pet tisuća ili pedeset tisuća eura?
+
+CMS nije tehnički detalj. CMS je alat koji koristi komunikacijski tim svakodnevno. To je platforma na kojoj živite profesionalno. Razumijevanje njezinih mogućnosti i ograničenja jednako je važno kao razumijevanje mogućnosti i ograničenja društvenih mreža na kojima komunicirate.
+
+Prošli tjedan govorili smo o vrednovanju informacija i signalima povjerenja na web stranicama. Danas prelazimo na pitanje koje je praktičnije ali jednako strateško. Kako se web stranice zapravo grade i održavaju? Koje platforme omogućuju objavljivanje sadržaja? Kako izbor platforme utječe na sve o čemu smo dosad govorili, od SEO-a i performansi do pristupačnosti i sigurnosti?
+
+
+## Što je CMS i zašto postoji
+
+CMS ili Content Management System softverski je sustav koji omogućuje stvaranje, uređivanje, organiziranje i objavljivanje digitalnog sadržaja bez potrebe za izravnim pisanjem koda. Prije pojave CMS sustava, svaka promjena na web stranici zahtijevala je da netko ručno uredi HTML datoteku i prenese je na poslužitelj. Za stranicu s desetak podstranica to je bilo upravljivo. Za stranicu s tisućama stranica sadržaja, poput novinskog portala ili web trgovine, to je bilo nemoguće.
+
+CMS rješava ovaj problem odvajanjem sadržaja od prezentacije. Sadržaj se pohranjuje u bazu podataka. Prezentacija se definira predlošcima. Kada korisnik zatraži stranicu, CMS dinamički spaja sadržaj iz baze s odgovarajućim predloškom i generira HTML koji se šalje pregledniku. Ova arhitektura omogućuje da netko tko ne zna HTML može objaviti članak, promijeniti tekst na stranici ili dodati novu fotografiju putem vizualnog sučelja koje podsjeća na Word procesor.
+
+Za komunikologe, ovo odvajanje ključno je jer znači da možete upravljati sadržajem neovisno o dizajnu i tehničkoj implementaciji. Ne trebate zvati developera svaki put kada želite ispraviti tipfeler u tekstu, objaviti novi blog post ili zamijeniti fotografiju na naslovnici. Ova autonomija nije luksuz nego preduvjet za agilnu komunikacijsku strategiju jer u digitalnom okruženju brzina objavljivanja često je jednako važna kao kvaliteta sadržaja.
+
+CMS sustavi tipično nude nekoliko temeljnih funkcionalnosti. Uređivač sadržaja vizualno je sučelje za pisanje i formatiranje teksta, dodavanje slika i videa, kreiranje poveznica i strukturiranje sadržaja. Sustav za upravljanje medijima omogućuje upload, organizaciju i optimizaciju slika, videa i dokumenata. Sustav za upravljanje korisnicima i ulogama definira tko može što raditi, od administratora koji ima pristup svemu do urednika koji može uređivati sadržaj i autora koji može pisati ali ne objavljivati. Sustav verzija čuva povijest promjena i omogućuje vraćanje na prethodnu verziju ako nešto pođe po krivu. Sustav za navigaciju i strukturu omogućuje organizaciju sadržaja u hijerarhiju stranica, kategorija i oznaka.
+
+
+## WordPress i dominacija otvorenog koda
+
+WordPress pokreće otprilike 43% svih web stranica na internetu. Ova statistika toliko je impresivna da zaslužuje trenutak razmišljanja. Gotovo svaka druga web stranica koju posjetite koristi isti softver. Od malih blogova do web stranica Bijele kuće, od lokalnih restorana do globalnih medijskih kuća, WordPress je sveprisutna platforma čiju dominaciju nijedna alternativa nije uspjela ozbiljno ugroziti u posljednjih petnaest godina.
+
+Razlozi te dominacije višestruki su i poučni za komunikologe.
+
+WordPress je besplatan softver otvorenog koda. Svatko ga može preuzeti, instalirati i koristiti bez plaćanja licence. Ovo je eliminiralo financijsku barijeru za ulazak i omogućilo milijunima organizacija i pojedinaca da pokrenu web stranicu. Važno je razlikovati WordPress.org, softver otvorenog koda koji instalirate na vlastiti hosting, od WordPress.com, komercijalne platforme koja nudi hosting i upravljani WordPress za mjesečnu naknadu. Kada se u profesionalnom kontekstu govori o WordPressu, obično se misli na WordPress.org verziju.
+
+WordPress ima ekosustav od više od šezdeset tisuća dodataka (plugins) i deset tisuća tema (themes). Želite kontakt formu? Postoji dodatak. Želite SEO optimizaciju? Yoast SEO ili Rank Math. Želite web trgovinu? WooCommerce pretvara WordPress u punu e-commerce platformu. Želite višejezičnu stranicu? WPML ili Polylang. Želite napredno uređivanje sadržaja? Elementor ili Gutenberg blok editor. Ova modularnost znači da se WordPress može prilagoditi gotovo svakoj potrebi bez pisanja koda od nule.
+
+Zajednica oko WordPressa ogromna je i aktivna. WordCamp konferencije održavaju se u stotinama gradova širom svijeta, uključujući Zagreb. Dokumentacija je opsežna. Forumi za pomoć aktivni su dvadeset četiri sata dnevno. Za komunikologa, ovo znači da će za gotovo svaki problem koji naiđe postojati rješenje dokumentirano negdje na webu.
+
+Gutenberg blok editor, uveden 2018. godine, transformirao je iskustvo uređivanja sadržaja u WordPressu. Umjesto tradicionalnog editora koji je podsjećao na Word, Gutenberg koristi sustav blokova. Svaki element na stranici, od odlomka i naslova do slike, galerije, tablice i videa, zasebni je blok koji se može dodavati, uklanjati, pomicati i konfigurirati. Ovo se dalje razvilo u Full Site Editing koji omogućuje uređivanje ne samo sadržaja nego i zaglavlja, podnožja, navigacije i ukupnog izgleda stranice putem blokova.
+
+Ali WordPress ima i značajne nedostatke kojih komunikolog mora biti svjestan.
+
+Sigurnost je najveći izazov. Upravo zato što je WordPress toliko popularan, on je i najpopularnija meta napada. Dodatci koji se ne ažuriraju, teme s ranjivostima, slabe lozinke i zastarjele instalacije čine WordPress stranice čestom metom hakera. Za komunikologa, ovo znači da WordPress stranica zahtijeva redovito održavanje. Ažuriranje WordPressa, dodataka i tema, redovite sigurnosne kopije, snažne lozinke i dvofaktorska autentifikacija nisu opcija nego higijena. Organizacija koja pokrene WordPress stranicu i zaboravi je održavati gotovo sigurno će se suočiti sa sigurnosnim incidentom.
+
+Performanse mogu biti problematične. Svaki dodatak koji instalirate dodaje kod koji se mora izvršiti pri svakom zahtjevu. Stranica s trideset aktivnih dodataka značajno je sporija od čiste instalacije. Nekvalitetne teme s nepotrebnim kodom pogoršavaju situaciju. WordPress stranica može biti izuzetno brza ako je pažljivo optimizirana, ali može biti i bolno spora ako je nepažljivo sastavljena. Za komunikologa koji je iz prošlih tjedana razumio važnost performansi za SEO i korisničko iskustvo, ovo je kritičan faktor.
+
+Tehničko znanje potrebno za napredne prilagodbe često premašuje mogućnosti komunikacijskog tima. Dok je objavljivanje sadržaja jednostavno, promjena dizajna, dodavanje prilagođene funkcionalnosti ili rješavanje tehničkih problema zahtijeva PHP znanje, razumijevanje WordPress arhitekture ili angažiranje developera. Ovisnost o developerima za netrivijalne promjene frustracija je s kojom se mnogi komunikacijski timovi suočavaju.
+
+Skalabilnost može biti izazov za vrlo velike stranice. WordPress s tisućama objava, stotinama tisuća korisnika ili složenim upitima prema bazi može postati spor bez značajne tehničke optimizacije. Veliki medijski portali koji koriste WordPress, poput TechCruncha ili BBC Americe, imaju iza sebe timove inženjera koji održavaju prilagođene infrastrukture daleko složenije od standardne WordPress instalacije.
+
+Razumijevanje WordPress ekosustava u praksi zahtijeva poznavanje nekoliko ključnih komponenti koje komunikolog koristi svakodnevno. WordPress admin sučelje (dashboard) centralno je mjesto za sve operacije. Odatle objavljujete sadržaj, upravljate medijima, instalirate dodatke, mijenjate postavke i pregledavate statistike. Sučelje je organizirano u lijevu bočnu navigaciju s jasnim kategorijama i radnu površinu koja se mijenja ovisno o odabranoj funkciji. Komunikolog koji prvi put otvori WordPress dashboard obično se snalazi unutar pola sata jer je sučelje relativno intuitivno za osnovno korištenje.
+
+Izbor teme (theme) jedna je od prvih i najvažnijih odluka nakon instalacije. Tema definira vizualni identitet stranice, raspored elemenata, tipografiju, boje i responzivno ponašanje. Besplatne teme dostupne su u WordPress repozitoriju, ali za profesionalnu upotrebu obično se koriste premium teme koje nude više opcija prilagodbe, bolju podršku i redovitija ažuriranja. Astra, GeneratePress i Kadence među najpreporučenijim su premium temama jer su lagane, brze i kompatibilne s blok editorom. Za komunikologa, izbor teme utječe na svakodnevno iskustvo jer loša tema znači ograničene mogućnosti prilagodbe, spore stranice i frustraciju pri pokušaju postizanja željenog izgleda.
+
+Dodatci koje komunikolog najčešće koristi obuhvaćaju nekoliko kategorija. Za SEO, Yoast SEO ili Rank Math pružaju analizu sadržaja, kontrolu meta podataka, generiranje XML sitemapa i upravljanje strukturiranim podacima. Za sigurnost, Wordfence ili Sucuri nude zaštitni zid, skeniranje malwarea i praćenje pokušaja neovlaštenog pristupa. Za performanse, WP Rocket ili W3 Total Cache implementiraju predmemoriranje, kompresiju i optimizaciju isporuke resursa. Za obrasce, Contact Form 7 ili WPForms omogućuju kreiranje kontakt formi, anketa i obrazaca za prijavu. Za analitiku, MonsterInsights ili Site Kit povezuju WordPress s Google Analyticsom izravno u dashboardu. Za backup, UpdraftPlus automatizira redovite sigurnosne kopije na cloud pohranu.
+
+Svaki od ovih dodataka dodaje funkcionalnost, ali svaki također dodaje kod koji se mora izvršiti, potencijalne sigurnosne ranjivosti i mogućnost konflikta s drugim dodacima. Disciplina u upravljanju dodacima znači instalirati samo ono što je zaista potrebno, redovito ažurirati sve instalirane dodatke, ukloniti neaktivne dodatke i testirati kompatibilnost prije ažuriranja na produkcijskoj stranici. Komunikolog ne mora razumjeti kod dodataka, ali mora razumjeti da svaki dodatak ima trošak i da gomilanje nepotrebnih dodataka degradira stranicu.
+
+
+## Alternativni tradicionalni CMS sustavi
+
+Iako WordPress dominira tržištem, postoje alternativni tradicionalni CMS sustavi koje komunikolog treba poznavati jer svaki ima specifične prednosti za određene scenarije.
+
+Joomla je drugi najrašireniji CMS otvorenog koda. Složeniji je od WordPressa i nudi napredniju kontrolu nad korisničkim ulogama i pristupima, što ga čini prikladnim za veće organizacije s kompleksnim hijerarhijama uredivanja. Međutim, njegova zajednica je znatno manja od WordPressove, što znači manje dodataka, manje tema i manje dostupne pomoći.
+
+Drupal je treći veliki CMS otvorenog koda, poznat po sigurnosti i skalabilnosti. Mnoge vladine institucije i velike organizacije koriste Drupal upravo zbog njegovih sigurnosnih značajki i sposobnosti da upravlja velikim količinama strukturiranog sadržaja. Nedostatak je strmija krivulja učenja i veća ovisnost o developerima za svakodnevne operacije. Komunikacijski tim koji koristi Drupal obično ne može samostalno raditi značajnije promjene na stranici bez tehničke podrške.
+
+Typo3 je CMS popularan u njemačkom govornom području i u nekim dijelovima Europe, uključujući institucije koje imaju veze s njemačkim poslovnim ekosutavom. Za hrvatski kontekst, relevantnost je ograničena ali vrijedi ga poznavati.
+
+Za komunikologe, ključna razlika među ovim sustavima nije u tehničkim mogućnostima jer su svi sposobni za većinu zadataka. Razlika je u tome koliko autonomije komunikacijski tim ima u svakodnevnom radu. WordPress nudi najviše autonomije za netehničke korisnike. Drupal nudi najmanje. Joomla je negdje između. Ova autonomija nije apsolutno pozitivna jer s njom dolazi i mogućnost da komunikacijski tim napravi štetu, primjerice instalirajući nesiguran dodatak, ali za agilnu komunikacijsku strategiju autonomija je često važnija od tehničke savršenosti.
+
+
+## Headless CMS i odvajanje sadržaja od prikaza
+
+Headless CMS relativno je nova kategorija koja je fundamentalno promijenila način razmišljanja o upravljanju sadržajem. Da bismo razumjeli što je headless CMS, moramo se vratiti na razliku koju smo opisali na početku poglavlja.
+
+Tradicionalni CMS poput WordPressa monolitan je sustav. On upravlja sadržajem (back-end) i generira web stranice koje korisnik vidi (front-end). Sadržaj i prezentacija žive u istom sustavu, povezani su i međusobno ovisni. Ovo je dugo bilo sasvim logično jer je web stranica bila jedini kanal na kojem se sadržaj prikazivao.
+
+Ali moderni digitalni ekosustav podrazumijeva da se isti sadržaj prikazuje na mnogo mjesta. Opis proizvoda pojavljuje se na web stranici, u mobilnoj aplikaciji, na pametnom zvučniku, u emailu, na digitalnom ekranu u trgovini i možda čak u AR iskustvu. Ako je sadržaj zarobljen u monolitnom CMS-u koji ga može prikazati samo na web stranici, imate problem. Morate isti sadržaj ručno kopirati u svaki kanal, što je neefikasno, nekonzistentno i sklono pogreškama.
+
+Headless CMS rješava ovaj problem radikalnim potezom. On uklanja front-end (glavu, otuda headless) i pruža samo back-end za upravljanje sadržajem. Sadržaj se pohranjuje u bazu podataka i dostupan je putem API-ja. Bilo koji front-end, bila to web stranica, mobilna aplikacija, pametni sat ili bilo što drugo, može dohvatiti sadržaj putem tog API-ja i prikazati ga na svoj način.
+
+Ovo je ista logika API-ja o kojoj smo govorili u prvom tjednu, samo primijenjena na upravljanje sadržajem. Sadržaj postaje neovisni resurs koji ne pripada nijednom specifičnom kanalu.
+
+Najpoznatiji headless CMS sustavi uključuju Contentful koji je jedan od najpopularnijih komercijalnih headless CMS-ova, Strapi koji je najpopularniji headless CMS otvorenog koda, Sanity koji se ističe fleksibilnošću u strukturiranju sadržaja, Prismic koji je poznat po intuitivnom sučelju za urednike i Hygraph (ranije GraphCMS) koji koristi GraphQL API.
+
+Za komunikologe, headless CMS donosi i prednosti i izazove.
+
+Prednosti uključuju višekanalnu distribuciju sadržaja iz jednog izvora, slobodu u izboru front-end tehnologije jer razvijači mogu koristiti React, Next.js, Vue ili bilo koji drugi framework, bolje performanse jer se front-end može optimizirati neovisno o CMS-u te veću sigurnost jer je CMS odvojen od javno dostupne web stranice.
+
+Izazovi su značajni za komunikacijske timove. Vizualni pregled sadržaja teži je jer ne vidite kako će sadržaj izgledati na web stranici dok ga uređujete u CMS-u. Ovisnost o developerima veća je jer svaka promjena na front-endu zahtijeva programersko znanje. Troškovi su obično viši jer trebate i CMS i zasebni front-end razvoj. Kompleksnost infrastrukture raste jer imate dva sustava umjesto jednog.
+
+Hibridni CMS sustavi poput WordPress s Gatsby ili Next.js front-endom pokušavaju spojiti najbolje od oba svijeta. Komunikacijski tim koristi poznato WordPress sučelje za upravljanje sadržajem, ali se isporuka sadržaja odvija putem modernog front-enda koji je brži i fleksibilniji. Ovo je kompromis koji postaje sve popularniji jer čuva autonomiju urednika dok poboljšava tehničke performanse.
+
+
+## No-code i low-code platforme
+
+U posljednjih nekoliko godina eksplodirala je kategorija alata koji obećavaju da možete izgraditi profesionalnu web stranicu bez ikakvog kodiranja. Ovi alati izuzetno su relevantni za komunikologe jer im potencijalno daju potpunu autonomiju nad web prisutnošću organizacije.
+
+Wix je jedna od najpoznatijih no-code platformi s više od dvjesto milijuna korisnika. Nudi vizualni editor tipa povuci-i-ispusti u kojem gradite stranicu pomicanjem elemenata na platnu. Prednosti su brzina kreiranja, jer stranicu možete imati gotovu za nekoliko sati, stotine predložaka za različite industrije, integriran hosting i domena, osnovni SEO alati i mogućnost e-trgovine. Nedostaci uključuju ograničenu prilagodljivost jer ste ograničeni na ono što platforma nudi, potencijalno lošije performanse u usporedbi s optimiziranom prilagođenom stranicom, ovisnost o platformi jer ako Wix ukine uslugu ili promijeni cijene nemate alternativu, te ograničenja u SEO mogućnostima za napredne scenarije.
+
+Squarespace pozicioniran je kao premium no-code platforma s fokusom na dizajn. Predlošci su estetski superiorniji od većine konkurenata, što ga čini popularnim među kreativcima, fotografima, dizajnerima i malim tvrtkama kojima je vizualni dojam prioritet. Nedostatak je manja fleksibilnost od Wixa i viša cijena za napredne funkcionalnosti.
+
+Webflow je hibrid između no-code alata i profesionalnog web development alata. Za razliku od Wixa i Squarespacea koji sakrivaju tehničku složenost, Webflow je eksponira na vizualan način. Gradite stranicu vizualno, ali imate kontrolu nad CSS-om, animacijama, interakcijama i CMS strukturom na razini koju profesionalni developeri cijene. Ovo ga čini moćnijim ali i složenijim za učenje. Za komunikologe koji su spremni investirati vrijeme u učenje, Webflow nudi autonomiju blizu razini prilagođenog razvoja bez potrebe za pisanjem koda.
+
+Shopify nije općeniti CMS nego specijalizirana platforma za e-trgovinu. Za organizacije čija je web prisutnost primarno trgovina, Shopify je često bolji izbor od WordPressa s WooCommerceom jer je optimiziran isključivo za prodaju. Upravljanje proizvodima, narudžbama, plaćanjima, dostavom i inventarom integrirano je od samog početka. Za komunikologe koji rade s e-commerce brendovima, razumijevanje Shopifyja praktično je nužno.
+
+Framer noviji je alat koji se brzo probija na tržište s fokusom na dizajn i performanse. Pozicioniran je između Webflowa i tradicionalnih no-code alata, nudeći vizualni editor s mogućnošću React komponenti. Za komunikologe zainteresirane za najnovije trendove, Framer je vrijedan pažnje.
+
+Za hrvatski kontekst, no-code platforme posebno su relevantne za male i srednje tvrtke koje nemaju budžet za prilagođeni web razvoj ali trebaju profesionalnu web prisutnost. Restoran u Splitu, turistički apartman na Hvaru ili mali obrt u Osijeku mogu s Wixom ili Squarespaceom imati pristojnu web stranicu za trošak od nekoliko stotina kuna mjesečno, što je daleko manje od troška angažiranja agencije za prilagođeni razvoj.
+
+Razlika u svakodnevnom iskustvu korištenja ovih platformi značajna je i komunikolog je mora razumjeti prije preporuke. U WordPressu, objavljivanje blog posta podrazumijeva prijavu u admin sučelje, navigaciju do sekcije za objave, pisanje u blok editoru, dodavanje kategorizacije i meta podataka, pregled i objavu. Proces je moćan ali zahtijeva poznavanje sučelja. U Wixu ili Squarespaceu, isti proces vizualniji je i intuitivniji jer pišete gotovo izravno na stranici kakvu će posjetitelj vidjeti. Ali kada trebate nešto što platforma ne podržava, naiđete na zid jer nema dodataka, nema prilagođenog koda, nema alternativa osim čekanja da platforma tu funkcionalnost doda.
+
+Vendor lock-in ili ovisnost o dobavljaču kritičan je koncept koji komunikolog mora razumjeti kada procjenjuje no-code platforme. Ako gradite stranicu na Wixu i nakon tri godine odlučite da vam Wix ne odgovara, ne možete jednostavno prenijeti stranicu na drugu platformu. Morate je graditi ispočetka. Sadržaj se može izvesti u ograničenom obliku, ali dizajn, funkcionalnost i struktura ostaju zarobljeni u Wixu. WordPress, kao softver otvorenog koda, nudi značajno veću prenosivost jer možete promijeniti hosting providera bez gubitka sadržaja ili funkcionalnosti. Headless CMS sustavi nude najveću prenosivost jer je sadržaj pohranjen neovisno o front-endu i može se povezati s bilo kojim novim front-endom.
+
+Ova razlika u prenosivosti možda se ne čini važnom na početku, ali organizacija koja raste i mijenja potrebe kroz pet ili deset godina može se naći u situaciji gdje platforma koju je izabrala više ne zadovoljava potrebe, a migracija je skupa i bolna upravo zbog vendor lock-ina.
+
+
+## Moderni web stack i što komunikolog treba znati
+
+Pojam web stack odnosi se na kombinaciju tehnologija koje zajedno čine web stranicu ili aplikaciju. U prethodnim tjednima govorili smo o HTML-u, CSS-u i JavaScriptu kao temeljnim slojevima. Moderni web stack nadograđuje te temelje s frameworcima, bibliotekama, alatima za build i infrastrukturom.
+
+Za komunikologe, cilj nije postati programer nego razumjeti rječnik i koncepte dovoljno da mogu sudjelovati u strateškim razgovorima.
+
+React je JavaScript biblioteka za izradu korisničkih sučelja, razvijen u Facebooku. Koristi se za izradu dinamičkih, interaktivnih web stranica i aplikacija. Ako vaša organizacija koristi React, to znači da je front-end izgrađen od modularnih komponenti koje se mogu ponovno koristiti. Za komunikologa, implikacija je da promjene na sučelju zahtijevaju React developera.
+
+Next.js je framework izgrađen na Reactu koji dodaje server-side rendering, statičku generaciju stranica i mnoge optimizacije. Mnoge moderne web stranice koriste Next.js jer kombinira performanse statičkih stranica s fleksibilnošću dinamičkih. Kada agencija predloži Next.js, to obično znači modernu, brzu stranicu ali i veću ovisnost o tehničkom timu.
+
+Vue.js i Nuxt.js analogni su Reactu i Next.js-u u ekosustavu Vue frameworka. Koriste se u slične svrhe i za komunikologa imaju slične implikacije.
+
+Tailwind CSS framework je za stiliziranje koji je dramatično promijenio način na koji developeri pišu CSS. Umjesto pisanja prilagođenih stilova, Tailwind koristi unaprijed definirane klase izravno u HTML-u. Za komunikologa, ovo je relevantno jer stranice izgrađene s Tailwindom obično imaju manje prilagođenog CSS-a, što može značiti bolje performanse.
+
+Vercel i Netlify platforme su za hosting i deployment modernih web stranica. Nude automatsku integraciju s Git repozitorijima, globalni CDN, automatske SSL certifikate i mnoge druge funkcionalnosti. Za komunikologa, ove platforme znače da se promjene na stranici mogu objaviti u minutama umjesto sati i da je infrastruktura upravljana, što eliminira potrebu za administracijom poslužitelja.
+
+Jamstack arhitektura, koju smo kratko spomenuli u prvom tjednu, kombinira JavaScript na front-endu, API-je za dinamičke funkcionalnosti i unaprijed generirani Markup za statičke stranice. Stranice izgrađene Jamstack arhitekturom obično su izuzetno brze jer se posjetitelju isporučuju unaprijed generirane HTML datoteke putem CDN-a, bez potrebe za obradom na poslužitelju u trenutku zahtjeva.
+
+Za komunikologa, ključni uvid jest sljedeći. Moderni web stack nudi superiorne performanse, sigurnost i korisničko iskustvo u usporedbi s tradicionalnim pristupom. Ali zahtijeva specijalizirano tehničko znanje za razvoj i održavanje. Izbor između modernog web stacka i tradicionalnog CMS-a nije pitanje što je bolje u apsolutnom smislu nego što je prikladnije za specifičnu organizaciju s obzirom na njezine resurse, potrebe i planove.
+
+
+## Kriteriji za strateški izbor platforme
+
+Izbor CMS platforme ili web stacka strateška je odluka koja ima posljedice kroz više godina. Migracija s jedne platforme na drugu skup je, riskantan i dugotrajan proces. Zato je važno da se odluka donese promišljeno, a komunikolog mora sudjelovati u tom procesu jer će on s tom platformom živjeti svakodnevno.
+
+Potrebe za sadržajem prvi su kriterij. Koliko često objavljujete novi sadržaj? Ako je odgovor svakodnevno, kao kod medijskog portala, trebate CMS s robusnim uredničkim alatima, sustavom za planiranje objava, višestrukim autorskim ulogama i efikasnim workflow-om. Ako je odgovor jednom mjesečno, ovi zahtjevi su manje kritični. Kakvu vrstu sadržaja objavljujete? Ako je pretežno tekst i slike, gotovo svaki CMS je dovoljan. Ako su potrebni složeni formati poput interaktivnih karata, konfigurabilnih tablica ili prilagođenih kalkulatora, trebat ćete platformu s većom fleksibilnošću ili prilagođeni razvoj.
+
+Tehničke sposobnosti tima drugi su kriterij. Ima li vaša organizacija developere ili IT tim koji može održavati WordPress instalaciju, ažurirati dodatke, rješavati tehničke probleme? Ako da, WordPress je izvrsna opcija jer nudi ogromnu fleksibilnost po niskoj cijeni. Ako ne, upravljana platforma poput Squarespacea ili Shopifyja eliminira tehničke brige ali ograničava fleksibilnost. Koliko je komunikacijski tim tehnički pismen? Ako su članovi tima spremni naučiti osnovnu navigaciju CMS sučelja ali ne i nešto složenije, potrebna je platforma s intuitivnim editorom.
+
+Proračun je treći kriterij i često najodlučniji. Trošak web prisutnosti nije samo cijena licence ili pretplate. Uključuje hosting, domenu, SSL certifikat, dizajn, razvoj, održavanje, sigurnosne kopije, tehničku podršku, troškove migracije sadržaja i edukaciju tima. WordPress softver je besplatan, ali profesionalna WordPress stranica s kvalitetnom temom, potrebnim dodacima, pristojnim hostingom i redovitim održavanjem može koštati od nekoliko tisuća do nekoliko desetaka tisuća eura za postavljanje, plus mjesečne troškove održavanja. No-code platforma poput Squarespacea košta dvjestotinjak eura godišnje za osnovni plan, ali prilagodbe su ograničene. Prilagođena stranica na modernom web stacku može koštati od deset do sto tisuća eura ili više, ovisno o složenosti.
+
+SEO mogućnosti četvrti su kriterij. Iz drugog tjedna znate koliko je SEO važan za vidljivost. Platforma mora omogućavati kontrolu nad meta naslovima i opisima, čiste URL strukture, brzo učitavanje stranica, strukturirane podatke, XML sitemap i robots.txt konfiguraciju. WordPress s Yoast SEO ili Rank Math dodatkom nudi izvrsnu SEO kontrolu. Headless CMS s modernim front-endom može ponuditi superiorne performanse koje utječu na rangiranje. No-code platforme variraju, Webflow nudi solidnu SEO kontrolu dok su Wix i Squarespace ograničeniji u nekim naprednim aspektima.
+
+Skalabilnost peti je kriterij. Koliko će stranica rasti u sljedećih pet godina? Ako planirate s dvadeset stranica sadržaja, gotovo bilo koja platforma je dovoljna. Ako planirate s tisuću stranica, višejezičnom podrškom, personalizacijom i integracijom s CRM-om i email platformom, trebate platformu koja može rasti s vama. Migracija s Wixa na WordPress ili s WordPressa na headless CMS u trenutku kada ste prerasli platformu bolan je i skup proces.
+
+Sigurnost šesti je kriterij. Za organizacije koje obrađuju osjetljive podatke, poput financijskih institucija, zdravstvenih organizacija ili javnih institucija, sigurnosni zahtjevi mogu eliminirati neke opcije. No-code platforme preuzimaju odgovornost za sigurnost, što je prednost za organizacije bez sigurnosnog tima. WordPress zahtijeva proaktivno upravljanje sigurnošću. Headless arhitektura može biti sigurnija jer odvaja CMS od javnog weba.
+
+Višejezičnost sedmi je kriterij, osobito relevantan za hrvatski kontekst. Organizacije u turizmu, izvozno orijentirane tvrtke i institucije s međunarodnom publikom trebaju višejezičnu web prisutnost. WordPress nudi WPML i Polylang za višejezičnost. Headless CMS sustavi poput Contentfula imaju višejezičnost ugrađenu u arhitekturu. No-code platforme variraju u kvaliteti višejezične podrške, od solidne u Webflowu do ograničene u nekim drugim alatima.
+
+
+## CMS i SEO, praktična veza
+
+Iz drugog tjedna znate da tražilice puzaju, indeksiraju i rangiraju web stranice. CMS koji koristite izravno utječe na svaki od ovih procesa.
+
+Za puzanje, CMS mora generirati čistu URL strukturu, XML sitemap, ispravnu robots.txt datoteku i efikasnu strukturu internih poveznica. WordPress ovo radi dobro sa SEO dodacima. No-code platforme generiraju ove elemente automatski ali s manje kontrole nad detaljima. Headless CMS ne generira ništa od ovoga jer je to odgovornost front-enda, što znači da SEO mora biti eksplicitno adresirano u front-end razvoju.
+
+Za indeksiranje, CMS mora generirati semantički ispravan HTML, strukturirane podatke, alt atribute za slike i meta podatke za svaku stranicu. WordPress s modernim temama i SEO dodacima ovo pokriva temeljito. No-code platforme automatiziraju dio posla ali nude manje kontrole. Headless CMS sustavi ovise o front-end implementaciji.
+
+Za rangiranje, performanse stranice ključne su. Tu se razlike među platformama najjasnije vide. Čisti statički site generiran Jamstack arhitekturom obično je najbržI. Dobro optimiziran WordPress s caching dodatkom i CDN-om može biti gotovo jednako brz. No-code platforme variraju jer su generalizirane za sve korisnike i ne mogu se optimizirati jednako precizno kao prilagođeno rješenje.
+
+Komunikolog koji razumije ove veze može postavljati prava pitanja prilikom izbora platforme. Ne samo "Kako izgleda editor?" nego i "Koliki je PageSpeed Insights rezultat za mobilne uređaje?" i "Možemo li kontrolirati strukturirane podatke?" i "Generira li platforma semantičke HTML oznake?"
+
+
+## CMS i pristupačnost
+
+Pristupačnost web sadržaja ili web accessibility tema je koju ćemo detaljno obraditi u desetom tjednu, ali je nemoguće govoriti o CMS-u bez da se dotaknemo njezine povezanosti s platformom.
+
+CMS utječe na pristupačnost na dvije razine. Prva razina je pristupačnost samog CMS sučelja. Može li urednik koji koristi čitač ekrana navigirati CMS-om i objavljivati sadržaj? Ovo je relevantno za organizacije koje zapošljavaju osobe s invaliditetom. WordPress Gutenberg editor značajno je poboljšao pristupačnost sučelja, ali još ima prostora za napredak. No-code platforme variraju u pristupačnosti svojih editora.
+
+Druga razina je pristupačnost generiranog HTML-a, dakle stranica koje posjetitelji vide. Generira li CMS semantički HTML? Poštuje li temu hijerarhiju naslova? Dodaje li automatski alt atribute za slike? Jesu li obrasci pravilno označeni za čitače ekrana? Ovo ovisi i o platformi i o temi ili predlošku koji koristite. Čak i na odličnoj platformi, loše dizajnirana tema može producirati nepristupačan HTML.
+
+Za komunikologe, praktična implikacija jest da pristupačnost mora biti kriterij pri izboru platforme i teme. EU Direktiva o pristupačnosti weba zahtijeva da web stranice javnog sektora budu pristupačne, a nadolazeći European Accessibility Act proširuje ove zahtjeve i na privatni sektor. Organizacija koja danas ignorira pristupačnost sutra se može suočiti s pravnom obvezom prilagodbe, što je skuplje od ispravnog izbora na početku.
+
+
+## CMS i sigurnost
+
+Sigurnost CMS-a tema je koja se izravno nadovezuje na ono o čemu smo govorili u prvom tjednu u dijelu o web sigurnosti.
+
+WordPress, kao što smo već napomenuli, najčešća je meta napada jednostavno zato što pokreće toliki udio weba. Najčešći vektori napada uključuju zastarjele dodatke s poznatim ranjivostima, slabe administratorske lozinke, neažuriranu WordPress jezgru i nesigurne teme. Zaštita uključuje redovito ažuriranje svega, korištenje snažnih lozinki i dvofaktorske autentifikacije, ograničavanje broja pokušaja prijave, sigurnosne dodatke poput Wordfence ili Sucuri, redovite sigurnosne kopije i izbor kvalitetnog hostinga sa sigurnosnim mjerama na razini poslužitelja.
+
+No-code platforme poput Wixa, Squarespacea i Shopifyja preuzimaju odgovornost za sigurnost infrastrukture. Vi ne morate brinuti o ažuriranju, sigurnosnim zakrpama ili konfiguraciji poslužitelja. Ovo je značajna prednost za organizacije bez tehničkog tima. Nedostatak je da nemate kontrolu nad sigurnosnim mjerama i ovisni ste o platformi da ispravno upravlja sigurnošću.
+
+Headless CMS arhitektura može biti inherentno sigurnija jer odvaja CMS od javnog weba. CMS je pristupačan samo autoriziranim urednicima putem zaštićenog sučelja, dok je javno dostupan samo statički sadržaj isporučen putem CDN-a. Nema baze podataka izložene javnom internetu, nema PHP-a koji se izvršava na javnom poslužitelju, nema površine za napade koji ciljaju tradicionalne CMS ranjivosti.
+
+Za komunikologe, ključni uvid jest da je sigurnost CMS-a zajednička odgovornost platforme, tehničkog tima i komunikacijskog tima. Komunikolog koji koristi slabu lozinku, koji klikne na phishing link ili koji instalira neprovjereni dodatak može kompromitirati cijelu web prisutnost organizacije, bez obzira na to koliko je infrastruktura tehnički sigurna.
+
+
+## Upravljanje sadržajem u praksi
+
+Apstraktni razgovori o platformama korisni su za strateško razumijevanje, ali komunikolog mora razumjeti i praksu svakodnevnog upravljanja sadržajem.
+
+Urednički workflow proces je od ideje do objave. U maloj organizaciji, to može biti jednostavno jer ista osoba piše, uređuje i objavljuje. U velikoj organizaciji, workflow uključuje autora koji piše, urednika koji recenzira, pravni odjel koji odobrava osjetljiv sadržaj i urednika koji objavljuje. CMS mora podržavati ovaj workflow s odgovarajućim ulogama, dozvolama i statusima sadržaja, od skice preko recenzije do zakazane objave.
+
+Upravljanje medijima često je podcijenjen aspekt. Organizacija s tisućama slika, videa i dokumenata treba sustav za organizaciju, pretraživanje i optimizaciju medija. Slike moraju biti automatizirano komprimirane za web. Video mora biti ili hostirani na specijaliziranoj platformi poput YouTubea ili Vimea, ili serviran putem CDN-a. Dokumenti moraju biti dostupni za preuzimanje u odgovarajućim formatima. Kvalitetan CMS nudi biblioteku medija s oznakama, kategorijama i pretraživanjem. Loš CMS ima samo mapu s datotekama u koju se slažu bez ikakve organizacije.
+
+Verzioniranje sadržaja sposobnost je praćenja promjena i vraćanja na prethodne verzije. Ako netko slučajno obriše pola članka ili napravi pogrešnu izmjenu, verzioniranje omogućuje oporavak. WordPress automatski čuva revizije svakog posta. Headless CMS sustavi obično nude sofisticirano verzioniranje s mogućnošću usporedbe verzija. No-code platforme variraju u ovoj funkcionalnosti.
+
+Planiranje i zakazivanje objava omogućuje pripremu sadržaja unaprijed i automatsku objavu u željeno vrijeme. Za komunikologe koji upravljaju sadržajnim kalendarom, ovo je praktično nužna funkcionalnost. Napisati blog post u ponedjeljak i zakazati objavu za srijedu ujutro, kada je angažman publike najveći, dio je profesionalne prakse.
+
+Višejezično upravljanje sadržajem za organizacije koje komuniciraju na više jezika zahtijeva sustav koji povezuje prijevode istog sadržaja, omogućuje urednicima rad na pojedinim jezičnim verzijama i prikazuje posjetitelju odgovarajuću jezičnu verziju na temelju njegovih postavki ili lokacije.
+
+Modeliranje sadržaja koncept je koji je posebno relevantan u headless CMS sustavima ali vrijedi za sve platforme. Model sadržaja definira koje vrste sadržaja postoje, koja polja svaka vrsta sadrži i kako su međusobno povezane. Na primjer, novinski portal može imati vrste sadržaja poput članaka, autora, kategorija i oznaka. Članak ima polja za naslov, tekst, izabranu sliku, datum objave, autora i kategoriju. Autor ima polja za ime, biografiju i fotografiju. Kategorija ima polje za naziv i opis. Veze među njima, primjerice da svaki članak pripada jednom autoru i jednoj ili više kategorija, dio su modela sadržaja.
+
+Za komunikologe, dobro definiran model sadržaja znači konzistentan sadržaj. Ako je model definirao da svaki članak mora imati izabranu sliku i SEO opis, urednik ne može objaviti članak bez tih elemenata. Ovo osigurava kvalitetu i potpunost sadržaja bez oslanjanja na disciplinu pojedinaca. WordPress to postiže prilagođenim poljima (custom fields) i prilagođenim vrstama objava (custom post types). Headless CMS sustavi modeliranje sadržaja nude kao temeljnu funkcionalnost s vizualnim alatima za definiranje modela.
+
+Migracija sadržaja proces je prebacivanja sadržaja s jedne platforme na drugu i gotovo uvijek je složeniji nego što se očekuje. Tekstualni sadržaj obično se može izvesti i uvesti relativno jednostavno. Slike zahtijevaju premještanje datoteka i ažuriranje poveznica unutar sadržaja. Metapodaci poput kategorija, oznaka, datuma objave i autorstva moraju se mapirati iz stare strukture u novu. Interne poveznice moraju se ažurirati jer se URL struktura obično mijenja pri migraciji. SEO elementi, uključujući meta naslove, opise i preusmjeravanja starih URL-ova na nove, kritični su jer pogrešna migracija može uzrokovati dramatičan pad u rangiranju na tražilicama.
+
+Za komunikologa, ključna lekcija o migraciji jest da je puno skuplja i rizičnija nego što se čini na prvi pogled. Odluka o početnoj platformi zato ima dugoročne posljedice jer svaka buduća migracija košta vrijeme, novac i potencijalni gubitak SEO pozicija. Ovo je još jedan razlog zašto je strateški izbor platforme toliko važan.
+
+Sadržajna strategija (content governance) podrazumijeva skup pravila, procesa i odgovornosti za upravljanje sadržajem kroz životni ciklus. Tko može objavljivati? Tko pregledava sadržaj prije objave? Koliko često se revidira postojeći sadržaj? Tko je odgovoran za uklanjanje zastarjelog sadržaja? Kako se upravlja pravnim i regulatornim zahtjevima poput GDPR-a u sadržaju? CMS koji podržava robusne korisničke uloge, workflow-ove odobravanja i automatske podsjetnike za reviziju sadržaja čini sadržajnu strategiju lakšom za provođenje.
+
+
+## Integracije i ekosustav
+
+Moderna web prisutnost ne postoji u izolaciji. CMS mora komunicirati s nizom drugih sustava koji zajedno čine digitalni ekosustav organizacije.
+
+CRM integracija povezuje web stranicu sa sustavom za upravljanje odnosima s korisnicima. Kada posjetitelj ispuni kontakt formu na web stranici, njegovi podaci automatski se prosljeđuju u CRM poput Salesforcea, HubSpota ili Pipedrivea. Komunikacijski tim tada može pratiti kako je taj posjetitelj postao lead, zatim klijent, bez ručnog kopiranja podataka između sustava.
+
+Email marketing integracija povezuje CMS s platformama poput Mailchimpa, Breva ili ActiveCampaigna. Prijava na newsletter na web stranici automatski dodaje korisnika u email listu. Objava novog blog posta može automatski generirati email notifikaciju pretplatnicima. Ova automatizacija štedi vrijeme i smanjuje mogućnost pogreške.
+
+Analitička integracija povezuje CMS s Google Analyticsom, Hotjarom i drugim alatima za praćenje ponašanja korisnika. WordPress nudi dodatke za integraciju s gotovo svakim analitičkim alatom. No-code platforme obično imaju ugrađenu osnovnu analitiku i mogućnost dodavanja eksternih alata putem koda za praćenje.
+
+Društvene mreže integriraju se na više načina. Automatska distribucija sadržaja objavljuje novi blog post na društvenim mrežama. Ugradnja sadržaja prikazuje Instagram feed ili Twitter objave na web stranici. Društvena prijava omogućuje korisnicima da se registriraju koristeći postojeći Facebook ili Google račun.
+
+Platežni sustavi poput Stripea, PayPala ili lokalnih opcija integriraju se za web trgovinu ili donacije. WordPress koristi WooCommerce za punu e-commerce integraciju. Shopify ima platežne sustave integrirane od temelja. No-code platforme nude vlastite platežne opcije s različitim razinama provizije.
+
+Za komunikologe, razumijevanje integracija važno je jer svaka integracija dodaje vrijednost ali i složenost. Više integracija znači više točaka koje mogu zakazati, više podataka koje treba pratiti i više sustava koje treba održavati. Strateški pristup integracijama znači dodavanje samo onih koje donose mjerljivu vrijednost i izbjegavanje kompleksnosti koja ne opravdava svoj trošak.
+
+
+## Odabir za hrvatski kontekst
+
+Na hrvatskom tržištu, izbor CMS-a ima neke specifičnosti koje vrijedi razumjeti.
+
+Većina hrvatskih web agencija primarno radi s WordPressom. To znači da je najlakše pronaći developera ili agenciju za WordPress projekt, da su troškovi održavanja konkurentni i da je zajednica aktivna. Zagreb ima aktivnu WordPress zajednicu s redovitim meetupima i povremenim WordCamp konferencijama.
+
+Za male tvrtke i obrte, no-code platforme postaju sve popularnije jer eliminiraju potrebu za angažiranjem agencije za osnovnu web prisutnost. Turistički objekti na obali sve češće koriste Wix ili Squarespace za brzo postavljanje stranice s galerijom, kontaktom i mogućnošću rezervacije.
+
+Za e-trgovinu, WooCommerce na WordPressu i Shopify dominiraju. WooCommerce ima prednost integracije s lokalnim platežnim sustavima i dostavnim službama. Shopify je globalniji ali podržava hrvatske platežne opcije.
+
+Za velike organizacije i institucije, Drupal ima prisutnost u javnom sektoru, a prilagođena rješenja na modernim web stackovima koriste se u tehnološkim tvrtkama i startupima.
+
+Za organizacije u turizmu, koji je ključna industrija za Hrvatsku, CMS mora podržavati višejezičnost (minimalno hrvatski i engleski, idealno i njemački i talijanski), integraciju s booking sustavima, SEO optimizaciju za lokalne i međunarodne upite, kvalitetan prikaz slika i mobilnu prilagodbu. WordPress s odgovarajućim dodacima ili specijalizirana platforma za turistički sektor obično su najbolji izbori.
+
+
+## Trendovi koji oblikuju budućnost CMS-a
+
+Nekoliko trendova utječe na to kako će se CMS sustavi razvijati u nadolazećim godinama i komunikolozi ih trebaju pratiti.
+
+AI integracija u CMS sustave ubrzano se razvija. WordPress već ima dodatke koji koriste AI za generiranje sadržaja, optimizaciju naslova, automatsko tagiranje slika i predlaganje internih poveznica. Contentful i drugi headless CMS sustavi integriraju AI za automatsko prevođenje, sažimanje sadržaja i personalizaciju. Za komunikologe, AI u CMS-u obećava veću produktivnost ali zahtijeva i kritičku procjenu AI-generiranog sadržaja, o čemu smo govorili prošli tjedan.
+
+Composable arhitektura novi je pristup koji ide korak dalje od headless CMS-a. Umjesto jednog monolitnog sustava ili čak jednog headless CMS-a, composable pristup koristi najbolje specijalizirane servise za svaku funkciju. Jedan servis za upravljanje sadržajem, drugi za pretraživanje, treći za personalizaciju, četvrti za e-trgovinu, peti za analitiku, svi povezani API-jima. Ovo nudi maksimalnu fleksibilnost ali i maksimalnu složenost.
+
+Visual editing i inline editing postaju standard. Umjesto da urednik piše tekst u apstraktnom editoru i zatim ide pregledavati kako izgleda na stranici, moderni CMS sustavi omogućuju uređivanje izravno na vizualnom prikazu stranice. Kliknete na tekst na stranici, uredite ga i promjena se odmah vidi. WordPress Full Site Editing, Webflow i Storyblok primjeri su ovog trenda.
+
+Edge computing i distribuirana isporuka sadržaja postaju norma. Umjesto jednog centralnog poslužitelja, sadržaj se isporučuje s rubnih čvorova (edge nodes) raspoređenih po cijelom svijetu. Platforme poput Vercela i Netlifyja ovo nude kao standardnu funkcionalnost. Za komunikologe, implikacija je da se web stranice mogu učitavati gotovo istom brzinom bez obzira na to gdje se posjetitelj fizički nalazi.
+
+
+## Na kraju ovog poglavlja
+
+CMS nije samo tehnički alat. To je temeljna infrastruktura komunikacijske strategije u digitalnom okruženju. Platforma koju izaberete određuje koliko brzo možete reagirati na događaje, koliko kreativni možete biti u prezentaciji sadržaja, koliko ste ovisni o tehničkom timu, koliko je vaša web prisutnost sigurna i brza te koliko vas koštaju promjene.
+
+Ne postoji jedan CMS koji je najbolji za sve. WordPress je izvrstan za organizacije koje trebaju fleksibilnost i veliku zajednicu. No-code platforme izvrsne su za male organizacije koje trebaju brzu i jednostavnu web prisutnost. Headless CMS sustavi izvrsni su za organizacije s višekanalnom strategijom i tehničkim timom. Prilagođena rješenja na modernom web stacku izvrsna su za organizacije s specifičnim potrebama i budžetom za razvoj.
+
+Za komunikologa, najvažnija kompetencija nije znati kodirati u nekom od ovih sustava. Najvažnija kompetencija je razumjeti mogućnosti i ograničenja svake opcije dovoljno da može sudjelovati u donošenju informirane odluke i da može maksimalno iskoristiti platformu koju organizacija izabere.
+
+Sljedeći tjedan govorit ćemo o principima UX dizajna i korisničkog iskustva. Veza s današnjom temom je izravna jer CMS određuje tehničke mogućnosti, ali korisničko iskustvo određuje hoće li posjetitelj ostati na stranici, pronaći ono što traži i obaviti željenu akciju.
+
+::: {.callout-note}
+## Ključni zaključci
+
+CMS odvaja sadržaj od prezentacije i omogućuje komunikacijskom timu autonomno upravljanje web sadržajem bez programerskog znanja.
+
+WordPress pokreće 43% weba zahvaljujući besplatnosti, ogromnom ekosustavu dodataka i aktivnoj zajednici, ali zahtijeva proaktivno održavanje sigurnosti i performansi.
+
+Headless CMS odvaja sadržaj od front-enda, omogućuje višekanalnu distribuciju ali povećava ovisnost o tehničkom timu i troškove.
+
+No-code platforme poput Wixa, Squarespacea i Webflowa nude brzu i jednostavnu izradu web stranica ali s ograničenom fleksibilnošću i potencijalnom ovisnošću o platformi.
+
+Izbor CMS-a strateška je odluka koja mora uzeti u obzir potrebe za sadržajem, tehničke sposobnosti tima, proračun, SEO zahtjeve, skalabilnost, sigurnost i višejezičnost.
+
+CMS izravno utječe na SEO, pristupačnost, sigurnost i performanse web stranice jer generira HTML koji tražilice i korisnici vide.
+
+Integracije s CRM-om, email marketingom, analitikom i platežnim sustavima dio su ukupnog digitalnog ekosustava koji komunikolog mora razumjeti.
+
+AI integracija, composable arhitektura i visual editing trendovi su koji oblikuju budućnost CMS sustava.
+
+Za hrvatski kontekst, WordPress dominira, no-code platforme rastu među malim tvrtkama, a višejezičnost je kritičan zahtjev za organizacije u turizmu.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 5 bavit će se principima UX dizajna i korisničkog iskustva.
+
+Prije petog predavanja napravite četiri stvari.
+
+Prvo, odaberite jednu web stranicu hrvatske organizacije i pokušajte identificirati koji CMS koristi. Koristite alat Wappalyzer ili BuiltWith za provjeru. Zabilježite CMS, hosting i ostale tehnologije koje stranica koristi.
+
+Drugo, kreirajte besplatan račun na WordPress.com ili Wix.com i provedite trideset minuta istražujući editor. Pokušajte kreirati jednostavnu stranicu s naslovom, tekstom, slikom i kontakt formom. Zabilježite što vam je bilo intuitivno, a što frustrirajuće.
+
+Treće, posjetite web stranice tri izravna konkurenta neke organizacije koju poznajete i usporedite njihove tehnološke izbore. Koriste li isti CMS? Koja je brža prema PageSpeed Insights? Koja ima bolju mobilnu prilagodbu?
+
+Četvrto, razmislite o organizaciji u kojoj biste željeli raditi i definirajte tri najvažnija kriterija za izbor CMS-a te organizacije. Obrazložite svoj izbor na temelju onoga što ste naučili na predavanju.
+
+
+## Dodatno čitanje
+
+Obavezno je proučiti WordPress.org dokumentaciju pod naslovom Getting Started with WordPress koja pruža pregled mogućnosti platforme čak i ako je ne planirate koristiti.
+
+Za dublje razumijevanje preporučuje se sljedećih nekoliko izvora.
+
+W3Techs Usage Statistics redovito ažurira statistike o korištenju CMS sustava na webu i pruža podatkovni kontekst za razumijevanje tržišne dinamike.
+
+Smashing Magazine objavljuje tehničke ali pristupačne članke o modernom web razvoju, CMS sustavima i dizajnu. Osobito su korisni njihovi pregledi i usporedbe različitih platformi.
+
+CSS-Tricks, sada dio DigitalOceana, nudi objašnjenja web tehnologija pristupačna netehničkoj publici.
+
+Contentful Blog objavljuje članke o headless CMS arhitekturi i modernom pristupu upravljanju sadržajem, korisne za razumijevanje ovog rastućeg trenda.
+
+Webflow University besplatna je edukacijska platforma za učenje Webflowa koja istovremeno uči i web dizajn koncepte primjenjive šire od same platforme.
+
+Shopify Blog objavljuje detaljne vodiče o e-commerce strategiji relevantne za komunikologe koji rade s online trgovinama.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| CMS | Content Management System, sustav za upravljanje digitalnim sadržajem |
+| WordPress | Najpopularniji CMS otvorenog koda koji pokreće oko 43% web stranica |
+| Gutenberg | WordPressov blok editor za uređivanje sadržaja |
+| Full Site Editing | WordPressova funkcionalnost za vizualno uređivanje cijele stranice |
+| Plugin ili dodatak | Softverski modul koji proširuje funkcionalnost CMS-a |
+| Tema (Theme) | Predložak koji definira vizualni izgled web stranice u CMS-u |
+| Headless CMS | CMS bez front-enda koji sadržaj isporučuje putem API-ja |
+| Hibridni CMS | Sustav koji kombinira tradicionalni CMS s modernim front-endom |
+| Contentful | Popularan komercijalni headless CMS |
+| Strapi | Najpopularniji headless CMS otvorenog koda |
+| No-code platforma | Alat za izradu web stranica bez programiranja |
+| Low-code platforma | Alat koji zahtijeva minimalno programiranje za napredne prilagodbe |
+| Wix | Popularna no-code platforma za izradu web stranica |
+| Squarespace | Premium no-code platforma s fokusom na dizajn |
+| Webflow | Napredni no-code alat s profesionalnom razinom kontrole |
+| Shopify | Specijalizirana platforma za e-trgovinu |
+| WooCommerce | WordPress dodatak koji omogućuje e-commerce funkcionalnost |
+| Joomla | Drugi najrašireniji CMS otvorenog koda |
+| Drupal | CMS poznat po sigurnosti i skalabilnosti |
+| Web stack | Kombinacija tehnologija koje zajedno čine web stranicu |
+| React | JavaScript biblioteka za izradu korisničkih sučelja |
+| Next.js | React framework sa server-side renderingom i statičkom generacijom |
+| Vue.js | JavaScript framework alternativa Reactu |
+| Nuxt.js | Vue framework analogan Next.js-u |
+| Tailwind CSS | CSS framework s unaprijed definiranim klasama za stiliziranje |
+| Vercel | Platforma za hosting i deployment modernih web stranica |
+| Netlify | Platforma za hosting Jamstack i modernih web stranica |
+| Jamstack | Arhitektura koja koristi JavaScript, API-je i unaprijed generirani Markup |
+| Composable arhitektura | Pristup koji koristi specijalizirane servise za svaku funkciju |
+| Visual editing | Uređivanje sadržaja izravno na vizualnom prikazu stranice |
+| Edge computing | Obrada i isporuka sadržaja s rubnih čvorova mreže bliže korisniku |
+| Urednički workflow | Proces od kreiranja sadržaja do objave s definiranim koracima i ulogama |
+| Verzioniranje sadržaja | Praćenje povijesti promjena s mogućnošću vraćanja na prethodne verzije |
+| WPML | WordPress dodatak za višejezične web stranice |
+| Yoast SEO | Popularan WordPress dodatak za SEO optimizaciju |
+| XML Sitemap | Datoteka koja navodi stranice web mjesta za tražilice |
+| CRM | Customer Relationship Management, sustav za upravljanje odnosima s korisnicima |
+| Vendor lock-in | Ovisnost o specifičnom dobavljaču platforme koja otežava migraciju |
+| Model sadržaja | Definicija vrsta sadržaja, njihovih polja i međusobnih veza u CMS sustavu |
+| Migracija sadržaja | Proces prebacivanja sadržaja s jedne platforme na drugu |
+| Sadržajna strategija | Skup pravila, procesa i odgovornosti za upravljanje sadržajem |
+| Wordfence | Popularni WordPress sigurnosni dodatak |
+| WP Rocket | WordPress dodatak za predmemoriranje i optimizaciju performansi |
