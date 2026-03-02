@@ -35,7 +35,8 @@
       "Bash(cmd.exe /c \"where quarto 2>&1\")",
       "Bash(powershell.exe -Command \"Get-Command quarto 2>&1\")",
       "Bash(export PATH=\"/c/Users/lsikic/AppData/Local/Programs/Positron/resources/app/quarto/bin:$PATH\")",
-      "Bash(quarto --version)"
+      "Bash(quarto --version)",
+      "Bash(git status -u)"
     ]
   }
 }

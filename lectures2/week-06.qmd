@@ -1,17 +1,374 @@
 ---
-title: "Tjedan 6: Računalstvo u oblaku i suradnički rad"
-subtitle: "IaaS, PaaS, SaaS i alati koji definiraju moderni organizacijski rad"
-author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [primijenjeno, oblak]
+title: "Sadržajna strategija i pisanje za web"
+subtitle: "Od sadržajnog kaosa do strateške komunikacije"
+date: 2025-03-08
+categories: [sadržaj, strategija, pisanje]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje pokriva osnove računalstva u oblaku, glavne pružatelje usluga te alate u oblaku koji definiraju moderni organizacijski rad, od suradničkih paketa do CRM sustava i platformi za email marketing.
+  Ovo predavanje istražuje sadržajnu strategiju kao disciplinu koja povezuje organizacijske ciljeve s korisničkim potrebama putem planiranog, kreiranog i održavanog sadržaja. Pisanje za web zahtijeva specifične vještine različite od tradicionalnog pisanja jer digitalno okruženje nameće drugačije uvjete čitanja, drugačija očekivanja publike i drugačije mjere uspjeha.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Definirati sadržajnu strategiju kao disciplinu i objasniti njezinu ulogu u organizacijskoj komunikaciji
+2. Provesti sadržajnu reviziju (content audit) i identificirati nedostatke u postojećem sadržaju organizacije
+3. Primijeniti principe pisanja za web, uključujući strukturiranje, skenabilnost i prilagodbu digitalnom kontekstu čitanja
+4. Razviti sadržajni kalendar koji povezuje organizacijske ciljeve s potrebama publike
+5. Razumjeti tonalitet i glas brenda (brand voice) kao strateški alat komunikacije
+6. Primijeniti SEO principe u pisanju web sadržaja bez žrtvovanja kvalitete i čitljivosti
+7. Procijeniti uspješnost sadržaja koristeći ključne metrike i analitičke alate
+8. Artikulirati razliku između sadržajnog marketinga i tradicionalnog oglašavanja te prepoznati situacije u kojima je svaki pristup primjeren
 
-*Bit će dodano.*
+
+## Zašto sadržajna strategija postoji
+
+Na webu postoji paradoks koji definira komunikacijsku profesiju u digitalnom dobu. Nikada u ljudskoj povijesti nije bilo lakše objaviti sadržaj. I nikada u ljudskoj povijesti nije bilo teže postići da taj sadržaj netko pročita, razumije i djeluje prema njemu.
+
+Svake minute na webu se objave stotine tisuća novih blog postova, tisuće videa, milijuni objava na društvenim mrežama. Organizacije proizvode sadržaj u količinama koje bi bile nezamislive prije dvadeset godina. Ali količina nije kvaliteta. Većina tog sadržaja nikada ne doseže publiku kojoj je namijenjen. Nestaje u beskrajnom moru digitalnog šuma, nepročitano, neshvaćeno i neučinkovito.
+
+Sadržajna strategija odgovor je na ovaj problem. Ona postavlja pitanja koja mnoge organizacije preskaču u žurbi da proizvedu više sadržaja. Zašto uopće objavljujemo ovaj sadržaj? Kome je namijenjen? Što želimo da čitatelj učini nakon što ga pročita? Kako ćemo znati je li sadržaj uspješan? Tko ga stvara, tko ga pregledava i tko odlučuje o objavi? Što se događa sa sadržajem nakon objave, tko ga ažurira, tko ga uklanja kada zastari?
+
+Kristina Halvorson, jedna od osnivačica discipline, definirala je sadržajnu strategiju kao planiranje stvaranja, isporuke i upravljanja korisnim, upotrebljivim sadržajem. Ključna riječ u ovoj definiciji je planiranje. Sadržajna strategija nije reaktivno pisanje kada se nešto dogodi. To je proaktivno razmišljanje o tome kako sadržaj služi organizacijskim ciljevima i korisničkim potrebama istovremeno.
+
+U prethodnim tjednovima naučili ste infrastrukturu (kako web funkcionira), SEO (kako se sadržaj pronalazi), vrednovanje informacija (kako se procjenjuje kvaliteta), CMS (kako se sadržaj objavljuje) i UX (kako korisnici doživljavaju stranicu). Danas dolazimo do samog sadržaja, supstance koja sve ostalo čini relevantnim. Najbolja infrastruktura, savršen SEO, vrhunski CMS i besprijekoran UX ništa ne vrijede ako sadržaj ne odgovara na stvarnu potrebu stvarnog korisnika na razumljiv, koristan i uvjerljiv način.
+
+
+## Sadržajna strategija kao disciplina
+
+Sadržajna strategija obuhvaća četiri međusobno povezana područja.
+
+Prvo je supstanca sadržaja, što uključuje teme, poruke, ton, strukturu i dubinu. Koje teme pokrivamo? Koliko detaljno? Kojim tonom? Iz koje perspektive? Ova pitanja nisu trivijalna jer definiraju identitet organizacije u digitalnom prostoru. Organizacija koja na web stranici koristi korporativni žargon pun akronima i pasivnih konstrukcija komunicira nešto fundamentalno drugačije od organizacije koja piše jasno, izravno i s empatijom prema čitatelju.
+
+Drugo je struktura sadržaja, što uključuje organizaciju, kategorizaciju, označavanje i međusobno povezivanje. Iz petog tjedna znate da informacijska arhitektura određuje kako korisnik navigira sadržajem. Sadržajna strategija definira kako se sadržaj organizira na razini koja nadilazi navigaciju. Kako su članci međusobno povezani? Postoji li hijerarhija od općenitog prema specifičnom? Jesu li sadržaji označeni na način koji omogućuje višestruko pronalaženje?
+
+Treće je workflow sadržaja, što uključuje procese stvaranja, recenzije, odobravanja, objave i održavanja. Iz četvrtog tjedna znate da CMS podržava ove procese, ali CMS je samo alat. Sadržajna strategija definira tko piše, tko pregledava, tko odobrava, koliko vremena svaki korak zahtijeva i što se događa kada se rokovi ne poštuju.
+
+Četvrto je upravljanje sadržajem (content governance), što uključuje pravila, standarde, smjernice i odgovornosti. Tko odlučuje o tonu? Tko odobrava korištenje logotipa partnera? Tko je odgovoran za ažuriranje zastarjelih informacija? Tko odlučuje kada se sadržaj povlači? Za velike organizacije, nedostatak jasnog upravljanja rezultira sadržajnim kaosom u kojem različiti odjeli objavljuju kontradiktorne informacije, zastarjeli sadržaj ostaje na stranici godinama i nitko ne zna tko je za što odgovoran.
+
+
+## Sadržajna revizija
+
+Prije nego što organizacija može razviti strategiju, mora razumjeti što ima. Sadržajna revizija (content audit) sustavni je pregled postojećeg sadržaja koji odgovara na osnovna pitanja. Što imamo? Gdje je? Koliko je staro? Je li točno? Je li relevantno? Koristi li ga netko?
+
+Kvantitativna sadržajna revizija inventar je svega što postoji. Svaka stranica, svaki blog post, svaki dokument za preuzimanje, svaka slika, svaki video. Za veliku web stranicu, ovo može značiti stotine ili tisuće stavki. Alati poput Screaming Froga mogu automatski popisati sve URL-ove na stranici, ali kvantitativna revizija zahtijeva i ručnu kategorizaciju svake stavke prema vrsti sadržaja, temi, datumu objave, autoru i statusu.
+
+Kvalitativna sadržajna revizija procjenjuje kvalitetu svakog komada sadržaja. Je li tekst dobro napisan? Jesu li informacije točne i aktualne? Odgovara li sadržaj potrebama ciljne publike? Je li optimiziran za tražilice? Je li pristupačan? Podudaraju li se ton i stil sa smjernicama brenda? Kvalitativna revizija zahtijeva ljudsku procjenu i značajno je zahtjevnija od kvantitativne, ali je kritična za razumijevanje stvarnog stanja.
+
+ROT analiza kategorizira sadržaj u tri grupe. Redundantan sadržaj dupliciran je ili ponavlja informacije dostupne drugdje. Zastarjeli (outdated) sadržaj sadrži informacije koje više nisu točne. Trivijalan sadržaj nema jasnu svrhu ili publiku. Cilj ROT analize je identificirati sadržaj koji treba ukloniti ili ažurirati jer zastarjeli i netočni sadržaj na web stranici ne samo da zauzima prostor nego aktivno šteti organizaciji jer potkopava povjerenje posjetitelja i može uzrokovati SEO probleme.
+
+Za komunikologe, sadržajna revizija često otkriva neugodne istine. Mnoge organizacije imaju desetke ili stotine stranica koje nitko ne posjećuje, blog postove stare pet godina s netočnim informacijama, deset verzija istog dokumenta na različitim mjestima na stranici i nijedan jasan odgovor na najčešća pitanja korisnika. Revizija nije ugodna vježba, ali je nužan temelj za svaku ozbiljnu strategiju.
+
+Sadržajni gap analiza komplementarna je reviziji. Dok revizija procjenjuje što postoji, gap analiza identificira što nedostaje. Koja pitanja korisnici postavljaju a mi na njih nemamo odgovor? Koje teme pokrivaju konkurenti a mi ne? Koje faze korisničkog puta nemaju adekvatnog sadržaja? Rezultati keyword istraživanja iz drugog tjedna ovdje postaju izravno korisni jer pokazuju što korisnici traže, a usporedba s postojećim sadržajem otkriva praznine.
+
+Praktični primjer sadržajne revizije za hrvatsku turističku organizaciju ilustrira proces. Organizacija ima web stranicu s tristo pedeset stranica sadržaja. Kvantitativna revizija otkriva da je stotinu dvadeset stranica starije od tri godine bez ikakve izmjene. Kvalitativna revizija otkriva da pedesetak stranica sadrži zastarjele cijene, nepostojeće telefonske brojeve ili linkove na zatvorene objekte. ROT analiza identificira trideset stranica s dupliciranim sadržajem (isti hotel opisan na dva različita mjesta), osamdeset stranica sa zastarjelim informacijama i dvadeset stranica čija svrha nije jasna (poput praznih kategorija ili stranica s jednom rečenicom). Gap analiza otkriva da ne postoji sadržaj o pristupačnosti za osobe s invaliditetom, da nema informacija o javnom prijevozu do turističkih lokacija i da FAQ sekcija ne odgovara na najčešća pitanja koja turisti postavljaju u komentarima na TripAdvisoru.
+
+Rezultat revizije nije samo popis problema nego prioritizirani akcijski plan. Prvo se uklanja ili ažurira zastarjeli sadržaj jer on aktivno šteti. Zatim se popunjavaju najkritičniji sadržajni jazovi. Konačno se optimizira postojeći kvalitetan sadržaj za bolje performanse.
+
+Za komunikologe, provođenje sadržajne revizije vještina je koja demonstrira stratešku vrijednost komunikacijske profesije. Umjesto da samo proizvode sadržaj, komunikolozi koji provode revizije pokazuju sposobnost kritičke analize, strateške procjene i sustavnog poboljšanja, sposobnosti koje ih pozicioniraju kao strateške savjetnike a ne samo izvršitelje.
+
+
+## Glas brenda i tonalitet
+
+Glas brenda (brand voice) konzistentan je način na koji organizacija komunicira u svim kanalima. To je osobnost organizacije izražena riječima. Mailchimp zvuči veselo, neformalano i pomalo šaljivo. Goldman Sachs zvuči autoritativno, precizno i ozbiljno. Innocent Drinks zvuči razigrano, toplo i samoironično. Svaka od ovih organizacija napravila je svjestan izbor o tome kako želi zvučati i taj izbor dosljedno primjenjuje u svemu od web stranice do emailova, od društvenih mreža do korisničke podrške.
+
+Za komunikologe, definiranje glasa brenda jedna je od najvažnijih strateških odluka jer glas oblikuje percepciju organizacije jednako snažno kao vizualni identitet. Organizacija može imati besprijekoran logo i lijepu web stranicu, ali ako ton komunikacije odudara od očekivanja publike ili je nedosljedan kroz kanale, ukupni dojam je nekoherentan.
+
+Glas brenda obično se definira kroz tri do pet atributa. Na primjer, organizacija može definirati svoj glas kao stručan, pristupačan i iskren. Stručan znači da koristi točne informacije, citira izvore i demonstrira dubinu znanja, ali ne znači da koristi žargon nedostupan prosječnom čitatelju. Pristupačan znači da piše jasno, koristi svakodnevni jezik i obraća se čitatelju izravno, ali ne znači da je infantilan ili previše neformalan. Iskren znači da otvoreno komunicira i o izazovima, ne samo o uspjesima, ali ne znači da nepotrebno dijeli internu problematiku.
+
+Tonalitet (tone) razlikuje se od glasa po tome što se prilagođava kontekstu dok glas ostaje konstantan. Organizacija s veselo definiranim glasom neće veselo komunicirati o sigurnosnom incidentu koji je pogodio korisnike. Glas ostaje isti (npr. empatičan i iskren), ali ton se prilagođava situaciji (ozbiljan i odgovoran umjesto veseo i razigran). Za komunikologe, sposobnost prilagodbe tona unutar konzistentnog glasa sofisticirana je vještina koja razlikuje strateško komuniciranje od mehaničkog objavljivanja.
+
+Vodič za stil i ton (style guide ili content guide) dokument je koji operacionalizira glas brenda u konkretne smjernice. Uključuje pravila za ton u različitim situacijama, preporučene i zabranjene fraze, primjere dobrog i lošeg pisanja, smjernice za oslovljavanje publike (Vi ili ti, formalno ili neformalno), pravila za korištenje emojija, pravila za gramatiku i pravopis specifične za organizaciju i smjernice za pisanje na različitim platformama (web, email, društvene mreže).
+
+Za hrvatske organizacije, specifičan izazov u definiranju glasa jest izbor između obraćanja na ti i obraćanja na Vi. Ovaj naizgled mali izbor ima značajne implikacije za percepciju brenda. Startup koji cilja mlađu publiku prirodno će se obraćati na ti. Banka ili osiguravajuće društvo vjerojatno će koristiti Vi. Organizacija koja cilja široku publiku mora napraviti svjestan izbor i dosljedno ga primjenjivati. Nedosljednost, primjerice obraćanje na ti na Instagramu ali na Vi na web stranici, zbunjuje i signalizira da organizacija nema jasnu komunikacijsku strategiju.
+
+
+## Pisanje za web
+
+Pisanje za web fundamentalno se razlikuje od pisanja za tisak. Ovo nije pitanje kvalitete jer dobar pisac može pisati odlično za oba medija. Ali uvjeti čitanja i ponašanje čitatelja toliko se razlikuju da iste tehnike ne funkcioniraju jednako dobro u oba konteksta.
+
+Na webu, čitatelji ne čitaju. Skeniraju. Istraživanje Jakoba Nielsena iz 1997. godine, potvrđeno bezbrojnim kasnijim studijama, pokazalo je da prosječan web korisnik čita samo dvadeset do dvadeset osam posto teksta na stranici. Ostatak skenira tražeći ključne riječi, naslove i vizualne signale koji ukazuju na relevantnost. Ovo nije zato što su web korisnici lijeni ili površni. To je zato što je količina dostupnog sadržaja toliko ogromna da je skeniranje jedina racionalna strategija za pronalaženje relevantnog.
+
+Za komunikologe, ova činjenica ima radikalne implikacije za stil pisanja. Svaka rečenica mora opravdati svoje postojanje jer čitatelj koji skenira i naiđe na neinformativan odlomak neće čitati dalje u nadi da će sljedeći biti bolji. Preskoči ga i nastavi skenirati. Ako ne naiđe na nešto relevantno u sljedećih nekoliko sekundi, odlazi s vaše stranice. Nemilost web čitatelja nije osobna. Ona je strukturalna, uvjetovana okruženjem u kojem su uvijek na jedan klik od alternativnog izvora informacija.
+
+Princip jedne ideje po odlomku temelj je web pisanja. Svaki odlomak treba komunicirati jednu jasnu misao. Prva rečenica odlomka treba komunicirati tu misao. Preostale rečenice trebaju je podržati, objasniti ili ilustrirati. Čitatelj koji skenira samo prve rečenice odlomaka trebao bi dobiti koherentan pregled cijelog teksta. Ovo se razlikuje od akademskog pisanja u kojem odlomci mogu graditi složene argumente kroz više međusobno ovisnih tvrdnji.
+
+Aktivna konstrukcija umjesto pasivne pojačava jasnoću i angažman. "Tim je pokrenuo kampanju" jasnije je od "Kampanja je pokrenuta od strane tima". Aktivna konstrukcija identificira subjekt akcije, što čitatelju pomaže vizualizirati tko je odgovoran i što se događa. Pasivna konstrukcija sakriva subjekt, što u korporativnoj komunikaciji često služi izbjegavanju odgovornosti (slavno "Pogreške su napravljene") ali na webu stvara dosadan, bezlični tekst koji čitatelj preskače.
+
+Konkretnost umjesto apstrakcije drugi je ključni princip. "Naš softver ubrzava obradu narudžbi za šezdeset posto" konkretnije je i uvjerljivije od "Naš softver značajno poboljšava operativnu efikasnost". Brojevi, primjeri, usporedbe i specifični detalji angažiraju čitatelja jer mozak lakše obrađuje konkretne informacije nego apstraktne koncepte. Za komunikologe, ovo znači da svaka tvrdnja na web stranici treba biti poduprta specifičnim dokazom, primjerom ili podatkom kad god je to moguće.
+
+Naslovi na webu služe drugačijoj svrsi nego naslovi u novinama ili časopisima. Web naslov mora istovremeno informirati čitatelja o sadržaju (da zna treba li čitati dalje), privući pažnju u konkurenciji s desecima drugih naslova u feedu ili rezultatima pretraživanja, sadržavati ključne riječi za SEO te biti razumljiv izvan konteksta jer korisnik može na njega naići u Google rezultatima, na društvenim mrežama ili u email inboxu. Kreativni naslovi koji funkcioniraju u tiskanim medijima, poput igre riječima ili misterioznih aluzija, na webu često ne funkcioniraju jer korisnik koji skenira nema vremena dešifrirati što naslov znači.
+
+Kratke rečenice funkcioniraju bolje na ekranu nego duge. Prosječna duljina rečenice na webu trebala bi biti između petnaest i dvadeset riječi. Povremena duga rečenica za složenu misao prihvatljiva je, ali niz dugih rečenica otežava čitanje na ekranu, posebno mobilnom. Varijacija u duljini rečenica stvara ritam koji održava pažnju. Kratka rečenica nakon duge naglašava poantu. Niz kratkih rečenica stvara osjećaj energije.
+
+Povezivanje i kontekstualizacija specifični su za web jer svaki tekst na webu dio je veće mreže sadržaja. Interne poveznice na relevantne stranice pomažu čitatelju koji želi dublje istražiti temu, poboljšavaju SEO i smanjuju stopu napuštanja jer daju čitatelju razlog da ostane na vašoj stranici. Vanjske poveznice na kvalitetne izvore demonstriraju stručnost i povjerenje, o čemu smo govorili u kontekstu E-E-A-T principa u drugom tjednu.
+
+Struktura teksta na webu treba pratiti vizualnu logiku koja pomaže čitatelju da se orijentira. Naslov jasno komunicira temu. Uvodni odlomak sažima ključnu poruku i obećava vrijednost koju će čitatelj dobiti nastavkom čitanja. Podnaslovi dijele tekst u logične sekcije koje čitatelj može skenirati i odabrati one koje su mu relevantne. Svaka sekcija počinje najvažnijom informacijom i zatim pruža detalje. Zaključak sažima ključne uvide i nudi jasan sljedeći korak. Ova struktura nije kreativno ograničenje nego komunikacijski alat koji poštuje korisnikovo vrijeme i kognitivna ograničenja.
+
+Poziv na akciju (call to action ili CTA) element je koji razlikuje web sadržaj od pasivnog teksta. Svaki komad sadržaja trebao bi voditi čitatelja prema nekom sljedećem koraku. To ne mora biti kupovina ili prijava. Može biti čitanje povezanog članka, preuzimanje vodiča, kontaktiranje organizacije ili dijeljenje sadržaja. CTA mora biti jasan (čitatelj razumije što će se dogoditi kada klikne), konkretan (umjesto "Saznaj više" korisnije je "Preuzmi besplatni vodič za SEO") i vizualno istaknut (čitatelj ga ne može propustiti).
+
+Česte pogreške u pisanju za web uključuju kopiranje teksta iz tiskanih materijala bez prilagodbe (korporativni izvještaj nije web sadržaj), pisanje za organizaciju umjesto za korisnika ("Ponosni smo na naš tim" umjesto "Naš tim vam pomaže riješiti"), korištenje žargona bez objašnjenja (svaka industrija ima žargon koji je jasan insiderima ali zbunjujući za publiku), nepotrebno duge uvode koji odgađaju korisnu informaciju, nedostatak strukture koji pretvara tekst u zid riječi i izostanak poziva na akciju koji ostavlja čitatelja bez sljedećeg koraka.
+
+
+## Životni ciklus sadržaja
+
+Sadržaj na webu nije statičan proizvod koji se kreira jednom i zaboravi. On ima životni ciklus koji zahtijeva upravljanje u svakoj fazi.
+
+Planiranje je faza u kojoj se definira svrha sadržaja, ciljna publika, format, kanali distribucije i metrike uspjeha. Kvalitetno planiranje štedi vrijeme u svim kasnijim fazama jer je lakše pisati kada znate za koga pišete, zašto i što želite postići.
+
+Kreiranje je faza pisanja, dizajniranja i produkcije. Za tekstualni sadržaj, ovo uključuje istraživanje teme, pisanje skice, revidiranje, uređivanje i finalizaciju. Za video sadržaj, uključuje skriptiranje, snimanje, montažu i postprodukciju. Za vizualni sadržaj, uključuje dizajn, reviziju i prilagodbu za različite formate.
+
+Recenzija i odobravanje faza je koja osigurava kvalitetu i usklađenost. Urednik provjerava jasnoću i stil. Stručnjak za temu provjerava točnost. Pravni odjel provjerava usklađenost s regulativom. Brand manager provjerava usklađenost s glasom brenda. Za male organizacije, jedna osoba može obavljati više ovih uloga, ali proces provjere mora postojati jer sadržaj objavljen bez provjere rizik je za organizaciju.
+
+Objava i distribucija faza je u kojoj sadržaj postaje dostupan publici. Objava na web stranici samo je početak. Distribucija putem društvenih mreža, emaila, partnerstava i plaćene promocije osigurava da sadržaj doseže ciljanu publiku.
+
+Praćenje i optimizacija faza je u kojoj se mjere rezultati i poboljšava performans. Članak koji ne rangira dobro na tražilicama može se optimizirati s boljim naslovom i meta opisom. Članak s visokom stopom napuštanja može se poboljšati boljom strukturom i uvjerljivijim uvodom. Landing stranica s niskom konverzijom može se testirati s različitim pozivima na akciju.
+
+Ažuriranje i održavanje faza je koju mnoge organizacije zanemaruju, a koja je kritična za dugoročnu vrijednost sadržaja. Informacije se mijenjaju. Statistike zastarijevaju. Vanjske poveznice prestaju raditi. Preporuke koje su bile relevantne prije dvije godine možda danas više nisu. Redoviti pregled i ažuriranje sadržaja održava ga relevantnim i točnim, što je važno i za korisnike i za tražilice jer Google preferira ažuran sadržaj.
+
+Arhiviranje ili uklanjanje završna je faza za sadržaj koji više nije relevantan i ne može se smisleno ažurirati. Uklanjanje sadržaja zahtijeva pažnju jer URL-ovi koji su indeksirani u tražilicama trebaju preusmjeravanja (301 redirect) na relevantnu zamjensku stranicu. Brutalno uklanjanje sadržaja bez preusmjeravanja rezultira 404 pogreškama koje štete SEO-u i korisničkom iskustvu.
+
+
+## Sadržajni formati na webu
+
+Web nudi raznolikost formata koja daleko premašuje mogućnosti tradicionalnih medija, i komunikolog mora razumjeti prednosti i ograničenja svakog formata.
+
+Blog postovi najčešći su oblik web sadržaja i služe višestrukim svrhama. Informiraju publiku o temama relevantnim za organizaciju. Demonstriraju stručnost. Privlače organski promet iz tražilica. Daju organizaciji glas i osobnost. Efikasan blog post adresira konkretno pitanje ili problem ciljne publike, pruža koristan odgovor i vodi čitatelja prema sljedećem koraku (bilo da je to drugi članak, prijava na newsletter ili kontakt). Blog post koji govori samo o organizaciji bez korisne vrijednosti za čitatelja je reklamni tekst maskiran kao sadržaj i čitatelji to prepoznaju.
+
+Evergreen sadržaj sadržaj je koji ostaje relevantan dugo nakon objave. Vodič za odabir CMS-a, objašnjenje osnovnih SEO principa ili pregled tipova web hostinga primjeri su evergreen sadržaja jer se temeljne informacije rijetko mijenjaju. Evergreen sadržaj posebno je vrijedan jer kontinuirano privlači promet iz tražilica mjesecima i godinama nakon objave, za razliku od aktualnih vijesti čija relevantnost pada eksponencijalno.
+
+Pillar stranice i topic cluster model suvremeni su pristup organizaciji sadržaja koji istovremeno služi korisnicima i tražilicama. Pillar stranica opsežan je pregled širokog teme (primjerice "Sve o sadržajnoj strategiji"). Cluster stranice detaljno pokrivaju specifične podteme (primjerice "Kako provesti sadržajnu reviziju" ili "Kako definirati glas brenda"). Svaka cluster stranica povezuje se na pillar stranicu i obrnuto. Ova struktura pomaže korisnicima navigirati od općenitog prema specifičnom, a tražilicama signalizira da je organizacija autoritet na toj temi.
+
+Studije slučaja (case studies) jedan su od najuvjerljivijih sadržajnih formata za organizacije koje prodaju proizvode ili usluge jer kombiniraju konkretnost, dokaz rezultata i priču. Efikasna studija slučaja opisuje izazov s kojim se klijent suočio, rješenje koje je organizacija pružila, rezultate izražene u mjerljivim podacima i citat klijenta koji potvrđuje iskustvo. Za komunikologe, pisanje studija slučaja zahtijeva vještinu naracije jer suha prezentacija činjenica ne angažira čitatelja dok pretjerano marketinški ton smanjuje vjerodostojnost.
+
+Infografike vizualno prezentiraju podatke i složene informacije na način koji je lakše razumjeti i podijeliti od čistog teksta. Za komunikologe, infografike su koristan format kada je potrebno prezentirati statističke podatke, procese, usporedbe ili kronologije. Kvalitetna infografika balansira vizualnu privlačnost s točnošću podataka i jasnoćom poruke. Loša infografika žrtvuje točnost za vizualni efekt ili je toliko pretrpana podacima da postaje nečitljiva.
+
+Video sadržaj sve je dominantniji na webu. YouTube je druga najveća tražilica na svijetu. Kratki videi na TikToku i Instagram Reelsu redefinirani su načinom na koji mlađa publika konzumira sadržaj. Za komunikologe, video nije zamjena za tekst nego komplementaran format. Video je superioran za demonstracije, emocionalne priče i osobnu komunikaciju. Tekst je superioran za detaljne informacije, upute korak po korak i sadržaj koji korisnik treba moći pretraživati i referencirati. Organizacija s zrelom sadržajnom strategijom koristi oba formata tamo gdje je svaki najefikasniji.
+
+Podcastovi (zvučni sadržaj) specifičan su format koji koristi trenutke kada korisnik ne može čitati ni gledati, poput vožnje, trčanja ili kuhanja. Za organizacije koje ciljaju profesionalnu publiku, podcast može biti izuzetno efikasan kanal jer nudi dubinu razgovora i osobnost koju kratki tekstualni formati ne mogu ponuditi.
+
+
+## SEO i pisanje sadržaja
+
+Iz drugog tjedna znate osnove SEO-a. Ovdje te principe povezujemo izravno s pisanjem sadržaja jer je to točka gdje se SEO strategija i sadržajna strategija susreću.
+
+Ključne riječi (keywords) temelj su SEO pisanja, ali pristup ključnim riječima dramatično se promijenio u posljednjem desetljeću. Nekada je bilo dovoljno ponavljati ključnu riječ što više puta u tekstu (keyword stuffing). Današnje tražilice razumiju semantiku, kontekst i namjeru iza pretraživanja. Pisanje za SEO danas znači razumjeti što korisnik zaista traži kada upiše određeni pojam i pružiti najkvalitetniji odgovor na to pitanje.
+
+Namjera pretraživanja (search intent) koncept je koji povezuje SEO s sadržajnom strategijom. Kada korisnik pretražuje "CMS", namjera može biti informacijska (želi razumjeti što je CMS), navigacijska (traži specifičan CMS koji već poznaje), komercijalna (uspoređuje CMS opcije prije odluke) ili transakcijska (želi kupiti ili instalirati CMS). Svaka namjera zahtijeva drugačiji sadržaj. Informacijski upit zahtijeva objašnjenje. Komercijalni upit zahtijeva usporedbu. Transakcijski upit zahtijeva stranicu s jasnim pozivom na akciju.
+
+Za komunikologe, praktična implikacija jest da svaki komad sadržaja mora biti pisan s jasnom namjerom pretraživanja na umu. Blog post koji pokušava istovremeno educirati, usporediti i prodavati obično ne radi dobro ni u jednom od tih zadataka. Fokusiran sadržaj koji izvrsno odgovara na specifičnu namjeru rangira se bolje i bolje služi korisniku od sveobuhvatnog sadržaja koji pokušava biti sve za svakoga.
+
+Meta naslov i meta opis prvi su kontakt korisnika s vašim sadržajem u rezultatima pretraživanja. Meta naslov treba sadržavati primarnu ključnu riječ, biti informativan i privlačan te se uklopiti u ograničenje od otprilike šezdeset znakova. Meta opis treba sažeti sadržaj stranice, uključiti poziv na akciju i uklopiti se u ograničenje od otprilike sto šezdeset znakova. Za komunikologe, pisanje meta naslova i opisa specifična je vještina jer zahtijeva kompresiju poruke u izuzetno mali prostor bez gubitka jasnoće i privlačnosti.
+
+Strukturirani podaci (structured data) omogućuju tražilicama razumijevanje sadržaja na semantičkoj razini. Schema markup za članke, recenzije, proizvode, događaje i FAQ sadržaj može rezultirati bogatim isječcima (rich snippets) u rezultatima pretraživanja koji privlače više klikova. Komunikolog ne mora znati implementirati strukturirane podatke ali mora znati zahtijevati njihovu implementaciju od tehničkog tima.
+
+E-E-A-T principi iz drugog tjedna (Experience, Expertise, Authoritativeness, Trustworthiness) izravno utječu na pisanje sadržaja. Svaki tekst treba demonstrirati iskustvo autora s temom, stručnost poduprtu kvalifikacijama ili praksom, autoritet potvrđen referencama i eksternim poveznicama te pouzdanost osiguranu točnošću, transparentnošću i redovitim ažuriranjem.
+
+
+## Sadržajni kalendar i planiranje
+
+Sadržajni kalendar alat je koji pretvara strategiju u akciju. On definira što se objavljuje, kada, gdje, tko je odgovoran i kako se sadržaj uklapa u širu komunikacijsku strategiju.
+
+Efikasan sadržajni kalendar uzima u obzir nekoliko dimenzija. Organizacijski ciljevi definiraju što organizacija želi postići (povećanje svijesti, generiranje leadova, edukacija publike, podrška prodaji). Svaki komad sadržaja mora se moći povezati s barem jednim organizacijskim ciljem. Ako ne može, postavlja se pitanje zašto ga uopće objavljujemo.
+
+Kalendar sezonalnosti i ključnih datuma identificira prilike za pravovremeni sadržaj. Za turističku organizaciju, sadržaj o ljetnom odmoru mora biti objavljen mjesecima prije sezone jer korisnici planiraju unaprijed. Za retail, Black Friday sadržaj mora biti pripremljen tjednima ranije. Za svaku industriju postoji kalendar ključnih trenutaka koji definiraju ritam sadržajne produkcije.
+
+Ravnoteža formata osigurava raznolikost. Kalendar koji sadrži samo blog postove propušta korisnike koji preferiraju video, infografike ili podcastove. Ravnoteža između evergreen sadržaja koji dugoročno privlači promet i aktualnog sadržaja koji privlači trenutnu pažnju osigurava i konzistentnost i relevantnost.
+
+Raspodjela resursa realna je procjena koliko sadržaja tim može proizvesti uz održavanje kvalitete. Četiri kvalitetna blog posta mjesečno vrijednija su od dvadeset površnih. Sadržajni kalendar koji zahtijeva više nego što tim može isporučiti rezultira propuštenim rokovima, padom kvalitete i burnoutom. Za komunikologe, sposobnost realne procjene kapaciteta i zagovaranja kvalitete nad kvantitetom ključna je upravljačka vještina.
+
+U praksi, sadržajni kalendar može biti jednostavan spreadsheet s kolonama za datum, naslov, format, kanal, autora, status i ključne riječi. Ili može biti sofisticirani alat poput Asane, Trella ili CoSchedulea koji integrira workflow, odobrenja i analitiku. Alat je manje važan od discipline korištenja. Kalendar koji postoji ali se ne poštuje lošiji je od nepostojanja kalendara jer stvara iluziju organiziranosti bez stvarne strukture.
+
+
+## Sadržajni marketing
+
+Sadržajni marketing strategija je privlačenja i zadržavanja publike putem stvaranja relevantnog, vrijednog sadržaja umjesto izravnog promoviranja proizvoda ili usluga. Razlika od tradicionalnog oglašavanja fundamentalna je u pristupu. Tradicionalno oglašavanje prekida korisnika s porukom koju on nije tražio (reklama na televiziji, banner na web stranici, oglas u feedu). Sadržajni marketing privlači korisnika pružajući mu nešto korisno (vodič, savjet, analizu) čime gradi povjerenje i pozicionira organizaciju kao autoritet u svom području.
+
+Za komunikologe, sadržajni marketing prirodan je pristup jer se temelji na kompetencijama koje komunikolozi već posjeduju, a to su razumijevanje publike, kreiranje poruka i upravljanje narativom. Ali sadržajni marketing zahtijeva i disciplinu mjerenja rezultata jer za razliku od kreativne komunikacije gdje se uspjeh procjenjuje subjektivno, sadržajni marketing mjeri se podacima. Koliko posjetitelja je privukao članak? Koliko ih je pročitalo do kraja? Koliko ih se pretplatilo na newsletter? Koliko ih je na kraju kupilo proizvod?
+
+Prodajni lijevak (sales funnel) i sadržaj međusobno su neodvojivi. Na vrhu lijevka, sadržaj koji podiže svijest adresira široke teme i privlači veliku publiku (blog postovi, infografike, videi). U sredini lijevka, sadržaj koji educira i pomaže u evaluaciji adresira specifičnije teme i usporedbe (studije slučaja, vodiči, webinari). Na dnu lijevka, sadržaj koji facilitira odluku adresira konkretne prigovore i nudi dokaze (demo, besplatna probna verzija, detaljne specifikacije, reference klijenata). Komunikolog mora razumjeti gdje se koji sadržaj pozicionira u lijevku jer isti tekst ne funkcionira na svim razinama.
+
+Storytelling ili pripovijedanje jedna je od najmoćnijih tehnika u sadržajnom marketingu. Ljudski mozak evolutivno je prilagođen za razumijevanje i pamćenje priča. Podaci govore umu, ali priče govore srcu. Efikasan storytelling u poslovnom kontekstu ne znači izmišljanje fikcija nego oblikovanje stvarnih iskustava u narativnu strukturu. Priča o korisniku koji je riješio problem pomoću vašeg proizvoda uvjerljivija je od popisa specifikacija. Priča o osnivanju tvrtke komunicira vrijednosti bolje od mission statementa.
+
+Za hrvatski kontekst, sadržajni marketing ima specifičnu dinamiku. B2B (business-to-business) organizacije u Hrvatskoj često podcjenjuju vrijednost sadržajnog marketinga jer prodajni ciklusi temelje se na osobnim odnosima i preporukama. Međutim, istraživanja pokazuju da čak i u B2B kontekstu kupci obavljaju značajan dio istraživanja online prije nego kontaktiraju dobavljača. Organizacija koja nema kvalitetan sadržaj na webu nevidljiva je u toj fazi istraživanja. B2C (business-to-consumer) organizacije u Hrvatskoj sve više koriste sadržajni marketing, osobito u sektorima poput turizma, gastronomije, fitness i wellnessa te financijskih usluga, ali kvaliteta sadržaja izrazito varira od izvrsnog do generičnog.
+
+Konkurentska analiza sadržaja korisna je vježba za pozicioniranje vlastite strategije. Pregledavanje što konkurenti objavljuju, koliko često, u kojim formatima i s kakvim angažmanom otkriva prilike za diferencijaciju. Možda svi konkurenti pišu iste blog postove o istim temama. Prilike leže u temama koje nitko ne pokriva, u formatima koje nitko ne koristi ili u dubini i kvaliteti koja nadmašuje površni sadržaj konkurenata.
+
+
+## Mjerenje uspješnosti sadržaja
+
+Sadržaj koji se ne mjeri sadržaj je čija vrijednost ostaje nepoznata. A u organizaciji u kojoj su resursi ograničeni, sadržaj čija je vrijednost nepoznata prvi je kandidat za ukidanje kada dođe do rezanja budžeta.
+
+Metrike sadržaja organiziraju se u nekoliko kategorija. Metrike konzumacije mjere koliko je ljudi vidjelo sadržaj, uključujući preglede stranice, jedinstvene posjetitelje, vrijeme na stranici i stopu scrollanja. Metrike angažmana mjere koliko duboko su se korisnici bavili sadržajem, uključujući komentare, dijeljenja, klikove na poveznice unutar sadržaja i stopu napuštanja. Metrike konverzije mjere je li sadržaj potaknuo željenu akciju, uključujući prijave, preuzimanja, kupovine i kontakte. Metrike zadržavanja mjere vraćaju li se korisnici, uključujući postotak povratnih posjetitelja, pretplate na newsletter i praćenje na društvenim mrežama.
+
+Za komunikologe, izazov mjerenja nije u nedostatku podataka nego u interpretaciji. Članak s mnogo pregleda ali kratkim vremenom na stranici možda ima privlačan naslov ali razočaravajući sadržaj. Članak s malo pregleda ali dugim vremenom na stranici i visokom stopom konverzije možda je izuzetno vrijedan za specifičnu nišu publike. Članak bez konverzija ali s visokom stopom dijeljenja na društvenim mrežama možda služi svrsi podizanja svijesti koja se ne mjeri izravnom konverzijom.
+
+Google Analytics najrašireniji je alat za mjerenje web sadržaja i komunikolog mora poznavati barem osnovne izvještaje. Izvještaj o akviziciji pokazuje odakle posjetitelji dolaze (organska pretraga, društvene mreže, izravni promet, referali). Izvještaj o ponašanju pokazuje kako se ponašaju na stranici (koje stranice posjećuju, koliko dugo ostaju, kojim putem navigiraju). Izvještaj o konverzijama pokazuje koliko ih izvršava željene akcije. Za komunikologa koji upravlja sadržajnom strategijom, tjedna analiza ovih izvještaja osnovna je higijena jer bez podataka svaka odluka o sadržaju puko je nagađanje.
+
+
+## Sadržaj i društvene mreže
+
+Sadržajna strategija za web i strategija za društvene mreže nisu identične ali su neodvojivo povezane. Web stranica središnje je mjesto sadržaja organizacije, trajni dom za detaljne, strukturirane informacije. Društvene mreže kanali su distribucije i interakcije koji sadržaj s web stranice raznesu do publike.
+
+Prilagodba sadržaja za različite platforme (content repurposing) strategija je koja maksimizira vrijednost svakog komada sadržaja. Blog post od dvije tisuće riječi može se pretvoriti u seriju od pet postova na LinkedInu, infografiku za Instagram, kratki video za TikTok, niz tweetova i segment u podcastu. Svaka prilagodba koristi snage specifične platforme i doseže publiku koja na toj platformi konzumira sadržaj.
+
+Za komunikologe, ključni princip jest da je web stranica dom a društvene mreže su distribucijski kanali. Sadržaj na web stranici organizacija kontrolira u potpunosti, što uključuje dizajn, strukturu, dostupnost, SEO i analitiku. Sadržaj na društvenim mrežama podložan je algoritmima platforme, promjenama pravila i riziku da platforma promijeni ili ukine funkcionalnosti. Organizacija koja sav sadržaj objavljuje samo na Instagramu ili samo na Facebooku bez web stranice ovisna je o platformi nad kojom nema kontrolu. Ovo je analogno vendor lock-inu o kojem smo govorili u kontekstu CMS-a u četvrtom tjednu, samo na razini sadržajne strategije.
+
+Algoritmi društvenih mreža fundamentalno utječu na to koji sadržaj publika vidi. Organski doseg na Facebooku drastično je pao u posljednjih deset godina jer platforma preferira plaćeni sadržaj i objave prijatelja nad sadržajem organizacija. Instagram algoritam preferira sadržaj koji generira brzi angažman (lajkove, komentare, spremanja). LinkedIn algoritam favorizira tekstualne objave s osobnim pričama nad korporativnim sadržajem. TikTok algoritam dramatično se razlikuje od svih drugih jer daje šansu svakom videu neovisno o broju pratitelja.
+
+Za komunikologe, ovo znači da sadržajna strategija za društvene mreže mora biti prilagođena svakoj platformi, ne samo u formatu nego i u pristupu. Isti blog post ne možete kopirati na sve platforme i očekivati isti rezultat. Na LinkedInu funkcionira stručni uvid s osobnom perspektivom. Na Instagramu funkcionira vizualno privlačan sadržaj s kratkim, emocionalnim tekstom. Na TikToku funkcionira autentičan, nepoliran video koji edukira ili zabavlja u manje od minute. Sposobnost prilagodbe istog sadržaja za različite platforme dok se održava konzistentan glas brenda sofisticirana je komunikacijska vještina.
+
+Korisnički generiran sadržaj (user-generated content ili UGC) posebna je kategorija koja je za mnoge organizacije vrijednija od vlastitog sadržaja. Recenzije korisnika, fotografije s proizvodom, svjedočanstva i komentari oblik su sadržaja koji publika percipira kao autentičniji od korporativne komunikacije. Za turističke organizacije u Hrvatskoj, fotografije koje turisti objavljuju na Instagramu s geotagom često su efikasniji marketinški alat od profesionalnih fotografija jer komuniciraju autentično iskustvo. Komunikolog mora razumjeti kako poticati, prikupljati i koristiti UGC uz poštovanje privatnosti i autorskih prava korisnika.
+
+
+## Personalizacija sadržaja
+
+Personalizacija je praksa prilagodbe sadržaja individualnom korisniku na temelju podataka o njegovom ponašanju, preferencijama, lokaciji ili povijesti interakcije. Amazon koji preporučuje proizvode na temelju prethodnih kupovina, Netflix koji prilagođava naslovnice filmova profilu korisnika i Spotify koji generira personalizirane playliste primjeri su personalizacije koja je postala očekivani standard digitalnog iskustva.
+
+Za sadržajnu strategiju, personalizacija znači da se isti sadržaj ne prikazuje svim korisnicima na isti način. Novi posjetitelj može vidjeti uvodni sadržaj i ponudu za prijavu na newsletter. Postojeći pretplatnik može vidjeti napredniji sadržaj i ponudu za konzultaciju. Korisnik koji je pregledavao određenu kategoriju proizvoda može vidjeti relevantne studije slučaja iz te kategorije.
+
+Personalizacija zahtijeva podatke, a prikupljanje podataka zahtijeva pristanak korisnika u skladu s GDPR-om. Za hrvatske organizacije, ovo znači da cookie banneri, politike privatnosti i mehanizmi pristanka moraju biti implementirani prije nego se personalizacija može koristiti. Komunikolog mora razumjeti ravnotežu između korisnosti personalizacije za korisnika i poštovanja njegove privatnosti jer pretjerana personalizacija može djelovati invazivno i potkopati povjerenje umjesto da ga gradi.
+
+
+## Etika sadržajne strategije
+
+Sadržajna strategija nosi etičke odgovornosti koje komunikolog mora razumjeti.
+
+Transparentnost znači jasno razlikovati urednički sadržaj od sponzoriranog. Kada organizacija plaća za članak koji izgleda kao neovisni urednički sadržaj (advertorial), to mora biti jasno označeno. Zakoni i regulacije, uključujući EU Direktivu o nepoštenim poslovnim praksama, zahtijevaju transparentno označavanje komercijalnog sadržaja. Komunikolog koji ignorira ovu obvezu ne samo da krši zakon nego potkopava povjerenje koje je sadržajnom strategijom pokušavao izgraditi.
+
+Točnost i ažurnost etička su obveza. Organizacija koja objavi netočnu informaciju, čak i nenamjerno, odgovorna je za štetu koju ta informacija može uzrokovati. Redovito pregledavanje i ažuriranje sadržaja nije samo SEO praksa nego etički imperativ. Zdravstveni sadržaj s netočnim informacijama može ugroziti zdravlje. Financijski sadržaj s zastarjelim podacima može uzrokovati financijsku štetu. Iz trećeg tjedna znate koliko je vrednovanje informacija važno za korisnike, ali komunikolog koji kreira sadržaj ima odgovornost da taj sadržaj bude dostojan povjerenja koje korisnici u njega ulažu.
+
+AI i generiranje sadržaja rapidno mijenjaju krajobraz sadržajne strategije. Alati poput ChatGPT-a, Claudea i drugih mogu generirati tekst brže nego ikada. Ali iz trećeg tjedna znate da AI može halucinirati, producirati netočne informacije uvjerljivim tonom i generirati sadržaj koji je gramatički besprijekoran ali sadržajno prazan. Za komunikologe, AI je alat koji može ubrzati produkciju ali ne može zamijeniti stratešku procjenu, kreativno razmišljanje i etičku odgovornost. Sadržaj generiran AI-jem bez ljudske provjere rizik je za reputaciju organizacije.
+
+
+## Hrvatski kontekst sadržajne strategije
+
+Nekoliko specifičnosti hrvatskog tržišta relevantno je za sadržajnu strategiju.
+
+Mali tržišni volumen znači da je potencijalna publika za sadržaj na hrvatskom jeziku značajno manja nego za sadržaj na engleskom. Ovo utječe na opravdanost investicija u sadržaj jer blog post na engleskom može doseći milijune čitatelja dok isti sadržaj na hrvatskom doseže tisuće. Za organizacije koje ciljaju hrvatsko tržište, ovo znači da kvaliteta mora kompenzirati kvantitetu jer s manjom publikom svaki čitatelj vredniji je.
+
+Višejezična sadržajna strategija nužna je za organizacije u turizmu, izvozu i tehnologiji. Upravljanje sadržajem na dva, tri ili više jezika multiplicira resurse potrebne za produkciju ali i otvara pristup značajno većoj publici. Prioritizacija jezika (koji sadržaj prevodimo a koji ne, koji jezik ima prioritet) strateška je odluka koja mora odražavati poslovne prioritete, a ne pretpostavke o tome koji je jezik važniji.
+
+Lokalni medijski krajobraz utječe na distribuciju sadržaja. Indeks.hr, 24sata.hr, Jutarnji.hr i Net.hr dominantni su portali koji privlače značajan udio web prometa u Hrvatskoj. Za organizacije, medijski odnosi i sadržaj za ove portale dio su šire sadržajne strategije koja nadilazi vlastitu web stranicu.
+
+Regulatorni okvir uključuje GDPR koji utječe na prikupljanje podataka o korisnicima (cookie banneri, pristanak za newsletter), Zakon o elektroničkoj trgovini koji regulira komercijalni sadržaj i obavijesti te Zakon o medijima koji regulira označavanje sponzoriranog sadržaja. Komunikolog mora poznavati ove regulatorne zahtjeve jer neusklađenost može rezultirati značajnim kaznama.
+
+
+## Na kraju ovog poglavlja
+
+Sadržajna strategija disciplina je koja povezuje sve o čemu smo govorili u prethodnih pet tjedana. Infrastruktura iz prvog tjedna omogućuje isporuku sadržaja. SEO iz drugog tjedna osigurava da ga korisnici pronađu. Principi vrednovanja iz trećeg tjedna definiraju što čini sadržaj pouzdanim. CMS iz četvrtog tjedna pruža platformu za objavljivanje. UX iz petog tjedna osigurava da sadržaj živi u kontekstu koji podržava razumijevanje i akciju. Sadržajna strategija sve to spaja u koherentnu cjelinu s jasnom svrhom, definiranom publikom, planiranom produkcijom i mjerenim rezultatima.
+
+Komunikolog koji vlada sadržajnom strategijom ne piše samo dobar tekst. On razumije zašto piše, za koga piše, kako će se sadržaj pronaći, kako će se isporučiti, kako će se mjeriti i kako će se održavati. To je razlika između osobe koja piše i profesionalca koji strateški komunicira.
+
+Sljedeći tjedan govorit ćemo o web analitici i donošenju odluka temeljem podataka. Veza s današnjom temom je izravna jer sadržajna strategija bez analitike puka je intuicija, a analitika bez sadržajne strategije puko je gomilanje brojeva bez konteksta.
+
+::: {.callout-note}
+## Ključni zaključci
+
+Sadržajna strategija obuhvaća planiranje supstance, strukture, workflowa i upravljanja sadržajem.
+
+Sadržajna revizija i ROT analiza otkrivaju stvarno stanje organizacijskog sadržaja i identificiraju redundantan, zastarjeli i trivijalan materijal.
+
+Glas brenda i tonalitet strateški su alati koji oblikuju percepciju organizacije i moraju biti definirani, dokumentirani i dosljedno primijenjeni.
+
+Pisanje za web zahtijeva prilagodbu digitalnom kontekstu čitanja s naglaskom na skenabilnost, strukturu, konkretnost i jasnoću.
+
+SEO pisanje danas podrazumijeva razumijevanje namjere pretraživanja i pružanje kvalitetnog odgovora, ne mehaničko ubacivanje ključnih riječi.
+
+Sadržajni kalendar pretvara strategiju u akciju s realnom procjenom resursa i jasnom vezom sa organizacijskim ciljevima.
+
+Sadržajni marketing gradi povjerenje pružanjem korisnog sadržaja umjesto izravnog oglašavanja i mjeri se podacima.
+
+Web stranica je dom organizacijskog sadržaja dok su društvene mreže distribucijski kanali, nikada obrnuto.
+
+Mjerenje sadržaja uključuje metrike konzumacije, angažmana, konverzije i zadržavanja koje se moraju interpretirati u kontekstu.
+
+Etička odgovornost za točnost, transparentnost i označavanje sponzoriranog sadržaja pravna je i profesionalna obveza.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 7 bavit će se web analitikom i donošenjem odluka temeljem podataka.
+
+Prije sedmog predavanja napravite četiri stvari.
+
+Prvo, odaberite web stranicu hrvatske organizacije i provedite mini sadržajnu reviziju. Pregledajte deset nasumično odabranih stranica i za svaku zabilježite vrstu sadržaja, procijenjenu starost, relevantnost, kvalitetu pisanja i postoje li očiti ROT problemi.
+
+Drugo, analizirajte glas tri različite hrvatske organizacije na njihovim web stranicama. Definirajte tri atributa glasa za svaku i pronađite primjere teksta koji ilustriraju te atribute. Usporedite koliko se razlikuju i koliko su konzistentni kroz stranicu.
+
+Treće, napišite dva naslova i dva meta opisa za fiktivni blog post na temu po izboru. Jedan naslov neka cilja na SEO (sadrži ključnu riječ, informativan), a drugi na društvene mreže (emocionalan, privlačan za dijeljenje). Obrazložite razlike.
+
+Četvrto, ako imate pristup Google Analyticsu za bilo koju stranicu (ili kreirajte besplatni Google Analytics demo račun), provedite petnaest minuta pregledavajući osnovne izvještaje. Zabilježite tri uvida o ponašanju korisnika na toj stranici.
+
+
+## Dodatno čitanje
+
+Obavezno je pročitati članak Kristine Halvorson "The Discipline of Content Strategy" koji se smatra jednim od utemeljiteljskih tekstova discipline.
+
+Za dublje razumijevanje preporučuje se sljedećih nekoliko izvora.
+
+Ann Handley, "Everybody Writes", praktičan je vodič za pisanje u digitalnom okruženju koji je pristupačan i komunikolozima bez novinarske pozadine.
+
+Content Marketing Institute (contentmarketinginstitute.com) objavljuje obimne resurse o sadržajnom marketingu, od vodiča za početnike do naprednih strategija.
+
+Ahrefs Blog i Moz Blog objavljuju detaljne vodiče o SEO pisanju koji povezuju tehničke aspekte SEO-a s praktičnim savjetima za pisanje.
+
+Nielsen Norman Group objavljuje istraživanja o čitanju na webu, skeniranju sadržaja i pisanju za digitalna sučelja koja su temeljena na korisničkom istraživanju, a ne na pretpostavkama.
+
+Google Search Central dokumentacija službeni je Googleov resurs za razumijevanje kako tražilice procjenjuju kvalitetu sadržaja.
+
+Jakob Nielsen, "How Users Read on the Web", klasičan je tekst iz 1997. koji je i dalje relevantan kao polazna točka za razumijevanje web čitanja.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Sadržajna strategija | Planiranje stvaranja, isporuke i upravljanja korisnim sadržajem |
+| Sadržajna revizija | Sustavni pregled i procjena postojećeg sadržaja organizacije |
+| ROT analiza | Kategorizacija sadržaja kao redundantnog, zastarjelog ili trivijalnog |
+| Gap analiza | Identifikacija sadržaja koji nedostaje u odnosu na potrebe korisnika |
+| Glas brenda | Konzistentan način na koji organizacija komunicira u svim kanalima |
+| Tonalitet | Prilagodba glasa brenda specifičnom kontekstu i situaciji |
+| Style guide | Dokument koji operacionalizira glas brenda u konkretne smjernice |
+| Evergreen sadržaj | Sadržaj koji ostaje relevantan dugo nakon objave |
+| Pillar stranica | Opsežan pregled široke teme koji povezuje detaljnije cluster stranice |
+| Topic cluster | Skup povezanih stranica koje pokrivaju podteme oko pillar stranice |
+| Studija slučaja | Sadržajni format koji prezentira primjenu rješenja s mjerljivim rezultatima |
+| Content repurposing | Prilagodba istog sadržaja za različite platforme i formate |
+| Sadržajni kalendar | Plan koji definira što, kada, gdje i tko objavljuje |
+| Sadržajni marketing | Strategija privlačenja publike putem korisnog sadržaja umjesto izravnog oglašavanja |
+| Search intent | Namjera korisnika iza pretraživačkog upita |
+| Meta naslov | HTML element koji definira naslov stranice u rezultatima pretraživanja |
+| Meta opis | Kratki sažetak stranice prikazan u rezultatima pretraživanja |
+| Schema markup | Strukturirani podaci koji pomažu tražilicama razumjeti sadržaj |
+| Rich snippet | Obogaćeni prikaz u rezultatima pretraživanja s dodatnim informacijama |
+| Prodajni lijevak | Vizualizacija faza od svijesti do kupovine |
+| Stopa scrollanja | Postotak stranice koji korisnik pregleda scrollanjem |
+| Bounce rate | Stopa napuštanja, postotak korisnika koji odu nakon jedne stranice |
+| Advertorial | Plaćeni sadržaj oblikovan kao urednički članak |
+| Google Analytics | Najrašireniji alat za mjerenje ponašanja korisnika na web stranicama |
+| Screaming Frog | Alat za automatsku reviziju web stranica i popisivanje URL-ova |
+| E-E-A-T | Experience, Expertise, Authoritativeness, Trustworthiness, Googleovi kriteriji kvalitete |
+| Keyword stuffing | Zastarjela SEO praksa pretjeranog ponavljanja ključnih riječi |
+| F-obrazac | Dominantan obrazac skeniranja web stranica |
+| CTA | Call to Action, poziv na akciju koji usmjerava korisnika prema cilju |
+| Organski promet | Posjetitelji koji dolaze putem neplaćenih rezultata pretraživanja |
+| Infografika | Vizualna prezentacija podataka i informacija |
+| Podcast | Zvučni sadržaj distribuiran putem interneta |
+| Životni ciklus sadržaja | Faze od planiranja do arhiviranja kroz koje sadržaj prolazi |
+| 301 redirect | Trajno preusmjeravanje s jednog URL-a na drugi |
+| Storytelling | Korištenje narativne strukture za komunikaciju poruka |
+| B2B | Business-to-business, poslovanje usmjereno prema drugim tvrtkama |
+| B2C | Business-to-consumer, poslovanje usmjereno prema krajnjim potrošačima |
+| Konkurentska analiza | Pregled sadržajne strategije konkurenata za identifikaciju prilika |
+| UGC | User-Generated Content, sadržaj koji kreiraju korisnici a ne organizacija |
+| Personalizacija | Prilagodba sadržaja individualnom korisniku na temelju podataka |
+| Organski doseg | Broj korisnika koji vide sadržaj bez plaćene promocije |
