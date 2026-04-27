@@ -20,13 +20,17 @@ Kolegij vodi studente na putovanje od razumijevanja weba kao infrastrukture, kro
 
 ## Struktura kolegija
 
-Kolegij je organiziran u tri cjeline.
+Kolegij je organiziran u pet modula koji zajedno prate logiku profesionalnog rada komunikologa u digitalnom okruženju.
 
-**Tjedni 1 do 5** grade temeljnu web pismenost. Kako web funkcionira, kako se sadržaj pronalazi, kako vrednovati informacije na internetu, kako se platforme biraju i grade te kako koristiti moderne alate bez programiranja.
+**Modul I — Razumijevanje weba (Tjedni 1–3)** gradi dijagnostički temelj: kako web funkcionira kao infrastruktura, kako se sadržaj pronalazi i rangira te kako se vrednuje i provjerava u dobu sintetičkih medija.
 
-**Tjedni 6 do 10** razvijaju primijenjene profesionalne kompetencije. Suradnja u oblaku, strategija sadržaja, donošenje odluka na temelju podataka i dizajnersko razmišljanje koje prati cjelokupno korisničko putovanje.
+**Modul II — Produkcija sadržaja (Tjedni 4–6)** prelazi na alate i platforme: gdje i kako se sadržaj zapravo stvara, od CMS sustava i no code alata do organizacijske infrastrukture u oblaku i suradničkih radnih tokova.
 
-**Tjedni 11 do 15** suočavaju se s najnovijim razvojem. Generativna umjetna inteligencija, etički i regulatorni izazovi, multimedijska produkcija te sinteza svega naučenog kroz studentske prezentacije projekata.
+**Modul III — Strategija, iskustvo, distribucija (Tjedni 7–10)** je najopsežniji modul jer pokriva dio struke u kojemu su potrebe najizraženije: strategija sadržaja i pisanje za web, korisničko iskustvo i dizajn, algoritamska distribucija kroz platforme te izgradnja vlastite publike neovisne o algoritmima.
+
+**Modul IV — AI, autentičnost, regulativa (Tjedni 11–13)** suočava se s trima silama koje preoblikuju struku: generativnom AI kao radnim alatom, krizom autentičnosti sadržaja i sintetičkim medijima te regulatornim odgovorom kroz GDPR, EU Akt o AI-ju i Akt o digitalnim uslugama.
+
+**Modul V — Mjerenje i sinteza (Tjedni 14–15)** zatvara petlju: web analitika i hibridne metrike integriraju sve prethodne module u mjerljivu praksu, a završna sesija služi za prezentacije studentskih projekata i pogled u budućnost struke.
 
 ## Brzi pristup
 

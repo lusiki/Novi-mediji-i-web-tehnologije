@@ -6,31 +6,53 @@ Ova stranica prati semestar tjedan po tjedan. Status, poveznice na materijale i 
 
 ## Tjedni pregled
 
+### Modul I — Razumijevanje weba
+
 | Tjedan | Datum | Tema predavanja | Status |
 |:------:|:-----:|-----------------|:------:|
 | 1 | 2026-02-25 | [Web kao infrastruktura](lectures/week-01.qmd) | [Nadolazeće]{.badge-upcoming} |
 | 2 | 2026-03-04 | [Pretraživanje i pronalažljivost](lectures/week-02.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 3 | 2026-03-11 | [Vrednovanje informacija](lectures/week-03.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 4 | 2026-03-18 | [CMS i moderni web stack](lectures/week-04.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 5 | 2026-03-25 | [No code i low code alati](lectures/week-05.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 6 | 2026-04-01 | [Računalstvo u oblaku](lectures/week-06.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 7 | 2026-04-08 | [Strategija sadržaja](lectures/week-07.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 8 | 2026-04-15 | [Kolokvij](lectures/week-08.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 9 | 2026-04-22 | [Web analitika](lectures/week-09.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 10 | 2026-04-29 | [UX, UI i pristupačnost](lectures/week-10.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 11 | 2026-05-06 | [Generativna AI](lectures/week-11.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 12 | 2026-05-13 | [Etika AI-ja](lectures/week-12.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 13 | 2026-05-20 | [Digitalna regulativa](lectures/week-13.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 14 | 2026-05-27 | [Multimedijsko pripovijedanje](lectures/week-14.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 15 | 2026-06-03 | [Sinteza i prezentacije](lectures/week-15.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 3 | 2026-03-11 | [Vrednovanje informacija i provjera izvora](lectures/week-03.qmd) | [Nadolazeće]{.badge-upcoming} |
+
+### Modul II — Produkcija sadržaja
+
+| Tjedan | Datum | Tema predavanja | Status |
+|:------:|:-----:|-----------------|:------:|
+| 4 | 2026-03-18 | [Sustavi za upravljanje sadržajem (CMS)](lectures/week-04.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 5 | 2026-03-25 | [No code i low code alati za komunikologe](lectures/week-05.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 6 | 2026-04-01 | [Računalstvo u oblaku i suradnički rad](lectures/week-06.qmd) | [Nadolazeće]{.badge-upcoming} |
+
+### Modul III — Strategija, iskustvo, distribucija
+
+| Tjedan | Datum | Tema predavanja | Status |
+|:------:|:-----:|-----------------|:------:|
+| 7 | 2026-04-08 | [Sadržajna strategija i pisanje za web](lectures/week-07.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 8 | 2026-04-15 | [UX, UI i pristupačan dizajn za web](lectures/week-08.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 9 | 2026-04-22 | [Platforme, algoritmi i algoritamska distribucija](lectures/week-09.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 10 | 2026-04-29 | [Vlastita publika i izravni kanali](lectures/week-10.qmd) | [Nadolazeće]{.badge-upcoming} |
+
+### Modul IV — AI, autentičnost, regulativa
+
+| Tjedan | Datum | Tema predavanja | Status |
+|:------:|:-----:|-----------------|:------:|
+| 11 | 2026-05-06 | [Generativna AI u radnom toku komunikologa](lectures/week-11.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 12 | 2026-05-13 | [Autentičnost sadržaja i sintetički mediji](lectures/week-12.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 13 | 2026-05-20 | [Digitalna regulativa i pravni okvir](lectures/week-13.qmd) | [Nadolazeće]{.badge-upcoming} |
+
+### Modul V — Mjerenje i sinteza
+
+| Tjedan | Datum | Tema predavanja | Status |
+|:------:|:-----:|-----------------|:------:|
+| 14 | 2026-05-27 | [Web analitika i hibridne metrike](lectures/week-14.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 15 | 2026-06-03 | [Sinteza kolegija i prezentacije projekata](lectures/week-15.qmd) | [Nadolazeće]{.badge-upcoming} |
 
 ## Datumi ocjenjivanja
 
 | Aktivnost | Datum | Udio |
 |-----------|:-----:|:----:|
-| Kolokvij | Tjedan 8 (2026-04-15) | 20% |
-| Predaja praktičnog projekta | Tjedan 14 (2026-05-27) | 30% |
-| Praktični projekt (portfolio) | Kontinuirano | 20% |
+| Kolokvij | 2026-04-15 | 20% |
+| Predaja praktičnog projekta | 2026-05-27 | 30% |
+| Kontinuirani rad (projekt portfolio) | Cijeli semestar | 20% |
 | Završni ispit | TBD (ovisno o ispitnom roku) | 30% |
 
 ## Bilješke sa sesija

@@ -1,9 +1,9 @@
 ---
-title: "Tjedan 11: Generativna AI i web tehnologije"
-subtitle: "Veliki jezični modeli, generatori slika i transformacija digitalnih radnih tokova"
+title: "Generativna AI u radnom toku komunikologa"
+subtitle: "Praktična primjena AI alata u profesionalnom radu komunikologa"
 author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [ai, tehnologije]
+date: 2026-05-06
+categories: [AI, generativna-AI, radni-tok]
 abstract: |
   Ovo predavanje pruža sveobuhvatan pregled načina na koji generativna AI transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove.
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Vrednovanje informacija i provjera izvora na webu"
 subtitle: "Kritičko čitanje, provjera činjenica i signali povjerenja u digitalnom okruženju"
-date: 2025-02-15
+date: 2026-03-11
 categories: [informacijska pismenost, provjera činjenica, povjerenje]
 draft: false
 format:

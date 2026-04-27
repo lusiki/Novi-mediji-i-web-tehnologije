@@ -1,7 +1,7 @@
 ---
 title: "Web kao infrastruktura"
 subtitle: "Kako internet funkcionira i zašto komunikolozi to moraju razumjeti"
-date: 2025-02-01
+date: 2026-02-25
 categories: [temelji, infrastruktura]
 draft: false
 format:

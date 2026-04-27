@@ -1,17 +1,30 @@
 ---
-title: "Tjedan 10: UX, UI i pristupačan dizajn za web"
-subtitle: "Korisničko iskustvo, persuazivni obrasci i standardi pristupačnosti"
+title: "Vlastita publika i izravni kanali"
+subtitle: "Email, newsletter, push obavijesti i izgradnja publike neovisne o platformama"
 author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [primijenjeno, dizajn]
-abstract: |
-  Ovo predavanje pokriva principe dizajna korisničkog iskustva, korisničkog sučelja, responzivnih rasporeda, persuazivnih dizajnerskih obrazaca, arhitekture povjerenja te standarde web pristupačnosti (WCAG).
+date: 2026-04-29
+categories: [publika, email, newsletter]
+draft: false
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
 
-## Zaključak
+## Sadržaj
 
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
 *Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::

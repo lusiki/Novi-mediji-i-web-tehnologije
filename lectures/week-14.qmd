@@ -1,11 +1,11 @@
 ---
-title: "Tjedan 14: Multimedijsko pripovijedanje za web"
-subtitle: "Pisanje za web, vizualno pripovijedanje, audio, video i interaktivni formati"
+title: "Web analitika i hibridne metrike"
+subtitle: "GA4, metrike angažmana, konverzije i mjerenje kroz kanale"
 author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [primijenjeno, multimedija]
+date: 2026-05-27
+categories: [analitika, metrike, GA4]
 abstract: |
-  Ovo predavanje fokusira se na primijenjenu multimedijsku produkciju za web kontekste, pokrivajući pisanje za web, vizualno pripovijedanje, fotografiju proizvoda, audio i podcast produkciju, kratke video formate i interaktivne formate sadržaja.
+  Ovo predavanje upoznaje studente s platformama za web analitiku i ključnim metrikama koje komunikolozi koriste za vrednovanje digitalnog učinka, uključujući izvore prometa, stope angažmana, konverzijske lijevke i segmentaciju publike.
 ---
 
 ## Uvod

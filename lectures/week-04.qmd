@@ -1,7 +1,7 @@
 ---
 title: "Sustavi za upravljanje sadržajem i moderni web stack"
 subtitle: "CMS platforme, no-code alati i strateški izbor tehnologije"
-date: 2025-02-22
+date: 2026-03-18
 categories: [CMS, web stack, platforme]
 draft: false
 format:

@@ -1,17 +1,30 @@
 ---
-title: "Tjedan 9: Web analitika i komunikacija temeljena na podacima"
-subtitle: "Od Google Analyticsa do konverzijskih lijevaka"
+title: "Platforme, algoritmi i algoritamska distribucija"
+subtitle: "Kako platforme rangiraju sadržaj i što to znači za komunikologe"
 author: "doc. dr. sc. Luka Šikić"
-date: 2025-02-01
-categories: [primijenjeno, analitika]
-abstract: |
-  Ovo predavanje upoznaje studente s platformama za web analitiku i ključnim metrikama koje komunikolozi koriste za vrednovanje digitalnog učinka, uključujući izvore prometa, stope angažmana, konverzijske lijevke i segmentaciju publike.
+date: 2026-04-22
+categories: [platforme, algoritmi, distribucija]
+draft: false
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+::: {.callout-note appearance="minimal"}
+*Bit će dodano prije predavanja.*
+:::
 
-## Zaključak
+## Sadržaj
 
+*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
+
+## Ključni zaključci
+
+::: {.callout-important appearance="minimal"}
 *Bit će dodano.*
+:::
+
+## Priprema za sljedeći tjedan
+
+::: {.callout-warning appearance="minimal"}
+*Bit će dodano.*
+:::
