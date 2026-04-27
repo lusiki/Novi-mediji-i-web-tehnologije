@@ -1,29 +1,17 @@
 ---
 title: "Tjedan 10: UX, UI i pristupačan dizajn za web"
-subtitle: "Dizajn usmjeren na korisnika, persuazivni obrasci i inkluzivna web iskustva"
+subtitle: "Korisničko iskustvo, persuazivni obrasci i standardi pristupačnosti"
+author: "doc. dr. sc. Luka Šikić"
 date: 2025-02-01
-categories: [primjena, dizajn]
-draft: false
+categories: [primijenjeno, dizajn]
+abstract: |
+  Ovo predavanje pokriva principe dizajna korisničkog iskustva, korisničkog sučelja, responzivnih rasporeda, persuazivnih dizajnerskih obrazaca, arhitekture povjerenja te standarde web pristupačnosti (WCAG).
 ---
 
-## Ishodi učenja
+## Uvod
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
 
-## Sadržaj
+## Zaključak
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
-
-## Ključni zaključci
-
-::: {.callout-important appearance="minimal"}
 *Bit će dodano.*
-:::
-
-## Priprema za sljedeći tjedan
-
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::

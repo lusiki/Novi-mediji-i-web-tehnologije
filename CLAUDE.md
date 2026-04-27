@@ -42,6 +42,7 @@ Quarto web stranica koja se objavljuje na GitHub Pages. Renderira se s `quarto r
 - Uvijek pokrenuti `quarto render` lokalno prije pusha kako bi se provjerile greške
 
 ## Ovisnosti
-- Quarto CLI (2.0+)
+- Quarto CLI (lokalno i u CI fiksirano na 1.9.37)
 - Nisu potrebni R paketi za osnovni rad (R code chunkovi su opcionalni)
 - GitHub račun s omogućenim Pages
+- graphify (`/graphify`) dostupan za mapiranje strukture kolegija (preduvjeti, redundancija u literaturi). Output ide u `graphify-out/` (ignoriran u git-u).

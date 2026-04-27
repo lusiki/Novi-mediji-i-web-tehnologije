@@ -8,30 +8,30 @@ Ova stranica prati semestar tjedan po tjedan. Status, poveznice na materijale i 
 
 | Tjedan | Datum | Tema predavanja | Status |
 |:------:|:-----:|-----------------|:------:|
-| 1 | TBD | [Web kao infrastruktura](lectures/week-01.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 2 | TBD | [Pretraživanje i pronalažljivost](lectures/week-02.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 3 | TBD | [Vrednovanje informacija](lectures/week-03.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 4 | TBD | [CMS i moderni web stack](lectures/week-04.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 5 | TBD | [No code i low code alati](lectures/week-05.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 6 | TBD | [Računalstvo u oblaku](lectures/week-06.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 7 | TBD | [Strategija sadržaja](lectures/week-07.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 8 | TBD | [Kolokvij](lectures/week-08.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 9 | TBD | [Web analitika](lectures/week-09.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 10 | TBD | [UX, UI i pristupačnost](lectures/week-10.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 11 | TBD | [Generativna AI](lectures/week-11.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 12 | TBD | [Etika AI-ja](lectures/week-12.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 13 | TBD | [Digitalna regulativa](lectures/week-13.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 14 | TBD | [Multimedijsko pripovijedanje](lectures/week-14.qmd) | [Nadolazeće]{.badge-upcoming} |
-| 15 | TBD | [Sinteza i prezentacije](lectures/week-15.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 1 | 2026-02-25 | [Web kao infrastruktura](lectures/week-01.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 2 | 2026-03-04 | [Pretraživanje i pronalažljivost](lectures/week-02.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 3 | 2026-03-11 | [Vrednovanje informacija](lectures/week-03.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 4 | 2026-03-18 | [CMS i moderni web stack](lectures/week-04.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 5 | 2026-03-25 | [No code i low code alati](lectures/week-05.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 6 | 2026-04-01 | [Računalstvo u oblaku](lectures/week-06.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 7 | 2026-04-08 | [Strategija sadržaja](lectures/week-07.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 8 | 2026-04-15 | [Kolokvij](lectures/week-08.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 9 | 2026-04-22 | [Web analitika](lectures/week-09.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 10 | 2026-04-29 | [UX, UI i pristupačnost](lectures/week-10.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 11 | 2026-05-06 | [Generativna AI](lectures/week-11.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 12 | 2026-05-13 | [Etika AI-ja](lectures/week-12.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 13 | 2026-05-20 | [Digitalna regulativa](lectures/week-13.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 14 | 2026-05-27 | [Multimedijsko pripovijedanje](lectures/week-14.qmd) | [Nadolazeće]{.badge-upcoming} |
+| 15 | 2026-06-03 | [Sinteza i prezentacije](lectures/week-15.qmd) | [Nadolazeće]{.badge-upcoming} |
 
 ## Datumi ocjenjivanja
 
 | Aktivnost | Datum | Udio |
 |-----------|:-----:|:----:|
-| Kolokvij | Tjedan 8 (TBD) | 20% |
-| Predaja praktičnog projekta | Tjedan 14 (TBD) | 30% |
+| Kolokvij | Tjedan 8 (2026-04-15) | 20% |
+| Predaja praktičnog projekta | Tjedan 14 (2026-05-27) | 30% |
 | Praktični projekt (portfolio) | Kontinuirano | 20% |
-| Završni ispit | TBD | 30% |
+| Završni ispit | TBD (ovisno o ispitnom roku) | 30% |
 
 ## Bilješke sa sesija
 

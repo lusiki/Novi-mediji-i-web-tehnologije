@@ -1,0 +1,34 @@
+---
+title: "Početak"
+subtitle: "Kako se snaći na stranici kolegija"
+---
+
+## Dobrodošli
+
+Stranica koja je pred vama prati kolegij *Novi mediji i web tehnologije* tijekom cijelog ljetnog semestra 2025/2026. Ovdje ćete naći sve što vam je potrebno za rad: silabus, raspored, materijale s predavanja, popis literature, alate koje koristimo i upute za praktični projekt. Svrha ove kratke stranice nije ponoviti silabus, nego vam pomoći da brzo pronađete ono što vam treba u trenutku kada vam zatreba. Za pregled cjelokupnog kolegija pogledajte [Početnu stranicu](index.qmd) i [Silabus](syllabus.qmd).
+
+## Kako koristiti ovu stranicu
+
+Stranica je organizirana kao izbornik s nekoliko glavnih cjelina koje pronalazite u traci na vrhu. *Početak* je upravo ova stranica. *Silabus* sadrži cjelokupni narativ kolegija s opisima svakog tjedna i poveznicama na materijale u različitim formatima. *Raspored* prati semestar tjedan po tjedan, s datumima, statusima i bilješkama koje se ažuriraju nakon svake sesije. *Predavanja* je padajući izbornik koji vam omogućuje izravan pristup bilo kojem tjednu. *Resursi* sadrže popis literature, popis alata i politiku korištenja AI-ja. *Projekt* otvara stranicu s detaljnim uputama za praktični projekt koji ćete raditi tijekom semestra.
+
+Pretraga u gornjem desnom kutu radi kroz cijelu stranicu, pa ako tražite konkretan pojam (na primjer SEO, GA4, GDPR, CMS) najbrže ćete doći do njega upravo tako.
+
+## Format predavanja
+
+Svako predavanje raspoloživo je u četiri formata. **HTML** je verzija koju čitate izravno u pregledniku i preporučujem ga kao primarni način čitanja jer su sve poveznice aktivne i navigacija unutar stranice je najbrža. **PDF** je prikladan ako želite materijal ispisati ili čitati na čitaču e-knjiga. **Word** (DOCX) koristan je ako trebate sadržaj kopirati u vlastite bilješke ili dodavati komentare. **QMD** je izvorni Quarto dokument iz kojeg se generiraju ostali formati, raspoloživ izravno iz GitHub repozitorija; ako vas zanima kako je stranica napravljena, pogledajte tamo. Poveznice na sva četiri formata nalazite uz svako predavanje u silabusu.
+
+Slajdovi i prezentacije, kada postoje, žive u mapi `assets/slides/` repozitorija. Izravne poveznice dodajem u tjedne bilješke u rasporedu kako semestar napreduje.
+
+## Praktični projekt
+
+Praktični projekt je glavna komponenta vašeg ocjenjivanja i pratimo ga kroz cijeli semestar. Zadatak je izgraditi web prisutnost za stvarnu ili fiktivnu organizaciju kroz sve faze, od strategije i odabira platforme do izvedbe, mjerenja i prezentacije. Cijela uputa, rubrika i rokovi nalaze se na stranici [Praktični projekt](projects/practical-project.qmd). Ključne točke koje treba zapamtiti: odabir scenarija odobrava se u Tjednu 6, nacrt strateškog dokumenta predaje se u Tjednu 10, aktivna stranica spremna za pregled u Tjednu 13, finalna predaja u Tjednu 14, prezentacije u Tjednu 15.
+
+Projekt nije završno opterećenje koje gurate u zadnji tjedan; svaki tjedan kolegija dat će vam nešto što ćete moći ugraditi u njega. Pišite, gradite i revidirajte usporedno s predavanjima.
+
+## Politika korištenja AI alata
+
+Korištenje AI alata na ovom kolegiju je dopušteno i očekivano u određenim okvirima, ali zahtijeva transparentnost i kritičku procjenu. Detaljna politika, s primjerima što je dopušteno, što nije i što se mora dokumentirati, nalazi se na stranici [Politika korištenja AI-ja](resources/ai-policy.qmd). Prije nego što za projekt koristite ChatGPT, Claude, Midjourney ili sličan alat, pročitajte tu politiku.
+
+## Konzultacije i komunikacija
+
+Kontakt podaci nositelja kolegija i termini konzultacija nalaze se na [Početnoj stranici](index.qmd). Za pitanja vezana uz pojedino predavanje, najbrže rješenje je email s naznakom tjedna u predmetu. Za probleme tehničke prirode (renderiranje, GitHub, alati) pokušajte prvo riješiti kroz dokumentaciju samog alata; često ćete naići na bolje rješenje nego ako čekate odgovor.

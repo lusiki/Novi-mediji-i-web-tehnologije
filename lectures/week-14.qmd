@@ -1,29 +1,17 @@
 ---
 title: "Tjedan 14: Multimedijsko pripovijedanje za web"
-subtitle: "Pisanje, fotografija, audio, video i interaktivni formati za digitalnu publiku"
+subtitle: "Pisanje za web, vizualno pripovijedanje, audio, video i interaktivni formati"
+author: "doc. dr. sc. Luka Šikić"
 date: 2025-02-01
-categories: [granica, multimedija]
-draft: false
+categories: [primijenjeno, multimedija]
+abstract: |
+  Ovo predavanje fokusira se na primijenjenu multimedijsku produkciju za web kontekste, pokrivajući pisanje za web, vizualno pripovijedanje, fotografiju proizvoda, audio i podcast produkciju, kratke video formate i interaktivne formate sadržaja.
 ---
 
-## Ishodi učenja
+## Uvod
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
 
-## Sadržaj
+## Zaključak
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
-
-## Ključni zaključci
-
-::: {.callout-important appearance="minimal"}
 *Bit će dodano.*
-:::
-
-## Priprema za sljedeći tjedan
-
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::

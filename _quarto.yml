@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "lectures/*.qmd"
+    - "resources/*.qmd"
+    - "projects/*.qmd"
+    - "!_archive_*.qmd"
 
 website:
   title: "Novi mediji i web tehnologije | KOMP4-3"
@@ -18,6 +24,8 @@ website:
     left:
       - text: "Početna"
         href: index.qmd
+      - text: "Početak"
+        href: pocetak.qmd
       - text: "Silabus"
         href: syllabus.qmd
       - text: "Raspored"
@@ -60,6 +68,8 @@ website:
             href: resources/reading-list.qmd
           - text: "Alati"
             href: resources/tools.qmd
+          - text: "Politika korištenja AI-ja"
+            href: resources/ai-policy.qmd
       - text: "Projekt"
         href: projects/practical-project.qmd
 

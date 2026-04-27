@@ -10,3 +10,7 @@
 Thumbs.db
 
 **/*.quarto_ipynb
+
+# Graphify build artifacts
+/graphify-out/
+.graphify_*

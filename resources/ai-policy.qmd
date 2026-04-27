@@ -1,0 +1,46 @@
+---
+title: "Politika korištenja AI alata"
+subtitle: "Što je dopušteno, što nije i što se mora dokumentirati"
+---
+
+## Zašto postoji ova politika
+
+Generativni AI alati promijenili su način na koji se sadržaj stvara, planira i objavljuje na webu. Ovaj kolegij pretpostavlja da ćete tijekom semestra te alate koristiti, među ostalim za istraživanje tema, izradu nacrta, generiranje ideja, pisanje kratkih tekstova, generiranje slika i automatizaciju zadataka u no code platformama. Cilj politike nije zabraniti AI niti vas natjerati da se pretvarate da ne postoji. Cilj je osigurati da AI ostane *alat u vašoj službi*, a ne nadomjestak za učenje i prosudbu koju kolegij gradi.
+
+Komunikolozi na hrvatskom tržištu već su u poziciji u kojoj će ih klijenti, urednici i poslodavci pitati kako koriste AI. Politika kolegija jednostavno reflektira tu profesionalnu stvarnost.
+
+## Što je dopušteno
+
+Korištenje AI-ja za **istraživanje i razumijevanje teme** je u pravilu dopušteno. Možete pitati AI da vam objasni nepoznat pojam, da nabroji izvore o nekoj temi, da sažme dugačak tekst, da vam pomogne razumjeti tehničku dokumentaciju. Ono što tako naučite morate verificirati prije nego što na tome gradite (lekcije iz Tjedna 3 o vrednovanju izvora odnose se i na AI izlaz).
+
+Korištenje AI-ja za **brainstorming i generiranje varijanti** je dopušteno. Možete tražiti deset naslova umjesto jednog, pet uvodnih paragrafa s različitim tonom, alternativne strukture odredišne stranice. Bira se i polira ono što vama ima smisla.
+
+Korištenje AI-ja za **uređivanje vlastitog teksta** je dopušteno. Lekture, prijedlozi za skraćivanje, provjera čitljivosti, prijevod nacrta na engleski ili hrvatski; sve to su legitimna pomoćna sredstva.
+
+Korištenje AI-ja za **kod i automatizaciju u no code alatima** je dopušteno. Ako pišete malu HTML/CSS prilagodbu, automatizaciju u Zapieru ili formulu u Airtableu, traženje pomoći od AI-ja je razumno i očekivano.
+
+Korištenje AI-ja za **generiranje slika i drugih medija** je dopušteno za prototipove, ilustracije i ilustrativne svrhe. Ako koristite generirane slike kao finalni dio projekta, navedite alat i prompt u izjavi o korištenju AI-ja.
+
+## Što nije dopušteno
+
+Predaja **nepromijenjenog AI izlaza kao vlastite analize** nije dopuštena. AI može napisati strategiju sadržaja u dvije minute. Vaš zadatak nije da je predate, nego da donesete strategiju koja reflektira *vaše* razumijevanje konkretne organizacije, publike i ograničenja. Razlika je vidljiva u procjeni.
+
+**Fabriciranje izvora** koje AI ponekad generira nije dopušteno ni u kojem obliku. Ako AI izmisli članak, autora ili statistiku, a vi to uključite u rad bez provjere, to je akademska nepoštenost neovisno o tome je li namjerna. Svaki izvor koji navodite mora postojati i biti pristupačan.
+
+Korištenje AI-ja **na način koji zaobilazi ishode učenja** nije dopušteno. Kolokvij, na primjer, mjeri vaše individualno razumijevanje gradiva. Praktični projekt mjeri vašu sposobnost donošenja strateških odluka. AI koji za vas donosi odluke umjesto da vam pomaže u njihovom donošenju krade vam ono zbog čega ste na kolegiju.
+
+**Generiranje cijelog sadržaja web stranice automatski**, bez vlastite uredničke prosudbe i bez označavanja, nije u duhu projekta. Stranica bez vašeg autorskog otiska nema poslovnu vrijednost koju projekt traži.
+
+## Što se mora dokumentirati
+
+Praktični projekt uključuje **izjavu o korištenju AI-ja** kao jedan od pet obaveznih dijelova predaje (vidi [Praktični projekt](../projects/practical-project.qmd)). U toj izjavi opisujete koje ste alate koristili, za što ste ih koristili, što ste napravili ručno i zašto, te koje ste provjere kvalitete primijenili na AI generirani izlaz. Izjava ne mora biti dugačka; mora biti iskrena. Sofisticirano i pošteno korištenje AI-ja boduje se u rubrici, dok nedostatak izjave ili nekritička ovisnost o AI-ju snižavaju ocjenu.
+
+Za zadatke izvan projekta (kratke vježbe, eseji, kolokvij) izjava nije obavezna osim ako je tako naznačeno u zadatku. Pravilo iz prethodne sekcije ipak vrijedi: ako je rezultat netko drugi (AI ili kolega), nije vaš.
+
+## Provjera kvalitete AI izlaza
+
+AI alati danas imaju visoku stopu površno uvjerljivih, ali stvarno netočnih tvrdnji. Prije nego što ugradite bilo što što vam je AI dao, primijenite tri provjere. **Postoji li izvor?** AI navodi članak, autora, statistiku; provjerite postoji li to izvan AI razgovora. Ako ne, ne koristite. **Je li to ispravno za hrvatski kontekst?** AI često generira sadržaj koji vrijedi za američko ili općenito tržište; lokalni propisi, jezik, navike publike znaju biti drugačiji. **Zvuči li to kao vi?** Brand voice projekta i vaš autorski glas trebaju se prepoznati i nakon AI uređivanja. Ako ne, prepišite.
+
+## U slučaju nejasnoća
+
+Ako niste sigurni je li određeno korištenje AI-ja dopušteno za konkretan zadatak, pitajte prije nego što ga primijenite. Najlakša razlika između prihvatljivog i neprihvatljivog korištenja u praksi je ova: koristite AI tako da ga možete u izjavi opisati bez nelagode. Ako biste se zbog načina korištenja morali skrivati, nemojte ga koristiti tako.

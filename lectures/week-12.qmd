@@ -1,29 +1,17 @@
 ---
 title: "Tjedan 12: Etika AI-ja, sintetički mediji i dezinformacije velikih razmjera"
-subtitle: "Deepfakeovi, tamni obrasci, fabricirani sadržaj i profesionalna odgovornost"
+subtitle: "Deepfakeovi, algoritamska pristranost i profesionalna odgovornost"
+author: "doc. dr. sc. Luka Šikić"
 date: 2025-02-01
-categories: [granica, etika]
-draft: false
+categories: [ai, etika]
+abstract: |
+  Ovo predavanje ispituje etičke dimenzije sadržaja generiranog AI-jem, uključujući deepfakeove, sintetičke medije, pitanja atribucije i autorstva, algoritamsku pristranost i izazov dezinformacija pokretanih AI-jem.
 ---
 
-## Ishodi učenja
+## Uvod
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
 
-## Sadržaj
+## Zaključak
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
-
-## Ključni zaključci
-
-::: {.callout-important appearance="minimal"}
 *Bit će dodano.*
-:::
-
-## Priprema za sljedeći tjedan
-
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::
