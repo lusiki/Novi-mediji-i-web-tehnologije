@@ -24,8 +24,6 @@ website:
     left:
       - text: "Početna"
         href: index.qmd
-      - text: "Početak"
-        href: pocetak.qmd
       - text: "Silabus"
         href: syllabus.qmd
       - text: "Raspored"

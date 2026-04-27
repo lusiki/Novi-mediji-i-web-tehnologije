@@ -32,14 +32,21 @@ Kolegij je organiziran u pet modula koji zajedno prate logiku profesionalnog rad
 
 **Modul V — Mjerenje i sinteza (Tjedni 14–15)** zatvara petlju: web analitika i hibridne metrike integriraju sve prethodne module u mjerljivu praksu, a završna sesija služi za prezentacije studentskih projekata i pogled u budućnost struke.
 
+## Kako koristiti ovu stranicu
+
+Izbornik na vrhu daje izravan pristup svemu. **Silabus** sadrži narativ kolegija s opisima svih 15 tjedana, organiziranim po modulima, i s poveznicama na HTML, PDF i Word verzije svakog predavanja. **Raspored** prati semestar tjedan po tjedan s datumima i statusima. **Predavanja** je padajući izbornik s predavanjima grupiranim po pet modula. **Resursi** obuhvaćaju popis literature, alate i politiku korištenja AI-ja. **Projekt** sadrži upute, rubriku i rokove za praktični projekt.
+
+Pretraga u gornjem desnom kutu radi kroz cijelu stranicu — ako tražite konkretan pojam (SEO, GA4, GDPR, CMS) to je najbrži put do njega.
+
 ## Brzi pristup
 
 | Resurs | Opis |
 |--------|------|
-| [Silabus](syllabus.qmd) | Cjelokupni silabus s opisima predavanja |
-| [Raspored](schedule.qmd) | Tjedni raspored s materijalima i statusom |
+| [Silabus](syllabus.qmd) | Cjelokupni silabus s opisima predavanja po modulima |
+| [Raspored](schedule.qmd) | Tjedni raspored s datumima i statusima |
 | [Popis literature](resources/reading-list.qmd) | Obavezna i preporučena literatura |
 | [Alati](resources/tools.qmd) | Softver i platforme koje se koriste na kolegiju |
+| [Politika korištenja AI-ja](resources/ai-policy.qmd) | Što je dopušteno, što nije i što se dokumentira |
 | [Praktični projekt](projects/practical-project.qmd) | Upute za projekt, rubrika i rokovi |
 
 ## Obavijesti
