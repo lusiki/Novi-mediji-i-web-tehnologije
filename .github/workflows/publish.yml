@@ -21,18 +21,13 @@ jobs:
         with:
           version: 1.9.37
 
-      - name: Install TinyTeX
-        run: quarto install tinytex
+      - name: Render site (HTML only)
+        run: quarto render --to html
 
-      - name: Install LaTeX Croatian language support
-        run: |
-          ~/.TinyTeX/bin/*/tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
-          ~/.TinyTeX/bin/*/tlmgr install babel-croatian
-
-      - name: Render and Publish
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          render: true
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
