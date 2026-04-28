@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="doc. dr. sc. Luka Šikić">
 
 <title>Generativna AI u radnom toku komunikologa – Novi mediji i web tehnologije | KOMP4-3</title>
 <style>
@@ -80,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c013b9868de98432d4946c84ad9fe81e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6f75434381525b8ac0200f8425b4c45d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c013b9868de98432d4946c84ad9fe81e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1c249d4ef90a17205e7caeb54d815f95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-cdc663af859e089ad0089117aae6d4c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1c249d4ef90a17205e7caeb54d815f95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -418,8 +417,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Sadržaj</h2>
    
   <ul>
-  <li><a href="#uvod" id="toc-uvod" class="nav-link active" data-scroll-target="#uvod"><span class="header-section-number">1</span> Uvod</a></li>
-  <li><a href="#zaključak" id="toc-zaključak" class="nav-link" data-scroll-target="#zaključak"><span class="header-section-number">2</span> Zaključak</a></li>
+  <li><a href="#ishodi-učenja" id="toc-ishodi-učenja" class="nav-link active" data-scroll-target="#ishodi-učenja"><span class="header-section-number">1</span> Ishodi učenja</a></li>
+  <li><a href="#zašto-komunikolog-mora-razumjeti-generativni-ai" id="toc-zašto-komunikolog-mora-razumjeti-generativni-ai" class="nav-link" data-scroll-target="#zašto-komunikolog-mora-razumjeti-generativni-ai"><span class="header-section-number">2</span> Zašto komunikolog mora razumjeti generativni AI</a></li>
+  <li><a href="#mentalni-model-jezičnog-modela" id="toc-mentalni-model-jezičnog-modela" class="nav-link" data-scroll-target="#mentalni-model-jezičnog-modela"><span class="header-section-number">3</span> Mentalni model jezičnog modela</a></li>
+  <li><a href="#prompting-kao-profesionalna-vještina" id="toc-prompting-kao-profesionalna-vještina" class="nav-link" data-scroll-target="#prompting-kao-profesionalna-vještina"><span class="header-section-number">4</span> Prompting kao profesionalna vještina</a></li>
+  <li><a href="#ai-u-svakodnevnom-pisanju" id="toc-ai-u-svakodnevnom-pisanju" class="nav-link" data-scroll-target="#ai-u-svakodnevnom-pisanju"><span class="header-section-number">5</span> AI u svakodnevnom pisanju</a></li>
+  <li><a href="#ai-u-istraživanju-i-analizi" id="toc-ai-u-istraživanju-i-analizi" class="nav-link" data-scroll-target="#ai-u-istraživanju-i-analizi"><span class="header-section-number">6</span> AI u istraživanju i analizi</a></li>
+  <li><a href="#ai-u-vizualnom-i-audio-sadržaju" id="toc-ai-u-vizualnom-i-audio-sadržaju" class="nav-link" data-scroll-target="#ai-u-vizualnom-i-audio-sadržaju"><span class="header-section-number">7</span> AI u vizualnom i audio sadržaju</a></li>
+  <li><a href="#ai-agenti-i-orkestracija" id="toc-ai-agenti-i-orkestracija" class="nav-link" data-scroll-target="#ai-agenti-i-orkestracija"><span class="header-section-number">8</span> AI agenti i orkestracija</a></li>
+  <li><a href="#evaluacija-halucinacija-i-kontrola-kvalitete" id="toc-evaluacija-halucinacija-i-kontrola-kvalitete" class="nav-link" data-scroll-target="#evaluacija-halucinacija-i-kontrola-kvalitete"><span class="header-section-number">9</span> Evaluacija, halucinacija i kontrola kvalitete</a></li>
+  <li><a href="#kako-se-mijenja-profesionalna-vrijednost-komunikologa" id="toc-kako-se-mijenja-profesionalna-vrijednost-komunikologa" class="nav-link" data-scroll-target="#kako-se-mijenja-profesionalna-vrijednost-komunikologa"><span class="header-section-number">10</span> Kako se mijenja profesionalna vrijednost komunikologa</a></li>
+  <li><a href="#hrvatski-kontekst-i-ai" id="toc-hrvatski-kontekst-i-ai" class="nav-link" data-scroll-target="#hrvatski-kontekst-i-ai"><span class="header-section-number">11</span> Hrvatski kontekst i AI</a></li>
+  <li><a href="#rizici-privatnosti-intelektualnog-vlasništva-i-ovisnosti" id="toc-rizici-privatnosti-intelektualnog-vlasništva-i-ovisnosti" class="nav-link" data-scroll-target="#rizici-privatnosti-intelektualnog-vlasništva-i-ovisnosti"><span class="header-section-number">12</span> Rizici privatnosti, intelektualnog vlasništva i ovisnosti</a></li>
+  <li><a href="#trendovi-koji-oblikuju-budućnost" id="toc-trendovi-koji-oblikuju-budućnost" class="nav-link" data-scroll-target="#trendovi-koji-oblikuju-budućnost"><span class="header-section-number">13</span> Trendovi koji oblikuju budućnost</a></li>
+  <li><a href="#na-kraju-ovog-poglavlja" id="toc-na-kraju-ovog-poglavlja" class="nav-link" data-scroll-target="#na-kraju-ovog-poglavlja"><span class="header-section-number">14</span> Na kraju ovog poglavlja</a></li>
+  <li><a href="#priprema-za-sljedeći-tjedan" id="toc-priprema-za-sljedeći-tjedan" class="nav-link" data-scroll-target="#priprema-za-sljedeći-tjedan"><span class="header-section-number">15</span> Priprema za sljedeći tjedan</a></li>
+  <li><a href="#dodatno-čitanje" id="toc-dodatno-čitanje" class="nav-link" data-scroll-target="#dodatno-čitanje"><span class="header-section-number">16</span> Dodatno čitanje</a></li>
+  <li><a href="#pojmovnik" id="toc-pojmovnik" class="nav-link" data-scroll-target="#pojmovnik"><span class="header-section-number">17</span> Pojmovnik</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Novi-mediji-i-web-tehnologije/edit/main/lectures/week-11.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Novi-mediji-i-web-tehnologije/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="week-11.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="week-11.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -442,12 +456,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>doc. dr. sc. Luka Šikić </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -462,7 +470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    <p>Ovo predavanje pruža sveobuhvatan pregled načina na koji generativna AI transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove.</p>
+    <p>Ovo predavanje otvara četvrti modul kolegija pitanjem koje sve prethodne ne mogu izbjeći. Generativna AI, pokretana velikim jezičnim modelima, ulazi u svaki korak komunikacijskog rada, od prvog nacrta teksta preko istraživanja do produkcije slike i zvuka. Komunikolog koji ne razumije osnovni mentalni model ovih sustava, granice njihove sposobnosti i discipliniran način njihovog korištenja, ne može svjesno djelovati u profesionalnom okruženju u kojem oni postaju standardni dio infrastrukture.</p>
   </div>
 </div>
 
@@ -470,13 +478,485 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="uvod" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="uvod"><span class="header-section-number">1</span> Uvod</h2>
-<p><em>Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.</em></p>
+<section id="ishodi-učenja" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="ishodi-učenja"><span class="header-section-number">1</span> Ishodi učenja</h2>
+<p>Nakon ovog predavanja studenti će moći</p>
+<ol type="1">
+<li>Objasniti što veliki jezični model jest, kako radi na razini intuicije i koje su njegove temeljne sposobnosti i ograničenja</li>
+<li>Razlikovati ključne frontijerne modele i njihove obitelji, kao i razumjeti specijaliziraniju ekonomiju modela koja iz njih izlazi</li>
+<li>Postaviti dobro strukturiran prompt s jasnim kontekstom, ulogom, primjerima i očekivanim formatom izlaza</li>
+<li>Smjestiti generativnu AI u konkretne komunikacijske zadatke, od pisanja preko istraživanja do produkcije vizualnog i audio sadržaja</li>
+<li>Razumjeti agentsku paradigmu i kako se ona razlikuje od klasičnog korištenja AI asistenta</li>
+<li>Procijeniti kvalitetu AI izlaza kroz disciplinirani postupak provjere, evaluacije i upravljanja halucinacijama</li>
+<li>Artikulirati kako se profesionalna vrijednost komunikologa pomiče u svijetu u kojem AI obavlja dio rada, i koje vještine postaju centralne</li>
+<li>Identificirati rizike privatnosti, intelektualnog vlasništva i ovisnosti, kao i smjestiti AI rad u hrvatski jezični i regulatorni kontekst</li>
+</ol>
 </section>
-<section id="zaključak" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="zaključak"><span class="header-section-number">2</span> Zaključak</h2>
-<p><em>Bit će dodano.</em></p>
+<section id="zašto-komunikolog-mora-razumjeti-generativni-ai" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="zašto-komunikolog-mora-razumjeti-generativni-ai"><span class="header-section-number">2</span> Zašto komunikolog mora razumjeti generativni AI</h2>
+<p>Zamislite komunikologa u srednjoj agenciji koja vodi sadržaj za desetak klijenata. Početkom 2026. godine njegov radni dan izgleda ovako. Ujutro otvori Claude i traži ga da analizira tri konkurentska newslettera klijenta, izvuče zajedničke obrasce i identificira sadržajne praznine. Zatim koristi Gemini u Google Docsu da iz tih nalaza izbaci prvi nacrt strateške preporuke za klijenta. Pored njega Cursor, AI razvojni alat, refaktorira Quarto stranicu na kojoj radi za drugog klijenta. Otvori Custom GPT koji je sam izgradio i koji poznaje brand book trećeg klijenta, te traži tri varijante naslova za blog post. U Make scenariju, koji je postavio prošlog tjedna, automatska Claude akcija sažima ulazne medijske upite i rangira ih po prioritetu, pa kolegica može odgovoriti samo na one koji traže ljudsku procjenu. Krajem dana, otvori ChatGPT i traži ga da pripremi sažetak svega što je danas radio.</p>
+<p>Ovo nije scenarij iz budućnosti. Ovo je svakodnevni rad sve većeg broja komunikologa u 2026. godini. Razlika između komunikologa koji ovaj radni tok poznaje i komunikologa koji ga ne poznaje mjeri se u dnevnoj produktivnosti, u kvaliteti izlaza i u sposobnosti tima da reagira na zahtjeve klijenta brzo umjesto sporo.</p>
+<p>Ali postoji razgovor koji se često previdi. Šef agencije pita istog komunikologa što on točno donosi profesionalno ako toliko rada delegira AI-u. Klijent pita zašto bi plaćao istu cijenu za nešto što očito nije više u potpunosti ručno izrađeno. Mlađi kolega pita kako može graditi karijeru u svijetu u kojem AI obavlja dio onoga što je dosad bila profesionalna kompetencija.</p>
+<p>Ova pitanja nisu ni nostalgična ni alarmantna. Ona traže ozbiljan profesionalni odgovor. Generativni AI nije magija koja će zamijeniti komunikologa, ali nije ni puka pomoćna alatka. To je novi sloj infrastrukture koji mijenja što je profesionalno vrijedno raditi i kako se to vrijedno radi. Predavanje koje slijedi pokušava artikulirati taj odgovor.</p>
+<p>Prošli tjedan zatvorili smo treći modul govoreći o vlastitoj publici i izravnim kanalima. Sada otvaramo četvrti modul govoreći o tehnologiji koja sve prethodne tematske blokove dotiče i mijenja. AI ulazi u CMS, u no-code stack, u suradničke alate, u algoritamsku distribuciju, u newsletter i u svaku drugu razinu komunikacijskog rada. Sljedećih nekoliko tjedana detaljno ćemo razraditi različite dimenzije ovog upadanja.</p>
+</section>
+<section id="mentalni-model-jezičnog-modela" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="mentalni-model-jezičnog-modela"><span class="header-section-number">3</span> Mentalni model jezičnog modela</h2>
+<p>Komunikolog ne treba postati AI inženjer, ali mora imati funkcionalan mentalni model što LLM jest i što nije. Bez tog mentalnog modela, korištenje sustava je ili magijsko ili sumnjičavo, a oba pristupa proizvode lošije rezultate od pristupa koji proizlazi iz razumijevanja.</p>
+<p>Veliki jezični model, ili Large Language Model, sustav je koji je naučio iz ogromne količine teksta predviđati sljedeću riječ u nizu. Naučen je iz desetaka tisuća milijardi riječi knjiga, web stranica, znanstvenih članaka, koda, foruma i mnogih drugih izvora. Naučio je obrasce koji se u ljudskom pisanju javljaju. Iz tih obrazaca može generirati nove tekstove koji prate iste obrasce.</p>
+<p>Ovo je radikalno drugačije od klasičnog softvera koji izvršava unaprijed napisane upute. LLM ne pretražuje bazu znanja u trenutku kada postavite pitanje. On ne provjerava enciklopediju. On ne primjenjuje pravilo zaključivanja koje je netko unaprijed napisao. Ono što radi je nešto čudnije. Iz konteksta vašeg pitanja izračunava vjerojatnost različitih nastavaka i bira ono što mu se čini najvjerojatnijim. Iz te vjerojatnosti gradi rečenicu, iz rečenica gradi paragrafe, iz paragrafa gradi cjelovit odgovor.</p>
+<p>Iz ovog načina rada proizlaze dvije ključne karakteristike koje komunikolog mora razumjeti. Prva je da LLM može učiniti stvari koje izgledaju kao razumijevanje, jer ako je obrasce u ogromnoj količini teksta dovoljno duboko apsorbirao, generirat će odgovore koji su za većinu praktičnih potreba neraspoznatljivi od onoga što bi rekao stručnjak. Druga je da LLM može i griješiti na način koji izgleda samouvjereno, jer ne provjerava ni sebe ni vanjske izvore prije nego što kaže nešto. Halucinacija, kako se taj fenomen u stručnoj literaturi naziva, nije bug nego strukturalna posljedica načina na koji sustav radi.</p>
+<p>Razlikujemo nekoliko slojeva u modernoj LLM arhitekturi. Bazni model je rezultat originalnog treniranja na sirovom korpusu teksta. Bazni model nije optimiziran za slijeđenje uputa, on samo zna predviđati nastavak. Instruction-tuned model dodatno je naučen iz primjera kako odgovarati na upute, što ga čini korisnim u praktičnoj upotrebi. RLHF, ili Reinforcement Learning from Human Feedback, dodatni je sloj u kojem ljudski recenzenti ocjenjuju izlaze i model uči preferirati one koje ljudi smatraju kvalitetnijima. Constitutional AI, koji je razvio Anthropic, alternativni je pristup u kojem model uči preferirati izlaze koji slijede zapisani skup principa.</p>
+<p>Različiti modeli različitih kompanija razlikuju se u snazi, brzini, cijeni i karakteru. Razlike u snazi vrijedi shvatiti kao razlike u sposobnosti rješavanja kompleksnih zadataka. Razlike u brzini i cijeni vrijedi shvatiti kao trgovinu između kvalitete izlaza i ekonomije korištenja. Razlike u karakteru, što je teže opisati, odnose se na ton kojim model piše, mjeru njegove opreznosti, sklonost detalju ili sažetosti, način na koji rješava nejasnoće.</p>
+<p>Frontijerni modeli, koji su trenutno najsnažniji u industriji, uključuju Anthropicove Opus i Sonnet, OpenAI-ev GPT, Googleov Gemini i nekoliko otvorenih modela koje izdaju Meta, Mistral i drugi. Specijalizirani modeli, manji ali optimizirani za specifične zadatke, brzo rastu i čine sve veći dio industrije.</p>
+</section>
+<section id="prompting-kao-profesionalna-vještina" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="prompting-kao-profesionalna-vještina"><span class="header-section-number">4</span> Prompting kao profesionalna vještina</h2>
+<p>Kvaliteta odgovora koji dobijete od jezičnog modela u velikoj mjeri ovisi o kvaliteti prompta koji ste mu dali. Prompting, kao disciplina, u zadnjih nekoliko godina razvio se iz neformalne vještine u profesionalnu praksu sa svojim principima i obrascima.</p>
+<p>Prvi princip je jasnoća konteksta. Model nema povijest s vama. Ne zna za koju organizaciju radite, koja je publika, koji je tonalitet brenda, koji je rok, koji je format izlaza. Sve to morate eksplicitno reći. Komunikolog koji u ChatGPT upiše “napiši mi blog post o sigurnosti na webu” dobit će generičan, plitak rezultat. Komunikolog koji u istom pozivu navede da radi za hrvatsku banku, da je publika manji poslovni klijenti, da brand voice koristi formalan ali pristupačan ton, da članak ide na blog stranice banke i mora biti dug oko šesto pedeset riječi, dobit će znatno upotrebljiviji rezultat.</p>
+<p>Drugi princip je definicija uloge. Model dobro reagira kada mu kažete tko da bude. “Ti si urednik newslettera o tehnologiji namijenjenog netehničkoj publici” daje sustavu okvir unutar kojeg će birati riječi i strukturu. “Ti si akademski pisac koji piše za međunarodni časopis” daje drugačiji okvir. Ova dva ista zadatka s istom temom dat će različite izlaze ovisno o ulozi koju ste definirali.</p>
+<p>Treći princip je primjeri. Model sjajno generalizira iz primjera. Ako mu pokažete dva ili tri uzorka onoga što tražite, izlaz će vjerojatno slijediti taj obrazac mnogo bolje nego ako mu samo opišete što želite. Ovo je tehnika poznata kao few-shot prompting. Komunikolog koji traži naslove u stilu konkretnog medija dobit će puno bolje rezultate ako u prompt uključi pet stvarnih naslova iz tog medija nego ako samo opiše stil riječima.</p>
+<p>Četvrti princip je struktura izlaza. Model dobro slijedi formate koje mu zadate. Ako tražite popis pet stvari s jednom rečenicom obrazloženja po stavci, dobivate to. Ako tražite tablicu s tri stupca, dobivate to. Ako tražite Markdown s konkretnom hijerarhijom naslova, dobivate to. Komunikolog koji eksplicitno definira format ne mora kasnije ručno preoblikovati izlaz.</p>
+<p>Peti princip je pažnja na granice. Model ne zna sve. Ono što ne zna, on će često izmisliti. Ako pitate za konkretan podatak, naročito broj, datum ili imena, model može halucinirati. Disciplinirani komunikolog provjerava ono što može provjeriti, posebno kada se radi o činjenicama koje će ići u objavljeni sadržaj.</p>
+<p>Šesti princip je iterativnost. Prvi prompt rijetko daje finalni rezultat. Iterativni rad, gdje se izlaz čita, traže se promjene konkretnih dijelova, dotjeruje ton ili struktura, jest standardni način profesionalnog korištenja. Ovo nije gubitak vremena, ovo je realan radni tok.</p>
+<p>Napredna praksa uključuje nekoliko obrazaca koji vrijedi imati u repertoaru. Chain of thought prompting traži od modela da razmišlja korak po korak prije zaključka, što kod složenih zadataka značajno poboljšava kvalitetu. Self-critique prompting traži od modela da prvo proizvede izlaz, a zatim ga sam kritički procijeni i poboljša. Multi-perspective prompting traži od modela da problem razmotri iz više različitih kutova prije zaključka. Sve su ovo tehnike koje komunikolog može koristiti za zahtjevnije zadatke.</p>
+<p>System prompt i user prompt razlika su koju vrijedi razumjeti. System prompt je perzistentna uputa koja vrijedi za cijelu konverzaciju i koja oblikuje ton i ulogu. User prompt je konkretno pitanje. U Custom GPT-u i Claude Project-u, sustav prompta zapisuje se jednom i vrijedi za sve buduće interakcije, što čini ovaj sloj posebno korisnim za izgradnju specifičnih asistenata.</p>
+</section>
+<section id="ai-u-svakodnevnom-pisanju" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="ai-u-svakodnevnom-pisanju"><span class="header-section-number">5</span> AI u svakodnevnom pisanju</h2>
+<p>Najveća praktična upotreba generativne AI u radu komunikologa je u domeni pisanja. Ovo nije zato što je AI bolji pisac od čovjeka, nego zato što obavlja podzadatke koji su ranije trošili nesrazmjerno ljudskih sati.</p>
+<p>Generiranje prvog nacrta najučestaliji je obrazac. Komunikolog opisuje što treba napisati, prilaže relevantne materijale, definira ton i format, i AI proizvodi prvu verziju. Prva verzija nije finalna, ali je značajno blokova teksta od kojeg se polazi. Vrijeme koje se ranije trošilo na suočavanje s praznom stranicom sada se troši na uređivanje, kalibraciju i finalizaciju. Empirijska iskustva agencija pokazuju da se ovaj korak može ubrzati nekoliko puta uz održavanje ili čak poboljšanje kvalitete finalnog rezultata.</p>
+<p>Sažimanje dugog sadržaja drugi je čest obrazac. Dokument od pet tisuća riječi, snimka razgovora ili niz članaka mogu se u nekoliko sekundi pretvoriti u sažetak prikladne dužine. Komunikolog koji se priprema za sastanak, koji prati nacionalne medije za klijenta ili koji uređuje tjedni internal newsletter, ovaj alat koristi rutinski.</p>
+<p>Prevođenje i jezična prilagodba značajno se promijenili u zadnjih tri godine. Frontijerni modeli sada prevode bolje nego većina specijaliziranih prevodilačkih alata, a obavljaju i kontekstualnu prilagodbu koja klasični prijevod ne pokriva. Komunikolog koji radi za organizaciju s međunarodnom publikom može u nekoliko minuta proizvesti varijante teksta na nekoliko jezika koje su kalibrirane za različite kulturne kontekste.</p>
+<p>Uređivanje stila i tona postaje obrazac koji ulazi u standardnu praksu. Postojeći tekst može se proslijediti modelu s uputom da ga pretvori u formalniji ton, da skrati duge rečenice, da ukloni pasivne konstrukcije, da prilagodi ga konkretnoj publici. Ovo je posebno korisno za komunikologe koji rade za više klijenata s različitim glasovima brenda.</p>
+<p>Generiranje alternativa višestruko je korisno. Svaki copywriter zna da je teško izmisliti deset varijanti naslova ili pet alternativa za isti poziv na akciju. AI to čini bez napora. Komunikolog tada bira najbolju verziju, kombinira elemente iz različitih ili koristi kao polazište za vlastitu kreativnost.</p>
+<p>Zadržavanje glasa brenda u različitim ljudima koji pišu izazov je u svakoj organizaciji. AI alati koji su učili iz brand booka i prošlog sadržaja mogu provjeriti je li novi tekst u skladu, predložiti uređivanja ili sami napisati prvi nacrt koji je već u glasu. Ovo je posebno relevantno za organizacije koje upravljaju s puno kanala i koje se brže šire nego što njihov urednički tim raste.</p>
+<p>Disciplina koju komunikolog mora razviti odnosi se na pitanje gdje povući granicu. AI nije zamjena za autorsku odgovornost. Tekst koji ide u javnost pod imenom komunikologa, organizacije ili medija, mora biti njegov u smislu da je on procijenio svaku tvrdnju, kalibrirao svaku formulaciju i preuzeo odgovornost za rezultat. AI je suradnik koji pomaže, ali nije autor. Ovu razliku komunikolog mora jasno održavati u glavi i u praksi.</p>
+</section>
+<section id="ai-u-istraživanju-i-analizi" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="ai-u-istraživanju-i-analizi"><span class="header-section-number">6</span> AI u istraživanju i analizi</h2>
+<p>Drugi veliki blok upotrebe AI je u istraživanju, dakle u prikupljanju i obradi informacija prije pisanja.</p>
+<p>AI pretraživači, koje smo spomenuli prošlog tjedna u kontekstu algoritamske distribucije, mijenjaju prirodu istraživanja. Perplexity, ChatGPT pretraga, Claude pretraga i Google AI Overviews pružaju odgovore s citatima izvora. Istraživanje koje je nekad značilo otvaranje petnaest tabova i čitanje svih, sada počinje s AI sažetkom koji pokazuje gdje su relevantni izvori i što oni govore. Komunikolog tada otvara samo one izvore koji su za zadatak ključni i provjerava njihovu vjerodostojnost.</p>
+<p>Razumijevanje ovih sustava zahtijeva i razumijevanje njihovih granica. AI pretraživač je dobar za konsolidaciju i sažimanje, ali nije pouzdan za citate i konkretne podatke. Citat koji je AI pretraživač generirao mora se provjeriti u izvornom tekstu, jer modeli i dalje povremeno halucinacijama miješaju izvore.</p>
+<p>Analiza dokumenata je obrazac koji se brzo razvija. Frontijerni modeli sada podržavaju kontekstne prozore od stotina tisuća riječi, što znači da se cijeli izvještaj, knjiga ili velika baza dokumenata može proslijediti modelu i postaviti pitanja koja se odnose na cjelinu. Komunikolog koji prati godišnje izvještaje konkurencije ili koji analizira veliki dokument klijenta, ima u ovom alatu istraživačkog pomoćnika koji može u sekundi locirati relevantne dijelove.</p>
+<p>Klasifikacija ulaznih informacija postaje sve češća praksa. Tisuće medijskih spomena, tisuće upita korisnika ili tisuće povratnih informacija mogu se kroz AI klasificirati po temi, tonu ili prioritetu. Ovo je dijelom obrađeno već u Tjednu 5 u kontekstu automatizacije, a ovdje vrijedi naglasiti kako mijenja istraživačku praksu. Manualno proučavanje uzorka veće količine ulaznog materijala zamjenjuje se sustavnijom analizom cjelokupnog korpusa.</p>
+<p>Konkurentska analiza, koja je standardni dio strateške pripreme, dobiva novu razinu kroz AI. Stranice konkurenata, njihovi newsletteri, njihovi društveni profili, mogu se sustavno analizirati za obrasce sadržaja, frekvenciju, ton i poziciju. AI agenti koji ovaj rad obavljaju kontinuirano, šalju komunikologu izvještaje s ključnim novostima.</p>
+<p>Sintetička priprema za sastanak praktičan je obrazac koji se često previđa. Prije sastanka s klijentom ili partnerom, AI može u nekoliko minuta pripremiti sažetak relevantne pozadine, pitanja koja vrijedi postaviti, slijed argumenata i moguće prigovore. Komunikolog koji ulazi u sastanak s ovakvom pripremom djeluje informiranije od onog koji ulazi nepripremljen, čak i ako je razlika u vremenu pripreme bila petnaest minuta.</p>
+<p>Etičke i metodološke obveze ne mijenjaju se s AI. Komunikolog koji u svom istraživanju dolazi do zaključaka temeljenih na AI obradi, mora razumjeti gdje su limiti te metode, mora navesti izvor kada to vrijedi i mora preuzeti odgovornost za interpretaciju. Korištenje AI ne oslobađa od standardne intelektualne discipline, ono samo ubrzava njezino izvršavanje.</p>
+</section>
+<section id="ai-u-vizualnom-i-audio-sadržaju" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="ai-u-vizualnom-i-audio-sadržaju"><span class="header-section-number">7</span> AI u vizualnom i audio sadržaju</h2>
+<p>Generativni AI ne ograničava se na tekst. Slika, video i audio sadržaj sve se više proizvode kroz AI alate i komunikolog mora razumjeti praktične mogućnosti i granice.</p>
+<p>Generiranje slika kroz alate poput Midjourneyja, DALL-E, Stable Diffusiona i Adobe Firefly postalo je standardno u 2025. i 2026. godini. Komunikolog koji ranije nije imao budžet za fotografa ili dizajnera, danas može u nekoliko minuta proizvesti vizualni materijal za blog post, društvenu mrežu ili newsletter. Razlika između generičke i kvalitetne AI generirane slike leži u promptu, u izboru modela i u postupku iteracije, što su sve vještine koje se uče.</p>
+<p>Granice korištenja generiranih slika regulatorne su i etičke. Slika koja prikazuje stvarnu osobu mora biti pažljivo razmotrena. Slika koja imitira stil zaštićenog autora ulazi u sferu autorskih prava. Slika koja se predstavlja kao fotografija stvarnog događaja, a generirana je AI-em, fundamentalno zavarava publiku. EU AI Act i Direktiva o autorskim pravima postavljaju pravne okvire koji se i dalje formiraju.</p>
+<p>Generiranje videa kroz alate poput OpenAI-evog Sora, Googleovog Veo, Runwaya, Klinga i drugih u zadnjoj godini napravilo je velikih skokova u kvaliteti. Kratki promotivni video, animirana ilustracija, pozadinski klip za društvenu mrežu, sve se to danas može proizvesti AI alatima u djeliću vremena i troška kojeg je tradicionalna produkcija zahtijevala. Granice su slične kao kod slika, posebno kada se radi o prikazima stvarnih ljudi ili događaja.</p>
+<p>Audio i AI glas razvili su se u dramatične sposobnosti. ElevenLabs, OpenAI Voice, Microsoft Speech, Resemble i drugi alati mogu generirati realističan glas iz teksta. Glas se može cloned iz uzorka, što otvara vrlo različite slučajeve upotrebe, od dostupnosti sadržaja preko personalizacije do potencijalnih zlouporaba. Sintetički podcast, AI naracija, AI prevođenje s očuvanjem glasa, sve su to obrasci koji ulaze u praksu.</p>
+<p>Glazba i zvučna pratnja kroz AI alate poput Suno, Udio i AIVA, polako ulaze u komunikacijsku praksu. Pozadinska glazba za promotivni video, džingl za podcast, atmosferski zvuk za video, mogu se generirati u trenucima i koristiti uz licence koje alati pružaju.</p>
+<p>Kombinirani multimedijski alati postaju sve češći. HeyGen i Synthesia generiraju video s AI prezenterom iz teksta. Descript spaja video editing s AI generiranom naracijom. Canva integrira AI sliku, dizajn i kraći video u jedan radni tok.</p>
+<p>Za komunikologa, ovo otvara novu razinu autonomije ali i novu razinu odgovornosti. Vizualni i audio sadržaj koji prije nije bio pristupačan zbog troška, sada je dostupan. Ali kvaliteta, originalnost i etičnost ostaju isti zahtjevi. Generirani sadržaj koji izgleda profesionalno još uvijek mora biti relevantan, originalan i odgovoran. Tehnička dostupnost ne garantira kreativnu vrijednost.</p>
+<p>Pitanje označavanja AI generiranog sadržaja postaje sve relevantnije. Mnoge platforme uvode obvezu označavanja, neki regulatorni okviri zahtijevaju transparentnost, a publika sve više pažnje pridaje pitanju autentičnosti. Detaljnije ćemo o ovome govoriti sljedećeg tjedna kada ćemo otvoriti pitanja autentičnosti i sintetičkih medija.</p>
+</section>
+<section id="ai-agenti-i-orkestracija" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="ai-agenti-i-orkestracija"><span class="header-section-number">8</span> AI agenti i orkestracija</h2>
+<p>U Tjednima 5 i 9 spomenuli smo AI agente kao paradigmu koja izlazi iz klasičnog obrasca asistenta. Ovdje vrijedi razraditi razliku detaljnije, jer se agentska paradigma upravo u 2026. godini intenzivno razvija.</p>
+<p>AI asistent, kako ga klasično poznajemo, reagira na konkretni upit. Korisnik postavlja pitanje, sustav odgovara, korisnik postavlja sljedeće. Pitanje za pitanjem, kontekst se gradi unutar konverzacije. Ovo je obrazac ChatGPT-a, Claudea i većine svakodnevnih AI alata.</p>
+<p>AI agent ima drugačiju dinamiku. Korisnik mu opisuje cilj, a ne pitanje. Agent zatim sam odlučuje koji su koraci potrebni, koje alate treba koristiti, kojim redoslijedom, i kada je gotov. Komunikolog koji asistentu kaže “napiši mi blog post o trendovima u online trgovini” dobiva tekst. Komunikolog koji agentu kaže “istraži trendove u online trgovini u zadnjih šest mjeseci na hrvatskom tržištu i pripremi blog post od osamsto riječi s relevantnim citatima” pokreće niz koraka. Agent može pretražiti web, pročitati relevantne članke, ekstrahirati podatke, strukturirati ih i napisati tekst, sve unutar jedne sesije.</p>
+<p>Anthropicov Computer Use, OpenAI-eva Operator funkcionalnost i Browser Use kao open-source projekt su tri glavna predstavnika agentske paradigme u 2026. godini. Sustavi koji djeluju u korist korisnika unutar preglednika i drugih aplikacija, koji ispunjavaju forme, klikaju na elemente, čitaju stranice i izvršavaju radnje, mijenjaju prirodu rada na način koji je lakše vidjeti nego opisati.</p>
+<p>Specijalizirani agenti za određene zadatke postaju sve češći. Lindy je specijalizirana platforma za poslovne agente. Relevance AI orkestrira agente za marketinški rad. Cognition Devin pokušava biti agent koji programira, a drugi sustavi specijaliziraju se za pravo, financije, korisničku podršku ili istraživanje.</p>
+<p>MCP, Model Context Protocol, infrastrukturni je standard koji omogućuje da AI klijenti pristupaju vanjskim alatima na ujednačen način. Spomenuli smo ga u Tjednu 5 i ovdje vrijedi naglasiti njegovu ulogu u agentskoj paradigmi. Kada agent može preko MCP-a pristupiti Notionu, Airtableu, Gmailu, GitHubu i stotinama drugih servisa, njegov operativni opseg postaje znatno širi nego asistenta koji djeluje samo u svojem chat sučelju.</p>
+<p>Implikacija agentske paradigme za komunikologa je promjena obrasca rada. Umjesto da svaki korak izvodi sam, komunikolog opisuje cilj i nadgleda izvršenje. Ovo zahtijeva nove vještine. Sposobnost jasne specifikacije cilja, sposobnost evaluacije rezultata, sposobnost prepoznavanja gdje agent griješi i sposobnost intervencije u pravom trenutku. Agentski rad nije manje rada, nije više rada, drugačiji je rad.</p>
+<p>Granice agentskog rada važno je razumjeti. Agenti pogriješe na načine koji su teže predvidljivi od asistenata. Agenti mogu trošiti više resursa nego se očekuje. Agenti mogu izvršiti akcije koje su teško reverzibilne. Komunikolog koji agentima delegira važan rad mora imati uspostavljene mehanizme nadzora, granice ovlasti i sposobnost intervencije.</p>
+</section>
+<section id="evaluacija-halucinacija-i-kontrola-kvalitete" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="evaluacija-halucinacija-i-kontrola-kvalitete"><span class="header-section-number">9</span> Evaluacija, halucinacija i kontrola kvalitete</h2>
+<p>Profesionalni rad s generativnim AI nemoguć je bez disciplinirane prakse evaluacije izlaza. Ovo nije pitanje povjerenja u sustav. Ovo je pitanje preuzimanja odgovornosti za ono što ide u svijet pod nečijim imenom.</p>
+<p>Halucinacija je tehnički termin za situaciju kada model proizvede izlaz koji djeluje uvjerljivo ali sadrži netočne tvrdnje. Halucinacije mogu biti mali, primjerice pogrešan datum ili krivo napisano ime. Mogu biti veliki, primjerice citati iz knjiga koje ne postoje, sudski slučajevi koji se nikad nisu dogodili ili podaci koji su izmišljeni ali djeluju autoritativno. Frontijerni modeli su u zadnjih nekoliko godina značajno smanjili stopu halucinacija, ali fenomen nije eliminiran i strukturno proizlazi iz načina na koji modeli rade.</p>
+<p>Discipliniran komunikolog ima nekoliko pravila u praksi. Svaki konkretan podatak provjerava se izvan modela. Svaki citat traži se u izvornom dokumentu. Svaka tvrdnja koja izgleda iznenađujuće provjerava se u barem jednom drugom izvoru. Brzina koju AI donosi gubi se ako se ovi koraci preskaču, ali rizik je drugi i može biti znatno skuplji.</p>
+<p>Procjena kvalitete teksta zahtijeva ljudsku procjenu koja se ne može potpuno automatizirati. Tekst koji je gramatički ispravan, koji teče logično i koji ne sadrži halucinacije, može i dalje biti loš tekst. Može biti generičan, plitak, izvan tona, dosadan ili promašiti poruku. Ova procjena ostaje na komunikologu i upravo ovdje leži dio njegove profesionalne vrijednosti.</p>
+<p>Bias ili pristranost je drugi važan koncept. Modeli su naučili iz korpusa koji nije neutralan. Reflektiraju kulturalne, jezične, političke i druge pristranosti tih izvora. Kada komunikolog koristi model za pisanje koje će biti čitano u različitim kulturnim kontekstima, mora svjesno provjeravati izlaze za ovakve probleme.</p>
+<p>Konzistentnost u dužim radnim tokovima izazov je koji raste s razinom složenosti. AI koji pomaže pri pisanju većeg sadržajnog projekta, primjerice serije od deset blog postova ili godišnjeg izvještaja, može u različitim dijelovima koristiti različite formulacije za iste pojmove, različite stilske registre ili različite faktualne pretpostavke. Komunikolog koji upravlja takvim projektom mora uspostaviti smjernice koje vrijede kroz cijeli projekt i provjeravati konzistentnost.</p>
+<p>Evaluacijski radni tokovi razvijaju se u industriji. Alati poput Langfuse, Helicone i Braintrust nude infrastrukturu za sustavno mjerenje i poboljšanje AI izlaza u produkcijskim sustavima. Iako su namijenjeni primarno tehničkim timovima, koncepti se polako prenose i u komunikacijsku praksu, posebno u većim agencijama koje grade vlastiti AI radni tok.</p>
+<p>Ljudska procjena ostaje središnja, ne kao paralela AI radu nego kao njegov nužni komplement. Razumijevanje gdje model dobro radi i gdje pogriješi, gdje vrijedi mu vjerovati i gdje treba dodatno provjeriti, postaje profesionalna kompetencija sama po sebi.</p>
+</section>
+<section id="kako-se-mijenja-profesionalna-vrijednost-komunikologa" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="kako-se-mijenja-profesionalna-vrijednost-komunikologa"><span class="header-section-number">10</span> Kako se mijenja profesionalna vrijednost komunikologa</h2>
+<p>Pitanje koje smo otvorili na početku predavanja vraća se ovdje s više konteksta. Ako AI obavlja dio rada koji je dosad bio profesionalna kompetencija komunikologa, što čini novi temelj profesionalne vrijednosti?</p>
+<p>Prosudba je prva i središnja kompetencija. Sposobnost da se procijeni je li ono što je AI proizveo dobro za konkretnu situaciju, prikladno za publiku, usklađeno s glasom brenda, etički prihvatljivo i strateški poravnato s ciljem, ne može se delegirati AI-u. Ova prosudba dolazi iz iskustva, iz poznavanja konteksta, iz razumijevanja širih implikacija. Komunikolog s razvijenom prosudbom u svijetu AI-a postaje vrjedniji, ne manje vrijedan.</p>
+<p>Postavljanje ispravnog cilja često je najvažniji korak. AI dobro radi na pitanjima koja su mu jasno postavljena. Sposobnost da se kompleksna komunikacijska potreba prevede u jasan cilj, koji se može delegirati ili agentu ili asistentu, sama po sebi je vještina. Lošije postavljen cilj kroz najbolji AI sustav daje gore rezultate od dobro postavljenog cilja kroz osrednji sustav.</p>
+<p>Strategija ostaje domena u kojoj AI još nije doista snažan. Modeli mogu pomagati u izvršavanju strateških dokumenata, u pisanju strateških analiza, ali stvarna strateška odluka, koja zahtijeva razumijevanje organizacije, njezinih ljudi, njezinih ograničenja i dugoročnih ambicija, ostaje na ljudskoj razini. Komunikolog koji djeluje strateški, koji povezuje komunikacijske odluke sa širim organizacijskim ciljevima, sve je vrjedniji.</p>
+<p>Etička i regulatorna odgovornost ostaje na čovjeku. Sadržaj koji se objavi pod imenom organizacije nosi ljudsku odgovornost. AI sustav nije pravni subjekt. Komunikolog koji razumije etičke i pravne implikacije svoje prakse, koji svjesno prima odgovornost za ono što ide u svijet, jest profesionalac u smislu koji AI ne može preuzeti.</p>
+<p>Odnosi i povjerenje su domena koja je u potpunosti ljudska. Klijent koji vjeruje agenciji vjeruje ljudima koji u njoj rade. Pretplatnik newslettera koji godinama prati autora prati osobu, ne sustav. AI je alat koji ljudi koriste, ali odnos je ono što ostaje na ljudskoj razini.</p>
+<p>Selekcija i kuriranje sve su važnija vještina u svijetu u kojem se sadržaj proizvodi u eksplozivnim količinama. Komunikolog koji zna prepoznati što je vrijedno objaviti, što vrijedi reći u određenom trenutku, što čitatelj treba čuti, dodaje vrijednost koja se ne može svesti na sirovu produkciju.</p>
+<p>Sve ovo skupa znači da se profesionalna identitet komunikologa pomiče. Manje je o tome koliko se ručnog rada izvršava. Više je o tome kakvu vrstu prosudbe, strategije, povjerenja, kuriranja se donosi. Ovaj pomak je realan i odvija se sada, a komunikolog koji ga svjesno integrira u svoje profesionalno samorazumijevanje stoji bolje od onog koji ga negira ili ignorira.</p>
+</section>
+<section id="hrvatski-kontekst-i-ai" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="hrvatski-kontekst-i-ai"><span class="header-section-number">11</span> Hrvatski kontekst i AI</h2>
+<p>Korištenje AI alata u Hrvatskoj ima nekoliko specifičnosti koje vrijedi razumjeti.</p>
+<p>Kvaliteta hrvatskog jezika u frontijernim modelima se značajno poboljšala u zadnje dvije godine. Modeli koji su prije tri godine slabo pisali na hrvatskom, danas pišu na razini koja je za većinu praktičnih potreba prihvatljiva. Anthropicov Claude i OpenAI-ev GPT na frontijernim verzijama dobro slijede gramatička pravila, ali povremeno griješe u finim nijansama tona, konzistenciji rodova, idiomatici ili specifičnosti hrvatske kulture. Komunikolog koji koristi AI za hrvatski sadržaj mora računati na dodatni korak uređivanja koji bi za engleski možda bio nepotreban.</p>
+<p>Lokalni AI ekosustav u Hrvatskoj raste polako ali postoji. Hrvatske startupe i istraživačke grupe pojavljuju se u domenama specifičnih AI primjena, od medicinskog imaginga preko prevođenja do industrijskih primjena. Sveučilišta surađuju s industrijom kroz programe poput Algebra LAB-a i ZICER-a. Vlada je donijela Strategiju razvoja umjetne inteligencije i nizu programa koji ovaj sektor podupiru, ali rezultati su tek u fazi razvoja.</p>
+<p>Javni sektor i AI nalaze se u ranoj fazi adopcije u Hrvatskoj. Pojedine institucije eksperimentiraju s AI asistencijom za internu komunikaciju ili za korisničku podršku, ali je sustavna primjena rijetka. Komunikolog koji radi u javnom sektoru ili savjetuje javne institucije mora računati s manje razvijenim okvirom i s pojačanim regulatornim oprezom, jer obrada osobnih podataka kroz AI sustave podliježe strogom GDPR i AI Act tretmanu.</p>
+<p>Mediji u Hrvatskoj koriste AI u različitim oblicima. Sinteza članaka, automatizacija sumarizacije, prijevod sadržaja sa stranih medija, sve su to obrasci koji ulaze u redakcijsku praksu. Hrvatsko novinarsko društvo i strukovna udruženja postupno razvijaju etičke smjernice za korištenje AI u novinarstvu, ali standardi su još u nastajanju.</p>
+<p>Cijena pretplata na frontijerne modele u eurima viša je u relativnim terminima nego za korisnike u zemljama s većim BDP-om po stanovniku. Pojedinačna pretplata na Claude Pro ili ChatGPT Plus od dvadesetak eura mjesečno za freelance komunikologa nije zanemariv trošak. Timske pretplate i API trošak za organizacije mogu brzo dosegnuti stotine eura mjesečno. Strateški pristup uključuje selekciju koje alate vrijedi plaćati, koje koristiti kroz besplatne razine i koje izbjegavati.</p>
+<p>Hrvatski dijalekti, regionalizmi i specifična kulturna tematika domena su gdje frontijerni modeli i dalje griješe. Komunikolog koji radi za regionalne medije, lokalne organizacije ili specifične publike mora ovo imati u vidu i ne smije slijepo prihvatiti AI generirani sadržaj kao jezično adekvatan za sve hrvatske publike.</p>
+</section>
+<section id="rizici-privatnosti-intelektualnog-vlasništva-i-ovisnosti" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="rizici-privatnosti-intelektualnog-vlasništva-i-ovisnosti"><span class="header-section-number">12</span> Rizici privatnosti, intelektualnog vlasništva i ovisnosti</h2>
+<p>AI ne dolazi bez rizika koje komunikolog mora razumjeti i aktivno upravljati.</p>
+<p>Privatnost ulaznih podataka prvo je pitanje. Kada šaljete tekst, dokument ili sliku AI sustavu, taj sadržaj putuje na server dobavljača. Praksa različitih dobavljača značajno se razlikuje. Neke kompanije čuvaju ulazne podatke i koriste ih za daljnje treniranje modela. Druge ne koriste podatke za trening ali ih čuvaju. Treće brišu podatke nakon obrade. Komunikolog mora poznavati politiku dobavljača kojeg koristi i mora razumjeti koji se podaci smiju slati prema kojem sustavu.</p>
+<p>Posebno osjetljivi podaci, primjerice osobni podaci klijenata pod GDPR-om, povjerljivi poslovni podaci ili podaci pod ugovornom obavezom čuvanja, ne smiju se slati u AI sustav koji ne pruža odgovarajuća jamstva. Enterprise verzije Claudea, ChatGPT-a i Geminija nude DPA, podatkovnu rezidenciju i ugovorne obveze koje pojedinačne pretplate ne nude. Za ozbiljnu poslovnu upotrebu, ovo nije tehnički detalj nego pravni preduvjet.</p>
+<p>Intelektualno vlasništvo AI generiranog sadržaja u pravnoj je sivoj zoni koja se još razvija. EU AI Act i Direktiva o autorskim pravima postavljaju okvir, ali konkretne presude tek dolaze. Američka Copyright Office određena je da AI generirani sadržaj sam po sebi nije podložan autorsko-pravnoj zaštiti. Sudovi u različitim jurisdikcijama raspravljaju o tome je li AI trening na zaštićenom sadržaju “fair use” ili kršenje. Komunikolog koji se oslanja na AI za stvaranje sadržaja mora razumjeti da je pravna pozicija tog sadržaja drugačija od pozicije ljudski stvorenog sadržaja.</p>
+<p>Ovisnost o pojedinom dobavljaču rizik je koji raste s integracijom. Organizacija koja gradi cijeli operativni sustav oko Claudea, OpenAI-ja ili Geminija postaje izložena promjenama koje taj dobavljač donosi. Cijene mogu rasti. Pristupna pravila mogu se mijenjati. Modeli mogu biti ukinuti ili zamijenjeni novim verzijama koje se ponašaju drugačije. Disciplinirana praksa uključuje praćenje više dobavljača, mogućnost zamjene jednog drugim i izbjegavanje ekstremne ovisnosti.</p>
+<p>Sigurnost AI sustava domena je koja se ozbiljno razvija. Prompt injection, kada zlonamjerni input pokuša manipulirati sustavom da prekrši svoja pravila, jailbreaking, kada se model nagovara da prekrši svoje smjernice, i drugi vektori napada postaju sve sofisticiraniji. Komunikolog koji koristi AI sustave koji obrađuju ulaze iz nepouzdanih izvora, primjerice korisničke poruke ili sadržaj treće strane, mora ovo razumjeti i imati uspostavljene zaštitne mjere.</p>
+<p>Kognitivna ovisnost je manje opipljiv ali stvarni rizik. Komunikolog koji svaki tekst piše s AI pomoći s vremenom može izgubiti dio vlastite spisateljske vještine. Komunikolog koji svako istraživanje delegira AI pretraživaču može izgubiti sposobnost dubinskog samostalnog istraživanja. Discipliniran odnos prema AI uključuje svjesnu odluku gdje se on koristi i gdje se zadržava ljudska praksa, ne zato što čovjek to bolje radi nego zato što je vrijedno održavati profesionalnu kondiciju.</p>
+</section>
+<section id="trendovi-koji-oblikuju-budućnost" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="trendovi-koji-oblikuju-budućnost"><span class="header-section-number">13</span> Trendovi koji oblikuju budućnost</h2>
+<p>Nekoliko trendova vrijedi pratiti jer će kroz iduće godine značajno mijenjati AI krajobraz.</p>
+<p>Rast sposobnosti modela i dalje je strm i ne pokazuje znakove zasićenja. Svaka nova generacija frontijernih modela donosi mjerljive skokove u kompleksnim zadacima, dužini konteksta i kvaliteti zaključivanja. Komunikolog koji procjenjuje AI samo na temelju iskustva s modelima od prije godinu ili dvije može imati zastarjelo mišljenje o tome što sustavi mogu raditi.</p>
+<p>Pad cijene istovremeno se odvija na razini API troška i pretplata. Za isti zadatak, cijena u 2026. godini je djelić cijene u 2023. godini. Ovaj trend vjerojatno će se nastaviti i AI usluge će postati sve dostupnije organizacijama svake veličine.</p>
+<p>Specijalizacija modela usporedna je s rastom frontijernih. Manji modeli optimizirani za specifične zadatke postaju sve češći i sve sposobniji. Lokalni modeli koji se izvršavaju na korisnikovom uređaju, čuvajući podatke lokalno, otvaraju nove obrasce upotrebe. Hibridi između lokalnih i cloud modela ulaze u standardnu arhitekturu.</p>
+<p>Agentska revolucija je glavna tehnička priča 2025. i 2026. godine. Sustavi koji autonomno izvršavaju kompleksne zadatke kroz duže vremenske periode, koji koriste alate, koji uče iz iskustva, polako napuštaju eksperimentalnu fazu. Implikacije za rad komunikologa, kao što smo već istaknuli, su dubinske.</p>
+<p>AI agenti koji djeluju za korisnika, ne samo u korist organizacije, ulaze u potrošački prostor. Apple Intelligence, Googleov Gemini Live, Microsoftov Copilot sve više djeluju kao osobni asistenti koji upravljaju korisničkom poštom, kalendarom, dokumentima, pretragama. Komunikacija prema krajnjem korisniku sve više prolazi kroz njegov AI sloj prije nego ga doseže.</p>
+<p>Regulatorno usavršavanje EU AI Acta nastavlja se u sljedećim godinama. Visoki rizik AI sustava, transparentnost AI generiranog sadržaja, pravila o trening korpusima, sve će to oblikovati operativnu praksu. Komunikolog koji prati ovo područje pripremljen je za izmjene, dok onaj koji ga ignorira može se naći u nepravilnoj praksi.</p>
+<p>Standardizacija interakcije, kroz protokole poput MCP-a, poboljšava interoperabilnost AI sustava i alata. Posljedica je da će se različiti AI proizvodi sve više moći kombinirati u radnim tokovima koji nisu ograničeni na jedan ekosustav.</p>
+<p>Konvergencija multimodalnih modela, koji simultano rade s tekstom, slikom, zvukom i videom, otvara obrasce upotrebe koje danas tek naslućujemo. Komunikolog koji u jednom razgovoru s modelom radi s tekstualnim brifom, generira sliku, dorađuje audio i sastavlja video, već je realnost u 2026. godini.</p>
+</section>
+<section id="na-kraju-ovog-poglavlja" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="na-kraju-ovog-poglavlja"><span class="header-section-number">14</span> Na kraju ovog poglavlja</h2>
+<p>Generativni AI nije više egzotična tehnologija o kojoj se piše u tehnološkim publikacijama. To je standardni sloj infrastrukture u radu komunikologa, koji se brzo mijenja, koji ima konkretne sposobnosti i konkretne granice, i koji zahtijeva discipliniranu profesionalnu praksu.</p>
+<p>Razumijevanje ovog sloja nije izborni dodatak profesionalnoj kompetenciji. Komunikolog koji u 2026. godini ne razumije osnovni mentalni model jezičnih modela, koji ne zna postaviti dobar prompt, koji ne razlikuje agente od asistenata i koji ne može procijeniti kvalitetu AI izlaza, profesionalno zaostaje. Komunikolog koji ovo savlada, dobiva alate koji znatno povećavaju njegov kapacitet, oslobađaju vrijeme za prosudbu i strategiju i otvaraju obrasce rada koji su prije bili nedostupni.</p>
+<p>Ovo predavanje otvorilo je četvrti modul kolegija. Sljedeći tjedan govorit ćemo o autentičnosti sadržaja i sintetičkim medijima, dakle o pitanju što znači autorstvo, integritet i istina u svijetu u kojem AI može proizvesti uvjerljiv tekst, sliku, video i glas koji izgledaju i zvuče kao ljudski. Sve više komunikacijskih situacija odvija se u kontekstu u kojem publika ne može biti sigurna je li ono što vidi i čuje stvarno. Ovo nije akademska distinkcija. Ovo je radikalna promjena u uvjetima profesionalnog rada koju ćemo razraditi u praktičnom i etičkom smislu.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ključni zaključci
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Veliki jezični modeli rade tako da iz konteksta izračunavaju vjerojatne nastavke, što objašnjava i njihovu impresivnu sposobnost i strukturalnu sklonost halucinaciji.</p>
+<p>Frontijerni modeli, uključujući Claude, GPT, Gemini i otvorene alternative, razlikuju se u snazi, brzini, cijeni i karakteru, a izbor modela za zadatak strateška je odluka.</p>
+<p>Prompting je profesionalna vještina koja se temelji na jasnoći konteksta, definiciji uloge, primjerima, strukturiranju izlaza, svjesnosti granica i iterativnom pristupu.</p>
+<p>AI mijenja svakodnevno pisanje komunikologa kroz generiranje prvih nacrta, sažimanje, prevođenje, uređivanje stila i generiranje alternativa, ali autorska odgovornost ostaje u potpunosti na čovjeku.</p>
+<p>AI u istraživanju ubrzava prikupljanje, sažimanje i klasifikaciju, ali zahtijeva disciplinu provjere izvora i razumijevanje gdje su modeli pouzdani a gdje halucinacije ostaju realne.</p>
+<p>Generiranje slike, videa, glasa i glazbe kroz AI alate postalo je standardna komunikacijska praksa, što otvara nove mogućnosti i nove regulatorne i etičke obveze.</p>
+<p>AI agenti, za razliku od asistenata, autonomno izvršavaju složene cilje koristeći alate, što mijenja obrazac rada od izvršavanja prema specifikaciji cilja i nadzoru.</p>
+<p>Halucinacija, bias, konzistentnost i ljudska procjena kvalitete središnja su pitanja u disciplini AI evaluacije i kontrole kvalitete.</p>
+<p>Profesionalna vrijednost komunikologa u svijetu AI-a sve više proizlazi iz prosudbe, postavljanja ispravnih ciljeva, strategije, etičke odgovornosti, odnosa i kuriranja, a sve manje iz volumena ručne produkcije.</p>
+<p>Hrvatski kontekst donosi specifične izazove kvalitete jezika u modelima, ekonomije pretplata u eurima, sporijeg javnog sektora i potrebe za pažljivim upravljanjem GDPR-om i intelektualnim vlasništvom.</p>
+</div>
+</div>
+</section>
+<section id="priprema-za-sljedeći-tjedan" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="priprema-za-sljedeći-tjedan"><span class="header-section-number">15</span> Priprema za sljedeći tjedan</h2>
+<p>Tjedan 12 bavit će se autentičnošću sadržaja, sintetičkim medijima i etičkim pitanjima koje AI generirana produkcija otvara.</p>
+<p>Prije dvanaestog predavanja napravite četiri stvari.</p>
+<p>Prvo, oblikujte svoj prvi pažljivo strukturiran prompt za neki konkretan zadatak iz svog akademskog ili profesionalnog rada. Pratite princip jasnog konteksta, definicije uloge, primjera i strukturiranog izlaza. Zabilježite što je radilo dobro, što loše, i koje izmjene biste sljedeći put napravili.</p>
+<p>Drugo, otvorite besplatan ili probni račun na barem jednom alatu za generiranje slika i jednom alatu za generiranje glasa, ako ih već ne koristite. Generirajte jednu sliku i jedan kratki audio koji bi se mogli iskoristiti u realnom komunikacijskom projektu. Razmislite gdje su granice prihvatljive upotrebe.</p>
+<p>Treće, pronađite barem dva primjera javnog AI generiranog sadržaja u hrvatskom medijskom prostoru u zadnjih nekoliko mjeseci. Mogu biti članci, slike, videoporuke, glasovni klipovi. Procijenite je li sadržaj jasno označen, je li njegovo korištenje u konkretnom kontekstu etički prihvatljivo i koje pitanje otvara o autentičnosti.</p>
+<p>Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica. Kako biste opisali svoj odnos prema AI-u na skali od potpunog izbjegavanja do potpune integracije? Što biste željeli promijeniti i zašto? Refleksija ćemo iskoristiti u uvodu sljedećeg predavanja.</p>
+</section>
+<section id="dodatno-čitanje" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="dodatno-čitanje"><span class="header-section-number">16</span> Dodatno čitanje</h2>
+<p>Anthropicov blog, OpenAI-eva istraživačka publikacija i Google DeepMind blog izravni su izvori najnovijih razvojnih trendova. Iako su ponekad tehnički, mnogi članci pišu se jezikom koji je pristupačan i komunikolozima.</p>
+<p>Ethan Mollick vodi blog One Useful Thing i piše knjigu Co-Intelligence o praktičnoj integraciji AI u profesionalni rad. Njegov pristup je pragmatičan, oslonjen na vlastito iskustvo profesora, i posebno koristan komunikolozima koji žele razumjeti AI bez tehničke pozadine.</p>
+<p>Simon Willison vodi blog na simonwillison.net koji prati svakodnevni razvoj AI ekosustava. Iako se Simon pretežno obraća developerima, mnoge njegove analize relevantne su širem komunikacijskom čitateljstvu.</p>
+<p>Latent Space podcast i pripadajuća newsletter publikacija Swyxa, koju smo spomenuli prošlog tjedna u kontekstu no-code i izravnih kanala, redovito objavljuje razgovore s ključnim ljudima u industriji.</p>
+<p>Casey Newton u Platformeru, Charlie Warzel u Galaxy Brainu i Kevin Roose u New York Timesu pišu o AI s perspektivom širokog komunikacijskog čitateljstva.</p>
+<p>EU AI Act i njegova hrvatska implementacija dostupni su u službenim publikacijama Europske komisije i Vlade Republike Hrvatske. Ako planirate raditi u sektorima visokog rizika ili u javnom sektoru, ovi dokumenti su nužno štivo.</p>
+<p>Knjiga The Coming Wave Mustafa Suleymana pruža širi kontekst u kojem AI revolucija živi i u kojem komunikologi profesionalno djeluju. Iako je knjiga pomalo alarmantna u tonu, njezini empirijski uvidi vrijedi pratiti.</p>
+<p>Anthropicov vodič Engineering Prompts dostupan je besplatno i pruža sustavan uvod u prompting kao disciplinu. Iako napisan iz perspektive Claudea, principi su prenosivi na druge sustave.</p>
+</section>
+<section id="pojmovnik" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="pojmovnik"><span class="header-section-number">17</span> Pojmovnik</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pojam</th>
+<th>Objašnjenje</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Generativni AI</td>
+<td>AI sustav koji generira novi sadržaj, tekst, sliku, video ili audio</td>
+</tr>
+<tr class="even">
+<td>LLM</td>
+<td>Large Language Model, veliki jezični model</td>
+</tr>
+<tr class="odd">
+<td>Frontijerni model</td>
+<td>Najsnažnija razina trenutno dostupnih modela u industriji</td>
+</tr>
+<tr class="even">
+<td>Bazni model</td>
+<td>Model koji je rezultat originalnog treniranja prije specijalizacije</td>
+</tr>
+<tr class="odd">
+<td>Instruction-tuned</td>
+<td>Model dodatno naučen iz primjera kako odgovarati na upute</td>
+</tr>
+<tr class="even">
+<td>RLHF</td>
+<td>Reinforcement Learning from Human Feedback, dodatni sloj treniranja</td>
+</tr>
+<tr class="odd">
+<td>Constitutional AI</td>
+<td>Anthropicov pristup u kojem model uči preferirati izlaze koji slijede zapisane principe</td>
+</tr>
+<tr class="even">
+<td>Anthropic</td>
+<td>Kompanija koja razvija Claude obitelj modela</td>
+</tr>
+<tr class="odd">
+<td>Claude</td>
+<td>Anthropicova obitelj jezičnih modela, uključujući Opus i Sonnet</td>
+</tr>
+<tr class="even">
+<td>OpenAI</td>
+<td>Kompanija koja razvija GPT obitelj modela</td>
+</tr>
+<tr class="odd">
+<td>GPT</td>
+<td>OpenAI-eva obitelj jezičnih modela</td>
+</tr>
+<tr class="even">
+<td>Google DeepMind</td>
+<td>Googleov istraživački laboratorij koji razvija Gemini</td>
+</tr>
+<tr class="odd">
+<td>Gemini</td>
+<td>Googleova obitelj multimodalnih modela</td>
+</tr>
+<tr class="even">
+<td>Llama</td>
+<td>Meta otvoreni jezični model</td>
+</tr>
+<tr class="odd">
+<td>Mistral</td>
+<td>Francuski razvijatelj otvorenih i komercijalnih modela</td>
+</tr>
+<tr class="even">
+<td>Open-source model</td>
+<td>Model čiji se težinski parametri javno objavljuju</td>
+</tr>
+<tr class="odd">
+<td>Prompt</td>
+<td>Ulazna uputa koja se zadaje jezičnom modelu</td>
+</tr>
+<tr class="even">
+<td>System prompt</td>
+<td>Perzistentna uputa koja vrijedi za cijelu konverzaciju</td>
+</tr>
+<tr class="odd">
+<td>User prompt</td>
+<td>Konkretno pitanje ili zahtjev unutar konverzacije</td>
+</tr>
+<tr class="even">
+<td>Few-shot prompting</td>
+<td>Prompting tehnika koja modelu daje primjere prije zadatka</td>
+</tr>
+<tr class="odd">
+<td>Chain of thought</td>
+<td>Tehnika koja traži od modela da razmišlja korak po korak</td>
+</tr>
+<tr class="even">
+<td>Self-critique</td>
+<td>Tehnika u kojoj model sam kritički procjenjuje vlastiti izlaz</td>
+</tr>
+<tr class="odd">
+<td>Multi-perspective prompting</td>
+<td>Tehnika koja traži razmatranje problema iz više kutova</td>
+</tr>
+<tr class="even">
+<td>Halucinacija</td>
+<td>Pojava da model generira netočan izlaz s uvjerljivim tonom</td>
+</tr>
+<tr class="odd">
+<td>Bias</td>
+<td>Pristranost modela koja proizlazi iz korpusa za treniranje</td>
+</tr>
+<tr class="even">
+<td>Knowledge cutoff</td>
+<td>Datum nakon kojeg model nema podatke iz svojeg treninga</td>
+</tr>
+<tr class="odd">
+<td>Kontekstni prozor</td>
+<td>Količina teksta koju model može držati u radnom kontekstu</td>
+</tr>
+<tr class="even">
+<td>Tokeni</td>
+<td>Jedinica obrade teksta u jezičnim modelima</td>
+</tr>
+<tr class="odd">
+<td>Custom GPT</td>
+<td>Prilagođeni AI asistent unutar ChatGPT platforme</td>
+</tr>
+<tr class="even">
+<td>Claude Project</td>
+<td>Anthropicov pandan Custom GPT-u</td>
+</tr>
+<tr class="odd">
+<td>AI asistent</td>
+<td>Sustav koji reagira na upite korisnika</td>
+</tr>
+<tr class="even">
+<td>AI agent</td>
+<td>Sustav koji autonomno izvršava cilj koristeći alate</td>
+</tr>
+<tr class="odd">
+<td>Agentska paradigma</td>
+<td>Pristup u kojem AI sam odlučuje o slijedu akcija</td>
+</tr>
+<tr class="even">
+<td>Computer Use</td>
+<td>Anthropicova mogućnost AI kontrole sučelja računala</td>
+</tr>
+<tr class="odd">
+<td>OpenAI Operator</td>
+<td>OpenAI-ev pandan Computer Useu</td>
+</tr>
+<tr class="even">
+<td>Browser Use</td>
+<td>Open-source projekt za browser-use AI sustave</td>
+</tr>
+<tr class="odd">
+<td>Lindy</td>
+<td>Platforma za izgradnju AI agenata bez koda</td>
+</tr>
+<tr class="even">
+<td>Relevance AI</td>
+<td>Platforma za izgradnju agenata orijentirana poslovnoj upotrebi</td>
+</tr>
+<tr class="odd">
+<td>Cognition Devin</td>
+<td>AI agent specijaliziran za programiranje</td>
+</tr>
+<tr class="even">
+<td>MCP</td>
+<td>Model Context Protocol, standard za komunikaciju AI klijenata sa servisima</td>
+</tr>
+<tr class="odd">
+<td>Multimodalni model</td>
+<td>Model koji simultano obrađuje tekst, sliku, audio i video</td>
+</tr>
+<tr class="even">
+<td>Midjourney</td>
+<td>Specijalizirani alat za generiranje slika</td>
+</tr>
+<tr class="odd">
+<td>DALL-E</td>
+<td>OpenAI-ev alat za generiranje slika</td>
+</tr>
+<tr class="even">
+<td>Stable Diffusion</td>
+<td>Open-source model za generiranje slika</td>
+</tr>
+<tr class="odd">
+<td>Adobe Firefly</td>
+<td>Adobeov alat za generiranje slika integriran u Creative Cloud</td>
+</tr>
+<tr class="even">
+<td>Sora</td>
+<td>OpenAI-ev model za generiranje videa</td>
+</tr>
+<tr class="odd">
+<td>Veo</td>
+<td>Googleov model za generiranje videa</td>
+</tr>
+<tr class="even">
+<td>Runway</td>
+<td>Specijalizirana platforma za AI video produkciju</td>
+</tr>
+<tr class="odd">
+<td>Kling</td>
+<td>Kineski model za generiranje videa</td>
+</tr>
+<tr class="even">
+<td>ElevenLabs</td>
+<td>Vodeća platforma za generiranje glasa</td>
+</tr>
+<tr class="odd">
+<td>OpenAI Voice</td>
+<td>OpenAI-eva mogućnost generiranja glasa</td>
+</tr>
+<tr class="even">
+<td>Suno</td>
+<td>AI alat za generiranje glazbe</td>
+</tr>
+<tr class="odd">
+<td>Udio</td>
+<td>AI alat za generiranje glazbe</td>
+</tr>
+<tr class="even">
+<td>HeyGen</td>
+<td>Platforma za generiranje videa s AI prezenterima</td>
+</tr>
+<tr class="odd">
+<td>Synthesia</td>
+<td>Platforma za generiranje korporativnih videa s AI prezenterima</td>
+</tr>
+<tr class="even">
+<td>Descript</td>
+<td>Alat za uređivanje videa i audija s AI funkcionalnostima</td>
+</tr>
+<tr class="odd">
+<td>Cursor</td>
+<td>AI razvojni alat za pisanje koda</td>
+</tr>
+<tr class="even">
+<td>Claude Code</td>
+<td>Anthropicov AI alat za pisanje koda u terminalu</td>
+</tr>
+<tr class="odd">
+<td>Langfuse</td>
+<td>Open-source platforma za AI observabilnost</td>
+</tr>
+<tr class="even">
+<td>Helicone</td>
+<td>Platforma za monitoring i analitiku AI sustava</td>
+</tr>
+<tr class="odd">
+<td>Braintrust</td>
+<td>Platforma za evaluaciju AI sustava</td>
+</tr>
+<tr class="even">
+<td>Prompt injection</td>
+<td>Vektor napada u kojem se ulazom pokušava manipulirati sustavom</td>
+</tr>
+<tr class="odd">
+<td>Jailbreaking</td>
+<td>Tehnike kojima se model nagovara da prekrši smjernice</td>
+</tr>
+<tr class="even">
+<td>AI Act</td>
+<td>EU regulativa koja kategorizira AI sustave prema riziku</td>
+</tr>
+<tr class="odd">
+<td>Apple Intelligence</td>
+<td>Apple platforma za AI značajke u iOS-u i macOS-u</td>
+</tr>
+<tr class="even">
+<td>Microsoft Copilot</td>
+<td>Microsoftov AI asistent integriran u Microsoft 365</td>
+</tr>
+<tr class="odd">
+<td>Perplexity</td>
+<td>AI pretraživač koji daje odgovore s citatima izvora</td>
+</tr>
+<tr class="even">
+<td>Edge AI</td>
+<td>AI koji se izvršava na korisnikovom uređaju umjesto u oblaku</td>
+</tr>
+</tbody>
+</table>
 
 
 <!-- -->
@@ -951,20 +1431,393 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Generativna AI u radnom toku komunikologa"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Praktična primjena AI alata u profesionalnom radu komunikologa"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "doc. dr. sc. Luka Šikić"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-05-06</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [AI, generativna-AI, radni-tok]</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">abstract:</span><span class="co"> |</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  Ovo predavanje pruža sveobuhvatan pregled načina na koji generativna AI transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove.</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Uvod</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zaključak</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>*Bit će dodano.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-05-06</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [AI, generativna-AI, radni-tok]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  html: default</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    lang: en</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  docx: default</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">abstract:</span><span class="co"> |</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  Ovo predavanje otvara četvrti modul kolegija pitanjem koje sve prethodne ne mogu izbjeći. Generativna AI, pokretana velikim jezičnim modelima, ulazi u svaki korak komunikacijskog rada, od prvog nacrta teksta preko istraživanja do produkcije slike i zvuka. Komunikolog koji ne razumije osnovni mentalni model ovih sustava, granice njihove sposobnosti i discipliniran način njihovog korištenja, ne može svjesno djelovati u profesionalnom okruženju u kojem oni postaju standardni dio infrastrukture.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ishodi učenja</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Nakon ovog predavanja studenti će moći</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Objasniti što veliki jezični model jest, kako radi na razini intuicije i koje su njegove temeljne sposobnosti i ograničenja</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Razlikovati ključne frontijerne modele i njihove obitelji, kao i razumjeti specijaliziraniju ekonomiju modela koja iz njih izlazi</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Postaviti dobro strukturiran prompt s jasnim kontekstom, ulogom, primjerima i očekivanim formatom izlaza</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Smjestiti generativnu AI u konkretne komunikacijske zadatke, od pisanja preko istraživanja do produkcije vizualnog i audio sadržaja</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Razumjeti agentsku paradigmu i kako se ona razlikuje od klasičnog korištenja AI asistenta</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Procijeniti kvalitetu AI izlaza kroz disciplinirani postupak provjere, evaluacije i upravljanja halucinacijama</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Artikulirati kako se profesionalna vrijednost komunikologa pomiče u svijetu u kojem AI obavlja dio rada, i koje vještine postaju centralne</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>Identificirati rizike privatnosti, intelektualnog vlasništva i ovisnosti, kao i smjestiti AI rad u hrvatski jezični i regulatorni kontekst</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto komunikolog mora razumjeti generativni AI</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Zamislite komunikologa u srednjoj agenciji koja vodi sadržaj za desetak klijenata. Početkom 2026. godine njegov radni dan izgleda ovako. Ujutro otvori Claude i traži ga da analizira tri konkurentska newslettera klijenta, izvuče zajedničke obrasce i identificira sadržajne praznine. Zatim koristi Gemini u Google Docsu da iz tih nalaza izbaci prvi nacrt strateške preporuke za klijenta. Pored njega Cursor, AI razvojni alat, refaktorira Quarto stranicu na kojoj radi za drugog klijenta. Otvori Custom GPT koji je sam izgradio i koji poznaje brand book trećeg klijenta, te traži tri varijante naslova za blog post. U Make scenariju, koji je postavio prošlog tjedna, automatska Claude akcija sažima ulazne medijske upite i rangira ih po prioritetu, pa kolegica može odgovoriti samo na one koji traže ljudsku procjenu. Krajem dana, otvori ChatGPT i traži ga da pripremi sažetak svega što je danas radio.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Ovo nije scenarij iz budućnosti. Ovo je svakodnevni rad sve većeg broja komunikologa u 2026. godini. Razlika između komunikologa koji ovaj radni tok poznaje i komunikologa koji ga ne poznaje mjeri se u dnevnoj produktivnosti, u kvaliteti izlaza i u sposobnosti tima da reagira na zahtjeve klijenta brzo umjesto sporo.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>Ali postoji razgovor koji se često previdi. Šef agencije pita istog komunikologa što on točno donosi profesionalno ako toliko rada delegira AI-u. Klijent pita zašto bi plaćao istu cijenu za nešto što očito nije više u potpunosti ručno izrađeno. Mlađi kolega pita kako može graditi karijeru u svijetu u kojem AI obavlja dio onoga što je dosad bila profesionalna kompetencija.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Ova pitanja nisu ni nostalgična ni alarmantna. Ona traže ozbiljan profesionalni odgovor. Generativni AI nije magija koja će zamijeniti komunikologa, ali nije ni puka pomoćna alatka. To je novi sloj infrastrukture koji mijenja što je profesionalno vrijedno raditi i kako se to vrijedno radi. Predavanje koje slijedi pokušava artikulirati taj odgovor.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Prošli tjedan zatvorili smo treći modul govoreći o vlastitoj publici i izravnim kanalima. Sada otvaramo četvrti modul govoreći o tehnologiji koja sve prethodne tematske blokove dotiče i mijenja. AI ulazi u CMS, u no-code stack, u suradničke alate, u algoritamsku distribuciju, u newsletter i u svaku drugu razinu komunikacijskog rada. Sljedećih nekoliko tjedana detaljno ćemo razraditi različite dimenzije ovog upadanja.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mentalni model jezičnog modela</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Komunikolog ne treba postati AI inženjer, ali mora imati funkcionalan mentalni model što LLM jest i što nije. Bez tog mentalnog modela, korištenje sustava je ili magijsko ili sumnjičavo, a oba pristupa proizvode lošije rezultate od pristupa koji proizlazi iz razumijevanja.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Veliki jezični model, ili Large Language Model, sustav je koji je naučio iz ogromne količine teksta predviđati sljedeću riječ u nizu. Naučen je iz desetaka tisuća milijardi riječi knjiga, web stranica, znanstvenih članaka, koda, foruma i mnogih drugih izvora. Naučio je obrasce koji se u ljudskom pisanju javljaju. Iz tih obrazaca može generirati nove tekstove koji prate iste obrasce.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Ovo je radikalno drugačije od klasičnog softvera koji izvršava unaprijed napisane upute. LLM ne pretražuje bazu znanja u trenutku kada postavite pitanje. On ne provjerava enciklopediju. On ne primjenjuje pravilo zaključivanja koje je netko unaprijed napisao. Ono što radi je nešto čudnije. Iz konteksta vašeg pitanja izračunava vjerojatnost različitih nastavaka i bira ono što mu se čini najvjerojatnijim. Iz te vjerojatnosti gradi rečenicu, iz rečenica gradi paragrafe, iz paragrafa gradi cjelovit odgovor.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Iz ovog načina rada proizlaze dvije ključne karakteristike koje komunikolog mora razumjeti. Prva je da LLM može učiniti stvari koje izgledaju kao razumijevanje, jer ako je obrasce u ogromnoj količini teksta dovoljno duboko apsorbirao, generirat će odgovore koji su za većinu praktičnih potreba neraspoznatljivi od onoga što bi rekao stručnjak. Druga je da LLM može i griješiti na način koji izgleda samouvjereno, jer ne provjerava ni sebe ni vanjske izvore prije nego što kaže nešto. Halucinacija, kako se taj fenomen u stručnoj literaturi naziva, nije bug nego strukturalna posljedica načina na koji sustav radi.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Razlikujemo nekoliko slojeva u modernoj LLM arhitekturi. Bazni model je rezultat originalnog treniranja na sirovom korpusu teksta. Bazni model nije optimiziran za slijeđenje uputa, on samo zna predviđati nastavak. Instruction-tuned model dodatno je naučen iz primjera kako odgovarati na upute, što ga čini korisnim u praktičnoj upotrebi. RLHF, ili Reinforcement Learning from Human Feedback, dodatni je sloj u kojem ljudski recenzenti ocjenjuju izlaze i model uči preferirati one koje ljudi smatraju kvalitetnijima. Constitutional AI, koji je razvio Anthropic, alternativni je pristup u kojem model uči preferirati izlaze koji slijede zapisani skup principa.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Različiti modeli različitih kompanija razlikuju se u snazi, brzini, cijeni i karakteru. Razlike u snazi vrijedi shvatiti kao razlike u sposobnosti rješavanja kompleksnih zadataka. Razlike u brzini i cijeni vrijedi shvatiti kao trgovinu između kvalitete izlaza i ekonomije korištenja. Razlike u karakteru, što je teže opisati, odnose se na ton kojim model piše, mjeru njegove opreznosti, sklonost detalju ili sažetosti, način na koji rješava nejasnoće.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Frontijerni modeli, koji su trenutno najsnažniji u industriji, uključuju Anthropicove Opus i Sonnet, OpenAI-ev GPT, Googleov Gemini i nekoliko otvorenih modela koje izdaju Meta, Mistral i drugi. Specijalizirani modeli, manji ali optimizirani za specifične zadatke, brzo rastu i čine sve veći dio industrije.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompting kao profesionalna vještina</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Kvaliteta odgovora koji dobijete od jezičnog modela u velikoj mjeri ovisi o kvaliteti prompta koji ste mu dali. Prompting, kao disciplina, u zadnjih nekoliko godina razvio se iz neformalne vještine u profesionalnu praksu sa svojim principima i obrascima.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>Prvi princip je jasnoća konteksta. Model nema povijest s vama. Ne zna za koju organizaciju radite, koja je publika, koji je tonalitet brenda, koji je rok, koji je format izlaza. Sve to morate eksplicitno reći. Komunikolog koji u ChatGPT upiše "napiši mi blog post o sigurnosti na webu" dobit će generičan, plitak rezultat. Komunikolog koji u istom pozivu navede da radi za hrvatsku banku, da je publika manji poslovni klijenti, da brand voice koristi formalan ali pristupačan ton, da članak ide na blog stranice banke i mora biti dug oko šesto pedeset riječi, dobit će znatno upotrebljiviji rezultat.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Drugi princip je definicija uloge. Model dobro reagira kada mu kažete tko da bude. "Ti si urednik newslettera o tehnologiji namijenjenog netehničkoj publici" daje sustavu okvir unutar kojeg će birati riječi i strukturu. "Ti si akademski pisac koji piše za međunarodni časopis" daje drugačiji okvir. Ova dva ista zadatka s istom temom dat će različite izlaze ovisno o ulozi koju ste definirali.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>Treći princip je primjeri. Model sjajno generalizira iz primjera. Ako mu pokažete dva ili tri uzorka onoga što tražite, izlaz će vjerojatno slijediti taj obrazac mnogo bolje nego ako mu samo opišete što želite. Ovo je tehnika poznata kao few-shot prompting. Komunikolog koji traži naslove u stilu konkretnog medija dobit će puno bolje rezultate ako u prompt uključi pet stvarnih naslova iz tog medija nego ako samo opiše stil riječima.</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>Četvrti princip je struktura izlaza. Model dobro slijedi formate koje mu zadate. Ako tražite popis pet stvari s jednom rečenicom obrazloženja po stavci, dobivate to. Ako tražite tablicu s tri stupca, dobivate to. Ako tražite Markdown s konkretnom hijerarhijom naslova, dobivate to. Komunikolog koji eksplicitno definira format ne mora kasnije ručno preoblikovati izlaz.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>Peti princip je pažnja na granice. Model ne zna sve. Ono što ne zna, on će često izmisliti. Ako pitate za konkretan podatak, naročito broj, datum ili imena, model može halucinirati. Disciplinirani komunikolog provjerava ono što može provjeriti, posebno kada se radi o činjenicama koje će ići u objavljeni sadržaj.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Šesti princip je iterativnost. Prvi prompt rijetko daje finalni rezultat. Iterativni rad, gdje se izlaz čita, traže se promjene konkretnih dijelova, dotjeruje ton ili struktura, jest standardni način profesionalnog korištenja. Ovo nije gubitak vremena, ovo je realan radni tok.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Napredna praksa uključuje nekoliko obrazaca koji vrijedi imati u repertoaru. Chain of thought prompting traži od modela da razmišlja korak po korak prije zaključka, što kod složenih zadataka značajno poboljšava kvalitetu. Self-critique prompting traži od modela da prvo proizvede izlaz, a zatim ga sam kritički procijeni i poboljša. Multi-perspective prompting traži od modela da problem razmotri iz više različitih kutova prije zaključka. Sve su ovo tehnike koje komunikolog može koristiti za zahtjevnije zadatke.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>System prompt i user prompt razlika su koju vrijedi razumjeti. System prompt je perzistentna uputa koja vrijedi za cijelu konverzaciju i koja oblikuje ton i ulogu. User prompt je konkretno pitanje. U Custom GPT-u i Claude Project-u, sustav prompta zapisuje se jednom i vrijedi za sve buduće interakcije, što čini ovaj sloj posebno korisnim za izgradnju specifičnih asistenata.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI u svakodnevnom pisanju</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Najveća praktična upotreba generativne AI u radu komunikologa je u domeni pisanja. Ovo nije zato što je AI bolji pisac od čovjeka, nego zato što obavlja podzadatke koji su ranije trošili nesrazmjerno ljudskih sati.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>Generiranje prvog nacrta najučestaliji je obrazac. Komunikolog opisuje što treba napisati, prilaže relevantne materijale, definira ton i format, i AI proizvodi prvu verziju. Prva verzija nije finalna, ali je značajno blokova teksta od kojeg se polazi. Vrijeme koje se ranije trošilo na suočavanje s praznom stranicom sada se troši na uređivanje, kalibraciju i finalizaciju. Empirijska iskustva agencija pokazuju da se ovaj korak može ubrzati nekoliko puta uz održavanje ili čak poboljšanje kvalitete finalnog rezultata.</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Sažimanje dugog sadržaja drugi je čest obrazac. Dokument od pet tisuća riječi, snimka razgovora ili niz članaka mogu se u nekoliko sekundi pretvoriti u sažetak prikladne dužine. Komunikolog koji se priprema za sastanak, koji prati nacionalne medije za klijenta ili koji uređuje tjedni internal newsletter, ovaj alat koristi rutinski.</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Prevođenje i jezična prilagodba značajno se promijenili u zadnjih tri godine. Frontijerni modeli sada prevode bolje nego većina specijaliziranih prevodilačkih alata, a obavljaju i kontekstualnu prilagodbu koja klasični prijevod ne pokriva. Komunikolog koji radi za organizaciju s međunarodnom publikom može u nekoliko minuta proizvesti varijante teksta na nekoliko jezika koje su kalibrirane za različite kulturne kontekste.</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>Uređivanje stila i tona postaje obrazac koji ulazi u standardnu praksu. Postojeći tekst može se proslijediti modelu s uputom da ga pretvori u formalniji ton, da skrati duge rečenice, da ukloni pasivne konstrukcije, da prilagodi ga konkretnoj publici. Ovo je posebno korisno za komunikologe koji rade za više klijenata s različitim glasovima brenda.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>Generiranje alternativa višestruko je korisno. Svaki copywriter zna da je teško izmisliti deset varijanti naslova ili pet alternativa za isti poziv na akciju. AI to čini bez napora. Komunikolog tada bira najbolju verziju, kombinira elemente iz različitih ili koristi kao polazište za vlastitu kreativnost.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Zadržavanje glasa brenda u različitim ljudima koji pišu izazov je u svakoj organizaciji. AI alati koji su učili iz brand booka i prošlog sadržaja mogu provjeriti je li novi tekst u skladu, predložiti uređivanja ili sami napisati prvi nacrt koji je već u glasu. Ovo je posebno relevantno za organizacije koje upravljaju s puno kanala i koje se brže šire nego što njihov urednički tim raste.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>Disciplina koju komunikolog mora razviti odnosi se na pitanje gdje povući granicu. AI nije zamjena za autorsku odgovornost. Tekst koji ide u javnost pod imenom komunikologa, organizacije ili medija, mora biti njegov u smislu da je on procijenio svaku tvrdnju, kalibrirao svaku formulaciju i preuzeo odgovornost za rezultat. AI je suradnik koji pomaže, ali nije autor. Ovu razliku komunikolog mora jasno održavati u glavi i u praksi.</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI u istraživanju i analizi</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>Drugi veliki blok upotrebe AI je u istraživanju, dakle u prikupljanju i obradi informacija prije pisanja.</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>AI pretraživači, koje smo spomenuli prošlog tjedna u kontekstu algoritamske distribucije, mijenjaju prirodu istraživanja. Perplexity, ChatGPT pretraga, Claude pretraga i Google AI Overviews pružaju odgovore s citatima izvora. Istraživanje koje je nekad značilo otvaranje petnaest tabova i čitanje svih, sada počinje s AI sažetkom koji pokazuje gdje su relevantni izvori i što oni govore. Komunikolog tada otvara samo one izvore koji su za zadatak ključni i provjerava njihovu vjerodostojnost.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>Razumijevanje ovih sustava zahtijeva i razumijevanje njihovih granica. AI pretraživač je dobar za konsolidaciju i sažimanje, ali nije pouzdan za citate i konkretne podatke. Citat koji je AI pretraživač generirao mora se provjeriti u izvornom tekstu, jer modeli i dalje povremeno halucinacijama miješaju izvore.</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>Analiza dokumenata je obrazac koji se brzo razvija. Frontijerni modeli sada podržavaju kontekstne prozore od stotina tisuća riječi, što znači da se cijeli izvještaj, knjiga ili velika baza dokumenata može proslijediti modelu i postaviti pitanja koja se odnose na cjelinu. Komunikolog koji prati godišnje izvještaje konkurencije ili koji analizira veliki dokument klijenta, ima u ovom alatu istraživačkog pomoćnika koji može u sekundi locirati relevantne dijelove.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>Klasifikacija ulaznih informacija postaje sve češća praksa. Tisuće medijskih spomena, tisuće upita korisnika ili tisuće povratnih informacija mogu se kroz AI klasificirati po temi, tonu ili prioritetu. Ovo je dijelom obrađeno već u Tjednu 5 u kontekstu automatizacije, a ovdje vrijedi naglasiti kako mijenja istraživačku praksu. Manualno proučavanje uzorka veće količine ulaznog materijala zamjenjuje se sustavnijom analizom cjelokupnog korpusa.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Konkurentska analiza, koja je standardni dio strateške pripreme, dobiva novu razinu kroz AI. Stranice konkurenata, njihovi newsletteri, njihovi društveni profili, mogu se sustavno analizirati za obrasce sadržaja, frekvenciju, ton i poziciju. AI agenti koji ovaj rad obavljaju kontinuirano, šalju komunikologu izvještaje s ključnim novostima.</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Sintetička priprema za sastanak praktičan je obrazac koji se često previđa. Prije sastanka s klijentom ili partnerom, AI može u nekoliko minuta pripremiti sažetak relevantne pozadine, pitanja koja vrijedi postaviti, slijed argumenata i moguće prigovore. Komunikolog koji ulazi u sastanak s ovakvom pripremom djeluje informiranije od onog koji ulazi nepripremljen, čak i ako je razlika u vremenu pripreme bila petnaest minuta.</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>Etičke i metodološke obveze ne mijenjaju se s AI. Komunikolog koji u svom istraživanju dolazi do zaključaka temeljenih na AI obradi, mora razumjeti gdje su limiti te metode, mora navesti izvor kada to vrijedi i mora preuzeti odgovornost za interpretaciju. Korištenje AI ne oslobađa od standardne intelektualne discipline, ono samo ubrzava njezino izvršavanje.</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI u vizualnom i audio sadržaju</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>Generativni AI ne ograničava se na tekst. Slika, video i audio sadržaj sve se više proizvode kroz AI alate i komunikolog mora razumjeti praktične mogućnosti i granice.</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>Generiranje slika kroz alate poput Midjourneyja, DALL-E, Stable Diffusiona i Adobe Firefly postalo je standardno u 2025. i 2026. godini. Komunikolog koji ranije nije imao budžet za fotografa ili dizajnera, danas može u nekoliko minuta proizvesti vizualni materijal za blog post, društvenu mrežu ili newsletter. Razlika između generičke i kvalitetne AI generirane slike leži u promptu, u izboru modela i u postupku iteracije, što su sve vještine koje se uče.</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>Granice korištenja generiranih slika regulatorne su i etičke. Slika koja prikazuje stvarnu osobu mora biti pažljivo razmotrena. Slika koja imitira stil zaštićenog autora ulazi u sferu autorskih prava. Slika koja se predstavlja kao fotografija stvarnog događaja, a generirana je AI-em, fundamentalno zavarava publiku. EU AI Act i Direktiva o autorskim pravima postavljaju pravne okvire koji se i dalje formiraju.</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>Generiranje videa kroz alate poput OpenAI-evog Sora, Googleovog Veo, Runwaya, Klinga i drugih u zadnjoj godini napravilo je velikih skokova u kvaliteti. Kratki promotivni video, animirana ilustracija, pozadinski klip za društvenu mrežu, sve se to danas može proizvesti AI alatima u djeliću vremena i troška kojeg je tradicionalna produkcija zahtijevala. Granice su slične kao kod slika, posebno kada se radi o prikazima stvarnih ljudi ili događaja.</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Audio i AI glas razvili su se u dramatične sposobnosti. ElevenLabs, OpenAI Voice, Microsoft Speech, Resemble i drugi alati mogu generirati realističan glas iz teksta. Glas se može cloned iz uzorka, što otvara vrlo različite slučajeve upotrebe, od dostupnosti sadržaja preko personalizacije do potencijalnih zlouporaba. Sintetički podcast, AI naracija, AI prevođenje s očuvanjem glasa, sve su to obrasci koji ulaze u praksu.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>Glazba i zvučna pratnja kroz AI alate poput Suno, Udio i AIVA, polako ulaze u komunikacijsku praksu. Pozadinska glazba za promotivni video, džingl za podcast, atmosferski zvuk za video, mogu se generirati u trenucima i koristiti uz licence koje alati pružaju.</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Kombinirani multimedijski alati postaju sve češći. HeyGen i Synthesia generiraju video s AI prezenterom iz teksta. Descript spaja video editing s AI generiranom naracijom. Canva integrira AI sliku, dizajn i kraći video u jedan radni tok.</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>Za komunikologa, ovo otvara novu razinu autonomije ali i novu razinu odgovornosti. Vizualni i audio sadržaj koji prije nije bio pristupačan zbog troška, sada je dostupan. Ali kvaliteta, originalnost i etičnost ostaju isti zahtjevi. Generirani sadržaj koji izgleda profesionalno još uvijek mora biti relevantan, originalan i odgovoran. Tehnička dostupnost ne garantira kreativnu vrijednost.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>Pitanje označavanja AI generiranog sadržaja postaje sve relevantnije. Mnoge platforme uvode obvezu označavanja, neki regulatorni okviri zahtijevaju transparentnost, a publika sve više pažnje pridaje pitanju autentičnosti. Detaljnije ćemo o ovome govoriti sljedećeg tjedna kada ćemo otvoriti pitanja autentičnosti i sintetičkih medija.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI agenti i orkestracija</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>U Tjednima 5 i 9 spomenuli smo AI agente kao paradigmu koja izlazi iz klasičnog obrasca asistenta. Ovdje vrijedi razraditi razliku detaljnije, jer se agentska paradigma upravo u 2026. godini intenzivno razvija.</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>AI asistent, kako ga klasično poznajemo, reagira na konkretni upit. Korisnik postavlja pitanje, sustav odgovara, korisnik postavlja sljedeće. Pitanje za pitanjem, kontekst se gradi unutar konverzacije. Ovo je obrazac ChatGPT-a, Claudea i većine svakodnevnih AI alata.</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>AI agent ima drugačiju dinamiku. Korisnik mu opisuje cilj, a ne pitanje. Agent zatim sam odlučuje koji su koraci potrebni, koje alate treba koristiti, kojim redoslijedom, i kada je gotov. Komunikolog koji asistentu kaže "napiši mi blog post o trendovima u online trgovini" dobiva tekst. Komunikolog koji agentu kaže "istraži trendove u online trgovini u zadnjih šest mjeseci na hrvatskom tržištu i pripremi blog post od osamsto riječi s relevantnim citatima" pokreće niz koraka. Agent može pretražiti web, pročitati relevantne članke, ekstrahirati podatke, strukturirati ih i napisati tekst, sve unutar jedne sesije.</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>Anthropicov Computer Use, OpenAI-eva Operator funkcionalnost i Browser Use kao open-source projekt su tri glavna predstavnika agentske paradigme u 2026. godini. Sustavi koji djeluju u korist korisnika unutar preglednika i drugih aplikacija, koji ispunjavaju forme, klikaju na elemente, čitaju stranice i izvršavaju radnje, mijenjaju prirodu rada na način koji je lakše vidjeti nego opisati.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>Specijalizirani agenti za određene zadatke postaju sve češći. Lindy je specijalizirana platforma za poslovne agente. Relevance AI orkestrira agente za marketinški rad. Cognition Devin pokušava biti agent koji programira, a drugi sustavi specijaliziraju se za pravo, financije, korisničku podršku ili istraživanje.</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>MCP, Model Context Protocol, infrastrukturni je standard koji omogućuje da AI klijenti pristupaju vanjskim alatima na ujednačen način. Spomenuli smo ga u Tjednu 5 i ovdje vrijedi naglasiti njegovu ulogu u agentskoj paradigmi. Kada agent može preko MCP-a pristupiti Notionu, Airtableu, Gmailu, GitHubu i stotinama drugih servisa, njegov operativni opseg postaje znatno širi nego asistenta koji djeluje samo u svojem chat sučelju.</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>Implikacija agentske paradigme za komunikologa je promjena obrasca rada. Umjesto da svaki korak izvodi sam, komunikolog opisuje cilj i nadgleda izvršenje. Ovo zahtijeva nove vještine. Sposobnost jasne specifikacije cilja, sposobnost evaluacije rezultata, sposobnost prepoznavanja gdje agent griješi i sposobnost intervencije u pravom trenutku. Agentski rad nije manje rada, nije više rada, drugačiji je rad.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>Granice agentskog rada važno je razumjeti. Agenti pogriješe na načine koji su teže predvidljivi od asistenata. Agenti mogu trošiti više resursa nego se očekuje. Agenti mogu izvršiti akcije koje su teško reverzibilne. Komunikolog koji agentima delegira važan rad mora imati uspostavljene mehanizme nadzora, granice ovlasti i sposobnost intervencije.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="fu">## Evaluacija, halucinacija i kontrola kvalitete</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>Profesionalni rad s generativnim AI nemoguć je bez disciplinirane prakse evaluacije izlaza. Ovo nije pitanje povjerenja u sustav. Ovo je pitanje preuzimanja odgovornosti za ono što ide u svijet pod nečijim imenom.</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>Halucinacija je tehnički termin za situaciju kada model proizvede izlaz koji djeluje uvjerljivo ali sadrži netočne tvrdnje. Halucinacije mogu biti mali, primjerice pogrešan datum ili krivo napisano ime. Mogu biti veliki, primjerice citati iz knjiga koje ne postoje, sudski slučajevi koji se nikad nisu dogodili ili podaci koji su izmišljeni ali djeluju autoritativno. Frontijerni modeli su u zadnjih nekoliko godina značajno smanjili stopu halucinacija, ali fenomen nije eliminiran i strukturno proizlazi iz načina na koji modeli rade.</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>Discipliniran komunikolog ima nekoliko pravila u praksi. Svaki konkretan podatak provjerava se izvan modela. Svaki citat traži se u izvornom dokumentu. Svaka tvrdnja koja izgleda iznenađujuće provjerava se u barem jednom drugom izvoru. Brzina koju AI donosi gubi se ako se ovi koraci preskaču, ali rizik je drugi i može biti znatno skuplji.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>Procjena kvalitete teksta zahtijeva ljudsku procjenu koja se ne može potpuno automatizirati. Tekst koji je gramatički ispravan, koji teče logično i koji ne sadrži halucinacije, može i dalje biti loš tekst. Može biti generičan, plitak, izvan tona, dosadan ili promašiti poruku. Ova procjena ostaje na komunikologu i upravo ovdje leži dio njegove profesionalne vrijednosti.</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>Bias ili pristranost je drugi važan koncept. Modeli su naučili iz korpusa koji nije neutralan. Reflektiraju kulturalne, jezične, političke i druge pristranosti tih izvora. Kada komunikolog koristi model za pisanje koje će biti čitano u različitim kulturnim kontekstima, mora svjesno provjeravati izlaze za ovakve probleme.</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>Konzistentnost u dužim radnim tokovima izazov je koji raste s razinom složenosti. AI koji pomaže pri pisanju većeg sadržajnog projekta, primjerice serije od deset blog postova ili godišnjeg izvještaja, može u različitim dijelovima koristiti različite formulacije za iste pojmove, različite stilske registre ili različite faktualne pretpostavke. Komunikolog koji upravlja takvim projektom mora uspostaviti smjernice koje vrijede kroz cijeli projekt i provjeravati konzistentnost.</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>Evaluacijski radni tokovi razvijaju se u industriji. Alati poput Langfuse, Helicone i Braintrust nude infrastrukturu za sustavno mjerenje i poboljšanje AI izlaza u produkcijskim sustavima. Iako su namijenjeni primarno tehničkim timovima, koncepti se polako prenose i u komunikacijsku praksu, posebno u većim agencijama koje grade vlastiti AI radni tok.</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>Ljudska procjena ostaje središnja, ne kao paralela AI radu nego kao njegov nužni komplement. Razumijevanje gdje model dobro radi i gdje pogriješi, gdje vrijedi mu vjerovati i gdje treba dodatno provjeriti, postaje profesionalna kompetencija sama po sebi.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kako se mijenja profesionalna vrijednost komunikologa</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>Pitanje koje smo otvorili na početku predavanja vraća se ovdje s više konteksta. Ako AI obavlja dio rada koji je dosad bio profesionalna kompetencija komunikologa, što čini novi temelj profesionalne vrijednosti?</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>Prosudba je prva i središnja kompetencija. Sposobnost da se procijeni je li ono što je AI proizveo dobro za konkretnu situaciju, prikladno za publiku, usklađeno s glasom brenda, etički prihvatljivo i strateški poravnato s ciljem, ne može se delegirati AI-u. Ova prosudba dolazi iz iskustva, iz poznavanja konteksta, iz razumijevanja širih implikacija. Komunikolog s razvijenom prosudbom u svijetu AI-a postaje vrjedniji, ne manje vrijedan.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>Postavljanje ispravnog cilja često je najvažniji korak. AI dobro radi na pitanjima koja su mu jasno postavljena. Sposobnost da se kompleksna komunikacijska potreba prevede u jasan cilj, koji se može delegirati ili agentu ili asistentu, sama po sebi je vještina. Lošije postavljen cilj kroz najbolji AI sustav daje gore rezultate od dobro postavljenog cilja kroz osrednji sustav.</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>Strategija ostaje domena u kojoj AI još nije doista snažan. Modeli mogu pomagati u izvršavanju strateških dokumenata, u pisanju strateških analiza, ali stvarna strateška odluka, koja zahtijeva razumijevanje organizacije, njezinih ljudi, njezinih ograničenja i dugoročnih ambicija, ostaje na ljudskoj razini. Komunikolog koji djeluje strateški, koji povezuje komunikacijske odluke sa širim organizacijskim ciljevima, sve je vrjedniji.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>Etička i regulatorna odgovornost ostaje na čovjeku. Sadržaj koji se objavi pod imenom organizacije nosi ljudsku odgovornost. AI sustav nije pravni subjekt. Komunikolog koji razumije etičke i pravne implikacije svoje prakse, koji svjesno prima odgovornost za ono što ide u svijet, jest profesionalac u smislu koji AI ne može preuzeti.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>Odnosi i povjerenje su domena koja je u potpunosti ljudska. Klijent koji vjeruje agenciji vjeruje ljudima koji u njoj rade. Pretplatnik newslettera koji godinama prati autora prati osobu, ne sustav. AI je alat koji ljudi koriste, ali odnos je ono što ostaje na ljudskoj razini.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>Selekcija i kuriranje sve su važnija vještina u svijetu u kojem se sadržaj proizvodi u eksplozivnim količinama. Komunikolog koji zna prepoznati što je vrijedno objaviti, što vrijedi reći u određenom trenutku, što čitatelj treba čuti, dodaje vrijednost koja se ne može svesti na sirovu produkciju.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>Sve ovo skupa znači da se profesionalna identitet komunikologa pomiče. Manje je o tome koliko se ručnog rada izvršava. Više je o tome kakvu vrstu prosudbe, strategije, povjerenja, kuriranja se donosi. Ovaj pomak je realan i odvija se sada, a komunikolog koji ga svjesno integrira u svoje profesionalno samorazumijevanje stoji bolje od onog koji ga negira ili ignorira.</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hrvatski kontekst i AI</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>Korištenje AI alata u Hrvatskoj ima nekoliko specifičnosti koje vrijedi razumjeti.</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>Kvaliteta hrvatskog jezika u frontijernim modelima se značajno poboljšala u zadnje dvije godine. Modeli koji su prije tri godine slabo pisali na hrvatskom, danas pišu na razini koja je za većinu praktičnih potreba prihvatljiva. Anthropicov Claude i OpenAI-ev GPT na frontijernim verzijama dobro slijede gramatička pravila, ali povremeno griješe u finim nijansama tona, konzistenciji rodova, idiomatici ili specifičnosti hrvatske kulture. Komunikolog koji koristi AI za hrvatski sadržaj mora računati na dodatni korak uređivanja koji bi za engleski možda bio nepotreban.</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>Lokalni AI ekosustav u Hrvatskoj raste polako ali postoji. Hrvatske startupe i istraživačke grupe pojavljuju se u domenama specifičnih AI primjena, od medicinskog imaginga preko prevođenja do industrijskih primjena. Sveučilišta surađuju s industrijom kroz programe poput Algebra LAB-a i ZICER-a. Vlada je donijela Strategiju razvoja umjetne inteligencije i nizu programa koji ovaj sektor podupiru, ali rezultati su tek u fazi razvoja.</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>Javni sektor i AI nalaze se u ranoj fazi adopcije u Hrvatskoj. Pojedine institucije eksperimentiraju s AI asistencijom za internu komunikaciju ili za korisničku podršku, ali je sustavna primjena rijetka. Komunikolog koji radi u javnom sektoru ili savjetuje javne institucije mora računati s manje razvijenim okvirom i s pojačanim regulatornim oprezom, jer obrada osobnih podataka kroz AI sustave podliježe strogom GDPR i AI Act tretmanu.</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>Mediji u Hrvatskoj koriste AI u različitim oblicima. Sinteza članaka, automatizacija sumarizacije, prijevod sadržaja sa stranih medija, sve su to obrasci koji ulaze u redakcijsku praksu. Hrvatsko novinarsko društvo i strukovna udruženja postupno razvijaju etičke smjernice za korištenje AI u novinarstvu, ali standardi su još u nastajanju.</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>Cijena pretplata na frontijerne modele u eurima viša je u relativnim terminima nego za korisnike u zemljama s većim BDP-om po stanovniku. Pojedinačna pretplata na Claude Pro ili ChatGPT Plus od dvadesetak eura mjesečno za freelance komunikologa nije zanemariv trošak. Timske pretplate i API trošak za organizacije mogu brzo dosegnuti stotine eura mjesečno. Strateški pristup uključuje selekciju koje alate vrijedi plaćati, koje koristiti kroz besplatne razine i koje izbjegavati.</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>Hrvatski dijalekti, regionalizmi i specifična kulturna tematika domena su gdje frontijerni modeli i dalje griješe. Komunikolog koji radi za regionalne medije, lokalne organizacije ili specifične publike mora ovo imati u vidu i ne smije slijepo prihvatiti AI generirani sadržaj kao jezično adekvatan za sve hrvatske publike.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rizici privatnosti, intelektualnog vlasništva i ovisnosti</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>AI ne dolazi bez rizika koje komunikolog mora razumjeti i aktivno upravljati.</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>Privatnost ulaznih podataka prvo je pitanje. Kada šaljete tekst, dokument ili sliku AI sustavu, taj sadržaj putuje na server dobavljača. Praksa različitih dobavljača značajno se razlikuje. Neke kompanije čuvaju ulazne podatke i koriste ih za daljnje treniranje modela. Druge ne koriste podatke za trening ali ih čuvaju. Treće brišu podatke nakon obrade. Komunikolog mora poznavati politiku dobavljača kojeg koristi i mora razumjeti koji se podaci smiju slati prema kojem sustavu.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>Posebno osjetljivi podaci, primjerice osobni podaci klijenata pod GDPR-om, povjerljivi poslovni podaci ili podaci pod ugovornom obavezom čuvanja, ne smiju se slati u AI sustav koji ne pruža odgovarajuća jamstva. Enterprise verzije Claudea, ChatGPT-a i Geminija nude DPA, podatkovnu rezidenciju i ugovorne obveze koje pojedinačne pretplate ne nude. Za ozbiljnu poslovnu upotrebu, ovo nije tehnički detalj nego pravni preduvjet.</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>Intelektualno vlasništvo AI generiranog sadržaja u pravnoj je sivoj zoni koja se još razvija. EU AI Act i Direktiva o autorskim pravima postavljaju okvir, ali konkretne presude tek dolaze. Američka Copyright Office određena je da AI generirani sadržaj sam po sebi nije podložan autorsko-pravnoj zaštiti. Sudovi u različitim jurisdikcijama raspravljaju o tome je li AI trening na zaštićenom sadržaju "fair use" ili kršenje. Komunikolog koji se oslanja na AI za stvaranje sadržaja mora razumjeti da je pravna pozicija tog sadržaja drugačija od pozicije ljudski stvorenog sadržaja.</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>Ovisnost o pojedinom dobavljaču rizik je koji raste s integracijom. Organizacija koja gradi cijeli operativni sustav oko Claudea, OpenAI-ja ili Geminija postaje izložena promjenama koje taj dobavljač donosi. Cijene mogu rasti. Pristupna pravila mogu se mijenjati. Modeli mogu biti ukinuti ili zamijenjeni novim verzijama koje se ponašaju drugačije. Disciplinirana praksa uključuje praćenje više dobavljača, mogućnost zamjene jednog drugim i izbjegavanje ekstremne ovisnosti.</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>Sigurnost AI sustava domena je koja se ozbiljno razvija. Prompt injection, kada zlonamjerni input pokuša manipulirati sustavom da prekrši svoja pravila, jailbreaking, kada se model nagovara da prekrši svoje smjernice, i drugi vektori napada postaju sve sofisticiraniji. Komunikolog koji koristi AI sustave koji obrađuju ulaze iz nepouzdanih izvora, primjerice korisničke poruke ili sadržaj treće strane, mora ovo razumjeti i imati uspostavljene zaštitne mjere.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>Kognitivna ovisnost je manje opipljiv ali stvarni rizik. Komunikolog koji svaki tekst piše s AI pomoći s vremenom može izgubiti dio vlastite spisateljske vještine. Komunikolog koji svako istraživanje delegira AI pretraživaču može izgubiti sposobnost dubinskog samostalnog istraživanja. Discipliniran odnos prema AI uključuje svjesnu odluku gdje se on koristi i gdje se zadržava ljudska praksa, ne zato što čovjek to bolje radi nego zato što je vrijedno održavati profesionalnu kondiciju.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## Trendovi koji oblikuju budućnost</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>Nekoliko trendova vrijedi pratiti jer će kroz iduće godine značajno mijenjati AI krajobraz.</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>Rast sposobnosti modela i dalje je strm i ne pokazuje znakove zasićenja. Svaka nova generacija frontijernih modela donosi mjerljive skokove u kompleksnim zadacima, dužini konteksta i kvaliteti zaključivanja. Komunikolog koji procjenjuje AI samo na temelju iskustva s modelima od prije godinu ili dvije može imati zastarjelo mišljenje o tome što sustavi mogu raditi.</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>Pad cijene istovremeno se odvija na razini API troška i pretplata. Za isti zadatak, cijena u 2026. godini je djelić cijene u 2023. godini. Ovaj trend vjerojatno će se nastaviti i AI usluge će postati sve dostupnije organizacijama svake veličine.</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>Specijalizacija modela usporedna je s rastom frontijernih. Manji modeli optimizirani za specifične zadatke postaju sve češći i sve sposobniji. Lokalni modeli koji se izvršavaju na korisnikovom uređaju, čuvajući podatke lokalno, otvaraju nove obrasce upotrebe. Hibridi između lokalnih i cloud modela ulaze u standardnu arhitekturu.</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>Agentska revolucija je glavna tehnička priča 2025. i 2026. godine. Sustavi koji autonomno izvršavaju kompleksne zadatke kroz duže vremenske periode, koji koriste alate, koji uče iz iskustva, polako napuštaju eksperimentalnu fazu. Implikacije za rad komunikologa, kao što smo već istaknuli, su dubinske.</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>AI agenti koji djeluju za korisnika, ne samo u korist organizacije, ulaze u potrošački prostor. Apple Intelligence, Googleov Gemini Live, Microsoftov Copilot sve više djeluju kao osobni asistenti koji upravljaju korisničkom poštom, kalendarom, dokumentima, pretragama. Komunikacija prema krajnjem korisniku sve više prolazi kroz njegov AI sloj prije nego ga doseže.</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>Regulatorno usavršavanje EU AI Acta nastavlja se u sljedećim godinama. Visoki rizik AI sustava, transparentnost AI generiranog sadržaja, pravila o trening korpusima, sve će to oblikovati operativnu praksu. Komunikolog koji prati ovo područje pripremljen je za izmjene, dok onaj koji ga ignorira može se naći u nepravilnoj praksi.</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>Standardizacija interakcije, kroz protokole poput MCP-a, poboljšava interoperabilnost AI sustava i alata. Posljedica je da će se različiti AI proizvodi sve više moći kombinirati u radnim tokovima koji nisu ograničeni na jedan ekosustav.</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>Konvergencija multimodalnih modela, koji simultano rade s tekstom, slikom, zvukom i videom, otvara obrasce upotrebe koje danas tek naslućujemo. Komunikolog koji u jednom razgovoru s modelom radi s tekstualnim brifom, generira sliku, dorađuje audio i sastavlja video, već je realnost u 2026. godini.</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="fu">## Na kraju ovog poglavlja</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>Generativni AI nije više egzotična tehnologija o kojoj se piše u tehnološkim publikacijama. To je standardni sloj infrastrukture u radu komunikologa, koji se brzo mijenja, koji ima konkretne sposobnosti i konkretne granice, i koji zahtijeva discipliniranu profesionalnu praksu.</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>Razumijevanje ovog sloja nije izborni dodatak profesionalnoj kompetenciji. Komunikolog koji u 2026. godini ne razumije osnovni mentalni model jezičnih modela, koji ne zna postaviti dobar prompt, koji ne razlikuje agente od asistenata i koji ne može procijeniti kvalitetu AI izlaza, profesionalno zaostaje. Komunikolog koji ovo savlada, dobiva alate koji znatno povećavaju njegov kapacitet, oslobađaju vrijeme za prosudbu i strategiju i otvaraju obrasce rada koji su prije bili nedostupni.</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>Ovo predavanje otvorilo je četvrti modul kolegija. Sljedeći tjedan govorit ćemo o autentičnosti sadržaja i sintetičkim medijima, dakle o pitanju što znači autorstvo, integritet i istina u svijetu u kojem AI može proizvesti uvjerljiv tekst, sliku, video i glas koji izgledaju i zvuče kao ljudski. Sve više komunikacijskih situacija odvija se u kontekstu u kojem publika ne može biti sigurna je li ono što vidi i čuje stvarno. Ovo nije akademska distinkcija. Ovo je radikalna promjena u uvjetima profesionalnog rada koju ćemo razraditi u praktičnom i etičkom smislu.</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključni zaključci</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>Veliki jezični modeli rade tako da iz konteksta izračunavaju vjerojatne nastavke, što objašnjava i njihovu impresivnu sposobnost i strukturalnu sklonost halucinaciji.</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>Frontijerni modeli, uključujući Claude, GPT, Gemini i otvorene alternative, razlikuju se u snazi, brzini, cijeni i karakteru, a izbor modela za zadatak strateška je odluka.</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>Prompting je profesionalna vještina koja se temelji na jasnoći konteksta, definiciji uloge, primjerima, strukturiranju izlaza, svjesnosti granica i iterativnom pristupu.</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>AI mijenja svakodnevno pisanje komunikologa kroz generiranje prvih nacrta, sažimanje, prevođenje, uređivanje stila i generiranje alternativa, ali autorska odgovornost ostaje u potpunosti na čovjeku.</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>AI u istraživanju ubrzava prikupljanje, sažimanje i klasifikaciju, ali zahtijeva disciplinu provjere izvora i razumijevanje gdje su modeli pouzdani a gdje halucinacije ostaju realne.</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>Generiranje slike, videa, glasa i glazbe kroz AI alate postalo je standardna komunikacijska praksa, što otvara nove mogućnosti i nove regulatorne i etičke obveze.</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>AI agenti, za razliku od asistenata, autonomno izvršavaju složene cilje koristeći alate, što mijenja obrazac rada od izvršavanja prema specifikaciji cilja i nadzoru.</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>Halucinacija, bias, konzistentnost i ljudska procjena kvalitete središnja su pitanja u disciplini AI evaluacije i kontrole kvalitete.</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>Profesionalna vrijednost komunikologa u svijetu AI-a sve više proizlazi iz prosudbe, postavljanja ispravnih ciljeva, strategije, etičke odgovornosti, odnosa i kuriranja, a sve manje iz volumena ručne produkcije.</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>Hrvatski kontekst donosi specifične izazove kvalitete jezika u modelima, ekonomije pretplata u eurima, sporijeg javnog sektora i potrebe za pažljivim upravljanjem GDPR-om i intelektualnim vlasništvom.</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="fu">## Priprema za sljedeći tjedan</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>Tjedan 12 bavit će se autentičnošću sadržaja, sintetičkim medijima i etičkim pitanjima koje AI generirana produkcija otvara.</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>Prije dvanaestog predavanja napravite četiri stvari.</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>Prvo, oblikujte svoj prvi pažljivo strukturiran prompt za neki konkretan zadatak iz svog akademskog ili profesionalnog rada. Pratite princip jasnog konteksta, definicije uloge, primjera i strukturiranog izlaza. Zabilježite što je radilo dobro, što loše, i koje izmjene biste sljedeći put napravili.</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>Drugo, otvorite besplatan ili probni račun na barem jednom alatu za generiranje slika i jednom alatu za generiranje glasa, ako ih već ne koristite. Generirajte jednu sliku i jedan kratki audio koji bi se mogli iskoristiti u realnom komunikacijskom projektu. Razmislite gdje su granice prihvatljive upotrebe.</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>Treće, pronađite barem dva primjera javnog AI generiranog sadržaja u hrvatskom medijskom prostoru u zadnjih nekoliko mjeseci. Mogu biti članci, slike, videoporuke, glasovni klipovi. Procijenite je li sadržaj jasno označen, je li njegovo korištenje u konkretnom kontekstu etički prihvatljivo i koje pitanje otvara o autentičnosti.</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica. Kako biste opisali svoj odnos prema AI-u na skali od potpunog izbjegavanja do potpune integracije? Što biste željeli promijeniti i zašto? Refleksija ćemo iskoristiti u uvodu sljedećeg predavanja.</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dodatno čitanje</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>Anthropicov blog, OpenAI-eva istraživačka publikacija i Google DeepMind blog izravni su izvori najnovijih razvojnih trendova. Iako su ponekad tehnički, mnogi članci pišu se jezikom koji je pristupačan i komunikolozima.</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>Ethan Mollick vodi blog One Useful Thing i piše knjigu Co-Intelligence o praktičnoj integraciji AI u profesionalni rad. Njegov pristup je pragmatičan, oslonjen na vlastito iskustvo profesora, i posebno koristan komunikolozima koji žele razumjeti AI bez tehničke pozadine.</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>Simon Willison vodi blog na simonwillison.net koji prati svakodnevni razvoj AI ekosustava. Iako se Simon pretežno obraća developerima, mnoge njegove analize relevantne su širem komunikacijskom čitateljstvu.</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>Latent Space podcast i pripadajuća newsletter publikacija Swyxa, koju smo spomenuli prošlog tjedna u kontekstu no-code i izravnih kanala, redovito objavljuje razgovore s ključnim ljudima u industriji.</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>Casey Newton u Platformeru, Charlie Warzel u Galaxy Brainu i Kevin Roose u New York Timesu pišu o AI s perspektivom širokog komunikacijskog čitateljstva.</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>EU AI Act i njegova hrvatska implementacija dostupni su u službenim publikacijama Europske komisije i Vlade Republike Hrvatske. Ako planirate raditi u sektorima visokog rizika ili u javnom sektoru, ovi dokumenti su nužno štivo.</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>Knjiga The Coming Wave Mustafa Suleymana pruža širi kontekst u kojem AI revolucija živi i u kojem komunikologi profesionalno djeluju. Iako je knjiga pomalo alarmantna u tonu, njezini empirijski uvidi vrijedi pratiti.</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>Anthropicov vodič Engineering Prompts dostupan je besplatno i pruža sustavan uvod u prompting kao disciplinu. Iako napisan iz perspektive Claudea, principi su prenosivi na druge sustave.</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pojmovnik</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pojam <span class="pp">|</span> Objašnjenje <span class="pp">|</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Generativni AI <span class="pp">|</span> AI sustav koji generira novi sadržaj, tekst, sliku, video ili audio <span class="pp">|</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> LLM <span class="pp">|</span> Large Language Model, veliki jezični model <span class="pp">|</span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Frontijerni model <span class="pp">|</span> Najsnažnija razina trenutno dostupnih modela u industriji <span class="pp">|</span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Bazni model <span class="pp">|</span> Model koji je rezultat originalnog treniranja prije specijalizacije <span class="pp">|</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Instruction-tuned <span class="pp">|</span> Model dodatno naučen iz primjera kako odgovarati na upute <span class="pp">|</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> RLHF <span class="pp">|</span> Reinforcement Learning from Human Feedback, dodatni sloj treniranja <span class="pp">|</span></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Constitutional AI <span class="pp">|</span> Anthropicov pristup u kojem model uči preferirati izlaze koji slijede zapisane principe <span class="pp">|</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Anthropic <span class="pp">|</span> Kompanija koja razvija Claude obitelj modela <span class="pp">|</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Claude <span class="pp">|</span> Anthropicova obitelj jezičnih modela, uključujući Opus i Sonnet <span class="pp">|</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> OpenAI <span class="pp">|</span> Kompanija koja razvija GPT obitelj modela <span class="pp">|</span></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GPT <span class="pp">|</span> OpenAI-eva obitelj jezičnih modela <span class="pp">|</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Google DeepMind <span class="pp">|</span> Googleov istraživački laboratorij koji razvija Gemini <span class="pp">|</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Gemini <span class="pp">|</span> Googleova obitelj multimodalnih modela <span class="pp">|</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Llama <span class="pp">|</span> Meta otvoreni jezični model <span class="pp">|</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mistral <span class="pp">|</span> Francuski razvijatelj otvorenih i komercijalnih modela <span class="pp">|</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Open-source model <span class="pp">|</span> Model čiji se težinski parametri javno objavljuju <span class="pp">|</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Prompt <span class="pp">|</span> Ulazna uputa koja se zadaje jezičnom modelu <span class="pp">|</span></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> System prompt <span class="pp">|</span> Perzistentna uputa koja vrijedi za cijelu konverzaciju <span class="pp">|</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> User prompt <span class="pp">|</span> Konkretno pitanje ili zahtjev unutar konverzacije <span class="pp">|</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Few-shot prompting <span class="pp">|</span> Prompting tehnika koja modelu daje primjere prije zadatka <span class="pp">|</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Chain of thought <span class="pp">|</span> Tehnika koja traži od modela da razmišlja korak po korak <span class="pp">|</span></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Self-critique <span class="pp">|</span> Tehnika u kojoj model sam kritički procjenjuje vlastiti izlaz <span class="pp">|</span></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Multi-perspective prompting <span class="pp">|</span> Tehnika koja traži razmatranje problema iz više kutova <span class="pp">|</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Halucinacija <span class="pp">|</span> Pojava da model generira netočan izlaz s uvjerljivim tonom <span class="pp">|</span></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Bias <span class="pp">|</span> Pristranost modela koja proizlazi iz korpusa za treniranje <span class="pp">|</span></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Knowledge cutoff <span class="pp">|</span> Datum nakon kojeg model nema podatke iz svojeg treninga <span class="pp">|</span></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kontekstni prozor <span class="pp">|</span> Količina teksta koju model može držati u radnom kontekstu <span class="pp">|</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tokeni <span class="pp">|</span> Jedinica obrade teksta u jezičnim modelima <span class="pp">|</span></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custom GPT <span class="pp">|</span> Prilagođeni AI asistent unutar ChatGPT platforme <span class="pp">|</span></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Claude Project <span class="pp">|</span> Anthropicov pandan Custom GPT-u <span class="pp">|</span></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI asistent <span class="pp">|</span> Sustav koji reagira na upite korisnika <span class="pp">|</span></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI agent <span class="pp">|</span> Sustav koji autonomno izvršava cilj koristeći alate <span class="pp">|</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Agentska paradigma <span class="pp">|</span> Pristup u kojem AI sam odlučuje o slijedu akcija <span class="pp">|</span></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Computer Use <span class="pp">|</span> Anthropicova mogućnost AI kontrole sučelja računala <span class="pp">|</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> OpenAI Operator <span class="pp">|</span> OpenAI-ev pandan Computer Useu <span class="pp">|</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Browser Use <span class="pp">|</span> Open-source projekt za browser-use AI sustave <span class="pp">|</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Lindy <span class="pp">|</span> Platforma za izgradnju AI agenata bez koda <span class="pp">|</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Relevance AI <span class="pp">|</span> Platforma za izgradnju agenata orijentirana poslovnoj upotrebi <span class="pp">|</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cognition Devin <span class="pp">|</span> AI agent specijaliziran za programiranje <span class="pp">|</span></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> MCP <span class="pp">|</span> Model Context Protocol, standard za komunikaciju AI klijenata sa servisima <span class="pp">|</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Multimodalni model <span class="pp">|</span> Model koji simultano obrađuje tekst, sliku, audio i video <span class="pp">|</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Midjourney <span class="pp">|</span> Specijalizirani alat za generiranje slika <span class="pp">|</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DALL-E <span class="pp">|</span> OpenAI-ev alat za generiranje slika <span class="pp">|</span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Stable Diffusion <span class="pp">|</span> Open-source model za generiranje slika <span class="pp">|</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adobe Firefly <span class="pp">|</span> Adobeov alat za generiranje slika integriran u Creative Cloud <span class="pp">|</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sora <span class="pp">|</span> OpenAI-ev model za generiranje videa <span class="pp">|</span></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Veo <span class="pp">|</span> Googleov model za generiranje videa <span class="pp">|</span></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Runway <span class="pp">|</span> Specijalizirana platforma za AI video produkciju <span class="pp">|</span></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kling <span class="pp">|</span> Kineski model za generiranje videa <span class="pp">|</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ElevenLabs <span class="pp">|</span> Vodeća platforma za generiranje glasa <span class="pp">|</span></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> OpenAI Voice <span class="pp">|</span> OpenAI-eva mogućnost generiranja glasa <span class="pp">|</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Suno <span class="pp">|</span> AI alat za generiranje glazbe <span class="pp">|</span></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Udio <span class="pp">|</span> AI alat za generiranje glazbe <span class="pp">|</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> HeyGen <span class="pp">|</span> Platforma za generiranje videa s AI prezenterima <span class="pp">|</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Synthesia <span class="pp">|</span> Platforma za generiranje korporativnih videa s AI prezenterima <span class="pp">|</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Descript <span class="pp">|</span> Alat za uređivanje videa i audija s AI funkcionalnostima <span class="pp">|</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cursor <span class="pp">|</span> AI razvojni alat za pisanje koda <span class="pp">|</span></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Claude Code <span class="pp">|</span> Anthropicov AI alat za pisanje koda u terminalu <span class="pp">|</span></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Langfuse <span class="pp">|</span> Open-source platforma za AI observabilnost <span class="pp">|</span></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Helicone <span class="pp">|</span> Platforma za monitoring i analitiku AI sustava <span class="pp">|</span></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Braintrust <span class="pp">|</span> Platforma za evaluaciju AI sustava <span class="pp">|</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Prompt injection <span class="pp">|</span> Vektor napada u kojem se ulazom pokušava manipulirati sustavom <span class="pp">|</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Jailbreaking <span class="pp">|</span> Tehnike kojima se model nagovara da prekrši smjernice <span class="pp">|</span></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI Act <span class="pp">|</span> EU regulativa koja kategorizira AI sustave prema riziku <span class="pp">|</span></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Apple Intelligence <span class="pp">|</span> Apple platforma za AI značajke u iOS-u i macOS-u <span class="pp">|</span></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Microsoft Copilot <span class="pp">|</span> Microsoftov AI asistent integriran u Microsoft 365 <span class="pp">|</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Perplexity <span class="pp">|</span> AI pretraživač koji daje odgovore s citatima izvora <span class="pp">|</span></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Edge AI <span class="pp">|</span> AI koji se izvršava na korisnikovom uređaju umjesto u oblaku <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

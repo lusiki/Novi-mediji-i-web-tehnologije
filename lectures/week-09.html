@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="doc. dr. sc. Luka Šikić">
 
 <title>Platforme, algoritmi i algoritamska distribucija – Novi mediji i web tehnologije | KOMP4-3</title>
 <style>
@@ -80,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c013b9868de98432d4946c84ad9fe81e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6f75434381525b8ac0200f8425b4c45d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c013b9868de98432d4946c84ad9fe81e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1c249d4ef90a17205e7caeb54d815f95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-cdc663af859e089ad0089117aae6d4c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1c249d4ef90a17205e7caeb54d815f95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -419,9 +418,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#ishodi-učenja" id="toc-ishodi-učenja" class="nav-link active" data-scroll-target="#ishodi-učenja"><span class="header-section-number">1</span> Ishodi učenja</a></li>
-  <li><a href="#sadržaj" id="toc-sadržaj" class="nav-link" data-scroll-target="#sadržaj"><span class="header-section-number">2</span> Sadržaj</a></li>
-  <li><a href="#ključni-zaključci" id="toc-ključni-zaključci" class="nav-link" data-scroll-target="#ključni-zaključci"><span class="header-section-number">3</span> Ključni zaključci</a></li>
-  <li><a href="#priprema-za-sljedeći-tjedan" id="toc-priprema-za-sljedeći-tjedan" class="nav-link" data-scroll-target="#priprema-za-sljedeći-tjedan"><span class="header-section-number">4</span> Priprema za sljedeći tjedan</a></li>
+  <li><a href="#zašto-komunikolog-mora-razumjeti-platforme-i-njihove-algoritme" id="toc-zašto-komunikolog-mora-razumjeti-platforme-i-njihove-algoritme" class="nav-link" data-scroll-target="#zašto-komunikolog-mora-razumjeti-platforme-i-njihove-algoritme"><span class="header-section-number">2</span> Zašto komunikolog mora razumjeti platforme i njihove algoritme</a></li>
+  <li><a href="#što-je-platforma" id="toc-što-je-platforma" class="nav-link" data-scroll-target="#što-je-platforma"><span class="header-section-number">3</span> Što je platforma</a></li>
+  <li><a href="#od-kronološke-do-algoritamske-distribucije" id="toc-od-kronološke-do-algoritamske-distribucije" class="nav-link" data-scroll-target="#od-kronološke-do-algoritamske-distribucije"><span class="header-section-number">4</span> Od kronološke do algoritamske distribucije</a></li>
+  <li><a href="#kako-algoritmi-rangiraju-sadržaj" id="toc-kako-algoritmi-rangiraju-sadržaj" class="nav-link" data-scroll-target="#kako-algoritmi-rangiraju-sadržaj"><span class="header-section-number">5</span> Kako algoritmi rangiraju sadržaj</a></li>
+  <li><a href="#glavne-platforme-i-njihove-logike" id="toc-glavne-platforme-i-njihove-logike" class="nav-link" data-scroll-target="#glavne-platforme-i-njihove-logike"><span class="header-section-number">6</span> Glavne platforme i njihove logike</a></li>
+  <li><a href="#drugi-sloj-učinaka-i-etika-algoritamske-distribucije" id="toc-drugi-sloj-učinaka-i-etika-algoritamske-distribucije" class="nav-link" data-scroll-target="#drugi-sloj-učinaka-i-etika-algoritamske-distribucije"><span class="header-section-number">7</span> Drugi sloj učinaka i etika algoritamske distribucije</a></li>
+  <li><a href="#ai-i-moderna-algoritamska-distribucija" id="toc-ai-i-moderna-algoritamska-distribucija" class="nav-link" data-scroll-target="#ai-i-moderna-algoritamska-distribucija"><span class="header-section-number">8</span> AI i moderna algoritamska distribucija</a></li>
+  <li><a href="#platformski-rizici-za-organizacije" id="toc-platformski-rizici-za-organizacije" class="nav-link" data-scroll-target="#platformski-rizici-za-organizacije"><span class="header-section-number">9</span> Platformski rizici za organizacije</a></li>
+  <li><a href="#hrvatski-platformski-krajobraz" id="toc-hrvatski-platformski-krajobraz" class="nav-link" data-scroll-target="#hrvatski-platformski-krajobraz"><span class="header-section-number">10</span> Hrvatski platformski krajobraz</a></li>
+  <li><a href="#regulatorni-okvir" id="toc-regulatorni-okvir" class="nav-link" data-scroll-target="#regulatorni-okvir"><span class="header-section-number">11</span> Regulatorni okvir</a></li>
+  <li><a href="#trendovi-koji-oblikuju-budućnost" id="toc-trendovi-koji-oblikuju-budućnost" class="nav-link" data-scroll-target="#trendovi-koji-oblikuju-budućnost"><span class="header-section-number">12</span> Trendovi koji oblikuju budućnost</a></li>
+  <li><a href="#na-kraju-ovog-poglavlja" id="toc-na-kraju-ovog-poglavlja" class="nav-link" data-scroll-target="#na-kraju-ovog-poglavlja"><span class="header-section-number">13</span> Na kraju ovog poglavlja</a></li>
+  <li><a href="#priprema-za-sljedeći-tjedan" id="toc-priprema-za-sljedeći-tjedan" class="nav-link" data-scroll-target="#priprema-za-sljedeći-tjedan"><span class="header-section-number">14</span> Priprema za sljedeći tjedan</a></li>
+  <li><a href="#dodatno-čitanje" id="toc-dodatno-čitanje" class="nav-link" data-scroll-target="#dodatno-čitanje"><span class="header-section-number">15</span> Dodatno čitanje</a></li>
+  <li><a href="#pojmovnik" id="toc-pojmovnik" class="nav-link" data-scroll-target="#pojmovnik"><span class="header-section-number">16</span> Pojmovnik</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Novi-mediji-i-web-tehnologije/edit/main/lectures/week-09.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Novi-mediji-i-web-tehnologije/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="week-09.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="week-09.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -444,12 +455,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>doc. dr. sc. Luka Šikić </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -461,6 +466,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>Ovo predavanje opisuje platforme kao infrastrukturni sloj distribucije sadržaja koji je u zadnjih dvadeset godina preuzeo glavnu ulogu u tome tko vidi što i kada. Algoritamska distribucija, koju pokreću sustavi za preporuku temeljeni na strojnom učenju, fundamentalno mijenja posao komunikologa jer dohvat publike više nije rezultat objavljivanja sadržaja nego rezultat usklađivanja sadržaja s logikom platforme. Razumijevanje te logike, njezinih posljedica i njezinih ograničenja temeljna je kompetencija za bilo koju ozbiljnu digitalnu strategiju.</p>
+  </div>
+</div>
 
 
 </header>
@@ -468,46 +479,433 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="ishodi-učenja" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="ishodi-učenja"><span class="header-section-number">1</span> Ishodi učenja</h2>
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
+<p>Nakon ovog predavanja studenti će moći</p>
+<ol type="1">
+<li>Definirati platformu u digitalnom kontekstu i objasniti zašto su mrežni efekti i dvostrana tržišta ključ njezine ekonomske logike</li>
+<li>Razlikovati kronološku i algoritamsku distribuciju sadržaja te razumjeti zašto je industrija u zadnjih petnaestak godina prešla iz prve u drugu</li>
+<li>Identificirati ključne signale koje algoritmi velikih platformi koriste za rangiranje sadržaja i predvidjeti kako tipovi sadržaja djeluju u tim sustavima</li>
+<li>Mapirati glavne platforme po publici, sadržajnoj logici i tipu komunikacijskog ishoda koji najbolje opslužuju</li>
+<li>Procijeniti rizike koji proizlaze iz ovisnosti o platformi, uključujući promjene algoritma, deplatforming i pad organskog dosega</li>
+<li>Razumjeti ulogu AI sustava u modernoj algoritamskoj distribuciji i smjer u kojem se ti sustavi razvijaju</li>
+<li>Smjestiti algoritamsku distribuciju u kontekst etičke odgovornosti, polarizacije i regulatornog okvira EU</li>
+<li>Razlikovati iznajmljenu publiku na platformama od vlastite publike na izravnim kanalima i razumjeti zašto je ova razlika temeljna za dugoročnu komunikacijsku strategiju</li>
+</ol>
+</section>
+<section id="zašto-komunikolog-mora-razumjeti-platforme-i-njihove-algoritme" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="zašto-komunikolog-mora-razumjeti-platforme-i-njihove-algoritme"><span class="header-section-number">2</span> Zašto komunikolog mora razumjeti platforme i njihove algoritme</h2>
+<p>Zamislite da ste komunikacijski stručnjak u srednjoj hrvatskoj agenciji koja vodi profile za desetak klijenata na društvenim mrežama. Kroz dvije godine pažljivo gradite Instagram profil za jednog od većih klijenata, regionalni lanac restorana. Profil ima dvadeset i pet tisuća pratitelja, sadržaj je pažljivo izrađen, ton je dosljedan, vizualni identitet besprijekoran. Krajem 2025. godine Instagram mijenja algoritam i preporučuje više sadržaja od ljudi koje pratitelj ne poznaje. Vašem klijentu prosječan organski doseg pada za sedamdeset posto u tjedan dana. Objava koja je prije tri mjeseca dosezala dvadeset tisuća ljudi sada doseže šest tisuća. Klijent zove i pita što ste pogriješili.</p>
+<p>Niste pogriješili ništa konkretno. Ali i niste razumjeli logiku sustava unutar kojeg radite. Algoritam koji vašem klijentu donosi pratitelje nije njegov, nije vaš, nije pod vašom kontrolom. To je proizvod tehničkih, ekonomskih i regulatornih odluka jedne kompanije koja u svakom trenutku može promijeniti pravila igre. Komunikolog koji ne razumije tu logiku gradi profesionalnu praksu na pijesku.</p>
+<p>Prošli tjedan govorili smo o korisničkom iskustvu i dizajnu, dakle o tome kako sadržaj živi u kontekstu sučelja. Danas se vraćamo korak dalje i pitamo kako sadržaj uopće dolazi do korisnika. Više od dvije trećine vremena koje ljudi provode na webu odvija se na šačici platformi. Više od polovice ukupnog medijskog konzumiranja u zapadnim društvima prošlo je kroz preporuku nekog algoritma. Komunikolog koji ne razumije platforme i algoritamsku distribuciju ne razumije medij u kojem djeluje.</p>
+</section>
+<section id="što-je-platforma" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="što-je-platforma"><span class="header-section-number">3</span> Što je platforma</h2>
+<p>Pojam platforma u digitalnom kontekstu znači nešto specifičnije od onoga što ekonomska teorija označava istim pojmom. Platforma je sustav koji posreduje između dvije ili više različitih grupa korisnika, omogućuje njihovu interakciju i pri tome stvara vrijednost koja raste s brojem sudionika.</p>
+<p>Klasični ekonomski primjer dvostranog tržišta je novinski oglasni model. Novine su platforma između čitatelja s jedne strane i oglašivača s druge. Što je više čitatelja, novine su atraktivnije oglašivačima. Što je više oglasa, novine mogu si priuštiti više sadržaja, što privlači više čitatelja. Ova povratna petlja je mrežni efekt, fenomen u kojem vrijednost sustava raste s brojem sudionika.</p>
+<p>Digitalne platforme nasljeđuju ovu logiku ali je radikaliziraju. Facebook posreduje između korisnika koji konzumiraju sadržaj, korisnika koji proizvode sadržaj, oglašivača koji žele dosegnuti korisnike i razvijatelja aplikacija koji koriste Facebook infrastrukturu. Svaka od ovih grupa privlači druge. Svaka nova grupa povećava vrijednost cijelog sustava. Mrežni efekt je toliko jak da nadvladava obične tržišne sile, pa tržište teži monopolskoj koncentraciji. Jedna velika platforma u svojoj kategoriji obično je vrjednija od pet manjih.</p>
+<p>Tinder je platforma. Uber je platforma. YouTube je platforma. Apple App Store je platforma. AirBnB je platforma. Booking.com je platforma. TikTok je platforma. ChatGPT je platforma. Sve oni dijele istu strukturnu logiku, čak i ako služe vrlo različite svrhe. Posreduju između strana, omogućuju njihovu interakciju, hvataju vrijednost koja proizlazi iz te interakcije i koriste mrežne efekte da bi rasli.</p>
+<p>Za komunikologa, ova logika ima nekoliko praktičnih posljedica. Platforma koja danas dominira u kategoriji vjerojatno će dominirati i sutra, jer je teško razbiti njezin mrežni efekt. Platforma kontrolira pravila igre na svom tržištu, jer je posrednik kojeg sve strane trebaju. Platforma može u svakom trenutku promijeniti uvjete pod kojima se sudjeluje na njoj, jer ima takvu strukturalnu moć. Komunikolog koji svoju strategiju gradi na platformi, gradi je na infrastrukturi koju ne kontrolira.</p>
+</section>
+<section id="od-kronološke-do-algoritamske-distribucije" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="od-kronološke-do-algoritamske-distribucije"><span class="header-section-number">4</span> Od kronološke do algoritamske distribucije</h2>
+<p>Najveća promjena u načinu na koji se sadržaj distribuira na platformama dogodila se između 2010. i 2018. godine. To je prijelaz iz kronološke u algoritamsku distribuciju.</p>
+<p>Kronološki feed prikazivao je sadržaj redoslijedom kojim je objavljen. Najnovije na vrhu, ono ranije ispod. Ovaj model imao je jednu temeljnu prednost. Bio je predvidljiv. Komunikolog koji objavljuje u određeno vrijeme znao je kada će ga njegova publika vidjeti. Imao je i jednu temeljnu manu, koja se s rastom platformi pretvorila u krizu. Što je sadržaja više, to je teže pratiti sve. Korisnik s tristo prijatelja na Facebooku ne može pratiti svih tristo. Korisnik koji prati pet stotina ljudi na Twitteru ne može vidjeti sve njihove objave. Kronološki feed pretvorio se u zid teksta i slika kroz koji korisnik samo prelazi pogledom dok mu se nešto ne zaustavi pažnju.</p>
+<p>Algoritamski feed odgovor je na taj problem. Umjesto da prikazuje sadržaj redoslijedom objave, sustav procjenjuje za svakog korisnika koji bi mu sadržaj bio najinteresantniji i prikazuje ga prvog. Procjena se temelji na povijesti ponašanja korisnika, na ponašanju sličnih korisnika i na svojstvima samog sadržaja. Cilj sustava je maksimizirati vrijeme koje korisnik provodi na platformi, broj interakcija koje izvodi i, u konačnici, prihod od oglasa.</p>
+<p>Facebook je prvi prešao na algoritamski feed 2009. godine, postupno. Twitter je dugo odolijevao i tek 2016. uveo opciju algoritamskog feeda. Instagram je prešao 2016. godine i izazvao značajnu pobunu kreatora. YouTube je oduvijek bio algoritamski na razini preporuke. TikTok je rođen kao algoritamski, bez ikakvog kronološkog modela. LinkedIn je prešao na hibridni algoritamski feed.</p>
+<p>Posljedica ovog prijelaza za komunikologa je dramatična. U kronološkom svijetu, doseg je bio funkcija broja pratitelja i vremena objave. U algoritamskom svijetu, doseg je funkcija toga koliko sustav procjenjuje da je sadržaj atraktivan, što ovisi o desetinama signala koje sustav prikuplja u stvarnom vremenu. Komunikolog koji nastavlja razmišljati u kronološkim okvirima, primjerice planirajući kalendar objava prema satnici kada je publika online, gubi puno većeg dijela slike.</p>
+</section>
+<section id="kako-algoritmi-rangiraju-sadržaj" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kako-algoritmi-rangiraju-sadržaj"><span class="header-section-number">5</span> Kako algoritmi rangiraju sadržaj</h2>
+<p>Algoritmi velikih platformi nisu javno dokumentirani. Njihova interna logika čuvana je poslovna tajna. Ali kombinacija znanstvenih radova zaposlenika tih kompanija, izvještaja regulatora koji su tražili pristup, dokumentima koje su zviždači pustili u javnost i empirijskih studija akademskih istraživača daje dovoljno jasnu sliku osnovnih obrazaca.</p>
+<p>Modernu ranking arhitekturu velikih platformi opisuje se kao višeslojni cjevovod. Prvi sloj je generiranje kandidata, gdje sustav iz milijardi mogućih objava izabire nekoliko tisuća kandidata koji bi mogli biti relevantni za korisnika. Drugi sloj je rangiranje, gdje sustav procjenjuje za svakog kandidata vjerojatnost različitih ishoda, primjerice klika, lajka, komentara, dijeljenja, vremena gledanja, pritiska na slijedi. Treći sloj je miješanje i poliranje, gdje se rezultati rangiranja kombiniraju s drugim ograničenjima, primjerice da se ne prikazuju dva slična oglasa zaredom ili da feed ima različite tipove sadržaja.</p>
+<p>Signali koje sustav koristi za rangiranje grubo se dijele na nekoliko kategorija. Signali o samom sadržaju uključuju tip (video, slika, tekst, link), duljinu, stupanj interaktivnosti, kvalitetu autora, ton, ključne riječi i kategoriju teme. Signali o autoru uključuju njegovu povijest, prosječan angažman, vrijeme objave, frekvenciju i kvalitetu prošlog sadržaja. Signali o korisniku uključuju njegovu povijest interakcija, profil interesa, vrijeme provedeno na različitim tipovima sadržaja, mrežu kontakata i obrazac konzumacije. Signali o međusobnom odnosu autora i korisnika uključuju koliko često korisnik interagira s autorom, je li ranije lajkao njegov sadržaj i koliko su slični u ponašanju s ostalim korisnicima.</p>
+<p>Signali se kombiniraju u model koji predviđa vjerojatnost konkretnog ishoda. Na TikToku, recimo, najvažniji signal je vrijeme gledanja, posebno udio videa koji je korisnik pogledao u odnosu na trajanje videa. Loop, dakle ponovno gledanje istog videa, posebno snažan je signal. Na Instagramu, kombinacija lajkova, komentara, spremanja i dijeljenja kalibrirana je drugačije za svaki tip feeda, gdje glavni feed teži drugim signalima nego Reels feed ili Explore stranica. Na YouTubeu, najvažniji signal je gledano vrijeme po sesiji, što znači koliko se korisnik zadržava na platformi nakon klika na video. Na LinkedInu, komentari nose više težine nego lajkovi i dijeljenja, jer signaliziraju sadržajan angažman.</p>
+<p>Praktične posljedice za komunikologa su sljedeće. Sadržaj koji izaziva brzi i snažan angažman u prvih nekoliko minuta nakon objave dobiva bonus i sustav ga gura prema široj publici. Sadržaj koji ne izaziva angažman u prvih nekoliko minuta tone i sustav ga zakopava. Ova logika eksplozije ili tišine dramatičnija je nego kronološki sustav, jer mali broj objava postiže ogroman doseg dok velika većina ostaje praktički nevidljiva.</p>
+<p>Drugi praktičan uvid je da sustav optimizira ono što može mjeriti. Lajkovi, komentari, dijeljenja, vrijeme gledanja, klik. Nije optimiziran za istinu, kvalitetu, dubinu razumijevanja ili dugoročnu vrijednost. Sadržaj koji izaziva snažnu emocionalnu reakciju, posebno ljutnju, iznenađenje ili indignaciju, ima strukturalnu prednost nad sadržajem koji je miran, nijansiran i tih.</p>
+</section>
+<section id="glavne-platforme-i-njihove-logike" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="glavne-platforme-i-njihove-logike"><span class="header-section-number">6</span> Glavne platforme i njihove logike</h2>
+<p>Ne postoji jedinstvena algoritamska distribucija. Svaka velika platforma ima specifičnu publiku, specifičan tip sadržaja koji najbolje funkcionira i specifičan komunikacijski ishod koji najbolje opslužuje. Komunikolog mora ovu mapu poznavati.</p>
+<p>Meta ekosustav uključuje Facebook, Instagram, WhatsApp i Threads. Facebook je u zadnjih nekoliko godina ostarjelo, dominantna publika je sredovječna i starija, organski doseg za organizacije pao je dramatično, oglasi su glavna distribucijska poluga. Instagram je vizualna platforma sa snažnom kreatorskom kulturom, Reels feed je preuzeo većinu organskog dosega, Stories ostaju važan kanal za izravnu komunikaciju s postojećom publikom. WhatsApp je platforma za izravnu komunikaciju i sve više za grupe i kanale, gdje organizacije mogu graditi izravan dohvat. Threads je novi pokušaj Meta da konkurira X-u, dominantno tekstualan, s rastom među kreatorima i medijima.</p>
+<p>TikTok je posljednja platforma koja je nastala s drugačijom logikom od ostatka. Algoritam praktički ignorira tko koga prati i preporučuje sadržaj na temelju ponašanja korisnika i kvalitete videa. Posljedica je da nove organizacije i nepoznati autori mogu doseći stotine tisuća ljudi s prvim videom, što je na drugim platformama gotovo nemoguće. Druga posljedica je da je TikTok dominantna platforma među mlađom publikom u Hrvatskoj i u svijetu. Treća posljedica je da su trend ciklusi vrlo brzi i sadržaj koji ne reagira na trenutni trend nestaje.</p>
+<p>YouTube je platforma za dulji video sadržaj sa snažnom monetizacijom za kreatore. Algoritam optimizira za vrijeme gledanja i sesije, što favorizira kvalitetu, dubinu i emocionalnu povezanost. YouTube je također druga najveća tražilica na svijetu, nakon Googlea, što znači da video objavljen na YouTubeu može godinama generirati promet kroz pretragu, za razliku od kratkoročno orijentiranih feedova drugih platformi.</p>
+<p>X, ranije Twitter, prošao je značajne promjene od preuzimanja Elona Muska 2022. godine. Algoritam favorizira plaćene račune, kontroverzni sadržaj i objave koje generiraju brzi angažman. Doseg za neplaćene račune značajno je pao. Korisnička baza se promijenila u smjeru veće polarizacije i manje profesionalne novinarske prisutnosti. Za komunikologe, X je i dalje važan u kontekstu medija, politike i tehnologije, ali je manje pouzdan kanal za organizacijsku komunikaciju nego prije.</p>
+<p>LinkedIn je B2B i karijerna platforma koja je u zadnjih nekoliko godina značajno porasla. Algoritam favorizira tekstualne objave s osobnom pričom, sa srednjom dužinom (između tristo i osamsto riječi), s komentarima i raspravom. Za komunikologe koji rade za B2B organizacije ili koji grade osobni profesionalni profil, LinkedIn je strukturalno najatraktivnija platforma jer ima najvišu razinu profesionalne pažnje po jedinici objave.</p>
+<p>Reddit je struktura zajednica oko tematskih subreddita gdje algoritmi rangiraju unutar svake zajednice ali ne preporučuju sadržaj agresivno između zajednica. Reddit je važan kao izvor istinske rasprave, korisničke povratne informacije i ranjive autentičnosti, ali zahtijeva drugačiju komunikacijsku praksu jer korporativna komunikacija obično dobiva loš tretman.</p>
+<p>BlueSky i Mastodon su decentralizirane alternative tradicionalnim platformama. BlueSky raste s migracijom korisnika koji su napustili X. Mastodon ima manju ali predanu zajednicu koju zanimaju otvoreni protokoli. Za komunikologa, ovi servisi su relevantni jer signaliziraju potencijalnu fragmentaciju tržišta i smjer prema korisnicima koji žele kontrolu nad svojim podacima.</p>
+<p>Pinterest, Snapchat, Twitch i Discord svaki imaju svoju nišu i komunikolog koji radi u relevantnoj kategoriji mora ih razumjeti, dok komunikolog koji se njima ne bavi može imati površan uvid bez praktične dubine.</p>
+<p>Telegram, iako često klasificiran kao messaging platforma, sve više funkcionira kao platforma za distribuciju sadržaja kroz kanale. U Hrvatskoj i regionalnom kontekstu, Telegram kanali su rastući kanal koji nije još dovoljno istražen u akademskoj literaturi.</p>
+</section>
+<section id="drugi-sloj-učinaka-i-etika-algoritamske-distribucije" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="drugi-sloj-učinaka-i-etika-algoritamske-distribucije"><span class="header-section-number">7</span> Drugi sloj učinaka i etika algoritamske distribucije</h2>
+<p>Algoritamska distribucija nije samo tehnička optimizacija, ona ima drugorazredne učinke koje komunikolog mora razumjeti.</p>
+<p>Filter bubble i echo chamber poznati su pojmovi za pojavu da algoritmi učvršćuju ranija uvjerenja korisnika prikazujući mu uglavnom sadržaj sa sličnih stajališta. Pojava nije apsolutna jer se istraživanja razlikuju u tome koliko je efekt jak, ali postoji konsenzus da algoritamska personalizacija pojačava obrasce konzumacije koji su već prisutni.</p>
+<p>Engagement maximization je ekonomski cilj velikih platformi i ima predvidljive nuspojave. Sadržaj koji izaziva ljutnju, indignaciju ili strah generira više angažmana nego sadržaj koji izaziva mir, razumijevanje ili nijansu. Posljedica je strukturalna prednost emocionalno polariziranih objava nad uravnoteženim. Empirijska istraživanja pokazala su da na X-u i Facebooku negativni i polarizirani sadržaj ima veći doseg od neutralnog. Na TikToku i Instagramu, ekstremni vizualni signali, šokantna iznenađenja i provokativni naslovi imaju strukturalnu prednost.</p>
+<p>Adiktivni dizajn je dimenzija o kojoj se otvoreno govori u industriji od oko 2018. godine. Beskonačno scrollanje, varijabilne nagrade, push obavijesti i autoplay su tehnike koje su izvedene iz psihologije ovisničkog ponašanja. Posljedica je da korisnici provode više vremena na platformi nego što namjeravaju, što povećava prihode platforme ali ima druge psihološke posljedice za korisnike.</p>
+<p>Polarizacija javnog diskursa povezuje se s algoritamskom distribucijom u znatnom dijelu literature. Iako uzročno-posljedična veza nije jednostavna, kombinacija filter bubblea, engagement maximization-a i strukturne prednosti polariziranog sadržaja stvara okruženje u kojem javna rasprava postaje teža. Komunikolog koji djeluje u javnom prostoru mora ovo razumjeti i mora odlučiti kakav će pristup zauzeti.</p>
+<p>Etička odgovornost komunikologa u algoritamskom okruženju nije apstraktna. Ako platforma sustavno nagrađuje provokativni sadržaj, komunikolog koji optimizira za doseg može doći u napast da svjesno proizvodi takav sadržaj. Linija između legitimne kreativne provokacije i jeftine algoritamske manipulacije tanka je i mora se profesionalno crtati. Industrijska udruženja, etički kodeksi i regulator polako uspostavljaju standarde, ali u praksi mnogo toga ovisi o profesionalnoj prosudbi pojedinca.</p>
+</section>
+<section id="ai-i-moderna-algoritamska-distribucija" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="ai-i-moderna-algoritamska-distribucija"><span class="header-section-number">8</span> AI i moderna algoritamska distribucija</h2>
+<p>Moderna algoritamska distribucija u 2026. godini neodvojiva je od dubokog učenja i AI sustava, i to na nekoliko razina.</p>
+<p>Recommender sustavi velikih platformi temelje se na neuronskim mrežama koje uče iz milijardi interakcija. TikTokov For You feed je u akademskoj zajednici poznat kao jedan od najsofisticiranijih primjera primijenjenog dubokog učenja u širokoj upotrebi. Sustav uči vektorske reprezentacije svakog korisnika i svakog komada sadržaja u apstraktnom prostoru i preporučuje sadržaj čiji je vektor blizu korisničkog vektora. YouTube koristi sličan pristup, kao i Meta proizvodi.</p>
+<p>Generativni AI ulazi u algoritamsku distribuciju na drugi način. Sve više korisnika postavlja pitanja AI asistentima umjesto pretraživačima ili feedu. ChatGPT, Claude, Perplexity i Google AI Overviews preuzimaju dio prometa koji bi inače išao kroz tradicionalne kanale otkrivanja sadržaja. Za komunikologa, ovo znači da sadržaj treba biti pisan tako da ga AI sustavi mogu citirati, sažeti i preporučiti. Ovo je nova kategorija optimizacije, koju neki nazivaju AEO (Answer Engine Optimization) ili GEO (Generative Engine Optimization), kao analogija SEO-u za novu eru.</p>
+<p>AI generirani sadržaj, koji se masovno proizvodi od 2023. godine, dramatično je povećao volumen sadržaja na svim platformama. Posljedica je da se signal kvalitete smanjio jer je sve teže razlikovati AI-generirani od ljudskog sadržaja. Platforme su počele uvoditi mehanizme za detekciju i obilježavanje AI sadržaja, ali implementacija varira i nije pouzdana.</p>
+<p>AI agenti koji djeluju u korist korisnika ulaze na scenu polako. Anthropicov Computer Use, OpenAI Operator i drugi sustavi mogu pretraživati web umjesto korisnika, dohvaćati informacije, sažimati ih i prezentirati. Ovi sustavi mijenjaju ekonomiju pažnje. Korisnik više ne mora otvoriti web stranicu da bi dobio njezinu informaciju. Agent to može učiniti za njega. Za organizacije koje žive od web prometa, ovo je egzistencijalna promjena koja se tek odvija.</p>
+<p>Algoritamska transparentnost je regulatorni odgovor na složenost AI sustava u distribuciji. EU Digital Services Act zahtijeva od velikih platformi da otkrivaju glavne parametre svojih recommender sustava i da korisnicima ponude opciju neoprofiliranog feeda. AI Act dodaje zahtjeve za rizične primjene AI-a u medijskoj distribuciji. Komunikolog ne mora biti pravnik ali mora znati da se transparentnost algoritma kreće od korporativne tajne prema regulatornoj obvezi, što mijenja dugoročni krajobraz.</p>
+</section>
+<section id="platformski-rizici-za-organizacije" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="platformski-rizici-za-organizacije"><span class="header-section-number">9</span> Platformski rizici za organizacije</h2>
+<p>Komunikolog koji svoju strategiju gradi na platformama mora razumjeti nekoliko strukturnih rizika koji su izvan njegove kontrole.</p>
+<p>Promjene algoritma događaju se redovito i ponekad imaju dramatične učinke. Facebookova promjena 2018. godine, koja je smanjila vidljivost objava od organizacija u korist objava od prijatelja, dramatično je pala organski doseg za sve organizacije. Instagramova promjena 2025. godine, koja je više favorizirala Reels od statičnih objava, kažnjavala je račune koji su nastavili dominantno objavljivati statične postove. Algoritamske promjene rijetko su unaprijed objavljene i organizacije ih obično otkrivaju tek kada metrike padnu.</p>
+<p>Pad organskog dosega kronični je trend u zadnjih deset godina. Studije iznose različite brojke, ali konsenzus je da je prosječan organski doseg na većini velikih platformi pao između sedamdeset pet i devedeset posto u zadnjem desetljeću. Razlog je da platforme privlače sve više sadržaja, dok kapacitet pažnje korisnika ostaje konstantan, pa svaki pojedini sadržaj dobiva manje pažnje. Drugi razlog je da platforme svjesno smanjuju organski doseg kako bi prisilile organizacije na plaćeno oglašavanje.</p>
+<p>Deplatforming je rizik da račun bude obrisan, suspendiran ili degradiran zbog kršenja pravila platforme. Pravila su ponekad jasna, ponekad nejasna, primjenjuju se nedosljedno i mogu se mijenjati. Organizacija koja godinama gradi profil može ga izgubiti u jednom danu. U politički i kulturno polariziranim trenucima, deplatforming može imati i ideološku komponentu jer kriteriji procjene nisu apsolutno objektivni.</p>
+<p>Promjene cijene oglašavanja izvan su kontrole oglašivača. Cijena po impresiji, po kliku ili po konverziji rasla je u zadnjih deset godina značajno brže od inflacije, jer raste konkurencija među oglašivačima dok kapacitet pažnje korisnika stagnira. Organizacija koja je gradila ROI model na cijenama iz 2020. godine, danas mora pronaći nove uvjete jer su cijene značajno više.</p>
+<p>Geopolitički i regulatorni rizici sve su istaknutiji. TikTok je u SAD-u pod kontinuiranim pritiskom zbog kineskog vlasništva. Meta je u EU pod kontinuiranim regulatornim postupcima. X je u zadnjih par godina suočen s različitim sankcijama u različitim zemljama. Komunikolog koji gradi strategiju na pojedinoj platformi mora računati s mogućnošću da platforma postane nedostupna ili dramatično ograničena u ključnom tržištu.</p>
+<p>Iznajmljena publika je termin koji opisuje strukturalnu poziciju svakog tko gradi prisutnost na platformi. Vaši pratitelji nisu vaši. Oni su platformini, a vi imate pristup do njih dok platforma to dopušta i pod uvjetima koje platforma postavlja. Vaši mailing pretplatnici su vaši, jer email infrastruktura je otvorena, vaša lista je vaša, i ne ovisi o algoritmu jedne kompanije. Razlika između iznajmljene i vlastite publike temeljna je za dugoročnu strategiju i sljedeći tjedan ćemo se njoj posvetiti detaljno.</p>
+</section>
+<section id="hrvatski-platformski-krajobraz" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="hrvatski-platformski-krajobraz"><span class="header-section-number">10</span> Hrvatski platformski krajobraz</h2>
+<p>Platformska situacija u Hrvatskoj ima nekoliko specifičnosti koje komunikolog mora poznavati.</p>
+<p>Facebook je i dalje najveća platforma po broju korisnika, ali demografija stari brzo. Glavnina aktivne baze nalazi se u srednjoj i starijoj dobnoj skupini. Za organizacije koje ciljaju ovu demografiju, primjerice za zdravstvene usluge, financije ili lokalne usluge, Facebook ostaje važan kanal. Za organizacije koje ciljaju mlađu publiku, doseg na Facebooku je sve nedovoljan.</p>
+<p>Instagram je u Hrvatskoj jaka platforma među mlađom i srednjom dobnom skupinom. Reels su preuzeli većinu organskog dosega. Stories ostaju važne za izravnu komunikaciju s postojećom publikom. Hrvatske turističke organizacije koriste Instagram intenzivno, jer je vizualna platforma idealna za destinacijski marketing.</p>
+<p>TikTok ima rastuću bazu u Hrvatskoj, posebno među mlađim korisnicima ispod dvadeset i pet godina. Hrvatski TikTok kreatori grade publike koje nadilaze hrvatsko tržište, jer algoritam ne ograničava distribuciju geografski u jednakoj mjeri kao druge platforme. Za organizacije koje žele doseći mlađu publiku, TikTok je strukturalno najatraktivnija opcija u 2026. godini.</p>
+<p>LinkedIn je u Hrvatskoj značajno porasla u zadnjih nekoliko godina, kako se profesionalna kultura digitalizira i kako sve više stručnjaka gradi osobni profesionalni brend. Za B2B organizacije, agencije i savjetnike, LinkedIn je dominantna platforma za sadržajni marketing.</p>
+<p>YouTube je važan u Hrvatskoj kao i globalno, ali domaća kreatorska scena je relativno mala u usporedbi s brojem domaćih kreatora na drugim platformama. Hrvatski YouTube kanali rijetko prelaze sto tisuća pretplatnika, što su brojevi koje globalni kanali prelaze rutinski.</p>
+<p>X je u Hrvatskoj manji kanal nego globalno, dominantno korišten u medijskim, političkim i tehnološkim krugovima. Za organizacije izvan tih sektora, X je rijetko isplativ kao kanal.</p>
+<p>Threads i BlueSky imaju u Hrvatskoj još malu bazu, ali rastu i komunikolog koji prati trendove vrijedi ih pratiti.</p>
+<p>Telegram kanali su rastući fenomen u Hrvatskoj, posebno za alternativne medije, političke aktere i specifične zajednice. Telegram je manje izložen klasičnom regulatornom okviru i u tom smislu je nepredvidljivija arena.</p>
+<p>Hrvatski jezik je dvostruko ograničenje i dvostruka prilika. Ograničenje je da hrvatski jezik ima manju globalnu publiku od engleskog, pa je teže izgraditi velike sadržajne kanale. Prilika je da je konkurencija među hrvatskim sadržajem na hrvatskom jeziku znatno manja od globalne, pa kvalitetan sadržaj na hrvatskom u svojoj kategoriji često nailazi na manje prepreke do publike.</p>
+</section>
+<section id="regulatorni-okvir" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="regulatorni-okvir"><span class="header-section-number">11</span> Regulatorni okvir</h2>
+<p>Algoritamska distribucija sve je više predmet regulatornih intervencija EU-a, što izravno utječe na praksu komunikologa.</p>
+<p>Digital Services Act, koji je stupio na snagu 2024. godine, zahtijeva od velikih platformi nekoliko stvari koje izravno utječu na rad. Velike platforme moraju otkriti glavne parametre svojih recommender sustava. Moraju ponuditi korisnicima opciju feeda koji nije personaliziran. Moraju brzo ukloniti ilegalan sadržaj. Moraju biti transparentne o oglašavanju, uključujući tko plaća za koji oglas. Moraju omogućiti pristup podacima istraživačima i regulatorima.</p>
+<p>AI Act, koji je u fazi postupne implementacije kroz 2025. i 2026. godinu, dodaje kategorizaciju AI sustava prema riziku i zahtijeva specifične mjere za sustave visokog rizika, što uključuje dio AI sustava koji se koriste u medijskoj i sadržajnoj distribuciji.</p>
+<p>Direktiva o autorskim pravima i njezina hrvatska implementacija utječu na to kako platforme tretiraju autorski zaštićen sadržaj. Komunikolog koji koristi sadržaj treće strane mora razumjeti svoje obveze, posebno kada se sadržaj distribuira kroz platforme koje imaju vlastite kompromisne aranžmane s nositeljima prava.</p>
+<p>GDPR i ePrivacy okvir utječu na targeting i analitiku. Korištenje cookies, tracking pixela, custom audience funkcija na velikim platformama, sve to mora biti usklađeno s pravilima o osobnim podacima i pristanku korisnika.</p>
+<p>Hrvatski regulatorni okvir uključuje Zakon o medijima, Zakon o elektroničkim medijima, kao i nadzor Agencije za zaštitu osobnih podataka. Komunikolog koji djeluje za medije i organizacije s javnom funkcijom mora imati osnovno poznavanje ovih okvira, posebno u trenucima kada se uvode izmjene u skladu s EU regulativom.</p>
+</section>
+<section id="trendovi-koji-oblikuju-budućnost" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="trendovi-koji-oblikuju-budućnost"><span class="header-section-number">12</span> Trendovi koji oblikuju budućnost</h2>
+<p>Nekoliko trendova vrijedi pratiti jer će oblikovati platformski krajobraz u idućim godinama.</p>
+<p>Konvergencija na TikTok-stil arhitekturu je proces u kojem sve velike platforme postupno usvajaju logiku jakih recommender sustava i video first feeda. Instagram Reels, YouTube Shorts, Facebook Reels, LinkedIn Video, X video sve idu u istom smjeru. Posljedica je da se publike privikavaju na sličan obrazac konzumacije i da se uspješni sadržajni formati prebacuju između platformi brže nego prije.</p>
+<p>AI Overviews i AI search transformiraju kako korisnici otkrivaju sadržaj. Google AI Overviews, Perplexity, ChatGPT pretraga, Claude pretraga, sve to preuzima dio prometa koji bi inače išao kroz tradicionalna mjesta otkrivanja. Komunikolog koji optimizira sadržaj samo za klasični SEO i klasične feedove sve više propušta dio publike koja sadržaj otkriva kroz AI sloj.</p>
+<p>Decentralizirani protokoli su tihi ali stvaran trend. ActivityPub, na kojem rade Mastodon i Threads federacija, AT Protocol koji pokreće BlueSky, RSS koji se vraća iz mrtvih, sve to ukazuje na dio korisnika koji žele kontrolu nad svojim digitalnim prisustvom. Za komunikologa, decentralizacija je i prilika i izazov, jer otvara nove distribucijske kanale ali zahtijeva i učenje novih obrazaca.</p>
+<p>Sadržaj generiran od AI agenata u korist korisnika dramatično mijenja odnos između publike i sadržaja. Ako agent pretražuje, sažima i prezentira sadržaj korisniku, klasična metrika klika i konzumacije gubi smisao. Industrija pokušava razviti nove metrike koje mjere koliko je sadržaj citiran, sažet i preporučen kroz agente, ali standardi nisu još uspostavljeni.</p>
+<p>Sovereign social media i nacionalna alternativa fenomen je koji raste u nekim regijama. EU razmatra inicijative za europsku društvenu platformu. Brazil, Indonezija i druge zemlje povremeno izlaze s inicijativama za nacionalne platforme. Iako velika većina ovih projekata ne uspijeva, sama frekvencija pokušaja signalizira nezadovoljstvo postojećom platformskom strukturom.</p>
+<p>Audio i AI glas dobivaju sve veći udio. Spotifyev recommender, podcast platforme s AI generiranim sažetkom, glasovni asistenti, AI generiran zvuk u videu, sve to gradi novi sloj u kojem audio postaje važniji nego što je bio u zadnjem desetljeću.</p>
+</section>
+<section id="na-kraju-ovog-poglavlja" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="na-kraju-ovog-poglavlja"><span class="header-section-number">13</span> Na kraju ovog poglavlja</h2>
+<p>Platforme su preuzele ulogu glavnog distributera sadržaja u digitalnom dobu, a algoritmi su preuzeli ulogu glavnih urednika koji odlučuju što tko vidi. Komunikolog koji ne razumije ovu strukturalnu promjenu radi unutar sustava čija pravila ne poznaje, a na kraju gubi protiv onih koji ih poznaju.</p>
+<p>Razumijevanje algoritamske distribucije nije ni cinično iskorištavanje sustava, ni naivno povjerenje da će se kvalitetan sadržaj sam probiti. To je realističan profesionalni stav koji prepoznaje da postoji poseban kontekst u kojem sadržaj danas živi i da je obveza komunikologa razumjeti taj kontekst dovoljno dobro da može unutar njega djelovati svjesno.</p>
+<p>Ovo predavanje također je pripremilo teren za sljedeće. Cijela rasprava o platformama otvorila je pitanje koje je do sada implicitno provlačilo kroz semestar. Ako su platforme nepouzdane, ako se algoritmi mijenjaju, ako organski doseg pada, postoji li alternativa? Sljedeći tjedan govorit ćemo o vlastitoj publici i izravnim kanalima, o tome kako se gradi izravan odnos s publikom koji ne ovisi o algoritmu jedne kompanije. Email lista, newsletter, push obavijesti, RSS, vlastiti dom za sadržaj. Sve to su strategije koje komunikolog gradi paralelno s platformskom prisutnošću, kao osiguranje protiv strukturalnih rizika koje smo danas opisali.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p><em>Bit će dodano prije predavanja.</em></p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ključni zaključci
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Platforme su digitalni posrednici koji koriste mrežne efekte za rast i kontroliraju pravila igre na svojem tržištu, što čini svaku komunikacijsku strategiju izgrađenu na platformi strukturalno ranjivom.</p>
+<p>Prijelaz iz kronološke u algoritamsku distribuciju u zadnjih petnaestak godina temeljno je promijenio posao komunikologa, jer doseg više nije funkcija broja pratitelja i vremena objave nego usklađenosti sadržaja s logikom platforme.</p>
+<p>Algoritmi velikih platformi rangiraju sadržaj kroz kombinaciju signala o sadržaju, autoru, korisniku i njihovom međusobnom odnosu, pri čemu sustav optimizira ono što može mjeriti, a ne nužno ono što je najvažnije.</p>
+<p>Svaka velika platforma ima specifičnu publiku, sadržajnu logiku i komunikacijski ishod koji najbolje opslužuje, pa komunikolog mora mapirati platforme po funkciji, a ne ih tretirati kao međusobno zamjenjive kanale.</p>
+<p>Drugorazredni učinci algoritamske distribucije, uključujući filter bubblove, engagement maximization i strukturalnu prednost emocionalno polariziranog sadržaja, postavljaju etička pitanja koja komunikolog mora svjesno adresirati.</p>
+<p>AI sustavi su središnji dio moderne algoritamske distribucije, od recommender sustava velikih platformi do generativnih AI asistenata koji preuzimaju dio prometa od tradicionalnih kanala otkrivanja sadržaja.</p>
+<p>Promjene algoritma, pad organskog dosega, deplatforming, geopolitički rizici i rast cijena oglašavanja konkretni su strukturalni rizici za organizacije koje grade strategiju isključivo na platformama.</p>
+<p>Hrvatski platformski krajobraz pokazuje jasnu segmentaciju po dobnim skupinama i funkcijama, gdje Facebook stari, Instagram dominira u srednjoj dobi, TikTok raste među mlađima, LinkedIn jača u B2B segmentu, a Telegram preuzima nove niše.</p>
+<p>EU regulatorni okvir, od Digital Services Acta preko AI Acta do GDPR-a, postupno mijenja krajobraz prema većoj transparentnosti algoritma i jačoj zaštiti korisnika, što znači da se klasična praksa optimizacije za platforme mora prilagoditi.</p>
+<p>Razlika između iznajmljene publike na platformama i vlastite publike na izravnim kanalima temeljna je strukturalna razlika koja oblikuje dugoročnu komunikacijsku strategiju, što vodi izravno u temu sljedećeg predavanja.</p>
 </div>
 </div>
 </section>
-<section id="sadržaj" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="sadržaj"><span class="header-section-number">2</span> Sadržaj</h2>
-<p><em>Sadržaj predavanja bit će objavljen ovdje nakon sesije.</em></p>
+<section id="priprema-za-sljedeći-tjedan" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="priprema-za-sljedeći-tjedan"><span class="header-section-number">14</span> Priprema za sljedeći tjedan</h2>
+<p>Tjedan 10 bavit će se vlastitom publikom i izravnim kanalima, dakle infrastrukturom komunikacije koja ne ovisi o algoritmima velikih platformi.</p>
+<p>Prije desetog predavanja napravite četiri stvari.</p>
+<p>Prvo, odaberite jednu hrvatsku organizaciju ili medij koji aktivno koristi platforme i napravite mali audit njegove platformske prisutnosti. Zabilježite koje platforme koristi, koliko ima pratitelja na svakoj, koja vrsta sadržaja dominira na svakoj i procijenite gdje vidi najveći angažman. Pokušajte zaključiti koja je platforma za tu organizaciju strateški najvažnija i zašto.</p>
+<p>Drugo, pratite jednu objavu na svakoj od tri različite platforme tijekom dva ili tri dana. Zabilježite početni angažman, kako se mijenja kroz vrijeme i pokušajte zaključiti što govori o algoritamskoj logici platforme. Posebno obratite pažnju na razliku između prvih nekoliko sati i dana koji slijede.</p>
+<p>Treće, isprobajte AI pretraživač, primjerice Perplexity ili ChatGPT, i postavite mu tri pitanja na koja bi inače tražili odgovor kroz Google. Zabilježite koje izvore citira, koliko su odgovori cjeloviti i u kojem se smislu razlikuju od klasičnog Google rezultata. Refleksiju o ovome iskoristit ćemo u uvodu sljedećeg predavanja.</p>
+<p>Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica o sljedećem pitanju. Koliko vašeg dnevnog konzumiranja medija prolazi kroz algoritamske kanale, a koliko kroz izravne kanale poput maila, RSS-a ili izravnog posjeta web stranici? Što biste željeli promijeniti u toj raspodjeli?</p>
 </section>
-<section id="ključni-zaključci" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="ključni-zaključci"><span class="header-section-number">3</span> Ključni zaključci</h2>
-<div class="callout callout-style-simple callout-important no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><em>Bit će dodano.</em></p>
-</div>
-</div>
-</div>
+<section id="dodatno-čitanje" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="dodatno-čitanje"><span class="header-section-number">15</span> Dodatno čitanje</h2>
+<p>Zaikom Tufekcijev rad na presjeku tehnologije, društva i platformi ponudio je niz utjecajnih analiza algoritamske distribucije. Njezin TED Talk i radovi u akademskim časopisima dostupni su besplatno i čitljivi su komunikolozima bez tehničke pozadine.</p>
+<p>Charlie Warzel u svom newsletteru Galaxy Brain i u Atlanticu redovito piše o platformama, algoritmima i kreatorskoj ekonomiji. Njegove analize promjena na X-u, Instagramu i TikToku pripadaju među najinformiranije u industriji.</p>
+<p>Ben Thompson na Stratechery pruža analize tržišne dinamike velikih platformi koje kombiniraju ekonomsku perspektivu s razumijevanjem proizvoda. Mnoge od njegovih analiza dostupne su besplatno i čitljive su širem komunikacijskom čitateljstvu.</p>
+<p>Algorithm Watch je njemačka organizacija koja prati i kritički procjenjuje algoritamsku distribuciju u javnom interesu. Njihovi izvještaji o praksi velikih platformi u europskom kontekstu vrijedan su izvor.</p>
+<p>Kevin Roose u svojoj kolumni u New York Timesu kontinuirano prati AI i platforme s perspektivom širokog komunikacijskog čitateljstva. Njegovi razgovori s ključnim akterima u industriji često otkrivaju manje vidljive aspekte rada platformi.</p>
+<p>European Centre for Algorithmic Transparency objavljuje istraživanja u skladu s obavezama velikih platformi pod Digital Services Actom, što daje rijetki uvid u rad sustava koji su inače poslovne tajne.</p>
+<p>Za hrvatski kontekst, izvještaji Hrvatskog novinarskog društva, MEDIJSKA studija i specijalizirane sekcije u stručnim časopisima povremeno donose lokalne analize koje nadopunjuju globalnu literaturu.</p>
 </section>
-<section id="priprema-za-sljedeći-tjedan" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="priprema-za-sljedeći-tjedan"><span class="header-section-number">4</span> Priprema za sljedeći tjedan</h2>
-<div class="callout callout-style-simple callout-warning no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><em>Bit će dodano.</em></p>
-</div>
-</div>
-</div>
+<section id="pojmovnik" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="pojmovnik"><span class="header-section-number">16</span> Pojmovnik</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pojam</th>
+<th>Objašnjenje</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Platforma</td>
+<td>Sustav koji posreduje između više grupa korisnika koristeći mrežne efekte</td>
+</tr>
+<tr class="even">
+<td>Mrežni efekt</td>
+<td>Pojava u kojoj vrijednost sustava raste s brojem sudionika</td>
+</tr>
+<tr class="odd">
+<td>Dvostrano tržište</td>
+<td>Tržište u kojem platforma posreduje između dvije različite grupe korisnika</td>
+</tr>
+<tr class="even">
+<td>Kronološki feed</td>
+<td>Prikaz sadržaja redoslijedom kojim je objavljen</td>
+</tr>
+<tr class="odd">
+<td>Algoritamski feed</td>
+<td>Prikaz sadržaja redoslijedom procijenjene relevantnosti za korisnika</td>
+</tr>
+<tr class="even">
+<td>Recommender sustav</td>
+<td>AI sustav koji preporučuje sadržaj korisniku na temelju signala</td>
+</tr>
+<tr class="odd">
+<td>Kandidat generation</td>
+<td>Prvi sloj recommender cjevovoda koji izabire kandidate iz velike baze</td>
+</tr>
+<tr class="even">
+<td>Ranking</td>
+<td>Drugi sloj recommender cjevovoda koji rangira kandidate prema vjerojatnosti ishoda</td>
+</tr>
+<tr class="odd">
+<td>Engagement signal</td>
+<td>Signal koji algoritam koristi, primjerice lajk, komentar, dijeljenje, vrijeme gledanja</td>
+</tr>
+<tr class="even">
+<td>Loop</td>
+<td>Ponovno gledanje istog sadržaja, snažan signal na TikToku</td>
+</tr>
+<tr class="odd">
+<td>For You feed</td>
+<td>TikTokov algoritamski feed koji ne ovisi o tome koga pratite</td>
+</tr>
+<tr class="even">
+<td>Reels</td>
+<td>Instagramov format kratkog videa s vlastitim feedom</td>
+</tr>
+<tr class="odd">
+<td>Shorts</td>
+<td>YouTubeov format kratkog videa</td>
+</tr>
+<tr class="even">
+<td>Stories</td>
+<td>Format ephemeralnog sadržaja koji nestaje nakon dvadeset četiri sata</td>
+</tr>
+<tr class="odd">
+<td>Engagement maximization</td>
+<td>Optimizacija algoritma za maksimiziranje korisničkog angažmana</td>
+</tr>
+<tr class="even">
+<td>Filter bubble</td>
+<td>Pojava u kojoj algoritmi učvršćuju ranija uvjerenja korisnika</td>
+</tr>
+<tr class="odd">
+<td>Echo chamber</td>
+<td>Komunikacijski prostor u kojem se vraćaju samo usklađena stajališta</td>
+</tr>
+<tr class="even">
+<td>Adiktivni dizajn</td>
+<td>Dizajn koji koristi tehnike iz psihologije ovisnosti za zadržavanje korisnika</td>
+</tr>
+<tr class="odd">
+<td>Beskonačno scrollanje</td>
+<td>Sučelje koje učitava novi sadržaj automatski bez kraja</td>
+</tr>
+<tr class="even">
+<td>Variable reward</td>
+<td>Mehanizam varijabilne nagrade preuzet iz operativnog uvjetovanja</td>
+</tr>
+<tr class="odd">
+<td>Deplatforming</td>
+<td>Brisanje, suspendiranje ili degradacija računa od strane platforme</td>
+</tr>
+<tr class="even">
+<td>Iznajmljena publika</td>
+<td>Publika kojoj imate pristup samo kroz platformu i pod njezinim uvjetima</td>
+</tr>
+<tr class="odd">
+<td>Vlastita publika</td>
+<td>Publika kojoj imate izravan pristup neovisno o platformi</td>
+</tr>
+<tr class="even">
+<td>Organski doseg</td>
+<td>Broj korisnika koji vide sadržaj bez plaćene promocije</td>
+</tr>
+<tr class="odd">
+<td>Plaćeni doseg</td>
+<td>Broj korisnika koji vide sadržaj zbog plaćenog oglasa</td>
+</tr>
+<tr class="even">
+<td>CPM</td>
+<td>Cost Per Mille, cijena po tisuću impresija oglasa</td>
+</tr>
+<tr class="odd">
+<td>CPC</td>
+<td>Cost Per Click, cijena po kliku na oglas</td>
+</tr>
+<tr class="even">
+<td>ROAS</td>
+<td>Return On Ad Spend, povrat ulaganja u oglašavanje</td>
+</tr>
+<tr class="odd">
+<td>Custom audience</td>
+<td>Audience definirana iz vlastitih podataka, primjerice mailing liste</td>
+</tr>
+<tr class="even">
+<td>Lookalike audience</td>
+<td>Audience koja platforma pronalazi po sličnosti s postojećom</td>
+</tr>
+<tr class="odd">
+<td>Meta</td>
+<td>Korporacija koja vlasništvom obuhvaća Facebook, Instagram, WhatsApp i Threads</td>
+</tr>
+<tr class="even">
+<td>TikTok</td>
+<td>Platforma kratkog videa s recommender sustavom koji ne ovisi o praćenju</td>
+</tr>
+<tr class="odd">
+<td>YouTube</td>
+<td>Platforma za dulji video sadržaj s monetizacijom za kreatore</td>
+</tr>
+<tr class="even">
+<td>LinkedIn</td>
+<td>Profesionalna platforma s naglaskom na B2B i karijernu komunikaciju</td>
+</tr>
+<tr class="odd">
+<td>X</td>
+<td>Platforma kratkih objava, ranije Twitter</td>
+</tr>
+<tr class="even">
+<td>Threads</td>
+<td>Meta platforma kratkih objava i konkurent X-u</td>
+</tr>
+<tr class="odd">
+<td>Reddit</td>
+<td>Platforma struktura zajednica oko tematskih subreddita</td>
+</tr>
+<tr class="even">
+<td>Pinterest</td>
+<td>Platforma vizualnih kolekcija s naglaskom na otkrivanje proizvoda</td>
+</tr>
+<tr class="odd">
+<td>Discord</td>
+<td>Platforma zajednica oko tematskih servera, popularna kod gaminga i kreatora</td>
+</tr>
+<tr class="even">
+<td>BlueSky</td>
+<td>Decentralizirana alternativa X-u zasnovana na AT protokolu</td>
+</tr>
+<tr class="odd">
+<td>Mastodon</td>
+<td>Decentralizirana platforma zasnovana na ActivityPub protokolu</td>
+</tr>
+<tr class="even">
+<td>Telegram</td>
+<td>Platforma za poruke i kanale s rastućim udjelom u distribuciji sadržaja</td>
+</tr>
+<tr class="odd">
+<td>AT Protocol</td>
+<td>Otvoreni protokol koji pokreće BlueSky</td>
+</tr>
+<tr class="even">
+<td>ActivityPub</td>
+<td>Otvoreni protokol koji pokreće Mastodon i Threads federaciju</td>
+</tr>
+<tr class="odd">
+<td>Embedding</td>
+<td>Vektorska reprezentacija korisnika ili sadržaja u apstraktnom prostoru</td>
+</tr>
+<tr class="even">
+<td>Deep learning</td>
+<td>Tehnika strojnog učenja koja pokreće moderne recommender sustave</td>
+</tr>
+<tr class="odd">
+<td>Generativni AI</td>
+<td>AI sustav koji generira novi sadržaj</td>
+</tr>
+<tr class="even">
+<td>AEO</td>
+<td>Answer Engine Optimization, optimizacija sadržaja za AI asistente</td>
+</tr>
+<tr class="odd">
+<td>GEO</td>
+<td>Generative Engine Optimization, sinonim za AEO</td>
+</tr>
+<tr class="even">
+<td>AI Overviews</td>
+<td>Googleova značajka koja generira AI sažetak iznad rezultata pretraživanja</td>
+</tr>
+<tr class="odd">
+<td>Perplexity</td>
+<td>AI pretraživač koji daje odgovore s citatima izvora</td>
+</tr>
+<tr class="even">
+<td>Computer Use</td>
+<td>Mogućnost AI sustava da kontrolira sučelje računala u korist korisnika</td>
+</tr>
+<tr class="odd">
+<td>Digital Services Act</td>
+<td>EU regulativa koja postavlja obveze velikih platformi</td>
+</tr>
+<tr class="even">
+<td>AI Act</td>
+<td>EU regulativa koja kategorizira AI sustave prema riziku</td>
+</tr>
+<tr class="odd">
+<td>ePrivacy</td>
+<td>EU regulativa koja regulira tracking i privatnost u elektroničkim komunikacijama</td>
+</tr>
+<tr class="even">
+<td>Algoritamska transparentnost</td>
+<td>Obveza otkrivanja parametara recommender sustava</td>
+</tr>
+<tr class="odd">
+<td>Sovereign platform</td>
+<td>Platforma pravno i operativno vezana za određenu jurisdikciju</td>
+</tr>
+<tr class="even">
+<td>Kreatorska ekonomija</td>
+<td>Ekosustav u kojem pojedinci zarađuju kroz sadržaj na platformama</td>
+</tr>
+<tr class="odd">
+<td>Influencer</td>
+<td>Pojedinac s velikom platformskom publikom koji utječe na percepcije i odluke pratitelja</td>
+</tr>
+<tr class="even">
+<td>UGC</td>
+<td>User-Generated Content, sadržaj koji kreiraju korisnici</td>
+</tr>
+<tr class="odd">
+<td>Viralnost</td>
+<td>Pojava brzog organskog širenja sadržaja kroz dijeljenje</td>
+</tr>
+<tr class="even">
+<td>Trend cycle</td>
+<td>Brzo izmjenjivanje dominantnih obrazaca sadržaja, posebno na TikToku</td>
+</tr>
+</tbody>
+</table>
 
 
 <!-- -->
@@ -982,33 +1380,338 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Platforme, algoritmi i algoritamska distribucija"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Kako platforme rangiraju sadržaj i što to znači za komunikologe"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "doc. dr. sc. Luka Šikić"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-04-22</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [platforme, algoritmi, distribucija]</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ishodi učenja</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>*Bit će dodano prije predavanja.*</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-04-22</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [platforme, algoritmi, distribucija]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  html: default</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    lang: en</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  docx: default</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">abstract:</span><span class="co"> |</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  Ovo predavanje opisuje platforme kao infrastrukturni sloj distribucije sadržaja koji je u zadnjih dvadeset godina preuzeo glavnu ulogu u tome tko vidi što i kada. Algoritamska distribucija, koju pokreću sustavi za preporuku temeljeni na strojnom učenju, fundamentalno mijenja posao komunikologa jer dohvat publike više nije rezultat objavljivanja sadržaja nego rezultat usklađivanja sadržaja s logikom platforme. Razumijevanje te logike, njezinih posljedica i njezinih ograničenja temeljna je kompetencija za bilo koju ozbiljnu digitalnu strategiju.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sadržaj</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ishodi učenja</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Nakon ovog predavanja studenti će moći</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključni zaključci</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>*Bit će dodano.*</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Priprema za sljedeći tjedan</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning appearance="minimal"}</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>*Bit će dodano.*</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Definirati platformu u digitalnom kontekstu i objasniti zašto su mrežni efekti i dvostrana tržišta ključ njezine ekonomske logike</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Razlikovati kronološku i algoritamsku distribuciju sadržaja te razumjeti zašto je industrija u zadnjih petnaestak godina prešla iz prve u drugu</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Identificirati ključne signale koje algoritmi velikih platformi koriste za rangiranje sadržaja i predvidjeti kako tipovi sadržaja djeluju u tim sustavima</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Mapirati glavne platforme po publici, sadržajnoj logici i tipu komunikacijskog ishoda koji najbolje opslužuju</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Procijeniti rizike koji proizlaze iz ovisnosti o platformi, uključujući promjene algoritma, deplatforming i pad organskog dosega</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Razumjeti ulogu AI sustava u modernoj algoritamskoj distribuciji i smjer u kojem se ti sustavi razvijaju</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Smjestiti algoritamsku distribuciju u kontekst etičke odgovornosti, polarizacije i regulatornog okvira EU</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>Razlikovati iznajmljenu publiku na platformama od vlastite publike na izravnim kanalima i razumjeti zašto je ova razlika temeljna za dugoročnu komunikacijsku strategiju</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto komunikolog mora razumjeti platforme i njihove algoritme</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Zamislite da ste komunikacijski stručnjak u srednjoj hrvatskoj agenciji koja vodi profile za desetak klijenata na društvenim mrežama. Kroz dvije godine pažljivo gradite Instagram profil za jednog od većih klijenata, regionalni lanac restorana. Profil ima dvadeset i pet tisuća pratitelja, sadržaj je pažljivo izrađen, ton je dosljedan, vizualni identitet besprijekoran. Krajem 2025. godine Instagram mijenja algoritam i preporučuje više sadržaja od ljudi koje pratitelj ne poznaje. Vašem klijentu prosječan organski doseg pada za sedamdeset posto u tjedan dana. Objava koja je prije tri mjeseca dosezala dvadeset tisuća ljudi sada doseže šest tisuća. Klijent zove i pita što ste pogriješili.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Niste pogriješili ništa konkretno. Ali i niste razumjeli logiku sustava unutar kojeg radite. Algoritam koji vašem klijentu donosi pratitelje nije njegov, nije vaš, nije pod vašom kontrolom. To je proizvod tehničkih, ekonomskih i regulatornih odluka jedne kompanije koja u svakom trenutku može promijeniti pravila igre. Komunikolog koji ne razumije tu logiku gradi profesionalnu praksu na pijesku.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>Prošli tjedan govorili smo o korisničkom iskustvu i dizajnu, dakle o tome kako sadržaj živi u kontekstu sučelja. Danas se vraćamo korak dalje i pitamo kako sadržaj uopće dolazi do korisnika. Više od dvije trećine vremena koje ljudi provode na webu odvija se na šačici platformi. Više od polovice ukupnog medijskog konzumiranja u zapadnim društvima prošlo je kroz preporuku nekog algoritma. Komunikolog koji ne razumije platforme i algoritamsku distribuciju ne razumije medij u kojem djeluje.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Što je platforma</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Pojam platforma u digitalnom kontekstu znači nešto specifičnije od onoga što ekonomska teorija označava istim pojmom. Platforma je sustav koji posreduje između dvije ili više različitih grupa korisnika, omogućuje njihovu interakciju i pri tome stvara vrijednost koja raste s brojem sudionika.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Klasični ekonomski primjer dvostranog tržišta je novinski oglasni model. Novine su platforma između čitatelja s jedne strane i oglašivača s druge. Što je više čitatelja, novine su atraktivnije oglašivačima. Što je više oglasa, novine mogu si priuštiti više sadržaja, što privlači više čitatelja. Ova povratna petlja je mrežni efekt, fenomen u kojem vrijednost sustava raste s brojem sudionika.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Digitalne platforme nasljeđuju ovu logiku ali je radikaliziraju. Facebook posreduje između korisnika koji konzumiraju sadržaj, korisnika koji proizvode sadržaj, oglašivača koji žele dosegnuti korisnike i razvijatelja aplikacija koji koriste Facebook infrastrukturu. Svaka od ovih grupa privlači druge. Svaka nova grupa povećava vrijednost cijelog sustava. Mrežni efekt je toliko jak da nadvladava obične tržišne sile, pa tržište teži monopolskoj koncentraciji. Jedna velika platforma u svojoj kategoriji obično je vrjednija od pet manjih.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Tinder je platforma. Uber je platforma. YouTube je platforma. Apple App Store je platforma. AirBnB je platforma. Booking.com je platforma. TikTok je platforma. ChatGPT je platforma. Sve oni dijele istu strukturnu logiku, čak i ako služe vrlo različite svrhe. Posreduju između strana, omogućuju njihovu interakciju, hvataju vrijednost koja proizlazi iz te interakcije i koriste mrežne efekte da bi rasli.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Za komunikologa, ova logika ima nekoliko praktičnih posljedica. Platforma koja danas dominira u kategoriji vjerojatno će dominirati i sutra, jer je teško razbiti njezin mrežni efekt. Platforma kontrolira pravila igre na svom tržištu, jer je posrednik kojeg sve strane trebaju. Platforma može u svakom trenutku promijeniti uvjete pod kojima se sudjeluje na njoj, jer ima takvu strukturalnu moć. Komunikolog koji svoju strategiju gradi na platformi, gradi je na infrastrukturi koju ne kontrolira.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## Od kronološke do algoritamske distribucije</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Najveća promjena u načinu na koji se sadržaj distribuira na platformama dogodila se između 2010. i 2018. godine. To je prijelaz iz kronološke u algoritamsku distribuciju.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Kronološki feed prikazivao je sadržaj redoslijedom kojim je objavljen. Najnovije na vrhu, ono ranije ispod. Ovaj model imao je jednu temeljnu prednost. Bio je predvidljiv. Komunikolog koji objavljuje u određeno vrijeme znao je kada će ga njegova publika vidjeti. Imao je i jednu temeljnu manu, koja se s rastom platformi pretvorila u krizu. Što je sadržaja više, to je teže pratiti sve. Korisnik s tristo prijatelja na Facebooku ne može pratiti svih tristo. Korisnik koji prati pet stotina ljudi na Twitteru ne može vidjeti sve njihove objave. Kronološki feed pretvorio se u zid teksta i slika kroz koji korisnik samo prelazi pogledom dok mu se nešto ne zaustavi pažnju.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>Algoritamski feed odgovor je na taj problem. Umjesto da prikazuje sadržaj redoslijedom objave, sustav procjenjuje za svakog korisnika koji bi mu sadržaj bio najinteresantniji i prikazuje ga prvog. Procjena se temelji na povijesti ponašanja korisnika, na ponašanju sličnih korisnika i na svojstvima samog sadržaja. Cilj sustava je maksimizirati vrijeme koje korisnik provodi na platformi, broj interakcija koje izvodi i, u konačnici, prihod od oglasa.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Facebook je prvi prešao na algoritamski feed 2009. godine, postupno. Twitter je dugo odolijevao i tek 2016. uveo opciju algoritamskog feeda. Instagram je prešao 2016. godine i izazvao značajnu pobunu kreatora. YouTube je oduvijek bio algoritamski na razini preporuke. TikTok je rođen kao algoritamski, bez ikakvog kronološkog modela. LinkedIn je prešao na hibridni algoritamski feed.</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Posljedica ovog prijelaza za komunikologa je dramatična. U kronološkom svijetu, doseg je bio funkcija broja pratitelja i vremena objave. U algoritamskom svijetu, doseg je funkcija toga koliko sustav procjenjuje da je sadržaj atraktivan, što ovisi o desetinama signala koje sustav prikuplja u stvarnom vremenu. Komunikolog koji nastavlja razmišljati u kronološkim okvirima, primjerice planirajući kalendar objava prema satnici kada je publika online, gubi puno većeg dijela slike.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kako algoritmi rangiraju sadržaj</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Algoritmi velikih platformi nisu javno dokumentirani. Njihova interna logika čuvana je poslovna tajna. Ali kombinacija znanstvenih radova zaposlenika tih kompanija, izvještaja regulatora koji su tražili pristup, dokumentima koje su zviždači pustili u javnost i empirijskih studija akademskih istraživača daje dovoljno jasnu sliku osnovnih obrazaca.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Modernu ranking arhitekturu velikih platformi opisuje se kao višeslojni cjevovod. Prvi sloj je generiranje kandidata, gdje sustav iz milijardi mogućih objava izabire nekoliko tisuća kandidata koji bi mogli biti relevantni za korisnika. Drugi sloj je rangiranje, gdje sustav procjenjuje za svakog kandidata vjerojatnost različitih ishoda, primjerice klika, lajka, komentara, dijeljenja, vremena gledanja, pritiska na slijedi. Treći sloj je miješanje i poliranje, gdje se rezultati rangiranja kombiniraju s drugim ograničenjima, primjerice da se ne prikazuju dva slična oglasa zaredom ili da feed ima različite tipove sadržaja.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Signali koje sustav koristi za rangiranje grubo se dijele na nekoliko kategorija. Signali o samom sadržaju uključuju tip (video, slika, tekst, link), duljinu, stupanj interaktivnosti, kvalitetu autora, ton, ključne riječi i kategoriju teme. Signali o autoru uključuju njegovu povijest, prosječan angažman, vrijeme objave, frekvenciju i kvalitetu prošlog sadržaja. Signali o korisniku uključuju njegovu povijest interakcija, profil interesa, vrijeme provedeno na različitim tipovima sadržaja, mrežu kontakata i obrazac konzumacije. Signali o međusobnom odnosu autora i korisnika uključuju koliko često korisnik interagira s autorom, je li ranije lajkao njegov sadržaj i koliko su slični u ponašanju s ostalim korisnicima.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>Signali se kombiniraju u model koji predviđa vjerojatnost konkretnog ishoda. Na TikToku, recimo, najvažniji signal je vrijeme gledanja, posebno udio videa koji je korisnik pogledao u odnosu na trajanje videa. Loop, dakle ponovno gledanje istog videa, posebno snažan je signal. Na Instagramu, kombinacija lajkova, komentara, spremanja i dijeljenja kalibrirana je drugačije za svaki tip feeda, gdje glavni feed teži drugim signalima nego Reels feed ili Explore stranica. Na YouTubeu, najvažniji signal je gledano vrijeme po sesiji, što znači koliko se korisnik zadržava na platformi nakon klika na video. Na LinkedInu, komentari nose više težine nego lajkovi i dijeljenja, jer signaliziraju sadržajan angažman.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>Praktične posljedice za komunikologa su sljedeće. Sadržaj koji izaziva brzi i snažan angažman u prvih nekoliko minuta nakon objave dobiva bonus i sustav ga gura prema široj publici. Sadržaj koji ne izaziva angažman u prvih nekoliko minuta tone i sustav ga zakopava. Ova logika eksplozije ili tišine dramatičnija je nego kronološki sustav, jer mali broj objava postiže ogroman doseg dok velika većina ostaje praktički nevidljiva.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Drugi praktičan uvid je da sustav optimizira ono što može mjeriti. Lajkovi, komentari, dijeljenja, vrijeme gledanja, klik. Nije optimiziran za istinu, kvalitetu, dubinu razumijevanja ili dugoročnu vrijednost. Sadržaj koji izaziva snažnu emocionalnu reakciju, posebno ljutnju, iznenađenje ili indignaciju, ima strukturalnu prednost nad sadržajem koji je miran, nijansiran i tih.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">## Glavne platforme i njihove logike</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Ne postoji jedinstvena algoritamska distribucija. Svaka velika platforma ima specifičnu publiku, specifičan tip sadržaja koji najbolje funkcionira i specifičan komunikacijski ishod koji najbolje opslužuje. Komunikolog mora ovu mapu poznavati.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Meta ekosustav uključuje Facebook, Instagram, WhatsApp i Threads. Facebook je u zadnjih nekoliko godina ostarjelo, dominantna publika je sredovječna i starija, organski doseg za organizacije pao je dramatično, oglasi su glavna distribucijska poluga. Instagram je vizualna platforma sa snažnom kreatorskom kulturom, Reels feed je preuzeo većinu organskog dosega, Stories ostaju važan kanal za izravnu komunikaciju s postojećom publikom. WhatsApp je platforma za izravnu komunikaciju i sve više za grupe i kanale, gdje organizacije mogu graditi izravan dohvat. Threads je novi pokušaj Meta da konkurira X-u, dominantno tekstualan, s rastom među kreatorima i medijima.</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>TikTok je posljednja platforma koja je nastala s drugačijom logikom od ostatka. Algoritam praktički ignorira tko koga prati i preporučuje sadržaj na temelju ponašanja korisnika i kvalitete videa. Posljedica je da nove organizacije i nepoznati autori mogu doseći stotine tisuća ljudi s prvim videom, što je na drugim platformama gotovo nemoguće. Druga posljedica je da je TikTok dominantna platforma među mlađom publikom u Hrvatskoj i u svijetu. Treća posljedica je da su trend ciklusi vrlo brzi i sadržaj koji ne reagira na trenutni trend nestaje.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>YouTube je platforma za dulji video sadržaj sa snažnom monetizacijom za kreatore. Algoritam optimizira za vrijeme gledanja i sesije, što favorizira kvalitetu, dubinu i emocionalnu povezanost. YouTube je također druga najveća tražilica na svijetu, nakon Googlea, što znači da video objavljen na YouTubeu može godinama generirati promet kroz pretragu, za razliku od kratkoročno orijentiranih feedova drugih platformi.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>X, ranije Twitter, prošao je značajne promjene od preuzimanja Elona Muska 2022. godine. Algoritam favorizira plaćene račune, kontroverzni sadržaj i objave koje generiraju brzi angažman. Doseg za neplaćene račune značajno je pao. Korisnička baza se promijenila u smjeru veće polarizacije i manje profesionalne novinarske prisutnosti. Za komunikologe, X je i dalje važan u kontekstu medija, politike i tehnologije, ali je manje pouzdan kanal za organizacijsku komunikaciju nego prije.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>LinkedIn je B2B i karijerna platforma koja je u zadnjih nekoliko godina značajno porasla. Algoritam favorizira tekstualne objave s osobnom pričom, sa srednjom dužinom (između tristo i osamsto riječi), s komentarima i raspravom. Za komunikologe koji rade za B2B organizacije ili koji grade osobni profesionalni profil, LinkedIn je strukturalno najatraktivnija platforma jer ima najvišu razinu profesionalne pažnje po jedinici objave.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>Reddit je struktura zajednica oko tematskih subreddita gdje algoritmi rangiraju unutar svake zajednice ali ne preporučuju sadržaj agresivno između zajednica. Reddit je važan kao izvor istinske rasprave, korisničke povratne informacije i ranjive autentičnosti, ali zahtijeva drugačiju komunikacijsku praksu jer korporativna komunikacija obično dobiva loš tretman.</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>BlueSky i Mastodon su decentralizirane alternative tradicionalnim platformama. BlueSky raste s migracijom korisnika koji su napustili X. Mastodon ima manju ali predanu zajednicu koju zanimaju otvoreni protokoli. Za komunikologa, ovi servisi su relevantni jer signaliziraju potencijalnu fragmentaciju tržišta i smjer prema korisnicima koji žele kontrolu nad svojim podacima.</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Pinterest, Snapchat, Twitch i Discord svaki imaju svoju nišu i komunikolog koji radi u relevantnoj kategoriji mora ih razumjeti, dok komunikolog koji se njima ne bavi može imati površan uvid bez praktične dubine.</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>Telegram, iako često klasificiran kao messaging platforma, sve više funkcionira kao platforma za distribuciju sadržaja kroz kanale. U Hrvatskoj i regionalnom kontekstu, Telegram kanali su rastući kanal koji nije još dovoljno istražen u akademskoj literaturi.</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Drugi sloj učinaka i etika algoritamske distribucije</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>Algoritamska distribucija nije samo tehnička optimizacija, ona ima drugorazredne učinke koje komunikolog mora razumjeti.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>Filter bubble i echo chamber poznati su pojmovi za pojavu da algoritmi učvršćuju ranija uvjerenja korisnika prikazujući mu uglavnom sadržaj sa sličnih stajališta. Pojava nije apsolutna jer se istraživanja razlikuju u tome koliko je efekt jak, ali postoji konsenzus da algoritamska personalizacija pojačava obrasce konzumacije koji su već prisutni.</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>Engagement maximization je ekonomski cilj velikih platformi i ima predvidljive nuspojave. Sadržaj koji izaziva ljutnju, indignaciju ili strah generira više angažmana nego sadržaj koji izaziva mir, razumijevanje ili nijansu. Posljedica je strukturalna prednost emocionalno polariziranih objava nad uravnoteženim. Empirijska istraživanja pokazala su da na X-u i Facebooku negativni i polarizirani sadržaj ima veći doseg od neutralnog. Na TikToku i Instagramu, ekstremni vizualni signali, šokantna iznenađenja i provokativni naslovi imaju strukturalnu prednost.</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Adiktivni dizajn je dimenzija o kojoj se otvoreno govori u industriji od oko 2018. godine. Beskonačno scrollanje, varijabilne nagrade, push obavijesti i autoplay su tehnike koje su izvedene iz psihologije ovisničkog ponašanja. Posljedica je da korisnici provode više vremena na platformi nego što namjeravaju, što povećava prihode platforme ali ima druge psihološke posljedice za korisnike.</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Polarizacija javnog diskursa povezuje se s algoritamskom distribucijom u znatnom dijelu literature. Iako uzročno-posljedična veza nije jednostavna, kombinacija filter bubblea, engagement maximization-a i strukturne prednosti polariziranog sadržaja stvara okruženje u kojem javna rasprava postaje teža. Komunikolog koji djeluje u javnom prostoru mora ovo razumjeti i mora odlučiti kakav će pristup zauzeti.</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>Etička odgovornost komunikologa u algoritamskom okruženju nije apstraktna. Ako platforma sustavno nagrađuje provokativni sadržaj, komunikolog koji optimizira za doseg može doći u napast da svjesno proizvodi takav sadržaj. Linija između legitimne kreativne provokacije i jeftine algoritamske manipulacije tanka je i mora se profesionalno crtati. Industrijska udruženja, etički kodeksi i regulator polako uspostavljaju standarde, ali u praksi mnogo toga ovisi o profesionalnoj prosudbi pojedinca.</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI i moderna algoritamska distribucija</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>Moderna algoritamska distribucija u 2026. godini neodvojiva je od dubokog učenja i AI sustava, i to na nekoliko razina.</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>Recommender sustavi velikih platformi temelje se na neuronskim mrežama koje uče iz milijardi interakcija. TikTokov For You feed je u akademskoj zajednici poznat kao jedan od najsofisticiranijih primjera primijenjenog dubokog učenja u širokoj upotrebi. Sustav uči vektorske reprezentacije svakog korisnika i svakog komada sadržaja u apstraktnom prostoru i preporučuje sadržaj čiji je vektor blizu korisničkog vektora. YouTube koristi sličan pristup, kao i Meta proizvodi.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>Generativni AI ulazi u algoritamsku distribuciju na drugi način. Sve više korisnika postavlja pitanja AI asistentima umjesto pretraživačima ili feedu. ChatGPT, Claude, Perplexity i Google AI Overviews preuzimaju dio prometa koji bi inače išao kroz tradicionalne kanale otkrivanja sadržaja. Za komunikologa, ovo znači da sadržaj treba biti pisan tako da ga AI sustavi mogu citirati, sažeti i preporučiti. Ovo je nova kategorija optimizacije, koju neki nazivaju AEO (Answer Engine Optimization) ili GEO (Generative Engine Optimization), kao analogija SEO-u za novu eru.</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>AI generirani sadržaj, koji se masovno proizvodi od 2023. godine, dramatično je povećao volumen sadržaja na svim platformama. Posljedica je da se signal kvalitete smanjio jer je sve teže razlikovati AI-generirani od ljudskog sadržaja. Platforme su počele uvoditi mehanizme za detekciju i obilježavanje AI sadržaja, ali implementacija varira i nije pouzdana.</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>AI agenti koji djeluju u korist korisnika ulaze na scenu polako. Anthropicov Computer Use, OpenAI Operator i drugi sustavi mogu pretraživati web umjesto korisnika, dohvaćati informacije, sažimati ih i prezentirati. Ovi sustavi mijenjaju ekonomiju pažnje. Korisnik više ne mora otvoriti web stranicu da bi dobio njezinu informaciju. Agent to može učiniti za njega. Za organizacije koje žive od web prometa, ovo je egzistencijalna promjena koja se tek odvija.</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>Algoritamska transparentnost je regulatorni odgovor na složenost AI sustava u distribuciji. EU Digital Services Act zahtijeva od velikih platformi da otkrivaju glavne parametre svojih recommender sustava i da korisnicima ponude opciju neoprofiliranog feeda. AI Act dodaje zahtjeve za rizične primjene AI-a u medijskoj distribuciji. Komunikolog ne mora biti pravnik ali mora znati da se transparentnost algoritma kreće od korporativne tajne prema regulatornoj obvezi, što mijenja dugoročni krajobraz.</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="fu">## Platformski rizici za organizacije</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>Komunikolog koji svoju strategiju gradi na platformama mora razumjeti nekoliko strukturnih rizika koji su izvan njegove kontrole.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>Promjene algoritma događaju se redovito i ponekad imaju dramatične učinke. Facebookova promjena 2018. godine, koja je smanjila vidljivost objava od organizacija u korist objava od prijatelja, dramatično je pala organski doseg za sve organizacije. Instagramova promjena 2025. godine, koja je više favorizirala Reels od statičnih objava, kažnjavala je račune koji su nastavili dominantno objavljivati statične postove. Algoritamske promjene rijetko su unaprijed objavljene i organizacije ih obično otkrivaju tek kada metrike padnu.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>Pad organskog dosega kronični je trend u zadnjih deset godina. Studije iznose različite brojke, ali konsenzus je da je prosječan organski doseg na većini velikih platformi pao između sedamdeset pet i devedeset posto u zadnjem desetljeću. Razlog je da platforme privlače sve više sadržaja, dok kapacitet pažnje korisnika ostaje konstantan, pa svaki pojedini sadržaj dobiva manje pažnje. Drugi razlog je da platforme svjesno smanjuju organski doseg kako bi prisilile organizacije na plaćeno oglašavanje.</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>Deplatforming je rizik da račun bude obrisan, suspendiran ili degradiran zbog kršenja pravila platforme. Pravila su ponekad jasna, ponekad nejasna, primjenjuju se nedosljedno i mogu se mijenjati. Organizacija koja godinama gradi profil može ga izgubiti u jednom danu. U politički i kulturno polariziranim trenucima, deplatforming može imati i ideološku komponentu jer kriteriji procjene nisu apsolutno objektivni.</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>Promjene cijene oglašavanja izvan su kontrole oglašivača. Cijena po impresiji, po kliku ili po konverziji rasla je u zadnjih deset godina značajno brže od inflacije, jer raste konkurencija među oglašivačima dok kapacitet pažnje korisnika stagnira. Organizacija koja je gradila ROI model na cijenama iz 2020. godine, danas mora pronaći nove uvjete jer su cijene značajno više.</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>Geopolitički i regulatorni rizici sve su istaknutiji. TikTok je u SAD-u pod kontinuiranim pritiskom zbog kineskog vlasništva. Meta je u EU pod kontinuiranim regulatornim postupcima. X je u zadnjih par godina suočen s različitim sankcijama u različitim zemljama. Komunikolog koji gradi strategiju na pojedinoj platformi mora računati s mogućnošću da platforma postane nedostupna ili dramatično ograničena u ključnom tržištu.</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>Iznajmljena publika je termin koji opisuje strukturalnu poziciju svakog tko gradi prisutnost na platformi. Vaši pratitelji nisu vaši. Oni su platformini, a vi imate pristup do njih dok platforma to dopušta i pod uvjetima koje platforma postavlja. Vaši mailing pretplatnici su vaši, jer email infrastruktura je otvorena, vaša lista je vaša, i ne ovisi o algoritmu jedne kompanije. Razlika između iznajmljene i vlastite publike temeljna je za dugoročnu strategiju i sljedeći tjedan ćemo se njoj posvetiti detaljno.</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hrvatski platformski krajobraz</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>Platformska situacija u Hrvatskoj ima nekoliko specifičnosti koje komunikolog mora poznavati.</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>Facebook je i dalje najveća platforma po broju korisnika, ali demografija stari brzo. Glavnina aktivne baze nalazi se u srednjoj i starijoj dobnoj skupini. Za organizacije koje ciljaju ovu demografiju, primjerice za zdravstvene usluge, financije ili lokalne usluge, Facebook ostaje važan kanal. Za organizacije koje ciljaju mlađu publiku, doseg na Facebooku je sve nedovoljan.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>Instagram je u Hrvatskoj jaka platforma među mlađom i srednjom dobnom skupinom. Reels su preuzeli većinu organskog dosega. Stories ostaju važne za izravnu komunikaciju s postojećom publikom. Hrvatske turističke organizacije koriste Instagram intenzivno, jer je vizualna platforma idealna za destinacijski marketing.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>TikTok ima rastuću bazu u Hrvatskoj, posebno među mlađim korisnicima ispod dvadeset i pet godina. Hrvatski TikTok kreatori grade publike koje nadilaze hrvatsko tržište, jer algoritam ne ograničava distribuciju geografski u jednakoj mjeri kao druge platforme. Za organizacije koje žele doseći mlađu publiku, TikTok je strukturalno najatraktivnija opcija u 2026. godini.</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>LinkedIn je u Hrvatskoj značajno porasla u zadnjih nekoliko godina, kako se profesionalna kultura digitalizira i kako sve više stručnjaka gradi osobni profesionalni brend. Za B2B organizacije, agencije i savjetnike, LinkedIn je dominantna platforma za sadržajni marketing.</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>YouTube je važan u Hrvatskoj kao i globalno, ali domaća kreatorska scena je relativno mala u usporedbi s brojem domaćih kreatora na drugim platformama. Hrvatski YouTube kanali rijetko prelaze sto tisuća pretplatnika, što su brojevi koje globalni kanali prelaze rutinski.</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>X je u Hrvatskoj manji kanal nego globalno, dominantno korišten u medijskim, političkim i tehnološkim krugovima. Za organizacije izvan tih sektora, X je rijetko isplativ kao kanal.</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>Threads i BlueSky imaju u Hrvatskoj još malu bazu, ali rastu i komunikolog koji prati trendove vrijedi ih pratiti.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>Telegram kanali su rastući fenomen u Hrvatskoj, posebno za alternativne medije, političke aktere i specifične zajednice. Telegram je manje izložen klasičnom regulatornom okviru i u tom smislu je nepredvidljivija arena.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>Hrvatski jezik je dvostruko ograničenje i dvostruka prilika. Ograničenje je da hrvatski jezik ima manju globalnu publiku od engleskog, pa je teže izgraditi velike sadržajne kanale. Prilika je da je konkurencija među hrvatskim sadržajem na hrvatskom jeziku znatno manja od globalne, pa kvalitetan sadržaj na hrvatskom u svojoj kategoriji često nailazi na manje prepreke do publike.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regulatorni okvir</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>Algoritamska distribucija sve je više predmet regulatornih intervencija EU-a, što izravno utječe na praksu komunikologa.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>Digital Services Act, koji je stupio na snagu 2024. godine, zahtijeva od velikih platformi nekoliko stvari koje izravno utječu na rad. Velike platforme moraju otkriti glavne parametre svojih recommender sustava. Moraju ponuditi korisnicima opciju feeda koji nije personaliziran. Moraju brzo ukloniti ilegalan sadržaj. Moraju biti transparentne o oglašavanju, uključujući tko plaća za koji oglas. Moraju omogućiti pristup podacima istraživačima i regulatorima.</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>AI Act, koji je u fazi postupne implementacije kroz 2025. i 2026. godinu, dodaje kategorizaciju AI sustava prema riziku i zahtijeva specifične mjere za sustave visokog rizika, što uključuje dio AI sustava koji se koriste u medijskoj i sadržajnoj distribuciji.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>Direktiva o autorskim pravima i njezina hrvatska implementacija utječu na to kako platforme tretiraju autorski zaštićen sadržaj. Komunikolog koji koristi sadržaj treće strane mora razumjeti svoje obveze, posebno kada se sadržaj distribuira kroz platforme koje imaju vlastite kompromisne aranžmane s nositeljima prava.</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>GDPR i ePrivacy okvir utječu na targeting i analitiku. Korištenje cookies, tracking pixela, custom audience funkcija na velikim platformama, sve to mora biti usklađeno s pravilima o osobnim podacima i pristanku korisnika.</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>Hrvatski regulatorni okvir uključuje Zakon o medijima, Zakon o elektroničkim medijima, kao i nadzor Agencije za zaštitu osobnih podataka. Komunikolog koji djeluje za medije i organizacije s javnom funkcijom mora imati osnovno poznavanje ovih okvira, posebno u trenucima kada se uvode izmjene u skladu s EU regulativom.</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="fu">## Trendovi koji oblikuju budućnost</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>Nekoliko trendova vrijedi pratiti jer će oblikovati platformski krajobraz u idućim godinama.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>Konvergencija na TikTok-stil arhitekturu je proces u kojem sve velike platforme postupno usvajaju logiku jakih recommender sustava i video first feeda. Instagram Reels, YouTube Shorts, Facebook Reels, LinkedIn Video, X video sve idu u istom smjeru. Posljedica je da se publike privikavaju na sličan obrazac konzumacije i da se uspješni sadržajni formati prebacuju između platformi brže nego prije.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>AI Overviews i AI search transformiraju kako korisnici otkrivaju sadržaj. Google AI Overviews, Perplexity, ChatGPT pretraga, Claude pretraga, sve to preuzima dio prometa koji bi inače išao kroz tradicionalna mjesta otkrivanja. Komunikolog koji optimizira sadržaj samo za klasični SEO i klasične feedove sve više propušta dio publike koja sadržaj otkriva kroz AI sloj.</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>Decentralizirani protokoli su tihi ali stvaran trend. ActivityPub, na kojem rade Mastodon i Threads federacija, AT Protocol koji pokreće BlueSky, RSS koji se vraća iz mrtvih, sve to ukazuje na dio korisnika koji žele kontrolu nad svojim digitalnim prisustvom. Za komunikologa, decentralizacija je i prilika i izazov, jer otvara nove distribucijske kanale ali zahtijeva i učenje novih obrazaca.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>Sadržaj generiran od AI agenata u korist korisnika dramatično mijenja odnos između publike i sadržaja. Ako agent pretražuje, sažima i prezentira sadržaj korisniku, klasična metrika klika i konzumacije gubi smisao. Industrija pokušava razviti nove metrike koje mjere koliko je sadržaj citiran, sažet i preporučen kroz agente, ali standardi nisu još uspostavljeni.</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>Sovereign social media i nacionalna alternativa fenomen je koji raste u nekim regijama. EU razmatra inicijative za europsku društvenu platformu. Brazil, Indonezija i druge zemlje povremeno izlaze s inicijativama za nacionalne platforme. Iako velika većina ovih projekata ne uspijeva, sama frekvencija pokušaja signalizira nezadovoljstvo postojećom platformskom strukturom.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>Audio i AI glas dobivaju sve veći udio. Spotifyev recommender, podcast platforme s AI generiranim sažetkom, glasovni asistenti, AI generiran zvuk u videu, sve to gradi novi sloj u kojem audio postaje važniji nego što je bio u zadnjem desetljeću.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="fu">## Na kraju ovog poglavlja</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>Platforme su preuzele ulogu glavnog distributera sadržaja u digitalnom dobu, a algoritmi su preuzeli ulogu glavnih urednika koji odlučuju što tko vidi. Komunikolog koji ne razumije ovu strukturalnu promjenu radi unutar sustava čija pravila ne poznaje, a na kraju gubi protiv onih koji ih poznaju.</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>Razumijevanje algoritamske distribucije nije ni cinično iskorištavanje sustava, ni naivno povjerenje da će se kvalitetan sadržaj sam probiti. To je realističan profesionalni stav koji prepoznaje da postoji poseban kontekst u kojem sadržaj danas živi i da je obveza komunikologa razumjeti taj kontekst dovoljno dobro da može unutar njega djelovati svjesno.</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>Ovo predavanje također je pripremilo teren za sljedeće. Cijela rasprava o platformama otvorila je pitanje koje je do sada implicitno provlačilo kroz semestar. Ako su platforme nepouzdane, ako se algoritmi mijenjaju, ako organski doseg pada, postoji li alternativa? Sljedeći tjedan govorit ćemo o vlastitoj publici i izravnim kanalima, o tome kako se gradi izravan odnos s publikom koji ne ovisi o algoritmu jedne kompanije. Email lista, newsletter, push obavijesti, RSS, vlastiti dom za sadržaj. Sve to su strategije koje komunikolog gradi paralelno s platformskom prisutnošću, kao osiguranje protiv strukturalnih rizika koje smo danas opisali.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključni zaključci</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>Platforme su digitalni posrednici koji koriste mrežne efekte za rast i kontroliraju pravila igre na svojem tržištu, što čini svaku komunikacijsku strategiju izgrađenu na platformi strukturalno ranjivom.</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>Prijelaz iz kronološke u algoritamsku distribuciju u zadnjih petnaestak godina temeljno je promijenio posao komunikologa, jer doseg više nije funkcija broja pratitelja i vremena objave nego usklađenosti sadržaja s logikom platforme.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>Algoritmi velikih platformi rangiraju sadržaj kroz kombinaciju signala o sadržaju, autoru, korisniku i njihovom međusobnom odnosu, pri čemu sustav optimizira ono što može mjeriti, a ne nužno ono što je najvažnije.</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>Svaka velika platforma ima specifičnu publiku, sadržajnu logiku i komunikacijski ishod koji najbolje opslužuje, pa komunikolog mora mapirati platforme po funkciji, a ne ih tretirati kao međusobno zamjenjive kanale.</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>Drugorazredni učinci algoritamske distribucije, uključujući filter bubblove, engagement maximization i strukturalnu prednost emocionalno polariziranog sadržaja, postavljaju etička pitanja koja komunikolog mora svjesno adresirati.</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>AI sustavi su središnji dio moderne algoritamske distribucije, od recommender sustava velikih platformi do generativnih AI asistenata koji preuzimaju dio prometa od tradicionalnih kanala otkrivanja sadržaja.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>Promjene algoritma, pad organskog dosega, deplatforming, geopolitički rizici i rast cijena oglašavanja konkretni su strukturalni rizici za organizacije koje grade strategiju isključivo na platformama.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>Hrvatski platformski krajobraz pokazuje jasnu segmentaciju po dobnim skupinama i funkcijama, gdje Facebook stari, Instagram dominira u srednjoj dobi, TikTok raste među mlađima, LinkedIn jača u B2B segmentu, a Telegram preuzima nove niše.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>EU regulatorni okvir, od Digital Services Acta preko AI Acta do GDPR-a, postupno mijenja krajobraz prema većoj transparentnosti algoritma i jačoj zaštiti korisnika, što znači da se klasična praksa optimizacije za platforme mora prilagoditi.</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>Razlika između iznajmljene publike na platformama i vlastite publike na izravnim kanalima temeljna je strukturalna razlika koja oblikuje dugoročnu komunikacijsku strategiju, što vodi izravno u temu sljedećeg predavanja.</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="fu">## Priprema za sljedeći tjedan</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>Tjedan 10 bavit će se vlastitom publikom i izravnim kanalima, dakle infrastrukturom komunikacije koja ne ovisi o algoritmima velikih platformi.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>Prije desetog predavanja napravite četiri stvari.</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>Prvo, odaberite jednu hrvatsku organizaciju ili medij koji aktivno koristi platforme i napravite mali audit njegove platformske prisutnosti. Zabilježite koje platforme koristi, koliko ima pratitelja na svakoj, koja vrsta sadržaja dominira na svakoj i procijenite gdje vidi najveći angažman. Pokušajte zaključiti koja je platforma za tu organizaciju strateški najvažnija i zašto.</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>Drugo, pratite jednu objavu na svakoj od tri različite platforme tijekom dva ili tri dana. Zabilježite početni angažman, kako se mijenja kroz vrijeme i pokušajte zaključiti što govori o algoritamskoj logici platforme. Posebno obratite pažnju na razliku između prvih nekoliko sati i dana koji slijede.</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>Treće, isprobajte AI pretraživač, primjerice Perplexity ili ChatGPT, i postavite mu tri pitanja na koja bi inače tražili odgovor kroz Google. Zabilježite koje izvore citira, koliko su odgovori cjeloviti i u kojem se smislu razlikuju od klasičnog Google rezultata. Refleksiju o ovome iskoristit ćemo u uvodu sljedećeg predavanja.</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica o sljedećem pitanju. Koliko vašeg dnevnog konzumiranja medija prolazi kroz algoritamske kanale, a koliko kroz izravne kanale poput maila, RSS-a ili izravnog posjeta web stranici? Što biste željeli promijeniti u toj raspodjeli?</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dodatno čitanje</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>Zaikom Tufekcijev rad na presjeku tehnologije, društva i platformi ponudio je niz utjecajnih analiza algoritamske distribucije. Njezin TED Talk i radovi u akademskim časopisima dostupni su besplatno i čitljivi su komunikolozima bez tehničke pozadine.</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>Charlie Warzel u svom newsletteru Galaxy Brain i u Atlanticu redovito piše o platformama, algoritmima i kreatorskoj ekonomiji. Njegove analize promjena na X-u, Instagramu i TikToku pripadaju među najinformiranije u industriji.</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>Ben Thompson na Stratechery pruža analize tržišne dinamike velikih platformi koje kombiniraju ekonomsku perspektivu s razumijevanjem proizvoda. Mnoge od njegovih analiza dostupne su besplatno i čitljive su širem komunikacijskom čitateljstvu.</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>Algorithm Watch je njemačka organizacija koja prati i kritički procjenjuje algoritamsku distribuciju u javnom interesu. Njihovi izvještaji o praksi velikih platformi u europskom kontekstu vrijedan su izvor.</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>Kevin Roose u svojoj kolumni u New York Timesu kontinuirano prati AI i platforme s perspektivom širokog komunikacijskog čitateljstva. Njegovi razgovori s ključnim akterima u industriji često otkrivaju manje vidljive aspekte rada platformi.</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>European Centre for Algorithmic Transparency objavljuje istraživanja u skladu s obavezama velikih platformi pod Digital Services Actom, što daje rijetki uvid u rad sustava koji su inače poslovne tajne.</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>Za hrvatski kontekst, izvještaji Hrvatskog novinarskog društva, MEDIJSKA studija i specijalizirane sekcije u stručnim časopisima povremeno donose lokalne analize koje nadopunjuju globalnu literaturu.</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pojmovnik</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pojam <span class="pp">|</span> Objašnjenje <span class="pp">|</span></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Platforma <span class="pp">|</span> Sustav koji posreduje između više grupa korisnika koristeći mrežne efekte <span class="pp">|</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mrežni efekt <span class="pp">|</span> Pojava u kojoj vrijednost sustava raste s brojem sudionika <span class="pp">|</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dvostrano tržište <span class="pp">|</span> Tržište u kojem platforma posreduje između dvije različite grupe korisnika <span class="pp">|</span></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kronološki feed <span class="pp">|</span> Prikaz sadržaja redoslijedom kojim je objavljen <span class="pp">|</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Algoritamski feed <span class="pp">|</span> Prikaz sadržaja redoslijedom procijenjene relevantnosti za korisnika <span class="pp">|</span></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Recommender sustav <span class="pp">|</span> AI sustav koji preporučuje sadržaj korisniku na temelju signala <span class="pp">|</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kandidat generation <span class="pp">|</span> Prvi sloj recommender cjevovoda koji izabire kandidate iz velike baze <span class="pp">|</span></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Ranking <span class="pp">|</span> Drugi sloj recommender cjevovoda koji rangira kandidate prema vjerojatnosti ishoda <span class="pp">|</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Engagement signal <span class="pp">|</span> Signal koji algoritam koristi, primjerice lajk, komentar, dijeljenje, vrijeme gledanja <span class="pp">|</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Loop <span class="pp">|</span> Ponovno gledanje istog sadržaja, snažan signal na TikToku <span class="pp">|</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> For You feed <span class="pp">|</span> TikTokov algoritamski feed koji ne ovisi o tome koga pratite <span class="pp">|</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Reels <span class="pp">|</span> Instagramov format kratkog videa s vlastitim feedom <span class="pp">|</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Shorts <span class="pp">|</span> YouTubeov format kratkog videa <span class="pp">|</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Stories <span class="pp">|</span> Format ephemeralnog sadržaja koji nestaje nakon dvadeset četiri sata <span class="pp">|</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Engagement maximization <span class="pp">|</span> Optimizacija algoritma za maksimiziranje korisničkog angažmana <span class="pp">|</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Filter bubble <span class="pp">|</span> Pojava u kojoj algoritmi učvršćuju ranija uvjerenja korisnika <span class="pp">|</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Echo chamber <span class="pp">|</span> Komunikacijski prostor u kojem se vraćaju samo usklađena stajališta <span class="pp">|</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adiktivni dizajn <span class="pp">|</span> Dizajn koji koristi tehnike iz psihologije ovisnosti za zadržavanje korisnika <span class="pp">|</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Beskonačno scrollanje <span class="pp">|</span> Sučelje koje učitava novi sadržaj automatski bez kraja <span class="pp">|</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Variable reward <span class="pp">|</span> Mehanizam varijabilne nagrade preuzet iz operativnog uvjetovanja <span class="pp">|</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Deplatforming <span class="pp">|</span> Brisanje, suspendiranje ili degradacija računa od strane platforme <span class="pp">|</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Iznajmljena publika <span class="pp">|</span> Publika kojoj imate pristup samo kroz platformu i pod njezinim uvjetima <span class="pp">|</span></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Vlastita publika <span class="pp">|</span> Publika kojoj imate izravan pristup neovisno o platformi <span class="pp">|</span></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Organski doseg <span class="pp">|</span> Broj korisnika koji vide sadržaj bez plaćene promocije <span class="pp">|</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Plaćeni doseg <span class="pp">|</span> Broj korisnika koji vide sadržaj zbog plaćenog oglasa <span class="pp">|</span></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CPM <span class="pp">|</span> Cost Per Mille, cijena po tisuću impresija oglasa <span class="pp">|</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CPC <span class="pp">|</span> Cost Per Click, cijena po kliku na oglas <span class="pp">|</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ROAS <span class="pp">|</span> Return On Ad Spend, povrat ulaganja u oglašavanje <span class="pp">|</span></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custom audience <span class="pp">|</span> Audience definirana iz vlastitih podataka, primjerice mailing liste <span class="pp">|</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Lookalike audience <span class="pp">|</span> Audience koja platforma pronalazi po sličnosti s postojećom <span class="pp">|</span></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Meta <span class="pp">|</span> Korporacija koja vlasništvom obuhvaća Facebook, Instagram, WhatsApp i Threads <span class="pp">|</span></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> TikTok <span class="pp">|</span> Platforma kratkog videa s recommender sustavom koji ne ovisi o praćenju <span class="pp">|</span></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> YouTube <span class="pp">|</span> Platforma za dulji video sadržaj s monetizacijom za kreatore <span class="pp">|</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> LinkedIn <span class="pp">|</span> Profesionalna platforma s naglaskom na B2B i karijernu komunikaciju <span class="pp">|</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> X <span class="pp">|</span> Platforma kratkih objava, ranije Twitter <span class="pp">|</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Threads <span class="pp">|</span> Meta platforma kratkih objava i konkurent X-u <span class="pp">|</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Reddit <span class="pp">|</span> Platforma struktura zajednica oko tematskih subreddita <span class="pp">|</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pinterest <span class="pp">|</span> Platforma vizualnih kolekcija s naglaskom na otkrivanje proizvoda <span class="pp">|</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Discord <span class="pp">|</span> Platforma zajednica oko tematskih servera, popularna kod gaminga i kreatora <span class="pp">|</span></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BlueSky <span class="pp">|</span> Decentralizirana alternativa X-u zasnovana na AT protokolu <span class="pp">|</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mastodon <span class="pp">|</span> Decentralizirana platforma zasnovana na ActivityPub protokolu <span class="pp">|</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Telegram <span class="pp">|</span> Platforma za poruke i kanale s rastućim udjelom u distribuciji sadržaja <span class="pp">|</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AT Protocol <span class="pp">|</span> Otvoreni protokol koji pokreće BlueSky <span class="pp">|</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ActivityPub <span class="pp">|</span> Otvoreni protokol koji pokreće Mastodon i Threads federaciju <span class="pp">|</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Embedding <span class="pp">|</span> Vektorska reprezentacija korisnika ili sadržaja u apstraktnom prostoru <span class="pp">|</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Deep learning <span class="pp">|</span> Tehnika strojnog učenja koja pokreće moderne recommender sustave <span class="pp">|</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Generativni AI <span class="pp">|</span> AI sustav koji generira novi sadržaj <span class="pp">|</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AEO <span class="pp">|</span> Answer Engine Optimization, optimizacija sadržaja za AI asistente <span class="pp">|</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GEO <span class="pp">|</span> Generative Engine Optimization, sinonim za AEO <span class="pp">|</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI Overviews <span class="pp">|</span> Googleova značajka koja generira AI sažetak iznad rezultata pretraživanja <span class="pp">|</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Perplexity <span class="pp">|</span> AI pretraživač koji daje odgovore s citatima izvora <span class="pp">|</span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Computer Use <span class="pp">|</span> Mogućnost AI sustava da kontrolira sučelje računala u korist korisnika <span class="pp">|</span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Digital Services Act <span class="pp">|</span> EU regulativa koja postavlja obveze velikih platformi <span class="pp">|</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI Act <span class="pp">|</span> EU regulativa koja kategorizira AI sustave prema riziku <span class="pp">|</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ePrivacy <span class="pp">|</span> EU regulativa koja regulira tracking i privatnost u elektroničkim komunikacijama <span class="pp">|</span></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Algoritamska transparentnost <span class="pp">|</span> Obveza otkrivanja parametara recommender sustava <span class="pp">|</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sovereign platform <span class="pp">|</span> Platforma pravno i operativno vezana za određenu jurisdikciju <span class="pp">|</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kreatorska ekonomija <span class="pp">|</span> Ekosustav u kojem pojedinci zarađuju kroz sadržaj na platformama <span class="pp">|</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Influencer <span class="pp">|</span> Pojedinac s velikom platformskom publikom koji utječe na percepcije i odluke pratitelja <span class="pp">|</span></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> UGC <span class="pp">|</span> User-Generated Content, sadržaj koji kreiraju korisnici <span class="pp">|</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Viralnost <span class="pp">|</span> Pojava brzog organskog širenja sadržaja kroz dijeljenje <span class="pp">|</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Trend cycle <span class="pp">|</span> Brzo izmjenjivanje dominantnih obrazaca sadržaja, posebno na TikToku <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
