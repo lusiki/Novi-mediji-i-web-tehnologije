@@ -1,0 +1,63 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Stvaranje za web"
+  subtitle: "Priručnik za komunikologe — razumijevanje, produkcija, distribucija i mjerenje u digitalnom dobu"
+  author: "doc. dr. sc. Luka Šikić, Hrvatsko katoličko sveučilište"
+  date: "2026"
+  date-format: "YYYY"
+  language: hr
+
+  chapters:
+    - index.qmd
+    - part: "Modul I — Razumijevanje weba"
+      chapters:
+        - ../lectures/week-01.qmd
+        - ../lectures/week-02.qmd
+        - ../lectures/week-03.qmd
+    - part: "Modul II — Produkcija sadržaja"
+      chapters:
+        - ../lectures/week-04.qmd
+        - ../lectures/week-05.qmd
+        - ../lectures/week-06.qmd
+    - part: "Modul III — Strategija, iskustvo, distribucija"
+      chapters:
+        - ../lectures/week-07.qmd
+        - ../lectures/week-08.qmd
+        - ../lectures/week-09.qmd
+        - ../lectures/week-10.qmd
+    - part: "Modul IV — AI, autentičnost, regulativa"
+      chapters:
+        - ../lectures/week-11.qmd
+        - ../lectures/week-12.qmd
+        - ../lectures/week-13.qmd
+
+format:
+  pdf:
+    documentclass: scrbook
+    classoption: [11pt, a4paper, twoside, openright]
+    papersize: a4
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - inner=2.8cm
+      - outer=2.2cm
+    lang: hr
+    babel-lang: croatian
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    number-depth: 2
+    colorlinks: true
+    linkcolor: black
+    urlcolor: blue
+    toccolor: black
+    fontsize: 11pt
+    linestretch: 1.15
+    keep-tex: false
+    pdf-engine: lualatex
+    include-in-header:
+      text: |
+        \usepackage{microtype}

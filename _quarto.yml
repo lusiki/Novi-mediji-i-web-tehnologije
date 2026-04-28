@@ -7,6 +7,7 @@ project:
     - "resources/*.qmd"
     - "projects/*.qmd"
     - "!_archive_*.qmd"
+    - "!book/**"
 
 website:
   title: "Novi mediji i web tehnologije | KOMP4-3"
@@ -73,6 +74,8 @@ website:
             href: resources/tools.qmd
           - text: "Politika korištenja AI-ja"
             href: resources/ai-policy.qmd
+      - text: "Knjiga"
+        href: knjiga.qmd
       - text: "Projekt"
         href: projects/practical-project.qmd
 

@@ -1,0 +1,45 @@
+# Predgovor {.unnumbered}
+
+Ova je knjiga nastala kao popratni materijal kolegija *Novi mediji i web tehnologije* na Hrvatskom katoličkom sveučilištu, u ljetnom semestru akademske godine 2025/2026. Tijekom semestra postupno je rasla iz tjednih predavanja u koherentan tekst kojem je cilj služiti i studentu komunikologije i profesionalcu u praksi koji želi razumjeti digitalno okruženje u kojem svakodnevno djeluje.
+
+## Zašto ova knjiga postoji
+
+Profesionalna praksa komunikologa u 2026. godini odvija se gotovo isključivo u digitalnom prostoru. Ali literatura koja prati struku obično dolazi u dvije nezadovoljavajuće verzije. S jedne strane su tehnički priručnici napisani za programere i sistemske inženjere, koji pretpostavljaju razinu tehničkog znanja koju komunikolog nema niti je obvezan imati. S druge strane su marketinški vodiči koji ostaju na površini i ne objašnjavaju kako web zapravo funkcionira, što platforme rade s vašim sadržajem ili kako AI mijenja temelje na kojima ste do sada radili.
+
+*Stvaranje za web* pokušava popuniti taj prostor. Pristupačno je napisana, na hrvatskom jeziku, ne pretpostavlja tehničko predznanje, ali ne preskače ni tehničke teme kada su one nužne za razumijevanje. Krenuli smo od pretpostavke da je komunikolog u modernom okruženju strateški akter koji mora razumjeti i alate, i platforme, i regulatorni okvir, i etička pitanja, kako bi mogao djelovati svjesno umjesto reaktivno.
+
+## Za koga je pisana
+
+Knjiga ima tri primarne publike. Studenti komunikologije i srodnih studija dobivaju strukturiran pregled domene koji ih priprema za profesionalnu praksu. Profesionalci u praksi koji već rade u digitalnoj komunikaciji dobivaju sustavan pregled koji povezuje pojedinačna iskustva u veće cjeline. Samouki čitatelji koji žele razumjeti kako web danas funkcionira, neovisno o profesionalnom kontekstu, dobivaju pristupačan ulaz u domenu koja se često čini hermetički zatvorenom.
+
+## Kako je strukturirana
+
+Knjiga je organizirana u četiri modula koji prate logičnu putanju od temelja do vrha.
+
+**Modul I — Razumijevanje weba** gradi dijagnostički temelj. Prva tri poglavlja objašnjavaju kako web funkcionira kao infrastruktura, kako se sadržaj pronalazi i rangira kroz tražilice, te kako se vrednuje i provjerava u dobu sintetičkih medija.
+
+**Modul II — Produkcija sadržaja** prelazi na alate i platforme. Sljedeća tri poglavlja vode kroz sustave za upravljanje sadržajem, no-code i low-code alate kojima komunikolog gradi operativne radne tokove, te računalstvo u oblaku i suradničke alate koji pokreću modernu organizaciju.
+
+**Modul III — Strategija, iskustvo, distribucija** je najopsežniji modul. Četiri poglavlja pokrivaju sadržajnu strategiju i pisanje za web, korisničko iskustvo i pristupačan dizajn, algoritamsku distribuciju kroz platforme, te izgradnju vlastite publike kroz izravne kanale neovisne o algoritmima.
+
+**Modul IV — AI, autentičnost, regulativa** suočava se s trima silama koje preoblikuju struku u 2025. i 2026. godini. Tri završna poglavlja razrađuju generativnu AI kao radni alat komunikologa, krizu autentičnosti sadržaja u eri sintetičkih medija, te europski regulatorni okvir koji kroz GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama i prateće okvire kodificira mnoge etičke obveze koje smo do sada poznavali.
+
+Modul V — Mjerenje i sinteza, koji obuhvaća web analitiku i hibridne metrike te završnu sintezu, planiran je za sljedeće izdanje knjige.
+
+## Kako je čitati
+
+Knjiga je pisana tako da podržava i sekvencijalno čitanje od početka do kraja, i selektivno čitanje pojedinih poglavlja kao referencu. Svako poglavlje počinje opisom ishoda učenja, zatvara se ključnim zaključcima, i sadrži pojmovnik koji čitatelju omogućuje brzi povratak na ključnu terminologiju.
+
+Pojedina poglavlja izravno se referenciraju jedna na druga, posebno unutar modula. Tjedne oznake u tekstu odnose se na sekvencu kolegija, koja prati istu logiku kao i poglavlja knjige.
+
+## Kako citirati
+
+Šikić, Luka (2026). *Stvaranje za web: priručnik za komunikologe — razumijevanje, produkcija, distribucija i mjerenje u digitalnom dobu*. Hrvatsko katoličko sveučilište, Zagreb.
+
+## Zahvala
+
+Knjiga je nastala iz dijaloga sa studentima, kolegama i praktičarima koji su tijekom godina oblikovali moje razumijevanje domene. Svako njihovo pitanje, prigovor i prijedlog ostavili su trag u tekstu koji je pred vama.
+
+\vspace{1cm}
+
+*Zagreb, svibanj 2026.*
