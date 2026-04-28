@@ -1120,6 +1120,62 @@
     "text": "Obavijesti\n\n\n\n\n\n\nImportantNajnovije\n\n\n\nStranica kolegija je aktivna. Dobrodošli u ljetni semestar. Provjerite raspored za pripremu za prvi tjedan."
   },
   {
+    "objectID": "knjiga.html",
+    "href": "knjiga.html",
+    "title": "Stvaranje za web",
+    "section": "",
+    "text": "TipPreuzmi knjigu\n\n\n\nPreuzmi PDF (Stvaranje za web)\nSlobodno za preuzimanje. Hrvatski jezik. Trinaest poglavlja, otprilike 90 000 riječi."
+  },
+  {
+    "objectID": "knjiga.html#što-je-ovaj-priručnik",
+    "href": "knjiga.html#što-je-ovaj-priručnik",
+    "title": "Stvaranje za web",
+    "section": "Što je ovaj priručnik",
+    "text": "Što je ovaj priručnik\nKnjiga koju imate pred sobom nije marketinški vodič i nije tehnički priručnik. To je pokušaj da se na jednom mjestu, pristupačnim hrvatskim jezikom, opiše digitalno okruženje u kojem komunikolog danas djeluje. Kako web zapravo funkcionira ispod površine, kako platforme oblikuju ono što vidimo, kako AI mijenja temelje profesionalnog rada i kako europska regulativa postavlja pravila pod kojima sve to postoji.\nPolazna pretpostavka je da je komunikolog u 2026. godini strateški akter, ne samo izvršitelj. Da bi mogao djelovati svjesno umjesto reaktivno, mora razumjeti alate, platforme, regulatorni okvir i etička pitanja koja prožimaju struku. Ova knjiga pokušava popuniti prostor između površnih marketinških vodiča i tehničkih priručnika koji pretpostavljaju razinu tehničkog znanja koju komunikolozi ne moraju imati.\nTekst je nastao postupno, iz tjednih predavanja kolegija Novi mediji i web tehnologije na Hrvatskom katoličkom sveučilištu. Svako poglavlje prošlo je kroz dijalog sa studentima i postupno se pretvorilo u koherentan dio veće cjeline."
+  },
+  {
+    "objectID": "knjiga.html#za-koga-je-pisan",
+    "href": "knjiga.html#za-koga-je-pisan",
+    "title": "Stvaranje za web",
+    "section": "Za koga je pisan",
+    "text": "Za koga je pisan\n\n\nStudenti komunikologije\nStrukturiran ulaz u domenu koja se na fakultetima uglavnom još ne predaje sustavno, s objašnjenjem koncepata kojima ćete biti okruženi tijekom cijele karijere.\n\n\nProfesionalci u praksi\nSustavan pregled koji povezuje pojedinačna iskustva u širi okvir, od web infrastrukture preko platformskih algoritama do regulatornih obveza.\n\n\nSamouki čitatelji\nPristupačno objašnjenje kako moderna digitalna komunikacija funkcionira, bez tehničkog žargona ali bez izbjegavanja tehničkih tema gdje su one ključne."
+  },
+  {
+    "objectID": "knjiga.html#kako-je-strukturiran",
+    "href": "knjiga.html#kako-je-strukturiran",
+    "title": "Stvaranje za web",
+    "section": "Kako je strukturiran",
+    "text": "Kako je strukturiran\nKnjiga je organizirana u četiri modula koji prate logičnu putanju od dijagnostičkih temelja preko alata i strategije do AI-a i regulative.\nModul I — Razumijevanje weba gradi temelj. Tri poglavlja objašnjavaju kako web funkcionira kao infrastruktura, kako se sadržaj pronalazi i rangira kroz tražilice, te kako se vrednuje i provjerava u dobu sintetičkih medija.\nModul II — Produkcija sadržaja prelazi na alate. Tri poglavlja vode kroz CMS sustave, no-code i low-code alate kojima komunikolog gradi operativne radne tokove, te računalstvo u oblaku koje pokreće modernu organizaciju.\nModul III — Strategija, iskustvo, distribucija je najopsežniji modul. Četiri poglavlja pokrivaju sadržajnu strategiju i pisanje za web, korisničko iskustvo i pristupačan dizajn, algoritamsku distribuciju kroz platforme, te izgradnju vlastite publike kroz izravne kanale neovisne o algoritmima.\nModul IV — AI, autentičnost, regulativa suočava se s trima silama koje preoblikuju struku. Tri poglavlja razrađuju generativnu AI kao radni alat, krizu autentičnosti i sintetičke medije, te europski regulatorni okvir kroz GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama i prateće okvire."
+  },
+  {
+    "objectID": "knjiga.html#što-je-u-njemu",
+    "href": "knjiga.html#što-je-u-njemu",
+    "title": "Stvaranje za web",
+    "section": "Što je u njemu",
+    "text": "Što je u njemu\n\n\n\nElement\nKoličina\n\n\n\n\nPoglavlja\n13\n\n\nRiječi\n~90 000\n\n\nStranica (PDF)\n~400\n\n\nPojmovnik\nu svakom poglavlju\n\n\nFormat\nPDF, hrvatski jezik\n\n\nCijena\nbesplatno"
+  },
+  {
+    "objectID": "knjiga.html#što-još-nije-u-njemu",
+    "href": "knjiga.html#što-još-nije-u-njemu",
+    "title": "Stvaranje za web",
+    "section": "Što još nije u njemu",
+    "text": "Što još nije u njemu\nIskreno: knjiga još uvijek nije potpuna. Modul V, koji obuhvaća web analitiku i hibridne metrike te završnu sintezu kolegija, planiran je za sljedeće izdanje. Ova verzija pokriva poglavlja od prvog do trinaestog tjedna kolegija. Ako pratite kolegij u stvarnom vremenu, posljednja dva tjedna stići će u dopunjenom izdanju knjige nakon završetka semestra."
+  },
+  {
+    "objectID": "knjiga.html#kako-ga-čitati",
+    "href": "knjiga.html#kako-ga-čitati",
+    "title": "Stvaranje za web",
+    "section": "Kako ga čitati",
+    "text": "Kako ga čitati\nKnjiga podržava sekvencijalno čitanje od početka do kraja kao i selektivno čitanje pojedinih poglavlja kao referencu. Svako poglavlje počinje s ishodima učenja, zatvara se ključnim zaključcima, i sadrži pojmovnik koji čitatelju omogućuje brz povratak na terminologiju. Modulu se pripadnost vidi u naslovu, pa čitatelj koji traži konkretnu temu lako može preskočiti na pravo mjesto.\n\n\n\n\n\n\nTipZa korisnike LingQ-a i drugih alata za učenje jezika\n\n\n\nPDF se može uploadati u LingQ kao izvor za učenje hrvatskog jezika. Knjiga je pisana standardnim hrvatskim na razini koja je pristupačna srednjeg do naprednog korisnika i pokriva domenu vokabulara koja inače nije lako dostupna kroz tradicionalne resurse za učenje jezika."
+  },
+  {
+    "objectID": "knjiga.html#o-autoru",
+    "href": "knjiga.html#o-autoru",
+    "title": "Stvaranje za web",
+    "section": "O autoru",
+    "text": "O autoru\ndoc. dr. sc. Luka Šikić predaje na Hrvatskom katoličkom sveučilištu kolegije iz domene digitalnih medija, web tehnologija i komunikacija. Njegov akademski rad i profesionalna praksa nalaze se na sjecištu komunikologije, podataka i digitalnih sustava.\nKontakt: luka.sikic@unicath.hr\n\n\n\n\n\n\n\nTipSpremni za čitanje?\n\n\n\nPreuzmi PDF (Stvaranje za web)\nKomentari, pitanja i primjedbe su dobrodošli. Knjiga živi i rast će s povratnom informacijom čitatelja."
+  },
+  {
     "objectID": "lectures/week-02.html",
     "href": "lectures/week-02.html",
     "title": "Kako funkcionira pretraživanje i zašto je pronalažljivost važna",
