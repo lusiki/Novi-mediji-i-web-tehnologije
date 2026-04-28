@@ -1,17 +1,373 @@
 ---
 title: "Autentičnost sadržaja i sintetički mediji"
 subtitle: "Deepfakeovi, algoritamska pristranost i profesionalna odgovornost"
-author: "doc. dr. sc. Luka Šikić"
 date: 2026-05-13
 categories: [AI, autentičnost, sintetički-mediji]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje ispituje etičke dimenzije sadržaja generiranog AI-jem, uključujući deepfakeove, sintetičke medije, pitanja atribucije i autorstva, algoritamsku pristranost i izazov dezinformacija pokretanih AI-jem.
+  Ovo predavanje otvara etičku i epistemičku stranu generativne AI revolucije. Sintetički mediji, koji uključuju deepfakeove, generirane glasove, slike i video, mijenjaju temeljne pretpostavke pod kojima publika prima informaciju. Komunikolog koji ne razumije ovu promjenu radi u krajobrazu u kojem ne može razlikovati autentičan sadržaj od sintetičkog, ne može preuzeti odgovornost za ono što distribuira i ne može pomoći publici u snalaženju. Razumijevanje sintetičkih medija, njihove tehnologije, njihovih granica i discipliniranog odnosa prema njima, postaje središnja profesionalna kompetencija u 2026. godini.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Definirati sintetičke medije i razlikovati ih od ranijih oblika manipulacije, te razumjeti zašto AI era predstavlja kategorijalnu promjenu
+2. Objasniti tehnologiju iza deepfakeova, uključujući generative adversarial networks, difuzijske modele i klonove glasa, te identificirati spektar primjena od kreativnih do zlonamjernih
+3. Identificirati izvore algoritamske pristranosti u modernim AI sustavima i procijeniti njihove posljedice za komunikacijsku praksu
+4. Opisati operativni krajobraz AI generiranih dezinformacija, uključujući astroturfing, content farme i izborne intervencije
+5. Artikulirati pitanja autorstva i atribucije u radu koji uključuje AI suradnju, te primijeniti standarde transparentnog otkrivanja
+6. Prepoznati standarde provenance i autentifikacije, uključujući C2PA, Content Credentials i kriptografske potpise, te razumjeti njihove granice
+7. Prilagoditi vještine vrednovanja i verifikacije iz Tjedna 3 izazovima koji proizlaze iz AI generiranog sadržaja
+8. Smjestiti profesionalnu odgovornost komunikologa u kontekst sintetičkih medija, s posebnim osvrtom na hrvatski medijski i kulturni krajobraz
 
-*Bit će dodano.*
+
+## Zašto komunikolog mora razumjeti autentičnost u eri sintetičkih medija
+
+Zamislite petak popodne u uredu hrvatske komunikacijske agencije. Pojavljuje se video u kojem se vidi i čuje izvršni direktor klijenta, jedne od najvećih domaćih maloprodajnih lanaca, kako u privatnom razgovoru izgovara komentare koji bi, ako su istiniti, izazvali ozbiljan reputacijski incident. Video se već širi kroz domaće Telegram kanale i privatne WhatsApp grupe. Niz medija već je tražio izjavu klijenta, koja se očekuje do kraja dana. Vi kao komunikolog tog klijenta morate u sljedećih nekoliko sati donijeti niz odluka koje će dramatično utjecati i na klijenta i na vlastitu profesionalnu reputaciju.
+
+Pitanja koja morate odgovoriti su sljedeća. Je li video stvaran? Ako jest, kakva strategija reakcije? Ako nije, kako to dokazati u roku koji vam mediji daju? Je li glas uvjerljiv jer je stvaran ili jer je AI klon? Je li lice doista pripadalo direktoru ili je sintetski generirano i pažljivo lipsync-ano u kadru? Kako objasniti razliku publici koja ne razumije tehnologiju? I što ako se ispostavi da je video djelomično stvaran a djelomično sintetski, što je sve češći obrazac u modernoj manipulaciji?
+
+Prije pet godina ova pitanja gotovo nisu postojala. Manipulirani video bio je tehnički zahtjevan, skup, obično prepoznatljivo lažan i rijetko izveden tako da uvjeri profesionalnu publiku. U 2026. godini, scenarij koji sam upravo opisao realan je, fizički izvediv s alatima dostupnim svakome, i događa se s rastućom frekvencijom u medijskom prostoru.
+
+Prošli tjedan smo razradili AI literacy komunikologa, dakle mentalni model jezičnih modela, prompting, agente i evaluacijsku disciplinu. Razgovor smo zatvorili napomenom da AI sada može proizvesti uvjerljiv tekst, sliku, video i glas koji izgledaju i zvuče kao ljudski. Ovo predavanje govori o posljedicama te promjene. Što se mijenja u kontekstu autentičnosti? Što ostaje od profesionalne odgovornosti komunikologa? Kako disciplinirano djelovati u krajobrazu u kojem temeljne pretpostavke o tome što vidimo i čujemo više nisu sigurne?
+
+
+## Što je sintetički medij i zašto je problem drugačiji
+
+Sintetički medij općenita je kategorija koja pokriva sav sadržaj generiran ili značajno izmijenjen kroz AI sustave. Uključuje sintetički tekst, dakle ono što su modeli napisali. Uključuje sintetičku sliku, koju su generirali alati poput Midjourneyja, DALL-E, Stable Diffusiona i Adobe Fireflyja. Uključuje sintetički video, koji generiraju Sora, Veo, Runway, Kling i drugi sustavi. Uključuje sintetički glas, kojeg proizvode ElevenLabs, OpenAI Voice, Microsoft Speech i specijalizirane platforme za kloniranje. Uključuje multimodalni sadržaj, dakle kombinacije više od ovoga unutar istog djela.
+
+Pitanje koje se može razumno postaviti glasi: zašto je ovo doista nova kategorija? Manipulacija medija nije izumljena s AI-em. Photoshop postoji od 1990. godine. Video editing alati postoje desetljećima. Tijekom Hladnog rata fabricirali su se dokumenti, fotografije i snimke, a propaganda je drevna profesionalna praksa. Što čini AI eru kategorijalno drugačijom?
+
+Razlika je u kombinaciji četiri faktora koji su se istovremeno preklopili u zadnjih nekoliko godina. Prvi je brzina. Sadržaj koji je nekad zahtijevao tjedne profesionalnog rada, danas se generira u sekundama ili minutama. Drugi je razmjer. Profesionalna manipulacija medija bila je skupa, što je ograničavalo koliko se može proizvesti. AI alati omogućuju proizvodnju u industrijskim količinama. Treći je trošak. Manipulacija videa zahtijevala je specijalistički tim s licenciranim softverom. Generiranje deepfakea u 2026. godini izvedivo je s besplatnom razinom ili pretplatom od nekoliko desetaka eura mjesečno. Četvrti je vjernost. Prije pet godina deepfakeovi su gotovo uvijek bili prepoznatljivi obrazovanim oku. U 2026. godini, vrhunski deepfake može preživjeti i profesionalnu provjeru.
+
+Kombinacija brzine, razmjera, niskog troška i visoke vjernosti znači da sintetički sadržaj više nije rijetka egzotika. Postaje pozadinski šum digitalnog prostora. Količina sintetičkog sadržaja u javnoj sferi raste eksponencijalno, dok kapacitet provjere raste linearno. Posljedica nije samo da postoji više lažnog sadržaja, posljedica je da temeljna pretpostavka koju je publika imala o digitalnim medijima, naime da je ono što vidi nešto što se zaista dogodilo, više ne vrijedi.
+
+Sociolozi i medijski istraživači ovaj fenomen nazivaju liar's dividend, ili dividenda lažljivca. Kako sintetički sadržaj postaje uvjerljiviji, ljudi koji su uhvaćeni u stvarnom kompromitirajućem materijalu mogu jednostavno tvrditi da je riječ o deepfakeu i mogu se nadati da publika neće biti u stanju razlikovati. Prijašnjih godina ova obrana bila je apsurdna. Danas postaje sve uvjerljivija. Posljedica je dvostruka erozija povjerenja, jer i autentični i sintetički sadržaji pate od fundamentalne sumnje.
+
+Za komunikologa, ovo nije apstraktno pitanje. To je promjena temelja na kojem se gradi profesionalna praksa. Sve što ćemo razraditi u ostatku predavanja proizlazi iz ove temeljne pomaknutosti.
+
+
+## Deepfake kao tehnologija i kao kategorija
+
+Pojam deepfake nastao je 2017. godine kao kombinacija pojmova deep learning i fake. Označava sintetički sadržaj koji prikazuje stvarne osobe u radnjama, riječima ili kontekstima koji se nisu zaista dogodili. U užem smislu, odnosi se na video manipulaciju gdje se lice jedne osobe stavlja na tijelo druge ili gdje se sintetski generira video određene osobe iz teksta. U širem smislu, obuhvaća i kloniranje glasa i bilo koji oblik AI generirane reprezentacije osobe.
+
+Tehnologija iza deepfakeova razvila se kroz nekoliko generacija. Prva generacija koristila je generative adversarial networks, ili GAN-ove, sustave u kojima se dva neuronska modela natječu, jedan generira sintetičke slike a drugi pokušava razlikovati prave od lažnih. Ova arhitektura, koju je opisao Ian Goodfellow 2014. godine, pokrenula je cijelo područje. Druga generacija, koja dominira u 2026. godini, koristi difuzijske modele, koji uče iz ogromnih korpusa slika postupkom postupnog uvođenja i uklanjanja šuma. Difuzijski modeli daju dramatično bolju kvalitetu uz manje artefakata.
+
+Kloniranje glasa razvilo se sličnom putanjom. Rani sustavi tražili su sate snimaka da generiraju kvalitetan klon. Današnji sustavi mogu generirati uvjerljiv klon iz petnaest ili trideset sekundi originalnog glasa. ElevenLabs, kojeg smo spomenuli prošlog tjedna, vodeći je primjer. Alat dopušta da se uzorak glasa korisnika dobije, sintetizira u različitim emocionalnim registrima, kontrolira u tonu, brzini i naglasku, i koristi za generiranje dugih audio sadržaja.
+
+Spektar primjena ide od potpuno legitimnih do izrazito zlonamjernih. Na pozitivnoj strani spektra, deepfake tehnologija koristi se u zabavi za obnavljanje glasova preminulih glumaca, u dostupnosti za personalizirane glasove za ljude koji su izgubili sposobnost govora, u edukaciji za interaktivne povijesne rekonstrukcije, u medicini za personalizirane terapeutske avatare. Negativna strana spektra uključuje neautoriziranu pornografiju, koja je dominantna upotreba deepfake tehnologije u apsolutnom smislu, političke manipulacije, financijske prevare gdje se AI klon glasa koristi za varanje žrtava, korporativni špijun, ucjenjivanje i niz drugih zloupotreba.
+
+Konkretni javni slučajevi pokazuju razmjer problema. Tijekom 2024. američkih izbora, AI klon glasa Joea Bidena korišten je u robocallu koji je odvraćao birače od izlaska na izbore. U Velikoj Britaniji 2024. godine, financijski direktor multinacionalne kompanije prevarjeni je da pošalje dvadeset i pet milijuna dolara nakon video poziva s sintetičkim klonovima izvršnog direktora i drugih kolega. U Indiji su izborne kampanje 2024. masivno koristile AI klonove kandidata za personaliziranu komunikaciju s biračima u različitim jezicima. U Sloveniji je 2025. godine kruzio sintetički video premijera, što je izazvalo nekoliko sati javnog uznemirivanja prije nego što je provjeren.
+
+Deepfake detekcija je zaseban tehnički prostor i predstavlja arms race s generacijom. Alati poput Reality Defendera, Hive Moderationa, Sensityja i Deepfake Detection Challengea koriste vlastite AI sustave za otkrivanje karakteristika sintetičkog sadržaja, primjerice nedosljednosti u treptanju očiju, neprirodne refleksije, mikroartefakte koje generativni modeli ostavljaju. Ali svaki napredak u detekciji potiče napredak u generaciji koja iste artefakte uklanja. Profesionalna detekcija danas uspješna je u oko osamdeset do devedeset posto slučajeva, što je značajno bolje od slučajne pogodnosti, ali daleko od dovoljnoga za kritične primjene.
+
+Komunikolog ne mora postati stručnjak za detekciju, ali mora znati gdje su limiti, koji su alati dostupni i kada situacija zahtijeva eskalaciju prema profesionalnoj forenzici. Specijalizirane novinarske organizacije poput Bellingcata, kao i nezavisni stručnjaci poput Hany Farida sa Sveučilišta u Berkeleyju, su pravi izvori za situacije koje izlaze iz svakodnevne provjere.
+
+
+## Algoritamska pristranost i njezini izvori
+
+Sintetički sadržaj nije samo problem laži ili istinitosti. Ono što sustavi proizvode, nositelj je pristranosti koje često nisu namjerne ali su vrlo stvarne. Komunikolog koji koristi AI alate i njihovi izlazi dolaze do publike, mora razumjeti kako pristranosti ulaze u sustav i kako se ispoljavaju.
+
+Prvi izvor pristranosti je trening korpus. Modeli uče iz ogromne količine teksta, slika i medija koje su prikupljene s weba, iz knjiga, iz arhiva i iz drugih izvora. Taj korpus ne reflektira svijet u proporcijama u kojima svijet postoji. Predominantno engleski jezik, predominantno američka i zapadnoeuropska kulturna referenca, predominantno muški glas u literaturi, predominantno bjelačke slike u vizualnim arhivima, predominantno specifične estetske konvencije koje su dominirale dostupnim sadržajem. Sve to model upija i reproducira u izlazima.
+
+Drugi izvor pristranosti su preferencije ljudskih ocjenjivača koji rade na RLHF fazi treninga. Ti ljudi nisu reprezentativni uzorak svjetske populacije, nego su obično specifična kohorta, često mladi, tehnološki obrazovani, geografski koncentrirani, s vlastitim kulturnim kodom. Kada model uči što ljudski recenzenti smatraju kvalitetnim odgovorom, on uči preferencije te kohorte.
+
+Treći izvor pristranosti dolazi iz design choices kompanija koje grade modele. Što sustav smije reći, što ne smije, kako odgovara na osjetljive teme, kako rješava nejasnoće. Sve su to politike koje organizacije postavljaju i koje neminovno odražavaju njihove vrijednosti, regulatorne pritiske i komercijalne interese.
+
+Konkretne posljedice za komunikologa su brojne. Slika kreirana u Midjourneyju za pojam profesionalca u uredu češće prikazuje muškarca, češće bijelca, češće u zapadnom poslovnom dress codeu, čak i kada prompt ne traži nijednu od tih karakteristika. Tekst generiran o povijesnim temama češće reflektira anglocentričnu narativnu strukturu. Glas generiran iz teksta na hrvatskom jeziku zvuči neutralno-zagrebački, dok regionalne varijante daju lošije rezultate. Slika generirana za pojam tradicionalna obitelj reflektira određen kulturni model koji nije univerzalan.
+
+Otkrivanje pristranosti je vještina. Komunikolog koji koristi AI alate za vizualni sadržaj treba ići dalje od jednog prompta i provjeravati izlaze za pristranosti koje nisu očito vidljive. Treba aktivno tražiti raznolikost u izlazima. Treba prilagoditi prompts da eksplicitno traže prikaz publike koju organizacija doista služi.
+
+Mitigacija pristranosti djelomično je tehnički, djelomično strateški problem. Tehnički, postoje alati i prompts koji potiču raznolikiji izlaz. Strateški, organizacija mora razviti svjesni okvir što se može i što ne može delegirati AI sustavu, gdje su točke gdje ljudska procjena mora dodatno provjeriti izlaze, i kako se konzistentno prati vlastita praksa za pristranosti koje nisu odmah vidljive.
+
+Hrvatski jezični kontekst donosi posebne izazove. Trening korpusi sadrže razmjerno malo hrvatskog teksta. Kvaliteta generiranog hrvatskog je solidna na razini gramatike, ali često slaba na razini idiomatskih nijansi, regionalnih varijanti i kulturnih referenci. Generirani hrvatski sadržaj često zvuči pomalo strano čak i kad je gramatički ispravan. Komunikolog koji radi na hrvatskom mora računati s tom slabošću i ulagati dodatni napor u uređivanju.
+
+Reprezentacija u sintetičkim slikama posebno je važna. Hrvatske scene, hrvatske gradove, hrvatske ljude generativni modeli reproduciraju s manje vjernosti od američkih ili zapadnoeuropskih ekvivalenata, jednostavno zato što ima manje hrvatskog u trening korpusima. Komunikolog koji generira vizualni sadržaj za hrvatsku publiku mora računati s tom razlikom u kvaliteti i prilagoditi praksu.
+
+
+## AI generirane dezinformacije
+
+Sintetički sadržaj nije samo problem pojedinačnih incidenata. On je infrastrukturna promjena u proizvodnji dezinformacija. Operativni krajobraz dezinformacija u 2026. godini bitno je drugačiji od krajobraza u 2020. godini.
+
+Prva razlika je razmjer. Kampanja dezinformacija je nekad zahtijevala tim ljudi koji pišu sadržaj, prevode ga, prilagođavaju za različite kanale, distribuiraju i koordiniraju. Danas, mali tim s pristupom frontijernim AI alatima može proizvesti istu količinu sadržaja u djeliću vremena. Empirijska istraživanja istraživačkih centara poput Stanfordovog Internet Observatory dokumentirala su ovo povećanje produktivnosti dezinformacijskih operacija u redu veličine od deset do sto puta.
+
+Druga razlika je personalizacija. Klasična dezinformacijska kampanja proizvodila je generičke poruke koje su svi primali. Moderna kampanja, podržana AI alatima, može za svakog ciljanog korisnika kreirati poruku kalibriranu za njegove specifične interese, zabrinutosti i jezik. Multilingualna distribucija postaje trivijalna jer AI prevodi i prilagođava trenutno. Mogućnost da se poruke prilagode demografskoj skupini, regiji ili pojedincu, bila je nekad prerogativ velikih oglašivačkih kompanija. Sada je dostupna i organizacijama čiji su ciljevi destruktivni.
+
+Treća razlika je multimodalnost. Klasična dezinformacija dominantno je bila tekstualna ili statična slika. Moderna dezinformacija kombinira sintetičku sliku, sintetički glas, sintetički video i sintetički tekst u koherentnu produkciju koja na različitim platformama izgleda profesionalno i organski. Operativna jedinica više nije pojedinačni post nego cjelovita kampanja s konzistentnim narativom kroz forme.
+
+Astroturfing, praksa simuliranja organskog javnog mišljenja, postao je radikalno lakši. AI agenti mogu kreirati i upravljati tisućama profila istovremeno, generirati objave koje izgledaju ljudski, sudjelovati u raspravama i koordinirati narative. Empirijska istraživanja platformi pokazuju da je udio AI generiranih objava u javnoj raspravi značajan i da raste, iako kvalitetne procjene su teške jer detekcija nije savršena.
+
+Content farme su novi obrazac u medijskom prostoru. Web stranice s tisućama AI generiranih članaka, optimiziranih za pretragu, koje monetiziraju kroz oglase i koje preuzimaju značajan dio organskog prometa. NewsGuard, organizacija koja prati dezinformacijske portale, dokumentirala je rast AI generiranih medijskih portala s nekoliko desetaka u 2023. godini na više od tisuću u 2025. godini, na desetinama jezika.
+
+Izborne intervencije su domena gdje su posljedice najvidljivije. Tijekom 2024. američkih, indijskih, britanskih i mnogih drugih izbora, AI generirane manipulacije bile su izravno dokumentirane i u nekim slučajevima utjecale na javnu raspravu. Hrvatska još nije imala veliki izborni ciklus pod ovim pritiscima, ali predviđanja za buduće izbore moraju računati s mogućnošću sličnih kampanja.
+
+Implikacije za komunikologa profesionalca u javnom prostoru su nekoliko. Prvo, vrijeme reakcije na manipulacije postaje sve kraće, jer se manipulacije šire brže. Drugo, kapacitet provjere postaje uže grlo, jer kampanje proizvode brže nego što se može provjeriti. Treće, organizacije čiji direktori, brendovi ili proizvodi mogu biti meta moraju imati pripremljene protokole za reakciju, jer se ne može improvizirati u trenutku krize.
+
+
+## Pitanje autorstva i atribucije
+
+Tradicionalna definicija autorstva pretpostavljala je da je autor osoba koja je tekst napisala, sliku stvorila ili medij producirala. Generativni AI razbija ovu pretpostavku jer otvara širok prostor između čovjeka i sustava. Komunikolog mora razumjeti gdje su konkretne pozicije i kako se odnose prema sadržaju s različitim razinama AI sudjelovanja.
+
+Spektar AI sudjelovanja ima nekoliko prepoznatljivih razina. Na jednom kraju je tekst koji je u potpunosti generiran od AI sustava, bez ljudske intervencije osim prompta. Na drugom kraju je tekst koji je čovjek u potpunosti napisao, bez AI pomoći. Između su brojne razine. Tekst koji je AI generirao a čovjek lagano uredio. Tekst koji je čovjek napisao a AI dotjerao. Tekst koji je iz dijaloga AI i čovjeka nastao kroz iteracije. Tekst gdje je AI generirao prijedloge i izvore, a čovjek odabrao i sastavio.
+
+Pravna pozicija je još uvijek u stanju formiranja. U Sjedinjenim Američkim Državama, US Copyright Office odredio je da AI generirani sadržaj sam po sebi nije podložan autorsko-pravnoj zaštiti, ali je ljudska kreativna kontribucija u djelu koje sadrži i AI elemente, zaštićena. EU pristup je sličan u principu, ali se pojedini detalji razlikuju među državama članicama. Sudovi širom svijeta tek razrađuju što kvalifikira ljudsku kreativnu kontribuciju.
+
+Etička pozicija ide preko pravne. Pitanje nije samo što je zaštićeno autorskim pravom nego što je transparentno prema čitateljima i klijentima. Profesionalna novinarstva širom svijeta razvijaju standarde otkrivanja. New York Times razvio je smjernice koje zahtijevaju otkrivanje kada je AI sudjelovao u generiranju sadržaja, posebno ako je sudjelovao u istraživanju ili pisanju. Reuters i Associated Press imaju svoje varijante. Croatian Press Agency Hrvatske novinske agencije postupno razvija slične smjernice.
+
+Akademski kontekst razvija svoje norme. Većina vodećih sveučilišta i istraživačkih časopisa u 2026. godini zahtijeva eksplicitno otkrivanje AI alata korištenih u radu, što obično uključuje konkretni alat, koja je faza rada bila AI podržana, i tko je preuzeo finalnu odgovornost.
+
+Oglašavanje i PR domena imaju manje formalne standarde, ali industrijska udruženja poput International Public Relations Association i Public Relations Society of America postupno razvijaju kodove. Hrvatsko stručno udruženje komunikatora i drugi domaći forumi sudjeluju u sličnim raspravama.
+
+Praktične preporuke za komunikologa u 2026. godini:
+
+Otkriti kada se AI značajno koristio u stvaranju sadržaja koji ide u javnost pod imenom organizacije. Definicija značajno ovisi o kontekstu, ali generativni AI koji je napisao prvi nacrt ili producirao vizual, treba biti otkriven barem u uredničkom kontekstu, a često i u javnoj komunikaciji.
+
+Biti dosljedan u vlastitom stavu. Komunikolog koji se predstavlja kao autor mora moći obraniti svaku tvrdnju, svaki podatak i svaku formulaciju. Ako AI je proizvodio dio koji ne razumijete dovoljno da branite, taj dio ne ide u javnost pod vašim imenom.
+
+Ne predstavljati AI generirane intervjue, citate ili svjedočanstva kao stvarne. Ovo je jasna granica koja se ne smije prelaziti, čak i u kreativnom kontekstu.
+
+Razlikovati AI kao alat od AI kao autora. Korištenje AI za pretragu, sažimanje, prijevod ili generiranje varijanti ne čini AI autorom. Ali ako je AI proizvodio finalni tekst koji je objavljen u biti bez ljudske intervencije, profesionalna iskrenost zahtijeva da se to otkriva.
+
+
+## Provenience i autentičnost
+
+Industrija je u zadnjih nekoliko godina ulagala u tehničke standarde za autentifikaciju sadržaja. Standardi nisu savršeni, ali predstavljaju strukturni pokušaj da se izgradi infrastruktura na kojoj komunikolog i publika mogu razlikovati autentično od sintetičkog.
+
+C2PA, Coalition for Content Provenance and Authenticity, najznačajnija je inicijativa u ovom prostoru. Pokrenuli su je Adobe, Microsoft, BBC, New York Times i drugi veliki igrači. Standard definira način na koji se sadržaju može priložiti kriptografski potpisan zapis o njegovom porijeklu, povijesti uređivanja i autentifikaciji. C2PA zapis sadrži informacije o tome tko je sadržaj kreirao, čime, kada, kako je modificiran i kako verificirati taj zapis.
+
+Adobe Content Credentials je Adobe implementacija C2PA standarda, koja je integrirana u Photoshop, Illustrator, Premiere i druge alate. Kada korisnik kreira ili uređuje sadržaj u Adobe alatu s uključenim Content Credentials, dobiva kriptografski zapis koji prati svaki korak. Ovaj zapis može se objaviti na web stranici contentcredentials.org gdje korisnik može provjeriti porijeklo svake slike koja ima oznaku CR.
+
+SynthID je Google DeepMind tehnologija za vodeni žig sadržaja generiranog Googleovim modelima. Ugrađuje neprimjetan signal u sliku, audio ili tekst koji potvrđuje da je sadržaj AI generiran. Slično tehnologije razvijaju i druge kompanije.
+
+OpenAI watermarking i Anthropic pristup su dva paralelna napora velikih AI kompanija da implementiraju vodene žigove na svojim izlazima. Tehnička izvedba se razlikuje, ali princip je isti. Ugraditi neprimjetan signal koji potvrđuje sintetičko porijeklo.
+
+Hardware razina je sve važnija. Sony, Nikon, Canon i Leica integriraju C2PA u svoje profesionalne kamere, pa fotografija dobiva kriptografski potpis u trenutku okidanja. Profesionalni fotonovinari sve više rade s ovim sustavima jer omogućuju demonstrabilno autentičan sadržaj. Ovaj smjer postupno ulazi u potrošačke uređaje.
+
+Granice ovih sustava važno je razumjeti i moraju se otvoreno priznati. Kriptografski potpis lako se uklanja jednostavnim editiranjem ili screenshotom. C2PA zapis nije univerzalno prihvaćen i mnoge platforme ga ne prikazuju. Vodeni žigovi nisu savršeno robusni i mogu se ukloniti. Snimka koja nije ima C2PA zapis ne znači automatski da je lažna, samo da nije prošla kroz sustav koji generira zapis.
+
+Unatoč ovim granicama, komunikolog ima razloga ulagati u poznavanje i korištenje ovih standarda. Profesionalna fotografija s Content Credentials postaje sve više očekivana u medijskom kontekstu. Organizacije koje produciraju sintetički sadržaj odgovorno trebaju koristiti vodene žigove i transparentno otkrivati. Verifikacijski radni tokovi sve više uključuju provjeru C2PA zapisa kao jedan od slojeva. U srednjem roku, sadržaj koji ne nosi nikakvu provenance informaciju, postupno će biti tretiran s većim oprezom od onog koji nosi.
+
+Standardi se razvijaju brže nego što se može u predavanju iscrpno opisati. Komunikolog koji prati ovu domenu vrijedi pratiti C2PA mailing listu, blog Adobe Content Credentials i objave u industrijskim publikacijama o napretku ovih sustava.
+
+
+## Verifikacija u AI eri
+
+U Tjednu 3 razradili smo principe vrednovanja informacija, uključujući metodu SIFT, CRAAP test i lateralno čitanje. Sve to ostaje relevantno, ali AI era unosi specifične izazove koji zahtijevaju proširenje vještina.
+
+Reverzna pretraga slike, klasično polazište verifikacije, postaje manje pouzdana. Slike generirane od AI-a nemaju povijest i ne pojavljuju se na drugim mjestima na webu, što reverznoj pretrazi ne daje upotrebljive rezultate. Komunikolog koji vidi sumnjivu sliku i provede reverznu pretragu, treba razumjeti da odsustvo rezultata danas znači više nego što je značilo prije pet godina. To može značiti da je slika autentična i nova, ali može značiti i da je sintetski generirana.
+
+Specijalizirani alati za detekciju sintetičkog sadržaja postaju važniji u verifikacijskom radnom toku. Hive Moderation, Reality Defender, Sensity, Optic Polygraph i slični servisi nude API-je i web sučelja za provjeru sumnjivih medija. Profesionalni novinari koriste kombinaciju ovih alata jer nijedan nije pouzdan u izolaciji. Vrijednost je u konsenzusu više sustava.
+
+InVID i WeVerify su otvorene platforme koje EU sufinancira, posebno orijentirane na novinare. Nude alate za fragmentiranje videa u slike, reverznu pretragu, analizu metapodataka i provjeru kontekstualnih informacija. Mnogi domaći fact checkeri koriste ove alate.
+
+Voice forensics specijalizirana je domena koja je tek nedavno postala pristupačna. Pindrop, Resemble Detect i drugi alati pokušavaju razlikovati klonirane glasove od stvarnih. Profesionalni medijski timovi sve više dodaju ovu provjeru u radni tok kada rade s audio materijalima koji su od kritične važnosti.
+
+Lateralno čitanje, kojeg smo opisali u Tjednu 3, dobiva novu razinu važnosti. Kada konkretan medij ne može potvrditi autentičnost, kontekstualna provjera kroz druge izvore, druge medije, akademske izvore i službene izjave, postaje središnja praksa. Čak i kada video ili sliku ne možete tehnički verificirati, možete provjeriti je li okolni narativ koji ga okružuje konzistentan, je li navodni izvor doista postojao, i je li dokumentaria preusmjerena ispravno.
+
+Profesionalne novinarske organizacije i udruženja postaju sve važniji izvor verifikacijskih protokola. Bellingcat, koja je radila otvoreno-izvorne istrage konflikata u Ukrajini, Siriji i drugima, razvio je metodologije koje se objavljuju otvoreno i mogu se primjenjivati. Witness, neprofitna organizacija koja se bavi videom u kontekstu ljudskih prava, ima resurse za civilno društvo. Faktograf u Hrvatskoj radi domaću provjeru i objavljuje metodologiju koja se može pratiti.
+
+Vremenska dimenzija verifikacije je specifična u AI eri. Kvalitetna verifikacija traje. U trenutku kada video ili glas pucanj kruži, organizacija koja je objekt manipulacije nema sat ili dva za pažljivu provjeru. Profesionalni protokol mora računati s ovim vremenskim pritiscima. Mnoge organizacije danas održavaju pripremljene komunikacijske scenarije za hipotetske deepfake situacije, s definiranim koracima reakcije, sloganima početne komunikacije i timom koji se aktivira u krizi.
+
+Vještina verifikacije, koju smo u Tjednu 3 predstavili kao temeljnu, u 2026. godini je dramatično vrjednija nego ranije. Komunikolog koji ovu vještinu kontinuirano održava i razvija, donosi disproporcionalnu vrijednost organizaciji u kojoj radi, jer može razlikovati autentično od sintetičkog u trenucima kada to drugima izmiče.
+
+
+## Profesionalna odgovornost komunikologa
+
+Sve ove tehnologije, sve ovi rizici i svi ovi alati svode se na pitanje profesionalne odgovornosti. Što komunikolog smije, što ne smije i kako se to artikulira u praksi.
+
+Prva linija odgovornosti je ne pojačavati neverificirani sadržaj. Komunikolog koji vidi viralni materijal koji bi koristio strategiji organizacije, ali nije provjeren, ne smije ga pojačavati. Brzi share koji se ispostavi da je deepfake, dramatično šteti reputaciji organizacije i komunikologa osobno. Discipliniran odnos znači zadržavanje strpljenja u trenucima kada se osjeća pritisak za reakciju.
+
+Druga linija odgovornosti je iskreno otkrivanje vlastite AI upotrebe. Komunikolog koji koristi AI za pisanje, dizajn ili produkciju ima profesionalnu obvezu otkrivati to gdje je primjereno. Otkrivanje ne mora biti u svakom postu na društvenoj mreži, ali treba biti u kontekstima gdje publika ima razumno očekivanje da je sadržaj ljudski stvoren ili gdje je atribucija profesionalno relevantna.
+
+Treća linija odgovornosti je odbijanje produkcije sadržaja koji prelazi etičke granice, čak i kada je tehnički moguć i klijent ga traži. Komunikolog koji radi u agenciji može biti tražen da producira deepfake video kompetitora, sintetički audio koji navodno citira protivnika ili lažne svjedočenja u kampanji. Tehnička izvedivost ne čini sadržaj prihvatljivim. Profesionalna integriteta zahtijeva moralnu i pravnu liniju koja se ne prelazi.
+
+Granica između legitimne kreativne upotrebe AI slike i obmanjujuće upotrebe nije uvijek jasna. Kreativna ilustracija članka generirana AI-em je legitimna. Sintetski portret koji se predstavlja kao fotografija stvarne osobe nije. Generirana scenografija u promotivnom videu je legitimna. Generirano svjedočanstvo nezadovoljnog korisnika kompetitorske usluge nije. Profesionalan komunikolog razvija osjećaj za ovu liniju i intervenira kada je predstoji prijeći.
+
+Kompanijska kultura i kodeksi struke postaju važniji u ovoj domeni. Organizacije koje pišu interne smjernice za AI upotrebu, koje treniraju zaposlenike i koje aktivno raspravljaju o etičkim pitanjima, bolje su pripremljene od onih koje se oslanjaju na ad hoc procjene. Hrvatsko strukovno udruženje komunikologa, sva agencijska udruženja i velike pojedinačne organizacije postupno razvijaju ovaj okvir.
+
+Konkretne situacije koje se susreću u praksi ilustriraju složenost. Klijent vas pita da generirate deepfake direktora konkurencije za internu prezentaciju, ne za javnost. Smije li se? Većina struke kaže ne, čak i bez javne distribucije. Klijent vas pita da producirate AI sliku za blog post, jer je jeftinije nego stock fotografija. Vjerojatno smije, ako ne predstavlja stvarne osobe i ako se atribuira gdje je primjereno. Klijent vas pita da generirate sintetski glas za podcast u kojem će govoriti o sebi, jer mu je glas oštećen bolešću. Vjerojatno smije, uz transparentno otkrivanje. Klijent vas pita da koristite AI klon glasa preminulog osnivača kompanije za godišnji sastanak. Etički zahtjevno, ovisi o pristanku obitelji i korporativnoj kulturi.
+
+Vrijednost otvorenog razgovora unutar struke o ovim slučajevima ne može se precijeniti. Komunikolog koji razmišlja o ovim pitanjima samo kada se konkretna situacija pojavi, manje je pripremljen od onog koji ih kontinuirano promišlja u zajednici prakse.
+
+Industrijski kodeksi razvijeni u zadnjih nekoliko godina pruženi su orijentir. International Public Relations Association objavljuje smjernice za AI upotrebu u PR-u. Public Relations Society of America razvija detaljne kodove. Chartered Institute of Public Relations u Velikoj Britaniji ima svoj okvir. Hrvatsko strukovno udruženje komunikologa i Hrvatska udruga za odnose s javnošću razvijaju domaće verzije ovih smjernica.
+
+
+## Hrvatski kontekst
+
+Stanje u Hrvatskoj u domeni sintetičkih medija ima nekoliko specifičnosti koje vrijedi prepoznati.
+
+Domaći deepfake incidenti su do sada bili relativno rijetki ali raste broj zabilježenih slučajeva. Pojedini sintetski videi domaćih političara, sintetski klonovi glasova javnih osoba i AI generirani lažni intervjui kruzili su kroz Telegram kanale i privatne grupe, ali nisu još imali masivnu medijsku rezonanciju. Ovo je vjerojatno funkcija manjeg medijskog tržišta i jezičnih ograničenja u kvaliteti hrvatskih sintetičkih izlaza, ali oba faktora se mijenjaju.
+
+Hrvatska Agencija za zaštitu osobnih podataka, AZOP, počela je rješavati prve slučajeve koji uključuju sintetički sadržaj. Slučajevi tipično uključuju neautoriziranu upotrebu lika i glasa pojedinaca u marketinškim kontekstima, sintetičke prikaze koje su koristile maliciozne strane i pitanja autorskih prava. Praksa AZOP-a još se razvija ali postavlja prve precedente.
+
+Pravni okvir u Hrvatskoj prije EU AI Acta bio je rascjepkan. Kazneni zakon, Zakon o zaštiti osobnih podataka i Zakon o autorskom pravu pokrivali su pojedinačne aspekte, ali nije postojao sustavan okvir za AI generirani sadržaj. EU AI Act, koji počinje punu implementaciju u 2026. godini, donosi konzistentniji okvir koji obvezuje označavanje AI generiranog sadržaja u nizu konteksta i postavlja sankcije za zlouporabe. O ovome ćemo detaljno govoriti sljedećeg tjedna.
+
+Faktograf, kao najveći domaći fact checking projekt, u zadnje dvije godine značajno je povećao kapacitet za provjeru sintetičkog sadržaja. Surađuje s međunarodnim fact checking mrežama poput International Fact-Checking Networka i Meta-inom Third-Party Fact-Checking programom. Njihov rad je javno dostupan i predstavlja domaći resurs za komunikologe koji žele provjeriti sumnjivi materijal.
+
+GONG, kao organizacija koja se bavi izbornim i demokratskim procesima, prati AI utjecaj na izbore i objavljuje analitičke materijale. Iako Hrvatska još nije imala izborni ciklus s velikim AI manipulacijama, GONG i druge organizacije aktivno se pripremaju.
+
+Hrvatski mediji u različitim su fazama prilagodbe. Veliki nacionalni mediji postupno razvijaju interne smjernice za AI upotrebu i provjeru sumnjivog sadržaja. Mali regionalni mediji često su ranjiviji jer nemaju resurse za sustavnu provjeru. Specijalizirani fact checking projekti popunjavaju dio te praznine.
+
+Javna percepcija AI generiranog sadržaja u Hrvatskoj je u promjeni. Istraživanja iz 2024. i 2025. godine pokazuju rastuću svijest o postojanju deepfake tehnologije, ali i nisku praktičnu sposobnost prosječnog korisnika da razlikuje sintetičko od autentičnog. Medijska pismenost u ovoj domeni je domena u kojoj komunikolozi mogu biti pozitivni akteri kroz edukaciju vlastite publike.
+
+Jezik i kultura su istovremeno barijera i ranjivost. Niža kvaliteta hrvatskih sintetičkih izlaza znači da su deepfakeovi povjerljivih hrvatskih osoba i dalje često prepoznatljivi pažljivom oku. Ali to se brzo mijenja, jer modeli postaju bolji u manje rasprostranjenim jezicima.
+
+
+## Trendovi koji oblikuju budućnost autentičnosti
+
+Nekoliko trendova oblikuje gdje ova domena ide u idućim godinama i komunikolog ih treba pratiti.
+
+Real-time deepfake je sljedeća tehnička granica. Sustavi koji u stvarnom vremenu mijenjaju lice ili glas osobe tijekom video poziva ili streama postaju sve sofisticiraniji. Microsoft je 2024. godine demonstrirao VASA-1, sustav koji iz jedne fotografije može generirati realističan video koji odgovara na audio ulaz u stvarnom vremenu. Kineski istraživači objavili su slične sustave. Posljedice su dramatične, jer video poziv kao oblik provjere identiteta postaje strukturalno nepouzdan.
+
+Agentska dezinformacija je novi obrazac. AI agenti koji autonomno operiraju kampanje, prilagođavaju sadržaj na temelju reakcije publike, interagiraju s pravim korisnicima i koordiniraju s drugim agentima, postaju izvedivi sustavi. Implikacije za demokraciju, izbore i javnu raspravu još uvijek se procjenjuju, ali smjer je zabrinjavajući.
+
+Provenance kao standardna značajka kamera je suprotan, optimistični trend. Sve više kamera, telefona i softvera za kreaciju ugrađuje C2PA podršku po defaultu. U srednjem roku, autentični sadržaj kreiran kroz provjereni hardware i softver postaje normalno označen, a sadržaj bez oznake postaje normalno tretiran s većim oprezom.
+
+Platformska verifikacija postaje razvojni prioritet. Veliki društveni mediji eksperimentiraju s integracijom C2PA, automatskim označavanjem AI generiranog sadržaja i transparentnošću o porijeklu materijala. Brzina implementacije varira, ali smjer je jasan.
+
+Regulatorni pritisak iz EU AI Acta i sličnih okvira svjetskih jurisdikcija kontinuirano će se intenzivirati. Mehanizam transparentnosti, obvezno označavanje, pravni rizici za zlouporabe, sve to mijenja kalkulaciju za organizacije koje koriste sintetski sadržaj.
+
+Edukacija publike postaje sve važnija domena. Države, civilno društvo i mediji ulažu u medijsku pismenost koja eksplicitno adresira sintetičke medije. Hrvatska je u ranoj fazi ovih napora ali postoji prostor za rast.
+
+Fundamentalno epistemičko pitanje, koje se ne može tehnički riješiti, postavlja se sve glasnije. Što znači "vidjeti se nešto dogodilo" u svijetu u kojem se svaki video može sintetski producirati? Tradicionalno smo vjerovali fotografiji i videu kao posebnim formama dokaza. Ova vjera se ne može obnoviti. Što je dovoljno? Vjerojatno kombinacija provenance lanca, više neovisnih svjedočanstava, kontekstualne dosljednosti i institucionalnog povjerenja u izvor. Sve to manje je čvrsto od stare paradigme i komunikolog djeluje u svijetu u kojem ova promjena traje.
+
+
+## Na kraju ovog poglavlja
+
+Sintetički mediji nisu više rijetka egzotika ni distopijska prijetnja koja se zagonetno nadvija nad nama. Oni su pozadina svakodnevnog komunikacijskog rada u 2026. godini. Komunikolog koji ne razumije njihovu tehnologiju, njihove granice i discipliniran odnos prema njima, radi u krajobrazu u kojem nema sredstava za snalaženje.
+
+Razlika između profesionalca i amatera u ovoj domeni dolazi iz nekoliko stvari. Iz mentalnog modela što tehnologija jest i koje su njezine granice. Iz prakse verifikacije koja je prilagođena novim izazovima. Iz transparentnosti u vlastitoj AI upotrebi. Iz spremnosti odbiti produkciju kada to traži integriteta. Iz strpljenja u trenucima kriznog pritiska kada svi reagiraju brzo. Iz kontinuiranog praćenja standarda i alata jer se sve mijenja.
+
+Ovo predavanje razrađivalo je etičku i epistemičku stranu AI revolucije. Pitanja su realna, situacije su konkretne, granice su povučene tamo gdje struka u 2026. godini misli da bi se trebale povući. Ali profesionalna obveza komunikologa nije samo etička. Ona je i pravna. Sljedeći tjedan govorit ćemo o digitalnoj regulativi i pravnom okviru, dakle o tome kako su mnoge etičke obveze koje smo danas razrađivali postupno kodificirane u zakon. GDPR, EU AI Act, Akt o digitalnim uslugama i Akt o digitalnim tržištima zajednički postavljaju pravni okvir koji od organizacija u digitalnom prostoru zahtijeva specifične standarde transparentnosti, zaštite podataka i tretmana sintetičkog sadržaja. Razumijevanje tog okvira nadograđuje na današnji etički razgovor i pruža pravni temelj za profesionalnu praksu.
+
+::: {.callout-note}
+## Ključni zaključci
+
+Sintetički mediji obuhvaćaju AI generirani tekst, sliku, video, glas i multimodalne kombinacije, a kombinacija brzine, razmjera, niskog troška i visoke vjernosti čini AI eru kategorijalnom promjenom u odnosu na ranije oblike manipulacije.
+
+Deepfake tehnologija razvila se od GAN sustava do difuzijskih modela i kloniranja glasa, sa spektrom primjena od legitimnih kreativnih do izrazito zlonamjernih, i s detekcijom koja je u permanentnom arms raceu s generacijom.
+
+Algoritamska pristranost ulazi u sustave kroz korpuse za treniranje, RLHF preferencije i design choices kompanija, a komunikolog koji koristi AI alate mora aktivno provjeravati izlaze za pristranosti koje nisu odmah vidljive, posebno u hrvatskom jezičnom i kulturnom kontekstu.
+
+AI generirane dezinformacije skaliraju brže, personaliziraju dublje i produciraju multimodalno, što dramatično mijenja operativni krajobraz dezinformacijskih operacija i traži pripremljene reakcijske protokole u organizacijama.
+
+Pitanje autorstva i atribucije nije pravno potpuno riješeno, ali profesionalni standardi konvergiraju oko transparentnog otkrivanja AI upotrebe u kontekstima gdje publika ima razumno očekivanje ljudskog autorstva ili gdje je atribucija profesionalno relevantna.
+
+C2PA, Adobe Content Credentials, SynthID i slični standardi za provenance i vodene žigove pružaju strukturni pokušaj autentifikacije sadržaja, sa stvarnim limitima ali rastućim usvajanjem u industriji i u hardveru.
+
+Verifikacija u AI eri zahtijeva proširenje vještina iz Tjedna 3, uključujući specijalizirane alate za detekciju, voice forensics, lateralno čitanje i institucionalnu suradnju, a vrijednost ove vještine raste umjesto pada.
+
+Profesionalna odgovornost komunikologa povlači jasne crte oko nepojačavanja neverificiranog sadržaja, iskrenog otkrivanja vlastite AI upotrebe i odbijanja produkcije sadržaja koji prelazi etičke granice, čak i kada je tehnički moguć.
+
+Hrvatski kontekst pokazuje rastući broj domaćih incidenata, prve AZOP slučajeve, postupni razvoj fact checking infrastrukture i specifične izazove povezane s manjim tržištem i jezikom.
+
+Trendovi obuhvaćaju real-time deepfake, agentsku dezinformaciju, provenance kao standardnu značajku kamera, platformsku verifikaciju i fundamentalno epistemičko pitanje što znači vidjeti nešto dogodilo se u eri sintetičkih medija.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 13 bavit će se digitalnom regulativom i pravnim okvirom, dakle GDPR-om, EU AI Aktom, Aktom o digitalnim uslugama i Aktom o digitalnim tržištima.
+
+Prije trinaestog predavanja napravite četiri stvari.
+
+Prvo, pronađite jedan primjer sintetičkog medijskog sadržaja koji je u zadnjih nekoliko mjeseci bio prisutan u hrvatskom medijskom prostoru. Može biti AI generirana slika, video, glas ili tekst. Analizirajte je li sadržaj jasno označen kao sintetički, gdje se pojavio, kako je tretiran u medijima i koje pitanje je otvorio. Refleksiju pripremite za petnaestak rečenica.
+
+Drugo, isprobajte barem jedan alat za verifikaciju sumnjivog sadržaja. InVID Verification Plugin za preglednik, reverzna pretraga slike kroz Google Lens ili TinEye, ili specijalizirani deepfake detektor poput Hive Moderation web sučelja. Provedite verifikaciju na konkretnom materijalu i zabilježite što ste otkrili.
+
+Treće, posjetite contentcredentials.org i istražite C2PA okvir. Provjerite koriste li alati koje koristite Content Credentials. Ako kreirate vizualni sadržaj, eksperimentirajte s uključivanjem Content Credentials u svojem radnom toku. Zabilježite što ste naučili o postojećoj infrastrukturi.
+
+Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica o sljedećem pitanju. Što biste promijenili u vlastitoj medijskoj dijeti i u vlastitoj profesionalnoj praksi ako bi se volumen sintetičkog sadržaja u javnoj sferi udvostručio kroz iduće dvije godine? Koje vještine biste željeli razviti? Koje navike biste promijenili?
+
+
+## Dodatno čitanje
+
+Bellingcat objavljuje cjelovitu metodologiju otvoreno-izvornih istraga, uključujući verifikaciju videa, geolokaciju i analizu kompromitirajućeg sadržaja. Materijali su dostupni besplatno na njihovoj web stranici i u objavljenim knjigama.
+
+C2PA tehnička specifikacija dostupna je na c2pa.org. Iako je tehnički orijentirana, njezini ključni dijelovi pristupačni su komunikologu koji želi razumjeti kako provenance lanac funkcionira. Adobe Content Credentials web stranica nudi pristupačnije objašnjenje istih koncepata.
+
+Mozilla Foundation objavljuje izvještaje o AI i budućnosti istine, koji pružaju pristupačan ali ozbiljan pregled glavnih izazova. Njihov Internet Health Report svake godine sintetizira ključne nalaze.
+
+Renee DiResta piše o dezinformacijskim operacijama, prije svega u kontekstu Stanfordovog Internet Observatory. Njezina knjiga Invisible Rulers iz 2024. godine ozbiljan je pregled domene s perspektivom koja kombinira tehničku ekspertizu i policy razmišljanje.
+
+Hany Farid sa Sveučilišta u Berkeleyju vodeći je akademski stručnjak za media forensics i deepfake detekciju. Njegovi javni radovi i intervjui pristupačni su komunikolozima i predstavljaju autoritativan izvor.
+
+Sam Gregory iz organizacije WITNESS piše o sintetičkim medijima iz perspektive ljudskih prava i civilnog društva. Njegov pristup posebno je vrijedan jer balansira realističan pregled prijetnji s razumijevanjem stvarnih ranjivosti zajednica koje rade u opasnim kontekstima.
+
+Casey Newton u Platformeru i Charlie Warzel u Galaxy Brainu redovito pišu o sintetičkim medijima iz perspektive industrije i tehnologije. Iako manje akademski, njihovi tekstovi prate tjedne razvojne novosti.
+
+Faktograf objavljuje domaće provjere i metodološke materijale koji su izravno relevantni za hrvatski kontekst. Njihovi izvještaji prate i lokalne incidente i šire trendove.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Sintetički medij | AI generirani ili značajno izmijenjeni sadržaj, uključujući tekst, sliku, video i audio |
+| Deepfake | Sintetički sadržaj koji prikazuje stvarne osobe u radnjama koje se nisu dogodile |
+| GAN | Generative Adversarial Network, arhitektura u kojoj se dva modela natječu, jedan generira a drugi razlikuje |
+| Difuzijski model | Moderna arhitektura za generiranje slika kroz postupak uvođenja i uklanjanja šuma |
+| Voice cloning | Generiranje sintetičkog glasa koji oponaša specifičnu osobu |
+| Face swap | Manipulacija u kojoj se lice jedne osobe stavlja na tijelo druge u videu |
+| Lip sync | Sinkronizacija usta s audio izlazom u sintetičkom videu |
+| Real-time deepfake | Sintetička manipulacija koja se izvodi u stvarnom vremenu, primjerice tijekom video poziva |
+| Liar's dividend | Pojava da kako sintetski sadržaj postaje uvjerljiviji, pravi optuženici mogu jednostavno tvrditi da su žrtve deepfakea |
+| Algoritamska pristranost | Pristranost AI sustava koja proizlazi iz korpusa, treniranja ili dizajn odluka |
+| Trening korpus | Skup podataka iz kojih je AI sustav naučio |
+| RLHF preferencije | Pristranost koja se prenosi kroz preferencije ljudskih ocjenjivača u RLHF fazi treninga |
+| Dezinformacija | Namjerno netočna informacija koja se širi s namjerom obmane |
+| Misinformacija | Netočna informacija koja se širi bez namjere obmane |
+| Malinformacija | Točna informacija koja se zlonamjerno koristi |
+| Astroturfing | Praksa simuliranja organskog javnog mišljenja kroz koordinirane lažne profile |
+| Content farma | Operacija koja masivno producira sadržaj, često AI generiran, za monetizaciju kroz oglase ili manipulaciju |
+| Cheap fake | Manipulacija medijem niskotehnoloških sredstava, primjerice usporavanjem ili rezanjem |
+| Shallow fake | Sinonim za cheap fake, manipulacija koja ne koristi sofisticirani AI |
+| Provenance | Lanac informacija o porijeklu sadržaja, njegovom kreatoru i povijesti uređivanja |
+| C2PA | Coalition for Content Provenance and Authenticity, industrijski standard za provenance |
+| Content Credentials | Adobe implementacija C2PA standarda integrirana u njihove alate |
+| SynthID | Google DeepMind tehnologija za vodene žigove sintetičkog sadržaja |
+| Watermark | Vodeni žig, tehnički signal ugrađen u sadržaj koji potvrđuje njegovo porijeklo |
+| Kriptografski potpis | Matematički potpis koji potvrđuje autentičnost i nepromijenjenost digitalnog dokumenta |
+| Hash | Kratka kriptografska oznaka sadržaja koja se mijenja s bilo kojom izmjenom |
+| Atribucija | Pripisivanje autorstva sadržaja konkretnoj osobi ili sustavu |
+| Autorstvo | Osoba ili entitet koji je stvorio djelo |
+| AI disclosure | Otkrivanje da je AI sudjelovao u stvaranju sadržaja |
+| Verification | Proces utvrđivanja autentičnosti sadržaja |
+| Lateralno čitanje | Praksa provjere izvora kroz druge nezavisne izvore |
+| Reverzna pretraga slike | Pretraga gdje se još na webu pojavila određena slika |
+| InVID | EU sufinanciran alat za verifikaciju videa |
+| WeVerify | Otvorena platforma za verifikaciju, povezana s InVID-om |
+| Bellingcat | Nezavisna istraživačka organizacija za otvorene istrage |
+| Witness | Neprofitna organizacija koja se bavi videom u kontekstu ljudskih prava |
+| Faktograf | Hrvatski fact checking projekt |
+| GONG | Hrvatska organizacija koja se bavi izbornim i demokratskim procesima |
+| Reality Defender | Specijalizirana platforma za detekciju sintetičkog sadržaja |
+| Hive Moderation | Servis za detekciju AI generiranog sadržaja i moderaciju |
+| Sensity | Specijalizirana platforma za otkrivanje deepfakeova |
+| Pindrop | Servis za detekciju kloniranog glasa |
+| Resemble Detect | Servis za voice forensics i detekciju sintetičkog glasa |
+| Optic Polygraph | Alat za analizu autentičnosti sadržaja |
+| Halucinacija | Pojava da AI sustav generira netočne tvrdnje s uvjerljivim tonom |
+| Prompt injection | Vektor napada u kojem se ulazom pokušava manipulirati sustavom |
+| Jailbreak | Tehnika kojom se model nagovara da prekrši smjernice |
+| Medijska pismenost | Sposobnost kritičke procjene medijskog sadržaja |
+| Stanford Internet Observatory | Akademski centar koji prati dezinformacijske operacije |
+| NewsGuard | Organizacija koja prati i ocjenjuje pouzdanost medijskih izvora |
+| International Fact-Checking Network | Globalna mreža fact checking projekata |
+| Third-Party Fact-Checking | Meta program suradnje s nezavisnim fact checkerima |
+| AZOP | Agencija za zaštitu osobnih podataka u Hrvatskoj |
+| EU AI Act | EU regulativa koja kategorizira AI sustave prema riziku |
+| IPRA | International Public Relations Association |
+| PRSA | Public Relations Society of America |
+| CIPR | Chartered Institute of Public Relations u Velikoj Britaniji |
+| Hrvatsko strukovno udruženje komunikologa | Domaće strukovno tijelo |
+| HUOJ | Hrvatska udruga za odnose s javnošću |
+| Generated avatar | Sintetski generiran lik koji se može koristiti u videu, igrama ili VR okruženjima |
+| Manipulated media | Općenita kategorija medija koji su izmijenjeni iz svog originalnog stanja |
+| Authentic content | Sadržaj koji je dokumentirano stvoren onako kako se predstavlja |

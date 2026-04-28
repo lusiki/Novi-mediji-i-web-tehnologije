@@ -1,30 +1,344 @@
 ---
 title: "Računalstvo u oblaku i suradnički rad"
 subtitle: "IaaS, PaaS, SaaS i alati koji pokreću moderne organizacije"
-author: "doc. dr. sc. Luka Šikić"
 date: 2026-04-01
 categories: [oblak, suradnja, SaaS]
 draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
+abstract: |
+  Ovo predavanje opisuje računalstvo u oblaku kao infrastrukturni sloj koji pokreće gotovo sve digitalne alate kojima se komunikolog svakodnevno koristi, od CMS-a i no-code platformi iz prethodnih tjedana do suradničkih paketa, alata za komunikaciju i AI asistenata. Razumijevanje uslužnih modela IaaS, PaaS i SaaS, kao i kulture distribuiranog rada koja je iz njih izrasla, čini razliku između komunikologa koji u modernoj organizaciji prati promjene i komunikologa koji ih oblikuje.
 ---
 
 ## Ishodi učenja
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+Nakon ovog predavanja studenti će moći
 
-## Sadržaj
+1. Objasniti što je računalstvo u oblaku i kako se razlikuje od tradicionalnih on-premise sustava
+2. Razlikovati tri uslužna modela oblaka, IaaS, PaaS i SaaS, te objasniti što svaki preuzima na sebe a što ostavlja korisniku
+3. Identificirati ključne dobavljače oblaka i njihove značajke relevantne za komunikacijski rad
+4. Procijeniti razlike između Google Workspacea i Microsoft 365 te argumentirati izbor jednog ili drugog za konkretnu organizaciju
+5. Razlikovati sinkronu i asinkronu suradnju te primjenjivati odgovarajući obrazac za određeni tip zadatka
+6. Razumjeti verzioniranje, povijest promjena i kontrolu pristupa kao temelje sigurnog suradničkog rada
+7. Procijeniti privatnost, sigurnost i GDPR usklađenost cloud servisa koji obrađuju podatke organizacije i njezinih korisnika
+8. Smjestiti AI sloj koji ulazi u suradničke alate i razumjeti kako mijenja svakodnevnu praksu komunikacijskog tima
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
 
+## Zašto komunikolog mora razumjeti računalstvo u oblaku
+
+Zamislite da vodite komunikacije u srednjoj zagrebačkoj agenciji za digitalni marketing. Tim se sastoji od dvanaest ljudi. Pet ih radi iz ureda u centru Zagreba, troje radi hibridno i dolazi u ured dva dana tjedno, dvoje su potpuno udaljeni i žive u Splitu i Osijeku, a dvoje stalno radi za klijente u inozemstvu i fizički su mjesecima u Berlinu i Lisabonu. Vaši klijenti su rasprostranjeni od malih hrvatskih SME-ova do austrijskih i njemačkih korporacija. Materijali kojima upravljate uključuju tisuće dokumenata, stotine prezentacija, mjesečne izvještaje za svakog klijenta, video sadržaj, bazu medijskih kontakata i kontinuirani tijek komunikacije s klijentima i kolegama.
+
+Vlasnik agencije vas pita treba li tim prijeći s Google Workspacea na Microsoft 365 jer veliki klijent inzistira da svi dokumenti kruže u Wordu i SharePointu. Direktor IT-a predlaže da prebacite cijeli storage na privatni cloud kod hrvatskog hostera zbog GDPR-a. Direktor prodaje pita zašto plaćamo Slack i Notion i Google Workspace istovremeno kada bi sve mogli raditi u Teamsima. Mladi kolega predlaže da uvedete Loom za asinkrone briefove i Granolu za AI sažetke sastanaka. U tom trenutku morate dati informirano mišljenje o pitanjima koja istovremeno utječu na produktivnost tima, na zadovoljstvo klijenata, na regulatornu poziciju agencije i na mjesečni trošak softvera.
+
+Ako ne razumijete što oblak jest i kako funkcionira, ne možete dati to mišljenje. Oblak nije tehnički sloj koji se vidi samo IT odjelu. Oblak je platforma na kojoj se odvija gotovo cijeli komunikacijski rad u modernoj organizaciji. Dokumenti, e-pošta, kalendari, prezentacije, slike, videi, baze klijenata, sadržajni kalendari, automatizacije iz prošlog tjedna, AI alati o kojima ćemo govoriti u nastavku semestra, sve to živi na infrastrukturi koja se zove oblak. Komunikolog koji u 2026. godini ne razumije osnovne pojmove cloud računalstva sličan je novinaru koji prije trideset godina nije razumio osnovne pojmove tiskarskog procesa.
+
+Prošli tjedan govorili smo o no-code i low-code alatima koji čine operativni sloj komunikacijskog rada. Svaki od tih alata, od Airtablea preko Makea do Custom GPT-a, hostiran je u oblaku. Ne postoji moderan no-code stack bez oblaka. Današnje predavanje korak je niže u stack i pokazuje kako infrastruktura, suradničke platforme i kultura distribuiranog rada zajedno čine okruženje unutar kojeg komunikolog djeluje.
+
+
+## Što je računalstvo u oblaku i zašto je preuzelo svijet
+
+Računalstvo u oblaku, ili cloud computing, oznaka je za isporuku računalnih resursa preko interneta. Resursi koje oblak isporučuje uključuju procesorsku snagu, prostor za pohranu, baze podataka, mrežne veze, alate za razvoj softvera i gotove aplikacije. Korisnik ne kupuje fizičke poslužitelje, ne instalira ih u vlastitu serversku sobu i ne brine o njihovom hlađenju i napajanju. Korisnik plaća pretplatu i koristi resurse koliko mu trebaju, kada mu trebaju.
+
+Da bismo razumjeli zašto je oblak preuzeo svijet u zadnjih petnaest godina, vrijedi se vratiti na svijet prije njega. Tipična srednja organizacija u 2000. godini imala je vlastitu serversku sobu, ili je iznajmljivala prostor u podatkovnom centru. U toj sobi stajali su fizički poslužitelji koje je netko morao kupiti, instalirati, konfigurirati i održavati. Kada je organizacija trebala novu funkcionalnost, primjerice e-mail sustav, netko je morao naručiti dodatni hardver, čekati da stigne, instalirati operativni sustav, postaviti softver, povezati ga s mrežom i tek onda ga staviti u upotrebu. Cijeli ovaj proces tipično je trajao tjednima ili mjesecima i zahtijevao značajnu investiciju u opremu i ljude.
+
+Oblak je promijenio ekonomiju svega ovoga. Ista organizacija danas ne kupuje hardver. Otvori račun kod cloud dobavljača poput Google Workspacea i kroz nekoliko minuta ima e-mail za cijeli tim, dijeljene dokumente, video pozive i kalendare. Trošak nije nekoliko desetaka tisuća eura unaprijed nego nekoliko eura mjesečno po korisniku. Skaliranje gore i dolje je trenutačno. Dodavanje novog zaposlenika znači jedan klik. Otpuštanje znači drugi klik. Sigurnosne kopije, redundancija, sigurnosne zakrpe, oporavak nakon kvara, sve to preuzima dobavljač.
+
+Pet karakteristika čini cloud computing tehnički različitim od tradicionalnih sustava i sve te karakteristike Američki nacionalni institut za standarde i tehnologiju, NIST, sažima u poznatoj definiciji. Prva je samoposluživanje na zahtjev, što znači da korisnik resurse aktivira sam, kroz sučelje, bez ljudske intervencije dobavljača. Druga je široki mrežni pristup, što znači da su resursi dostupni s bilo kojeg uređaja koji ima internetsku vezu. Treća je dijeljenje resursa, što znači da fizička infrastruktura služi mnogim korisnicima istovremeno, a svaki korisnik dobiva svoju logičku porciju. Četvrta je brza elastičnost, što znači da se resursi mogu povećati ili smanjiti kako se mijenja potreba. Peta je mjereni servis, što znači da se sve troši i naplaćuje na temelju stvarne upotrebe.
+
+Komunikolog ne mora pamtiti pet karakteristika napamet, ali mora razumjeti njihove posljedice. Najvažnija posljedica jest da je tehnička barijera za pokretanje praktički bilo čega srušena. Mali tim u Hrvatskoj danas može pokrenuti novi medij, novu agenciju ili novu kampanju s istim alatima koje koristi globalna korporacija. Razlika između velikih i malih organizacija sve manje je u alatima, sve više u disciplini, kulturi i strategiji.
+
+
+## IaaS, PaaS, SaaS i tri razine apstrakcije
+
+Oblak nije jedna stvar. Postoje tri uslužna modela koji opisuju koliko posla preuzima dobavljač a koliko ostaje korisniku. Komunikolog ne mora znati implementirati nijedan od ovih modela, ali mora znati ih razlikovati jer se kroz njih kreće cijela industrija digitalnih alata.
+
+Infrastructure as a Service, ili IaaS, najniža je razina apstrakcije. Dobavljač pruža virtualne poslužitelje, mrežu i prostor za pohranu, a korisnik je odgovoran za sve ostalo. Korisnik instalira operativni sustav, konfigurira sigurnost, postavlja aplikacije, brine o ažuriranjima. Klasični primjeri su Amazon EC2, Microsoft Azure Virtual Machines i Google Compute Engine. Komunikolog se s IaaS razinom rijetko susreće izravno, ali važno je razumjeti da to postoji jer su sve više razine izgrađene na njoj.
+
+Platform as a Service, ili PaaS, sljedeća je razina. Dobavljač pruža gotov razvojni okoliš na kojem developer može objaviti aplikaciju bez brige o serverima ispod njega. Heroku, Vercel, Netlify, Google App Engine i Render predstavnici su ove kategorije. Modernije platforme poput Vercela i Netlifyja, koje smo spomenuli u kontekstu modernog web stacka u prošlim tjednima, primjeri su PaaS-a koji se često koristi za web stranice komunikacijskih timova. Komunikolog ovdje sudjeluje u razgovoru kada se odlučuje gdje će biti hostirana web stranica organizacije.
+
+Software as a Service, ili SaaS, najviša je razina i ona u kojoj komunikolog provodi gotovo cijeli profesionalni dan. SaaS je gotova aplikacija koja se koristi kroz preglednik ili klijent, bez ikakvog tehničkog rada. Gmail je SaaS. Google Docs je SaaS. Slack je SaaS. Notion, Airtable, Canva, Buffer, Mailchimp, Zoom, Asana, sve su SaaS aplikacije. Korisnik plaća pretplatu i koristi proizvod. Sve ostalo, od poslužitelja preko sigurnosti do nadogradnji, briga je dobavljača.
+
+Razlika između tri razine vrijedi razumjeti kroz analogiju koja se koristi u industriji. Zamislite tri načina da večerate. Prvi način, IaaS, jest da kupite namirnice i kuhate kod kuće. Imate najveću kontrolu i najmanji trošak po obroku, ali trebate vrijeme i znanje. Drugi način, PaaS, jest da naručite dostavu, primjerice pizza set za pet osoba s pripremljenim sastojcima koji samo trebate sastaviti. Manje rada, malo veći trošak, manje slobode u izboru. Treći način, SaaS, jest da odete u restoran. Najmanje rada, najveći trošak po obroku, najmanje fleksibilnosti.
+
+Za komunikologa, praktična lekcija jest sljedeća. Što više organizacija ide prema SaaS modelu, to je manji teret tehničkog održavanja i veća brzina uvođenja novih alata. Cijena je gubitak kontrole nad detaljima i potpuno povjerenje u dobavljača. Mala organizacija gotovo uvijek bira SaaS razinu jer nema kapaciteta za niže razine. Velika organizacija često miješa razine, koristi SaaS za standardne potrebe, PaaS za vlastiti web razvoj i IaaS za posebne aplikacije gdje je potrebna potpuna kontrola.
+
+
+## Veliki dobavljači oblaka i što komunikolog treba znati o njima
+
+Tržište oblaka koncentrirano je u rukama nekoliko velikih dobavljača i komunikolog se s njima susreće gotovo svakodnevno, makar često ni ne zna da je tako.
+
+Amazon Web Services, ili AWS, najveći je cloud dobavljač na svijetu, s tržišnim udjelom od oko trećine globalnog tržišta. Većina servisa koje koristite svakodnevno hostirana je na AWS-u, od Netflixa i Spotifyja do mnogih hrvatskih medija i agencija. Komunikolog se s AWS-om susreće rijetko izravno, ali kada se susreće, najčešće je riječ o Amazon S3 servisu za pohranu medijskih datoteka ili o Amazon CloudFrontu kao CDN-u za isporuku sadržaja.
+
+Microsoft Azure drugi je po veličini i izrazito snažan u korporativnom segmentu. Velike organizacije koje već koriste Microsoft proizvode često prirodno gravitiraju prema Azureu. Microsoft 365 i Azure dijele isti račun, isti sustav identiteta i istu sigurnosnu infrastrukturu. Za komunikologe koji rade s velikim klijentima, Azure se pojavljuje češće nego AWS jer je popularan kod banaka, osiguranja, telekomunikacija i javnog sektora.
+
+Google Cloud Platform, ili GCP, treći je po veličini i izrazito snažan u domeni AI-a, podataka i developer alata. Google Workspace, koji ćemo detaljnije obraditi u sljedećoj sekciji, dio je istog ekosustava. Vertex AI, BigQuery i Looker Studio, koji smo spomenuli prošlog tjedna, GCP su servisi koje komunikolozi koriste izravno.
+
+Cloudflare, iako manji od velike trojke, izuzetno je važan jer pokriva specifičnu nišu na sjecištu CDN-a, sigurnosti i edge računalstva. Velika većina interneta prolazi kroz Cloudflareovu mrežu i rastući broj komunikacijskih timova koristi Cloudflare za hosting jednostavnih stranica, zaštitu od DDoS napada i ubrzavanje isporuke sadržaja. Cloudflare Workers, kao platforma za pisanje koda koji se izvršava na rubu mreže, dio je trenda koji se zove edge computing.
+
+Specijalizirani dobavljači poput Vercela i Netlifyja, koje smo već spomenuli, oslanjaju se na infrastrukturu velikih dobavljača i nadograđuju je razvojnim alatima i CDN-om. Komunikolozi koji rade s modernim web stranicama često se susreću s Vercelom kao platformom na kojoj njihova stranica živi.
+
+U kontekstu Europe, treba spomenuti i nekoliko europskih dobavljača koji rastu zbog regulatornih i sigurnosnih razloga. OVHcloud, Scaleway i Hetzner najpoznatiji su europski dobavljači. Za organizacije koje moraju jamčiti europsku rezidenciju podataka, ili koje žele smanjiti ovisnost o američkim dobavljačima zbog Cloud Acta i sličnih američkih zakona, ovi dobavljači postaju zanimljivi.
+
+Komunikolog ne treba znati operativne detalje nijednog od ovih dobavljača. Komunikolog treba prepoznati imena, razumjeti tržišnu poziciju i znati postaviti pitanja kada se u njegovoj organizaciji raspravlja o izboru.
+
+
+## Suradničke produkcijske platforme
+
+Najveći dio dnevnog rada komunikologa odvija se unutar dva globalno dominantna paketa, Google Workspacea i Microsoft 365. Razumijevanje razlika među njima nije samo tehničko pitanje. Ono oblikuje kulturu rada cijele organizacije.
+
+Google Workspace, ranije poznat kao G Suite, paket je SaaS aplikacija orijentiranih oko suradnje u stvarnom vremenu. Gmail za e-poštu, Google Docs za dokumente, Sheets za tablice, Slides za prezentacije, Drive za pohranu, Calendar za rasporede, Meet za videopozive, Forms za obrasce. Filozofija paketa je da je sve istovremeno dijeljeno, da se sve uređuje u pregledniku i da se kolaboracija odvija na istom dokumentu, vidljivo svima. Komunikolog koji koristi Google Workspace navikava na obrazac u kojem se brief otvara kao Google Doc, dijeli se s timom, svi simultano dodaju komentare i sugestije, a finalna verzija je samo ona zadnja u istom dokumentu. Verzioniranje je automatsko i potpuno, povijest svake izmjene je dostupna.
+
+Microsoft 365 paket je orijentiran oko Office tradicije i hibridnog rada koji kombinira desktop aplikacije s cloud uslugama. Outlook, Word, Excel, PowerPoint, Teams, OneDrive, SharePoint i Forms čine njegovu jezgru. Filozofija paketa drugačija je od Googleove. Microsoft Word ima i desktop verziju koja se može koristiti offline i web verziju koja radi u pregledniku, i one se sinkroniziraju kroz OneDrive ili SharePoint. Suradnja u stvarnom vremenu je moguća, ali Microsoftov ekosustav i dalje nosi tradicionalnu logiku verzija dokumenata, gdje se finalni dokument često prilaže e-mailu kao zaseban dokument.
+
+Praktične razlike između paketa koje komunikolog osjeti svaki dan jesu sljedeće. Suradnja u stvarnom vremenu razvijenija je u Workspaceu i većina komunikacijskih timova koji su odrasli u tom paketu doživljavaju Microsoftov pristup kao spor i fragmentiran. Integracija s desktop aplikacijama snažnija je u Microsoftu, što je važno za određene specijalizirane upotrebe poput naprednog Excela ili profesionalne pripreme dokumenata u Wordu. Korporativna sigurnost i administrativni alati zreliji su u Microsoftu i to je razlog zašto velike organizacije s razvijenim IT odjelima češće biraju Microsoft. Cijena po korisniku slična je za usporedive razine i ne treba biti dominantan kriterij. Integracija s ostatkom stacka razlikuje se. Microsoft 365 prirodno se uklapa u organizacije koje koriste i Azure, dok se Workspace prirodno uklapa u one koje koriste i ostatak Google ekosustava.
+
+Praktična realnost u hrvatskim organizacijama jest da agencije za digitalni marketing, mediji i startupi gotovo redovito koriste Google Workspace, dok korporacije, banke, telekomunikacije i javni sektor češće koriste Microsoft 365. Komunikolog koji se kreće između tih svjetova mora biti komotno upoznat s oba paketa.
+
+Slack i Microsoft Teams predstavljaju komunikacijski sloj koji se nadograđuje na produkcijske pakete. Slack je nezavisan proizvod koji se može koristiti uz Workspace ili Microsoft 365, i fokusiran je isključivo na timsku komunikaciju kroz kanale. Teams je integriran u Microsoft 365 i kombinira chat, video pozive i kolaboraciju na dokumentima u jednom proizvodu. Slack je tradicionalno popularan u tehnološkim i kreativnim timovima zbog svoje fleksibilnosti i ekosustava integracija. Teams je popularan u korporativnom svijetu zbog uključenosti u Microsoft licencu i administrativne kontrole. Discord, iako primarno popularan u zajednicama oko gaminga, ulazi u poslovni svijet gdje god je potrebna otvorena ili polu-otvorena zajednica oko brenda.
+
+
+## Sinkrono i asinkrono u distribuiranom timu
+
+Pomak prema oblaku donio je promjenu koju komunikolog osjeća svakodnevno čak i ako ne razmišlja o njoj. To je promjena u vremenskom obrascu rada.
+
+Klasični tim u uredu radio je primarno sinkrono. Sastanci, hodnik, kavica i kratki razgovori uz stol bili su dominantni načini razmjene informacija. Sve se odvijalo otprilike u isto vrijeme. Distribuirani tim koji radi kroz cloud alate ne može tako funkcionirati. Kolega u Splitu, kolegica u Berlinu i tim u Zagrebu rade u djelomično preklopljenim radnim vremenima. Sastanak na koji svi mogu doći u stvarnom vremenu skup je resurs i mora se koristiti svjesno.
+
+Asinkrona suradnja je obrazac u kojem članovi tima razmjenjuju informacije i odluke kroz pisani trag, pri čemu nije nužno da svi reagiraju u istom trenutku. Brief se piše u dokumentu, dijeli s timom, ostavlja se vrijeme za komentare, donose se odluke, sve to bez ijednog sastanka. Sinkrona suradnja je obrazac u kojem se ljudi okupljaju u istom trenutku, najčešće na video pozivu ili u uredu, i razgovaraju u stvarnom vremenu. Disciplinirana organizacija svjesno bira koji obrazac koristiti za koji tip zadatka.
+
+Pisana komunikacija pogodnija je za odluke koje zahtijevaju razmišljanje, za informacije koje moraju ostati u traguza distribuiranje znanja i za situacije gdje vremenske zone otežavaju usklađivanje. Sinkrona komunikacija pogodnija je za kreativne sesije, za razgovore koji uključuju emocionalnu nijansu, za rješavanje konflikata i za hitne odluke. Loša organizacija miješa ove obrasce nasumice. Šalje hitne poruke u Slacku za stvari koje su mogle čekati pisani brief. Saziva sastanke za stvari koje se mogu riješiti dokumentom. Šalje dokumente za stvari koje zahtijevaju razgovor.
+
+Komunikolog kao profesionalac komunikacije mora ovaj obrazac razumjeti i u svojem timu i prema klijentima. Asinkroni brief koji je pažljivo napisan, dobro strukturiran i dijeljen u Google Docu vjerojatno donosi više vrijednosti od sastanka koji o istoj temi traje pola sata bez pisanog traga. Sastanak koji je dobro pripremljen i koji ima jasan zapisnik vjerojatno donosi više od dvadeset Slack poruka koje su o istoj temi. Vještina nije u tome da se sve pretvori u sinkrono ili sve u asinkrono. Vještina je u tome da se za svaki tip odluke svjesno bira pravi obrazac.
+
+Loom, Granola, Otter, Fireflies i slični alati pomažu prevladati granicu između sinkronog i asinkronog. Loom omogućuje snimanje kratkih video poruka koje primatelj gleda kada mu odgovara, što kombinira osobnost video komunikacije s fleksibilnošću asinkrone razmjene. Granola, Otter i Fireflies snimaju i transkribiraju sastanke, čime se sinkroni razgovor pretvara u traj zapis kojim se kasnije može asinkrono pristupati. Ovi alati postaju standardni dio komunikacijskog stacka.
+
+
+## Verzioniranje, povijest i kontrola pristupa
+
+Cloud okoliš donosi novu disciplinu rada s dokumentima koja je u osnovi drugačija od tradicionalnog razmjenjivanja datoteka. Komunikolog ovo treba razumjeti jer izravno utječe na kvalitetu rada i na sigurnost organizacije.
+
+Verzioniranje u oblaku znači da svaka promjena na dokumentu ostavlja trag. Google Docs i Microsoft Word u oblaku čuvaju cjelovitu povijest izmjena, pa se uvijek može vidjeti tko je što i kada promijenio i u svakom trenutku se dokument može vratiti na bilo koju prethodnu verziju. Ovo eliminira čitavu kategoriju problema koje su prethodne generacije imale s nazivima poput dokument_v3_finalna_stvarno_finalna.docx. Više nema verzija. Postoji samo jedan dokument s cjelovitom poviješću.
+
+Kontrola pristupa znači da svaki dokument, mapa ili resurs ima jasno definirano tko ga može vidjeti, tko može komentirati, tko može uređivati i tko može upravljati pristupom drugima. Cloud platforme nude četiri ili pet razina dozvola koje treba razumjeti i pravilno postavljati. Pogrešno postavljen pristup čest je izvor sigurnosnih incidenata. Dokument s povjerljivim informacijama o klijentu koji je dijeljen s linkom dostupnim svima koji ga imaju može se tjednima ili mjesecima nesvjesno širiti dok netko ne primijeti.
+
+Najgori obrazac koji se i dalje sreće u praksi jest hibrid u kojem članovi tima rade dijelom u oblaku a dijelom kroz lokalne datoteke koje šalju mailom. Posljedica je dramatična. Verzioniranje se gubi jer netko ima jednu verziju, netko drugu, netko treću. Kontrola pristupa se gubi jer se dokument prilažen mailu može slobodno proslijediti dalje. Trag se gubi jer ne postoji jedan kanonski izvor istine. Komunikolog koji disciplinira ovaj obrazac u svojem timu i prema klijentima dobiva dramatično bolje uvjete rada. Sve živi u jednom dijeljenom prostoru, sve ima povijest, sve ima jasno definirane dozvole.
+
+Posebna kategorija unutar verzioniranja je Git, sustav koji se izvorno razvio za upravljanje izvornim kodom ali se sve više koristi za druge tipove rada. Komunikolog gotovo nikad ne radi izravno s Gitom, ali sreće ga u nekoliko situacija koje vrijedi prepoznati. Web stranice na Vercelu i Netlifyju često se objavljuju kroz GitHub repozitorije, što znači da svaka promjena na sadržaju prolazi kroz isti kontrolirani proces kao i promjena na kodu. Quarto stranice, poput one na kojoj sada čitate ovaj tekst, žive u Git repozitorijima i imaju cjelovitu povijest svake izmjene. Razumijevanje kako Git radi na osnovnoj razini, dakle što su commit, branch i pull request, postaje korisno za komunikologe koji rade s tehničkim timovima ili koji vode projekte sa značajnim sadržajnim repozitorijima.
+
+
+## AI sloj iznad suradničkih alata
+
+Posljednje dvije godine fundamentalno su promijenile što suradnički alati u oblaku mogu raditi. AI je ušao u svaki paket i to mijenja svakodnevni rad komunikologa.
+
+Google Gemini integriran je u cijeli Workspace. U Docsu pomaže pisati i rezimirati. U Sheetsu pomaže pisati formule i analizirati podatke. U Gmailu pomaže pisati i sažimati nitke razgovora. U Meetu generira sažetke sastanaka. U Slidesima generira početne prezentacije iz prompta. Komunikolog koji je do nedavno koristio Workspace kao pasivan paket alata, sada ima u svakoj aplikaciji asistenta kojem može delegirati prvi nacrt teksta, sažetak razgovora ili analizu tablice.
+
+Microsoft Copilot identičan je sloj kroz Microsoft 365. U Wordu pomaže pisati, u Excelu analizirati, u Outlooku odgovarati, u Teamsima sažimati sastanke i u PowerPointu generirati prezentacije. Microsoftov Copilot zaseban je proizvod s vlastitom pretplatom i njegova vrijednost ovisi o tome koliko se intenzivno koristi paket.
+
+Notion AI, koji smo spomenuli prošlog tjedna u kontekstu no-code stacka, ulazi u Notion bazu i dokumenta na sličan način. Slack AI sažima Slack kanale, što je posebno korisno u timovima s velikim brojem kanala u kojima nije moguće pratiti sve.
+
+Granola, Otter, Fireflies i njihovi konkurenti specijalizirani su AI alati koji se nadograđuju na video pozive iz Meeta, Zooma ili Teamsa. Snimaju razgovor, transkribiraju ga, identificiraju zaključke i akcijske točke i šalju kratki sažetak. Komunikacijski timovi koji vode dnevno više klijentskih sastanaka u ovim alatima nalaze stvarnu vrijednost.
+
+Loom AI radi sličnu transformaciju za asinkrone video poruke, generira transkripte, dijeli ih u poglavlja i predlaže akcije.
+
+Implikacija za komunikologa jest sljedeća. Veliki dio rada koji je do nedavno tražio da netko sjedne i napiše prvi nacrt, sažetak ili izvještaj, sada se može delegirati AI sloju koji u sekundi ili dvije proizvede polaznu točku. Vrijednost koju komunikolog donosi pomiče se prema procjeni je li polazna točka kvalitetna, kako je doraditi i je li uopće trebalo nešto napisati ili odluku donijeti drugačije. Ova promjena nije više teoretska. Ona se odvija u svakom suradničkom paketu u 2026. godini.
+
+Postoji i tamna strana koju vrijedi spomenuti. AI sloj u suradničkim alatima vidi sve što je u tim alatima. Sažetak sastanka ne razumije što je povjerljivo. Asistent u dokumentu ne zna razlikovati javnu informaciju od interne procjene koja nikada ne bi trebala napustiti tim. Disciplina u radu s AI slojem zahtijeva svjesno razmišljanje o tome što se dijeli s asistentom i što njegovi izlazi smiju i ne smiju sadržavati. Ovu disciplinu komunikolog mora razviti i pomoći je razviti svojem timu.
+
+
+## Sigurnost, privatnost i GDPR u oblaku
+
+Kada organizacija svoje podatke premjesti u oblak, pravna i sigurnosna situacija postaje složenija nego što se na prvi pogled čini. Komunikolog ne mora biti pravnik niti stručnjak za sigurnost, ali mora razumjeti dovoljno da postavlja prava pitanja i da svoju organizaciju ne dovede u nepotrebni rizik.
+
+Model dijeljene odgovornosti, ili shared responsibility model, temeljni je koncept cloud sigurnosti. Dobavljač oblaka odgovoran je za sigurnost samog oblaka, dakle za fizičku sigurnost podatkovnih centara, za sigurnost mreže, za sigurnost virtualizacijskog sloja i za bazu platforme. Korisnik je odgovoran za sigurnost u oblaku, dakle za to kako su konfigurirane dozvole, koliko su jake lozinke korisnika, je li uključena dvofaktorska autentifikacija, kako se upravlja podacima i tko ima pristup čemu. Većina sigurnosnih incidenata u oblaku ne događa se zbog propusta dobavljača, događa se zbog propusta korisnika.
+
+GDPR, Opća uredba o zaštiti podataka, regulira obradu osobnih podataka građana Europske unije. Svaka cloud aplikacija koja obrađuje takve podatke obuhvaćena je njezinim odredbama. Tri pojma vrijedi razumjeti. Voditelj obrade je organizacija koja određuje svrhu i način obrade podataka, dakle vaša organizacija. Izvršitelj obrade je dobavljač cloud usluge koji podatke obrađuje u ime voditelja, dakle Google, Microsoft, Amazon ili neki drugi. Ugovor o obradi podataka, ili Data Processing Agreement, dokument je koji propisuje obveze izvršitelja prema voditelju i mora se potpisati prije nego što se podaci predaju.
+
+Schrems II odluka Suda Europske unije iz 2020. godine dramatično je promijenila pravila prijenosa podataka u SAD. Ranije Privacy Shield okvir proglašen je nevažećim, a novi EU-US Data Privacy Framework iz 2023. još uvijek se pravno osporava. Praktična posljedica je da svaka organizacija koja koristi američke cloud servise mora razmotriti dodatne mjere zaštite, najčešće Standard Contractual Clauses i kriptiranje na razini korisnika.
+
+Podatkovna rezidencija, koju smo spomenuli i prošlog tjedna, postaje sve važniji kriterij. Veliki dobavljači danas dopuštaju da se odabere regija u kojoj se podaci fizički pohranjuju. Google, Microsoft i AWS svi nude europske regije, a neke od njih i hrvatsku ili regionalnu blizinu. Ipak, fizička lokacija podataka nije jedino što vrijedi. Američki Cloud Act dopušta američkim institucijama da od američkih kompanija traže podatke čak i kada su pohranjeni izvan SAD-a. Ovaj rizik je dio kalkulacije zbog kojeg neke europske organizacije sve više biraju europske dobavljače.
+
+Sovereign cloud, ili suvereni oblak, nova je kategorija odgovora na ovaj problem. Microsoft, Google i Amazon ulaze u partnerstva s europskim partnerima kako bi ponudili instance svojih usluga koje su fizički, pravno i operativno odvojene od matične američke infrastrukture. Bleu u Francuskoj, Delos Cloud u Njemačkoj i slični aranžmani u nastajanju su odgovor na suverene zabrinutosti. Za većinu komunikacijskih organizacija ovo je pretjerano, ali za one koje rade s javnim sektorom ili visoko reguliranim industrijama može postati relevantno.
+
+Praktični minimum koji komunikolog treba osigurati u svojem timu uključuje sljedeće. Svaki član tima mora imati uključenu dvofaktorsku autentifikaciju na svim cloud računima. Lozinke moraju biti jake i upravljane kroz upravitelj lozinki, ne ručno. Svaki dijeljeni dokument ili mapa mora imati promišljeno postavljene dozvole, a ne otvoreni link dostupan svima. Pravo pristupa bivših članova tima mora se ukloniti istog dana kada osoba napusti organizaciju. AI asistenti i automatizacije koji vide podatke moraju imati ograničenja koja sprečavaju curenje. Ovo nije tehnička higijena, ovo je profesionalna odgovornost.
+
+
+## Troškovi oblaka i kako ih razumjeti
+
+Cijena oblaka izgleda jednostavno na prvi pogled. Plaćate pretplatu, dobivate uslugu. U praksi je struktura znatno složenija i organizacije se redovito iznenade kada mjesečni račun naraste znatno više nego što su predviđale.
+
+Najčešći cjenovni modeli kombiniraju nekoliko elemenata. Model po korisniku znači da se plaća fiksan iznos po svakom članu tima koji ima račun. Google Workspace i Microsoft 365 funkcioniraju ovako. Model po upotrebi znači da se plaća stvarna potrošnja resursa, primjerice broj poziva prema API-ju, gigabajti pohranjenih podataka ili sati izvršavanja procesa. AWS, Azure i GCP funkcioniraju ovako za većinu svojih usluga. Model po značajkama znači da se plaća viša razina pretplate kako bi se otključali napredniji alati. Notion, Slack i većina SaaS aplikacija funkcioniraju ovako.
+
+Stvarni mjesečni trošak komunikacijskog tima u manjoj organizaciji može izgledati ovako. Google Workspace Standard, deset korisnika po dvanaest eura mjesečno, ukupno sto dvadeset eura. Slack Pro, deset korisnika po sedam i pol eura, sedamdeset i pet eura. Notion Plus, deset korisnika po osam eura, osamdeset eura. Make Standard, dvadeset eura. Canva Pro, deset korisnika po nekoliko eura, sto eura. Mailchimp Standard, ovisno o broju kontakata, recimo pedeset eura. Loom, Granola ili Fireflies, ovisno o tome koja od njih, oko trideset eura. Pretplate za AI asistente, recimo Claude Pro za pet ključnih ljudi, sto eura.
+
+Već smo na pet stotina i sedamdeset eura mjesečno za desetočlani tim, prije nego što smo uračunali specijalizirane alate koje pojedini članovi tima koriste. Godišnji trošak od oko sedam tisuća eura nije malen za malu agenciju. Komunikolog koji vodi ovaj stack mora razumjeti gdje ide svaki euro i mora moći braniti svaki red u proračunu pred upravom.
+
+Optimizacija troškova nije primarno tehničko pitanje, primarno je organizacijsko. Audit svih pretplata jednom u kvartalu identificira alate koje nitko ne koristi a koji se i dalje plaćaju. Konsolidacija identificira slučajeve gdje se ista funkcionalnost plaća više puta kroz različite alate. Pregovaranje s dobavljačima, posebno za godišnje pretplate, često donosi popuste od deset do trideset posto. Korištenje obrazovnih i neprofitnih popusta, gdje god je to relevantno, dodatno smanjuje trošak.
+
+
+## Hrvatski kontekst
+
+Hrvatska je u zadnjih nekoliko godina prošla ubrzanu cloud tranziciju, posebno u privatnom sektoru, dok javni sektor i veće tradicionalne organizacije sporije dolaze.
+
+Privatni SME segment dominantno koristi Google Workspace, što odražava globalnu sklonost manjih i agilnijih organizacija prema ovom paketu. Agencije za digitalni marketing, mediji, startupi i kreativni studiji u pravilu su googleovi. Mladi profesionalci koji ulaze u tržište rada već su odrasli s Gmailom i Google Docsima i nemaju nikakvu obučenost niti naklonost prema Microsoftu.
+
+Korporativni segment, banke, telekomunikacije, osiguranja, naftna industrija i farmaceutika, dominantno koriste Microsoft 365. Razlozi su povijesni i strukturni. Ove organizacije godinama unatrag koriste Active Directory, Exchange, SharePoint i ostatak Microsoft korporativne infrastrukture. Migracija u Microsoft 365 prirodno je nastavljanje, dok bi prelazak na Google Workspace tražio paralelnu zamjenu desetaka međusobno povezanih sustava.
+
+Javni sektor je u različitim fazama. Središnji državni uredi, ministarstva i institucije obvezne su za određene operativne potrebe koristiti državne sustave i sigurne instance, ali za standardni produktivni rad sve više se koristi Microsoft 365. Sveučilišta i istraživačke institucije, uključujući HKS i druge, koriste mješavinu Office 365 ponude koju Microsoft daje obrazovanju i specifičnih akademskih platformi.
+
+Hrvatski cloud dobavljači, poput CARNET-a za obrazovni sektor i komercijalnih hostera za poslovni sektor, opslužuju nišu organizacija koje žele lokalnu rezidenciju podataka i lokalnu tehničku podršku. Za organizacije s posebnim regulatornim zahtjevima ili s afinitetom za domaće dobavljače, ovo su relevantne opcije. Velika većina komunikacijskih organizacija ipak koristi globalne dobavljače.
+
+GDPR praksa u Hrvatskoj je strožega tijekom posljednjih godina. Agencija za zaštitu osobnih podataka aktivno provodi nadzor i izriče sankcije. Komunikolog koji uvodi nove cloud alate ili koji savjetuje organizaciju o izboru, mora računati da regulator postoji, da slijedi praksu i da neusklađenost ima posljedice.
+
+Distribuirani rad u Hrvatskoj je prošao značajnu transformaciju kroz pandemiju. Mnoge agencije danas djeluju potpuno udaljeno ili hibridno, što je tehnički omogućeno upravo cloud paketima koje smo opisali. Specifičnost hrvatskog tržišta jest da značajan broj profesionalaca radi za inozemne klijente i poslodavce, što stvara dodatnu složenost oko pravnog statusa, oporezivanja, vremenskih zona i kulturalnih razlika u suradničkim obrascima. Komunikolog koji se kreće u ovom prostoru mora svoju cloud praksu prilagoditi tom kontekstu.
+
+
+## Trendovi koji oblikuju budućnost
+
+Nekoliko trendova oblikuje sljedeću fazu razvoja oblaka i komunikolog ih treba pratiti.
+
+AI agenti u suradničkim alatima sljedeća su faza onoga o čemu smo govorili u sekciji o AI sloju. Microsoft Copilot Agents, Google Workspace Agents i Slack agenti omogućuju da se postavi agent koji proaktivno radi unutar paketa, prati razgovore, identificira akcijske točke, prati dokumente i obavještava odgovorne. Razlika između asistenta i agenta jest u inicijativi. Asistent reagira kad ga pozovete, agent radi i kada ne tražite od njega ništa.
+
+Edge computing premješta dio obrade s centralnih cloud regija na rubove mreže, fizički bliže korisniku. Cloudflare Workers i Vercel Edge Functions vodeći su predstavnici. Posljedica za komunikologa jest da web stranice i aplikacije postaju brže, ali i složenije za debugiranje i nadzor.
+
+Sovereign cloud i regulatorna fragmentacija sve su veći trend. EU Data Act, NIS2, AI Act i Digital Services Act zajednički oblikuju pravni okvir koji nije identičan onom u SAD-u i koji od organizacija traži drukčije izbore. Komunikolog ne mora poznavati svaku uredbu, ali mora znati da postoje, da se mijenjaju i da utječu na izbor alata.
+
+Konvergencija suradničkih i no-code platformi, koju smo započeli pratiti prošlog tjedna, nastavlja se. Notion polako postaje cijeli paket. Microsoft Loop pokušava ponuditi Notionu sličan format unutar Microsoftovog ekosustava. Granica između produkcijskog paketa i operativnog stacka sve je manje jasna.
+
+AI-native cloud razvojni alati, poput Replita, Cursora i Bolta, pokazuju da se sama izgradnja softvera mijenja. Komunikolog ne treba postati programer, ali treba razumjeti da ono što je do nedavno tražilo razvojni tim sada se može postići promišljenim radom s AI alatima u oblaku.
+
+Konsolidacija među dobavljačima nastavlja se. Veliki paketi postaju sve veći, mali specijalizirani alati ili rastu prema paketima ili ih veliki dobavljači kupuju ili kopiraju. Kombinacija od pet do deset alata koje danas koristi tipična agencija vjerojatno će se kroz nekoliko godina svesti na manji broj integriranih platformi.
+
+
+## Na kraju ovog poglavlja
+
+Računalstvo u oblaku nije više izbor. To je infrastrukturni temelj na kojem leži praktički sve što komunikolog svakodnevno radi. CMS o kojem smo govorili u Tjednu 4 živi u oblaku. No-code stack iz Tjedna 5 živi u oblaku. AI asistenti koje koristite za pisanje teksta žive u oblaku. Suradnički paketi kroz koje radite s timom žive u oblaku. Klijenti i partneri s kojima razmjenjujete dokumente i poruke rade u oblaku. Ako razumijete oblak, razumijete medij u kojem djelujete. Ako ne razumijete, djelujete naslijepo unutar sustava koji oblikuje sve vaše profesionalne odluke.
+
+Ovo predavanje zatvorilo je drugi modul kolegija, modul o produkciji sadržaja. U prva tri tjedna govorili smo o tome kako web zapravo funkcionira, kako se sadržaj pronalazi i kako se vrednuje. U sljedeća tri tjedna govorili smo o platformama kroz koje sadržaj nastaje i o infrastrukturi na kojoj te platforme leže. Sljedeći tjedan otvaramo treći modul kolegija, modul o strategiji, korisničkom iskustvu i distribuciji. Govorit ćemo o sadržajnoj strategiji i pisanju za web, o tome kako se cilj komunikacije pretvara u kompetentno napisane riječi, kako se publici osmišljava put kroz sadržaj i kako se mjeri uspjeh. Tehnički sloj koji smo prošli u prethodnim tjednima podrška je za taj strateški rad, a ne njegova zamjena.
+
+::: {.callout-note}
 ## Ključni zaključci
 
-::: {.callout-important appearance="minimal"}
-*Bit će dodano.*
+Računalstvo u oblaku jest isporuka računalnih resursa preko interneta po modelu pretplate, što je rušilo tehničke barijere ulaska i izjednačilo alate dostupne malim i velikim organizacijama.
+
+Tri uslužna modela, IaaS, PaaS i SaaS, opisuju koliko posla preuzima dobavljač a koliko ostaje korisniku, a komunikolog gotovo cijeli profesionalni dan provodi unutar SaaS razine.
+
+Veliki dobavljači oblaka su AWS, Microsoft Azure, Google Cloud i Cloudflare, dok europski dobavljači poput OVHclouda i Scalewaya rastu zbog regulatornih i sigurnosnih razloga.
+
+Google Workspace i Microsoft 365 dva su dominantna suradnička paketa, pri čemu su agencije i mediji u Hrvatskoj sklone Workspaceu, a korporacije i javni sektor Microsoftu.
+
+Sinkrona i asinkrona suradnja različiti su obrasci rada koje komunikolog mora svjesno birati ovisno o tipu zadatka, jer disciplinirana raspodjela ovih obrazaca dramatično mijenja produktivnost tima.
+
+Verzioniranje, povijest izmjena i kontrola pristupa temelji su sigurnog suradničkog rada u oblaku, a hibridni obrasci u kojima se dijelom radi u oblaku a dijelom kroz lokalne datoteke preko maila kvare sve te prednosti.
+
+AI sloj je u 2026. godini ušao u svaki suradnički paket, od Gemini u Workspaceu i Copilota u Microsoftu do specijaliziranih alata poput Granole i Loom AI, što mijenja svakodnevni rad komunikologa.
+
+Sigurnost i privatnost u oblaku slijede model dijeljene odgovornosti, dok GDPR, Schrems II odluka, Cloud Act i suvereni oblak oblikuju regulatornu sliku koja je u stalnoj promjeni.
+
+Trošak cloud stacka u manjoj agenciji lako prelazi pet stotina eura mjesečno, što zahtijeva disciplinirano upravljanje pretplatama i redovan audit alata.
+
+Hrvatski kontekst pokazuje jasnu segmentaciju, gdje SME segment, agencije i mediji dominantno koriste Google Workspace, dok korporacije, banke i javni sektor preferiraju Microsoft 365, a distribuirani rad za inozemne klijente postaje sve češći obrazac.
 :::
+
 
 ## Priprema za sljedeći tjedan
 
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::
+Tjedan 7 otvara treći modul kolegija i bavi se sadržajnom strategijom i pisanjem za web.
+
+Prije sedmog predavanja napravite četiri stvari.
+
+Prvo, napravite mali audit cloud alata kojima se trenutno koristite, osobno ili u nekom akademskom ili profesionalnom kontekstu. Zabilježite svaki alat, koji je njegov uslužni model, koji dobavljač stoji iza njega, gdje su pohranjeni podaci i koliko stoji mjesečna pretplata. Ako koristite besplatne razine, zabilježite gdje su njihova ograničenja.
+
+Drugo, otvorite jedan dokument u Google Docsu ili Microsoft Wordu u oblaku i istražite povijest izmjena. Napravite namjernu izmjenu, vratite je, dodajte komentar, pozovite kolegu ili kolegicu da također napravi izmjenu i pratite kako sustav vodi evidenciju. Ovo je vježba za usvajanje verzioniranja kao mentalnog modela.
+
+Treće, isprobajte AI asistenta unutar suradničkog paketa kojeg koristite. Tražite od njega da rezimira dokument koji ste vi ili netko drugi napisao, da predloži poboljšanja stila ili da ekstrahira akcijske točke iz nitke razgovora. Zabilježite gdje je bio koristan i gdje je promašio.
+
+Četvrto, pripremite kratku refleksiju od desetak rečenica o sljedećem pitanju. Kako biste opisali vlastiti obrazac rada u smislu sinkrone i asinkrone suradnje? Što biste željeli promijeniti? Refleksiju ćemo iskoristiti u uvodu u Tjedan 7.
+
+
+## Dodatno čitanje
+
+Za dublji uvod u temeljne pojmove cloud računalstva, NIST Definition of Cloud Computing kratak je dokument koji više od desetljeća služi kao referentna definicija polja i čije pojmove preuzimaju i akademski i industrijski tekstovi.
+
+Google Workspace Learning Center i Microsoft 365 Training Hub besplatne su edukacijske platforme dobavljača, čija glavna vrijednost nije u tome da nauče određeni alat nego da razotkriju koliko su zapravo bogati paketi koje većina korisnika koristi tek djelomično.
+
+Knjiga Remote: Office Not Required Jasona Frieda i Davida Heinemeier Hanssona, iako je iz 2013. godine, ostaje jedna od najboljih kratkih knjiga o kulturi distribuiranog rada i obrascima asinkrone suradnje. Mnogi principi koje je opisala postali su standard u industriji.
+
+GDPR portal Europske komisije i materijali Agencije za zaštitu osobnih podataka u Hrvatskoj autoritativni su izvori za regulatorni okvir koji oblikuje cloud praksu.
+
+Anu Atluru i Lenny Rachitsky pišu o operativnoj kulturi u digitalnim organizacijama na način koji je relevantan za komunikologe. Lennyjev podcast i newsletter posebno često obrađuju teme alata, suradničkih obrazaca i AI sloja u svakodnevnom radu.
+
+Stratechery Bena Thompsona kontinuirano analizira tržišnu dinamiku između velikih cloud dobavljača i razumijevanje tih analiza pomaže komunikologu shvatiti zašto je tržište oblikovano onako kako jest.
+
+Za hrvatski kontekst, Lider, Poslovni dnevnik i Bug povremeno objavljuju studije slučaja o cloud migracijama i digitalnoj transformaciji u domaćim organizacijama. Iako su ovi izvori manje sustavni, daju lokalni kontekst koji teže nalazi globalna literatura.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Cloud computing | Isporuka računalnih resursa preko interneta po modelu pretplate i upotrebe |
+| On-premise | Tradicionalan model u kojem organizacija drži vlastitu hardversku infrastrukturu |
+| Hibridni cloud | Model koji kombinira on-premise infrastrukturu i javni oblak |
+| Privatni cloud | Cloud infrastruktura namijenjena isključivo jednoj organizaciji |
+| Javni cloud | Cloud infrastruktura koja opslužuje više organizacija istovremeno |
+| Multi-cloud | Strategija u kojoj organizacija svjesno koristi više cloud dobavljača |
+| IaaS | Infrastructure as a Service, isporuka virtualnih poslužitelja, mreže i pohrane |
+| PaaS | Platform as a Service, isporuka razvojnog okoliša bez brige o serverima |
+| SaaS | Software as a Service, isporuka gotove aplikacije kroz preglednik ili klijent |
+| AWS | Amazon Web Services, najveći cloud dobavljač na svijetu |
+| Azure | Microsoftova cloud platforma, druga po veličini globalno |
+| GCP | Google Cloud Platform, treća velika cloud platforma s naglaskom na AI i podatke |
+| Cloudflare | Dobavljač CDN-a, sigurnosti i edge računalstva |
+| OVHcloud | Najveći europski cloud dobavljač, baziran u Francuskoj |
+| Hetzner | Njemački dobavljač infrastrukture popularan zbog cijene i privatnosti |
+| Google Workspace | Googleov paket suradničkih SaaS aplikacija, ranije G Suite |
+| Microsoft 365 | Microsoftov paket suradničkih aplikacija s desktop i cloud komponentom |
+| Gmail | Googleov SaaS klijent za e-poštu |
+| Outlook | Microsoftov klijent za e-poštu, dostupan i kao desktop i cloud aplikacija |
+| Google Docs | Googleov cloud-native dokument za suradnju u stvarnom vremenu |
+| Google Sheets | Googleov cloud-native alat za tablice |
+| Google Slides | Googleov cloud-native alat za prezentacije |
+| Google Drive | Googleova platforma za pohranu i dijeljenje datoteka |
+| OneDrive | Microsoftov pandan Google Driveu, dio Microsoft 365 paketa |
+| SharePoint | Microsoftova platforma za dokumentaciju i suradnju u korporativnom okruženju |
+| Slack | Vodeća platforma za timsku komunikaciju kroz kanale |
+| Microsoft Teams | Microsoftova kombinacija chata, video poziva i kolaboracije |
+| Discord | Platforma za zajednice s rastućom upotrebom u poslovnom okruženju |
+| Zoom | Specijalizirana platforma za video pozive |
+| Google Meet | Googleova platforma za video pozive integrirana u Workspace |
+| Loom | Alat za snimanje i dijeljenje asinkronih video poruka |
+| Granola | AI alat za bilježenje i sažimanje sastanaka |
+| Otter | AI alat za transkripciju i sažimanje sastanaka |
+| Fireflies | AI alat sličan Otteru s naglaskom na integracije |
+| Sinkrona suradnja | Suradnički obrazac u kojem članovi tima rade u istom trenutku |
+| Asinkrona suradnja | Suradnički obrazac u kojem članovi tima rade u različitim trenucima kroz pisani trag |
+| Verzioniranje | Sustav praćenja povijesti izmjena s mogućnošću vraćanja na prethodne verzije |
+| Kontrola pristupa | Sustav definiranja tko može vidjeti, komentirati ili uređivati neki resurs |
+| Git | Sustav za upravljanje verzijama izvornog koda i drugih tekstualnih sadržaja |
+| GitHub | Najpoznatija platforma za hosting Git repozitorija |
+| Commit | Pojedinačna izmjena u Git repozitoriju s pripadajućom porukom |
+| Branch | Paralelna grana razvoja u Git repozitoriju |
+| Pull request | Predloženo spajanje izmjena iz jedne branche u drugu |
+| Gemini | Googleov AI asistent integriran u Workspace i druge proizvode |
+| Microsoft Copilot | Microsoftov AI asistent integriran u Microsoft 365 |
+| Notion AI | AI asistent integriran u Notion |
+| Slack AI | AI funkcionalnosti unutar Slacka, uključujući sažimanje kanala |
+| Shared responsibility model | Model u kojem dobavljač osigurava sam oblak a korisnik osigurava upotrebu oblaka |
+| GDPR | Opća uredba o zaštiti podataka, regulatorni okvir EU za obradu osobnih podataka |
+| Voditelj obrade | Organizacija koja određuje svrhu i način obrade osobnih podataka |
+| Izvršitelj obrade | Subjekt koji obrađuje osobne podatke u ime voditelja, primjerice cloud dobavljač |
+| DPA | Data Processing Agreement, ugovor između voditelja i izvršitelja obrade |
+| Schrems II | Odluka Suda Europske unije iz 2020. koja je promijenila pravila prijenosa podataka u SAD |
+| Standard Contractual Clauses | Standardne ugovorne klauzule za prijenos podataka izvan EU |
+| EU-US Data Privacy Framework | Okvir iz 2023. za prijenos podataka između EU i SAD-a |
+| Cloud Act | Američki zakon koji omogućuje pristup podacima u rukama američkih kompanija i izvan SAD-a |
+| Sovereign cloud | Cloud instance pravno i operativno odvojene od matične infrastrukture dobavljača |
+| Edge computing | Obrada i isporuka sadržaja iz čvorova bliže korisniku, izvan centralne cloud regije |
+| Cloudflare Workers | Cloudflareova platforma za izvršavanje koda na rubu mreže |
+| Dvofaktorska autentifikacija | Dodatni sloj sigurnosti pri prijavi u sustav uz lozinku |
+| Upravitelj lozinki | Aplikacija koja pohranjuje i generira jake lozinke za korisnika |
+| Cjenovni model po korisniku | Cjenovni model u kojem se plaća po svakom članu tima |
+| Cjenovni model po upotrebi | Cjenovni model u kojem se plaća stvarna potrošnja resursa |
+| Audit pretplata | Periodični pregled aktivnih SaaS pretplata radi optimizacije troška |

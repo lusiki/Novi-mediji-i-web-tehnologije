@@ -1,17 +1,390 @@
 ---
 title: "Generativna AI u radnom toku komunikologa"
 subtitle: "Praktična primjena AI alata u profesionalnom radu komunikologa"
-author: "doc. dr. sc. Luka Šikić"
 date: 2026-05-06
 categories: [AI, generativna-AI, radni-tok]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje pruža sveobuhvatan pregled načina na koji generativna AI transformira stvaranje web sadržaja, web dizajn, personalizaciju i digitalne komunikacijske radne tokove.
+  Ovo predavanje otvara četvrti modul kolegija pitanjem koje sve prethodne ne mogu izbjeći. Generativna AI, pokretana velikim jezičnim modelima, ulazi u svaki korak komunikacijskog rada, od prvog nacrta teksta preko istraživanja do produkcije slike i zvuka. Komunikolog koji ne razumije osnovni mentalni model ovih sustava, granice njihove sposobnosti i discipliniran način njihovog korištenja, ne može svjesno djelovati u profesionalnom okruženju u kojem oni postaju standardni dio infrastrukture.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Objasniti što veliki jezični model jest, kako radi na razini intuicije i koje su njegove temeljne sposobnosti i ograničenja
+2. Razlikovati ključne frontijerne modele i njihove obitelji, kao i razumjeti specijaliziraniju ekonomiju modela koja iz njih izlazi
+3. Postaviti dobro strukturiran prompt s jasnim kontekstom, ulogom, primjerima i očekivanim formatom izlaza
+4. Smjestiti generativnu AI u konkretne komunikacijske zadatke, od pisanja preko istraživanja do produkcije vizualnog i audio sadržaja
+5. Razumjeti agentsku paradigmu i kako se ona razlikuje od klasičnog korištenja AI asistenta
+6. Procijeniti kvalitetu AI izlaza kroz disciplinirani postupak provjere, evaluacije i upravljanja halucinacijama
+7. Artikulirati kako se profesionalna vrijednost komunikologa pomiče u svijetu u kojem AI obavlja dio rada, i koje vještine postaju centralne
+8. Identificirati rizike privatnosti, intelektualnog vlasništva i ovisnosti, kao i smjestiti AI rad u hrvatski jezični i regulatorni kontekst
 
-*Bit će dodano.*
+
+## Zašto komunikolog mora razumjeti generativni AI
+
+Zamislite komunikologa u srednjoj agenciji koja vodi sadržaj za desetak klijenata. Početkom 2026. godine njegov radni dan izgleda ovako. Ujutro otvori Claude i traži ga da analizira tri konkurentska newslettera klijenta, izvuče zajedničke obrasce i identificira sadržajne praznine. Zatim koristi Gemini u Google Docsu da iz tih nalaza izbaci prvi nacrt strateške preporuke za klijenta. Pored njega Cursor, AI razvojni alat, refaktorira Quarto stranicu na kojoj radi za drugog klijenta. Otvori Custom GPT koji je sam izgradio i koji poznaje brand book trećeg klijenta, te traži tri varijante naslova za blog post. U Make scenariju, koji je postavio prošlog tjedna, automatska Claude akcija sažima ulazne medijske upite i rangira ih po prioritetu, pa kolegica može odgovoriti samo na one koji traže ljudsku procjenu. Krajem dana, otvori ChatGPT i traži ga da pripremi sažetak svega što je danas radio.
+
+Ovo nije scenarij iz budućnosti. Ovo je svakodnevni rad sve većeg broja komunikologa u 2026. godini. Razlika između komunikologa koji ovaj radni tok poznaje i komunikologa koji ga ne poznaje mjeri se u dnevnoj produktivnosti, u kvaliteti izlaza i u sposobnosti tima da reagira na zahtjeve klijenta brzo umjesto sporo.
+
+Ali postoji razgovor koji se često previdi. Šef agencije pita istog komunikologa što on točno donosi profesionalno ako toliko rada delegira AI-u. Klijent pita zašto bi plaćao istu cijenu za nešto što očito nije više u potpunosti ručno izrađeno. Mlađi kolega pita kako može graditi karijeru u svijetu u kojem AI obavlja dio onoga što je dosad bila profesionalna kompetencija.
+
+Ova pitanja nisu ni nostalgična ni alarmantna. Ona traže ozbiljan profesionalni odgovor. Generativni AI nije magija koja će zamijeniti komunikologa, ali nije ni puka pomoćna alatka. To je novi sloj infrastrukture koji mijenja što je profesionalno vrijedno raditi i kako se to vrijedno radi. Predavanje koje slijedi pokušava artikulirati taj odgovor.
+
+Prošli tjedan zatvorili smo treći modul govoreći o vlastitoj publici i izravnim kanalima. Sada otvaramo četvrti modul govoreći o tehnologiji koja sve prethodne tematske blokove dotiče i mijenja. AI ulazi u CMS, u no-code stack, u suradničke alate, u algoritamsku distribuciju, u newsletter i u svaku drugu razinu komunikacijskog rada. Sljedećih nekoliko tjedana detaljno ćemo razraditi različite dimenzije ovog upadanja.
+
+
+## Mentalni model jezičnog modela
+
+Komunikolog ne treba postati AI inženjer, ali mora imati funkcionalan mentalni model što LLM jest i što nije. Bez tog mentalnog modela, korištenje sustava je ili magijsko ili sumnjičavo, a oba pristupa proizvode lošije rezultate od pristupa koji proizlazi iz razumijevanja.
+
+Veliki jezični model, ili Large Language Model, sustav je koji je naučio iz ogromne količine teksta predviđati sljedeću riječ u nizu. Naučen je iz desetaka tisuća milijardi riječi knjiga, web stranica, znanstvenih članaka, koda, foruma i mnogih drugih izvora. Naučio je obrasce koji se u ljudskom pisanju javljaju. Iz tih obrazaca može generirati nove tekstove koji prate iste obrasce.
+
+Ovo je radikalno drugačije od klasičnog softvera koji izvršava unaprijed napisane upute. LLM ne pretražuje bazu znanja u trenutku kada postavite pitanje. On ne provjerava enciklopediju. On ne primjenjuje pravilo zaključivanja koje je netko unaprijed napisao. Ono što radi je nešto čudnije. Iz konteksta vašeg pitanja izračunava vjerojatnost različitih nastavaka i bira ono što mu se čini najvjerojatnijim. Iz te vjerojatnosti gradi rečenicu, iz rečenica gradi paragrafe, iz paragrafa gradi cjelovit odgovor.
+
+Iz ovog načina rada proizlaze dvije ključne karakteristike koje komunikolog mora razumjeti. Prva je da LLM može učiniti stvari koje izgledaju kao razumijevanje, jer ako je obrasce u ogromnoj količini teksta dovoljno duboko apsorbirao, generirat će odgovore koji su za većinu praktičnih potreba neraspoznatljivi od onoga što bi rekao stručnjak. Druga je da LLM može i griješiti na način koji izgleda samouvjereno, jer ne provjerava ni sebe ni vanjske izvore prije nego što kaže nešto. Halucinacija, kako se taj fenomen u stručnoj literaturi naziva, nije bug nego strukturalna posljedica načina na koji sustav radi.
+
+Razlikujemo nekoliko slojeva u modernoj LLM arhitekturi. Bazni model je rezultat originalnog treniranja na sirovom korpusu teksta. Bazni model nije optimiziran za slijeđenje uputa, on samo zna predviđati nastavak. Instruction-tuned model dodatno je naučen iz primjera kako odgovarati na upute, što ga čini korisnim u praktičnoj upotrebi. RLHF, ili Reinforcement Learning from Human Feedback, dodatni je sloj u kojem ljudski recenzenti ocjenjuju izlaze i model uči preferirati one koje ljudi smatraju kvalitetnijima. Constitutional AI, koji je razvio Anthropic, alternativni je pristup u kojem model uči preferirati izlaze koji slijede zapisani skup principa.
+
+Različiti modeli različitih kompanija razlikuju se u snazi, brzini, cijeni i karakteru. Razlike u snazi vrijedi shvatiti kao razlike u sposobnosti rješavanja kompleksnih zadataka. Razlike u brzini i cijeni vrijedi shvatiti kao trgovinu između kvalitete izlaza i ekonomije korištenja. Razlike u karakteru, što je teže opisati, odnose se na ton kojim model piše, mjeru njegove opreznosti, sklonost detalju ili sažetosti, način na koji rješava nejasnoće.
+
+Frontijerni modeli, koji su trenutno najsnažniji u industriji, uključuju Anthropicove Opus i Sonnet, OpenAI-ev GPT, Googleov Gemini i nekoliko otvorenih modela koje izdaju Meta, Mistral i drugi. Specijalizirani modeli, manji ali optimizirani za specifične zadatke, brzo rastu i čine sve veći dio industrije.
+
+
+## Prompting kao profesionalna vještina
+
+Kvaliteta odgovora koji dobijete od jezičnog modela u velikoj mjeri ovisi o kvaliteti prompta koji ste mu dali. Prompting, kao disciplina, u zadnjih nekoliko godina razvio se iz neformalne vještine u profesionalnu praksu sa svojim principima i obrascima.
+
+Prvi princip je jasnoća konteksta. Model nema povijest s vama. Ne zna za koju organizaciju radite, koja je publika, koji je tonalitet brenda, koji je rok, koji je format izlaza. Sve to morate eksplicitno reći. Komunikolog koji u ChatGPT upiše "napiši mi blog post o sigurnosti na webu" dobit će generičan, plitak rezultat. Komunikolog koji u istom pozivu navede da radi za hrvatsku banku, da je publika manji poslovni klijenti, da brand voice koristi formalan ali pristupačan ton, da članak ide na blog stranice banke i mora biti dug oko šesto pedeset riječi, dobit će znatno upotrebljiviji rezultat.
+
+Drugi princip je definicija uloge. Model dobro reagira kada mu kažete tko da bude. "Ti si urednik newslettera o tehnologiji namijenjenog netehničkoj publici" daje sustavu okvir unutar kojeg će birati riječi i strukturu. "Ti si akademski pisac koji piše za međunarodni časopis" daje drugačiji okvir. Ova dva ista zadatka s istom temom dat će različite izlaze ovisno o ulozi koju ste definirali.
+
+Treći princip je primjeri. Model sjajno generalizira iz primjera. Ako mu pokažete dva ili tri uzorka onoga što tražite, izlaz će vjerojatno slijediti taj obrazac mnogo bolje nego ako mu samo opišete što želite. Ovo je tehnika poznata kao few-shot prompting. Komunikolog koji traži naslove u stilu konkretnog medija dobit će puno bolje rezultate ako u prompt uključi pet stvarnih naslova iz tog medija nego ako samo opiše stil riječima.
+
+Četvrti princip je struktura izlaza. Model dobro slijedi formate koje mu zadate. Ako tražite popis pet stvari s jednom rečenicom obrazloženja po stavci, dobivate to. Ako tražite tablicu s tri stupca, dobivate to. Ako tražite Markdown s konkretnom hijerarhijom naslova, dobivate to. Komunikolog koji eksplicitno definira format ne mora kasnije ručno preoblikovati izlaz.
+
+Peti princip je pažnja na granice. Model ne zna sve. Ono što ne zna, on će često izmisliti. Ako pitate za konkretan podatak, naročito broj, datum ili imena, model može halucinirati. Disciplinirani komunikolog provjerava ono što može provjeriti, posebno kada se radi o činjenicama koje će ići u objavljeni sadržaj.
+
+Šesti princip je iterativnost. Prvi prompt rijetko daje finalni rezultat. Iterativni rad, gdje se izlaz čita, traže se promjene konkretnih dijelova, dotjeruje ton ili struktura, jest standardni način profesionalnog korištenja. Ovo nije gubitak vremena, ovo je realan radni tok.
+
+Napredna praksa uključuje nekoliko obrazaca koji vrijedi imati u repertoaru. Chain of thought prompting traži od modela da razmišlja korak po korak prije zaključka, što kod složenih zadataka značajno poboljšava kvalitetu. Self-critique prompting traži od modela da prvo proizvede izlaz, a zatim ga sam kritički procijeni i poboljša. Multi-perspective prompting traži od modela da problem razmotri iz više različitih kutova prije zaključka. Sve su ovo tehnike koje komunikolog može koristiti za zahtjevnije zadatke.
+
+System prompt i user prompt razlika su koju vrijedi razumjeti. System prompt je perzistentna uputa koja vrijedi za cijelu konverzaciju i koja oblikuje ton i ulogu. User prompt je konkretno pitanje. U Custom GPT-u i Claude Project-u, sustav prompta zapisuje se jednom i vrijedi za sve buduće interakcije, što čini ovaj sloj posebno korisnim za izgradnju specifičnih asistenata.
+
+
+## AI u svakodnevnom pisanju
+
+Najveća praktična upotreba generativne AI u radu komunikologa je u domeni pisanja. Ovo nije zato što je AI bolji pisac od čovjeka, nego zato što obavlja podzadatke koji su ranije trošili nesrazmjerno ljudskih sati.
+
+Generiranje prvog nacrta najučestaliji je obrazac. Komunikolog opisuje što treba napisati, prilaže relevantne materijale, definira ton i format, i AI proizvodi prvu verziju. Prva verzija nije finalna, ali je značajno blokova teksta od kojeg se polazi. Vrijeme koje se ranije trošilo na suočavanje s praznom stranicom sada se troši na uređivanje, kalibraciju i finalizaciju. Empirijska iskustva agencija pokazuju da se ovaj korak može ubrzati nekoliko puta uz održavanje ili čak poboljšanje kvalitete finalnog rezultata.
+
+Sažimanje dugog sadržaja drugi je čest obrazac. Dokument od pet tisuća riječi, snimka razgovora ili niz članaka mogu se u nekoliko sekundi pretvoriti u sažetak prikladne dužine. Komunikolog koji se priprema za sastanak, koji prati nacionalne medije za klijenta ili koji uređuje tjedni internal newsletter, ovaj alat koristi rutinski.
+
+Prevođenje i jezična prilagodba značajno se promijenili u zadnjih tri godine. Frontijerni modeli sada prevode bolje nego većina specijaliziranih prevodilačkih alata, a obavljaju i kontekstualnu prilagodbu koja klasični prijevod ne pokriva. Komunikolog koji radi za organizaciju s međunarodnom publikom može u nekoliko minuta proizvesti varijante teksta na nekoliko jezika koje su kalibrirane za različite kulturne kontekste.
+
+Uređivanje stila i tona postaje obrazac koji ulazi u standardnu praksu. Postojeći tekst može se proslijediti modelu s uputom da ga pretvori u formalniji ton, da skrati duge rečenice, da ukloni pasivne konstrukcije, da prilagodi ga konkretnoj publici. Ovo je posebno korisno za komunikologe koji rade za više klijenata s različitim glasovima brenda.
+
+Generiranje alternativa višestruko je korisno. Svaki copywriter zna da je teško izmisliti deset varijanti naslova ili pet alternativa za isti poziv na akciju. AI to čini bez napora. Komunikolog tada bira najbolju verziju, kombinira elemente iz različitih ili koristi kao polazište za vlastitu kreativnost.
+
+Zadržavanje glasa brenda u različitim ljudima koji pišu izazov je u svakoj organizaciji. AI alati koji su učili iz brand booka i prošlog sadržaja mogu provjeriti je li novi tekst u skladu, predložiti uređivanja ili sami napisati prvi nacrt koji je već u glasu. Ovo je posebno relevantno za organizacije koje upravljaju s puno kanala i koje se brže šire nego što njihov urednički tim raste.
+
+Disciplina koju komunikolog mora razviti odnosi se na pitanje gdje povući granicu. AI nije zamjena za autorsku odgovornost. Tekst koji ide u javnost pod imenom komunikologa, organizacije ili medija, mora biti njegov u smislu da je on procijenio svaku tvrdnju, kalibrirao svaku formulaciju i preuzeo odgovornost za rezultat. AI je suradnik koji pomaže, ali nije autor. Ovu razliku komunikolog mora jasno održavati u glavi i u praksi.
+
+
+## AI u istraživanju i analizi
+
+Drugi veliki blok upotrebe AI je u istraživanju, dakle u prikupljanju i obradi informacija prije pisanja.
+
+AI pretraživači, koje smo spomenuli prošlog tjedna u kontekstu algoritamske distribucije, mijenjaju prirodu istraživanja. Perplexity, ChatGPT pretraga, Claude pretraga i Google AI Overviews pružaju odgovore s citatima izvora. Istraživanje koje je nekad značilo otvaranje petnaest tabova i čitanje svih, sada počinje s AI sažetkom koji pokazuje gdje su relevantni izvori i što oni govore. Komunikolog tada otvara samo one izvore koji su za zadatak ključni i provjerava njihovu vjerodostojnost.
+
+Razumijevanje ovih sustava zahtijeva i razumijevanje njihovih granica. AI pretraživač je dobar za konsolidaciju i sažimanje, ali nije pouzdan za citate i konkretne podatke. Citat koji je AI pretraživač generirao mora se provjeriti u izvornom tekstu, jer modeli i dalje povremeno halucinacijama miješaju izvore.
+
+Analiza dokumenata je obrazac koji se brzo razvija. Frontijerni modeli sada podržavaju kontekstne prozore od stotina tisuća riječi, što znači da se cijeli izvještaj, knjiga ili velika baza dokumenata može proslijediti modelu i postaviti pitanja koja se odnose na cjelinu. Komunikolog koji prati godišnje izvještaje konkurencije ili koji analizira veliki dokument klijenta, ima u ovom alatu istraživačkog pomoćnika koji može u sekundi locirati relevantne dijelove.
+
+Klasifikacija ulaznih informacija postaje sve češća praksa. Tisuće medijskih spomena, tisuće upita korisnika ili tisuće povratnih informacija mogu se kroz AI klasificirati po temi, tonu ili prioritetu. Ovo je dijelom obrađeno već u Tjednu 5 u kontekstu automatizacije, a ovdje vrijedi naglasiti kako mijenja istraživačku praksu. Manualno proučavanje uzorka veće količine ulaznog materijala zamjenjuje se sustavnijom analizom cjelokupnog korpusa.
+
+Konkurentska analiza, koja je standardni dio strateške pripreme, dobiva novu razinu kroz AI. Stranice konkurenata, njihovi newsletteri, njihovi društveni profili, mogu se sustavno analizirati za obrasce sadržaja, frekvenciju, ton i poziciju. AI agenti koji ovaj rad obavljaju kontinuirano, šalju komunikologu izvještaje s ključnim novostima.
+
+Sintetička priprema za sastanak praktičan je obrazac koji se često previđa. Prije sastanka s klijentom ili partnerom, AI može u nekoliko minuta pripremiti sažetak relevantne pozadine, pitanja koja vrijedi postaviti, slijed argumenata i moguće prigovore. Komunikolog koji ulazi u sastanak s ovakvom pripremom djeluje informiranije od onog koji ulazi nepripremljen, čak i ako je razlika u vremenu pripreme bila petnaest minuta.
+
+Etičke i metodološke obveze ne mijenjaju se s AI. Komunikolog koji u svom istraživanju dolazi do zaključaka temeljenih na AI obradi, mora razumjeti gdje su limiti te metode, mora navesti izvor kada to vrijedi i mora preuzeti odgovornost za interpretaciju. Korištenje AI ne oslobađa od standardne intelektualne discipline, ono samo ubrzava njezino izvršavanje.
+
+
+## AI u vizualnom i audio sadržaju
+
+Generativni AI ne ograničava se na tekst. Slika, video i audio sadržaj sve se više proizvode kroz AI alate i komunikolog mora razumjeti praktične mogućnosti i granice.
+
+Generiranje slika kroz alate poput Midjourneyja, DALL-E, Stable Diffusiona i Adobe Firefly postalo je standardno u 2025. i 2026. godini. Komunikolog koji ranije nije imao budžet za fotografa ili dizajnera, danas može u nekoliko minuta proizvesti vizualni materijal za blog post, društvenu mrežu ili newsletter. Razlika između generičke i kvalitetne AI generirane slike leži u promptu, u izboru modela i u postupku iteracije, što su sve vještine koje se uče.
+
+Granice korištenja generiranih slika regulatorne su i etičke. Slika koja prikazuje stvarnu osobu mora biti pažljivo razmotrena. Slika koja imitira stil zaštićenog autora ulazi u sferu autorskih prava. Slika koja se predstavlja kao fotografija stvarnog događaja, a generirana je AI-em, fundamentalno zavarava publiku. EU AI Act i Direktiva o autorskim pravima postavljaju pravne okvire koji se i dalje formiraju.
+
+Generiranje videa kroz alate poput OpenAI-evog Sora, Googleovog Veo, Runwaya, Klinga i drugih u zadnjoj godini napravilo je velikih skokova u kvaliteti. Kratki promotivni video, animirana ilustracija, pozadinski klip za društvenu mrežu, sve se to danas može proizvesti AI alatima u djeliću vremena i troška kojeg je tradicionalna produkcija zahtijevala. Granice su slične kao kod slika, posebno kada se radi o prikazima stvarnih ljudi ili događaja.
+
+Audio i AI glas razvili su se u dramatične sposobnosti. ElevenLabs, OpenAI Voice, Microsoft Speech, Resemble i drugi alati mogu generirati realističan glas iz teksta. Glas se može cloned iz uzorka, što otvara vrlo različite slučajeve upotrebe, od dostupnosti sadržaja preko personalizacije do potencijalnih zlouporaba. Sintetički podcast, AI naracija, AI prevođenje s očuvanjem glasa, sve su to obrasci koji ulaze u praksu.
+
+Glazba i zvučna pratnja kroz AI alate poput Suno, Udio i AIVA, polako ulaze u komunikacijsku praksu. Pozadinska glazba za promotivni video, džingl za podcast, atmosferski zvuk za video, mogu se generirati u trenucima i koristiti uz licence koje alati pružaju.
+
+Kombinirani multimedijski alati postaju sve češći. HeyGen i Synthesia generiraju video s AI prezenterom iz teksta. Descript spaja video editing s AI generiranom naracijom. Canva integrira AI sliku, dizajn i kraći video u jedan radni tok.
+
+Za komunikologa, ovo otvara novu razinu autonomije ali i novu razinu odgovornosti. Vizualni i audio sadržaj koji prije nije bio pristupačan zbog troška, sada je dostupan. Ali kvaliteta, originalnost i etičnost ostaju isti zahtjevi. Generirani sadržaj koji izgleda profesionalno još uvijek mora biti relevantan, originalan i odgovoran. Tehnička dostupnost ne garantira kreativnu vrijednost.
+
+Pitanje označavanja AI generiranog sadržaja postaje sve relevantnije. Mnoge platforme uvode obvezu označavanja, neki regulatorni okviri zahtijevaju transparentnost, a publika sve više pažnje pridaje pitanju autentičnosti. Detaljnije ćemo o ovome govoriti sljedećeg tjedna kada ćemo otvoriti pitanja autentičnosti i sintetičkih medija.
+
+
+## AI agenti i orkestracija
+
+U Tjednima 5 i 9 spomenuli smo AI agente kao paradigmu koja izlazi iz klasičnog obrasca asistenta. Ovdje vrijedi razraditi razliku detaljnije, jer se agentska paradigma upravo u 2026. godini intenzivno razvija.
+
+AI asistent, kako ga klasično poznajemo, reagira na konkretni upit. Korisnik postavlja pitanje, sustav odgovara, korisnik postavlja sljedeće. Pitanje za pitanjem, kontekst se gradi unutar konverzacije. Ovo je obrazac ChatGPT-a, Claudea i većine svakodnevnih AI alata.
+
+AI agent ima drugačiju dinamiku. Korisnik mu opisuje cilj, a ne pitanje. Agent zatim sam odlučuje koji su koraci potrebni, koje alate treba koristiti, kojim redoslijedom, i kada je gotov. Komunikolog koji asistentu kaže "napiši mi blog post o trendovima u online trgovini" dobiva tekst. Komunikolog koji agentu kaže "istraži trendove u online trgovini u zadnjih šest mjeseci na hrvatskom tržištu i pripremi blog post od osamsto riječi s relevantnim citatima" pokreće niz koraka. Agent može pretražiti web, pročitati relevantne članke, ekstrahirati podatke, strukturirati ih i napisati tekst, sve unutar jedne sesije.
+
+Anthropicov Computer Use, OpenAI-eva Operator funkcionalnost i Browser Use kao open-source projekt su tri glavna predstavnika agentske paradigme u 2026. godini. Sustavi koji djeluju u korist korisnika unutar preglednika i drugih aplikacija, koji ispunjavaju forme, klikaju na elemente, čitaju stranice i izvršavaju radnje, mijenjaju prirodu rada na način koji je lakše vidjeti nego opisati.
+
+Specijalizirani agenti za određene zadatke postaju sve češći. Lindy je specijalizirana platforma za poslovne agente. Relevance AI orkestrira agente za marketinški rad. Cognition Devin pokušava biti agent koji programira, a drugi sustavi specijaliziraju se za pravo, financije, korisničku podršku ili istraživanje.
+
+MCP, Model Context Protocol, infrastrukturni je standard koji omogućuje da AI klijenti pristupaju vanjskim alatima na ujednačen način. Spomenuli smo ga u Tjednu 5 i ovdje vrijedi naglasiti njegovu ulogu u agentskoj paradigmi. Kada agent može preko MCP-a pristupiti Notionu, Airtableu, Gmailu, GitHubu i stotinama drugih servisa, njegov operativni opseg postaje znatno širi nego asistenta koji djeluje samo u svojem chat sučelju.
+
+Implikacija agentske paradigme za komunikologa je promjena obrasca rada. Umjesto da svaki korak izvodi sam, komunikolog opisuje cilj i nadgleda izvršenje. Ovo zahtijeva nove vještine. Sposobnost jasne specifikacije cilja, sposobnost evaluacije rezultata, sposobnost prepoznavanja gdje agent griješi i sposobnost intervencije u pravom trenutku. Agentski rad nije manje rada, nije više rada, drugačiji je rad.
+
+Granice agentskog rada važno je razumjeti. Agenti pogriješe na načine koji su teže predvidljivi od asistenata. Agenti mogu trošiti više resursa nego se očekuje. Agenti mogu izvršiti akcije koje su teško reverzibilne. Komunikolog koji agentima delegira važan rad mora imati uspostavljene mehanizme nadzora, granice ovlasti i sposobnost intervencije.
+
+
+## Evaluacija, halucinacija i kontrola kvalitete
+
+Profesionalni rad s generativnim AI nemoguć je bez disciplinirane prakse evaluacije izlaza. Ovo nije pitanje povjerenja u sustav. Ovo je pitanje preuzimanja odgovornosti za ono što ide u svijet pod nečijim imenom.
+
+Halucinacija je tehnički termin za situaciju kada model proizvede izlaz koji djeluje uvjerljivo ali sadrži netočne tvrdnje. Halucinacije mogu biti mali, primjerice pogrešan datum ili krivo napisano ime. Mogu biti veliki, primjerice citati iz knjiga koje ne postoje, sudski slučajevi koji se nikad nisu dogodili ili podaci koji su izmišljeni ali djeluju autoritativno. Frontijerni modeli su u zadnjih nekoliko godina značajno smanjili stopu halucinacija, ali fenomen nije eliminiran i strukturno proizlazi iz načina na koji modeli rade.
+
+Discipliniran komunikolog ima nekoliko pravila u praksi. Svaki konkretan podatak provjerava se izvan modela. Svaki citat traži se u izvornom dokumentu. Svaka tvrdnja koja izgleda iznenađujuće provjerava se u barem jednom drugom izvoru. Brzina koju AI donosi gubi se ako se ovi koraci preskaču, ali rizik je drugi i može biti znatno skuplji.
+
+Procjena kvalitete teksta zahtijeva ljudsku procjenu koja se ne može potpuno automatizirati. Tekst koji je gramatički ispravan, koji teče logično i koji ne sadrži halucinacije, može i dalje biti loš tekst. Može biti generičan, plitak, izvan tona, dosadan ili promašiti poruku. Ova procjena ostaje na komunikologu i upravo ovdje leži dio njegove profesionalne vrijednosti.
+
+Bias ili pristranost je drugi važan koncept. Modeli su naučili iz korpusa koji nije neutralan. Reflektiraju kulturalne, jezične, političke i druge pristranosti tih izvora. Kada komunikolog koristi model za pisanje koje će biti čitano u različitim kulturnim kontekstima, mora svjesno provjeravati izlaze za ovakve probleme.
+
+Konzistentnost u dužim radnim tokovima izazov je koji raste s razinom složenosti. AI koji pomaže pri pisanju većeg sadržajnog projekta, primjerice serije od deset blog postova ili godišnjeg izvještaja, može u različitim dijelovima koristiti različite formulacije za iste pojmove, različite stilske registre ili različite faktualne pretpostavke. Komunikolog koji upravlja takvim projektom mora uspostaviti smjernice koje vrijede kroz cijeli projekt i provjeravati konzistentnost.
+
+Evaluacijski radni tokovi razvijaju se u industriji. Alati poput Langfuse, Helicone i Braintrust nude infrastrukturu za sustavno mjerenje i poboljšanje AI izlaza u produkcijskim sustavima. Iako su namijenjeni primarno tehničkim timovima, koncepti se polako prenose i u komunikacijsku praksu, posebno u većim agencijama koje grade vlastiti AI radni tok.
+
+Ljudska procjena ostaje središnja, ne kao paralela AI radu nego kao njegov nužni komplement. Razumijevanje gdje model dobro radi i gdje pogriješi, gdje vrijedi mu vjerovati i gdje treba dodatno provjeriti, postaje profesionalna kompetencija sama po sebi.
+
+
+## Kako se mijenja profesionalna vrijednost komunikologa
+
+Pitanje koje smo otvorili na početku predavanja vraća se ovdje s više konteksta. Ako AI obavlja dio rada koji je dosad bio profesionalna kompetencija komunikologa, što čini novi temelj profesionalne vrijednosti?
+
+Prosudba je prva i središnja kompetencija. Sposobnost da se procijeni je li ono što je AI proizveo dobro za konkretnu situaciju, prikladno za publiku, usklađeno s glasom brenda, etički prihvatljivo i strateški poravnato s ciljem, ne može se delegirati AI-u. Ova prosudba dolazi iz iskustva, iz poznavanja konteksta, iz razumijevanja širih implikacija. Komunikolog s razvijenom prosudbom u svijetu AI-a postaje vrjedniji, ne manje vrijedan.
+
+Postavljanje ispravnog cilja često je najvažniji korak. AI dobro radi na pitanjima koja su mu jasno postavljena. Sposobnost da se kompleksna komunikacijska potreba prevede u jasan cilj, koji se može delegirati ili agentu ili asistentu, sama po sebi je vještina. Lošije postavljen cilj kroz najbolji AI sustav daje gore rezultate od dobro postavljenog cilja kroz osrednji sustav.
+
+Strategija ostaje domena u kojoj AI još nije doista snažan. Modeli mogu pomagati u izvršavanju strateških dokumenata, u pisanju strateških analiza, ali stvarna strateška odluka, koja zahtijeva razumijevanje organizacije, njezinih ljudi, njezinih ograničenja i dugoročnih ambicija, ostaje na ljudskoj razini. Komunikolog koji djeluje strateški, koji povezuje komunikacijske odluke sa širim organizacijskim ciljevima, sve je vrjedniji.
+
+Etička i regulatorna odgovornost ostaje na čovjeku. Sadržaj koji se objavi pod imenom organizacije nosi ljudsku odgovornost. AI sustav nije pravni subjekt. Komunikolog koji razumije etičke i pravne implikacije svoje prakse, koji svjesno prima odgovornost za ono što ide u svijet, jest profesionalac u smislu koji AI ne može preuzeti.
+
+Odnosi i povjerenje su domena koja je u potpunosti ljudska. Klijent koji vjeruje agenciji vjeruje ljudima koji u njoj rade. Pretplatnik newslettera koji godinama prati autora prati osobu, ne sustav. AI je alat koji ljudi koriste, ali odnos je ono što ostaje na ljudskoj razini.
+
+Selekcija i kuriranje sve su važnija vještina u svijetu u kojem se sadržaj proizvodi u eksplozivnim količinama. Komunikolog koji zna prepoznati što je vrijedno objaviti, što vrijedi reći u određenom trenutku, što čitatelj treba čuti, dodaje vrijednost koja se ne može svesti na sirovu produkciju.
+
+Sve ovo skupa znači da se profesionalna identitet komunikologa pomiče. Manje je o tome koliko se ručnog rada izvršava. Više je o tome kakvu vrstu prosudbe, strategije, povjerenja, kuriranja se donosi. Ovaj pomak je realan i odvija se sada, a komunikolog koji ga svjesno integrira u svoje profesionalno samorazumijevanje stoji bolje od onog koji ga negira ili ignorira.
+
+
+## Hrvatski kontekst i AI
+
+Korištenje AI alata u Hrvatskoj ima nekoliko specifičnosti koje vrijedi razumjeti.
+
+Kvaliteta hrvatskog jezika u frontijernim modelima se značajno poboljšala u zadnje dvije godine. Modeli koji su prije tri godine slabo pisali na hrvatskom, danas pišu na razini koja je za većinu praktičnih potreba prihvatljiva. Anthropicov Claude i OpenAI-ev GPT na frontijernim verzijama dobro slijede gramatička pravila, ali povremeno griješe u finim nijansama tona, konzistenciji rodova, idiomatici ili specifičnosti hrvatske kulture. Komunikolog koji koristi AI za hrvatski sadržaj mora računati na dodatni korak uređivanja koji bi za engleski možda bio nepotreban.
+
+Lokalni AI ekosustav u Hrvatskoj raste polako ali postoji. Hrvatske startupe i istraživačke grupe pojavljuju se u domenama specifičnih AI primjena, od medicinskog imaginga preko prevođenja do industrijskih primjena. Sveučilišta surađuju s industrijom kroz programe poput Algebra LAB-a i ZICER-a. Vlada je donijela Strategiju razvoja umjetne inteligencije i nizu programa koji ovaj sektor podupiru, ali rezultati su tek u fazi razvoja.
+
+Javni sektor i AI nalaze se u ranoj fazi adopcije u Hrvatskoj. Pojedine institucije eksperimentiraju s AI asistencijom za internu komunikaciju ili za korisničku podršku, ali je sustavna primjena rijetka. Komunikolog koji radi u javnom sektoru ili savjetuje javne institucije mora računati s manje razvijenim okvirom i s pojačanim regulatornim oprezom, jer obrada osobnih podataka kroz AI sustave podliježe strogom GDPR i AI Act tretmanu.
+
+Mediji u Hrvatskoj koriste AI u različitim oblicima. Sinteza članaka, automatizacija sumarizacije, prijevod sadržaja sa stranih medija, sve su to obrasci koji ulaze u redakcijsku praksu. Hrvatsko novinarsko društvo i strukovna udruženja postupno razvijaju etičke smjernice za korištenje AI u novinarstvu, ali standardi su još u nastajanju.
+
+Cijena pretplata na frontijerne modele u eurima viša je u relativnim terminima nego za korisnike u zemljama s većim BDP-om po stanovniku. Pojedinačna pretplata na Claude Pro ili ChatGPT Plus od dvadesetak eura mjesečno za freelance komunikologa nije zanemariv trošak. Timske pretplate i API trošak za organizacije mogu brzo dosegnuti stotine eura mjesečno. Strateški pristup uključuje selekciju koje alate vrijedi plaćati, koje koristiti kroz besplatne razine i koje izbjegavati.
+
+Hrvatski dijalekti, regionalizmi i specifična kulturna tematika domena su gdje frontijerni modeli i dalje griješe. Komunikolog koji radi za regionalne medije, lokalne organizacije ili specifične publike mora ovo imati u vidu i ne smije slijepo prihvatiti AI generirani sadržaj kao jezično adekvatan za sve hrvatske publike.
+
+
+## Rizici privatnosti, intelektualnog vlasništva i ovisnosti
+
+AI ne dolazi bez rizika koje komunikolog mora razumjeti i aktivno upravljati.
+
+Privatnost ulaznih podataka prvo je pitanje. Kada šaljete tekst, dokument ili sliku AI sustavu, taj sadržaj putuje na server dobavljača. Praksa različitih dobavljača značajno se razlikuje. Neke kompanije čuvaju ulazne podatke i koriste ih za daljnje treniranje modela. Druge ne koriste podatke za trening ali ih čuvaju. Treće brišu podatke nakon obrade. Komunikolog mora poznavati politiku dobavljača kojeg koristi i mora razumjeti koji se podaci smiju slati prema kojem sustavu.
+
+Posebno osjetljivi podaci, primjerice osobni podaci klijenata pod GDPR-om, povjerljivi poslovni podaci ili podaci pod ugovornom obavezom čuvanja, ne smiju se slati u AI sustav koji ne pruža odgovarajuća jamstva. Enterprise verzije Claudea, ChatGPT-a i Geminija nude DPA, podatkovnu rezidenciju i ugovorne obveze koje pojedinačne pretplate ne nude. Za ozbiljnu poslovnu upotrebu, ovo nije tehnički detalj nego pravni preduvjet.
+
+Intelektualno vlasništvo AI generiranog sadržaja u pravnoj je sivoj zoni koja se još razvija. EU AI Act i Direktiva o autorskim pravima postavljaju okvir, ali konkretne presude tek dolaze. Američka Copyright Office određena je da AI generirani sadržaj sam po sebi nije podložan autorsko-pravnoj zaštiti. Sudovi u različitim jurisdikcijama raspravljaju o tome je li AI trening na zaštićenom sadržaju "fair use" ili kršenje. Komunikolog koji se oslanja na AI za stvaranje sadržaja mora razumjeti da je pravna pozicija tog sadržaja drugačija od pozicije ljudski stvorenog sadržaja.
+
+Ovisnost o pojedinom dobavljaču rizik je koji raste s integracijom. Organizacija koja gradi cijeli operativni sustav oko Claudea, OpenAI-ja ili Geminija postaje izložena promjenama koje taj dobavljač donosi. Cijene mogu rasti. Pristupna pravila mogu se mijenjati. Modeli mogu biti ukinuti ili zamijenjeni novim verzijama koje se ponašaju drugačije. Disciplinirana praksa uključuje praćenje više dobavljača, mogućnost zamjene jednog drugim i izbjegavanje ekstremne ovisnosti.
+
+Sigurnost AI sustava domena je koja se ozbiljno razvija. Prompt injection, kada zlonamjerni input pokuša manipulirati sustavom da prekrši svoja pravila, jailbreaking, kada se model nagovara da prekrši svoje smjernice, i drugi vektori napada postaju sve sofisticiraniji. Komunikolog koji koristi AI sustave koji obrađuju ulaze iz nepouzdanih izvora, primjerice korisničke poruke ili sadržaj treće strane, mora ovo razumjeti i imati uspostavljene zaštitne mjere.
+
+Kognitivna ovisnost je manje opipljiv ali stvarni rizik. Komunikolog koji svaki tekst piše s AI pomoći s vremenom može izgubiti dio vlastite spisateljske vještine. Komunikolog koji svako istraživanje delegira AI pretraživaču može izgubiti sposobnost dubinskog samostalnog istraživanja. Discipliniran odnos prema AI uključuje svjesnu odluku gdje se on koristi i gdje se zadržava ljudska praksa, ne zato što čovjek to bolje radi nego zato što je vrijedno održavati profesionalnu kondiciju.
+
+
+## Trendovi koji oblikuju budućnost
+
+Nekoliko trendova vrijedi pratiti jer će kroz iduće godine značajno mijenjati AI krajobraz.
+
+Rast sposobnosti modela i dalje je strm i ne pokazuje znakove zasićenja. Svaka nova generacija frontijernih modela donosi mjerljive skokove u kompleksnim zadacima, dužini konteksta i kvaliteti zaključivanja. Komunikolog koji procjenjuje AI samo na temelju iskustva s modelima od prije godinu ili dvije može imati zastarjelo mišljenje o tome što sustavi mogu raditi.
+
+Pad cijene istovremeno se odvija na razini API troška i pretplata. Za isti zadatak, cijena u 2026. godini je djelić cijene u 2023. godini. Ovaj trend vjerojatno će se nastaviti i AI usluge će postati sve dostupnije organizacijama svake veličine.
+
+Specijalizacija modela usporedna je s rastom frontijernih. Manji modeli optimizirani za specifične zadatke postaju sve češći i sve sposobniji. Lokalni modeli koji se izvršavaju na korisnikovom uređaju, čuvajući podatke lokalno, otvaraju nove obrasce upotrebe. Hibridi između lokalnih i cloud modela ulaze u standardnu arhitekturu.
+
+Agentska revolucija je glavna tehnička priča 2025. i 2026. godine. Sustavi koji autonomno izvršavaju kompleksne zadatke kroz duže vremenske periode, koji koriste alate, koji uče iz iskustva, polako napuštaju eksperimentalnu fazu. Implikacije za rad komunikologa, kao što smo već istaknuli, su dubinske.
+
+AI agenti koji djeluju za korisnika, ne samo u korist organizacije, ulaze u potrošački prostor. Apple Intelligence, Googleov Gemini Live, Microsoftov Copilot sve više djeluju kao osobni asistenti koji upravljaju korisničkom poštom, kalendarom, dokumentima, pretragama. Komunikacija prema krajnjem korisniku sve više prolazi kroz njegov AI sloj prije nego ga doseže.
+
+Regulatorno usavršavanje EU AI Acta nastavlja se u sljedećim godinama. Visoki rizik AI sustava, transparentnost AI generiranog sadržaja, pravila o trening korpusima, sve će to oblikovati operativnu praksu. Komunikolog koji prati ovo područje pripremljen je za izmjene, dok onaj koji ga ignorira može se naći u nepravilnoj praksi.
+
+Standardizacija interakcije, kroz protokole poput MCP-a, poboljšava interoperabilnost AI sustava i alata. Posljedica je da će se različiti AI proizvodi sve više moći kombinirati u radnim tokovima koji nisu ograničeni na jedan ekosustav.
+
+Konvergencija multimodalnih modela, koji simultano rade s tekstom, slikom, zvukom i videom, otvara obrasce upotrebe koje danas tek naslućujemo. Komunikolog koji u jednom razgovoru s modelom radi s tekstualnim brifom, generira sliku, dorađuje audio i sastavlja video, već je realnost u 2026. godini.
+
+
+## Na kraju ovog poglavlja
+
+Generativni AI nije više egzotična tehnologija o kojoj se piše u tehnološkim publikacijama. To je standardni sloj infrastrukture u radu komunikologa, koji se brzo mijenja, koji ima konkretne sposobnosti i konkretne granice, i koji zahtijeva discipliniranu profesionalnu praksu.
+
+Razumijevanje ovog sloja nije izborni dodatak profesionalnoj kompetenciji. Komunikolog koji u 2026. godini ne razumije osnovni mentalni model jezičnih modela, koji ne zna postaviti dobar prompt, koji ne razlikuje agente od asistenata i koji ne može procijeniti kvalitetu AI izlaza, profesionalno zaostaje. Komunikolog koji ovo savlada, dobiva alate koji znatno povećavaju njegov kapacitet, oslobađaju vrijeme za prosudbu i strategiju i otvaraju obrasce rada koji su prije bili nedostupni.
+
+Ovo predavanje otvorilo je četvrti modul kolegija. Sljedeći tjedan govorit ćemo o autentičnosti sadržaja i sintetičkim medijima, dakle o pitanju što znači autorstvo, integritet i istina u svijetu u kojem AI može proizvesti uvjerljiv tekst, sliku, video i glas koji izgledaju i zvuče kao ljudski. Sve više komunikacijskih situacija odvija se u kontekstu u kojem publika ne može biti sigurna je li ono što vidi i čuje stvarno. Ovo nije akademska distinkcija. Ovo je radikalna promjena u uvjetima profesionalnog rada koju ćemo razraditi u praktičnom i etičkom smislu.
+
+::: {.callout-note}
+## Ključni zaključci
+
+Veliki jezični modeli rade tako da iz konteksta izračunavaju vjerojatne nastavke, što objašnjava i njihovu impresivnu sposobnost i strukturalnu sklonost halucinaciji.
+
+Frontijerni modeli, uključujući Claude, GPT, Gemini i otvorene alternative, razlikuju se u snazi, brzini, cijeni i karakteru, a izbor modela za zadatak strateška je odluka.
+
+Prompting je profesionalna vještina koja se temelji na jasnoći konteksta, definiciji uloge, primjerima, strukturiranju izlaza, svjesnosti granica i iterativnom pristupu.
+
+AI mijenja svakodnevno pisanje komunikologa kroz generiranje prvih nacrta, sažimanje, prevođenje, uređivanje stila i generiranje alternativa, ali autorska odgovornost ostaje u potpunosti na čovjeku.
+
+AI u istraživanju ubrzava prikupljanje, sažimanje i klasifikaciju, ali zahtijeva disciplinu provjere izvora i razumijevanje gdje su modeli pouzdani a gdje halucinacije ostaju realne.
+
+Generiranje slike, videa, glasa i glazbe kroz AI alate postalo je standardna komunikacijska praksa, što otvara nove mogućnosti i nove regulatorne i etičke obveze.
+
+AI agenti, za razliku od asistenata, autonomno izvršavaju složene cilje koristeći alate, što mijenja obrazac rada od izvršavanja prema specifikaciji cilja i nadzoru.
+
+Halucinacija, bias, konzistentnost i ljudska procjena kvalitete središnja su pitanja u disciplini AI evaluacije i kontrole kvalitete.
+
+Profesionalna vrijednost komunikologa u svijetu AI-a sve više proizlazi iz prosudbe, postavljanja ispravnih ciljeva, strategije, etičke odgovornosti, odnosa i kuriranja, a sve manje iz volumena ručne produkcije.
+
+Hrvatski kontekst donosi specifične izazove kvalitete jezika u modelima, ekonomije pretplata u eurima, sporijeg javnog sektora i potrebe za pažljivim upravljanjem GDPR-om i intelektualnim vlasništvom.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 12 bavit će se autentičnošću sadržaja, sintetičkim medijima i etičkim pitanjima koje AI generirana produkcija otvara.
+
+Prije dvanaestog predavanja napravite četiri stvari.
+
+Prvo, oblikujte svoj prvi pažljivo strukturiran prompt za neki konkretan zadatak iz svog akademskog ili profesionalnog rada. Pratite princip jasnog konteksta, definicije uloge, primjera i strukturiranog izlaza. Zabilježite što je radilo dobro, što loše, i koje izmjene biste sljedeći put napravili.
+
+Drugo, otvorite besplatan ili probni račun na barem jednom alatu za generiranje slika i jednom alatu za generiranje glasa, ako ih već ne koristite. Generirajte jednu sliku i jedan kratki audio koji bi se mogli iskoristiti u realnom komunikacijskom projektu. Razmislite gdje su granice prihvatljive upotrebe.
+
+Treće, pronađite barem dva primjera javnog AI generiranog sadržaja u hrvatskom medijskom prostoru u zadnjih nekoliko mjeseci. Mogu biti članci, slike, videoporuke, glasovni klipovi. Procijenite je li sadržaj jasno označen, je li njegovo korištenje u konkretnom kontekstu etički prihvatljivo i koje pitanje otvara o autentičnosti.
+
+Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica. Kako biste opisali svoj odnos prema AI-u na skali od potpunog izbjegavanja do potpune integracije? Što biste željeli promijeniti i zašto? Refleksija ćemo iskoristiti u uvodu sljedećeg predavanja.
+
+
+## Dodatno čitanje
+
+Anthropicov blog, OpenAI-eva istraživačka publikacija i Google DeepMind blog izravni su izvori najnovijih razvojnih trendova. Iako su ponekad tehnički, mnogi članci pišu se jezikom koji je pristupačan i komunikolozima.
+
+Ethan Mollick vodi blog One Useful Thing i piše knjigu Co-Intelligence o praktičnoj integraciji AI u profesionalni rad. Njegov pristup je pragmatičan, oslonjen na vlastito iskustvo profesora, i posebno koristan komunikolozima koji žele razumjeti AI bez tehničke pozadine.
+
+Simon Willison vodi blog na simonwillison.net koji prati svakodnevni razvoj AI ekosustava. Iako se Simon pretežno obraća developerima, mnoge njegove analize relevantne su širem komunikacijskom čitateljstvu.
+
+Latent Space podcast i pripadajuća newsletter publikacija Swyxa, koju smo spomenuli prošlog tjedna u kontekstu no-code i izravnih kanala, redovito objavljuje razgovore s ključnim ljudima u industriji.
+
+Casey Newton u Platformeru, Charlie Warzel u Galaxy Brainu i Kevin Roose u New York Timesu pišu o AI s perspektivom širokog komunikacijskog čitateljstva.
+
+EU AI Act i njegova hrvatska implementacija dostupni su u službenim publikacijama Europske komisije i Vlade Republike Hrvatske. Ako planirate raditi u sektorima visokog rizika ili u javnom sektoru, ovi dokumenti su nužno štivo.
+
+Knjiga The Coming Wave Mustafa Suleymana pruža širi kontekst u kojem AI revolucija živi i u kojem komunikologi profesionalno djeluju. Iako je knjiga pomalo alarmantna u tonu, njezini empirijski uvidi vrijedi pratiti.
+
+Anthropicov vodič Engineering Prompts dostupan je besplatno i pruža sustavan uvod u prompting kao disciplinu. Iako napisan iz perspektive Claudea, principi su prenosivi na druge sustave.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Generativni AI | AI sustav koji generira novi sadržaj, tekst, sliku, video ili audio |
+| LLM | Large Language Model, veliki jezični model |
+| Frontijerni model | Najsnažnija razina trenutno dostupnih modela u industriji |
+| Bazni model | Model koji je rezultat originalnog treniranja prije specijalizacije |
+| Instruction-tuned | Model dodatno naučen iz primjera kako odgovarati na upute |
+| RLHF | Reinforcement Learning from Human Feedback, dodatni sloj treniranja |
+| Constitutional AI | Anthropicov pristup u kojem model uči preferirati izlaze koji slijede zapisane principe |
+| Anthropic | Kompanija koja razvija Claude obitelj modela |
+| Claude | Anthropicova obitelj jezičnih modela, uključujući Opus i Sonnet |
+| OpenAI | Kompanija koja razvija GPT obitelj modela |
+| GPT | OpenAI-eva obitelj jezičnih modela |
+| Google DeepMind | Googleov istraživački laboratorij koji razvija Gemini |
+| Gemini | Googleova obitelj multimodalnih modela |
+| Llama | Meta otvoreni jezični model |
+| Mistral | Francuski razvijatelj otvorenih i komercijalnih modela |
+| Open-source model | Model čiji se težinski parametri javno objavljuju |
+| Prompt | Ulazna uputa koja se zadaje jezičnom modelu |
+| System prompt | Perzistentna uputa koja vrijedi za cijelu konverzaciju |
+| User prompt | Konkretno pitanje ili zahtjev unutar konverzacije |
+| Few-shot prompting | Prompting tehnika koja modelu daje primjere prije zadatka |
+| Chain of thought | Tehnika koja traži od modela da razmišlja korak po korak |
+| Self-critique | Tehnika u kojoj model sam kritički procjenjuje vlastiti izlaz |
+| Multi-perspective prompting | Tehnika koja traži razmatranje problema iz više kutova |
+| Halucinacija | Pojava da model generira netočan izlaz s uvjerljivim tonom |
+| Bias | Pristranost modela koja proizlazi iz korpusa za treniranje |
+| Knowledge cutoff | Datum nakon kojeg model nema podatke iz svojeg treninga |
+| Kontekstni prozor | Količina teksta koju model može držati u radnom kontekstu |
+| Tokeni | Jedinica obrade teksta u jezičnim modelima |
+| Custom GPT | Prilagođeni AI asistent unutar ChatGPT platforme |
+| Claude Project | Anthropicov pandan Custom GPT-u |
+| AI asistent | Sustav koji reagira na upite korisnika |
+| AI agent | Sustav koji autonomno izvršava cilj koristeći alate |
+| Agentska paradigma | Pristup u kojem AI sam odlučuje o slijedu akcija |
+| Computer Use | Anthropicova mogućnost AI kontrole sučelja računala |
+| OpenAI Operator | OpenAI-ev pandan Computer Useu |
+| Browser Use | Open-source projekt za browser-use AI sustave |
+| Lindy | Platforma za izgradnju AI agenata bez koda |
+| Relevance AI | Platforma za izgradnju agenata orijentirana poslovnoj upotrebi |
+| Cognition Devin | AI agent specijaliziran za programiranje |
+| MCP | Model Context Protocol, standard za komunikaciju AI klijenata sa servisima |
+| Multimodalni model | Model koji simultano obrađuje tekst, sliku, audio i video |
+| Midjourney | Specijalizirani alat za generiranje slika |
+| DALL-E | OpenAI-ev alat za generiranje slika |
+| Stable Diffusion | Open-source model za generiranje slika |
+| Adobe Firefly | Adobeov alat za generiranje slika integriran u Creative Cloud |
+| Sora | OpenAI-ev model za generiranje videa |
+| Veo | Googleov model za generiranje videa |
+| Runway | Specijalizirana platforma za AI video produkciju |
+| Kling | Kineski model za generiranje videa |
+| ElevenLabs | Vodeća platforma za generiranje glasa |
+| OpenAI Voice | OpenAI-eva mogućnost generiranja glasa |
+| Suno | AI alat za generiranje glazbe |
+| Udio | AI alat za generiranje glazbe |
+| HeyGen | Platforma za generiranje videa s AI prezenterima |
+| Synthesia | Platforma za generiranje korporativnih videa s AI prezenterima |
+| Descript | Alat za uređivanje videa i audija s AI funkcionalnostima |
+| Cursor | AI razvojni alat za pisanje koda |
+| Claude Code | Anthropicov AI alat za pisanje koda u terminalu |
+| Langfuse | Open-source platforma za AI observabilnost |
+| Helicone | Platforma za monitoring i analitiku AI sustava |
+| Braintrust | Platforma za evaluaciju AI sustava |
+| Prompt injection | Vektor napada u kojem se ulazom pokušava manipulirati sustavom |
+| Jailbreaking | Tehnike kojima se model nagovara da prekrši smjernice |
+| AI Act | EU regulativa koja kategorizira AI sustave prema riziku |
+| Apple Intelligence | Apple platforma za AI značajke u iOS-u i macOS-u |
+| Microsoft Copilot | Microsoftov AI asistent integriran u Microsoft 365 |
+| Perplexity | AI pretraživač koji daje odgovore s citatima izvora |
+| Edge AI | AI koji se izvršava na korisnikovom uređaju umjesto u oblaku |

@@ -1,30 +1,335 @@
 ---
 title: "Platforme, algoritmi i algoritamska distribucija"
 subtitle: "Kako platforme rangiraju sadržaj i što to znači za komunikologe"
-author: "doc. dr. sc. Luka Šikić"
 date: 2026-04-22
 categories: [platforme, algoritmi, distribucija]
 draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
+abstract: |
+  Ovo predavanje opisuje platforme kao infrastrukturni sloj distribucije sadržaja koji je u zadnjih dvadeset godina preuzeo glavnu ulogu u tome tko vidi što i kada. Algoritamska distribucija, koju pokreću sustavi za preporuku temeljeni na strojnom učenju, fundamentalno mijenja posao komunikologa jer dohvat publike više nije rezultat objavljivanja sadržaja nego rezultat usklađivanja sadržaja s logikom platforme. Razumijevanje te logike, njezinih posljedica i njezinih ograničenja temeljna je kompetencija za bilo koju ozbiljnu digitalnu strategiju.
 ---
 
 ## Ishodi učenja
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+Nakon ovog predavanja studenti će moći
 
-## Sadržaj
+1. Definirati platformu u digitalnom kontekstu i objasniti zašto su mrežni efekti i dvostrana tržišta ključ njezine ekonomske logike
+2. Razlikovati kronološku i algoritamsku distribuciju sadržaja te razumjeti zašto je industrija u zadnjih petnaestak godina prešla iz prve u drugu
+3. Identificirati ključne signale koje algoritmi velikih platformi koriste za rangiranje sadržaja i predvidjeti kako tipovi sadržaja djeluju u tim sustavima
+4. Mapirati glavne platforme po publici, sadržajnoj logici i tipu komunikacijskog ishoda koji najbolje opslužuju
+5. Procijeniti rizike koji proizlaze iz ovisnosti o platformi, uključujući promjene algoritma, deplatforming i pad organskog dosega
+6. Razumjeti ulogu AI sustava u modernoj algoritamskoj distribuciji i smjer u kojem se ti sustavi razvijaju
+7. Smjestiti algoritamsku distribuciju u kontekst etičke odgovornosti, polarizacije i regulatornog okvira EU
+8. Razlikovati iznajmljenu publiku na platformama od vlastite publike na izravnim kanalima i razumjeti zašto je ova razlika temeljna za dugoročnu komunikacijsku strategiju
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
 
+## Zašto komunikolog mora razumjeti platforme i njihove algoritme
+
+Zamislite da ste komunikacijski stručnjak u srednjoj hrvatskoj agenciji koja vodi profile za desetak klijenata na društvenim mrežama. Kroz dvije godine pažljivo gradite Instagram profil za jednog od većih klijenata, regionalni lanac restorana. Profil ima dvadeset i pet tisuća pratitelja, sadržaj je pažljivo izrađen, ton je dosljedan, vizualni identitet besprijekoran. Krajem 2025. godine Instagram mijenja algoritam i preporučuje više sadržaja od ljudi koje pratitelj ne poznaje. Vašem klijentu prosječan organski doseg pada za sedamdeset posto u tjedan dana. Objava koja je prije tri mjeseca dosezala dvadeset tisuća ljudi sada doseže šest tisuća. Klijent zove i pita što ste pogriješili.
+
+Niste pogriješili ništa konkretno. Ali i niste razumjeli logiku sustava unutar kojeg radite. Algoritam koji vašem klijentu donosi pratitelje nije njegov, nije vaš, nije pod vašom kontrolom. To je proizvod tehničkih, ekonomskih i regulatornih odluka jedne kompanije koja u svakom trenutku može promijeniti pravila igre. Komunikolog koji ne razumije tu logiku gradi profesionalnu praksu na pijesku.
+
+Prošli tjedan govorili smo o korisničkom iskustvu i dizajnu, dakle o tome kako sadržaj živi u kontekstu sučelja. Danas se vraćamo korak dalje i pitamo kako sadržaj uopće dolazi do korisnika. Više od dvije trećine vremena koje ljudi provode na webu odvija se na šačici platformi. Više od polovice ukupnog medijskog konzumiranja u zapadnim društvima prošlo je kroz preporuku nekog algoritma. Komunikolog koji ne razumije platforme i algoritamsku distribuciju ne razumije medij u kojem djeluje.
+
+
+## Što je platforma
+
+Pojam platforma u digitalnom kontekstu znači nešto specifičnije od onoga što ekonomska teorija označava istim pojmom. Platforma je sustav koji posreduje između dvije ili više različitih grupa korisnika, omogućuje njihovu interakciju i pri tome stvara vrijednost koja raste s brojem sudionika.
+
+Klasični ekonomski primjer dvostranog tržišta je novinski oglasni model. Novine su platforma između čitatelja s jedne strane i oglašivača s druge. Što je više čitatelja, novine su atraktivnije oglašivačima. Što je više oglasa, novine mogu si priuštiti više sadržaja, što privlači više čitatelja. Ova povratna petlja je mrežni efekt, fenomen u kojem vrijednost sustava raste s brojem sudionika.
+
+Digitalne platforme nasljeđuju ovu logiku ali je radikaliziraju. Facebook posreduje između korisnika koji konzumiraju sadržaj, korisnika koji proizvode sadržaj, oglašivača koji žele dosegnuti korisnike i razvijatelja aplikacija koji koriste Facebook infrastrukturu. Svaka od ovih grupa privlači druge. Svaka nova grupa povećava vrijednost cijelog sustava. Mrežni efekt je toliko jak da nadvladava obične tržišne sile, pa tržište teži monopolskoj koncentraciji. Jedna velika platforma u svojoj kategoriji obično je vrjednija od pet manjih.
+
+Tinder je platforma. Uber je platforma. YouTube je platforma. Apple App Store je platforma. AirBnB je platforma. Booking.com je platforma. TikTok je platforma. ChatGPT je platforma. Sve oni dijele istu strukturnu logiku, čak i ako služe vrlo različite svrhe. Posreduju između strana, omogućuju njihovu interakciju, hvataju vrijednost koja proizlazi iz te interakcije i koriste mrežne efekte da bi rasli.
+
+Za komunikologa, ova logika ima nekoliko praktičnih posljedica. Platforma koja danas dominira u kategoriji vjerojatno će dominirati i sutra, jer je teško razbiti njezin mrežni efekt. Platforma kontrolira pravila igre na svom tržištu, jer je posrednik kojeg sve strane trebaju. Platforma može u svakom trenutku promijeniti uvjete pod kojima se sudjeluje na njoj, jer ima takvu strukturalnu moć. Komunikolog koji svoju strategiju gradi na platformi, gradi je na infrastrukturi koju ne kontrolira.
+
+
+## Od kronološke do algoritamske distribucije
+
+Najveća promjena u načinu na koji se sadržaj distribuira na platformama dogodila se između 2010. i 2018. godine. To je prijelaz iz kronološke u algoritamsku distribuciju.
+
+Kronološki feed prikazivao je sadržaj redoslijedom kojim je objavljen. Najnovije na vrhu, ono ranije ispod. Ovaj model imao je jednu temeljnu prednost. Bio je predvidljiv. Komunikolog koji objavljuje u određeno vrijeme znao je kada će ga njegova publika vidjeti. Imao je i jednu temeljnu manu, koja se s rastom platformi pretvorila u krizu. Što je sadržaja više, to je teže pratiti sve. Korisnik s tristo prijatelja na Facebooku ne može pratiti svih tristo. Korisnik koji prati pet stotina ljudi na Twitteru ne može vidjeti sve njihove objave. Kronološki feed pretvorio se u zid teksta i slika kroz koji korisnik samo prelazi pogledom dok mu se nešto ne zaustavi pažnju.
+
+Algoritamski feed odgovor je na taj problem. Umjesto da prikazuje sadržaj redoslijedom objave, sustav procjenjuje za svakog korisnika koji bi mu sadržaj bio najinteresantniji i prikazuje ga prvog. Procjena se temelji na povijesti ponašanja korisnika, na ponašanju sličnih korisnika i na svojstvima samog sadržaja. Cilj sustava je maksimizirati vrijeme koje korisnik provodi na platformi, broj interakcija koje izvodi i, u konačnici, prihod od oglasa.
+
+Facebook je prvi prešao na algoritamski feed 2009. godine, postupno. Twitter je dugo odolijevao i tek 2016. uveo opciju algoritamskog feeda. Instagram je prešao 2016. godine i izazvao značajnu pobunu kreatora. YouTube je oduvijek bio algoritamski na razini preporuke. TikTok je rođen kao algoritamski, bez ikakvog kronološkog modela. LinkedIn je prešao na hibridni algoritamski feed.
+
+Posljedica ovog prijelaza za komunikologa je dramatična. U kronološkom svijetu, doseg je bio funkcija broja pratitelja i vremena objave. U algoritamskom svijetu, doseg je funkcija toga koliko sustav procjenjuje da je sadržaj atraktivan, što ovisi o desetinama signala koje sustav prikuplja u stvarnom vremenu. Komunikolog koji nastavlja razmišljati u kronološkim okvirima, primjerice planirajući kalendar objava prema satnici kada je publika online, gubi puno većeg dijela slike.
+
+
+## Kako algoritmi rangiraju sadržaj
+
+Algoritmi velikih platformi nisu javno dokumentirani. Njihova interna logika čuvana je poslovna tajna. Ali kombinacija znanstvenih radova zaposlenika tih kompanija, izvještaja regulatora koji su tražili pristup, dokumentima koje su zviždači pustili u javnost i empirijskih studija akademskih istraživača daje dovoljno jasnu sliku osnovnih obrazaca.
+
+Modernu ranking arhitekturu velikih platformi opisuje se kao višeslojni cjevovod. Prvi sloj je generiranje kandidata, gdje sustav iz milijardi mogućih objava izabire nekoliko tisuća kandidata koji bi mogli biti relevantni za korisnika. Drugi sloj je rangiranje, gdje sustav procjenjuje za svakog kandidata vjerojatnost različitih ishoda, primjerice klika, lajka, komentara, dijeljenja, vremena gledanja, pritiska na slijedi. Treći sloj je miješanje i poliranje, gdje se rezultati rangiranja kombiniraju s drugim ograničenjima, primjerice da se ne prikazuju dva slična oglasa zaredom ili da feed ima različite tipove sadržaja.
+
+Signali koje sustav koristi za rangiranje grubo se dijele na nekoliko kategorija. Signali o samom sadržaju uključuju tip (video, slika, tekst, link), duljinu, stupanj interaktivnosti, kvalitetu autora, ton, ključne riječi i kategoriju teme. Signali o autoru uključuju njegovu povijest, prosječan angažman, vrijeme objave, frekvenciju i kvalitetu prošlog sadržaja. Signali o korisniku uključuju njegovu povijest interakcija, profil interesa, vrijeme provedeno na različitim tipovima sadržaja, mrežu kontakata i obrazac konzumacije. Signali o međusobnom odnosu autora i korisnika uključuju koliko često korisnik interagira s autorom, je li ranije lajkao njegov sadržaj i koliko su slični u ponašanju s ostalim korisnicima.
+
+Signali se kombiniraju u model koji predviđa vjerojatnost konkretnog ishoda. Na TikToku, recimo, najvažniji signal je vrijeme gledanja, posebno udio videa koji je korisnik pogledao u odnosu na trajanje videa. Loop, dakle ponovno gledanje istog videa, posebno snažan je signal. Na Instagramu, kombinacija lajkova, komentara, spremanja i dijeljenja kalibrirana je drugačije za svaki tip feeda, gdje glavni feed teži drugim signalima nego Reels feed ili Explore stranica. Na YouTubeu, najvažniji signal je gledano vrijeme po sesiji, što znači koliko se korisnik zadržava na platformi nakon klika na video. Na LinkedInu, komentari nose više težine nego lajkovi i dijeljenja, jer signaliziraju sadržajan angažman.
+
+Praktične posljedice za komunikologa su sljedeće. Sadržaj koji izaziva brzi i snažan angažman u prvih nekoliko minuta nakon objave dobiva bonus i sustav ga gura prema široj publici. Sadržaj koji ne izaziva angažman u prvih nekoliko minuta tone i sustav ga zakopava. Ova logika eksplozije ili tišine dramatičnija je nego kronološki sustav, jer mali broj objava postiže ogroman doseg dok velika većina ostaje praktički nevidljiva.
+
+Drugi praktičan uvid je da sustav optimizira ono što može mjeriti. Lajkovi, komentari, dijeljenja, vrijeme gledanja, klik. Nije optimiziran za istinu, kvalitetu, dubinu razumijevanja ili dugoročnu vrijednost. Sadržaj koji izaziva snažnu emocionalnu reakciju, posebno ljutnju, iznenađenje ili indignaciju, ima strukturalnu prednost nad sadržajem koji je miran, nijansiran i tih.
+
+
+## Glavne platforme i njihove logike
+
+Ne postoji jedinstvena algoritamska distribucija. Svaka velika platforma ima specifičnu publiku, specifičan tip sadržaja koji najbolje funkcionira i specifičan komunikacijski ishod koji najbolje opslužuje. Komunikolog mora ovu mapu poznavati.
+
+Meta ekosustav uključuje Facebook, Instagram, WhatsApp i Threads. Facebook je u zadnjih nekoliko godina ostarjelo, dominantna publika je sredovječna i starija, organski doseg za organizacije pao je dramatično, oglasi su glavna distribucijska poluga. Instagram je vizualna platforma sa snažnom kreatorskom kulturom, Reels feed je preuzeo većinu organskog dosega, Stories ostaju važan kanal za izravnu komunikaciju s postojećom publikom. WhatsApp je platforma za izravnu komunikaciju i sve više za grupe i kanale, gdje organizacije mogu graditi izravan dohvat. Threads je novi pokušaj Meta da konkurira X-u, dominantno tekstualan, s rastom među kreatorima i medijima.
+
+TikTok je posljednja platforma koja je nastala s drugačijom logikom od ostatka. Algoritam praktički ignorira tko koga prati i preporučuje sadržaj na temelju ponašanja korisnika i kvalitete videa. Posljedica je da nove organizacije i nepoznati autori mogu doseći stotine tisuća ljudi s prvim videom, što je na drugim platformama gotovo nemoguće. Druga posljedica je da je TikTok dominantna platforma među mlađom publikom u Hrvatskoj i u svijetu. Treća posljedica je da su trend ciklusi vrlo brzi i sadržaj koji ne reagira na trenutni trend nestaje.
+
+YouTube je platforma za dulji video sadržaj sa snažnom monetizacijom za kreatore. Algoritam optimizira za vrijeme gledanja i sesije, što favorizira kvalitetu, dubinu i emocionalnu povezanost. YouTube je također druga najveća tražilica na svijetu, nakon Googlea, što znači da video objavljen na YouTubeu može godinama generirati promet kroz pretragu, za razliku od kratkoročno orijentiranih feedova drugih platformi.
+
+X, ranije Twitter, prošao je značajne promjene od preuzimanja Elona Muska 2022. godine. Algoritam favorizira plaćene račune, kontroverzni sadržaj i objave koje generiraju brzi angažman. Doseg za neplaćene račune značajno je pao. Korisnička baza se promijenila u smjeru veće polarizacije i manje profesionalne novinarske prisutnosti. Za komunikologe, X je i dalje važan u kontekstu medija, politike i tehnologije, ali je manje pouzdan kanal za organizacijsku komunikaciju nego prije.
+
+LinkedIn je B2B i karijerna platforma koja je u zadnjih nekoliko godina značajno porasla. Algoritam favorizira tekstualne objave s osobnom pričom, sa srednjom dužinom (između tristo i osamsto riječi), s komentarima i raspravom. Za komunikologe koji rade za B2B organizacije ili koji grade osobni profesionalni profil, LinkedIn je strukturalno najatraktivnija platforma jer ima najvišu razinu profesionalne pažnje po jedinici objave.
+
+Reddit je struktura zajednica oko tematskih subreddita gdje algoritmi rangiraju unutar svake zajednice ali ne preporučuju sadržaj agresivno između zajednica. Reddit je važan kao izvor istinske rasprave, korisničke povratne informacije i ranjive autentičnosti, ali zahtijeva drugačiju komunikacijsku praksu jer korporativna komunikacija obično dobiva loš tretman.
+
+BlueSky i Mastodon su decentralizirane alternative tradicionalnim platformama. BlueSky raste s migracijom korisnika koji su napustili X. Mastodon ima manju ali predanu zajednicu koju zanimaju otvoreni protokoli. Za komunikologa, ovi servisi su relevantni jer signaliziraju potencijalnu fragmentaciju tržišta i smjer prema korisnicima koji žele kontrolu nad svojim podacima.
+
+Pinterest, Snapchat, Twitch i Discord svaki imaju svoju nišu i komunikolog koji radi u relevantnoj kategoriji mora ih razumjeti, dok komunikolog koji se njima ne bavi može imati površan uvid bez praktične dubine.
+
+Telegram, iako često klasificiran kao messaging platforma, sve više funkcionira kao platforma za distribuciju sadržaja kroz kanale. U Hrvatskoj i regionalnom kontekstu, Telegram kanali su rastući kanal koji nije još dovoljno istražen u akademskoj literaturi.
+
+
+## Drugi sloj učinaka i etika algoritamske distribucije
+
+Algoritamska distribucija nije samo tehnička optimizacija, ona ima drugorazredne učinke koje komunikolog mora razumjeti.
+
+Filter bubble i echo chamber poznati su pojmovi za pojavu da algoritmi učvršćuju ranija uvjerenja korisnika prikazujući mu uglavnom sadržaj sa sličnih stajališta. Pojava nije apsolutna jer se istraživanja razlikuju u tome koliko je efekt jak, ali postoji konsenzus da algoritamska personalizacija pojačava obrasce konzumacije koji su već prisutni.
+
+Engagement maximization je ekonomski cilj velikih platformi i ima predvidljive nuspojave. Sadržaj koji izaziva ljutnju, indignaciju ili strah generira više angažmana nego sadržaj koji izaziva mir, razumijevanje ili nijansu. Posljedica je strukturalna prednost emocionalno polariziranih objava nad uravnoteženim. Empirijska istraživanja pokazala su da na X-u i Facebooku negativni i polarizirani sadržaj ima veći doseg od neutralnog. Na TikToku i Instagramu, ekstremni vizualni signali, šokantna iznenađenja i provokativni naslovi imaju strukturalnu prednost.
+
+Adiktivni dizajn je dimenzija o kojoj se otvoreno govori u industriji od oko 2018. godine. Beskonačno scrollanje, varijabilne nagrade, push obavijesti i autoplay su tehnike koje su izvedene iz psihologije ovisničkog ponašanja. Posljedica je da korisnici provode više vremena na platformi nego što namjeravaju, što povećava prihode platforme ali ima druge psihološke posljedice za korisnike.
+
+Polarizacija javnog diskursa povezuje se s algoritamskom distribucijom u znatnom dijelu literature. Iako uzročno-posljedična veza nije jednostavna, kombinacija filter bubblea, engagement maximization-a i strukturne prednosti polariziranog sadržaja stvara okruženje u kojem javna rasprava postaje teža. Komunikolog koji djeluje u javnom prostoru mora ovo razumjeti i mora odlučiti kakav će pristup zauzeti.
+
+Etička odgovornost komunikologa u algoritamskom okruženju nije apstraktna. Ako platforma sustavno nagrađuje provokativni sadržaj, komunikolog koji optimizira za doseg može doći u napast da svjesno proizvodi takav sadržaj. Linija između legitimne kreativne provokacije i jeftine algoritamske manipulacije tanka je i mora se profesionalno crtati. Industrijska udruženja, etički kodeksi i regulator polako uspostavljaju standarde, ali u praksi mnogo toga ovisi o profesionalnoj prosudbi pojedinca.
+
+
+## AI i moderna algoritamska distribucija
+
+Moderna algoritamska distribucija u 2026. godini neodvojiva je od dubokog učenja i AI sustava, i to na nekoliko razina.
+
+Recommender sustavi velikih platformi temelje se na neuronskim mrežama koje uče iz milijardi interakcija. TikTokov For You feed je u akademskoj zajednici poznat kao jedan od najsofisticiranijih primjera primijenjenog dubokog učenja u širokoj upotrebi. Sustav uči vektorske reprezentacije svakog korisnika i svakog komada sadržaja u apstraktnom prostoru i preporučuje sadržaj čiji je vektor blizu korisničkog vektora. YouTube koristi sličan pristup, kao i Meta proizvodi.
+
+Generativni AI ulazi u algoritamsku distribuciju na drugi način. Sve više korisnika postavlja pitanja AI asistentima umjesto pretraživačima ili feedu. ChatGPT, Claude, Perplexity i Google AI Overviews preuzimaju dio prometa koji bi inače išao kroz tradicionalne kanale otkrivanja sadržaja. Za komunikologa, ovo znači da sadržaj treba biti pisan tako da ga AI sustavi mogu citirati, sažeti i preporučiti. Ovo je nova kategorija optimizacije, koju neki nazivaju AEO (Answer Engine Optimization) ili GEO (Generative Engine Optimization), kao analogija SEO-u za novu eru.
+
+AI generirani sadržaj, koji se masovno proizvodi od 2023. godine, dramatično je povećao volumen sadržaja na svim platformama. Posljedica je da se signal kvalitete smanjio jer je sve teže razlikovati AI-generirani od ljudskog sadržaja. Platforme su počele uvoditi mehanizme za detekciju i obilježavanje AI sadržaja, ali implementacija varira i nije pouzdana.
+
+AI agenti koji djeluju u korist korisnika ulaze na scenu polako. Anthropicov Computer Use, OpenAI Operator i drugi sustavi mogu pretraživati web umjesto korisnika, dohvaćati informacije, sažimati ih i prezentirati. Ovi sustavi mijenjaju ekonomiju pažnje. Korisnik više ne mora otvoriti web stranicu da bi dobio njezinu informaciju. Agent to može učiniti za njega. Za organizacije koje žive od web prometa, ovo je egzistencijalna promjena koja se tek odvija.
+
+Algoritamska transparentnost je regulatorni odgovor na složenost AI sustava u distribuciji. EU Digital Services Act zahtijeva od velikih platformi da otkrivaju glavne parametre svojih recommender sustava i da korisnicima ponude opciju neoprofiliranog feeda. AI Act dodaje zahtjeve za rizične primjene AI-a u medijskoj distribuciji. Komunikolog ne mora biti pravnik ali mora znati da se transparentnost algoritma kreće od korporativne tajne prema regulatornoj obvezi, što mijenja dugoročni krajobraz.
+
+
+## Platformski rizici za organizacije
+
+Komunikolog koji svoju strategiju gradi na platformama mora razumjeti nekoliko strukturnih rizika koji su izvan njegove kontrole.
+
+Promjene algoritma događaju se redovito i ponekad imaju dramatične učinke. Facebookova promjena 2018. godine, koja je smanjila vidljivost objava od organizacija u korist objava od prijatelja, dramatično je pala organski doseg za sve organizacije. Instagramova promjena 2025. godine, koja je više favorizirala Reels od statičnih objava, kažnjavala je račune koji su nastavili dominantno objavljivati statične postove. Algoritamske promjene rijetko su unaprijed objavljene i organizacije ih obično otkrivaju tek kada metrike padnu.
+
+Pad organskog dosega kronični je trend u zadnjih deset godina. Studije iznose različite brojke, ali konsenzus je da je prosječan organski doseg na većini velikih platformi pao između sedamdeset pet i devedeset posto u zadnjem desetljeću. Razlog je da platforme privlače sve više sadržaja, dok kapacitet pažnje korisnika ostaje konstantan, pa svaki pojedini sadržaj dobiva manje pažnje. Drugi razlog je da platforme svjesno smanjuju organski doseg kako bi prisilile organizacije na plaćeno oglašavanje.
+
+Deplatforming je rizik da račun bude obrisan, suspendiran ili degradiran zbog kršenja pravila platforme. Pravila su ponekad jasna, ponekad nejasna, primjenjuju se nedosljedno i mogu se mijenjati. Organizacija koja godinama gradi profil može ga izgubiti u jednom danu. U politički i kulturno polariziranim trenucima, deplatforming može imati i ideološku komponentu jer kriteriji procjene nisu apsolutno objektivni.
+
+Promjene cijene oglašavanja izvan su kontrole oglašivača. Cijena po impresiji, po kliku ili po konverziji rasla je u zadnjih deset godina značajno brže od inflacije, jer raste konkurencija među oglašivačima dok kapacitet pažnje korisnika stagnira. Organizacija koja je gradila ROI model na cijenama iz 2020. godine, danas mora pronaći nove uvjete jer su cijene značajno više.
+
+Geopolitički i regulatorni rizici sve su istaknutiji. TikTok je u SAD-u pod kontinuiranim pritiskom zbog kineskog vlasništva. Meta je u EU pod kontinuiranim regulatornim postupcima. X je u zadnjih par godina suočen s različitim sankcijama u različitim zemljama. Komunikolog koji gradi strategiju na pojedinoj platformi mora računati s mogućnošću da platforma postane nedostupna ili dramatično ograničena u ključnom tržištu.
+
+Iznajmljena publika je termin koji opisuje strukturalnu poziciju svakog tko gradi prisutnost na platformi. Vaši pratitelji nisu vaši. Oni su platformini, a vi imate pristup do njih dok platforma to dopušta i pod uvjetima koje platforma postavlja. Vaši mailing pretplatnici su vaši, jer email infrastruktura je otvorena, vaša lista je vaša, i ne ovisi o algoritmu jedne kompanije. Razlika između iznajmljene i vlastite publike temeljna je za dugoročnu strategiju i sljedeći tjedan ćemo se njoj posvetiti detaljno.
+
+
+## Hrvatski platformski krajobraz
+
+Platformska situacija u Hrvatskoj ima nekoliko specifičnosti koje komunikolog mora poznavati.
+
+Facebook je i dalje najveća platforma po broju korisnika, ali demografija stari brzo. Glavnina aktivne baze nalazi se u srednjoj i starijoj dobnoj skupini. Za organizacije koje ciljaju ovu demografiju, primjerice za zdravstvene usluge, financije ili lokalne usluge, Facebook ostaje važan kanal. Za organizacije koje ciljaju mlađu publiku, doseg na Facebooku je sve nedovoljan.
+
+Instagram je u Hrvatskoj jaka platforma među mlađom i srednjom dobnom skupinom. Reels su preuzeli većinu organskog dosega. Stories ostaju važne za izravnu komunikaciju s postojećom publikom. Hrvatske turističke organizacije koriste Instagram intenzivno, jer je vizualna platforma idealna za destinacijski marketing.
+
+TikTok ima rastuću bazu u Hrvatskoj, posebno među mlađim korisnicima ispod dvadeset i pet godina. Hrvatski TikTok kreatori grade publike koje nadilaze hrvatsko tržište, jer algoritam ne ograničava distribuciju geografski u jednakoj mjeri kao druge platforme. Za organizacije koje žele doseći mlađu publiku, TikTok je strukturalno najatraktivnija opcija u 2026. godini.
+
+LinkedIn je u Hrvatskoj značajno porasla u zadnjih nekoliko godina, kako se profesionalna kultura digitalizira i kako sve više stručnjaka gradi osobni profesionalni brend. Za B2B organizacije, agencije i savjetnike, LinkedIn je dominantna platforma za sadržajni marketing.
+
+YouTube je važan u Hrvatskoj kao i globalno, ali domaća kreatorska scena je relativno mala u usporedbi s brojem domaćih kreatora na drugim platformama. Hrvatski YouTube kanali rijetko prelaze sto tisuća pretplatnika, što su brojevi koje globalni kanali prelaze rutinski.
+
+X je u Hrvatskoj manji kanal nego globalno, dominantno korišten u medijskim, političkim i tehnološkim krugovima. Za organizacije izvan tih sektora, X je rijetko isplativ kao kanal.
+
+Threads i BlueSky imaju u Hrvatskoj još malu bazu, ali rastu i komunikolog koji prati trendove vrijedi ih pratiti.
+
+Telegram kanali su rastući fenomen u Hrvatskoj, posebno za alternativne medije, političke aktere i specifične zajednice. Telegram je manje izložen klasičnom regulatornom okviru i u tom smislu je nepredvidljivija arena.
+
+Hrvatski jezik je dvostruko ograničenje i dvostruka prilika. Ograničenje je da hrvatski jezik ima manju globalnu publiku od engleskog, pa je teže izgraditi velike sadržajne kanale. Prilika je da je konkurencija među hrvatskim sadržajem na hrvatskom jeziku znatno manja od globalne, pa kvalitetan sadržaj na hrvatskom u svojoj kategoriji često nailazi na manje prepreke do publike.
+
+
+## Regulatorni okvir
+
+Algoritamska distribucija sve je više predmet regulatornih intervencija EU-a, što izravno utječe na praksu komunikologa.
+
+Digital Services Act, koji je stupio na snagu 2024. godine, zahtijeva od velikih platformi nekoliko stvari koje izravno utječu na rad. Velike platforme moraju otkriti glavne parametre svojih recommender sustava. Moraju ponuditi korisnicima opciju feeda koji nije personaliziran. Moraju brzo ukloniti ilegalan sadržaj. Moraju biti transparentne o oglašavanju, uključujući tko plaća za koji oglas. Moraju omogućiti pristup podacima istraživačima i regulatorima.
+
+AI Act, koji je u fazi postupne implementacije kroz 2025. i 2026. godinu, dodaje kategorizaciju AI sustava prema riziku i zahtijeva specifične mjere za sustave visokog rizika, što uključuje dio AI sustava koji se koriste u medijskoj i sadržajnoj distribuciji.
+
+Direktiva o autorskim pravima i njezina hrvatska implementacija utječu na to kako platforme tretiraju autorski zaštićen sadržaj. Komunikolog koji koristi sadržaj treće strane mora razumjeti svoje obveze, posebno kada se sadržaj distribuira kroz platforme koje imaju vlastite kompromisne aranžmane s nositeljima prava.
+
+GDPR i ePrivacy okvir utječu na targeting i analitiku. Korištenje cookies, tracking pixela, custom audience funkcija na velikim platformama, sve to mora biti usklađeno s pravilima o osobnim podacima i pristanku korisnika.
+
+Hrvatski regulatorni okvir uključuje Zakon o medijima, Zakon o elektroničkim medijima, kao i nadzor Agencije za zaštitu osobnih podataka. Komunikolog koji djeluje za medije i organizacije s javnom funkcijom mora imati osnovno poznavanje ovih okvira, posebno u trenucima kada se uvode izmjene u skladu s EU regulativom.
+
+
+## Trendovi koji oblikuju budućnost
+
+Nekoliko trendova vrijedi pratiti jer će oblikovati platformski krajobraz u idućim godinama.
+
+Konvergencija na TikTok-stil arhitekturu je proces u kojem sve velike platforme postupno usvajaju logiku jakih recommender sustava i video first feeda. Instagram Reels, YouTube Shorts, Facebook Reels, LinkedIn Video, X video sve idu u istom smjeru. Posljedica je da se publike privikavaju na sličan obrazac konzumacije i da se uspješni sadržajni formati prebacuju između platformi brže nego prije.
+
+AI Overviews i AI search transformiraju kako korisnici otkrivaju sadržaj. Google AI Overviews, Perplexity, ChatGPT pretraga, Claude pretraga, sve to preuzima dio prometa koji bi inače išao kroz tradicionalna mjesta otkrivanja. Komunikolog koji optimizira sadržaj samo za klasični SEO i klasične feedove sve više propušta dio publike koja sadržaj otkriva kroz AI sloj.
+
+Decentralizirani protokoli su tihi ali stvaran trend. ActivityPub, na kojem rade Mastodon i Threads federacija, AT Protocol koji pokreće BlueSky, RSS koji se vraća iz mrtvih, sve to ukazuje na dio korisnika koji žele kontrolu nad svojim digitalnim prisustvom. Za komunikologa, decentralizacija je i prilika i izazov, jer otvara nove distribucijske kanale ali zahtijeva i učenje novih obrazaca.
+
+Sadržaj generiran od AI agenata u korist korisnika dramatično mijenja odnos između publike i sadržaja. Ako agent pretražuje, sažima i prezentira sadržaj korisniku, klasična metrika klika i konzumacije gubi smisao. Industrija pokušava razviti nove metrike koje mjere koliko je sadržaj citiran, sažet i preporučen kroz agente, ali standardi nisu još uspostavljeni.
+
+Sovereign social media i nacionalna alternativa fenomen je koji raste u nekim regijama. EU razmatra inicijative za europsku društvenu platformu. Brazil, Indonezija i druge zemlje povremeno izlaze s inicijativama za nacionalne platforme. Iako velika većina ovih projekata ne uspijeva, sama frekvencija pokušaja signalizira nezadovoljstvo postojećom platformskom strukturom.
+
+Audio i AI glas dobivaju sve veći udio. Spotifyev recommender, podcast platforme s AI generiranim sažetkom, glasovni asistenti, AI generiran zvuk u videu, sve to gradi novi sloj u kojem audio postaje važniji nego što je bio u zadnjem desetljeću.
+
+
+## Na kraju ovog poglavlja
+
+Platforme su preuzele ulogu glavnog distributera sadržaja u digitalnom dobu, a algoritmi su preuzeli ulogu glavnih urednika koji odlučuju što tko vidi. Komunikolog koji ne razumije ovu strukturalnu promjenu radi unutar sustava čija pravila ne poznaje, a na kraju gubi protiv onih koji ih poznaju.
+
+Razumijevanje algoritamske distribucije nije ni cinično iskorištavanje sustava, ni naivno povjerenje da će se kvalitetan sadržaj sam probiti. To je realističan profesionalni stav koji prepoznaje da postoji poseban kontekst u kojem sadržaj danas živi i da je obveza komunikologa razumjeti taj kontekst dovoljno dobro da može unutar njega djelovati svjesno.
+
+Ovo predavanje također je pripremilo teren za sljedeće. Cijela rasprava o platformama otvorila je pitanje koje je do sada implicitno provlačilo kroz semestar. Ako su platforme nepouzdane, ako se algoritmi mijenjaju, ako organski doseg pada, postoji li alternativa? Sljedeći tjedan govorit ćemo o vlastitoj publici i izravnim kanalima, o tome kako se gradi izravan odnos s publikom koji ne ovisi o algoritmu jedne kompanije. Email lista, newsletter, push obavijesti, RSS, vlastiti dom za sadržaj. Sve to su strategije koje komunikolog gradi paralelno s platformskom prisutnošću, kao osiguranje protiv strukturalnih rizika koje smo danas opisali.
+
+::: {.callout-note}
 ## Ključni zaključci
 
-::: {.callout-important appearance="minimal"}
-*Bit će dodano.*
+Platforme su digitalni posrednici koji koriste mrežne efekte za rast i kontroliraju pravila igre na svojem tržištu, što čini svaku komunikacijsku strategiju izgrađenu na platformi strukturalno ranjivom.
+
+Prijelaz iz kronološke u algoritamsku distribuciju u zadnjih petnaestak godina temeljno je promijenio posao komunikologa, jer doseg više nije funkcija broja pratitelja i vremena objave nego usklađenosti sadržaja s logikom platforme.
+
+Algoritmi velikih platformi rangiraju sadržaj kroz kombinaciju signala o sadržaju, autoru, korisniku i njihovom međusobnom odnosu, pri čemu sustav optimizira ono što može mjeriti, a ne nužno ono što je najvažnije.
+
+Svaka velika platforma ima specifičnu publiku, sadržajnu logiku i komunikacijski ishod koji najbolje opslužuje, pa komunikolog mora mapirati platforme po funkciji, a ne ih tretirati kao međusobno zamjenjive kanale.
+
+Drugorazredni učinci algoritamske distribucije, uključujući filter bubblove, engagement maximization i strukturalnu prednost emocionalno polariziranog sadržaja, postavljaju etička pitanja koja komunikolog mora svjesno adresirati.
+
+AI sustavi su središnji dio moderne algoritamske distribucije, od recommender sustava velikih platformi do generativnih AI asistenata koji preuzimaju dio prometa od tradicionalnih kanala otkrivanja sadržaja.
+
+Promjene algoritma, pad organskog dosega, deplatforming, geopolitički rizici i rast cijena oglašavanja konkretni su strukturalni rizici za organizacije koje grade strategiju isključivo na platformama.
+
+Hrvatski platformski krajobraz pokazuje jasnu segmentaciju po dobnim skupinama i funkcijama, gdje Facebook stari, Instagram dominira u srednjoj dobi, TikTok raste među mlađima, LinkedIn jača u B2B segmentu, a Telegram preuzima nove niše.
+
+EU regulatorni okvir, od Digital Services Acta preko AI Acta do GDPR-a, postupno mijenja krajobraz prema većoj transparentnosti algoritma i jačoj zaštiti korisnika, što znači da se klasična praksa optimizacije za platforme mora prilagoditi.
+
+Razlika između iznajmljene publike na platformama i vlastite publike na izravnim kanalima temeljna je strukturalna razlika koja oblikuje dugoročnu komunikacijsku strategiju, što vodi izravno u temu sljedećeg predavanja.
 :::
+
 
 ## Priprema za sljedeći tjedan
 
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::
+Tjedan 10 bavit će se vlastitom publikom i izravnim kanalima, dakle infrastrukturom komunikacije koja ne ovisi o algoritmima velikih platformi.
+
+Prije desetog predavanja napravite četiri stvari.
+
+Prvo, odaberite jednu hrvatsku organizaciju ili medij koji aktivno koristi platforme i napravite mali audit njegove platformske prisutnosti. Zabilježite koje platforme koristi, koliko ima pratitelja na svakoj, koja vrsta sadržaja dominira na svakoj i procijenite gdje vidi najveći angažman. Pokušajte zaključiti koja je platforma za tu organizaciju strateški najvažnija i zašto.
+
+Drugo, pratite jednu objavu na svakoj od tri različite platforme tijekom dva ili tri dana. Zabilježite početni angažman, kako se mijenja kroz vrijeme i pokušajte zaključiti što govori o algoritamskoj logici platforme. Posebno obratite pažnju na razliku između prvih nekoliko sati i dana koji slijede.
+
+Treće, isprobajte AI pretraživač, primjerice Perplexity ili ChatGPT, i postavite mu tri pitanja na koja bi inače tražili odgovor kroz Google. Zabilježite koje izvore citira, koliko su odgovori cjeloviti i u kojem se smislu razlikuju od klasičnog Google rezultata. Refleksiju o ovome iskoristit ćemo u uvodu sljedećeg predavanja.
+
+Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica o sljedećem pitanju. Koliko vašeg dnevnog konzumiranja medija prolazi kroz algoritamske kanale, a koliko kroz izravne kanale poput maila, RSS-a ili izravnog posjeta web stranici? Što biste željeli promijeniti u toj raspodjeli?
+
+
+## Dodatno čitanje
+
+Zaikom Tufekcijev rad na presjeku tehnologije, društva i platformi ponudio je niz utjecajnih analiza algoritamske distribucije. Njezin TED Talk i radovi u akademskim časopisima dostupni su besplatno i čitljivi su komunikolozima bez tehničke pozadine.
+
+Charlie Warzel u svom newsletteru Galaxy Brain i u Atlanticu redovito piše o platformama, algoritmima i kreatorskoj ekonomiji. Njegove analize promjena na X-u, Instagramu i TikToku pripadaju među najinformiranije u industriji.
+
+Ben Thompson na Stratechery pruža analize tržišne dinamike velikih platformi koje kombiniraju ekonomsku perspektivu s razumijevanjem proizvoda. Mnoge od njegovih analiza dostupne su besplatno i čitljive su širem komunikacijskom čitateljstvu.
+
+Algorithm Watch je njemačka organizacija koja prati i kritički procjenjuje algoritamsku distribuciju u javnom interesu. Njihovi izvještaji o praksi velikih platformi u europskom kontekstu vrijedan su izvor.
+
+Kevin Roose u svojoj kolumni u New York Timesu kontinuirano prati AI i platforme s perspektivom širokog komunikacijskog čitateljstva. Njegovi razgovori s ključnim akterima u industriji često otkrivaju manje vidljive aspekte rada platformi.
+
+European Centre for Algorithmic Transparency objavljuje istraživanja u skladu s obavezama velikih platformi pod Digital Services Actom, što daje rijetki uvid u rad sustava koji su inače poslovne tajne.
+
+Za hrvatski kontekst, izvještaji Hrvatskog novinarskog društva, MEDIJSKA studija i specijalizirane sekcije u stručnim časopisima povremeno donose lokalne analize koje nadopunjuju globalnu literaturu.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Platforma | Sustav koji posreduje između više grupa korisnika koristeći mrežne efekte |
+| Mrežni efekt | Pojava u kojoj vrijednost sustava raste s brojem sudionika |
+| Dvostrano tržište | Tržište u kojem platforma posreduje između dvije različite grupe korisnika |
+| Kronološki feed | Prikaz sadržaja redoslijedom kojim je objavljen |
+| Algoritamski feed | Prikaz sadržaja redoslijedom procijenjene relevantnosti za korisnika |
+| Recommender sustav | AI sustav koji preporučuje sadržaj korisniku na temelju signala |
+| Kandidat generation | Prvi sloj recommender cjevovoda koji izabire kandidate iz velike baze |
+| Ranking | Drugi sloj recommender cjevovoda koji rangira kandidate prema vjerojatnosti ishoda |
+| Engagement signal | Signal koji algoritam koristi, primjerice lajk, komentar, dijeljenje, vrijeme gledanja |
+| Loop | Ponovno gledanje istog sadržaja, snažan signal na TikToku |
+| For You feed | TikTokov algoritamski feed koji ne ovisi o tome koga pratite |
+| Reels | Instagramov format kratkog videa s vlastitim feedom |
+| Shorts | YouTubeov format kratkog videa |
+| Stories | Format ephemeralnog sadržaja koji nestaje nakon dvadeset četiri sata |
+| Engagement maximization | Optimizacija algoritma za maksimiziranje korisničkog angažmana |
+| Filter bubble | Pojava u kojoj algoritmi učvršćuju ranija uvjerenja korisnika |
+| Echo chamber | Komunikacijski prostor u kojem se vraćaju samo usklađena stajališta |
+| Adiktivni dizajn | Dizajn koji koristi tehnike iz psihologije ovisnosti za zadržavanje korisnika |
+| Beskonačno scrollanje | Sučelje koje učitava novi sadržaj automatski bez kraja |
+| Variable reward | Mehanizam varijabilne nagrade preuzet iz operativnog uvjetovanja |
+| Deplatforming | Brisanje, suspendiranje ili degradacija računa od strane platforme |
+| Iznajmljena publika | Publika kojoj imate pristup samo kroz platformu i pod njezinim uvjetima |
+| Vlastita publika | Publika kojoj imate izravan pristup neovisno o platformi |
+| Organski doseg | Broj korisnika koji vide sadržaj bez plaćene promocije |
+| Plaćeni doseg | Broj korisnika koji vide sadržaj zbog plaćenog oglasa |
+| CPM | Cost Per Mille, cijena po tisuću impresija oglasa |
+| CPC | Cost Per Click, cijena po kliku na oglas |
+| ROAS | Return On Ad Spend, povrat ulaganja u oglašavanje |
+| Custom audience | Audience definirana iz vlastitih podataka, primjerice mailing liste |
+| Lookalike audience | Audience koja platforma pronalazi po sličnosti s postojećom |
+| Meta | Korporacija koja vlasništvom obuhvaća Facebook, Instagram, WhatsApp i Threads |
+| TikTok | Platforma kratkog videa s recommender sustavom koji ne ovisi o praćenju |
+| YouTube | Platforma za dulji video sadržaj s monetizacijom za kreatore |
+| LinkedIn | Profesionalna platforma s naglaskom na B2B i karijernu komunikaciju |
+| X | Platforma kratkih objava, ranije Twitter |
+| Threads | Meta platforma kratkih objava i konkurent X-u |
+| Reddit | Platforma struktura zajednica oko tematskih subreddita |
+| Pinterest | Platforma vizualnih kolekcija s naglaskom na otkrivanje proizvoda |
+| Discord | Platforma zajednica oko tematskih servera, popularna kod gaminga i kreatora |
+| BlueSky | Decentralizirana alternativa X-u zasnovana na AT protokolu |
+| Mastodon | Decentralizirana platforma zasnovana na ActivityPub protokolu |
+| Telegram | Platforma za poruke i kanale s rastućim udjelom u distribuciji sadržaja |
+| AT Protocol | Otvoreni protokol koji pokreće BlueSky |
+| ActivityPub | Otvoreni protokol koji pokreće Mastodon i Threads federaciju |
+| Embedding | Vektorska reprezentacija korisnika ili sadržaja u apstraktnom prostoru |
+| Deep learning | Tehnika strojnog učenja koja pokreće moderne recommender sustave |
+| Generativni AI | AI sustav koji generira novi sadržaj |
+| AEO | Answer Engine Optimization, optimizacija sadržaja za AI asistente |
+| GEO | Generative Engine Optimization, sinonim za AEO |
+| AI Overviews | Googleova značajka koja generira AI sažetak iznad rezultata pretraživanja |
+| Perplexity | AI pretraživač koji daje odgovore s citatima izvora |
+| Computer Use | Mogućnost AI sustava da kontrolira sučelje računala u korist korisnika |
+| Digital Services Act | EU regulativa koja postavlja obveze velikih platformi |
+| AI Act | EU regulativa koja kategorizira AI sustave prema riziku |
+| ePrivacy | EU regulativa koja regulira tracking i privatnost u elektroničkim komunikacijama |
+| Algoritamska transparentnost | Obveza otkrivanja parametara recommender sustava |
+| Sovereign platform | Platforma pravno i operativno vezana za određenu jurisdikciju |
+| Kreatorska ekonomija | Ekosustav u kojem pojedinci zarađuju kroz sadržaj na platformama |
+| Influencer | Pojedinac s velikom platformskom publikom koji utječe na percepcije i odluke pratitelja |
+| UGC | User-Generated Content, sadržaj koji kreiraju korisnici |
+| Viralnost | Pojava brzog organskog širenja sadržaja kroz dijeljenje |
+| Trend cycle | Brzo izmjenjivanje dominantnih obrazaca sadržaja, posebno na TikToku |

@@ -266,7 +266,7 @@ Sadržajna strategija disciplina je koja povezuje sve o čemu smo govorili u pre
 
 Komunikolog koji vlada sadržajnom strategijom ne piše samo dobar tekst. On razumije zašto piše, za koga piše, kako će se sadržaj pronaći, kako će se isporučiti, kako će se mjeriti i kako će se održavati. To je razlika između osobe koja piše i profesionalca koji strateški komunicira.
 
-Sljedeći tjedan govorit ćemo o web analitici i donošenju odluka temeljem podataka. Veza s današnjom temom je izravna jer sadržajna strategija bez analitike puka je intuicija, a analitika bez sadržajne strategije puko je gomilanje brojeva bez konteksta.
+Sljedeći tjedan govorit ćemo o korisničkom iskustvu, dizajnu sučelja i pristupačnosti. Veza s današnjom temom je izravna jer najpažljivije pisana poruka ne vrijedi ništa ako korisnik ne može pronaći, pročitati ili djelovati prema njoj zbog konteksta u kojem sadržaj živi.
 
 ::: {.callout-note}
 ## Ključni zaključci
@@ -295,9 +295,9 @@ Etička odgovornost za točnost, transparentnost i označavanje sponzoriranog sa
 
 ## Priprema za sljedeći tjedan
 
-Tjedan 7 bavit će se web analitikom i donošenjem odluka temeljem podataka.
+Tjedan 8 bavit će se korisničkim iskustvom, dizajnom sučelja i pristupačnošću.
 
-Prije sedmog predavanja napravite četiri stvari.
+Prije osmog predavanja napravite četiri stvari.
 
 Prvo, odaberite web stranicu hrvatske organizacije i provedite mini sadržajnu reviziju. Pregledajte deset nasumično odabranih stranica i za svaku zabilježite vrstu sadržaja, procijenjenu starost, relevantnost, kvalitetu pisanja i postoje li očiti ROT problemi.
 

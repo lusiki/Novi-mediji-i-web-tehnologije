@@ -296,7 +296,7 @@ Ne postoji jedan CMS koji je najbolji za sve. WordPress je izvrstan za organizac
 
 Za komunikologa, najvažnija kompetencija nije znati kodirati u nekom od ovih sustava. Najvažnija kompetencija je razumjeti mogućnosti i ograničenja svake opcije dovoljno da može sudjelovati u donošenju informirane odluke i da može maksimalno iskoristiti platformu koju organizacija izabere.
 
-Sljedeći tjedan govorit ćemo o principima UX dizajna i korisničkog iskustva. Veza s današnjom temom je izravna jer CMS određuje tehničke mogućnosti, ali korisničko iskustvo određuje hoće li posjetitelj ostati na stranici, pronaći ono što traži i obaviti željenu akciju.
+Sljedeći tjedan govorit ćemo o no-code i low-code alatima koje komunikolozi koriste za operativni rad oko sadržaja. Veza s današnjom temom je izravna jer CMS pruža platformu na kojoj sadržaj javno živi, dok no-code stack pruža operativni sloj koji taj sadržaj proizvodi, distribuira i prati.
 
 ::: {.callout-note}
 ## Ključni zaključci

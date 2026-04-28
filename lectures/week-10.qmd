@@ -1,30 +1,368 @@
 ---
 title: "Vlastita publika i izravni kanali"
 subtitle: "Email, newsletter, push obavijesti i izgradnja publike neovisne o platformama"
-author: "doc. dr. sc. Luka Šikić"
 date: 2026-04-29
 categories: [publika, email, newsletter]
 draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
+abstract: |
+  Ovo predavanje razrađuje strukturalnu razliku između iznajmljene publike na platformama i vlastite publike na izravnim kanalima koju je prošli tjedan otvorilo. Email, newsletter, RSS, push obavijesti i vlastita web stranica izravne su infrastrukture komunikacije koje organizacija kontrolira u potpunosti i koje preživljavaju promjene algoritma, deplatforming, geopolitičke šokove i tržišnu konsolidaciju. Za komunikologa, izgradnja vlastite publike nije nostalgična alternativa platformskoj strategiji nego njezino strukturno osiguranje.
 ---
 
 ## Ishodi učenja
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+Nakon ovog predavanja studenti će moći
 
-## Sadržaj
+1. Razlikovati iznajmljenu publiku na platformama od vlastite publike na izravnim kanalima i objasniti zašto je ova razlika temeljna za dugoročnu komunikacijsku strategiju
+2. Procijeniti email kao infrastrukturu i objasniti zašto se već pet desetljeća drži kao glavni izravan kanal komunikacije
+3. Mapirati glavne kategorije alata za email i newsletter, od klasičnih ESP platformi do nezavisnih izdavačkih ekosustava
+4. Postaviti strategiju izgradnje liste pretplatnika koja poštuje GDPR i temelji se na obostranoj razmjeni vrijednosti
+5. Razumjeti tehničke temelje deliverabilityja, od reputacije domene preko SPF, DKIM i DMARC autentifikacije do upravljanja popisima
+6. Procijeniti ostale izravne kanale, uključujući RSS, web push obavijesti, podcast i vlastitu web stranicu, te razumjeti njihovu komplementarnu ulogu
+7. Smjestiti AI sloj u kontekst izravnih kanala i razumjeti kako mijenja segmentaciju, personalizaciju i odnos pretplatnika i sadržaja
+8. Razviti strategiju vlastite publike u hrvatskom kontekstu, s razumijevanjem regulatornog okvira, jezičnih specifičnosti i lokalnih pretplatničkih obrazaca
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
 
+## Zašto komunikolog mora graditi vlastitu publiku
+
+Prošli tjedan opisali smo platformsku ovisnost. Algoritamske promjene koje preko noći prepolove organski doseg. Deplatforming koji u jednom danu briše profil koji se gradio godinama. Geopolitičke promjene koje mogu zatvoriti pristup ključnoj platformi u ključnom tržištu. Konsolidacija među dobavljačima koja smanjuje izbor. Cijene oglašavanja koje rastu brže od inflacije. Sve su to strukturalni rizici koje organizacija ne može kontrolirati ali ih svakodnevno snosi.
+
+Postoji jedna kategorija komunikacijske infrastrukture koja prolazi kroz sve te oluje praktički bez utjecaja. Pretplatnici newslettera koji su organizaciji dali svoju email adresu nastavljaju primati sadržaj bez obzira što Instagram radi sa svojim algoritmom. Korisnici koji prate web stranicu kroz RSS feed nastavljaju vidjeti svako novo objavljivanje bez obzira što Facebook prikazuje u feedu. Donatori koji su se pretplatili na podcast nastavljaju ga slušati bez obzira što TikTok kažnjava ili nagrađuje.
+
+Ovaj kanal nije iznajmljen. To je vaš kanal. Vaša lista pretplatnika nije pohranjena u tuđoj bazi koja vam može biti suspendirana ili obrisana. Vaš RSS feed ne ovisi o algoritmu. Vaša web stranica živi na infrastrukturi koju izabirete i koju mijenjate kada želite. Razlika nije marginalna, ona je strukturalna i određuje sigurnost cijele komunikacijske operacije.
+
+Zamislite dva scenarija s istom hrvatskom medijskom organizacijom u 2026. godini. U prvom scenariju, organizacija je sav svoj distribucijski kapacitet izgradila na Facebooku, Instagramu i X-u. Ima sto pedeset tisuća pratitelja na svim platformama zajedno. Krajem godine Meta mijenja algoritam i organski doseg pada za sedamdeset posto, X uvodi pravila koja smanjuju vidljivost medijskog sadržaja, a Apple uvodi nova ograničenja u privatnosti koja smanjuju efikasnost oglašavanja. Promet prema vlastitoj web stranici pada za šezdeset posto u tri mjeseca i s njim padaju i prihodi od oglasa. Organizacija nema rezervni kanal kojim bi dosegla istu publiku.
+
+U drugom scenariju, ista organizacija sustavno je gradila newsletter listu i ima trideset tisuća aktivnih pretplatnika koji svaki tjedan dobivaju kuriran pregled. Ima dvadeset tisuća korisnika koji su se prijavili na web push obavijesti. Ima petnaest tisuća pretplatnika svojeg podcasta. Kada algoritmi platformi padnu, ove tri liste nastavljaju funkcionirati. Pretplatnici nastavljaju otvarati emailove. Push obavijesti nastavljaju dolaziti. Podcast nastavlja s preuzimanjima. Pad platformskog dosega bolan je ali nije egzistencijalan, jer drugi izvor publike ne ovisi o algoritmu.
+
+Razlika između ova dva scenarija nije pitanje sreće ili veličine. To je pitanje strategije. Komunikolog koji razumije strukturalnu razliku između iznajmljene i vlastite publike svjesno gradi obje, koristeći platforme kao kanal otkrivanja i prvog dodira, a izravne kanale kao trajni odnos i osiguranje od strukturalnih šokova.
+
+
+## Email kao infrastruktura koja je preživjela sve
+
+Email je najstariji masovni digitalni komunikacijski kanal. Prvi email poslan je 1971. godine. Pedeset i pet godina kasnije, gotovo svaki digitalni proizvod koji koristite pretpostavlja da imate email adresu. Bez emaila ne možete otvoriti račun na većini servisa. Bez emaila ne možete dobiti potvrdu o kupnji. Bez emaila ne možete primiti obavijest o važnoj promjeni. Email je univerzalna identifikacijska oznaka digitalnog svijeta.
+
+Trajnost emaila nije slučajna. Email je izgrađen na otvorenim standardima. SMTP, IMAP, POP3, MIME, DKIM, SPF, DMARC, sve su to javno dokumentirani protokoli koje implementira tisuće softverskih proizvoda. Nijedna kompanija ne kontrolira email infrastrukturu. Vi možete poslati email s vlastite domene preko vlastitog poslužitelja, kroz Gmail, kroz Microsoft Exchange, kroz Brevo ili kroz milijun drugih servisa, i poruka će stići primatelju koji koristi bilo koji drugi servis. Ovo je radikalno drugačije od svake platformske komunikacije. Ne možete poslati Instagram poruku Facebook korisniku. Ne možete poslati TikTok video kao push obavijest LinkedIn pratitelju. Ali email putuje slobodno između svih.
+
+Iz iste otvorenosti proizlazi i otpornost. Email je preživio razvoj weba, mobilnu revoluciju, eru društvenih mreža, dolazak AI-a. Svake nove generacije pojavljivali su se prediktori da je email mrtav. Najprije su govorili da će ga zamijeniti instant messaging. Onda društvene mreže. Onda Slack i Microsoft Teams. Onda WhatsApp. Onda AI agenti. Svakih nekoliko godina email umiva isto kao prošlih godina, dok njegov korisnički bazu i komercijalna upotreba kontinuirano rastu.
+
+Za komunikologa, ova trajnost ima konkretnu posljedicu. Lista pretplatnika koja se gradi danas vjerojatno će biti relevantan komunikacijski kanal i za petnaest godina. Profil na trenutno najpopularnijoj platformi vjerojatno neće. Investiranje u email listu strukturalno je sigurnije od investiranja u platformsku publiku, jer email kao infrastrukturu nema poslovne logike koja je može ukinuti.
+
+Mit koji vrijedi razgraditi je da je email demografski mrtav za mlađe generacije. Empirijski podaci pokazuju suprotno. Studenti i mlađi profesionalci provjeravaju email više puta dnevno. Otvaranja newslettera kod ispod tridesetogodišnje populacije rastu od 2020. godine. Razlog je dijelom trajnost (Gmail račun otvoren u trinaestoj godini ostaje s korisnikom desetljećima), dijelom signalna funkcija (newsletter koji je čovjek svjesno odabrao primati signalizira važnost na način koji algoritmička objava ne može), a dijelom obrazac konzumacije (email čeka u inboxu i može se konzumirati kada korisniku odgovara, što je postalo deficitarna kvaliteta u algoritamskom svijetu).
+
+Otvorenost emaila ima i drugu stranu. Spam, phishing i komercijalna zlouporaba decenijima su pratili email. Posljedica je da je infrastruktura postala relativno stroga prema pošiljateljima. O tome ćemo govoriti u sekciji o deliverabilityju.
+
+
+## Newsletter kao kulturni format
+
+Newsletter, kao kulturni i komunikacijski format, doživio je renesansu od 2018. godine. Razlozi su strukturalni. Pad organskog dosega na društvenim mrežama, urušavanje povjerenja u tradicionalne medije, rast platformi za pretplatnički newsletter poput Substacka i Beehiiva, i sve veći broj pojedinaca koji su tražili izravni odnos s publikom bez posrednika.
+
+Razlika između newslettera i običnog email marketinga važna je. Email marketing klasično koristi list kao distribucijski kanal za promotivne poruke, transakcijske obavijesti, nudge sekvence i obavijesti o akcijama. Newsletter, u modernom smislu, urednički je proizvod sa strukturom, glasom i kontinuitetom. Sadržaj newslettera nije promotivni već informacijski, analitički ili kulturni. Pretplatnik newslettera nije lead u prodajnom lijevku, pretplatnik je čitatelj.
+
+Najpoznatiji autori i medijski projekti danas koriste newsletter kao primarni kanal. Casey Newton piše Platformer o tehnologiji i platformama, s desecima tisuća plaćenih pretplatnika. Stratechery Bena Thompsona dvadeset godina vodi industrijsku analizu kroz pretplatnički model. Substack je u pet godina narastao na više stotina milijuna mjesečnih čitatelja, dok Beehiiv specijalizira u kreatorskoj infrastrukturi. Newsletter ekonomija je realnost koja preoblikuje medijski krajobraz.
+
+Za organizacije, newsletter može biti više od marketinškog kanala. Može biti urednički proizvod koji gradi reputaciju, gradi izravan odnos i otvara monetizaciju kroz pretplate. Može biti i jednostavnija stvar, redovita obavijest pretplatnicima o novostima i sadržaju. Razlika ovisi o ambicijama organizacije i o kapacitetu uredničkog rada koji može uložiti.
+
+Format newslettera ima svoja pravila. Naslov mora biti specifičan i obećavajući, bez clickbaita ali s dovoljno snage da se izdvoji u prepunom inboxu. Otvaranje mora kroz prvih deset do dvadeset riječi reći što čeka čitatelja. Struktura mora biti skenabilna, jer čitatelj newslettera ima čak manje pažnje nego čitatelj web članka. Dužina mora biti kalibrirana publici, neki newsletteri rade s pet stotina riječi, neki s tri tisuće, ali u svakom slučaju mora postojati jasna logika. Frekvencija mora biti dosljedna, jer pretplatnici razvijaju ritualni odnos s newsletterom koji dolazi predvidljivim ritmom.
+
+
+## Krajobraz email i newsletter alata
+
+Tržište alata za email i newsletter velika je i fragmentirana. Razlikujemo nekoliko jasnih kategorija.
+
+Klasične email service provider platforme, koje skraćeno zovemo ESP, dugogodišnji su standard za organizacije. Mailchimp, Brevo, ActiveCampaign, MailerLite i HubSpot Marketing Hub među najpoznatijima su. Ove platforme nude širok spektar funkcionalnosti koje uključuju izradu poruka kroz vizualni editor, segmentaciju liste, automatizaciju kroz workflow scenarije, A/B testiranje, izvještaje o otvaranjima i klikovima, integracije s CRM sustavima i kompleksniji marketing operativni sustav.
+
+Newsletter platforme su mlađa kategorija s naglaskom na uredničku praksu i pretplatnički model. Substack, Beehiiv, Ghost, Buttondown i Kit (ranije ConvertKit) među vodećima su. Razlika u odnosu na klasične ESP-e je u fokusu. Newsletter platforme grade alate oko izrade kvalitetnog uredničkog sadržaja i monetizacije kroz pretplate, dok klasični ESP-i grade alate oko marketinških kampanja i CRM integracija. Newsletter platforme često nude i funkcionalnosti web stranice, što čini autora ili manju organizaciju neovisnom od potrebe za odvojenim CMS-om.
+
+Transakcijski email servisi, poput Postmarka, SendGrida, Mailguna i Resenda, specijalizirani su za isporuku pojedinačnih emailova koje aplikacija šalje korisnicima, primjerice potvrde narudžbe, reset lozinke ili obavijesti o promjeni statusa. Komunikolog se s ovim servisima rijetko susreće izravno, ali oni su tehnička infrastruktura iza svakog moderno web proizvoda.
+
+Email u CRM platformi pristup je u kojem komunikacija ide kroz širi CRM sustav koji centralizira podatke o klijentima. Salesforce Marketing Cloud, HubSpot, Microsoft Dynamics i Zoho dominantni su predstavnici. Za velike organizacije s razvijenim prodajnim procesom, ovaj pristup ima smisla jer email postaje dio integriranog operativnog sustava, a ne zaseban kanal.
+
+Self-hosted i open-source rješenja postoje za organizacije koje žele potpunu kontrolu. Ghost, Listmonk i Mautic open-source su platforme koje organizacija sama hostira. Tehnička složenost veća je ali se eliminira ovisnost o dobavljaču i izbjegava se cjenovni model po pretplatniku.
+
+Izbor alata strateška je odluka. Mali tim s naglaskom na uredničku praksu i potencijalnu monetizaciju kroz pretplate gotovo sigurno bira newsletter platformu. Velika organizacija s razvijenim CRM sustavom integrira email u taj sustav. Srednja agencija s različitim klijentima bira fleksibilan ESP. Pojedinačni komunikolog koji gradi profesionalni profil često bira newsletter platformu kao sve u jednom rješenje.
+
+
+## Izgradnja liste i etika pristanka
+
+Lista pretplatnika nije magičan resurs koji se generira sam od sebe. Gradi se kroz svjesnu strategiju koja kombinira korist za pretplatnika, transparentnost i poštovanje.
+
+Lead magnet, ili motiv za pretplatu, koncept je koji opisuje što organizacija nudi u zamjenu za email adresu. Klasični lead magneti su edukacijski dokumenti, vodiči, predlošci, mali alati, pristup ekskluzivnom sadržaju, popusti ili rani pristup proizvodu. Suvremeni lead magneti idu dalje, prema sustavnijim ponudama poput email tečajeva razdijeljenih u sekvence, AI alata koje pretplatnik koristi, ili prilagođenih izvještaja temeljenih na njegovom unosu.
+
+Mjesto pretplate na web stranici jednako je važno kao i lead magnet. Tradicionalni mali obrazac u podnožju stranice donosi malo. Dobro postavljen pop-up koji se aktivira na temelju ponašanja korisnika donosi značajno više. Inline obrasci unutar sadržajnih članaka, gdje se korisniku nudi pretplata u trenutku najveće angažiranosti, jedna su od najefikasnijih taktika. Floating pruga koja se diskretno pojavljuje pri scrollanju kombinira pristupačnost i nenametljivost.
+
+Etika prikupljanja temeljna je obveza koja u europskom regulatornom okviru ima i pravne posljedice. GDPR zahtijeva eksplicitan, informiran i slobodan pristanak za prikupljanje email adrese radi marketinških poruka. To znači da se predčekirana kvačica ne smatra pristankom. Da se obrazac ne smije prikrivati u uvjetima korištenja drugog servisa. Da pretplata na newsletter ne smije biti uvjet za pristup drugoj usluzi koja s newsletterom nema veze. Da pretplatnik mora moći lako odjaviti pretplatu i da se njegov zahtjev mora odmah ispoštovati.
+
+Otvorena lista i double opt-in dvije su prakse koje vrijedi razlikovati. Otvorena lista znači da nakon što se korisnik upiše, odmah dobiva sve buduće poruke. Double opt-in znači da korisnik nakon upisa dobije potvrdni email koji mora kliknuti da bi pretplata postala aktivna. Double opt-in smanjuje upis za desetak do petnaest posto, ali drastično povećava kvalitetu liste, jer eliminira lažne adrese, slučajne upise i upite od trećih osoba. U EU regulatornom okruženju, double opt-in je najsigurnija praksa.
+
+Rast liste neljudskim sredstvima, primjerice kupovinom liste od trećih strana ili scrapingom javno dostupnih emailova, etički je i pravno problematično. GDPR zabranjuje slanje marketinških poruka osobama koje nisu izrazile pristanak. Email service provider koji takvu praksu otkrije obično trenutno suspendira račun. Reputacija domene koja je pošiljatelj nezatraženih poruka ozbiljno trpi i deliverability dramatično pada.
+
+Brzina rasta nije isto što i kvaliteta liste. Lista od deset tisuća entuzijastičnih pretplatnika koji svaki tjedan otvaraju newsletter vrijednija je od liste od stotinu tisuća pasivnih adresa od kojih većina ne otvara ništa. Komunikolog koji gradi listu mora izabrati metrike koje prati. Veličina liste je laka metrika za hvaliti se. Stopa otvaranja, stopa klika, postotak aktivnih pretplatnika i konverzija u željenu akciju su metrike koje govore o stvarnoj vrijednosti.
+
+
+## Segmentacija, personalizacija i automatizacija
+
+Email kao kanal moćan je upravo zato što omogućuje da se različitim pretplatnicima šalje različit sadržaj prilagođen njihovim interesima i fazi odnosa s organizacijom.
+
+Segmentacija je proces dijeljenja liste u podgrupe na temelju nekog kriterija. Najčešći kriteriji su demografski (regija, jezik, dob, spol), bihevioralni (povijest interakcije s emailovima, posjet web stranici, kupovine), faza odnosa (novi pretplatnik, aktivni pretplatnik, latentni pretplatnik), interesi (samodeklarirani ili izvedeni iz ponašanja) i razina angažmana. Segmentirani pretplatnici dobivaju relevantniji sadržaj i organizacija dobiva bolje stope otvaranja, klika i konverzija.
+
+Personalizacija nadograđuje segmentaciju i odnosi se na prilagodbu konkretnih elemenata poruke pojedinom pretplatniku. Osnovna razina personalizacije je oslovljavanje imenom u predmetu ili u uvodu poruke. Naprednija personalizacija uključuje dinamičke blokove sadržaja koji se mijenjaju ovisno o pretplatniku. Klijent koji je nedavno kupio proizvod A vidi preporuke za proizvod B, dok klijent koji je samo pregledavao kategoriju C vidi sadržaj iz te kategorije.
+
+Automatizacija u kontekstu emaila odnosi se na sekvence poruka koje se šalju automatski na temelju tetragramskog događaja. Welcome sekvenca, koja novi pretplatnik dobiva kroz prvih nekoliko dana, klasičan je primjer. Drip kampanja koja edukira pretplatnika kroz tjedne, drugi je. Win-back sekvenca koja pokušava reaktivirati neaktivne pretplatnike, treći je. Abandoned cart sekvenca u e-trgovini, četvrti.
+
+Workflow scenariji u modernim ESP-ima omogućuju složene logike s više grananja. Pretplatnik koji u welcome sekvenci klikne na link o temi A automatski se prebacuje u sekvencu o toj temi. Pretplatnik koji u tri uzastopne poruke ne otvori nijednu, automatski se obilježava kao manje aktivan i smanjuje mu se frekvencija. Pretplatnik koji izvrši konverziju izlazi iz cijele sekvence. Sve je to logika koju komunikolog konfigurira jednom, a sustav je provodi tisuću puta dnevno.
+
+Granica između automatizacije i hladne mehaničke komunikacije je tanka. Pretjerana automatizacija stvara dojam masovne tvornice koja nema empatije za pretplatnika. Premala automatizacija troši ljudsko vrijeme na zadatke koje sustav može obaviti bolje. Komunikolog koji ovo balansira gradi infrastrukturu koja se osjeća osobno bez da troši nesrazmjerno ljudskih sati.
+
+
+## Deliverability, ili kako poruka uopće stigne
+
+Slanje emaila je tehnički jednostavno. Slanje emaila tako da stigne u inbox, a ne u spam folder, ozbiljno je pitanje koje zahtijeva razumijevanje nekoliko slojeva infrastrukture.
+
+Reputacija domene je ocjena koju email primatelji daju svakoj domeni s koje stiže pošta. Reputacija se gradi kroz povijest. Domena koja godinama šalje legitimne poruke, ima nizak postotak prijava spama i visoku stopu angažmana, ima visoku reputaciju i njezine poruke gotovo uvijek završavaju u inboxu. Domena koja je nova, ili koja je ranije slala spam, ima nisku reputaciju i njezine poruke završavaju u spam folderu ili se odbijaju.
+
+SPF, ili Sender Policy Framework, prvi je sloj autentifikacije. To je DNS zapis koji navodi koji su poslužitelji ovlašteni slati email s vaše domene. Kada primatelj primi poruku, provjerava SPF zapis pošiljateljeve domene. Ako poruka stiže s neovlaštenog poslužitelja, primatelj je može odbiti ili obilježiti kao sumnjivu. SPF je nužan minimum za bilo kakvo ozbiljno slanje emaila.
+
+DKIM, ili DomainKeys Identified Mail, drugi je sloj autentifikacije. DKIM dodaje kriptografski potpis svakoj odlaznoj poruci, što primatelju omogućuje provjeru je li poruka bila izmijenjena tijekom puta i je li stvarno došla od ovlaštenog pošiljatelja. DKIM zahtijeva tehničku konfiguraciju u DNS-u i kod ESP-a, ali je danas obvezan za ozbiljnu deliverability praksu.
+
+DMARC, ili Domain-based Message Authentication, Reporting and Conformance, treći je sloj. DMARC kombinira SPF i DKIM, definira što primatelj treba učiniti s porukama koje ne prolaze provjeru, i omogućuje vlasniku domene da prima izvještaje o pokušajima zlouporabe. Od 2024. godine, Gmail, Yahoo i drugi veliki primatelji zahtijevaju DMARC za pošiljatelje koji šalju veću količinu pošte, što je značajno podiglo standard u industriji.
+
+BIMI, ili Brand Indicators for Message Identification, najnoviji je sloj. BIMI omogućuje da se logo brenda prikaže uz poruku u inboxu, što povećava povjerenje primatelja. BIMI zahtijeva ne samo SPF, DKIM i DMARC nego i Verified Mark Certificate, što je dokument koji košta nekoliko stotina eura godišnje i koji potvrđuje pravo organizacije na korištenje konkretnog logotipa.
+
+Praktične posljedice za komunikologa su sljedeće. Slanje newslettera s gmail.com adrese kroz osobni Gmail nije ozbiljno za organizaciju, jer ne gradi domenu, nema SPF, DKIM, DMARC infrastrukturu, i ne može se brendirati. Slanje s vlastite domene kroz pravi ESP, s ispravnom autentifikacijom, danas je profesionalni minimum.
+
+Pojam list hygiene odnosi se na održavanje liste čistom. Adresa koja se odbija (bounce) više puta mora se ukloniti. Adresa koja godinu dana nije otvorila nijednu poruku vjerojatno je nezainteresirana ili neaktivna i bolje ju je ukloniti, jer pasivni pretplatnici degradiraju reputaciju domene. Spam complaints, slučajevi kada pretplatnik označi poruku kao spam, posebno su skupi za reputaciju i moraju se promatrati kao signal da nešto u praksi nije u redu.
+
+Email warming, ili postupno povećanje volumena, praksa je za nove domene koje počinju slati. Domena koja prvi dan pošalje pet stotina poruka u redu je. Domena koja prvi dan pošalje pedeset tisuća poruka biti će označena kao sumnjiva. Postupno povećavanje, kroz tjedne, omogućuje primateljima da grade reputaciju.
+
+
+## RSS, push obavijesti i drugi izravni kanali
+
+Iako je email dominantni izravni kanal, postoji nekoliko drugih kanala koje komunikolog treba poznavati i koji mogu biti komplementarni.
+
+RSS, kratica za Really Simple Syndication, otvoreni je standard koji omogućuje da korisnik prati objavljivanje sadržaja s različitih web stranica kroz svoj RSS čitač, bez algoritamskog posrednika. RSS je u 2000-ima bio dominantan način praćenja sadržaja, gotovo umro u 2010-ima zbog rasta društvenih mreža, a u zadnjih par godina doživio neku vrstu povratka. Razlozi za povratak su strukturalni. Korisnici traže izravan i predvidljiv obrazac otkrivanja sadržaja. RSS čitači poput Feedlyja, NetNewsWirea i Readera ponovno rastu. AI sažeci RSS feedova postaju sve češći.
+
+Za komunikologa, RSS je jeftina i niska održavanja. Ako web stranica ima blog, ima i RSS feed. Promovirati taj feed prema publici koja koristi RSS čitače je mali napor s konkretnim povratom. Newsletter platforme poput Substacka i Beehiiva automatski generiraju RSS feed za svaku publikaciju, što znači da pretplatnik može čitati newsletter kroz svoj RSS čitač umjesto kroz email.
+
+Web push obavijesti su poruke koje se šalju izravno u preglednik korisnika koji se na njih pretplatio na vašoj web stranici. Razlika u odnosu na email je trenutačnost i kratkoća. Push obavijest se pojavljuje na uređaju korisnika u istom trenutku, kratka je i ima jasan poziv na akciju. OneSignal, Firebase Cloud Messaging i drugi servisi nude tehničku infrastrukturu za web push.
+
+Push obavijesti dobre su za vremenski osjetljiv sadržaj, primjerice breaking news, hitne ponude ili podsjetnike. Loše su za sve drugo, jer pretjerivanje brzo dovodi do toga da korisnik isključi obavijesti i izgubi se kao kanal. Discplinirana praksa kaže da se ne šalje više od jedne ili dvije obavijesti tjedno, osim u industrijama gdje je realtime informacija srž ponude.
+
+Mobilne push obavijesti, koje funkcioniraju kroz aplikaciju instaliranu na uređaju korisnika, snažniji su kanal ali zahtijevaju da organizacija ima vlastitu mobilnu aplikaciju. Razvoj i održavanje mobilne aplikacije značajno je veće ulaganje od web stranice, pa je ovaj kanal dostupan tek organizacijama koje već imaju aplikaciju iz drugih razloga.
+
+Podcast je izravan audio kanal koji se distribuira kroz otvorene RSS feedove. Publika koja se pretplatila na podcast u svojem podcast klijentu, primjerice Apple Podcasts, Spotify ili Overcast, automatski preuzima nove epizode kako se objavljuju, bez algoritamskog posredovanja. Podcast je sporiji za rast od newslettera ali gradi dublji odnos s publikom, jer audio iskustvo je intimnije od tekstualnog.
+
+Vlastita web stranica, kao mjesto na kojem živi sadržaj koji izvori za sve ostale kanale, infrastrukturni je korijen cijele strategije. Iz prošlih tjedana znate kako se ona gradi. Ovdje vrijedi naglasiti da web stranica koja je dom za sadržaj funkcionira drugačije od web stranice koja je samo katalog. Dom za sadržaj redovito se ažurira, ima svoj ritam, gradi prepoznatljivost. Korisnik se vraća na nju jer zna da će tamo pronaći nešto novo.
+
+
+## Pretplatnički modeli i članstvo
+
+Vlastita publika otvara mogućnost koju iznajmljena publika ne otvara, a to je izravna monetizacija pretplatom ili članstvom.
+
+Pretplatnički model na newsletter klasično je ide kroz Substack, Beehiiv, Ghost ili Patreon, gdje pretplatnik plaća mjesečno ili godišnje za pristup ekskluzivnom sadržaju. Cijene se kreću od pet eura mjesečno za individualne newslettere do nekoliko stotina eura godišnje za specijaliziranu industrijsku analizu. Ekonomija pretplatničkog newslettera ima posebnu logiku, jer mali postotak pretplatnika koji plaća subvencionira veći postotak koji čita besplatno.
+
+Članski model nudi širi paket, koji uključuje sadržaj, zajednicu, događaje, alate ili pristup ekskluzivnim resursima. Patreon, Memberful, Mighty Networks i Circle vodeće su platforme. Ovaj model funkcionira posebno dobro za organizacije koje grade zajednicu oko sebe i koje mogu ponuditi vrijednost koja nadilazi sam sadržaj.
+
+Donacijski model temelji se na dobrovoljnoj podršci publike, bez paywalla i ekskluziva. Wikipedia je najpoznatiji primjer ali postoje i mnogi mediji koji rade na ovom modelu. Buy Me a Coffee, Ko-fi i Substack tip jar omogućuju jednokratne donacije, dok GitHub Sponsors, Liberapay i klasične mjesečne donacijske platforme omogućuju kontinuiranu podršku.
+
+Pretplatnička ekonomija ima i tamne strane. Platforme za pretplatu uzimaju proviziju, koja se kreće od deset do trideset posto. Stripe i ostali platežni procesori dodatno uzimaju nekoliko posto. Koraci u prijavi na pretplatu su točke odustajanja gdje značajan broj potencijalnih pretplatnika otpadne. Cancellation rate, postotak pretplatnika koji otkažu unutar godine, kontinuirano vuče listu prema dolje.
+
+Za komunikologe koji savjetuju organizacije ili koji grade vlastiti profesionalni profil, pretplatnička ekonomija nudi nove opcije ali zahtijeva i nove kompetencije. Razumijevanje churna, lifetime valuea, conversion funnela, paywallova i pricing strategija nije više domen samo product menadžera. Ulazi i u kompetencije komunikologa.
+
+
+## AI sloj u izravnim kanalima
+
+AI ulazi u izravne kanale na nekoliko razina i mijenja što je moguće raditi.
+
+Klasifikacija pretplatnika kroz AI postaje sve sofisticiranija. Umjesto da segmentaciju radi pravilima koje komunikolog ručno postavlja, AI sustav uči iz ponašanja pretplatnika i sam predlaže grupe koje imaju zajedničke obrasce. Mailchimp, ActiveCampaign i drugi ESP-i ugrađuju ove funkcionalnosti pod oznakom predictive segmentation ili AI-driven audiences.
+
+Generiranje sadržaja kroz LLM korake unutar email workflowa ulazi u standardnu praksu. Pisanje predmeta, prvih pitanja, varijanti za A/B test, sažetaka dugih članaka, sve to AI sustav radi u sekundi. Komunikolog se pomiče prema ulozi urednika koji procjenjuje izlaze, prilagođava ih i osigurava kvalitetu, dok prvi nacrt sve češće dolazi iz modela.
+
+Personalizacija na razini pojedinog pretplatnika postaje sofisticiranija s AI-em. Umjesto fiksnih dinamičkih blokova, sustav može na razini pojedinog korisnika odlučiti koji sadržaj prikazati, koji ton koristiti i kojim redoslijedom predstaviti elemente poruke. Ovo je još uvijek na ranom stupnju i zahtijeva pažljivu kalibraciju, jer pretjerana personalizacija može djelovati invazivno.
+
+AI agenti koji upravljaju newsletterom su nova kategorija. Tools poput Beehiiv AI, Ghost AI, Substack AI i specijaliziranih alata poput Lavendera ili Smartleada nude funkcije od preporuke optimalnog vremena slanja preko predviđanja churn-a do automatskog generiranja personaliziranih sažetaka.
+
+S druge strane, AI agenti koji djeluju u korist primatelja također ulaze na scenu. Sve više korisnika ima AI asistenta koji čita njihovu poštu i sažima je. Anthropicov Claude, Googleov Gemini u Workspaceu, Apple Intelligence u iOS-u, sve to kreira sloj između pošiljatelja i čovjeka koji prima poruku. Implikacija za komunikologa je da newsletter koji nije strukturiran tako da ga AI može sažeti i prezentirati efikasno, gubi dio publike čak i kada je tehnički isporučen.
+
+Strukturirani podaci u emailu, primjerice schema.org metapodaci ili obrazac sažetka u prvom paragrafu, postaju sve relevantniji jer AI sustavi koji čitaju mail koriste te signale za sažimanje i prioritizaciju.
+
+Pojavljuju se i alati koji simuliraju cijeli newsletter ekosustav kroz AI. Newsletter koji se generira automatski iz nekoliko izvora, kalibriran za interese pojedinog pretplatnika, isporučen u optimalno vrijeme. Ova kategorija je još rana ali se brzo razvija i može preoblikovati cijeli krajobraz u idućih nekoliko godina.
+
+Napomena koja vrijedi naglasiti je da AI ne mijenja temeljnu logiku izravnih kanala. Email i dalje stiže primatelju koji je dao pristanak. RSS i dalje funkcionira na otvorenim standardima. Push i dalje zahtijeva eksplicitnu pretplatu. AI poboljšava operativni rad, ali strukturalna sigurnost izravnih kanala dolazi iz njihove neovisnosti o platformskim algoritmima, ne iz AI sloja iznad njih.
+
+
+## Hrvatski kontekst izravnih kanala
+
+Hrvatska ima nekoliko specifičnosti u domeni izravnih kanala koje komunikolog mora poznavati.
+
+Newsletter ekosustav u Hrvatskoj manje je razvijen nego u Sjevernoj Americi ili Zapadnoj Europi, ali raste. Forum.tm, Lupiga, Dnevnik.hr i drugi mediji eksperimentiraju s newsletter modelima. Pojedini autori, poput Ivane Šimić Šimoković, Maria Aščića ili Jelene Petković, grade vlastite newslettere koji nisu samo kanal nego urednički proizvod. Substack u Hrvatskoj raste polako ali stabilno.
+
+Pretplatnički modeli na nacionalnoj razini još su u eksperimentalnoj fazi. Index.hr, Jutarnji.hr, 24sata i drugi veliki portali pokušavaju s različitim modelima paywalla, ali kombinacija male tržišne baze i niske spremnosti za plaćanje sadržaja čini ekonomiju zahtjevnom. Media i specijalizirani portali, koji rade s manjim ali predanijim publikama, imaju veće izglede za uspjeh.
+
+GDPR praksa u Hrvatskoj snažno je povezana s newsletter listama. Agencija za zaštitu osobnih podataka aktivno provodi nadzor nad praksom prikupljanja pristanka. Organizacija koja prikuplja email adrese mora imati jasnu privatnostnu politiku, eksplicitan pristanak za marketinške poruke (odvojen od pristanka na uvjete korištenja), mehanizam za laku odjavu, i mora moći demonstrirati kako je pristanak prikupljen.
+
+Dvojezična ili višejezična lista poseban je izazov za hrvatski kontekst, posebno za organizacije u turizmu, izvozu ili tehnologiji. Pretplatnik koji se prijavio na newsletter na hrvatskom očekuje sadržaj na hrvatskom. Pretplatnik s engleske verzije stranice očekuje sadržaj na engleskom. ESP koji ne podupire pravilno upravljanje jezičnim varijantama, ili tim koji ne obraća pažnju na ovu dimenziju, brzo će dobiti pretplatnike koji se odjavljuju zbog nerelevancije.
+
+Telegram kanali, koje smo prošlog tjedna spomenuli kao rastući fenomen u Hrvatskoj, funkcioniraju kao kvazi izravan kanal. Nisu pravo otvoreni standard kao email, ali ne ovise o algoritmima Mete ili TikToka. Za niše publika, Telegram kanali su efektivno postali alternativa newsletteru, što treba imati u vidu pri planiranju strategije.
+
+Hrvatska pošta, klasični postanski kanal, vrijedi spomenuti kao stalan i nešto sigurniji izravan kanal koji još uvijek funkcionira za određene publike. Iako većina komunikologa neće graditi strategiju oko fizičke pošte, vrijedi razumjeti da klasični kanali nisu nestali i da imaju svoju nišu, posebno za starije demografske skupine i određene tipove komunikacije.
+
+
+## Trendovi koji oblikuju budućnost izravnih kanala
+
+Nekoliko trendova vrijedi pratiti u domeni izravnih kanala.
+
+Konvergencija newsletter platformi i CMS sustava trend je koji već je u tijeku. Substack je dodao funkcionalnost web stranice. Ghost ujedinjuje newsletter, blog i pretplatnički model. Beehiiv slijedi sličnu putanju. Granica između onoga što je CMS, što je newsletter platforma i što je platforma za pretplatu, nestaje.
+
+AI agenti koji se pretplaćuju u korist korisnika nova su kategorija. Korisnik kaže svom AI agentu što ga zanima, agent pretražuje newslettere koje vrijedi pratiti, pretplaćuje se na njih u korisnikovo ime i sam sažima sadržaj. Ovo mijenja ekonomiju jer pretplata više ne dolazi izravno od čovjeka koji čita, nego od agenta koji distribuira pažnju čovjeka. Industrija tek razvija norme za ovu situaciju.
+
+Decentralizirani identitet, kroz protokole poput WebID i Solid projekta Tima Berners-Leeja, daje korisniku tehničku kontrolu nad podacima koje dijeli. U dugoročnoj perspektivi, ovo bi moglo zamijeniti email kao primarnu identifikacijsku oznaku digitalnog svijeta, ali tempo usvajanja je još uvijek spor.
+
+Hibridni modeli koji kombiniraju izravne kanale s društvenim slojevima eksperimentiraju s tim kako pretplatnik može komentirati, dijeliti i diskutirati o newsletteru bez napuštanja platforme. Substack je dodao Notes kao mikro-blog sloj. Ghost ima rastuću zajednicu. Ovaj smjer vraća društveni element u izravne kanale.
+
+Audio i video newsletter formati rastu. Pretplata na audio newsletter, gdje se sadržaj svakodnevno isporučuje kao kratak audio od pet do petnaest minuta, ulazi u standardnu praksu. Video newsletter ide u sličnom smjeru. Email kao container postaje sve fleksibilniji.
+
+Personalizacija na razini pojedinog pretplatnika kroz AI, koju smo prije spomenuli, vjerojatno će u idućim godinama postati dominantna paradigma. Umjesto da svaki pretplatnik dobije isti newsletter, dobivat će verziju kalibriranu za njega. Ovo otvara nova etička pitanja, jer transparentnost o tome što tko vidi postaje teža.
+
+
+## Na kraju ovog poglavlja
+
+Vlastita publika nije nostalgična alternativa platformskoj strategiji. To je njezin nužan komplement i strukturalno osiguranje od rizika koje smo prošli tjedan opisali. Komunikolog koji nema strategiju izgradnje vlastite publike radi cijelu komunikacijsku operaciju na pijesku platformi koje može u svakom trenutku promijeniti pravila igre.
+
+Email, newsletter, RSS, push obavijesti, podcast i vlastita web stranica čine zajedno infrastrukturu koja organizaciji daje izravan i predvidljiv pristup publici. Svaki od ovih kanala ima svoju logiku, svoje obveze i svoje granice. Komunikolog koji ih razumije može svjesno graditi sustav u kojem nijedna pojedinačna platforma ili promjena algoritma nije egzistencijalna prijetnja.
+
+Ovo predavanje zatvara treći modul kolegija, modul o strategiji, korisničkom iskustvu i distribuciji. Tjedan 7 razradio je što treba pisati i kako. Tjedan 8 razradio je u kojem kontekstu sadržaj živi. Tjedan 9 opisao je kako algoritamske platforme kontroliraju distribuciju. Tjedan 10, današnji, razradio je kako se gradi infrastruktura koja od te kontrole pravi protutežu. Sljedeći tjedan otvaramo četvrti modul kolegija, modul o AI-u, autentičnosti i regulativi. Govorit ćemo o generativnoj AI u radnom toku komunikologa, o tome kako se mijenja sama priroda profesionalnog rada kada veliki jezični modeli ulaze u svaki korak proizvodnje sadržaja, kako se kalibrira odnos između automatizacije i ljudske prosudbe i kako se artikulira profesionalna pozicija u svijetu u kojem AI može učiniti dio onoga što su komunikolozi dosad činili sami.
+
+::: {.callout-note}
 ## Ključni zaključci
 
-::: {.callout-important appearance="minimal"}
-*Bit će dodano.*
+Iznajmljena publika na platformama strukturalno je drugačija od vlastite publike na izravnim kanalima, jer prva ovisi o algoritmu i odlukama koje organizacija ne kontrolira, dok druga živi na otvorenoj infrastrukturi koja preživljava platformske promjene.
+
+Email je najstariji masovni digitalni kanal, izgrađen na otvorenim standardima koje nijedna kompanija ne kontrolira, što ga čini strukturalno najsigurnijom investicijom u izravnu komunikaciju.
+
+Newsletter, kao kulturni i komunikacijski format, doživljava renesansu od 2018. godine i postaje urednički proizvod sa svojim glasom, ritmom i pretplatničkim modelom.
+
+Krajobraz alata uključuje klasične ESP platforme, newsletter platforme, transakcijske servise, CRM-integrirane sustave i open-source rješenja, a izbor ovisi o veličini organizacije i tipu komunikacijskog ishoda.
+
+Izgradnja liste pretplatnika temelji se na obostranoj razmjeni vrijednosti kroz lead magnete, etičkom prikupljanju usklađenom s GDPR-om i discipliniranom održavanju kvalitete liste umjesto trke za sirovom veličinom.
+
+Deliverability nije slučajan rezultat nego posljedica reputacije domene, ispravne SPF, DKIM, DMARC autentifikacije, čistoće liste i frekvencije slanja, i bez te tehničke discipline newsletter ne stiže do inboxa.
+
+RSS, web push obavijesti, podcast i vlastita web stranica dodatne su izravne infrastrukture koje komplementiraju email i koje zajedno čine višeslojnu strategiju vlastite publike.
+
+Pretplatnički i članski modeli omogućuju izravnu monetizaciju vlastite publike, što platforme tradicionalno ne dopuštaju, ali zahtijevaju nove kompetencije u domeni cijene, churna i pretplatničke ekonomije.
+
+AI sloj mijenja kako se izravni kanali operativno vode, od predictive segmentation preko AI-asistiranog pisanja do agenata koji čitaju mail u korist korisnika, ali ne mijenja temeljnu strukturalnu prednost otvorenih standarda nad zatvorenim platformama.
+
+Hrvatski kontekst pokazuje rastući newsletter ekosustav, eksperimentiranje s pretplatničkim modelima, snažnu GDPR praksu i specifičnost višejezičnih lista, što sve oblikuje konkretne strategije izvedbe.
 :::
+
 
 ## Priprema za sljedeći tjedan
 
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::
+Tjedan 11 otvara četvrti modul i bavit će se generativnom AI u radnom toku komunikologa, dakle pitanjem kako se mijenja sama priroda profesionalnog rada kada veliki jezični modeli ulaze u svaki korak proizvodnje sadržaja.
+
+Prije jedanaestog predavanja napravite četiri stvari.
+
+Prvo, identificirajte tri newslettera koja redovito čitate i analizirajte ih kao urednički proizvod. Zabilježite koji su njihovi glas, struktura, dužina, frekvencija i poziv na akciju. Procijenite koji od njih najbolje funkcionira i pokušajte artikulirati zašto.
+
+Drugo, otvorite besplatan račun na jednoj od newsletter platformi, primjerice Substacku ili Beehiivu, i objavite kratak prvi broj svog newslettera na temu po izboru. Cilj nije izgraditi pretplatničku bazu, nego doživjeti perspektivu pošiljatelja.
+
+Treće, ispitajte kako AI asistenti koje koristite obrađuju email. Ako koristite Gmail s Googleovim Geminijem, Outlook s Copilotom ili Apple Mail s Apple Intelligence, isprobajte funkcije sažimanja niti, predlaganja odgovora ili klasifikacije pošte. Zabilježite što radi dobro i što loše.
+
+Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica o sljedećem pitanju. Kako biste rangirali svoje izvore informacija po kriteriju koliko su pod vašom kontrolom, od potpuno algoritamskih do potpuno vlastitih? Što biste željeli promijeniti u toj raspodjeli i zašto?
+
+
+## Dodatno čitanje
+
+Casey Newton vodi Platformer, jedan od najznačajnijih industrijskih newslettera o platformama, AI-u i medijima. Iako je dijelom plaćen, dovoljno je dostupno besplatno da se razumije forma.
+
+Substack On Substack i Beehiiv blog redovito objavljuju podatke i eseje o newsletter ekonomiji. Ovi resursi posebno su korisni jer dolaze iz kompanija koje izgrađuju infrastrukturu, ali su pisani za autore koji je koriste.
+
+Peter Lazaroff, Mario Gabriele i Lenny Rachitsky vode newslettere koji ujedno opisuju vlastiti rast i predstavljaju operativnu praksu newsletter izdavaštva. Lennyjev podcast posebno često govori o operativnom vođenju newslettera s nekima od najvećih autora u industriji.
+
+David Perell i Tiago Forte pišu o pisanju, izgradnji publike i intelektualnom radu na način koji je relevantan za komunikologe koji žele svjesno graditi profesionalni profil kroz sadržaj.
+
+Reply.io blog, Mailgun blog i Postmark blog tehnički su resursi za deliverability. Iako su komercijalni, sadrže detaljne vodiče za SPF, DKIM, DMARC i druge praktične dimenzije slanja emaila.
+
+European Data Protection Board i hrvatska Agencija za zaštitu osobnih podataka redovito objavljuju smjernice o newsletter praksi i GDPR-u. Iako su ove publikacije pravno-orijentirane, sadrže konkretne primjere koji su korisni komunikolozima.
+
+Knjiga Newsletter Ninja Tammi Labrecque praktičan je vodič za izgradnju email liste, posebno relevantan za autore i manje organizacije. Knjiga Show Your Work Austina Kleona, iako šira, sadrži poglavlja koja izravno govore o izgradnji vlastite publike kao profesionalnoj praksi.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| Iznajmljena publika | Publika kojoj imate pristup samo kroz platformu i pod njezinim uvjetima |
+| Vlastita publika | Publika kojoj imate izravan pristup neovisno o platformi |
+| Email | Otvoreni standard za digitalnu komunikaciju izgrađen na javnim protokolima |
+| Newsletter | Urednički email proizvod sa strukturom, glasom i kontinuitetom |
+| ESP | Email Service Provider, platforma za slanje emaila |
+| Mailchimp | Klasični ESP s naglaskom na marketing kampanje |
+| Brevo | Europski ESP, ranije Sendinblue |
+| ActiveCampaign | ESP s naglaskom na automatizaciju i CRM integraciju |
+| MailerLite | ESP popularan kod malih organizacija |
+| Substack | Newsletter platforma s pretplatničkim modelom |
+| Beehiiv | Newsletter platforma s naglaskom na rast i analitiku |
+| Ghost | Open-source newsletter i blog platforma |
+| Buttondown | Minimalistička newsletter platforma za autore |
+| Kit | Newsletter platforma za kreatore, ranije ConvertKit |
+| Postmark | Specijalizirani transakcijski email servis |
+| SendGrid | Transakcijski email servis u vlasništvu Twilia |
+| Mailgun | Transakcijski email servis za developere |
+| Resend | Moderni transakcijski email servis za developerske aplikacije |
+| Listmonk | Open-source self-hosted newsletter platforma |
+| Mautic | Open-source marketing automatizacijska platforma |
+| Lead magnet | Sadržaj ili usluga koja se nudi u zamjenu za email adresu |
+| Single opt-in | Pretplata koja se aktivira odmah nakon upisa |
+| Double opt-in | Pretplata koja se aktivira tek nakon potvrde u email-u |
+| Welcome sekvenca | Niz automatiziranih poruka koje novi pretplatnik dobiva u prvim danima |
+| Drip kampanja | Niz poruka koje se šalju u definiranim intervalima |
+| Win-back sekvenca | Sekvenca koja pokušava reaktivirati neaktivne pretplatnike |
+| Abandoned cart | Email koji se šalje korisniku koji je napustio košaricu prije plaćanja |
+| Segmentacija | Dijeljenje liste pretplatnika u podgrupe prema kriterijima |
+| Predictive segmentation | AI-podržana segmentacija na temelju ponašanja |
+| Personalizacija | Prilagodba elemenata poruke pojedinom pretplatniku |
+| Deliverability | Sposobnost da poruka stigne u inbox primatelja |
+| Reputacija domene | Ocjena koju email primatelji daju domeni pošiljatelja |
+| SPF | Sender Policy Framework, autentifikacija ovlaštenih poslužitelja |
+| DKIM | DomainKeys Identified Mail, kriptografski potpis poruka |
+| DMARC | Politika koja kombinira SPF i DKIM s izvještavanjem |
+| BIMI | Brand Indicators for Message Identification, prikaz logotipa u inboxu |
+| List hygiene | Praksa održavanja kvalitete liste kroz uklanjanje neaktivnih i odbijenih adresa |
+| Bounce | Poruka koja je odbijena i nije isporučena |
+| Spam complaint | Slučaj kada primatelj označi poruku kao spam |
+| Email warming | Postupno povećavanje volumena slanja s nove domene |
+| Stopa otvaranja | Postotak primatelja koji su otvorili poruku |
+| Stopa klika | Postotak primatelja koji su kliknuli na poveznicu u poruci |
+| RSS | Really Simple Syndication, otvoreni standard za praćenje sadržaja |
+| RSS čitač | Aplikacija koja prikuplja sadržaj iz RSS feedova |
+| Feedly | Popularan RSS čitač |
+| Web push obavijest | Poruka koja se šalje izravno u preglednik korisnika |
+| OneSignal | Servis za web i mobilne push obavijesti |
+| Firebase Cloud Messaging | Googleov servis za push obavijesti |
+| Mobilna push obavijest | Poruka koja se šalje kroz instaliranu aplikaciju |
+| Podcast | Audio sadržaj distribuiran kroz otvorene RSS feedove |
+| Apple Podcasts | Najveći klijent za pretplatu na podcaste |
+| Pretplatnički model | Monetizacija kroz mjesečne ili godišnje pretplate |
+| Članski model | Monetizacija kroz paket sadržaja, zajednice i pristupa |
+| Donacijski model | Monetizacija kroz dobrovoljne doprinose publike |
+| Patreon | Vodeća platforma za članske modele |
+| Memberful | Platforma za članske modele integrirana s WordPressom |
+| Mighty Networks | Platforma za izgradnju zajednica oko sadržaja |
+| Circle | Platforma za izgradnju zajednica i pretplatničkih modela |
+| Buy Me a Coffee | Platforma za jednokratne donacije |
+| Ko-fi | Platforma za jednokratne i mjesečne donacije |
+| Churn | Postotak pretplatnika koji otkažu pretplatu |
+| Lifetime value | Procijenjena ukupna vrijednost pretplatnika kroz vrijeme |
+| Cancellation rate | Stopa otkazivanja pretplate |
+| Conversion funnel | Lijevak koraka od posjete do pretplate i kupovine |
+| Apple Intelligence | Appleova platforma za AI značajke u iOS-u i macOS-u |
+| Decentralizirani identitet | Pristup u kojem korisnik kontrolira svoje podatke kroz otvoreni protokol |
+| WebID | Otvoreni standard za decentralizirani identitet |
+| Solid | Projekt Tima Berners-Leeja za decentralizirano upravljanje podacima |

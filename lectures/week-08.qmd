@@ -268,7 +268,7 @@ Korisničko iskustvo nije odgovornost samo dizajnera. To je zajednička odgovorn
 
 Komunikolog koji razumije UX principe može pisati tekst koji nije samo informativan nego i intuitivan za navigaciju. Može kreirati sadržajnu strukturu koja se podudara s korisnikovim mentalnim modelima. Može procijeniti dizajn i artikulirati što funkcionira a što ne, koristeći jezik koji dizajneri i developeri razumiju. Može sudjelovati u istraživanju korisnika i koristiti nalaze za poboljšanje komunikacijske strategije.
 
-Sljedeći tjedan govorit ćemo o sadržajnoj strategiji i pisanju za web. Veza s današnjom temom je neodvojiva jer UX definira kontekst u kojem sadržaj živi, a sadržaj je supstanca koja korisničko iskustvo čini vrijednim ili praznim.
+Sljedeći tjedan govorit ćemo o platformama, algoritmima i algoritamskoj distribuciji. Veza s današnjom temom je izravna jer kvalitetno korisničko iskustvo na vlastitoj stranici samo je polovica priče dok god većina publike sadržaj otkriva kroz algoritamske kanale koje organizacija ne kontrolira.
 
 ::: {.callout-note}
 ## Ključni zaključci
@@ -297,9 +297,9 @@ Emocionalni dizajn i mikrointerakcije diferenciraju iskustvo i utječu na percep
 
 ## Priprema za sljedeći tjedan
 
-Tjedan 6 bavit će se sadržajnom strategijom i pisanjem za web.
+Tjedan 9 bavit će se platformama, algoritmima i algoritamskom distribucijom.
 
-Prije šestog predavanja napravite četiri stvari.
+Prije devetog predavanja napravite četiri stvari.
 
 Prvo, odaberite jednu web stranicu hrvatske organizacije i provedite heurističku evaluaciju koristeći Nielsenovih deset heuristika. Za svaku heuristiku zabilježite barem jedan primjer pozitivnog ili negativnog dizajna na toj stranici.
 

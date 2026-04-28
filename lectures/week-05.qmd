@@ -1,30 +1,339 @@
 ---
 title: "No code i low code alati za komunikologe"
-subtitle: "Platforme, alati i automatizacija bez programiranja"
-author: "doc. dr. sc. Luka Šikić"
+subtitle: "Automatizacija, strukturirani podaci i operativni alati bez programiranja"
 date: 2026-03-25
-categories: [no-code, alati, automatizacija]
+categories: [no-code, automatizacija, AI alati]
 draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
+abstract: |
+  Ovo predavanje prelazi s pitanja kako se gradi web stranica na pitanje kako se gradi operativni rad komunikacijskog tima. No-code i low-code alati danas pokreću automatizaciju radnih tokova, strukturirane sadržajne kalendare, lagane interne aplikacije i AI-podržane procese koji su do nedavno tražili razvojni tim. Za komunikologa ovo znači novu profesionalnu kompetenciju koja stoji između pisanja sadržaja i razumijevanja platformi, a koja sve više određuje koliko brzo i koliko autonomno komunikacijski tim može djelovati.
 ---
 
 ## Ishodi učenja
 
-::: {.callout-note appearance="minimal"}
-*Bit će dodano prije predavanja.*
-:::
+Nakon ovog predavanja studenti će moći
 
-## Sadržaj
+1. Razlikovati no-code, low-code i klasični razvoj softvera te objasniti što svaka razina apstrahira i što za uzvrat traži
+2. Mapirati operativni alatni okvir komunikologa po funkciji, od strukturiranih podataka i obrazaca preko automatizacije do marketinških i analitičkih alata
+3. Objasniti logiku trigger, akcija i uvjeta u alatima za automatizaciju radnih tokova poput Zapiera i Makea
+4. Koristiti alate za strukturirane podatke poput Airtablea i Notiona za sadržajni kalendar, lagani CRM i operativnu evidenciju
+5. Integrirati LLM korak kao građevni blok unutar no-code procesa i prepoznati gdje on dodaje vrijednost a gdje stvara nove rizike
+6. Procijeniti vendor lock-in, troškove, podatkovnu rezidenciju, GDPR usklađenost i sigurnosne implikacije pri izboru no-code alata
+7. Smjestiti ulogu komunikologa unutar paradigme citizen developmenta i razumjeti njezine organizacijske posljedice
+8. Snalaziti se u hrvatskom no-code ekosustavu te prepoznati specifičnosti za male i srednje organizacije, turistički sektor i startup okruženje
 
-*Sadržaj predavanja bit će objavljen ovdje nakon sesije.*
 
+## Zašto komunikolog mora razumjeti no-code i low-code alate
+
+Zamislite da radite kao komunikacijski stručnjak u srednjoj hrvatskoj turističkoj agenciji. Sezona traje pet mjeseci, tim broji osmero ljudi, a očekuje se da komunikacijska funkcija svaki tjedan objavi novi sadržaj na blogu, distribuira ga kroz tri jezične verzije newslettera, planira objave na pet društvenih mreža, prikupi i kategorizira upite koji dolaze putem web obrasca i pripremi mjesečni izvještaj o uspješnosti kampanja za vlasnika. Vi ste jedna osoba.
+
+Klasični odgovor na ovaj problem bio bi zapošljavanje još jedne osobe, naručivanje skupog enterprise softvera ili angažiranje agencije za dio posla. Ali postoji i treća opcija koja je u posljednjih nekoliko godina postala jednako legitimna kao i prve dvije. Možete sami sastaviti sustav od nekoliko no-code alata koji međusobno razgovaraju i automatski obavljaju većinu ponavljajućeg posla. Newsletter se sam sinkronizira s blogom kada objavite novi članak. Obrazac upita automatski upisuje lead u tablicu, kategorizira ga prema sadržaju poruke i obavještava odgovorne kolege u Slacku. Mjesečni izvještaj generira se sam iz Google Analyticsa, Search Console i platforme za društvene mreže, a vi samo dodate komentar i pošaljete.
+
+Ovo nije utopija ni hipotetski scenarij. To je svakodnevni rad sve većeg broja komunikacijskih timova diljem svijeta i sve češća praksa u Hrvatskoj. Razlika između komunikologa koji ovaj operativni sloj poznaje i komunikologa koji ga ne poznaje mjeri se u satima rada tjedno, u kvaliteti distribucije sadržaja i u sposobnosti tima da reagira na događaje brzo umjesto sporo.
+
+Prošli tjedan govorili smo o sustavima za upravljanje sadržajem, dakle o platformi na kojoj sadržaj živi i koja se posjetitelju prikazuje. Danas se okrećemo na drugu stranu. Govorimo o platformama koje rade iza tih stranica i koje pokreću operativni rad organizacije. Ako je CMS izlog, no-code stack je skladište, ured i logistika koja taj izlog hrani. Komunikolog koji razumije samo izlog nije u stanju voditi cijelu trgovinu.
+
+
+## Što su no-code i low-code alati i kako se razlikuju od programiranja
+
+No-code alati su softverske platforme koje korisniku omogućuju da gradi funkcionalne digitalne sustave bez pisanja koda. Logika se konfigurira vizualno, podaci se modeliraju kroz forme i tablice, a integracije među servisima nude se kao gotovi konektori koje samo trebate uključiti i autorizirati. Low-code alati nalaze se na sljedećoj razini i dopuštaju korisniku da po potrebi unese fragmente koda, najčešće formule ili kratke skripte, kako bi prevladao ograničenja vizualnih opcija. Klasični razvoj softvera, na vrhu te ljestvice, zahtijeva pisanje cjelovitih programa, upravljanje bazama podataka, postavljanje poslužitelja i pisanje testova.
+
+Razlika između ove tri razine nije akademska. Ona izravno određuje tko može graditi sustave i u kojem roku. Klasični projekt razvoja interne aplikacije za upravljanje sadržajnim kalendarom u srednjoj agenciji može trajati šest mjeseci i koštati nekoliko desetaka tisuća eura. Ista funkcionalnost u Airtableu, postavljena od strane samog komunikacijskog tima, može biti spremna za upotrebu kroz dva radna dana i godišnje koštati nekoliko stotina eura. Ova razlika u brzini i cijeni ne dolazi besplatno.
+
+Ono što no-code alati apstrahiraju jest sve ono što čini razvoj softvera dugotrajnim i skupim. Bazu podataka ne morate dizajnirati jer alat ima vlastitu, podešenu za tipične scenarije. Hosting i ažuriranje softvera ne morate raditi jer alat živi u oblaku i njegovo održavanje preuzima dobavljač. Integracije s drugim servisima ne morate kodirati jer alat dolazi sa stotinama unaprijed izgrađenih konektora. Sigurnosne zakrpe, sigurnosne kopije i nadogradnje servera odgovornost su platforme. Korisničko sučelje za vaše korisnike ne morate dizajnirati od nule jer ga alat generira automatski iz vašeg modela podataka.
+
+Ono što gubite jest kontrola nad detaljima. U klasičnom razvoju softvera možete optimizirati svaku liniju koda, prilagoditi svaki pixel sučelja i izgraditi točno ono što vam treba. U no-code alatu radite unutar onoga što platforma podržava. Ako vam treba funkcionalnost koja izlazi izvan tog okvira, ili je nećete imati ili ćete platiti znatno više, ili ćete na kraju ipak morati angažirati developera koji će napraviti prilagođenu integraciju.
+
+Postoji i česta zabluda da no-code znači manje ozbiljno. Ova zabluda dolazi iz vremena kada su prvi alati za izradu web stranica generirali nepristupačan, spor i loše dizajniran HTML, pa su rezultati bili profesionalno neprihvatljivi. Današnja generacija no-code alata radi drugačiju vrstu posla. Velika hrvatska medijska kuća može imati Airtable bazu kao centralni operativni alat svojeg redakcijskog tima, automatizaciju koja u Make scenariju prosljeđuje informacije između desetak servisa i Custom GPT koji uredniku pomaže u pisanju naslova. Sve to ne čini posao manje ozbiljnim, čini ga drugačije ozbiljnim. Profesionalna težina pomakla se s pisanja koda na dizajn procesa, izbor alata, upravljanje podacima i postavljanje upravljačkih ograničenja.
+
+
+## Operativna stratifikacija no-code stacka za komunikologe
+
+Korisno je o no-code alatima razmišljati po funkciji koju obavljaju, a ne po imenu proizvoda, jer se proizvodi mijenjaju brže nego funkcionalne kategorije.
+
+Strukturirani podaci čine temelj cijelog stacka. Airtable, Notion baze podataka i Coda omogućuju da iste podatke organizirate u tablicu, kalendar, ploču ili galeriju, ovisno o trenutnoj potrebi. Sadržajni kalendar može u istoj bazi živjeti kao tablica za uredničko planiranje, kalendar za pregled raspodjele kroz mjesec i ploča za vizualno praćenje statusa od ideje do objave.
+
+Forme i prikupljanje podataka rade na izvoru operativnog toka. Tally, Typeform, Jotform i Google Forms primaju upite, prijave, povratne informacije i registracije. Razlika među njima nije samo u dizajnu nego i u tome kako se prikupljeni podaci dalje koriste. Tally i Typeform integriraju se izravno s Airtableom, Notionom, Slackom i alatima za automatizaciju, pa svaki ispunjeni obrazac može pokrenuti niz daljnjih radnji.
+
+Automatizacija radnih tokova povezuje sve ostalo. Zapier i Make najpoznatiji su predstavnici ove kategorije, n8n je njihova self-hosted alternativa s otvorenim kodom, IFTTT je jednostavnija opcija za pojedinačne korisnike. Ovi alati su najbliže onome što biste opisali kao operativnu mrežu, jer se nalaze između svih ostalih servisa i osiguravaju da se podaci ispravno premještaju, transformiraju i obavještavaju.
+
+Vizualni dizajn i produkcija sadržaja prešli su gotovo u potpunosti u no-code domenu. Canva i Adobe Express omogućuju komunikolozima da bez angažiranja dizajnera produciraju grafiku za društvene mreže, prezentacije, dokumente i promotivne materijale. Figma je tehnički low-code, ali sve se češće koristi i u komunikacijskim timovima za dizajn obrazaca, infografika i interaktivnih prezentacija.
+
+Marketing i e-mail automatizacija često se podcjenjuje. Mailchimp Customer Journeys, Brevo, ConvertKit i ActiveCampaign omogućuju izgradnju automatiziranih sekvenci poruka koje se pokreću na temelju ponašanja primatelja. Pretplatnik koji je preuzeo dokument može dobiti drugačiju seriju mailova od pretplatnika koji se prijavio na newsletter. Ova logika decision tree-a unutar marketinških platformi sama po sebi je oblik no-code automatizacije.
+
+Upravljanje društvenim mrežama centralizira se kroz alate poput Buffera, Latera, Hootsuitea i Metricoola. Komunikolog jednom napiše objavu, odredi datum i vrijeme te platformu, a alat objavljuje u zakazano vrijeme i automatski prikuplja statistiku angažmana. Ovi alati danas integriraju i AI generiranje teksta i prijedloga vremena objave.
+
+Analitika i lagani dashboardi dobili su novu generaciju alata. Looker Studio od Googlea besplatan je dashboard alat koji povlači podatke iz desetak izvora i prikazuje ih u prilagođenim izvještajima. Plausible i Fathom alternative su Google Analyticsu fokusirane na privatnost i jednostavnost, što ih čini posebno relevantnima za europske organizacije pod GDPR-om.
+
+Interne aplikacije iz baze relativno su nova kategorija. Glide, Softr i Bubble omogućuju da od Airtable ili Google Sheets baze izgradite punu mobilnu ili web aplikaciju s prijavom korisnika, ulogama, formama za unos i prilagođenim sučeljem. Komunikacijski tim može tako za interne potrebe izgraditi aplikaciju za upravljanje događajima, repozitorij medijskih sadržaja ili sustav za prikupljanje povratnih informacija od kolega.
+
+Newsletter i nezavisno izdavaštvo doživjeli su renesansu kroz Substack, Beehiiv i Ghost. Ovi alati spajaju funkcije CMS-a, e-mail marketinga i platforme za pretplate u jednom proizvodu, omogućujući komunikolozima i novinarima da pokrenu vlastiti medij bez tehničke pomoći.
+
+Ova kategorizacija nije iscrpan katalog nego mentalna mapa. Komunikolog koji u glavi nosi ovu mapu može u svakom trenutku procijeniti koja kategorija odgovara konkretnom problemu, a tek potom ulazi u izbor pojedinog alata unutar te kategorije.
+
+
+## Automatizacija radnih tokova kao najmoćnija poluga
+
+Od svih kategorija opisanih u prethodnom dijelu, automatizacija radnih tokova ima najveći učinak po jedinici naučenog vremena. Razlog je jednostavan. Automatizacija ne radi nešto novo, ona umnožava ono što već radite. Komunikolog koji nauči osnove Make ili Zapier scenarija dobiva mogućnost da svaki ručni proces u svom radu pretvori u proces koji se izvršava sam.
+
+Logika svake automatizacije svodi se na tri koncepta. Trigger je događaj koji pokreće scenarij. Akcija je radnja koja se izvršava nakon što je trigger aktiviran. Uvjet je provjera koja određuje hoće li se akcija dogoditi ili ne. Kada netko ispuni obrazac na web stranici, to je trigger. Kada se njegovi podaci automatski upišu u Airtable, to je akcija. Kada se prije upisa provjeri sadrži li poruka određenu ključnu riječ, to je uvjet.
+
+Iz ova tri koncepta gradi se ostalo. Scenarij može imati više akcija u nizu. Akcije mogu transformirati podatke prije nego što ih proslijede dalje. Uvjeti mogu granati scenarij u različite smjerove. Više triggera može pokretati isti scenarij. Više scenarija može slušati isti trigger.
+
+Razlikujemo polling i webhook trigger. Polling znači da alat svakih nekoliko minuta provjerava izvor i traži promjenu, primjerice novi redak u Google Sheets. Webhook znači da izvor sam šalje obavijest alatu čim se promjena dogodi. Webhooks su brži i precizniji ali zahtijevaju da izvor podržava ovu funkcionalnost. Polling je univerzalniji ali troši više operacija jer se izvršava kontinuirano.
+
+Konkretan primjer koji vrijedi razumjeti do detalja izgleda ovako. Komunikolog male medijske kuće postavlja sljedeći scenarij u Makeu. Trigger: novi članak objavljen na WordPressu. Prva akcija: alat povlači sadržaj članka i šalje ga prema Claude API-ju s uputom da izvuče tri ključne tvrdnje i napiše prijedlog objave za LinkedIn i prijedlog objave za Threads. Druga akcija: oba prijedloga upisuju se u Notion bazu sadržaja u redak povezan s objavljenim člankom. Treća akcija: scenarij šalje poruku u Slack kanal redakcije s linkom na Notion redak i pita urednika za odobrenje. Četvrta akcija: kada urednik klikne dugme Odobri u Notionu, scenarij se nastavlja i objavljuje pripremljene tekstove na LinkedIn i Threads, a zatim u Airtable bilježi vrijeme objave i osnovne metrike.
+
+Cijeli ovaj scenarij od početka do kraja izgrađuje se kroz vizualno sučelje, bez pisanja koda. Postavljanje traje između jednog i tri sata, ovisno o iskustvu komunikologa. Mjesečno izvršavanje, uz prosjek pet članaka tjedno, košta deset do dvadesetak eura kroz Make pretplatu i nešto sitno na Anthropic API-ju za Claude pozive. Vrijeme koje komunikolog svaki tjedan ušteđuje mjeri se u satima. Pomnožite to s pedeset tjedana godišnje i s činjenicom da se isti tip scenarija može replicirati za desetke različitih procesa u organizaciji, i postaje jasno zašto automatizacija nije luksuzna značajka.
+
+Ono što treba reći u istom dahu jest da automatizacija ima i tamnu stranu. Scenarij koji je radio devet mjeseci može tiho prestati raditi jer je dobavljač izvorišnog API-ja promijenio strukturu odgovora. Scenarij koji procesuira osjetljive podatke može slučajno proslijediti privatnu poruku u javni kanal ako uvjet nije pažljivo postavljen. Scenarij koji se izvršava prečesto može u jednom danu potrošiti cijelu mjesečnu kvotu pretplate. Disciplina u dizajniranju, dokumentiranju i nadziranju automatizacija jednako je važna kao i sposobnost da ih se postavi.
+
+
+## Strukturirani podaci bez baze
+
+Najtransformativnija promjena koju no-code alati donose komunikologu često nije najvidljivija. To je prelazak iz svijeta dokumenata u svijet baza podataka.
+
+Većina komunikologa cijeli profesionalni život upravlja sadržajem kroz dokumente. Word datoteka za članak, Excel tablica za sadržajni kalendar, PowerPoint prezentacija za izvještaj, e-mail ili Slack poruka za koordinaciju s timom. Ovi alati su moćni za određene zadatke, ali imaju temeljno ograničenje. Podaci u njima nisu strukturirani, pa se ne mogu lako pretraživati, filtrirati, povezivati ili automatizirati.
+
+Airtable, Notion baze podataka i Coda donose drugačiju paradigmu. Svaki podatak je zapis u tablici. Svaki zapis ima polja s definiranim tipom, primjerice tekst, broj, datum, korisnik, oznaka, link na drugi zapis, formula ili priložena datoteka. Iz iste tablice možete generirati pogled u obliku tablice, kalendara, kanban ploče, galerije ili timeline-a. Možete filtrirati po bilo kojem polju. Možete pisati formule koje računaju izvedene vrijednosti. Možete povezivati zapise iz različitih tablica u relacije.
+
+Konkretno za komunikologa, ovo otvara nekoliko praktičnih scenarija. Sadržajni kalendar postaje baza u kojoj svaki članak ima polja za naslov, autora, status, ciljanu publiku, ključne riječi, planirani datum, datum objave, kanale distribucije i metrike uspjeha. Ista baza prikazuje se kao kalendar uredniku, kao tablica autoru i kao kanban ploča pri tjednom planiranju.
+
+Lagani CRM postaje baza dionika u kojoj svaki kontakt ima polja za ime, organizaciju, ulogu, povijest interakcija i status u prodajnom lijevku. Iz iste baze automatski se generira mailing lista, automatski se sinkroniziraju kategorije s alatom za e-mail marketing i automatski se obavještavaju odgovorni kolege kada se status nekog dionika promijeni.
+
+Repozitorij vizualnog identiteta postaje baza u kojoj je svaki resurs zabilježen s tagovima, datumom, autorom i poveznicom na original. Umjesto kaotične mape u Google Driveu kroz koju netko mora kopati svaki put kada traži određenu fotografiju, repozitorij omogućuje pretraživanje po nazivu kampanje, godini, kanalu ili korištenom motivu.
+
+Operativna evidencija postaje baza u kojoj se prati svaki značajan događaj komunikacijskog tima, od medijskih upita preko kriznih incidenata do uspjelih kampanja. Iz takve baze generira se mjesečni izvještaj, godišnji pregled aktivnosti i podloga za strateško planiranje.
+
+Razlog zašto je ova promjena transformativna jest što baze otključavaju automatizaciju i integracije. Dokument se ne može lako automatizirati. Bazu možete. Svaki zapis u Airtable bazi može biti trigger za Make scenarij. Svaki redak u Notion bazi može pokrenuti automatizaciju koja šalje obavijest, ažurira drugu bazu ili poziva LLM da generira sadržaj. Komunikolog koji prijeđe iz dokument-orijentiranog razmišljanja u baza-orijentirano razmišljanje dobiva sposobnost da svoj rad spaja s ostatkom no-code stacka.
+
+
+## AI kao no-code građevni blok
+
+Posljednje dvije godine fundamentalno su promijenile što no-code stack može raditi. Veliki jezični modeli ušli su u no-code alate na nekoliko različitih razina i svaka od njih relevantna je za komunikologa.
+
+Najjednostavnija razina je LLM korak unutar postojećih scenarija automatizacije. Make i Zapier danas imaju gotove module za OpenAI, Anthropic Claude, Google Gemini i druge providere. Komunikolog može unutar bilo kojeg scenarija dodati korak koji prima tekst, šalje ga modelu s određenom uputom i prima natrag obrađenu verziju. Tipični slučajevi upotrebe uključuju sažimanje dugih dokumenata, klasificiranje ulaznih upita po temi, izvlačenje strukturiranih podataka iz nestrukturiranog teksta, prevođenje, generiranje naslova ili meta opisa i pisanje prijedloga odgovora.
+
+Sljedeća razina su prilagođene AI aplikacije koje korisnik kreira bez koda. Custom GPT u ChatGPT-u i Claude Project u Anthropicu omogućuju komunikologu da postavi vlastitog AI asistenta s definiranim uputama, učitanim dokumentima i specifičnim ponašanjem. Redakcija može imati svojeg redakcijskog asistenta koji poznaje uredničke smjernice te kuće, voli određenu strukturu naslova i odbija prijedloge koji odstupaju od stila kuće. Komunikacijski tim agencije može imati klijent-specifičnog asistenta koji poznaje brand book, ton komunikacije i ranije uspješne kampanje. Postavljanje takvog asistenta zahtijeva sat ili dva rada s dokumentima, bez ijedne linije koda.
+
+Treća razina su AI-native graditelji koji generiraju cijele aplikacije iz prirodnog jezika. Bolt.new, v0 od Vercela i Lovable platforme su koje uzimaju opis željene aplikacije i generiraju radnu verziju s frontendom, backendom i bazom podataka. Komunikolog može tražiti landing page za novu kampanju i dobiti potpuno funkcionalan prototip kroz nekoliko minuta. Ono što razlikuje ove alate od klasičnih no-code platformi za izradu stranica jest što oni interno generiraju pravi kod, koji se zatim može preuzeti, dalje uređivati ili predati programskom timu na produkciju. Ovo je hibridna kategorija koja se brzo razvija i mijenja granice onoga što no-code podrazumijeva.
+
+Četvrta razina su AI agenti, alati poput Lindyja, Relevance AI i Zapier Centrala. Razlika između AI agenta i klasične automatizacije je u tome što agent ne slijedi unaprijed napisani scenarij nego sam odlučuje što i kako učiniti, koristeći skup dostupnih alata. Komunikolog može agenta zamoliti da svaki ponedjeljak pretraži zadane web stranice konkurencije, identificira novosti, sažme ih i pošalje mu izvještaj. Agent sam odlučuje koje stranice posjetiti, koliko dugo na njima ostati i kako organizirati nalaze.
+
+Iznad svih ovih razina nadvija se Model Context Protocol, kratica MCP, koji je Anthropic predstavio krajem 2024. godine i koji u 2025. i 2026. postaje univerzalni jezik kojim AI sustavi komuniciraju s drugim alatima. MCP omogućuje da Claude Desktop, Cursor, VS Code i drugi AI klijenti izravno pristupaju Notionu, Airtableu, Gmailu, Linearu, GitHubu i stotinama drugih servisa, bez potrebe za posredničkom automatizacijom u Zapieru ili Makeu. Za komunikologa, ovo znači da granica između alata za pisanje i alata za rad polako nestaje. Pišete uputu, AI sustav sam dohvaća potrebne podatke, izvršava akcije u relevantnim alatima i vraća vam rezultat.
+
+Posljednja razina koja zaslužuje spomen jest browser-use ili computer-use AI. Anthropicov Computer Use, OpenAI Operator i open-source projekt Browser Use omogućuju AI sustavima da kontroliraju preglednik kao što bi to činio čovjek. Klikću na elemente, ispunjavaju forme, čitaju stranice. Ovo je relevantno za komunikologa zato što omogućuje automatizaciju onih SaaS aplikacija koje nemaju javni API, što često uključuje hrvatske institucionalne portale, lokalne CMS-ove ili specijalizirane industrijske alate.
+
+Implikacija svega navedenog za komunikologa jest sljedeća. Posao izgradnje radnog toka postaje sve jeftiniji i brži, a sve teži postaje posao prosudbe. Kada AI može u nekoliko minuta predložiti radni tok, generirati LinkedIn objavu, sažeti pet članaka i poslati e-mail, vrijednost koju komunikolog donosi pomiče se prema postavljanju ispravnog cilja, evaluaciji izlaza i preuzimanju odgovornosti za ono što odlazi van. Tehnička barijera se smanjuje, profesionalna se povećava.
+
+
+## Procjena alata i rizici
+
+Optimistični prikaz no-code stacka koji ste upravo pročitali nije potpun bez razgovora o rizicima. Komunikolog koji bira alate samo na temelju brzine, izgleda i početne cijene gotovo sigurno će se kroz dvanaest do dvadeset četiri mjeseca naći u jednoj od nekoliko bolnih situacija.
+
+Vendor lock-in je već spomenut u kontekstu CMS-a u prošlom tjednu, ali u no-code stacku poprima drugačiji oblik. Kod CMS-a vendor lock-in znači da je sadržaj zarobljen u platformi. Kod no-code stacka vendor lock-in znači da je sama logika rada zarobljena. Make scenarij koji povezuje deset servisa ne može se prebaciti na drugu platformu. Mora se izgraditi ispočetka. Airtable baza s prilagođenim pogledima, formulama i automatizacijama ne može se preliti u Notion bez gubitka strukture. Custom GPT s prilagođenim uputama i učitanim dokumentima vezan je za ChatGPT platformu. Što više organizacija ulaže u no-code stack, to više postaje ovisna o pojedinim dobavljačima.
+
+API limit pricing tier je problem koji se pojavljuje uvijek u istom trenutku, dakle kada vam alat počne donositi vrijednost. Make besplatni plan dopušta tisuću operacija mjesečno. Aktivna automatizacija koja procesuira pet članaka tjedno s LLM koracima vrlo brzo prelazi tu granicu. Skok na sljedeći plan može značiti pet ili dvadeset eura mjesečno, što je još uvijek razumno. Skok na pristup koji omogućuje agentske scenarije i složenije integracije može značiti sto eura mjesečno po korisniku. Komunikolog mora razumjeti cjenovnu strukturu svakog alata kojeg uključuje u stack i predviđati gdje će biti za godinu dana.
+
+Podatkovna rezidencija i GDPR usklađenost ozbiljan su problem koji se često zanemaruje. Većina no-code alata su američki proizvodi koji svoje podatke pohranjuju u SAD-u. Kada hrvatski komunikolog ispravno koristi ove alate za vlastite organizacijske podatke, to je jedna razina rizika. Kada kroz iste alate procesuira osobne podatke svojih hrvatskih korisnika, ulazi u domenu koju regulira GDPR i Schrems II odluka. Standard Contractual Clauses i Data Processing Agreements alati su za usklađivanje, ali ne i magični štap. Svaki alat kojeg uvodi u organizacijski stack mora proći ovu provjeru, a komunikolog koji to ne radi može jednog dana suočiti svoju organizaciju s ozbiljnim regulatornim problemom.
+
+Tihi otkaz automatizacije je svakodnevni operativni rizik. Scenarij koji devet mjeseci radi savršeno može jednog jutra prestati raditi jer je dobavljač promijenio API. Ako za to ne postoji nadzor, otkaz se otkriva tek kada netko primijeti da nešto nedostaje, što često znači tjedan ili dva izgubljenih podataka. Profesionalna no-code praksa uključuje postavljanje monitoringa, redovne provjere ključnih scenarija i dokumentaciju koja drugima omogućuje preuzimanje održavanja.
+
+Shadow IT problem nastaje kada svaki zaposlenik gradi svoje no-code alate bez koordinacije s timom ili IT odjelom. Posljedica je raspršen pejzaž alata koje nitko nema cjelovit pregled, dupliciranje podataka, sigurnosne rupe i stalno povećavanje troškova jer se isti tip alata kupuje više puta za različite osobe.
+
+Higijena pristupa i lozinki pogoršava se s brojem alata. Komunikacijski tim koji koristi dvadeset i pet različitih SaaS servisa ima dvadeset i pet pristupnih točaka, dvadeset i pet lozinki i dvadeset i pet potencijalnih izvora curenja podataka. Profesionalni minimum uključuje upravitelj lozinki, dvofaktorsku autentifikaciju gdje god je dostupna i jasnu politiku tko ima pristup čemu.
+
+Ništa od navedenog ne znači da no-code treba izbjegavati. Znači da no-code treba uvoditi promišljeno, s razumijevanjem cijene koju nosi sa sobom.
+
+
+## Citizen development i nova uloga komunikologa
+
+Pojam citizen development u zadnjih nekoliko godina ušao je u rječnik organizacija i opisuje upravo ono što ovo predavanje čini predmetom razgovora. Citizen developer je netko tko nije po struci programer, ali izgrađuje funkcionalne digitalne sustave za potrebe svog tima i svoje organizacije. Komunikolog koji u Airtableu izgradi sadržajni kalendar s prilagođenim pogledima, koji u Makeu postavi pet automatizacijskih scenarija i koji u ChatGPT-u publicira Custom GPT za internu upotrebu, jest citizen developer.
+
+Ova uloga ima značajne organizacijske posljedice koje komunikolog treba razumjeti.
+
+Prva posljedica jest pomak unutar opisa radnog mjesta. Oglasi za komunikologe u 2026. godini sve češće traže poznavanje no-code alata kao osnovnu vještinu, na istoj razini na kojoj su prije pet godina tražili Excel ili PowerPoint. Iskustvo s Airtableom, Notionom, Zapierom ili Makeom postaje diferencirajući faktor pri zapošljavanju, posebno u manjim organizacijama gdje jedna osoba pokriva više funkcija.
+
+Druga posljedica jest nova vrsta autoriteta unutar organizacije. Komunikolog koji izgrađuje operativne alate kojima se koristi cijeli tim postaje središnja figura u operativnom radu, ne samo u sadržaju. To donosi vidljivost i utjecaj koji prethodne generacije komunikologa rijetko su imale. Donosi i odgovornost. Ako sustav koji ste izgradili otkaže, vi ste odgovorni za njegov oporavak.
+
+Treća posljedica jest izmijenjen odnos s IT odjelom. Tradicionalno, komunikacijski tim i IT su dva odvojena svijeta. U organizaciji s razvijenim no-code stackom, granica postaje neostra. Komunikolog koji gradi automatizacije mora razumjeti politike sigurnosti, integracije s postojećim sustavima organizacije i ograničenja koja postavlja IT. IT, sa svoje strane, mora prihvatiti da netko izvan njihovog tima gradi sustave koji utječu na organizacijske procese. Najzdravije organizacije razvijaju tzv. centre izvrsnosti za citizen development koji nude smjernice, alate s dozvolom i podršku, umjesto da pokušavaju zabraniti pojavu koja je već u tijeku.
+
+Četvrta posljedica jest izmijenjen odnos s marketing operations funkcijom u većim organizacijama. U srednjim i velikim tvrtkama postoji rola marketing operations specijalist čiji je primarni zadatak upravljanje marketing tehnološkim stackom. Komunikolog s no-code kompetencijama u maloj organizaciji efektivno preuzima dio te funkcije. U velikoj organizaciji, komunikolog s no-code kompetencijama postaje kvalificirani sugovornik marketing operations tima, sposoban formulirati zahtjeve i procijeniti predložena rješenja.
+
+Posljednja posljedica koju ovdje vrijedi spomenuti jest profesionalni razvoj. Citizen development zahtijeva kontinuirano učenje. Alati se mijenjaju brzo, novi alati pojavljuju se mjesečno, AI integracija mijenja paradigme. Komunikolog koji jednom nauči Zapier i misli da je gotov, kroz dvije godine bit će zastario. Stalno učenje i eksperimentiranje s novim alatima dio je profesionalne discipline u ovoj domeni.
+
+
+## No-code u hrvatskom kontekstu
+
+Hrvatska digitalna ekonomija ima nekoliko specifičnosti koje oblikuju kako no-code alati ulaze u svakodnevni rad komunikologa.
+
+Mali i srednji poslovni subjekti, koji čine većinu hrvatskog gospodarstva, gotovo su idealna publika za no-code alate. Tvrtka s deset do pedeset zaposlenika rijetko ima resurse za vlastiti razvojni tim, ali ima operativne potrebe slične onima velikih organizacija. Sadržajni kalendar, automatizacija prikupljanja leadova, lagani CRM, mjesečni izvještaji za upravu i koordinacija marketinških kampanja, sve su to potrebe koje no-code stack pokriva po cijeni koja je dostupna i najmanjim organizacijama. Upravo zbog ovoga je adopcija no-code alata u hrvatskom SME segmentu posljednjih godina ubrzano rasla.
+
+Turistički sektor je posebno zanimljiv slučaj. Sezonska priroda posla znači da kapaciteti tima dramatično variraju kroz godinu. U glavnoj sezoni komunikolog ne stigne ručno reagirati na svaki upit, dok u zimi nedostaje ponavljajućeg posla. No-code automatizacija omogućuje da se radni tokovi koje je sezona istesala koriste i izvan sezone, te da se priprema sadržaja za sljedeću sezonu sustavno organizira. Hoteli, turističke agencije i destinacijske organizacije iz Splita, Dubrovnika, Hvara, Pule i Zadra danas rutinski koriste Airtable za upravljanje sadržajnim kalendarom i Make za automatizaciju newslettera u tri ili četiri jezika.
+
+Hrvatski startup ekosustav, sa središtem u Zagrebu i s centrima poput Zagrebačkog inovacijskog centra, programa inkubacije Algebra LAB-a i drugih, oslanja se gotovo isključivo na no-code stack za rane faze razvoja. Mlade tvrtke ne mogu si priuštiti razvojni tim za internu operativu, ali imaju komunikacijske potrebe koje se ne razlikuju od potreba zrelih organizacija. Komunikolog u startupu koji ne zna Notion, Airtable i Zapier praktički ne može obavljati svoj posao.
+
+Cjenovna struktura no-code alata uglavnom je u dolarima ili eurima, što za hrvatske organizacije nakon pristupanja eurozoni stvara stabilniju kalkulaciju ali i čini te alate skupljima u relativnim terminima nego što su za korisnike u zemljama s većim BDP-om po stanovniku. Strateški izbor kojeg alata koristiti, za koju razinu pretplate i za koliko korisnika, ima veću težinu nego što bi imao u zapadnoeuropskoj ili sjevernoameričkoj agenciji.
+
+GDPR specifičnosti za hrvatski kontekst zaslužuju posebnu pažnju. Agencija za zaštitu osobnih podataka aktivno provodi nadzor i sankcije u Hrvatskoj nisu zanemarive. Komunikolog koji uvodi no-code stack koji procesuira podatke hrvatskih korisnika mora razumjeti standard contractual clauses, mora provjeriti ima li dobavljač potpisani DPA s organizacijom i mora znati gdje se podaci fizički pohranjuju. Korištenje europske varijante alata, kada postoji, čest je razuman izbor za organizacije pod strogom GDPR kontrolom.
+
+Hrvatski jezik je posljednja specifičnost koja oblikuje izbor alata. Većina no-code alata nema hrvatski lokalizirano sučelje. To nije problem za internu upotrebu komunikacijskog tima, ali postaje problem kada alat treba sučelje pružiti vanjskom korisniku. Webform u Tally na hrvatskom radi besprijekorno jer Tally dopušta prilagodbu svih tekstova. Webform na nekim drugim platformama nudi samo engleski. Ova razina pažnje pri izboru alata često razlikuje profesionalan rezultat od improviziranog.
+
+
+## Trendovi koji oblikuju budućnost no-code alata
+
+Nekoliko trendova obilježava razvoj no-code alata u posljednjih dvanaest do osamnaest mjeseci i komunikolog ih treba pratiti jer izravno utječu na alate koje će uskoro koristiti.
+
+AI-native autoring postaje očekivanje, ne luksuz. Notion AI, Airtable AI, HubSpot Breeze, Canva Magic Studio i slični integrirani su unutar samih alata, a ne dodani sa strane. Komunikolog koji bira no-code alat 2026. godine procjenjuje ne samo osnovnu funkcionalnost nego i kvalitetu integriranog AI-a, jer ona postaje središnji dio svakodnevne upotrebe.
+
+Agent orchestration je sljedeći nivo automatizacije. Umjesto da komunikolog piše scenarij korak po korak, opisuje cilj agentu koji sam sastavlja korake. Zapier Central, Lindy i Relevance AI vodeći su predstavnici ove kategorije. Granica s klasičnom automatizacijom još je neostra, ali smjer je jasan.
+
+Composable enterprise stack odražava se i na komunikacijsku funkciju. Umjesto monolitne marketing platforme koja sve radi, organizacije sve češće sastavljaju stack od specijaliziranih alata koji međusobno komuniciraju. Najbolji CMS, najbolji CRM, najbolji alat za e-mail, najbolja platforma za webinare, sve to povezano automatizacijom. Ovo donosi fleksibilnost ali i kompleksnost koja od komunikologa traži arhitekturalno razmišljanje.
+
+MCP i univerzalni AI konektori obećavaju da će sljedećih nekoliko godina dramatično pojednostavniti integracijski sloj. Umjesto da svaki alat gradi svoje konektore prema svakom drugom alatu, MCP standard omogućuje da AI klijent kao posrednik dohvaća i piše podatke u bilo koji servis koji podržava protokol. Ako se ovaj standard učvrsti, klasične iPaaS platforme poput Zapiera i Makea morat će se prilagoditi novom svijetu ili izgubiti relevantnost.
+
+Konvergencija CMS, automatizacije i AI je vjerojatno najznačajniji srednjoročni trend. Notion polako postaje sve, od dokumenata preko baza i wiki-ja do publishing platforme. HubSpot integrira CRM, marketing, sadržaj i AI agente. WordPress dodaje AI funkcionalnosti i automatizaciju. Granica koja je do nedavno razdvajala CMS, automatizaciju i AI nestaje, a komunikolog se nalazi u središtu te konvergencije.
+
+Pitanje gdje no-code prestaje a AI orkestracija počinje vjerojatno je najzanimljivije konceptualno pitanje koje će ovo desetljeće postaviti. Ako je no-code značio vizualnu izgradnju logike, a AI agent znači opisivanje cilja prirodnim jezikom dok sustav sam gradi logiku, jesmo li još uvijek u no-code paradigmi ili smo prešli u nešto drugo? Komunikolozi neće morati definitivno odgovoriti na ovo pitanje, ali će raditi unutar njegovih posljedica.
+
+
+## Na kraju ovog poglavlja
+
+No-code i low-code alati nisu zamjena za razumijevanje sadržaja, strategije ili publike. Oni su alati koji omogućuju da to razumijevanje postane operativno učinkovito. Komunikolog koji zna pisati ali ne zna automatizirati, troši trećinu vremena na ručne procese koje konkurencija odavno ne radi ručno. Komunikolog koji zna automatizirati ali ne zna pisati, gradi prazne sustave bez sadržaja. Profesionalna kompetencija danas znači jedno i drugo zajedno.
+
+Ovo predavanje pokušalo je razdvojiti dvije logike koje su prošlog tjedna bile zajedno. Tjedan 4 govorio je o platformi na kojoj sadržaj živi, dakle o CMS-u. Ovo predavanje govorilo je o platformama koje stoje iza tog sadržaja i pokreću operativni rad organizacije. Sljedeći tjedan govorit ćemo o računalstvu u oblaku i suradničkom radu, što je infrastrukturni temelj na kojem ovi no-code alati zapravo žive. Razumijevanje cloud paradigmi, vrsta uslužnih modela i suradničkih praksi zaokružit će sliku tehničke i operativne podloge koju komunikolog treba.
+
+::: {.callout-note}
 ## Ključni zaključci
 
-::: {.callout-important appearance="minimal"}
-*Bit će dodano.*
+No-code alati apstrahiraju bazu podataka, hosting, integracije i sigurnost, dok low-code dopuštaju ograničeno pisanje koda za napredne prilagodbe. Ova apstrakcija mijenja brzinu i cijenu izgradnje sustava ali traži žrtvu kontrole.
+
+Operativni stack komunikologa može se mapirati po funkciji u devet kategorija, od strukturiranih podataka i obrazaca preko automatizacije do AI-podržanih alata, i ta funkcionalna mapa stabilnija je od pojedinih proizvoda.
+
+Logika automatizacije svodi se na trigger, akciju i uvjet, a snaga dolazi iz složenih scenarija koji povezuju desetke servisa i koji u jedan radni tok ugrađuju i AI korake.
+
+Strukturirani podaci u Airtableu i Notionu zamjenjuju dokumente i otključavaju automatizaciju, dashboarde i integracije, što čini prelazak iz dokument-orijentiranog razmišljanja u baza-orijentirano razmišljanje najtransformativnijom kompetencijom u no-code stacku.
+
+AI ulazi u no-code na pet razina, od LLM koraka u scenariju preko Custom GPT-a i Claude Project-a do AI-native graditelja, AI agenata i MCP standarda, i svaka od tih razina mijenja što no-code može raditi.
+
+Vendor lock-in, troškovi pretplate, podatkovna rezidencija, GDPR usklađenost, tihi otkaz automatizacija i shadow IT konkretni su rizici koje komunikolog mora aktivno upravljati.
+
+Citizen development paradigma stavlja komunikologa u poziciju graditelja operativnih alata svoje organizacije, što donosi vidljivost, utjecaj i odgovornost koje prethodne generacije komunikologa nisu imale.
+
+Hrvatski kontekst posebno favorizira no-code adopciju zbog veličine SME segmenta, sezonskih obrazaca u turizmu i ovisnosti startup ekosustava o ovim alatima, ali nameće i specifične zahtjeve oko GDPR-a, jezika i cjenovne osjetljivosti.
+
+Buduće generacije no-code alata kombinirat će AI-native autoring, agent orchestration, composable stack arhitekturu i univerzalne konektore poput MCP-a, čineći granicu između no-code, automatizacije i AI orkestracije sve nejasnijom.
+
+Tehnička barijera u izgradnji digitalnih sustava se smanjuje a profesionalna se povećava, jer vrijednost koju komunikolog donosi pomiče se prema postavljanju ispravnog cilja, evaluaciji izlaza i preuzimanju odgovornosti za sustave koji rade bez nadzora.
 :::
+
 
 ## Priprema za sljedeći tjedan
 
-::: {.callout-warning appearance="minimal"}
-*Bit će dodano.*
-:::
+Tjedan 6 bavit će se računalstvom u oblaku i suradničkim radom, dakle infrastrukturom na kojoj no-code alati o kojima smo danas govorili zapravo žive.
+
+Prije šestog predavanja napravite četiri stvari.
+
+Prvo, napravite osobnu inventarizaciju ponavljajućih zadataka u svom akademskom ili profesionalnom radu. Zabilježite najmanje pet zadataka koje radite svaki tjedan ili svaki mjesec, koji slijede predvidljiv obrazac i koji bi se teoretski mogli automatizirati. Za svaki zadatak procijenite koliko vremena tjedno troši i koja bi tri alata trebala međusobno razgovarati da bi se on automatizirao.
+
+Drugo, otvorite besplatan račun na Make ili Zapier i postavite jedan jednostavan scenarij s minimalno tri koraka. Predloženi scenarij za vježbu jest da se nova objava na vašem RSS feedu ili Google Sheets retku automatski upisuje u Notion ili Airtable bazu i istovremeno šalje e-mail obavijest. Cilj nije izgraditi nešto produkcijsko, nego osjetiti kako se konfigurira trigger, akcija i uvjet.
+
+Treće, izgradite jednostavan sadržajni kalendar u Airtableu ili Notion bazi podataka. Definirajte minimalno šest polja, uključujući naslov, status, planirani datum, kanale distribucije, autora i oznake. Generirajte iz iste baze tablicu, kalendarski pogled i kanban ploču. Eksperimentirajte s filtriranjem i grupiranjem.
+
+Četvrto, napravite eksperiment s LLM korakom u automatizaciji. U scenariju kojeg ste izgradili u drugom zadatku, dodajte korak koji prima tekst, šalje ga prema OpenAI ili Anthropic API-ju s uputom da napiše prijedlog naslova ili kratkog sažetka, i prima rezultat. Zabilježite što je radilo dobro, što loše, i kakvi su bili troškovi po pozivu. Pripremite kratku refleksiju od desetak rečenica koju ćemo iskoristiti u uvodu sljedećeg predavanja.
+
+
+## Dodatno čitanje
+
+Za dublje razumijevanje Make platforme i logike scenarija, Make Academy nudi besplatne strukturirane lekcije koje pokrivaju sve od osnovnih scenarija do agentskih radnih tokova. Zapier Learn pokriva sličan teren u kontekstu Zapiera i koristan je za usporedbu pristupa.
+
+Notion Help Center i Airtable Universe sadrže opsežne predloške koje možete kopirati i prilagoditi. Posebno korisni za komunikologe su predlošci za uredničke kalendare, lagane CRM-ove i repozitorije sadržaja, koji često uključuju i prilagođene formule i primjere automatizacija.
+
+Gartnerova istraživanja o citizen developmentu pružaju strateški kontekst koji nadilazi pojedinačne alate. Iako su namijenjena prvenstveno IT i CIO publici, donose podatke i okvire koji su korisni komunikologu koji argumentira uvođenje no-code stacka u vlastitu organizaciju.
+
+Latent Space podcast i pripadajuća newsletter publikacija prate razvoj AI-native no-code alata bolje od većine drugih izvora i dobar su način praćenja što dolazi sljedeće.
+
+Ben Tossell vodi newsletter Ben's Bites i blog Makerpad koji su jedni od najstarijih i najpouzdanijih izvora vijesti i tutorijala u no-code prostoru. Vidljivo je njegovo prelaženje iz klasičnog no-code-a u AI-native pristup što oslikava širi pomak u industriji.
+
+Anthropicov razvojni blog i dokumentacija MCP standarda relevantni su za razumijevanje smjera u kojem se kreće cijela kategorija. Iako su tehnički orijentirani, koncepti su pristupačni i komunikologu, a poznavanje smjera daje strateški uvid koji nedostaje većini.
+
+Za hrvatski kontekst, materijali ZICER-a i programa inkubacije Algebra LAB-a povremeno sadrže studije slučaja koje opisuju kako konkretni hrvatski startupi i SME-ovi koriste no-code stack. Praćenje LinkedIn objava hrvatskih marketinških i komunikacijskih praktičara koji pišu o ovoj temi također je koristan dopunski izvor.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| No-code | Kategorija alata koja omogućuje izgradnju digitalnih sustava bez pisanja koda |
+| Low-code | Kategorija alata koja dopušta minimalno pisanje koda, najčešće formule ili kratke skripte |
+| Citizen development | Praksa u kojoj zaposlenici izvan IT-a izgrađuju funkcionalne digitalne sustave za potrebe svojeg tima |
+| Citizen developer | Osoba bez programerskog obrazovanja koja izgrađuje sustave kroz no-code alate |
+| Trigger | Događaj koji pokreće automatiziran scenarij |
+| Akcija | Radnja koja se izvršava nakon aktiviranja triggera |
+| Uvjet | Provjera koja određuje hoće li se akcija dogoditi ili ne |
+| Scenarij | Cjelovit tijek triggera, uvjeta i akcija u alatu za automatizaciju, naziv u Makeu |
+| Zap | Naziv za scenarij u Zapieru |
+| Run | Pojedinačno izvršenje scenarija |
+| Operacija | Mjerna jedinica potrošnje u Makeu, jedan korak unutar scenarija |
+| Task | Zapierova mjerna jedinica potrošnje, slično operaciji u Makeu |
+| Webhook | Mehanizam u kojem izvor sam šalje obavijest sustavu kada se dogodi promjena |
+| Polling | Mehanizam u kojem alat periodički provjerava izvor i traži promjenu |
+| Konektor | Unaprijed izgrađena integracija između alata za automatizaciju i nekog servisa |
+| Native integracija | Integracija ugrađena izravno u proizvod bez posrednika |
+| Third-party integracija | Integracija koju omogućuje vanjski alat za automatizaciju |
+| OAuth | Standard za sigurnu autorizaciju pristupa između servisa bez dijeljenja lozinke |
+| API limit | Maksimalan broj poziva prema servisu u određenom vremenskom periodu |
+| Rate limiting | Mehanizam ograničavanja brzine kojom se servisu šalju zahtjevi |
+| Airtable | No-code alat koji kombinira proračunske tablice s funkcijama relacijske baze podataka |
+| Base | Naziv za bazu podataka u Airtableu |
+| Record | Pojedinačni redak u Airtable bazi |
+| Field | Stupac u Airtable bazi s definiranim tipom podatka |
+| View | Pogled na podatke u Airtableu, primjerice tablica, kalendar ili kanban ploča |
+| Notion | No-code alat koji kombinira dokumente, baze podataka, wiki i suradničke značajke |
+| Notion baza | Strukturirani skup zapisa unutar Notiona, sa svojstvima i pogledima |
+| Coda | No-code alat sličan Notionu s naglaskom na formulama i automatizaciji |
+| Relacijski pogled | Prikaz koji povezuje zapise iz različitih tablica kroz definirane relacije |
+| Formula field | Polje koje računa svoju vrijednost iz drugih polja prema definiranoj formuli |
+| Make | Platforma za vizualnu automatizaciju radnih tokova, ranije Integromat |
+| Zapier | Najpoznatija platforma za automatizaciju radnih tokova između SaaS servisa |
+| n8n | Open-source alat za automatizaciju koji se može hostirati lokalno |
+| IFTTT | Pojednostavljena platforma za automatizaciju za pojedinačne korisnike |
+| Tally | Jednostavan alat za izradu obrazaca s naglaskom na privatnost i besplatne funkcionalnosti |
+| Typeform | Alat za izradu interaktivnih obrazaca s naglaskom na korisničkom iskustvu |
+| Jotform | Alat za izradu obrazaca s opsežnim integracijama i predlošcima |
+| Buffer | Alat za zakazivanje i upravljanje objavama na društvenim mrežama |
+| Later | Alat za upravljanje društvenim mrežama s naglaskom na vizualnom planiranju |
+| Looker Studio | Googleov besplatan alat za izradu dashboarda iz različitih izvora podataka |
+| Plausible | Alat za web analitiku s naglaskom na privatnost i jednostavnost |
+| Fathom | Alternativa Google Analyticsu s GDPR-friendly pristupom |
+| Glide | Alat koji pretvara Google Sheets ili Airtable bazu u mobilnu aplikaciju |
+| Softr | Alat koji pretvara Airtable bazu u web aplikaciju s prijavom korisnika |
+| Bubble | Naprednija no-code platforma za izradu cjelovitih web aplikacija |
+| Substack | Platforma za publikaciju newslettera s integriranom monetizacijom |
+| Beehiiv | Konkurent Substacku s naglaskom na rast i analitiku |
+| Ghost | Open-source platforma za izdavanje newslettera i sadržajnih stranica |
+| Custom GPT | Prilagođeni AI asistent unutar ChatGPT platforme s definiranim uputama i dokumentima |
+| Claude Project | Anthropicov pandan Custom GPT-u, prostor s prilagođenim uputama i kontekstom |
+| LLM korak | Akcija unutar automatizacijskog scenarija koja poziva veliki jezični model |
+| AI agent | Sustav koji samostalno odlučuje o slijedu akcija na temelju zadanog cilja |
+| Lindy | Platforma za izgradnju AI agenata bez koda |
+| Relevance AI | Platforma za izgradnju AI agenata i workflow-ova orijentirana poslovnoj upotrebi |
+| Zapier Central | Zapierov alat za izgradnju AI agenata unutar Zapier ekosustava |
+| MCP | Model Context Protocol, otvoreni standard za komunikaciju AI klijenata sa servisima |
+| AI-native graditelj | Alat koji iz prirodnog jezika generira radnu aplikaciju s frontendom i backendom |
+| Bolt.new | AI-native graditelj za web aplikacije iz prompt-a |
+| v0 | Vercelov AI-native graditelj sučelja temeljen na Reactu |
+| Lovable | AI-native graditelj cjelovitih web aplikacija iz prirodnog jezika |
+| Computer Use | Anthropicova mogućnost da AI sustav kontrolira korisničko sučelje računala |
+| Browser-use agent | AI sustav koji samostalno koristi web preglednik za izvršavanje zadataka |
+| Vendor lock-in | Ovisnost o specifičnom dobavljaču koja otežava promjenu alata |
+| Shadow IT | Pojava nedokumentiranih alata u organizaciji koje pojedinci uvode bez koordinacije |
+| Podatkovna rezidencija | Geografska lokacija na kojoj se fizički pohranjuju podaci servisa |
+| DPA | Data Processing Agreement, ugovor između voditelja i izvršitelja obrade podataka |
+| Customer journey | Automatska sekvenca komunikacije s korisnikom koja se grana ovisno o ponašanju |
+| Drip kampanja | Niz poruka koje se šalju u definiranim vremenskim razmacima |
+| Lead capture | Proces prikupljanja kontaktnih podataka potencijalnog korisnika |

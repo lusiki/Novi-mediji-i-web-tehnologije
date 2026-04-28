@@ -1,17 +1,383 @@
 ---
 title: "Digitalna regulativa i pravni okvir"
 subtitle: "GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama i tržištima"
-author: "doc. dr. sc. Luka Šikić"
 date: 2026-05-20
 categories: [regulativa, pravo]
+draft: false
+format:
+  html: default
+  pdf:
+    lang: en
+  docx: default
 abstract: |
-  Ovo predavanje daje pregled regulatornih okvira koji oblikuju web tehnologije i digitalnu komunikaciju u Europi i globalno, uključujući GDPR, EU Akt o AI-ju, Akt o digitalnim uslugama i Akt o digitalnim tržištima.
+  Ovo predavanje sintetizira regulatorni okvir koji oblikuje digitalnu komunikaciju u Europi i sve više globalno. GDPR za zaštitu osobnih podataka, EU Akt o umjetnoj inteligenciji, Akt o digitalnim uslugama, Akt o digitalnim tržištima i prateći okviri zajednički postavljaju pravila pod kojima komunikolog djeluje. Razumijevanje strukture, ključnih obveza i mehanizama provedbe ovog okvira nije više rezerva pravnika nego sastavni dio profesionalne kompetencije komunikologa, jer regulatorni rizik ulazi u svaku stratešku odluku oko podataka, sadržaja i platformi.
 ---
 
-## Uvod
+## Ishodi učenja
 
-*Sadržaj predavanja bit će objavljen u narativnom formatu nakon sesije.*
+Nakon ovog predavanja studenti će moći
 
-## Zaključak
+1. Mapirati arhitekturu EU digitalne regulative i razumjeti odnose između GDPR-a, AI Acta, DSA-a, DMA-a, ePrivacyja i autorskih okvira
+2. Opisati ključne pojmove GDPR-a, uključujući teritorijalni opseg, zakonite osnove obrade, prava ispitanika i mehanizme provedbe
+3. Razlikovati četiri kategorije rizika u EU Aktu o umjetnoj inteligenciji i identificirati obveze koje proizlaze za svaku
+4. Razumjeti ulogu Akta o digitalnim uslugama u uspostavljanju obveza platformi, uključujući obveze velikih internet platformi i tržišta
+5. Identificirati gatekeepere pod Aktom o digitalnim tržištima i razumjeti operativne posljedice koje DMA donosi za korisnike i konkurente
+6. Procijeniti regulatorni okvir za kolačiće, izravan marketing i autorsko pravo u digitalnom kontekstu
+7. Smjestiti hrvatska nadležna tijela i specifičnosti domaće implementacije u širi EU okvir
+8. Razviti praktičnu praksu usklađenosti koja regulatorni rizik integrira u svakodnevne komunikacijske odluke
 
-*Bit će dodano.*
+
+## Zašto komunikolog mora razumjeti pravni okvir
+
+Zamislite da ste komunikolog u srednjoj hrvatskoj agenciji koja vodi marketinški rad za desetak klijenata. Ujutro stiže službeno pismo Agencije za zaštitu osobnih podataka. AZOP je primio prijavu od pojedinca koji tvrdi da je primao newsletter klijenta, regionalnog osiguranja, a da nije izrazio pristanak. Pokrenuta je istraga. AZOP traži dokumentaciju o tome kako je svaki pretplatnik dao pristanak, kako se taj pristanak čuva, koje su mehanizme transparentnosti uspostavljene, koja je legalna osnova obrade i koje politike privatnosti vrijede. Imate trideset dana za pružiti odgovor.
+
+Istovremeno, klijent traži da pokrenete kampanju koja koristi AI generirane slike u kojima se navodno prikazuju zadovoljni korisnici. Drugi klijent, manji medij, postavlja pitanje da li njegova praksa A/B testiranja sadržaja na pretplatnicima zahtijeva dodatne mjere transparentnosti pod Aktom o digitalnim uslugama. Treći klijent, e-trgovina, želi koristiti dynamic pricing, što je nedavno postalo predmet rasprava u kontekstu Akta o digitalnim tržištima. Četvrti, kao mali ali brzo rastući SaaS pružatelj usluge, pita kako se kvalificira pod EU Aktom o umjetnoj inteligenciji jer u svojoj usluzi koristi AI klasifikaciju korisnika.
+
+Ovo nije scenarij iz daleke budućnosti. To je svakodnevni rad komunikologa u 2026. godini u kontekstu europskog regulatornog okvira koji se posljednjih godina dramatično proširio i postupno se primjenjuje. Komunikolog koji ne razumije osnovni okvir, ne može odgovoriti ni na jedno od ovih pitanja, ne može savjetovati klijenta i ne može preuzeti odgovornost za rizik koji vlastite odluke uvode u organizaciju.
+
+Prošli tjedan razrađivali smo etičke i epistemičke dimenzije sintetičkih medija. Mnoge etičke obveze koje smo opisali, postupno se kodificiraju u zakonske obveze kroz EU regulatorni okvir. Što je nekad bila stvar profesionalnog kodeksa, danas je sve više stvar pravnog okvira sa stvarnim sankcijama. Komunikolog koji u 2026. godini djeluje bez razumijevanja tog okvira, izlaže sebe i organizaciju rizicima koji su sve manje oprostivi.
+
+Ovo predavanje neće vas pretvoriti u pravnika i ne treba. Cilj je dati funkcionalan mentalni model okvira, razumijevanje ključnih pojmova i sposobnost prepoznavanja kada je situacija dovoljno zahtjevna da treba angažirati pravnog stručnjaka. To je kompetencija koja u modernoj komunikacijskoj profesiji više nije izborni dodatak nego standard.
+
+
+## Arhitektura EU digitalne regulative
+
+EU regulativa u digitalnom prostoru izgledala je do prije desetak godina kao mozaik pojedinačnih pravnih akata koji su pokrivali specifične teme. Privatnost pokrivao je Direktiva o zaštiti podataka iz 1995. godine. Elektronička komunikacija pokrivala je ePrivacy direktiva. Autorsko pravo pokrivala je InfoSoc direktiva. Posljednjih deset godina dogodila se sustavna obnova ovog prostora i nastao je koherentan, iako složen, regulatorni krajobraz.
+
+Temeljni okvir gradi se oko sljedećih ključnih akata. Opća uredba o zaštiti podataka, ili GDPR, na snazi od 2018. godine, postavlja temelj za zaštitu osobnih podataka. EU Akt o umjetnoj inteligenciji, prvi sveobuhvatan zakon o AI-ju u svijetu, postupno se primjenjuje od 2024. do 2027. godine. Akt o digitalnim uslugama, ili DSA, na snazi od 2024. godine, postavlja obveze platformi za moderiranje sadržaja i transparentnost. Akt o digitalnim tržištima, ili DMA, također od 2024. godine, regulira ponašanje najvećih platformi koje su označene kao gatekeepers. ePrivacy direktiva i nadolazeća ePrivacy uredba reguliraju elektroničke komunikacije, kolačiće i izravan marketing. Direktiva o autorskom pravu na jedinstvenom digitalnom tržištu iz 2019. godine osuvremenjuje autorska pravila za digitalno doba.
+
+Ovi akti ne djeluju izolirano. Oni se preklapaju, dopunjuju i ponekad stvaraju napetosti. Newsletter koji obrađuje osobne podatke ulazi pod GDPR. Ako koristi AI za personalizaciju, ulazi pod AI Act. Ako se distribuira kroz veliku platformu, ulazi pod DSA. Ako sadrži zaštićene autorske materijale, ulazi pod autorske okvire. Komunikolog koji vodi takav newsletter mora razumjeti istovremeno više slojeva.
+
+Geografski opseg ovih akata u načelu je teritorijalan, ali s tim da brojni akti imaju ekstrateritorijalni doseg. GDPR se primjenjuje ne samo na obradu podataka koja se odvija u EU, nego i na svaku obradu osobnih podataka EU stanovnika, bez obzira gdje je obrađivač registriran. Slična logika vrijedi za AI Act, DSA i DMA. To znači da hrvatska organizacija ne mora samo poznavati EU okvir, nego može doći u kontakt s EU okvirom čak i kada djeluje izvan EU, ali obrađuje podatke EU građana.
+
+Sankcije pod ovim okvirima su značajne. GDPR omogućuje kazne do četiri posto globalnog godišnjeg prometa ili dvadeset milijuna eura, što god je veće. AI Act predviđa kazne do sedam posto globalnog prometa za zabranjene prakse. DSA može kažnjavati do šest posto globalnog prometa za vrlo velike online platforme. DMA donosi kazne do deset posto globalnog prometa za gatekeepere. Tradicionalna razmišljanja o pravnim rizicima u digitalnom prostoru više nisu dovoljna jer regulatorne kazne sada mogu biti transformacijske za organizaciju.
+
+
+## GDPR kao temelj
+
+GDPR je najstariji i najraširenije razumijevani element okvira. Iako je na snazi sedam godina, njegova primjena se kontinuirano razvija kroz odluke nadzornih tijela i sudova.
+
+Teritorijalni opseg primjene definiran je u članku 3. Uredba se primjenjuje na obradu osobnih podataka u kontekstu aktivnosti poslovnog nastana voditelja ili izvršitelja u EU, neovisno o tome gdje se obrada odvija. Također se primjenjuje na obradu osobnih podataka ispitanika u EU od strane voditelja ili izvršitelja izvan EU, kada je obrada povezana s nuđenjem robe ili usluga ispitanicima u EU ili praćenjem njihovog ponašanja koliko god se to odvija u EU.
+
+Pojmovi voditelja i izvršitelja obrade ključni su za razumijevanje raspodjele odgovornosti. Voditelj obrade je organizacija ili pojedinac koji određuje svrhu i način obrade osobnih podataka. Izvršitelj obrade je organizacija koja obrađuje podatke u ime voditelja. Hrvatska tvrtka koja koristi američki cloud servis je voditelj obrade. Američki cloud servis je izvršitelj obrade. Među njima mora postojati pisani Ugovor o obradi podataka, ili DPA, koji propisuje obveze izvršitelja prema voditelju.
+
+Zakonite osnove obrade definirane u članku 6. ograničeni su skup razloga zbog kojih se osobni podaci uopće smiju obrađivati. Šest osnova uključuje pristanak ispitanika, izvršenje ugovora s ispitanikom, ispunjavanje pravne obveze voditelja, zaštitu životno važnih interesa ispitanika ili druge osobe, izvršenje zadataka u javnom interesu i legitimni interes voditelja. Nije svaka obrada legitimna pod svakom osnovom, izbor osnove ima konkretne posljedice, i organizacija mora moći demonstrirati koja je osnova vrijedila za svaku konkretnu obradu.
+
+Pristanak je posebno strogo definiran. Mora biti slobodan, informirani, specifičan i jednoznačan. Predčekirana kvačica nije pristanak. Pristanak na uvjete korištenja koji uključuju obavezno marketinško slanje nije slobodan pristanak. Pristanak za jednu svrhu ne pokriva drugu, čak i ako su slične. Pristanak se mora moći lako povući.
+
+Posebne kategorije osobnih podataka, definirane u članku 9, uključuju podatke o rasnom ili etničkom podrijetlu, političkim mišljenjima, vjerskim ili filozofskim uvjerenjima, sindikalnom članstvu, genetskim podacima, biometrijskim podacima, zdravstvenim podacima, te podacima o seksualnom životu i orijentaciji. Obrada ovih podataka u principu je zabranjena, osim ako postoji konkretan razlog izuzeća, najčešće eksplicitan pristanak ili javni interes.
+
+Prava ispitanika su skup prava koje pojedinac može tražiti od organizacije koja obrađuje njegove podatke. Pravo na pristup, ispravak, brisanje (poznato kao pravo na zaborav), ograničenje obrade, prenosivost podataka, prigovor i pravo da osoba ne bude predmet automatiziranog odlučivanja. Organizacija mora odgovoriti na zahtjev unutar mjesec dana, što se može produžiti za dva mjeseca u kompleksnijim slučajevima.
+
+DPIA, ili procjena utjecaja na zaštitu podataka, obvezna je za određene vrste obrade visokog rizika. Velika sustavna obrada osjetljivih podataka, sustavno praćenje javno dostupnih područja i sustavno odlučivanje o pojedincima na temelju automatske obrade, kvalificiraju za DPIA obvezu. Procjena identificira rizike, mjere ublažavanja i procjenjuje preostali rizik nakon mjera.
+
+Obavještavanje o povredama traži da organizacija obavijesti nadzorno tijelo o povredi sigurnosti osobnih podataka unutar sedamdeset i dva sata. Ako povreda predstavlja visok rizik za prava i slobode pojedinca, organizacija mora obavijestiti i pojedince. Ne svaka sigurnosna incident treba prijaviti, ali kriterij i postupak moraju biti unaprijed razrađeni.
+
+DPO, ili službenik za zaštitu podataka, obvezan je za određene vrste organizacija, uključujući javna tijela i organizacije čije osnovne aktivnosti zahtijevaju sustavno praćenje pojedinaca u velikom opsegu ili obradu posebnih kategorija podataka. DPO mora imati stručno znanje, ne smije biti u sukobu interesa i mora moći neovisno djelovati.
+
+Provedba GDPR-a u Hrvatskoj odvija se kroz Agenciju za zaštitu osobnih podataka, AZOP, koja je nadležno tijelo i koje aktivno provodi nadzor. Praksa AZOP-a kroz godine se razvila, kazne su izrečene u brojnim slučajevima i nadzor se intenzivira u domenama digitalnog marketinga, AI obrade i obrade podataka kroz internetske platforme.
+
+
+## EU Akt o umjetnoj inteligenciji
+
+EU Akt o umjetnoj inteligenciji, ili AI Act, povijesna je regulatorna intervencija. To je prvi sveobuhvatan zakon o AI-ju u svijetu, koji postavlja okvir koji će vjerojatno utjecati i na druge jurisdikcije, slično kao što je GDPR utjecao na privatnosno pravo globalno. Ulazi u primjenu kroz nekoliko faza od 2024. do 2027. godine.
+
+Temeljna logika AI Acta je kategorizacija po riziku. Sve AI sustave dijeli u četiri kategorije i obveze pridijeljene svakoj kategoriji su proporcionalne riziku.
+
+Neprihvatljivi rizik su sustavi čija je upotreba zabranjena. Ova kategorija uključuje sustave koji koriste subliminalne tehnike za manipulaciju, sustave koji iskorištavaju ranjivosti specifičnih grupa, sustave socijalnog bodovanja od strane javnih tijela, predviđanje kaznenih djela isključivo na osnovi profiliranja, neselektivno prikupljanje slika lica iz interneta za bazu prepoznavanja, biometrijsku identifikaciju u stvarnom vremenu u javnim prostorima u korist provedbe zakona uz uske iznimke i sustave za prepoznavanje emocija na radnom mjestu i u školama. Ova zabrana primjenjuje se od veljače 2025. godine.
+
+Visokorizični sustavi su oni koji predstavljaju značajan rizik za zdravlje, sigurnost i temeljna prava. Kategorija obuhvaća AI sustave u kritičnoj infrastrukturi, obrazovanju, zapošljavanju, pristupu osnovnim uslugama, provedbi zakona, migracijama i pravosuđu. Za ove sustave AI Act traži opsežne obveze koje uključuju sustav upravljanja rizicima, kvalitetu i upravljanje podacima, tehničku dokumentaciju, vođenje evidencija, transparentnost prema korisnicima, ljudski nadzor, točnost, robusnost i kibernetičku sigurnost. Pružatelji ovih sustava moraju proći procjenu sukladnosti prije stavljanja na tržište.
+
+Ograničeni rizik su sustavi koji imaju specifične obveze transparentnosti. Sustavi koji komuniciraju s ljudima moraju jasno otkriti da je riječ o AI sustavu, ne o čovjeku. Sustavi koji generiraju ili manipuliraju slikama, audio ili videom, gdje rezultat može djelovati uvjerljivo autentičan, moraju otkriti da je sadržaj AI generiran. Ovo je izravno relevantno za komunikologa koji koristi AI za vizualni sadržaj.
+
+Minimalni rizik je sve ostalo, dakle većina AI sustava koji se danas koriste. Za ovu kategoriju AI Act ne nameće konkretne obveze, iako potiče dobrovoljne kodeksa ponašanja.
+
+Posebna kategorija u AI Actu su modeli opće namjene, ili general-purpose AI, GPAI. Frontijerni modeli poput Claudea, GPT-a i Gemini-ja kvalificiraju se kao GPAI. AI Act im postavlja obveze tehničke dokumentacije, transparentnosti o trening podacima i autorskim pravima, te politike usklađenosti s autorskim pravom. Modelima koji predstavljaju sustavni rizik, što je definirano kao iznad određenog praga računalne snage korištene za trening, dodaju se obveze procjene rizika, testiranja na ekstremne scenarije i obavještavanja Europske komisije o ozbiljnim incidentima.
+
+AI ured Europske komisije središnje je tijelo za nadzor i provedbu AI Acta. Surađuje s nacionalnim nadzornim tijelima u svakoj državi članici. Hrvatsko nadzorno tijelo bit će određeno do kraja 2026. godine, s vjerojatnošću da će uloge biti raspodijeljene između AZOP-a, HAKOM-a i Ministarstva nadležnog za digitalnu transformaciju.
+
+Praktične posljedice za komunikologa već su značajne i postupno rastu. Korištenje AI generiranog sadržaja u javnoj komunikaciji povlači obvezu transparentnosti, kako smo opisali prošlog tjedna u kontekstu autentičnosti. Kupovina ili korištenje visokorizičnih AI sustava traži due diligence o sukladnosti s AI Actom. Ugovori s AI dobavljačima moraju adresirati sukladnost. Interna politika organizacije o korištenju AI alata postaje pravna obveza, ne samo dobra praksa.
+
+
+## Akt o digitalnim uslugama
+
+Akt o digitalnim uslugama, DSA, regulira posrednike u digitalnom prostoru, uključujući internet pružatelje pristupa, hosting servise, online platforme i pretraživače. Cilj je uspostaviti odgovorniji digitalni prostor s jasnijim pravilima moderiranja sadržaja, transparentnijim odlukama platformi i dosljednijom zaštitom korisnika. Stupio je na snagu u 2024. godini.
+
+Stupnjevita arhitektura DSA-a definira različite obveze ovisno o veličini i ulozi pružatelja. Posrednički servisi imaju osnovne obveze. Hosting servisi dodaju obveze povezane s ilegalnim sadržajem. Online platforme imaju značajne dodatne obveze. Vrlo velike online platforme, ili VLOP-ovi, imaju najopsežnije obveze. VLOP-ovi su platforme s više od četrdeset i pet milijuna mjesečnih korisnika u EU, što obuhvaća većinu velikih društvenih mreža, online tržišta i pretraživača.
+
+Mehanizam obavještavanja i djelovanja, poznat kao notice and action, traži da platforme uspostave dostupne mehanizme kojim korisnici i organizacije mogu obavijestiti platformu o ilegalnom sadržaju. Platforma mora obrazloženo odlučiti o obavijesti. Korisnik čiji je sadržaj uklonjen ima pravo žalbe.
+
+Transparentnost o algoritmima preporuke je obveza za online platforme. One moraju u uvjetima korištenja jasno objasniti glavne parametre svojih algoritama preporuke i ponuditi korisnicima opciju feeda koji nije personaliziran. Spomenuli smo ovo u Tjednu 9 u kontekstu algoritamske distribucije.
+
+Transparentnost oglašavanja zahtijeva da platforme jasno označavaju oglase, identificiraju oglašivača i kriterije ciljanja. VLOP-ovi moraju voditi javno dostupnu arhivu oglasa.
+
+Zaštita maloljetnika podiže standarde, posebno u kontekstu profiliranja maloljetnika u svrhu oglašavanja, što je pod DSA-om uglavnom zabranjeno.
+
+Procjene sustavnih rizika obvezne su za VLOP-ove jednom godišnje. Procjene moraju adresirati rizike povezane s ilegalnim sadržajem, temeljnim pravima, javnim diskursom, izborima, javnim zdravljem i maloljetnicima. Mjere ublažavanja moraju biti razmjerne procijenjenim rizicima.
+
+Nezavisne revizije VLOP-ova obvezne su jednom godišnje. Revizori procjenjuju sukladnost s DSA-om i objavljuju izvještaje koji su djelomično javni.
+
+Krizni protokoli aktiviraju se u izvanrednim situacijama poput izbora, javnih zdravstvenih kriza ili oružanih sukoba, gdje VLOP-ovi moraju primijeniti pojačane mjere protiv dezinformacija i manipulacije.
+
+DSA Coordinator je tijelo na nacionalnoj razini koje provodi DSA u svakoj državi članici. U Hrvatskoj, ova uloga dodijeljena je Hrvatskoj regulatornoj agenciji za mrežne djelatnosti, HAKOM-u.
+
+Implikacije za komunikologa su nekoliko. Razumijevanje obveza VLOP-ova koje koriste klijenti pomaže pri razvoju strategija. Nezadovoljstvo s odlukom o uklanjanju sadržaja sada ima formalan put žalbe. Transparentnost oglasa otvara nove mogućnosti za istraživanje i konkurentsku analizu. Rad u kontekstu kriznih protokola, primjerice tijekom izbora, traži pažljiviji odnos prema kontroverznom sadržaju.
+
+
+## Akt o digitalnim tržištima
+
+Akt o digitalnim tržištima, DMA, fokusira se na konkurentsko ponašanje najvećih digitalnih platformi, koje su označene kao gatekeepers. Cilj je osigurati pravednije i otvorenije digitalno tržište. Stupio je na snagu također u 2024. godini.
+
+Gatekeeper status se dodjeljuje platformama koje ispunjavaju tri uvjeta. Imaju značajan utjecaj na unutarnje tržište. Pružaju osnovne platformske usluge koje su važne za poslovne korisnike. Uživaju dugotrajnu tržišnu poziciju. Konkretno, kvantitativni pragovi uključuju godišnji promet u EU iznad sedam i pol milijardi eura ili tržišnu kapitalizaciju iznad sedamdeset i pet milijardi, te više od četrdeset i pet milijuna aktivnih krajnjih korisnika i deset tisuća poslovnih korisnika u EU.
+
+Trenutno označeni gatekeepers uključuju Apple, Google, Meta, Microsoft, Amazon i ByteDance. Svi su američke ili kineske kompanije, što je politička dimenzija akta koja se često komentira. Oznaka gatekeepera odnosi se na konkretne platformske usluge, ne na cijelu kompaniju, što znači da Apple App Store i Google Search imaju različite obveze od ostalih dijelova istih kompanija.
+
+Konkretne obveze gatekeepera obuhvaćaju zabranu samostalnog povlašćivanja vlastitih proizvoda u rezultatima, omogućavanje interoperabilnosti komunikacijskih platformi, dopuštanje korisnicima da deinstaliraju unaprijed instalirane aplikacije, omogućavanje pristupa podacima poslovnim korisnicima, dopuštanje alternativnim app store i sustavima plaćanja, te zabrana određenih praksi obrade osobnih podataka bez eksplicitnog pristanka.
+
+Praktični učinci u 2025. i 2026. godini već su mjerljivi. Apple App Store u EU dopušta alternativne app store-ove, što je promijenilo ekosustav. Pretraga na Googleu manje agresivno preferira Googleove vlastite proizvode u određenim kategorijama. WhatsApp uvodi interoperabilnost s drugim sustavima poruka. Meta razdvaja korištenje podataka između WhatsAppa, Instagrama i Facebooka u određenim funkcionalnostima.
+
+Posljedice za komunikologa su indirektnije od posljedica drugih akata, ali stvarne. Rad s gatekeeper platformama treba računati s promjenama u njihovom ponašanju. Konkurenti gatekeepera dobivaju prilike koje prije nisu imali. Strateška ovisnost o pojedinom gatekeeperu se smanjuje, što je donekle olakšanje za organizacije koje su prije bile zarobljene u pojedinom ekosustavu.
+
+
+## ePrivacy i kolačići
+
+Sloj koji posebno utječe na svakodnevnu komunikacijsku praksu odnosi se na elektroničke komunikacije, kolačiće i izravan marketing.
+
+ePrivacy Direktiva iz 2002. godine, s izmjenama iz 2009. godine, regulira ovo područje. Iako EU planira zamijeniti ovu direktivu novom ePrivacy Uredbom, koja je u zakonodavnom postupku godinama, do njezinog donošenja vrijedi postojeća direktiva i njezina nacionalna implementacija.
+
+Pravila o kolačićima zahtijevaju eksplicitan pristanak za korištenje kolačića koji nisu strogo nužni za pružanje usluge. Strogo nužni kolačići, primjerice oni koji omogućuju funkcioniranje košarice u online trgovini ili koji čuvaju jezičnu postavku, ne traže pristanak. Svi drugi kolačići, uključujući analitičke, marketinške, profilirajuće i kolačiće trećih strana, traže informirani i specifični pristanak prije postavljanja.
+
+Kvaliteta cookie bannera postala je predmet sve strožijeg nadzora. Banner koji ima samo gumb prihvati a koji skriva odbijanje ili ga čini teško dostupnim, smatra se nelegitimnim. Banner koji se prikazuje s unaprijed označenim opcijama isto tako. Mnoga europska nadzorna tijela, uključujući AZOP, izrekla su kazne organizacijama čije banneri ne ispunjavaju standarde.
+
+Izravan marketing, posebno email marketing, regulira ePrivacy direktiva u kombinaciji s GDPR-om. Soft opt-in, gdje organizacija može slati marketing postojećim klijentima za slične proizvode bez izričitog pristanka, dopuštena je iznimka pod određenim uvjetima. Marketing prema osobama koje nisu prethodno bile klijent zahtijeva izričit pristanak.
+
+Pravo na prigovor je apsolutno u kontekstu izravnog marketinga. Pojedinac u svakom trenutku može povući pristanak ili izraziti prigovor, i organizacija mora odmah prestati slati. Mehanizam za odjavu mora biti jasan, jednostavan i besplatan u svakoj poruci.
+
+Izvještaji o kršenjima ePrivacy direktive, posebno u kontekstu kolačića i email marketinga, čine značajan dio nadzorne aktivnosti AZOP-a. Komunikolog koji upravlja newsletter listama, web stranicama s kolačićima ili online oglašivačkim kampanjama, mora imati funkcionalan radni model ovih pravila.
+
+
+## Autorsko pravo u digitalnom kontekstu
+
+Autorsko pravo prati digitalni razvoj kroz nekoliko ključnih akata. InfoSoc direktiva iz 2001. godine postavila je temelj za digitalno autorsko pravo u EU. Direktiva o autorskom pravu na jedinstvenom digitalnom tržištu iz 2019. godine donijela je značajne novine.
+
+Najpoznatiji element novije direktive je takozvani Article 17, koji uvodi odgovornost online platformi za sadržaj zaštićen autorskim pravom koji korisnici postavljaju. Platforma mora opravdati napore u dobivanju licenci, mora promptno reagirati na obavijesti nositelja prava i mora poduzeti razumne mjere kako bi osigurala da se zaštićeni sadržaj ne pojavi ponovno. Praktična primjena različito je interpretirana u pojedinim državama članicama, ali smjer je jasniji.
+
+Iznimke za istraživanje i obrazovanje su prošireni u digitalnoj direktivi, što olakšava akademski i obrazovni rad sa zaštićenim materijalom. Iznimke za očuvanje kulturne baštine i online prijenos također su prošireni.
+
+Iznimke za rudarenje teksta i podataka, ili text and data mining, posebno su važne u kontekstu AI razvoja. Direktiva razlikuje između istraživačkih organizacija, koje imaju pravo na rudarenje uz nekoliko uvjeta, i komercijalnih korisnika, koji mogu rudariti samo ako nositelj prava nije izrazio izričit prigovor strojnim sredstvima. Ova distinkcija je u središtu sporova oko treniranja AI modela na zaštićenom sadržaju, koji su u tijeku u nekoliko jurisdikcija.
+
+Pravo izdavača publikacija je nova kategorija prava koja se primjenjuje u kontekstu online korištenja sažetaka članaka, posebno na pretraživačima i agregatorima vijesti. Omogućuje izdavačima da pregovaraju o naknadi za korištenje svojih sadržaja od velikih platformi.
+
+Hrvatska implementacija je prošla kroz Zakon o autorskom pravu i srodnim pravima, koji je nekoliko puta izmijenjen kako bi prenio EU direktive. Hrvatska autorska prava administrira nekoliko kolektivnih organizacija, među kojima su HDS ZAMP, ZAPRAF i HRAS najznačajnije za muzičke, audio-vizualne i fotografske sadržaje.
+
+Praktične posljedice za komunikologa uključuju nekoliko stvari. Korištenje slika, glazbe, videa i drugog sadržaja u komunikacijskim materijalima zahtijeva pažnju na izvor i dozvolu. Stock fotografije s jasnom licencom su sigurne. Sadržaj pronađen na internetu bez jasne licence nije siguran. Korištenje sadržaja iz medija za prikaz proizvoda ili usluge organizacije obično traži dozvolu medija. AI generirani sadržaj otvara pitanja o trening korpusima, na koja je AI Act dodao dodatni sloj transparentnosti.
+
+
+## Hrvatska implementacija i nadležna tijela
+
+EU regulativa donosi opći okvir, ali konkretna primjena odvija se na nacionalnoj razini kroz implementacijske zakone i nacionalna nadzorna tijela. Komunikolog koji djeluje u Hrvatskoj mora poznavati domaću sliku.
+
+Agencija za zaštitu osobnih podataka, AZOP, središnje je tijelo za GDPR i ePrivacy. AZOP provodi nadzor, izriče kazne, savjetuje organizacije i vodi registar voditelja obrade. AZOP-ova praksa se kroz godine specijalizirala i kazne se izriču u brojnim slučajevima. Novosti u AZOP-ovoj praksi vrijedi pratiti kroz njegovu službenu stranicu i godišnja izvješća.
+
+Hrvatska regulatorna agencija za mrežne djelatnosti, HAKOM, nadležna je za elektroničke komunikacije i, od 2024. godine, za primjenu DSA-a u Hrvatskoj. HAKOM postupno gradi DSA Coordinator funkciju, što uključuje suradnju s Europskom komisijom i drugim DSA Coordinatorima diljem EU.
+
+Agencija za elektroničke medije, AEM, nadležna je za audiovizualne medije i određene aspekte sadržaja. AEM se preklapa s drugim regulatorima u domeni dezinformacija i sintetičkog sadržaja u tradicionalnim medijima.
+
+Agencija za zaštitu tržišnog natjecanja, AZTN, nadležna je za konkurentsko pravo. Iako DMA primjenjuje primarno Europska komisija, AZTN može biti relevantan u pratećim domaćim pitanjima.
+
+Ministarstvo nadležno za digitalnu transformaciju koordinira politike u širem digitalnom prostoru i postupno preuzima dio uloga koje proizlaze iz EU akata. AI Act dodjelu nadzornog tijela u Hrvatskoj još je u tijeku, s vjerojatnošću da će biti uspostavljena kombinacija postojećih i novih kapaciteta.
+
+Sudska praksa u Hrvatskoj postupno se razvija. Visoki upravni sud i Ustavni sud rješavali su predmete povezane s privatnošću, slobodom govora online i pristupom informacijama. Praksa europskih sudova, posebno Suda EU i Europskog suda za ljudska prava, ima izravan utjecaj na hrvatsku interpretaciju.
+
+Strukovne organizacije i kodeksi domaće struke postupno se usklađuju s regulatornim okvirom. Hrvatska gospodarska komora, Hrvatska udruga poslodavaca, Hrvatska udruga za odnose s javnošću i druge strukovne organizacije objavljuju materijale i organiziraju edukacije.
+
+Specifičnosti hrvatskog tržišta uključuju manju razinu profesionalne pravne kapacitete u manjim organizacijama, povezanost s regionalnim tržištima koja nemaju identičan regulatorni okvir, i jezik kao prepreku praćenju EU dokumenata u izvornom obliku. Komunikolog u manjim organizacijama često ima funkciju koja uključuje i osnovni regulatorni nadzor jer se posebni pravni djelatnik ne može priuštiti.
+
+
+## Praksa usklađenosti za komunikologa
+
+Razumijevanje regulatornog okvira ne svodi se samo na poznavanje pravila. Vodi do konkretne prakse koju komunikolog primjenjuje u svakodnevnom radu.
+
+Inventarizacija obrade osobnih podataka prvi je korak. Komunikolog mora znati koji podaci se obrađuju, gdje se nalaze, koja je legalna osnova, koliko se čuvaju i tko im ima pristup. Bez jasnog inventara, niti jedna zahtjevnija obveza GDPR-a ne može se ispuniti.
+
+Politika privatnosti i obavještenja o obradi moraju biti jasno napisani, lako dostupni i ažurni. Politika koja je postavljena prije pet godina i otad nije ažurirana gotovo sigurno ne odražava trenutnu praksu organizacije. Komunikolog koji upravlja web stranicom obično je odgovoran za politiku privatnosti, što je odgovornost koju vrijedi shvatiti ozbiljno.
+
+Mehanizmi pristanka i odjave moraju biti tehnički ispravni i pravno održivi. Cookie banner mora omogućavati jednostavno odbijanje. Newsletter pretplata mora bilježiti pristanak na način koji se može demonstrirati. Mehanizam odjave mora raditi u svakom trenutku.
+
+DPA s dobavljačima moraju biti potpisani prije nego što počne obrada podataka. Komunikolog koji potpiše ugovor s ESP-om, alatom za automatizaciju ili AI sustavom, mora osigurati da je DPA dio aranžmana. Mnogi dobavljači imaju standardne DPA dokumente koji se prihvaćaju digitalno.
+
+Procjene utjecaja na zaštitu podataka, DPIA, treba provesti za rizične vrste obrade. Marketinška kampanja koja uključuje opsežno profiliranje, korištenje AI sustava za segmentaciju, ili rad s osjetljivim kategorijama podataka, gotovo sigurno traži DPIA.
+
+Reagiranje na zahtjeve ispitanika mora biti standardiziran proces. Korisnik koji traži pristup svojim podacima ili brisanje, mora dobiti odgovor unutar mjesec dana. Za to mora postojati interni protokol koji uključuje verifikaciju identiteta, prikupljanje podataka, pripremu odgovora i upisivanje u evidenciju.
+
+Reagiranje na sigurnosne incidente mora biti unaprijed planirano. Tim koji se aktivira u slučaju povrede, kontaktna osoba prema AZOP-u, kontaktna osoba prema klijentima, predlošci komunikacije, sve to mora postojati prije nego što incident nastupi.
+
+AI usklađenost postaje sve važnija. Komunikolog koji koristi AI alate mora razumjeti je li njihov rad u kategoriji ograničenog rizika, koje obveze transparentnosti vrijede, i kako se to odražava u praksi. Korištenje AI generiranog sadržaja u javnoj komunikaciji obično traži otkrivanje.
+
+DSA usklađenost uglavnom se odnosi na rad s velikim platformama, ali mali pružatelji koji rastu prema VLOP statusu također imaju obveze. Komunikolog koji savjetuje rastuće digitalne pružatelje treba poznavati put rasta u DSA obvezama.
+
+Autorsko pravo u svakodnevnom radu zahtijeva discipliniran odnos prema licencama. Stock fotografije, glazbene biblioteke i video materijali s jasnom licencom su sigurni. Materijal pronađen ad hoc na internetu sigurnosno je problematičan dok se ne potvrdi licenca.
+
+Edukacija tima i klijenata praktična je odgovornost komunikologa. Mnogi etički incidenti i pravni rizici proizlaze iz nedostatka osnovnog razumijevanja u timu. Redovita interna edukacija, jasne smjernice i kultura otvorene rasprave o regulatornim pitanjima donose stvarni preventivni efekt.
+
+
+## Trendovi koji oblikuju regulatornu sliku
+
+Regulatorni okvir nije statičan. Nekoliko trendova vrijedi pratiti.
+
+Akt o podacima, ili Data Act, donesen 2023. godine i u primjeni od 2025. godine, regulira pristup i razmjenu podataka u kontekstu povezanih uređaja, cloud usluga i drugih digitalnih ekosustava. Otvara prava korisnika na pristup podacima koje generiraju kroz njihovu interakciju s uređajima i uslugama.
+
+Direktiva o odgovornosti za umjetnu inteligenciju, AI Liability Directive, koja je u zakonodavnom postupku, uvodi nova pravila o odgovornosti za štetu uzrokovanu AI sustavima. Olakšava pojedincima da traže odštetu kada su povrijeđeni odlukom AI sustava.
+
+Akt o kibernetičkoj otpornosti, Cyber Resilience Act, koji se postupno primjenjuje, uvodi sigurnosne obveze za digitalne proizvode, što uključuje softver, hardware i kombinacije. Uvodi obveze obavještavanja o ranjivostima, ažuriranja i podrške kroz životni ciklus proizvoda.
+
+NIS2 direktiva, koja zamjenjuje raniju NIS direktivu, proširuje obveze kibernetičke sigurnosti na šire područje organizacija, uključujući više sektora i manje organizacije nego prije. Hrvatska implementacija je u tijeku.
+
+Akt o slobodi medija, European Media Freedom Act, donesen 2024. godine, postavlja okvir za neovisnost medija, pluralizam i transparentnost vlasništva u EU. Posebno je relevantan u kontekstu rastuće zabrinutosti oko političkog pritiska na medije.
+
+Akt o slobodi platforme, Platform Workers Directive, koji je donesen 2024. godine, regulira radne odnose platformskih radnika, uključujući klasifikaciju kao zaposlenika ili samostalnog radnika.
+
+Globalna konvergencija ili divergencija regulatornih pristupa je makro trend. Sjedinjene Američke Države postupno razvijaju vlastiti AI regulatorni okvir kroz federalne i državne inicijative. Velika Britanija, Kanada, Brazil i druge jurisdikcije razvijaju vlastite verzije AI i digitalne regulative. Trend je djelomična konvergencija oko EU okvira, dok pojedini elementi divergiraju.
+
+Sudska praksa nastavlja oblikovati interpretaciju. Brojni predmeti pred Sudom EU u domeni GDPR-a, AI Acta i DSA-a dat će konkretnije obrise apstraktnim odredbama. Schrems III, sljedeća faza pravnih sporova oko prijenosa podataka u SAD, vjerojatno će se materijalizirati u idućim godinama.
+
+Tehnološka eskalacija stvara nove regulatorne potrebe brže nego što ih zakonodavac može pratiti. Novi AI sustavi, novi platformski modeli, nove forme sintetičkog sadržaja, sve to traži regulatorne odgovore koji će vjerojatno doći s odgodom.
+
+
+## Na kraju ovog poglavlja
+
+Digitalna regulativa nije više egzotična pravna domena rezervirana za pravnike i regulatorna tijela. Postala je sastavni dio profesionalnog konteksta u kojem komunikolog djeluje. GDPR, AI Act, DSA, DMA, ePrivacy i prateći okviri zajednički postavljaju pravila pod kojima organizacije obrađuju podatke, koriste AI, distribuiraju sadržaj kroz platforme i komuniciraju s publikom. Komunikolog koji ne razumije osnovni okvir djeluje slijepo u prostoru s ozbiljnim sankcijama i s ozbiljnim posljedicama za organizaciju koju savjetuje.
+
+Ovo predavanje zatvorilo je četvrti modul kolegija, modul o AI-u, autentičnosti i regulativi. Tjedan 11 dao je AI literacy temelj. Tjedan 12 razradio je etičke i epistemičke posljedice. Današnje predavanje pružalo je pravni okvir koji etičke obveze postupno kodificira u zakonske. Sljedeći tjedan otvaramo peti i posljednji modul kolegija, modul o mjerenju i sintezi. Govorit ćemo o web analitici i hibridnim metrikama, dakle o tome kako se mjeri uspješnost komunikacijskog rada u digitalnom prostoru. Mnoge teme koje smo razrađivali u prethodnim tjednima vraćaju se u sljedećem predavanju kroz pitanje mjerenja. Što se mjeri pod GDPR-om i ePrivacy ograničenjima? Kako se mjeri u svijetu u kojem AI ulazi i u sloj analize? Kako se kombiniraju različite metrike u koherentnu sliku? Posljednja dva predavanja zajedno povezat će sve niti koje smo razrađivali kroz semestar.
+
+::: {.callout-note}
+## Ključni zaključci
+
+EU digitalna regulativa razvila se u koherentan iako složen okvir koji obuhvaća GDPR, AI Act, DSA, DMA, ePrivacy i autorske direktive, s ekstrateritorijalnim dosegom i značajnim sankcijama.
+
+GDPR je temelj zaštite osobnih podataka s jasnim pojmovima voditelja i izvršitelja, šest zakonitih osnova obrade, pravima ispitanika, obvezom DPIA-e za rizike i sustavom obavješćivanja o povredama.
+
+EU AI Act kategorizira sustave u četiri razine rizika i postavlja proporcionalne obveze, s najstrožim okvirom za neprihvatljive prakse i visokorizične sustave, te dodatnim obvezama za modele opće namjene.
+
+DSA postavlja stupnjevite obveze za posrednike i platforme, s posebnim okvirom za vrlo velike online platforme koje moraju provoditi procjene sustavnih rizika i nezavisne revizije.
+
+DMA regulira gatekeepere kroz konkretne obveze interoperabilnosti, zabranu samostalnog povlašćivanja i otvaranja pristupa podacima poslovnim korisnicima.
+
+ePrivacy okvir regulira kolačiće i izravan marketing s naglaskom na informirani pristanak i pravo na prigovor, s rastućim nadzorom nad kvalitetom cookie bannera.
+
+Autorsko pravo u digitalnom kontekstu obuhvaća platformsku odgovornost, iznimke za istraživanje i obrazovanje, pravila za rudarenje teksta i podataka relevantna za AI trening, te pravo izdavača publikacija.
+
+Hrvatska implementacija odvija se kroz AZOP, HAKOM, AEM, AZTN i druga tijela, s razvijajućom praksom koja postupno specijalizira u različitim digitalnim domenama.
+
+Praksa usklađenosti za komunikologa uključuje inventarizaciju obrade, ispravnu politiku privatnosti, validne mehanizme pristanka, ugovore o obradi podataka, pripremljene protokole za incidente i kontinuiranu edukaciju.
+
+Trendovi obuhvaćaju novonastale akte poput Data Acta, AI Liability Directive, Cyber Resilience Acta i NIS2, kao i globalnu konvergenciju ili divergenciju regulatornih pristupa, što čini područje koje se kontinuirano razvija.
+:::
+
+
+## Priprema za sljedeći tjedan
+
+Tjedan 14 otvara peti modul i bavit će se web analitikom i hibridnim metrikama, dakle pitanjem kako se mjeri uspješnost komunikacijskog rada u digitalnom prostoru.
+
+Prije četrnaestog predavanja napravite četiri stvari.
+
+Prvo, otvorite web stranicu jedne hrvatske organizacije i analizirajte njezinu politiku privatnosti i cookie banner. Provjerite je li banner u skladu s opisanim standardima, je li politika privatnosti ažurna i jasna, koje su navedene legalne osnove obrade i koja prava ispitanika su navedena. Zabilježite uočene nedostatke i predložite konkretne prijedloge poboljšanja.
+
+Drugo, pronađite jedan EU regulatorni dokument koji vas najviše zanima u vlastitom kontekstu. Može biti GDPR, AI Act, DSA, DMA ili neki od pratećih akata. Otvorite službeni izvor na EUR-Lex portalu i pročitajte deset do petnaest članaka koji su najrelevantniji za vašu profesionalnu situaciju. Ne morate čitati cjelokupan tekst, ali pokušajte iščitati ključne članke.
+
+Treće, ako imate pristup web analitičkom alatu, kao što je Google Analytics 4, Plausible ili Fathom, otvorite ga i pregledajte koji se podaci prikupljaju. Provjerite je li implementacija usklađena s GDPR-om, je li uspostavljen consent management i jesu li IP adrese anonimizirane. Ako alat nemate, pogledajte demo Google Analyticsa kojem se može pristupiti besplatno.
+
+Četvrto, pripremite kratku osobnu refleksiju od desetak rečenica o sljedećem pitanju. Što biste promijenili u svojem osobnom digitalnom otisku ako biste željeli iskoristiti sva svoja prava pod GDPR-om? Kako biste pristupili svojim podacima kod glavnih platformi koje koristite? Refleksiju ćemo iskoristiti u uvodu sljedećeg predavanja.
+
+
+## Dodatno čitanje
+
+Službeni izvori EU regulative dostupni su na portalu EUR-Lex. Iako su pravni tekstovi gusti, njihovi recitali, koji prethode glavnim odredbama, često su pristupačno napisani i daju kontekst.
+
+Europski odbor za zaštitu podataka, EDPB, objavljuje smjernice koje pomažu interpretirati GDPR. Smjernice su dostupne na webu EDPB-a i postupno se ažuriraju kako se praksa razvija.
+
+Europska komisija ima posebne portale za GDPR, AI Act, DSA i DMA na kojima objavljuje pojednostavljena objašnjenja, FAQ dokumente i implementacijske smjernice. Ovi portali su prvi izvor za razumijevanje praktične primjene.
+
+AI Act compliance navigator i druge alate koje su razvili AI Office, AI Now Institute i Stanford HAI pružaju strukturiranu navigaciju kroz obveze AI Acta s primjerima.
+
+Domaće smjernice AZOP-a dostupne su na njihovoj službenoj stranici. Iako su tehnički orijentirane, ključne smjernice o cookie bannerima, izravnom marketingu i obradi za potrebe agencijskog rada pristupačne su komunikologu.
+
+Mišel Beneše, Bojan Marotti i drugi hrvatski stručnjaci za zaštitu podataka redovito objavljuju u stručnim časopisima, na blogovima i kroz LinkedIn. Praćenje hrvatskih praktičara uz EU izvore pruža lokalnu perspektivu.
+
+EDRi, European Digital Rights, civilno društveno udruženje, objavljuje analize regulative iz perspektive zaštite digitalnih prava. Posebno korisno za razumijevanje političke i etičke pozadine pojedinih regulatornih izbora.
+
+IAPP, International Association of Privacy Professionals, vodeća je strukovna organizacija za zaštitu podataka. Objavljuje opsežne resurse, certifikate i strukovnu publikaciju.
+
+Knjiga The EU AI Act: A Commentary urednika Wolfa Sauter i drugih, objavljena 2024. godine, najautoritativniji je akademski pregled AI Acta. Iako pravnička, čitljiva je za čitatelje s temeljnim pravnim razumijevanjem.
+
+
+## Pojmovnik
+
+| Pojam | Objašnjenje |
+|---|---|
+| GDPR | Opća uredba o zaštiti podataka, EU regulativa za obradu osobnih podataka |
+| AI Act | EU Akt o umjetnoj inteligenciji, prvi sveobuhvatan zakon o AI-ju |
+| DSA | Akt o digitalnim uslugama, EU regulativa za posrednike u digitalnom prostoru |
+| DMA | Akt o digitalnim tržištima, EU regulativa za gatekeepere |
+| ePrivacy direktiva | EU pravila o elektroničkim komunikacijama i kolačićima |
+| ePrivacy uredba | Nadolazeća zamjena za ePrivacy direktivu |
+| InfoSoc direktiva | EU direktiva o autorskom pravu u informacijskom društvu |
+| DSM direktiva | Direktiva o autorskom pravu na jedinstvenom digitalnom tržištu |
+| Voditelj obrade | Organizacija ili pojedinac koji određuje svrhu i način obrade osobnih podataka |
+| Izvršitelj obrade | Subjekt koji obrađuje osobne podatke u ime voditelja |
+| DPA | Data Processing Agreement, ugovor između voditelja i izvršitelja obrade |
+| Zakonita osnova obrade | Pravni razlog koji opravdava obradu osobnih podataka |
+| Pristanak | Slobodan, informiran, specifičan i jednoznačan izraz volje za obradom |
+| Posebne kategorije podataka | Osjetljivi podaci čija je obrada u načelu zabranjena |
+| Pravo na pristup | Pravo ispitanika da dobije svoje podatke od organizacije |
+| Pravo na zaborav | Pravo ispitanika da traži brisanje svojih podataka |
+| Pravo na prenosivost | Pravo ispitanika da dobije podatke u strojno čitljivom formatu |
+| Pravo na prigovor | Pravo ispitanika da prigovori obradi |
+| DPIA | Data Protection Impact Assessment, procjena utjecaja na zaštitu podataka |
+| DPO | Data Protection Officer, službenik za zaštitu podataka |
+| Obavijest o povredi | Obvezno obavještavanje nadzornog tijela o sigurnosnoj povredi |
+| Neprihvatljivi rizik | AI Act kategorija koja obuhvaća zabranjene prakse |
+| Visokorizični sustav | AI Act kategorija s opsežnim obvezama sukladnosti |
+| Ograničeni rizik | AI Act kategorija s obvezama transparentnosti |
+| Minimalni rizik | AI Act kategorija bez konkretnih obveza |
+| GPAI | General-Purpose AI, modeli opće namjene |
+| Sustavni rizik | AI Act kategorija najjačih GPAI modela s dodatnim obvezama |
+| Procjena sukladnosti | Postupak provjere usklađenosti AI sustava s AI Actom prije stavljanja na tržište |
+| AI Office | Europska komisija tijelo za nadzor AI Acta |
+| Notice and action | DSA mehanizam obavještavanja platforme o ilegalnom sadržaju |
+| VLOP | Very Large Online Platform, vrlo velika online platforma pod DSA-om |
+| VLOSE | Very Large Online Search Engine, vrlo velik pretraživač |
+| Procjena sustavnih rizika | DSA obveza za VLOP-ove i VLOSE |
+| Krizni protokol | DSA mehanizam za izvanredne situacije |
+| DSA Coordinator | Nacionalno tijelo za provedbu DSA-a |
+| Gatekeeper | DMA oznaka za najveće digitalne platforme |
+| Osnovna platformska usluga | DMA pojam za usluge koje gatekeeper pruža poslovnim korisnicima |
+| Samostalno povlašćivanje | Praksa platforme da preferira vlastite proizvode, ograničena DMA-om |
+| Interoperabilnost | Sposobnost različitih sustava da rade zajedno, obvezna za određene gatekeepere |
+| Strogo nužni kolačići | Kolačići potrebni za pružanje usluge, ne traže pristanak |
+| Soft opt-in | Iznimka za izravan marketing prema postojećim klijentima |
+| Article 17 | DSM odredba o platformskoj odgovornosti za autorska prava |
+| Text and data mining | Iznimka za rudarenje teksta i podataka, relevantno za AI trening |
+| Pravo izdavača publikacija | Novo srodno pravo iz DSM direktive |
+| Schrems II | Odluka Suda EU iz 2020. koja je promijenila pravila prijenosa podataka u SAD |
+| Schrems III | Buduća pravna eskalacija oko prijenosa podataka |
+| EU-US Data Privacy Framework | Okvir iz 2023. za prijenos podataka između EU i SAD-a |
+| Standard Contractual Clauses | Standardne ugovorne klauzule za prijenos podataka izvan EU |
+| AZOP | Agencija za zaštitu osobnih podataka u Hrvatskoj |
+| HAKOM | Hrvatska regulatorna agencija za mrežne djelatnosti, DSA Coordinator |
+| AEM | Agencija za elektroničke medije |
+| AZTN | Agencija za zaštitu tržišnog natjecanja |
+| EDPB | European Data Protection Board, europsko zajedničko tijelo nadzornih agencija |
+| EDRi | European Digital Rights, civilno društvena organizacija |
+| IAPP | International Association of Privacy Professionals |
+| EUR-Lex | Službeni portal EU pravnih dokumenata |
+| Data Act | EU Akt o podacima, regulira pristup i razmjenu podataka |
+| AI Liability Directive | Direktiva o odgovornosti za umjetnu inteligenciju |
+| Cyber Resilience Act | EU Akt o kibernetičkoj otpornosti digitalnih proizvoda |
+| NIS2 | Direktiva o kibernetičkoj sigurnosti, zamjenjuje ranije NIS pravila |
+| EMFA | European Media Freedom Act, Akt o slobodi medija |
+| Platform Workers Directive | EU direktiva o radnicima na platformama |
+| Konsensus pristanka | Praksa da se pristanak prikuplja ujednačeno kroz organizacijski stack |
+| Privacy by design | Načelo ugradnje zaštite privatnosti u dizajn sustava od početka |
+| Privacy by default | Načelo da su zaštitne postavke prema privatnosti zadane |
+| Recitalije | Uvodni dijelovi EU akata koji daju kontekst odredbama |
